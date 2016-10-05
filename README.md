@@ -6,7 +6,6 @@ The Education library from XNA Game Studios, valuable for MonoGame Developers fo
 > If you are new to the archive and want to get started with the sample here.  Check out the [Getting Started](https://github.com/DDReaper/XNAGameStudio/wiki/gettingstarted) page on the wiki
 > This will tell you what you need to know to open the XNA projects (that haven't been converted yet) in this archive
 >
-> ###[*Getting Started*](https://github.com/DDReaper/XNAGameStudio/wiki/gettingstarted)
 
 The archive is now complete and all but two samples can be found here, next step MonoGaming the samples where applicable.
 (The two missing are Mojapi and Racing Game as their files are too big for GIT.  I've downloaded and will source a difference host for the sample files)
