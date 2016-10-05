@@ -1,6 +1,14 @@
 #XNAGameStudio
 The Education library from XNA Game Studios, valuable for MonoGame Developers for advanced samples.
 
+> ##QuickEdit
+> I'll do a proper page as soon as I get a minute for getting started.
+> For now, if you want to open ALL of these solutions in VS2015, then use the awesome MXA project which can be found here
+> [MXA Game Studio](http://mxa.codeplex.com/)
+> This enables old XNA projects to be opened in modern visual studio.  Enjoy
+> Also check out my YouTube channel for more info
+> [The Darkside of MonoGame](http://bit.ly/darksideofmonogame)
+
 The archive is now complete and all but two samples can be found here, next step MonoGaming the samples where applicable.
 (The two missing are Mojapi and Racing Game as their files are too big for GIT.  I've downloaded and will source a difference host for the sample files)
 
