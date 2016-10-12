@@ -129,3 +129,9 @@
 /processorParam:TextureFormat=Auto
 /build:WPFFont.spritefont
 
+#begin BasicSpriteFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:BasicSpriteFont.spritefont
+

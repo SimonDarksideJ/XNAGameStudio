@@ -266,7 +266,9 @@ namespace WpfFontPipeline
             this.input = input;
 
             // 出力先のFontContentの生成
-            fontContnet = new WpfSpriteFontContent();
+            fontContent = new WpfSpriteFontContent();
+
+            GetLocalisedResX(input, context);
 
             // 文字の追加
             AddExtraCharacters(context);
@@ -280,13 +282,11 @@ namespace WpfFontPipeline
             context.Logger.LogImportantMessage("処理文字数 {0}", input.Characters.Count);
 
             // その他の情報の設定
-            fontContnet.LineSpacing = (int)(glyphTypeface.Height * fontSize);
-            fontContnet.Spacing = input.Spacing;
-            fontContnet.DefaultCharacter = input.DefaultCharacter;
+            fontContent.LineSpacing = (int)(glyphTypeface.Height * fontSize);
+            fontContent.Spacing = input.Spacing;
+            fontContent.DefaultCharacter = input.DefaultCharacter;
 
-            GetLocalisedResX(input, context);
-
-            return fontContnet;
+            return fontContent;
         }
 
         private static void GetLocalisedResX(LocalizedFontDescription input, ContentProcessorContext context)
@@ -518,11 +518,11 @@ namespace WpfFontPipeline
                 var kerning = GetKerning(c, blackBox);
 
                 // FontContentへの設定
-                fontContnet.CharacterMap.Add(c);
-                fontContnet.Kerning.Add(kerning);
-                fontContnet.Glyphs.Add(new Rectangle(
+                fontContent.CharacterMap.Add(c);
+                fontContent.Kerning.Add(kerning);
+                fontContent.Glyphs.Add(new Rectangle(
                     0, 0, blackBox.Width, blackBox.Height));
-                fontContnet.Cropping.Add(new Rectangle(
+                fontContent.Cropping.Add(new Rectangle(
                     blackBox.X - glyphBounds.X,
                     blackBox.Y - glyphBounds.Y,
                     glyphBounds.Width, glyphBounds.Height));
@@ -550,10 +550,10 @@ namespace WpfFontPipeline
             for (int i = 0; i < layouter.Items.Count; ++i)
             {
                 // グリフ位置情報の追加
-                var rc = fontContnet.Glyphs[i];
+                var rc = fontContent.Glyphs[i];
                 rc.X = layouter.Items[i].Bounds.X;
                 rc.Y = layouter.Items[i].Bounds.Y;
-                fontContnet.Glyphs[i] = rc;
+                fontContent.Glyphs[i] = rc;
 
                 // 個々のグリフ画像をひとつの画像へ追加する
                 var pixels = layouter.Items[i].Tag as uint[];
@@ -573,36 +573,36 @@ namespace WpfFontPipeline
             }
 
             // 文字画像をまとめた画像をテクスチャへ変換する
-            fontContnet.Texture = new Texture2DContent();
+            fontContent.Texture = new Texture2DContent();
             switch(TextureFormat)
             {
                 case WpfTextureFormat.Auto:
                     if (UseGradient)
                     {
                         // グラデーション使用していればColorフォーマット
-                        fontContnet.Texture.Mipmaps = bitmap;
+                        fontContent.Texture.Mipmaps = bitmap;
                     }
                     else if (OutlineThickness > 0)
                     {
                         // アウトラインのみ使用していればBgra4444フォーマット
-                        fontContnet.Texture.Mipmaps = bitmap;
-                        fontContnet.Texture.ConvertBitmapType(
+                        fontContent.Texture.Mipmaps = bitmap;
+                        fontContent.Texture.ConvertBitmapType(
                                     typeof(PixelBitmapContent<Bgra4444>));
                     }
                     else
                     {
                         // それ以外の単色フォントであれば単色に特化したDXT3圧縮をする
-                        fontContnet.Texture.Mipmaps =
+                        fontContent.Texture.Mipmaps =
                             SingleColorDxtCompressor.Compress(bitmap, FontColor);
                     }
                     break;
                 case WpfTextureFormat.Bgra4444:
-                    fontContnet.Texture.Mipmaps = bitmap;
-                    fontContnet.Texture.ConvertBitmapType(
+                    fontContent.Texture.Mipmaps = bitmap;
+                    fontContent.Texture.ConvertBitmapType(
                                 typeof(PixelBitmapContent<Bgra4444>));
                     break;
                 case WpfTextureFormat.Color:
-                    fontContnet.Texture.Mipmaps = bitmap;
+                    fontContent.Texture.Mipmaps = bitmap;
                     break;
             }
 
@@ -893,7 +893,7 @@ namespace WpfFontPipeline
         FontDescription input;
 
         // 出力先
-        WpfSpriteFontContent fontContnet;
+        WpfSpriteFontContent fontContent;
 
         // フォントサイズ(DIU)
         float fontSize;

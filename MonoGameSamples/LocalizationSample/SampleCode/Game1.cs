@@ -15,6 +15,7 @@ namespace LocalizationSample
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SpriteFont MyFont;
         SpriteFont LocalizedFont;
         SpriteFont WPFFont;
         Texture2D currentFlag;
@@ -41,6 +42,8 @@ namespace LocalizationSample
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            MyFont = Content.Load<SpriteFont>("BasicSpriteFont");
 
             LocalizedFont = Content.Load<SpriteFont>("LocalizedFont");
             WPFFont = Content.Load<SpriteFont>("WPFFont");
@@ -125,6 +128,7 @@ namespace LocalizationSample
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
+            spriteBatch.DrawString(MyFont, "Welcome to the localization sample!",Vector2.One,Color.White);
 
             spriteBatch.DrawString(LocalizedFont, "Default font Drawing", new Vector2(100, 70), Color.White);
             spriteBatch.DrawString(LocalizedFont, string1, new Vector2(100, 100), Color.White);
