@@ -86,3 +86,6 @@ When creating localized .resx files, or different versions of an asset for use w
 Most often, you will just use a two-letter language code from [ISO 639-1](http://www.loc.gov/standards/iso639-2/php/English_list.php). The sample uses this convention for the Strings.fr.resx file or the Flag.ja.png file.
 
 Other times you may wish to differentiate by country as well as language. To accomplish this, you can add a two-letter country code from [ISO 3166](http://www.iso.org/iso/english_country_names_and_code_elements) after the language code. The sample uses this convention for the Flag.en-US.png and Flag.en-GB.png files. Both flags are for English-speaking countries, but this specialization allows us to differentiate between the United States and United Kingdom. If you set your system to some other English-speaking country—for example, New Zealand—neither of these flags will match, so the default flag will be displayed instead. Because the sample does not specify any particular French-speaking country for its French flag texture, that will be displayed even if you set your system to French (Canada) or French (Belgium).
+
+##The WPF Font processor
+Need text here :D
