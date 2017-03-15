@@ -1,0 +1,3 @@
+[submodule "MonoGameSamples/GameStateManagementSample"]
+	path = MonoGameSamples/GameStateManagementSample
+	url = https://github.com/DDReaper/GameStateManagementSample.git
