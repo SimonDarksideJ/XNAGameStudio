@@ -1,7 +1,7 @@
-#XNAGameStudio
+# XNAGameStudio
 The Education library from XNA Game Studios, valuable for MonoGame Developers for advanced samples.
 
-> ##[Getting Started](https://github.com/DDReaper/XNAGameStudio/wiki/gettingstarted)
+> ## [Getting Started](https://github.com/DDReaper/XNAGameStudio/wiki/gettingstarted)
 >
 > If you are new to the archive and want to get started with the sample here.  Check out the [Getting Started](https://github.com/DDReaper/XNAGameStudio/wiki/gettingstarted) page on the wiki
 > This will tell you what you need to know to open the XNA projects (that haven't been converted yet) in this archive
