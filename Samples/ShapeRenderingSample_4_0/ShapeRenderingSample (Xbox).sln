@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeRenderingSample (Xbox)", "ShapeRenderingSample\ShapeRenderingSample (Xbox).csproj", "{EA583648-B801-4E05-AC10-28302E0A5C16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA583648-B801-4E05-AC10-28302E0A5C16}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{EA583648-B801-4E05-AC10-28302E0A5C16}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{EA583648-B801-4E05-AC10-28302E0A5C16}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{EA583648-B801-4E05-AC10-28302E0A5C16}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{EA583648-B801-4E05-AC10-28302E0A5C16}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{EA583648-B801-4E05-AC10-28302E0A5C16}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

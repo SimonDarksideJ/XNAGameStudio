@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorRumbleWindows", "VectorRumble\VectorRumbleWindows.csproj", "{C0D6B863-9D2A-4A4D-B795-EC7A46F936EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0D6B863-9D2A-4A4D-B795-EC7A46F936EF}.Debug|x86.ActiveCfg = Debug|x86
+		{C0D6B863-9D2A-4A4D-B795-EC7A46F936EF}.Debug|x86.Build.0 = Debug|x86
+		{C0D6B863-9D2A-4A4D-B795-EC7A46F936EF}.Release|x86.ActiveCfg = Release|x86
+		{C0D6B863-9D2A-4A4D-B795-EC7A46F936EF}.Release|x86.Build.0 = Release|x86
+		{3985A4AF-CEE4-44A6-A2A1-6DDF00C3C85A}.Debug|x86.ActiveCfg = Debug|x86
+		{3985A4AF-CEE4-44A6-A2A1-6DDF00C3C85A}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NormalMappingEffectWindows", "NormalMappingEffect\NormalMappingEffectWindows.csproj", "{2D036BA3-7B65-4094-9FA5-127D7D126160}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NormalMappingEffectPipeline", "NormalMappingEffectPipeline\NormalMappingEffectPipeline.csproj", "{8BE2A4F5-2E5F-4125-95F4-9877B208063C}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NormalMappingEffectContent", "NormalMappingEffect\Content\NormalMappingEffectContent.contentproj", "{739A0CD0-EED9-401C-94B8-8AD5659B9BE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D036BA3-7B65-4094-9FA5-127D7D126160}.Debug|x86.ActiveCfg = Debug|x86
+		{2D036BA3-7B65-4094-9FA5-127D7D126160}.Debug|x86.Build.0 = Debug|x86
+		{2D036BA3-7B65-4094-9FA5-127D7D126160}.Release|x86.ActiveCfg = Release|x86
+		{2D036BA3-7B65-4094-9FA5-127D7D126160}.Release|x86.Build.0 = Release|x86
+		{8BE2A4F5-2E5F-4125-95F4-9877B208063C}.Debug|x86.ActiveCfg = Debug|x86
+		{8BE2A4F5-2E5F-4125-95F4-9877B208063C}.Debug|x86.Build.0 = Debug|x86
+		{8BE2A4F5-2E5F-4125-95F4-9877B208063C}.Release|x86.ActiveCfg = Release|x86
+		{8BE2A4F5-2E5F-4125-95F4-9877B208063C}.Release|x86.Build.0 = Release|x86
+		{739A0CD0-EED9-401C-94B8-8AD5659B9BE0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{739A0CD0-EED9-401C-94B8-8AD5659B9BE0}.Release|x86.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

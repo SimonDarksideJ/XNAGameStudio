@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicktureXbox", "Pickture\PicktureXbox.csproj", "{F316FFBD-6F5F-4370-8BE6-E055E7B224A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickturePipeline", "PickturePipeline\PickturePipeline.csproj", "{9E345F37-5117-4D33-AD4B-B4E9862539A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F316FFBD-6F5F-4370-8BE6-E055E7B224A8}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{F316FFBD-6F5F-4370-8BE6-E055E7B224A8}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{F316FFBD-6F5F-4370-8BE6-E055E7B224A8}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{F316FFBD-6F5F-4370-8BE6-E055E7B224A8}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{F316FFBD-6F5F-4370-8BE6-E055E7B224A8}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{F316FFBD-6F5F-4370-8BE6-E055E7B224A8}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{C072C939-6D0A-42DD-90DF-15FCCE636C9A}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{C072C939-6D0A-42DD-90DF-15FCCE636C9A}.Release|Xbox 360.ActiveCfg = Release|x86
+		{9E345F37-5117-4D33-AD4B-B4E9862539A2}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{9E345F37-5117-4D33-AD4B-B4E9862539A2}.Debug|Xbox 360.Build.0 = Debug|x86
+		{9E345F37-5117-4D33-AD4B-B4E9862539A2}.Release|Xbox 360.ActiveCfg = Release|x86
+		{9E345F37-5117-4D33-AD4B-B4E9862539A2}.Release|Xbox 360.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

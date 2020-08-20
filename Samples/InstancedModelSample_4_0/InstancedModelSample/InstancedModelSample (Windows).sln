@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelSampleWindows", "InstancedModelSample\InstancedModelSampleWindows.csproj", "{8845F8A3-9266-49E8-B179-4A343FFDC10B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelSampleContent", "InstancedModelSample\Content\InstancedModelSampleContent.contentproj", "{1E99EEA4-D228-49C4-861F-55EB8996F277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelPipeline", "InstancedModelPipeline\InstancedModelPipeline.csproj", "{FF69FD90-8834-4F60-ADA5-36387F112437}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8845F8A3-9266-49E8-B179-4A343FFDC10B}.Debug|x86.ActiveCfg = Debug|x86
+		{8845F8A3-9266-49E8-B179-4A343FFDC10B}.Debug|x86.Build.0 = Debug|x86
+		{8845F8A3-9266-49E8-B179-4A343FFDC10B}.Release|x86.ActiveCfg = Release|x86
+		{8845F8A3-9266-49E8-B179-4A343FFDC10B}.Release|x86.Build.0 = Release|x86
+		{1E99EEA4-D228-49C4-861F-55EB8996F277}.Debug|x86.ActiveCfg = Debug|x86
+		{1E99EEA4-D228-49C4-861F-55EB8996F277}.Release|x86.ActiveCfg = Release|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Debug|x86.ActiveCfg = Debug|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Debug|x86.Build.0 = Debug|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Release|x86.ActiveCfg = Debug|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Release|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

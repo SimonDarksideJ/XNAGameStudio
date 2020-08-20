@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetRumbleXbox", "NetRumble\NetRumbleXbox.csproj", "{DB925300-D67A-48AC-B29F-A80DE145C7B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetRumbleContent", "NetRumble\Content\NetRumbleContent.contentproj", "{DEBB6BEB-C014-4324-9964-CD20DCAFA9B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB925300-D67A-48AC-B29F-A80DE145C7B8}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{DB925300-D67A-48AC-B29F-A80DE145C7B8}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{DB925300-D67A-48AC-B29F-A80DE145C7B8}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{DB925300-D67A-48AC-B29F-A80DE145C7B8}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{DB925300-D67A-48AC-B29F-A80DE145C7B8}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{DB925300-D67A-48AC-B29F-A80DE145C7B8}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{DEBB6BEB-C014-4324-9964-CD20DCAFA9B3}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{DEBB6BEB-C014-4324-9964-CD20DCAFA9B3}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

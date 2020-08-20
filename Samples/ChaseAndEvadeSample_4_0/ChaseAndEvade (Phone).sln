@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaseAndEvade", "ChaseAndEvade\ChaseAndEvadeWindowsPhone.csproj", "{1557EE13-80AB-4E4C-9C10-9CBFC8E727C3}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ChaseAndEvadeContent", "ChaseAndEvadeContent\ChaseAndEvadeContent.contentproj", "{ED3B30F4-5F84-428A-884A-CDE2B7F0BD2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1557EE13-80AB-4E4C-9C10-9CBFC8E727C3}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{1557EE13-80AB-4E4C-9C10-9CBFC8E727C3}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{1557EE13-80AB-4E4C-9C10-9CBFC8E727C3}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{1557EE13-80AB-4E4C-9C10-9CBFC8E727C3}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{1557EE13-80AB-4E4C-9C10-9CBFC8E727C3}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{1557EE13-80AB-4E4C-9C10-9CBFC8E727C3}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

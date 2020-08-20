@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="YachtService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.1.100:8888/GameServer/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.1.100:8888/GameServer/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IYachtService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_Unregister_InputMessage">
+    <wsdl:part name="parameters" element="tns:Unregister" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_Unregister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnregisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_JoinGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:JoinGame" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_JoinGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:JoinGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_LeaveGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:LeaveGame" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_LeaveGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LeaveGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_GameStep_InputMessage">
+    <wsdl:part name="parameters" element="tns:GameStep" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_GameStep_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GameStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_GetGameState_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameState" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_GetGameState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_GetAvailableGames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableGames" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_GetAvailableGames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableGamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_NewGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewGame" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_NewGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_ResetTimeout_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetTimeout" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_ResetTimeout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetTimeoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_SetScoreCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetScoreCard" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_SetScoreCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetScoreCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_GetScoreCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScoreCard" />
+  </wsdl:message>
+  <wsdl:message name="IYachtService_GetScoreCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScoreCardResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IYachtService">
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/Register" message="tns:IYachtService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/RegisterResponse" message="tns:IYachtService_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Unregister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/Unregister" message="tns:IYachtService_Unregister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/UnregisterResponse" message="tns:IYachtService_Unregister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="JoinGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/JoinGame" message="tns:IYachtService_JoinGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/JoinGameResponse" message="tns:IYachtService_JoinGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LeaveGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/LeaveGame" message="tns:IYachtService_LeaveGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/LeaveGameResponse" message="tns:IYachtService_LeaveGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GameStep">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/GameStep" message="tns:IYachtService_GameStep_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/GameStepResponse" message="tns:IYachtService_GameStep_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/GetGameState" message="tns:IYachtService_GetGameState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/GetGameStateResponse" message="tns:IYachtService_GetGameState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableGames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/GetAvailableGames" message="tns:IYachtService_GetAvailableGames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/GetAvailableGamesResponse" message="tns:IYachtService_GetAvailableGames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/NewGame" message="tns:IYachtService_NewGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/NewGameResponse" message="tns:IYachtService_NewGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetTimeout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/ResetTimeout" message="tns:IYachtService_ResetTimeout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/ResetTimeoutResponse" message="tns:IYachtService_ResetTimeout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetScoreCard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/SetScoreCard" message="tns:IYachtService_SetScoreCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/SetScoreCardResponse" message="tns:IYachtService_SetScoreCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScoreCard">
+      <wsdl:input wsaw:Action="http://tempuri.org/IYachtService/GetScoreCard" message="tns:IYachtService_GetScoreCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IYachtService/GetScoreCardResponse" message="tns:IYachtService_GetScoreCard_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IYachtService" type="tns:IYachtService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Unregister">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/Unregister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JoinGame">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/JoinGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LeaveGame">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/LeaveGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GameStep">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/GameStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameState">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/GetGameState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableGames">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/GetAvailableGames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewGame">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/NewGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetTimeout">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/ResetTimeout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetScoreCard">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/SetScoreCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScoreCard">
+      <soap:operation soapAction="http://tempuri.org/IYachtService/GetScoreCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="YachtService">
+    <wsdl:port name="BasicHttpBinding_IYachtService" binding="tns:BasicHttpBinding_IYachtService">
+      <soap:address location="http://192.168.1.100:8888/GameServer/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

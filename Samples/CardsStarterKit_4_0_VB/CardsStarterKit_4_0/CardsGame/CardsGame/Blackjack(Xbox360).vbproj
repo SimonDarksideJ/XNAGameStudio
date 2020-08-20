@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{ED04E138-4C7C-4BEA-80C2-532BE893DB62}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>My Project</AppDesignerFolder>
+    <RootNamespace>Blackjack</RootNamespace>
+    <AssemblyName>Blackjack</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>7d0f8fe4-a5bf-4f63-a2c8-2fc5f1fe4e11</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <XnaRefreshLevel>1</XnaRefreshLevel>
+    <XapFilename>$(AssemblyName).xap</XapFilename>
+    <WPTombstoneEnabled>false</WPTombstoneEnabled>
+    <SilverlightManifestTemplate>My Project\AppManifest.xml</SilverlightManifestTemplate>
+    <XnaWindowsPhoneManifestTemplate>My Project\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
+    <TileImage>Background.png</TileImage>
+    <TileTitle>CardsGame</TileTitle>
+    <SupportedCultures>
+    </SupportedCultures>
+    <TargetCompactFramework>true</TargetCompactFramework>
+    <VBRuntime>Embed</VBRuntime>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>PhoneGameThumb.png</Thumbnail>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>XBOX,XBOX360</DefineConstants>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>XBOX,XBOX360</DefineConstants>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="GameThumbnail.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blackjack\Game\BlackjackCardGame.vb" />
+    <Compile Include="Blackjack\Misc\BetGameComponent.vb" />
+    <Compile Include="Blackjack\Players\BlackjackAIPlayer.vb" />
+    <Compile Include="Blackjack\Players\BlackjackPlayer.vb" />
+    <Compile Include="Blackjack\Rules\BlackjackGameEventArgs.vb" />
+    <Compile Include="Blackjack\Rules\BlackjackRule.vb" />
+    <Compile Include="Blackjack\Rules\BustRule.vb" />
+    <Compile Include="Blackjack\Rules\InsuranceRule.vb" />
+    <Compile Include="Blackjack\UI\BlackjackAnimatedDealerHandComponent.vb" />
+    <Compile Include="Blackjack\UI\BlackJackAnimatedPlayerHandComponent.vb" />
+    <Compile Include="Blackjack\UI\BlackJackTable.vb" />
+    <Compile Include="Blackjack\UI\Button.vb" />
+    <Compile Include="Misc\AudioManager.vb" />
+    <Compile Include="Misc\InputHelper.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="ScreenManager\GameScreen.vb" />
+    <Compile Include="ScreenManager\InputState.vb" />
+    <Compile Include="ScreenManager\MenuEntry.vb" />
+    <Compile Include="ScreenManager\MenuScreen.vb" />
+    <Compile Include="ScreenManager\PlayerIndexEventArgs.vb" />
+    <Compile Include="ScreenManager\ScreenManager.vb" />
+    <Compile Include="Screens\BackgroundScreen.vb" />
+    <Compile Include="Screens\GameplayScreen.vb" />
+    <Compile Include="Screens\InstructionScreen.vb" />
+    <Compile Include="Screens\MainMenuScreen.vb" />
+    <Compile Include="Screens\OptionsMenu.vb" />
+    <Compile Include="Screens\PauseScreen.vb" />
+    <Compile Include="VBCoreHelper.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="BlackJackGame.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+    <Import Include="Microsoft.Xna.Framework" />
+    <Import Include="Microsoft.Xna.Framework.Audio" />
+    <Import Include="Microsoft.Xna.Framework.Content" />
+    <Import Include="Microsoft.Xna.Framework.GamerServices" />
+    <Import Include="Microsoft.Xna.Framework.Graphics" />
+    <Import Include="Microsoft.Xna.Framework.Input" />
+    <Import Include="Microsoft.Xna.Framework.Input.Touch" />
+    <Import Include="Microsoft.Xna.Framework.Media" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CardsFramework\CardsFramework%28Xbox360%29.vbproj">
+      <Project>{fb90b8bc-daef-48c1-99c3-e573401d015a}</Project>
+      <Name>CardsFramework%28Xbox360%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardsGameContent\BlackjackContent.contentproj">
+      <Name>BlackjackContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{454E45FA-F92D-4FA7-AA12-94359BA600BB}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Blackjack\Laws\" />
+    <Folder Include="Blackjack\UI\Effects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

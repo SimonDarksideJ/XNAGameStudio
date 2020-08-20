@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{5CED19D2-37E2-455B-824C-1A652D848BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YachtServices", "YachtServices\YachtServices.csproj", "{C94B7EEA-F42D-472D-8C54-B57ABA0171EF}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB967C24-70D1-4F7C-807A-6697727E60C0}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{EB967C24-70D1-4F7C-807A-6697727E60C0}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{EB967C24-70D1-4F7C-807A-6697727E60C0}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{EB967C24-70D1-4F7C-807A-6697727E60C0}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{EB967C24-70D1-4F7C-807A-6697727E60C0}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{EB967C24-70D1-4F7C-807A-6697727E60C0}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{2F9A3C22-B3D9-47F9-9078-FC44C872CE3D}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{2F9A3C22-B3D9-47F9-9078-FC44C872CE3D}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{C94B7EEA-F42D-472D-8C54-B57ABA0171EF}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{C94B7EEA-F42D-472D-8C54-B57ABA0171EF}.Debug|Windows Phone.Build.0 = Debug|Any CPU
+		{C94B7EEA-F42D-472D-8C54-B57ABA0171EF}.Release|Windows Phone.ActiveCfg = Release|Any CPU
+		{5CED19D2-37E2-455B-824C-1A652D848BC8}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{5CED19D2-37E2-455B-824C-1A652D848BC8}.Debug|Windows Phone.Build.0 = Debug|x86
+		{5CED19D2-37E2-455B-824C-1A652D848BC8}.Release|Windows Phone.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

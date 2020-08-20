@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaseAndEvadeWindows", "ChaseAndEvade\ChaseAndEvadeWindows.csproj", "{EA70CF76-9C65-42D8-BCAA-F73532F8640F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaseAndEvadeContent", "ChaseAndEvadeContent\ChaseAndEvadeContent.contentproj", "{ED3B30F4-5F84-428A-884A-CDE2B7F0BD2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA70CF76-9C65-42D8-BCAA-F73532F8640F}.Debug|x86.ActiveCfg = Debug|x86
+		{EA70CF76-9C65-42D8-BCAA-F73532F8640F}.Debug|x86.Build.0 = Debug|x86
+		{EA70CF76-9C65-42D8-BCAA-F73532F8640F}.Release|x86.ActiveCfg = Release|x86
+		{EA70CF76-9C65-42D8-BCAA-F73532F8640F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

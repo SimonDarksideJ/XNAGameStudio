@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particle3DSampleWindows", "Particle3DSample\Particle3DSampleWindows.csproj", "{2AEF1B32-62F0-45F3-888F-E455C1C99204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particle3DSampleContent", "Particle3DSample\Content\Particle3DSampleContent.contentproj", "{12A1407B-BACE-4F2A-9413-A4C8DD9E4922}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AEF1B32-62F0-45F3-888F-E455C1C99204}.Debug|x86.ActiveCfg = Debug|x86
+		{2AEF1B32-62F0-45F3-888F-E455C1C99204}.Debug|x86.Build.0 = Debug|x86
+		{2AEF1B32-62F0-45F3-888F-E455C1C99204}.Release|x86.ActiveCfg = Release|x86
+		{2AEF1B32-62F0-45F3-888F-E455C1C99204}.Release|x86.Build.0 = Release|x86
+		{12A1407B-BACE-4F2A-9413-A4C8DD9E4922}.Debug|x86.ActiveCfg = Debug|x86
+		{12A1407B-BACE-4F2A-9413-A4C8DD9E4922}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

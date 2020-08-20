@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowMappingXbox", "ShadowMapping\ShadowMappingXbox.csproj", "{71A5FBB2-9D4E-4387-8009-43A8D94A5FE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEffectPipeline", "CustomEffectPipeline\CustomEffectPipeline.csproj", "{54478695-083C-4AD4-B10A-08179B1E7E58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowMappingContent", "ShadowMapping\Content\ShadowMappingContent.contentproj", "{9819F247-B858-4A59-BBFB-191A6F9B3736}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54478695-083C-4AD4-B10A-08179B1E7E58}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{54478695-083C-4AD4-B10A-08179B1E7E58}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{54478695-083C-4AD4-B10A-08179B1E7E58}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{54478695-083C-4AD4-B10A-08179B1E7E58}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{9819F247-B858-4A59-BBFB-191A6F9B3736}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{9819F247-B858-4A59-BBFB-191A6F9B3736}.Release|Xbox 360.ActiveCfg = Release|x86
+		{71A5FBB2-9D4E-4387-8009-43A8D94A5FE5}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{71A5FBB2-9D4E-4387-8009-43A8D94A5FE5}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{71A5FBB2-9D4E-4387-8009-43A8D94A5FE5}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{71A5FBB2-9D4E-4387-8009-43A8D94A5FE5}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{71A5FBB2-9D4E-4387-8009-43A8D94A5FE5}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{71A5FBB2-9D4E-4387-8009-43A8D94A5FE5}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

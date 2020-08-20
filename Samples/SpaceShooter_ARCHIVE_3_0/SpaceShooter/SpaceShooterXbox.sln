@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceShooterXbox", "SpaceShooter\SpaceShooterXbox.csproj", "{F59B7D88-2B83-438E-B6D9-4D30DEF80B27}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E59C7A9B-4417-4126-8745-9F1B56D4516B} = {E59C7A9B-4417-4126-8745-9F1B56D4516B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceProcessors", "SpaceProcessors\SpaceProcessors.csproj", "{E59C7A9B-4417-4126-8745-9F1B56D4516B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F59B7D88-2B83-438E-B6D9-4D30DEF80B27}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{F59B7D88-2B83-438E-B6D9-4D30DEF80B27}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{F59B7D88-2B83-438E-B6D9-4D30DEF80B27}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{F59B7D88-2B83-438E-B6D9-4D30DEF80B27}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{F59B7D88-2B83-438E-B6D9-4D30DEF80B27}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{F59B7D88-2B83-438E-B6D9-4D30DEF80B27}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{E59C7A9B-4417-4126-8745-9F1B56D4516B}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{E59C7A9B-4417-4126-8745-9F1B56D4516B}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{E59C7A9B-4417-4126-8745-9F1B56D4516B}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{E59C7A9B-4417-4126-8745-9F1B56D4516B}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{0DD8BE2B-12EE-4EE6-86A1-A70575555982}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{0DD8BE2B-12EE-4EE6-86A1-A70575555982}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

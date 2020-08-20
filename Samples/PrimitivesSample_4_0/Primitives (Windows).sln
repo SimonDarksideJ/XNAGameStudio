@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primitives", "Primitives\PrimitivesWindows.csproj", "{3EAF9CBA-CF6C-4DC0-9A37-70C724864162}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "PrimitivesContent", "PrimitivesContent\PrimitivesContent.contentproj", "{A1AE8302-9883-412D-8885-44539FD9EF7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EAF9CBA-CF6C-4DC0-9A37-70C724864162}.Debug|x86.ActiveCfg = Debug|x86
+		{3EAF9CBA-CF6C-4DC0-9A37-70C724864162}.Debug|x86.Build.0 = Debug|x86
+		{3EAF9CBA-CF6C-4DC0-9A37-70C724864162}.Release|x86.ActiveCfg = Release|x86
+		{3EAF9CBA-CF6C-4DC0-9A37-70C724864162}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

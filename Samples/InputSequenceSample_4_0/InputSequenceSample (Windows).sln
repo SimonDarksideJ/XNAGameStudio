@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputSequenceSampleWindows", "InputSequenceSample\InputSequenceSampleWindows.csproj", "{DDAD163E-1F69-4EE2-8ABE-FE9542346DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputSequenceSampleContent", "InputSequenceSample\Content\InputSequenceSampleContent.contentproj", "{BCB334AF-A897-473F-9F6F-F19A8AFC712A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDAD163E-1F69-4EE2-8ABE-FE9542346DCC}.Debug|x86.ActiveCfg = Debug|x86
+		{DDAD163E-1F69-4EE2-8ABE-FE9542346DCC}.Debug|x86.Build.0 = Debug|x86
+		{DDAD163E-1F69-4EE2-8ABE-FE9542346DCC}.Release|x86.ActiveCfg = Release|x86
+		{DDAD163E-1F69-4EE2-8ABE-FE9542346DCC}.Release|x86.Build.0 = Release|x86
+		{BCB334AF-A897-473F-9F6F-F19A8AFC712A}.Debug|x86.ActiveCfg = Debug|x86
+		{BCB334AF-A897-473F-9F6F-F19A8AFC712A}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

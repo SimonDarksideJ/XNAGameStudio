@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UISample", "UISample\UISample.csproj", "{C9BACD92-D8AC-41E1-8CC8-6EBC207501FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UISampleContent", "UISampleContent\UISampleContent.contentproj", "{21FB26C2-8278-4E56-9281-3F2220AB7684}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9BACD92-D8AC-41E1-8CC8-6EBC207501FE}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{C9BACD92-D8AC-41E1-8CC8-6EBC207501FE}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{C9BACD92-D8AC-41E1-8CC8-6EBC207501FE}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{C9BACD92-D8AC-41E1-8CC8-6EBC207501FE}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{C9BACD92-D8AC-41E1-8CC8-6EBC207501FE}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{C9BACD92-D8AC-41E1-8CC8-6EBC207501FE}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{21FB26C2-8278-4E56-9281-3F2220AB7684}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{21FB26C2-8278-4E56-9281-3F2220AB7684}.Release|Windows Phone.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,964 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history"><title>SpaceShooter</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 
+	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="SpaceShooter" />
+<MSHelp:RLTitle Title="SpaceShooter" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.SpaceShooter" />
+<MSHelp:Keyword Index="A" Term="686fb0ba-882b-90b9-f977-931299c8131e" />
+<MSHelp:Keyword Index="K" Term="SpaceShooter" />
+
+<MSHelp:Attr Name="AssetID" Value="686fb0ba-882b-90b9-f977-931299c8131e" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA_31" />
+<MSHelp:Attr Name="ProjType" Value="XNA_30" />
+<MSHelp:Attr Name="Technology" Value="XNA" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  <h1>SpaceShooter</h1>
+  
+  <p><i>by Frank Savage</i></p>
+  <p>
+    The SpaceShooter minigame is the official released version of a tutorial session I did for the Korea Game Conference in 2008. 
+    The idea was to try and create a basic prototype of a Wing Commander-style game using XNA Game Studio. Despite having worked 
+    with XNA Game Studio for nearly 4 years, I was still surprised at how easy it was to create this minigame. This represents a 
+    grand total of 25 hours of coding, finding data on the web, building a procedural star field with MapZone, and lifting the 
+    rest of content from other XNA Game Studio samples and starter kits. Add to that another 5 hours of bug fixes, FxCop cleanup, 
+    garbage collector cleanup, and writing this document!
+  </p>
+  <p>This document covers the following topics:</p>
+  <ul><li><a href="#ID4EU">Getting Started</a></li><li><a href="#ID4EKB">Artificial Intelligence</a></li><li><a href="#ID4EVB">Collision Detection</a></li><li><a href="#ID4ECC">Content</a></li><li><a href="#ID4E4C">Future Directions</a></li></ul>
+  <a name="ID4EU"></a><h1 class="heading">Getting Started</h1><div id="ID4EU" class="hxnx1">
+    
+    <p>
+      Most everything in SpaceShooter is a <b>GameComponent</b>. I did this to demonstrate the enormous flexibility inherent 
+      in the <b>GameComponent</b> class in terms of updating, rendering, loading content, initializing, and so on. This also 
+      means that most pieces of SpaceShooter are reusable in your own games. Because I wanted to show all of the different ways 
+      you can use <b>GameComponent</b>, the usage from one component to another varies greatly in terms of how update, draw, 
+      load content, and initialize are called.
+    </p>
+    <p>
+      The game is pretty simple. We simply call update and draw for all of the game components, either explicitly or the base 
+      update and draw methods call them if they are added to the list of game components. There is also a collision detection 
+      routine that runs in the update function to detect when the ships hit each other or when the ships are hit by the bolts. 
+      The draw simply draws everything.
+    </p>
+    <p>
+      There is a simple AI for the enemy ship that just keeps him moving to evade you. Once he takes a certain amount of damage, 
+      he explodes and the game is over, you win! If he somehow manages to destroy you, you lose. (Note that you probably have to 
+      be pretty bad at the game to lose since he doesn’t even shoot at you.)
+    </p>
+    <p>
+      The particle system is from the GPU particle sample, and the game includes the bloom effect sample as well to ensure the 
+      game looks as next gen as possible.
+    </p>
+    <p>
+      The rest of this document discusses some specific code in the game and how it works. Lastly, it covers some future 
+      directions you could take the game to get even closer to a full space shooter type of game.
+    </p>
+  </div>
+  <a name="ID4EKB"></a><h1 class="heading">Artificial Intelligence</h1><div id="ID4EKB" class="hxnx1">
+    
+    <p>
+      Many people starting out as game developers make some serious mistakes around the game AI. This is because most beginner 
+      game developers (and many seasoned veterans, I might add) do not understand the real purpose behind the game's AI. The AI 
+      in a game exists to show the player a good time. Period. It's all too easy to make a game AI that is very hard and punishes 
+      the player mercilessly and too often. In fact, many game designers feel like they've achieved their goal when this happens. 
+      Most people playing games, however, are not trained fighter pilots or soldiers or race car drivers or sword-wielding barbarians. 
+      The game's job is to make them feel like they are! The AI must be designed to reinforce the illusion that if you just had a 
+      space fighter, you are the right guy to protect the Earth from thousands upon thousands of bad guys. The AI in SpaceShooter 
+      has one key component needed to do that. It simply flies and turns, varying the speed at which the fighter is moving and the 
+      direction and turn rates as it turns. That's it. Very simple behavior that results in a fun chase to swat the bad guy down! 
+    </p>
+    <p>
+      The code is also simple. Every two seconds, the AI checks to see if it wants to change its current behavior. If the answer 
+      is no, we move on. If yes, we then create a new random amount to move the thumbsticks to represent a new direction to turn 
+      to and new velocity to drive the ship at. (Note how the enemy ship AI uses the exact same input mechanism and physics as 
+      the player! No cheating!) Over time, the AI simply eases back on the thumbsticks so that ship straightens out in the new 
+      direction. This generates surprisingly effective behavior. When you play against it, you will be amazed at the enemy ship 
+      seems to turn in response to your actions or heads towards the Earth with a sinister purpose or is just great at avoiding 
+      your shots, etc. All from this really simple AI!
+    </p>
+    <p>
+      The next step in improving the game is to create a pursuit and fire AI and to add more than one ship. You can also coordinate 
+      the AIs so that the AI the player has targeted goes into evade mode and the other ship goes into pursuit and fire mode. Look 
+      for a future installment that adds the pursuit and fire AI and pits these two ships against you.
+    </p>
+  </div>
+  <a name="ID4EVB"></a><h1 class="heading">Collision Detection</h1><div id="ID4EVB" class="hxnx1">
+    
+    <p>
+      The XNA Framework ships with a number of useful collision detection primitives, but tying them together into a coherent 
+      collision detection system is still not easy. In the SpaceShooter case, I ran into two problems. 
+    </p>
+    <p>
+      The first was reproducing the same bug I've created every single time I've built a game when I first add weapon fire and 
+      collision detection. (You would think after 20 years of doing game development, I would know better. The only thing I can 
+      say in my defense is that when it happens, I know exactly how to fix it!) Whenever I first add bolts and collision detection 
+      and fire the first time, I create a bolt near my ship and set it loose. It then promptly collides with my ship, either 
+      blowing it up or severely damaging it. There are a number of interesting ways to fix this. My favorite is to simply tag 
+      the bolt with an owner and, if the bolt hits the thing that created it, ignore the collision, which is what I do in 
+      SpaceShooter.
+    </p>
+    <p>
+      The other problem is the "bullet through tissue paper" problem. This refers to a collision that should have happened but 
+      didn't because the colliding objects passed right through each other between two frames of game updates. If the bullet 
+      moves farther than its extent radius every 60th of second, this problem is almost guaranteed to occur. There are a number 
+      of solutions to this problem as well, and the one I adopted was a variation on the ones I've seen used in the past tailored 
+      to the collision primitives we have. I simply cast a ray in the direction the bolt is moving and see if the ray intersects 
+      the collision volume of any of the ships in the game. If it does, I change the bolt's collision sphere radius to the distance 
+      it will move in one frame and if that collision sphere intersects or contains the sphere of the ship hit by the ray, we have 
+      a collision.
+    </p>
+    <p>
+      Note that there are also simple mathematical ways to find the closest point between any two moving 
+      objects over some time interval. If I know the time of closest approach for any two objects across a given frame, I can 
+      simply move them to that location and check the collision extents. This avoids the problem as well and is somewhat less 
+      complex than the solution I adopted, but the idea here was to provide the community with ways to solve these kinds of 
+      problems that didn't require a textbook on linear algebra.
+    </p>
+  </div>
+  <a name="ID4ECC"></a><h1 class="heading">Content</h1><div id="ID4ECC" class="hxnx1">
+    
+    <p>
+      Space games are also fun to build because it's typically pretty easy to find content on the web or generate yourself, 
+      even if you (like me) are terrible at creating art. The sun's texture is hand-built from some close-ups of sunspots, 
+      which are quite easy to find on the web. All of the Earth's textures came from the 
+      <a href="http://visibleearth.nasa.gov/">http://visibleearth.nasa.gov/</a> website. There are some very large textures 
+      available there, but I chose a size of 2K × 1K or the download for this game would have been awfully big! It's 
+      easy to grab higher resolution versions of the clouds, diffuse textures, height maps, and night lights. Doing this 
+      really improves the representation of Earth in terms of visual quality.
+    </p>
+    <p>
+      The starfield was made using the MapZone Pro tool available from our partners at Allegorithmic. You can easily download 
+      the tool from the Creators partner page: 
+      <a href="http://creators.xna.com/en-US/partners">http://creators.xna.com/en-US/partners</a>.
+    </p>
+    <p>
+      The ships were taken from the ShipGame premium starter kit. (Note that you must be a Creator's Club member to download 
+      the starter kit but you probably all are, right?) Note that the ships are using a different shader than the default 
+      shader from ShipGame. Luckily, SpaceShooter includes a Content Pipeline processor that shows you how to do this.
+    </p>
+    <p>
+      There are also Content Pipeline processors to create a normal map from a height map since this is apparently becoming 
+      something of a lost art on the web today in terms of available code. The Earth’s height map is simply grayscale texture, 
+      which the processor changes into a normal map.
+    </p>
+    <p>
+      The sound effects and bolts are from the original Spacewar starter kit. The explosions and particle trails are simply 
+      instances of particle emitters based on the GPU Particle sample.
+    </p>
+    <p>
+      The idea here was to show how you can make a pretty good looking game with readily available content from a wide 
+      variety of sources.
+    </p>
+  </div>
+  <a name="ID4E4C"></a><h1 class="heading">Future Directions</h1><div id="ID4E4C" class="hxnx1">
+    
+    <p>I mentioned the pursuit and fire AI earlier. That one is definitely in the works.</p>
+    <p>Observant readers who've downloaded and played with the minigame probably noticed the stubs in the SpaceShip class 
+    for network play. My plan is to do a co-op play version where two players take on four AIs, which should make for some 
+    interesting multiplayer network code.</p>
+    <p>Once these elements are present, you have everything you need to build a real space game with multiplayer co-op, 
+    dozens of missions, and a compelling storyline. So I guess I better get those pieces built so I can start playing the 
+    great games this minigame will hopefully inspire. ;}</p>
+  </div>
+</div><div class="footer" id="footer"><p>© 2009 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: SpaceShooter">xnags@microsoft.com</a>.</p></div></div></body></html>

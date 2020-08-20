@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.0">
+  <App xmlns="" ProductID="{ba971892-de57-4fa4-b7e6-65d9d6da5af7}" Title="MIX10 Graphics Demo" RuntimeType="XNA" Version="1.0.0.0" Genre="Apps.Games" Author="" Description="" Publisher="">
+    <IconPath IsRelative="true" IsResource="false">GameThumbnail.png</IconPath>
+    <Capabilities />
+    <Tasks>
+      <DefaultTask Name="_default" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="MIX10GraphicsDemoToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">GameThumbnail.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>ReachGraphicsDemo</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>
+

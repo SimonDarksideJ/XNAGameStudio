@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillboardXbox", "Billboard\BillboardXbox.csproj", "{2CE23A7A-1E00-436C-AC62-CF3E8BADFDC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillboardPipeline", "BillboardPipeline\BillboardPipeline.csproj", "{0EB3B2B1-33E8-4A58-9B4F-0175951D043C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillboardContent", "Billboard\Content\BillboardContent.contentproj", "{A9421073-A4B7-4642-B995-6B9FC66C0137}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CE23A7A-1E00-436C-AC62-CF3E8BADFDC5}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{2CE23A7A-1E00-436C-AC62-CF3E8BADFDC5}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{2CE23A7A-1E00-436C-AC62-CF3E8BADFDC5}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{2CE23A7A-1E00-436C-AC62-CF3E8BADFDC5}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{2CE23A7A-1E00-436C-AC62-CF3E8BADFDC5}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{2CE23A7A-1E00-436C-AC62-CF3E8BADFDC5}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{0EB3B2B1-33E8-4A58-9B4F-0175951D043C}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{0EB3B2B1-33E8-4A58-9B4F-0175951D043C}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{0EB3B2B1-33E8-4A58-9B4F-0175951D043C}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{0EB3B2B1-33E8-4A58-9B4F-0175951D043C}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{A9421073-A4B7-4642-B995-6B9FC66C0137}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{A9421073-A4B7-4642-B995-6B9FC66C0137}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

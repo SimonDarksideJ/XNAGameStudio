@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitScreenSample (Phone)", "SplitScreenSample\SplitScreenSample\SplitScreenSample (Phone).csproj", "{052A9D6B-401F-45E0-BF8F-E556F3DCFED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitScreenSampleContent", "SplitScreenSample\SplitScreenSampleContent\SplitScreenSampleContent.contentproj", "{74C0CD2F-DDB9-47FF-8D20-C366CA68853E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74C0CD2F-DDB9-47FF-8D20-C366CA68853E}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{74C0CD2F-DDB9-47FF-8D20-C366CA68853E}.Release|Windows Phone.ActiveCfg = Release|x86
+		{052A9D6B-401F-45E0-BF8F-E556F3DCFED4}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{052A9D6B-401F-45E0-BF8F-E556F3DCFED4}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{052A9D6B-401F-45E0-BF8F-E556F3DCFED4}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{052A9D6B-401F-45E0-BF8F-E556F3DCFED4}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{052A9D6B-401F-45E0-BF8F-E556F3DCFED4}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{052A9D6B-401F-45E0-BF8F-E556F3DCFED4}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

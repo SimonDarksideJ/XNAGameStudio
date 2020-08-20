@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneEchoSamplePhone", "MicrophoneEchoSample\MicrophoneEchoSamplePhone.csproj", "{9C37FBBD-2D2D-42AD-8A6C-FFE922DD9095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneEchoSampleContent", "MicrophoneEchoSampleContent\MicrophoneEchoSampleContent.contentproj", "{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Debug|x86 = Debug|x86
+		Release|Windows Phone = Release|Windows Phone
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C37FBBD-2D2D-42AD-8A6C-FFE922DD9095}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{9C37FBBD-2D2D-42AD-8A6C-FFE922DD9095}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{9C37FBBD-2D2D-42AD-8A6C-FFE922DD9095}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{9C37FBBD-2D2D-42AD-8A6C-FFE922DD9095}.Debug|x86.ActiveCfg = Debug|Windows Phone
+		{9C37FBBD-2D2D-42AD-8A6C-FFE922DD9095}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{9C37FBBD-2D2D-42AD-8A6C-FFE922DD9095}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{9C37FBBD-2D2D-42AD-8A6C-FFE922DD9095}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{9C37FBBD-2D2D-42AD-8A6C-FFE922DD9095}.Release|x86.ActiveCfg = Release|Windows Phone
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Debug|x86.ActiveCfg = Debug|x86
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Release|Windows Phone.ActiveCfg = Release|x86
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

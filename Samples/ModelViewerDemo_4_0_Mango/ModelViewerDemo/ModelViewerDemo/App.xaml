@@ -1,0 +1,39 @@
+﻿<!--
+ App.xaml
+
+ Microsoft XNA Community Game Platform
+ Copyright (C) Microsoft Corporation. All rights reserved.
+-->
+
+    
+ <Application 
+    x:Class="ModelViewerDemo.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:xna="clr-namespace:Microsoft.Xna.Framework;assembly=Microsoft.Xna.Framework.Interop"
+    xmlns:my="clr-namespace:ModelViewerDemo">
+
+    <!--Application Resources-->
+    <Application.Resources>
+    </Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Required object that handles lifetime events for the application-->
+        <shell:PhoneApplicationService 
+            Launching="Application_Launching" Closing="Application_Closing" 
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+        
+        <!-- Creates the XNA GraphicsDevice for us -->
+        <xna:SharedGraphicsDeviceManager />
+        
+        <!-- We have to add this after the SharedGraphicsDeviceManager so it gets called after 
+             the SharedGraphicsDeviceManager has a chance to create the GraphicsDevice -->
+        <my:SharingModeManager />
+        
+        <!-- Now we can add our renderer which assumes the above two objects have been added to the application. -->
+        <my:Renderer />
+    </Application.ApplicationLifetimeObjects>
+
+</Application>

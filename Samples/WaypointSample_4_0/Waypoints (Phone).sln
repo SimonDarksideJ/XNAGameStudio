@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waypoints (Phone)", "Waypoints\Waypoints\Waypoints (Phone).csproj", "{7185D7E2-C02F-4568-B204-A4420A4F97ED}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "WaypointsContent", "Waypoints\WaypointsContent\WaypointsContent.contentproj", "{1D5AE122-1BCB-4362-96B7-AFCB7513BE41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7185D7E2-C02F-4568-B204-A4420A4F97ED}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{7185D7E2-C02F-4568-B204-A4420A4F97ED}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{7185D7E2-C02F-4568-B204-A4420A4F97ED}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{7185D7E2-C02F-4568-B204-A4420A4F97ED}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{7185D7E2-C02F-4568-B204-A4420A4F97ED}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{7185D7E2-C02F-4568-B204-A4420A4F97ED}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

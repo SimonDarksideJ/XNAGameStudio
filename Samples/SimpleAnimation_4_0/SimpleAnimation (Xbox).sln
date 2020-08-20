@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAnimationXbox", "SimpleAnimation\SimpleAnimationXbox.csproj", "{5CD2F062-4BDE-40D6-BFD3-A199E17BEFA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAnimationContent", "SimpleAnimation\Content\SimpleAnimationContent.contentproj", "{CEC006D2-64EF-4637-8F5F-82776033AB85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC006D2-64EF-4637-8F5F-82776033AB85}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{CEC006D2-64EF-4637-8F5F-82776033AB85}.Release|Xbox 360.ActiveCfg = Release|x86
+		{5CD2F062-4BDE-40D6-BFD3-A199E17BEFA4}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{5CD2F062-4BDE-40D6-BFD3-A199E17BEFA4}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{5CD2F062-4BDE-40D6-BFD3-A199E17BEFA4}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{5CD2F062-4BDE-40D6-BFD3-A199E17BEFA4}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{5CD2F062-4BDE-40D6-BFD3-A199E17BEFA4}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{5CD2F062-4BDE-40D6-BFD3-A199E17BEFA4}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

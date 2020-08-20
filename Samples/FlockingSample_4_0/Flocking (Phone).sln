@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flocking (Phone)", "Flocking\Flocking\Flocking (Phone).csproj", "{D357C696-3015-4D7A-89AA-971077E647F7}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "FlockingContent", "Flocking\FlockingContent\FlockingContent.contentproj", "{E32187E9-81EA-4BD0-BAD4-D98BED915D9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Windows Phone = Debug|Windows Phone
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Windows Phone = Release|Windows Phone
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Debug|Mixed Platforms.Build.0 = Debug|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Debug|Mixed Platforms.Deploy.0 = Debug|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Debug|x86.ActiveCfg = Debug|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Debug|x86.Build.0 = Debug|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Release|Mixed Platforms.Build.0 = Release|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Release|Mixed Platforms.Deploy.0 = Release|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Release|x86.ActiveCfg = Release|Windows Phone
+		{D357C696-3015-4D7A-89AA-971077E647F7}.Release|x86.Build.0 = Release|Windows Phone		
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

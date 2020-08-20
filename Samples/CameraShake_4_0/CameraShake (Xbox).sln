@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraShake (Xbox)", "CameraShake\CameraShake\CameraShake (Xbox).csproj", "{BD94AB94-BA34-490D-9D87-136EEFF41147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraShakeContent", "CameraShake\CameraShakeContent\CameraShakeContent.contentproj", "{B710D1F1-E305-40FD-9D61-8AC9760AD4B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B710D1F1-E305-40FD-9D61-8AC9760AD4B6}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{B710D1F1-E305-40FD-9D61-8AC9760AD4B6}.Release|Xbox 360.ActiveCfg = Release|x86
+		{BD94AB94-BA34-490D-9D87-136EEFF41147}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{BD94AB94-BA34-490D-9D87-136EEFF41147}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{BD94AB94-BA34-490D-9D87-136EEFF41147}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{BD94AB94-BA34-490D-9D87-136EEFF41147}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{BD94AB94-BA34-490D-9D87-136EEFF41147}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{BD94AB94-BA34-490D-9D87-136EEFF41147}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

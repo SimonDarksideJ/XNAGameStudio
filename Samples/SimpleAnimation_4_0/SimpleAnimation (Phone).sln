@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAnimationPhone", "SimpleAnimation\SimpleAnimationPhone.csproj", "{8DC22003-B1DB-4670-A06F-7DD128CAD744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAnimationContent", "SimpleAnimation\Content\SimpleAnimationContent.contentproj", "{CEC006D2-64EF-4637-8F5F-82776033AB85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC006D2-64EF-4637-8F5F-82776033AB85}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{CEC006D2-64EF-4637-8F5F-82776033AB85}.Release|Windows Phone.ActiveCfg = Release|x86
+		{8DC22003-B1DB-4670-A06F-7DD128CAD744}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{8DC22003-B1DB-4670-A06F-7DD128CAD744}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{8DC22003-B1DB-4670-A06F-7DD128CAD744}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{8DC22003-B1DB-4670-A06F-7DD128CAD744}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{8DC22003-B1DB-4670-A06F-7DD128CAD744}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{8DC22003-B1DB-4670-A06F-7DD128CAD744}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

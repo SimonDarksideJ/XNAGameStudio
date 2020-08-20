@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneycombRush", "HoneycombRush\HoneycombRush\HoneycombRush.csproj", "{FA9FE251-9F90-473F-9332-7B5320BB5779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneycombRushContent", "HoneycombRush\HoneycombRushContent\HoneycombRushContent.contentproj", "{FC6DB8B7-9874-4AA9-B574-2B5420740327}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA9FE251-9F90-473F-9332-7B5320BB5779}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{FA9FE251-9F90-473F-9332-7B5320BB5779}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{FA9FE251-9F90-473F-9332-7B5320BB5779}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{FA9FE251-9F90-473F-9332-7B5320BB5779}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{FA9FE251-9F90-473F-9332-7B5320BB5779}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{FA9FE251-9F90-473F-9332-7B5320BB5779}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{FC6DB8B7-9874-4AA9-B574-2B5420740327}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{FC6DB8B7-9874-4AA9-B574-2B5420740327}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

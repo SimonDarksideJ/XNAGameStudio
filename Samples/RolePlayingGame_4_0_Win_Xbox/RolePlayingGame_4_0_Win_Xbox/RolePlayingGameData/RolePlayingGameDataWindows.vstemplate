@@ -1,0 +1,73 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>RolePlayingGameDataWindows</Name>
+    <Description>Data types needed by the Role-Playing Game starter kit.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>RolePlayingGameDataWindows</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="RolePlayingGameDataWindows.csproj" File="RolePlayingGameDataWindows.csproj" ReplaceParameters="true">
+      <Folder Name="Animation" TargetFolderName="Animation">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AnimatingSprite.cs">AnimatingSprite.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Animation.cs">Animation.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Characters" TargetFolderName="Characters">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Character.cs">Character.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CharacterClass.cs">CharacterClass.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CharacterLevelDescription.cs">CharacterLevelDescription.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CharacterLevelingStatistics.cs">CharacterLevelingStatistics.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FightingCharacter.cs">FightingCharacter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Monster.cs">Monster.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Player.cs">Player.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="QuestNpc.cs">QuestNpc.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ContentEntry.cs">ContentEntry.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ContentObject.cs">ContentObject.cs</ProjectItem>
+      <Folder Name="Data" TargetFolderName="Data">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Int32Range.cs">Int32Range.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StatisticsRange.cs">StatisticsRange.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StatisticsValue.cs">StatisticsValue.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StatisticsValueStack.cs">StatisticsValueStack.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Direction.cs">Direction.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="GameStartDescription.cs">GameStartDescription.cs</ProjectItem>
+      <Folder Name="Gear" TargetFolderName="Gear">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Armor.cs">Armor.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Equipment.cs">Equipment.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Gear.cs">Gear.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GearDrop.cs">GearDrop.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Item.cs">Item.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Weapon.cs">Weapon.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Map" TargetFolderName="Map">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Chest.cs">Chest.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FixedCombat.cs">FixedCombat.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Inn.cs">Inn.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Map.cs">Map.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Portal.cs">Portal.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RandomCombat.cs">RandomCombat.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Store.cs">Store.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StoreCategory.cs">StoreCategory.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MapEntry.cs">MapEntry.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Quests" TargetFolderName="Quests">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Quest.cs">Quest.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="QuestLine.cs">QuestLine.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="QuestRequirement.cs">QuestRequirement.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Spell.cs">Spell.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WeightedContentEntry.cs">WeightedContentEntry.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WorldEntry.cs">WorldEntry.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WorldObject.cs">WorldObject.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

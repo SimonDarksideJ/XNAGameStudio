@@ -1,0 +1,2713 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Phone.Controls.Toolkit</name>
+    </assembly>
+    <members>
+        <member name="T:System.Windows.Controls.ItemsControlHelper">
+            <summary>
+            The ItemContainerGenerator provides useful utilities for ItemsControls.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="F:System.Windows.Controls.ItemsControlHelper._itemsHost">
+            <summary>
+            A Panel that is used as the ItemsHost of the ItemsControl.  This
+            property will only be valid when the ItemsControl is live in the
+            tree and has generated containers for some of its items.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.ItemsControlHelper._scrollHost">
+            <summary>
+            A ScrollViewer that is used to scroll the items in the ItemsHost.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.ItemsControlHelper.#ctor(System.Windows.Controls.ItemsControl)">
+            <summary>
+            Initializes a new instance of the ItemContainerGenerator.
+            </summary>
+            <param name="control">
+            The ItemsControl being tracked by the ItemContainerGenerator.
+            </param>
+        </member>
+        <member name="M:System.Windows.Controls.ItemsControlHelper.OnApplyTemplate">
+            <summary>
+            Apply a control template to the ItemsControl.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.ItemsControlHelper.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Windows.Style)">
+            <summary>
+            Prepares the specified container to display the specified item.
+            </summary>
+            <param name="element">
+            Container element used to display the specified item.
+            </param>
+            <param name="parentItemContainerStyle">
+            The ItemContainerStyle for the parent ItemsControl.
+            </param>
+        </member>
+        <member name="M:System.Windows.Controls.ItemsControlHelper.UpdateItemContainerStyle(System.Windows.Style)">
+            <summary>
+            Update the style of any generated items when the ItemContainerStyle
+            has been changed.
+            </summary>
+            <param name="itemContainerStyle">The ItemContainerStyle.</param>
+            <remarks>
+            Silverlight does not support setting a Style multiple times, so we
+            only attempt to set styles on elements whose style hasn't already
+            been set.
+            </remarks>
+        </member>
+        <member name="M:System.Windows.Controls.ItemsControlHelper.ScrollIntoView(System.Windows.FrameworkElement)">
+            <summary>
+            Scroll the desired element into the ScrollHost's viewport.
+            </summary>
+            <param name="element">Element to scroll into view.</param>
+        </member>
+        <member name="P:System.Windows.Controls.ItemsControlHelper.ItemsControl">
+            <summary>
+            Gets or sets the ItemsControl being tracked by the
+            ItemContainerGenerator.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.ItemsControlHelper.ItemsHost">
+            <summary>
+            Gets a Panel that is used as the ItemsHost of the ItemsControl.
+            This property will only be valid when the ItemsControl is live in
+            the tree and has generated containers for some of its items.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.ItemsControlHelper.ScrollHost">
+            <summary>
+            Gets a ScrollViewer that is used to scroll the items in the
+            ItemsHost.
+            </summary>
+        </member>
+        <member name="T:System.Windows.LengthConverter">
+            <summary>
+            Converts instances of other types to and from instances of a double that
+            represent an object measurement such as a height or width.
+            </summary>
+            <QualityBand>Stable</QualityBand>
+        </member>
+        <member name="F:System.Windows.LengthConverter.UnitToPixelConversions">
+            <summary>
+            Conversions from units to pixels.
+            </summary>
+        </member>
+        <member name="M:System.Windows.LengthConverter.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:System.Windows.LengthConverter" /> class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.LengthConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Determines whether conversion is possible from a specified type to a
+            <see cref="T:System.Double" /> that represents an object
+            measurement.
+            </summary>
+            <param name="typeDescriptorContext">
+            An <see cref="T:System.ComponentModel.ITypeDescriptorContext" />
+            that provides a format context.
+            </param>
+            <param name="sourceType">
+            A <see cref="T:System.Type" /> that represents the type you want to
+            convert from.
+            </param>
+            <returns>
+            True if this converter can perform the conversion; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:System.Windows.LengthConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            Converts from the specified value to values of the
+            <see cref="T:System.Double" /> type.
+            </summary>
+            <param name="typeDescriptorContext">
+            An <see cref="T:System.ComponentModel.ITypeDescriptorContext" />
+            that provides a format context.
+            </param>
+            <param name="cultureInfo">
+            The <see cref="T:System.Globalization.CultureInfo" /> to use as the
+            current culture.
+            </param>
+            <param name="source">The value to convert.</param>
+            <returns>The converted value.</returns>
+        </member>
+        <member name="M:System.Windows.LengthConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Returns whether the type converter can convert a measurement to the
+            specified type.
+            </summary>
+            <param name="typeDescriptorContext">
+            An <see cref="T:System.ComponentModel.ITypeDescriptorContext" />
+            that provides a format context.
+            </param>
+            <param name="destinationType">
+            A <see cref="T:System.Type" /> that represents the type you want to
+            convert to.
+            </param>
+            <returns>
+            True if this converter can perform the conversion; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:System.Windows.LengthConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Converts the specified measurement to the specified type.
+            </summary>
+            <param name="typeDescriptorContext">
+            An object that provides a format context.
+            </param>
+            <param name="cultureInfo">
+            The <see cref="T:System.Globalization.CultureInfo" /> to use as the
+            current culture.
+            </param>
+            <param name="value">The value to convert.</param>
+            <param name="destinationType">
+            A <see cref="T:System.Type" /> that represents the type you want to
+            convert to.
+            </param>
+            <returns>The converted value.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MathHelpers.GetAngle(System.Double,System.Double)">
+            <summary>
+            Return the angle of the hypotenuse of a triangle with
+            sides defined by deltaX and deltaY.
+            </summary>
+            <param name="deltaX">Change in X.</param>
+            <param name="deltaY">Change in Y.</param>
+            <returns>The angle (in degrees).</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MathHelpers.GetDistance(System.Windows.Point,System.Windows.Point)">
+            <summary>
+            Return the distance between two points
+            </summary>
+            <param name="p0">The first point.</param>
+            <param name="p1">The second point.</param>
+            <returns>The distance between the two points.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MathHelpers.ToPoint(Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Helper extension method for turning XNA's Vector2 type into a Point
+            </summary>
+            <param name="v">The Vector2.</param>
+            <returns>The point.</returns>
+        </member>
+        <member name="T:System.Windows.Controls.NumericExtensions">
+            <summary>
+            Numeric utility methods used by controls.  These methods are similar in
+            scope to the WPF DoubleUtil class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.NumericExtensions.IsNaN(System.Double)">
+            <summary>
+            Check if a number isn't really a number.
+            </summary>
+            <param name="value">The number to check.</param>
+            <returns>
+            True if the number is not a number, false if it is a number.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.NumericExtensions.IsGreaterThan(System.Double,System.Double)">
+            <summary>
+            Determine if one number is greater than another.
+            </summary>
+            <param name="left">First number.</param>
+            <param name="right">Second number.</param>
+            <returns>
+            True if the first number is greater than the second, false
+            otherwise.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.NumericExtensions.AreClose(System.Double,System.Double)">
+            <summary>
+            Determine if two numbers are close in value.
+            </summary>
+            <param name="left">First number.</param>
+            <param name="right">Second number.</param>
+            <returns>
+            True if the first number is close in value to the second, false
+            otherwise.
+            </returns>
+        </member>
+        <member name="T:System.Windows.Controls.NumericExtensions.NanUnion">
+            <summary>
+            NanUnion is a C++ style type union used for efficiently converting
+            a double into an unsigned long, whose bits can be easily
+            manipulated.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.NumericExtensions.NanUnion.FloatingValue">
+            <summary>
+            Floating point representation of the union.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.NumericExtensions.NanUnion.IntegerValue">
+            <summary>
+            Integer representation of the union.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.SafeRaise">
+            <summary>
+            A helper class for raising events safely.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.SafeRaise.Raise(System.EventHandler{System.EventArgs},System.Object)">
+            <summary>
+            Raises an event in a thread-safe manner, also does the null check.
+            </summary>
+            <param name="eventToRaise">The event to raise.</param>
+            <param name="sender">The event sender.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.SafeRaise.Raise``1(System.EventHandler{``0},System.Object,``0)">
+            <summary>
+            Raises an event in a thread-safe manner, also does the null check.
+            </summary>
+            <typeparam name="T">The event args type.</typeparam>
+            <param name="eventToRaise">The event to raise.</param>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event args.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.SafeRaise.Raise``1(System.EventHandler{``0},System.Object,Microsoft.Phone.Controls.SafeRaise.GetEventArgs{``0})">
+            <summary>
+            Raise an event in a thread-safe manner, with the required null check. Lazily creates event args.
+            </summary>
+            <typeparam name="T">The event args type.</typeparam>
+            <param name="eventToRaise">The event to raise.</param>
+            <param name="sender">The event sender.</param>
+            <param name="getEventArgs">The delegate to return the event args if needed.</param>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.SafeRaise.GetEventArgs`1">
+            <summary>
+            This is a method that returns event args, used for lazy creation.
+            </summary>
+            <typeparam name="T">The event type.</typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:System.Windows.Controls.TimeTypeConverter">
+            <summary>
+            Allows time to be set from xaml.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+            <remarks>This converter is used by xaml and thus uses the 
+            English formats.</remarks>
+        </member>
+        <member name="F:System.Windows.Controls.TimeTypeConverter._timeFormats">
+            <summary>
+            BackingField for the TimeFormats being used.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.TimeTypeConverter._dateFormats">
+            <summary>
+            BackingField for the DateFormats being used.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.TimeTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Determines whether this instance can convert from 
+            the specified type descriptor context.
+            </summary>
+            <param name="typeDescriptorContext">The type descriptor context.</param>
+            <param name="sourceType">Type of the source.</param>
+            <returns>
+            	<c>True</c> if this instance can convert from the specified type 
+            descriptor context; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.TimeTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Determines whether this instance can convert to the specified 
+            type descriptor context.
+            </summary>
+            <param name="typeDescriptorContext">The type descriptor context.</param>
+            <param name="destinationType">Type of the destination.</param>
+            <returns>
+            	<c>True</c> if this instance can convert to the specified type 
+            descriptor context; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.TimeTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            Converts instances of other data types into instances of DateTime that
+            represent a time.
+            </summary>
+            <param name="typeDescriptorContext">
+            The type descriptor context.
+            </param>
+            <param name="cultureInfo">The culture used to convert. This culture
+            is not used during conversion, but a specific set of formats is used.</param>
+            <param name="source">
+            The string being converted to the DateTime.
+            </param>
+            <returns>
+            A DateTime that is the value of the conversion.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.TimeTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Converts a DateTime into a string.
+            </summary>
+            <param name="typeDescriptorContext">
+            The type descriptor context.
+            </param>
+            <param name="cultureInfo">The culture used to convert.</param>
+            <param name="value">
+            The value that is being converted to a specified type.
+            </param>
+            <param name="destinationType">
+            The type to convert the value to.
+            </param>
+            <returns>
+            The value of the conversion to the specified type.
+            </returns>
+        </member>
+        <member name="T:System.Tuple`2">
+            <summary>
+            Represents a 2-tuple, or pair.
+            </summary>
+            <typeparam name="T1">The type of the tuple's first component.</typeparam>
+            <typeparam name="T2">The type of the tuple's second component.</typeparam>
+        </member>
+        <member name="M:System.Tuple`2.#ctor(`0,`1)">
+            <summary>
+            Initializes a new instance of the Tuple(T1, T2) class.
+            </summary>
+            <param name="item1">The value of the tuple's first component.</param>
+            <param name="item2">The value of the tuple's second component.</param>
+        </member>
+        <member name="P:System.Tuple`2.Item1">
+            <summary>
+            Gets the value of the current Tuple(T1, T2) object's first component.
+            </summary>
+        </member>
+        <member name="P:System.Tuple`2.Item2">
+            <summary>
+            Gets the value of the current Tuple(T1, T2) object's second component.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.TypeConverters">
+            <summary>
+            Common TypeConverter functionality.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.TypeConverters.CanConvertTo``1(System.Type)">
+            <summary>
+            Determines whether conversion is possible to a specified type.
+            </summary>
+            <typeparam name="T">Expected type of the converter.</typeparam>
+            <param name="destinationType">
+            Identifies the data type to evaluate for conversion.
+            </param>
+            <returns>
+            A value indicating whether conversion is possible.
+            </returns>
+        </member>
+        <member name="M:System.Windows.Controls.TypeConverters.ConvertTo(System.ComponentModel.TypeConverter,System.Object,System.Type)">
+            <summary>
+            Attempts to convert a specified object to an instance of the
+            desired type.
+            </summary>
+            <param name="converter">TypeConverter instance.</param>
+            <param name="value">The object being converted.</param>
+            <param name="destinationType">
+            The type to convert the value to.
+            </param>
+            <returns>
+            The value of the conversion to the specified type.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.ContextMenu">
+            <summary>
+            Represents a pop-up menu that enables a control to expose functionality that is specific to the context of the control.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Primitives.MenuBase">
+            <summary>
+            Represents a control that defines choices for users to select.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.MenuBase.ItemContainerStyleProperty">
+            <summary>
+            Identifies the ItemContainerStyle dependency property.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.MenuBase.#ctor">
+            <summary>
+            Initializes a new instance of the MenuBase class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.MenuBase.IsItemItsOwnContainerOverride(System.Object)">
+            <summary>
+            Determines whether the specified item is, or is eligible to be, its own item container.
+            </summary>
+            <param name="item">The item to check whether it is an item container.</param>
+            <returns>True if the item is a MenuItem or a Separator; otherwise, false.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.MenuBase.GetContainerForItemOverride">
+            <summary>
+            Creates or identifies the element used to display the specified item.
+            </summary>
+            <returns>A MenuItem.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.MenuBase.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>
+            Prepares the specified element to display the specified item.
+            </summary>
+            <param name="element">Element used to display the specified item.</param>
+            <param name="item">Specified item.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.MenuBase.HasDefaultValue(System.Windows.Controls.Control,System.Windows.DependencyProperty)">
+            <summary>
+            Checks whether a control has the default value for a property.
+            </summary>
+            <param name="control">The control to check.</param>
+            <param name="property">The property to check.</param>
+            <returns>True if the property has the default value; false otherwise.</returns>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.MenuBase.ItemContainerStyle">
+            <summary>
+            Gets or sets the Style that is applied to the container element generated for each item.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu.VisibilityGroupName">
+            <summary>
+            Visibility state group.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu.OpenVisibilityStateName">
+            <summary>
+            Open visibility state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu.ClosedVisibilityStateName">
+            <summary>
+            Closed visibility state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._page">
+            <summary>
+            Stores a reference to the PhoneApplicationPage that contains the owning object.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._applicationBarIconButtons">
+            <summary>
+            Stores a reference to a list of ApplicationBarIconButtons for which the Click event is being handled.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._backgroundResizeStoryboard">
+            <summary>
+            Stores a reference to the Storyboard used to animate the background resize.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._openingStoryboard">
+            <summary>
+            Stores a reference to the Storyboard used to animate the ContextMenu open.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._openingStoryboardPlaying">
+            <summary>
+            Tracks whether the Storyboard used to animate the ContextMenu open is active.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._openingStoryboardReleaseThreshold">
+            <summary>
+            Tracks the threshold for releasing contact during the ContextMenu open animation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._dispatcherTimer">
+            <summary>
+            Stores a reference to the timer used to detect the tap+hold gesture that opens the ContextMenu.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._manipulationStartPoint">
+            <summary>
+            Tracks the start point for manipulation events (in root-relative coordinates).
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._rootVisual">
+            <summary>
+            Stores a reference to the current root visual.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._mousePosition">
+            <summary>
+            Stores the last known mouse position (via MouseMove).
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._owner">
+            <summary>
+            Stores a reference to the object that owns the ContextMenu.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._popup">
+            <summary>
+            Stores a reference to the current Popup.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._overlay">
+            <summary>
+            Stores a reference to the current overlay.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._popupAlignmentPoint">
+            <summary>
+            Stores a reference to the current Popup alignment point.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu._settingIsOpen">
+            <summary>
+            Stores a value indicating whether the IsOpen property is being updated by ContextMenu.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu.IsZoomEnabledProperty">
+            <summary>
+            Identifies the IsZoomEnabled dependency property.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu.VerticalOffsetProperty">
+            <summary>
+            Identifies the VerticalOffset dependency property.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnHorizontalVerticalOffsetChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the HorizontalOffset or VerticalOffset DependencyProperty.
+            </summary>
+            <param name="o">DependencyObject that changed.</param>
+            <param name="e">Event data for the DependencyPropertyChangedEvent.</param>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu.IsOpenProperty">
+            <summary>
+            Identifies the IsOpen dependency property.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnIsOpenChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the IsOpen DependencyProperty.
+            </summary>
+            <param name="o">DependencyObject that changed.</param>
+            <param name="e">Event data for the DependencyPropertyChangedEvent.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnIsOpenChanged(System.Boolean)">
+            <summary>
+            Handles changes to the IsOpen property.
+            </summary>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnOpened(System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when the Opened event occurs.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnClosed(System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when the Closed event occurs.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.#ctor">
+            <summary>
+            Initializes a new instance of the ContextMenu class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnApplyTemplate">
+            <summary>
+            Called when a new Template is applied.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleStoryboardCompleted(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Completed event of the opening Storyboard.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.GoToVisualState(System.String,System.Boolean)">
+            <summary>
+            Uses VisualStateManager to go to a new visual state.
+            </summary>
+            <param name="stateName">The state to transition to.</param>
+            <param name="useTransitions">true to use a System.Windows.VisualTransition to transition between states; otherwise, false.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Called when the left mouse button is pressed.
+            </summary>
+            <param name="e">The event data for the MouseLeftButtonDown event.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Responds to the KeyDown event.
+            </summary>
+            <param name="e">The event data for the KeyDown event.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleLayoutUpdated(System.Object,System.EventArgs)">
+            <summary>
+            Handles the LayoutUpdated event to capture Application.Current.RootVisual.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleRootVisualMouseMove(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Handles the RootVisual's MouseMove event to track the last mouse position.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleRootVisualManipulationCompleted(System.Object,System.Windows.Input.ManipulationCompletedEventArgs)">
+            <summary>
+            Handles the ManipulationCompleted event for the RootVisual.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleOwnerFrameworkElementManipulationStarted(System.Object,System.Windows.Input.ManipulationStartedEventArgs)">
+            <summary>
+            Handles the ManipulationStarted event of the Owner element.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleOwnerFrameworkElementManipulationDeltaOrCompleted(System.Object,System.EventArgs)">
+            <summary>
+            Handles the ManipulationDelta or ManipulationCompleted events of the Owner element.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleDispatcherTimerTick(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Tick event of the DispatcherTimer for tap+hold detection.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenu.ApplicationBarMirrorProperty">
+            <summary>
+            Identifies the ApplicationBarMirror dependency property.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnApplicationBarMirrorChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the ApplicationBarMirror DependencyProperty.
+            </summary>
+            <param name="o">DependencyObject that changed.</param>
+            <param name="e">Event data for the DependencyPropertyChangedEvent.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OnApplicationBarMirrorChanged(Microsoft.Phone.Shell.IApplicationBar,Microsoft.Phone.Shell.IApplicationBar)">
+            <summary>
+            Handles changes to the ApplicationBarMirror property.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleEventThatClosesContextMenu(System.Object,System.EventArgs)">
+            <summary>
+            Handles an event which should close an open ContextMenu.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleOwnerLoaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Loaded event of the Owner.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleOwnerUnloaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the Unloaded event of the Owner.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandlePageBackKeyPress(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Handles the BackKeyPress of the containing PhoneApplicationPage.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.InitializeRootVisual">
+            <summary>
+            Initialize the _rootVisual property (if possible and not already done).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.FocusNextItem(System.Boolean)">
+            <summary>
+            Sets focus to the next item in the ContextMenu.
+            </summary>
+            <param name="down">True to move the focus down; false to move it up.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.ChildMenuItemClicked">
+            <summary>
+            Called when a child MenuItem is clicked.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleContextMenuOrRootVisualSizeChanged(System.Object,System.Windows.SizeChangedEventArgs)">
+            <summary>
+            Handles the SizeChanged event for the ContextMenu or RootVisual.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.HandleOverlayMouseButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Handles the MouseButtonDown events for the overlay.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.UpdateContextMenuPlacement">
+            <summary>
+            Updates the location and size of the Popup and overlay.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.OpenPopup(System.Windows.Point)">
+            <summary>
+            Opens the Popup.
+            </summary>
+            <param name="position">Position to place the Popup.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenu.ClosePopup">
+            <summary>
+            Closes the Popup.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.ContextMenu.Owner">
+            <summary>
+            Gets or sets the owning object for the ContextMenu.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.ContextMenu.IsZoomEnabled">
+            <summary>
+            Gets or sets a value indicating whether the background will zoom out when the ContextMenu is open.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.ContextMenu.VerticalOffset">
+            <summary>
+            Gets or sets the vertical distance between the target origin and the popup alignment point.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.ContextMenu.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether the ContextMenu is visible.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.ContextMenu.Opened">
+            <summary>
+            Occurs when a particular instance of a ContextMenu opens.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.ContextMenu.Closed">
+            <summary>
+            Occurs when a particular instance of a ContextMenu closes.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.ContextMenuService">
+            <summary>
+            Provides the system implementation for displaying a ContextMenu.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenuService.GetContextMenu(System.Windows.DependencyObject)">
+            <summary>
+            Gets the value of the ContextMenu property of the specified object.
+            </summary>
+            <param name="element">Object to query concerning the ContextMenu property.</param>
+            <returns>Value of the ContextMenu property.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenuService.SetContextMenu(System.Windows.DependencyObject,Microsoft.Phone.Controls.ContextMenu)">
+            <summary>
+            Sets the value of the ContextMenu property of the specified object.
+            </summary>
+            <param name="element">Object to set the property on.</param>
+            <param name="value">Value to set.</param>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ContextMenuService.ContextMenuProperty">
+            <summary>
+            Identifies the ContextMenu attached property.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ContextMenuService.OnContextMenuChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the ContextMenu DependencyProperty.
+            </summary>
+            <param name="o">DependencyObject that changed.</param>
+            <param name="e">Event data for the DependencyPropertyChangedEvent.</param>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.MenuItem">
+            <summary>
+            Represents a selectable item inside a Menu or ContextMenu.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="T:System.Windows.Controls.HeaderedItemsControl">
+            <summary>
+            Represents a control that contains a collection of items and a header.
+            </summary>
+            <QualityBand>Stable</QualityBand>
+        </member>
+        <member name="F:System.Windows.Controls.HeaderedItemsControl.HeaderProperty">
+            <summary>
+            Identifies the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.Header" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.Header" />
+            dependency property.
+            </value>
+            <remarks>
+            Note: WPF defines this property via a call to AddOwner of
+            HeaderedContentControl's HeaderProperty.
+            </remarks>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.OnHeaderPropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            HeaderProperty property changed handler.
+            </summary>
+            <param name="d">
+            HeaderedItemsControl that changed its Header.
+            </param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="F:System.Windows.Controls.HeaderedItemsControl.HeaderTemplateProperty">
+            <summary>
+            Identifies the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.HeaderTemplate" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.HeaderTemplate" />
+            dependency property.
+            </value>
+            <remarks>
+            Note: WPF defines this property via a call to AddOwner of
+            HeaderedContentControl's HeaderTemplateProperty.
+            </remarks>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.OnHeaderTemplatePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            HeaderTemplateProperty property changed handler.
+            </summary>
+            <param name="d">
+            HeaderedItemsControl that changed its HeaderTemplate.
+            </param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="F:System.Windows.Controls.HeaderedItemsControl.ItemContainerStyleProperty">
+            <summary>
+            Identifies the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.ItemContainerStyle" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.ItemContainerStyle" />
+            dependency property.
+            </value>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.OnItemContainerStylePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            ItemContainerStyleProperty property changed handler.
+            </summary>
+            <param name="d">
+            HeaderedItemsControl that changed its ItemContainerStyle.
+            </param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" /> class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.OnHeaderChanged(System.Object,System.Object)">
+            <summary>
+            Called when the value of the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.Header" />
+            property changes.
+            </summary>
+            <param name="oldHeader">
+            The old value of the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.Header" />
+            property.
+            </param>
+            <param name="newHeader">
+            The new value of the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.Header" />
+            property.
+            </param>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.OnHeaderTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)">
+            <summary>
+            Called when the value of the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.HeaderTemplate" />
+            property changes.
+            </summary>
+            <param name="oldHeaderTemplate">
+            The old value of the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.HeaderTemplate" />
+            property.
+            </param>
+            <param name="newHeaderTemplate">
+            The new value of the
+            <see cref="P:System.Windows.Controls.HeaderedItemsControl.HeaderTemplate" />
+            property.
+            </param>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for the
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" /> when a
+            new template is applied.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)">
+            <summary>
+            Prepares the specified element to display the specified item.
+            </summary>
+            <param name="element">
+            The container element used to display the specified item.
+            </param>
+            <param name="item">The content to display.</param>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.PreparePrepareHeaderedItemsControlContainerForItemOverride(System.Windows.DependencyObject,System.Object,System.Windows.Controls.ItemsControl,System.Windows.Style)">
+            <summary>
+            Prepares the specified container to display the specified item.
+            </summary>
+            <param name="element">
+            Container element used to display the specified item.
+            </param>
+            <param name="item">Specified item to display.</param>
+            <param name="parent">The parent ItemsControl.</param>
+            <param name="parentItemContainerStyle">
+            The ItemContainerStyle for the parent ItemsControl.
+            </param>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.PrepareHeaderedItemsControlContainer(System.Windows.Controls.HeaderedItemsControl,System.Object,System.Windows.Controls.ItemsControl,System.Windows.Style)">
+            <summary>
+            Prepare a PrepareHeaderedItemsControlContainer container for an
+            item.
+            </summary>
+            <param name="control">Container to prepare.</param>
+            <param name="item">Item to be placed in the container.</param>
+            <param name="parentItemsControl">The parent ItemsControl.</param>
+            <param name="parentItemContainerStyle">
+            The ItemContainerStyle for the parent ItemsControl.
+            </param>
+        </member>
+        <member name="M:System.Windows.Controls.HeaderedItemsControl.HasDefaultValue(System.Windows.Controls.Control,System.Windows.DependencyProperty)">
+            <summary>
+            Check whether a control has the default value for a property.
+            </summary>
+            <param name="control">The control to check.</param>
+            <param name="property">The property to check.</param>
+            <returns>
+            True if the property has the default value; false otherwise.
+            </returns>
+        </member>
+        <member name="P:System.Windows.Controls.HeaderedItemsControl.HeaderIsItem">
+            <summary>
+            Gets or sets a value indicating whether the Header property has been
+            set to the item of an ItemsControl.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.HeaderedItemsControl.Header">
+            <summary>
+            Gets or sets the item that labels the control.
+            </summary>
+            <value>
+            The item that labels the control. The default value is null.
+            </value>
+        </member>
+        <member name="P:System.Windows.Controls.HeaderedItemsControl.HeaderTemplate">
+            <summary>
+            Gets or sets a data template that is used to display the contents of
+            the control's header.
+            </summary>
+            <value>
+            Gets or sets a data template that is used to display the contents of
+            the control's header. The default is null.
+            </value>
+        </member>
+        <member name="P:System.Windows.Controls.HeaderedItemsControl.ItemContainerStyle">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Style" /> that is
+            applied to the container element generated for each item.
+            </summary>
+            <value>
+            The <see cref="T:System.Windows.Style" /> that is applied to the
+            container element generated for each item. The default is null.
+            </value>
+        </member>
+        <member name="P:System.Windows.Controls.HeaderedItemsControl.ItemsControlHelper">
+            <summary>
+            Gets the ItemsControlHelper that is associated with this control.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.MenuItem._isFocused">
+            <summary>
+            Stores a value indicating whether this element has logical focus.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.MenuItem.CommandProperty">
+            <summary>
+            Identifies the Command dependency property.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnCommandChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the Command DependencyProperty.
+            </summary>
+            <param name="o">DependencyObject that changed.</param>
+            <param name="e">Event data for the DependencyPropertyChangedEvent.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnCommandChanged(System.Windows.Input.ICommand,System.Windows.Input.ICommand)">
+            <summary>
+            Handles changes to the Command property.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.MenuItem.CommandParameterProperty">
+            <summary>
+            Identifies the CommandParameter dependency property.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnCommandParameterChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the CommandParameter DependencyProperty.
+            </summary>
+            <param name="o">DependencyObject that changed.</param>
+            <param name="e">Event data for the DependencyPropertyChangedEvent.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnCommandParameterChanged">
+            <summary>
+            Handles changes to the CommandParameter property.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.#ctor">
+            <summary>
+            Initializes a new instance of the MenuItem class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnApplyTemplate">
+            <summary>
+            Called when the template's tree is generated.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Invoked whenever an unhandled GotFocus event reaches this element in its route.
+            </summary>
+            <param name="e">A RoutedEventArgs that contains event data.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>
+            Raises the LostFocus routed event by using the event data that is provided.
+            </summary>
+            <param name="e">A RoutedEventArgs that contains event data.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Called whenever the mouse enters a MenuItem.
+            </summary>
+            <param name="e">The event data for the MouseEnter event.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Called whenever the mouse leaves a MenuItem.
+            </summary>
+            <param name="e">The event data for the MouseLeave event.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Called when the left mouse button is released.
+            </summary>
+            <param name="e">The event data for the MouseLeftButtonUp event.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Responds to the KeyDown event.
+            </summary>
+            <param name="e">The event data for the KeyDown event.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Called when the Items property changes.
+            </summary>
+            <param name="e">The event data for the ItemsChanged event.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.OnClick">
+            <summary>
+            Called when a MenuItem is clicked and raises a Click event.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.HandleCanExecuteChanged(System.Object,System.EventArgs)">
+            <summary>
+            Handles the CanExecuteChanged event of the Command property.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.UpdateIsEnabled(System.Boolean)">
+            <summary>
+            Updates the IsEnabled property.
+            </summary>
+            <remarks>
+            WPF overrides the local value of IsEnabled according to ICommand, so Silverlight does, too.
+            </remarks>
+            <param name="changeVisualState">True if ChangeVisualState should be called.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.HandleIsEnabledChanged(System.Object,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the IsEnabled property changes.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.HandleLoaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when the Loaded event is raised.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MenuItem.ChangeVisualState(System.Boolean)">
+            <summary>
+            Changes to the correct visual state(s) for the control.
+            </summary>
+            <param name="useTransitions">True to use transitions; otherwise false.</param>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.MenuItem.Click">
+            <summary>
+            Occurs when a MenuItem is clicked.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.MenuItem.ParentMenuBase">
+            <summary>
+            Gets or sets a reference to the MenuBase parent.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.MenuItem.Command">
+            <summary>
+            Gets or sets the command associated with the menu item.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.MenuItem.CommandParameter">
+            <summary>
+            Gets or sets the parameter to pass to the Command property of a MenuItem.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Separator">
+            <summary>
+            Control that is used to separate items in items controls.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Separator.#ctor">
+            <summary>
+            Initializes a new instance of the Separator class.
+            </summary>
+        </member>
+        <member name="T:System.Windows.HierarchicalDataTemplate">
+            <summary>
+            Represents a <see cref="T:System.Windows.DataTemplate" /> that supports
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" /> objects,
+            such as <see cref="T:System.Windows.Controls.TreeViewItem" />.
+            </summary>
+            <QualityBand>Stable</QualityBand>
+        </member>
+        <member name="F:System.Windows.HierarchicalDataTemplate._itemTemplate">
+            <summary>
+            The DataTemplate to apply to the ItemTemplate property on a
+            generated HeaderedItemsControl (such as a MenuItem or a
+            TreeViewItem), to indicate how to display items from the next level
+            in the data hierarchy.
+            </summary>
+        </member>
+        <member name="F:System.Windows.HierarchicalDataTemplate._itemContainerStyle">
+            <summary>
+            The Style to apply to the ItemContainerStyle property on a generated
+            HeaderedItemsControl (such as a MenuItem or a TreeViewItem), to
+            indicate how to style items from the next level in the data
+            hierarchy.
+            </summary>
+        </member>
+        <member name="M:System.Windows.HierarchicalDataTemplate.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:System.Windows.HierarchicalDataTemplate" /> class.
+            </summary>
+        </member>
+        <member name="P:System.Windows.HierarchicalDataTemplate.ItemsSource">
+            <summary>
+            Gets or sets the collection that is used to generate content for the
+            next sublevel in the data hierarchy.
+            </summary>
+            <value>
+            The collection that is used to generate content for the next
+            sublevel in the data hierarchy.  The default value is null.
+            </value>
+        </member>
+        <member name="P:System.Windows.HierarchicalDataTemplate.IsItemTemplateSet">
+            <summary>
+            Gets a value indicating whether the ItemTemplate property was set on
+            the template.
+            </summary>
+        </member>
+        <member name="P:System.Windows.HierarchicalDataTemplate.ItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.DataTemplate" /> to
+            apply to the
+            <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplate" />
+            property on a generated
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" />, such
+            as a <see cref="T:System.Windows.Controls.TreeViewItem" />, to
+            indicate how to display items from the next sublevel in the data
+            hierarchy.
+            </summary>
+            <value>
+            The <see cref="T:System.Windows.DataTemplate" /> to apply to the
+            <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplate" />
+            property on a generated
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" />, such
+            as a <see cref="T:System.Windows.Controls.TreeViewItem" />, to
+            indicate how to display items from the next sublevel in the data
+            hierarchy.
+            </value>
+        </member>
+        <member name="P:System.Windows.HierarchicalDataTemplate.IsItemContainerStyleSet">
+            <summary>
+            Gets a value indicating whether the ItemContainerStyle property was
+            set on the template.
+            </summary>
+        </member>
+        <member name="P:System.Windows.HierarchicalDataTemplate.ItemContainerStyle">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Style" /> that is
+            applied to the item container for each child item.
+            </summary>
+            <value>
+            The style that is applied to the item container for each child item.
+            </value>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.TimePickerPage">
+            <summary>
+            Represents a page used by the TimePicker control that allows the user to choose a time (hour/minute/am/pm).
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Primitives.DateTimePickerPageBase">
+            <summary>
+            Represents a base class for pages that work with DateTimePickerBase to allow users to choose a date/time.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Primitives.IDateTimePickerPage">
+            <summary>
+            Represents an interface for DatePicker/TimePicker to use for communicating with a picker page.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.IDateTimePickerPage.Value">
+            <summary>
+            Gets or sets the DateTime to show in the picker page and to set when the user makes a selection.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.DateTimePickerPageBase.InitializeDateTimePickerPage(Microsoft.Phone.Controls.Primitives.LoopingSelector,Microsoft.Phone.Controls.Primitives.LoopingSelector,Microsoft.Phone.Controls.Primitives.LoopingSelector)">
+            <summary>
+            Initializes the DateTimePickerPageBase class; must be called from the subclass's constructor.
+            </summary>
+            <param name="primarySelector">Primary selector.</param>
+            <param name="secondarySelector">Secondary selector.</param>
+            <param name="tertiarySelector">Tertiary selector.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.DateTimePickerPageBase.OnBackKeyPress(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Called when the Back key is pressed.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.DateTimePickerPageBase.GetSelectorsOrderedByCulturePattern">
+            <summary>
+            Gets a sequence of LoopingSelector parts ordered according to culture string for date/time formatting.
+            </summary>
+            <returns>LoopingSelectors ordered by culture-specific priority.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.DateTimePickerPageBase.GetSelectorsOrderedByCulturePattern(System.String,System.Char[],Microsoft.Phone.Controls.Primitives.LoopingSelector[])">
+            <summary>
+            Gets a sequence of LoopingSelector parts ordered according to culture string for date/time formatting.
+            </summary>
+            <param name="pattern">Culture-specific date/time format string.</param>
+            <param name="patternCharacters">Date/time format string characters for the primary/secondary/tertiary LoopingSelectors.</param>
+            <param name="selectors">Instances for the primary/secondary/tertiary LoopingSelectors.</param>
+            <returns>LoopingSelectors ordered by culture-specific priority.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.DateTimePickerPageBase.OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+            Called when a page is no longer the active page in a frame.
+            </summary>
+            <param name="e">An object that contains the event data.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.DateTimePickerPageBase.OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+            Called when a page becomes the active page in a frame.
+            </summary>
+            <param name="e">An object that contains the event data.</param>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimePickerPageBase.Value">
+            <summary>
+            Gets or sets the DateTime to show in the picker page and to set when the user makes a selection.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.TimePickerPage.#ctor">
+            <summary>
+            Initializes a new instance of the TimePickerPage control.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.TimePickerPage.GetSelectorsOrderedByCulturePattern">
+            <summary>
+            Gets a sequence of LoopingSelector parts ordered according to culture string for date/time formatting.
+            </summary>
+            <returns>LoopingSelectors ordered by culture-specific priority.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.TimePickerPage.OnOrientationChanged(Microsoft.Phone.Controls.OrientationChangedEventArgs)">
+            <summary>
+            Handles changes to the page's Orientation property.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.TimePickerPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Primitives.ILoopingSelectorDataSource">
+            <summary>
+            Defines how the LoopingSelector communicates with data source.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ILoopingSelectorDataSource.GetNext(System.Object)">
+            <summary>
+            Get the next datum, relative to an existing datum.
+            </summary>
+            <param name="relativeTo">The datum the return value will be relative to.</param>
+            <returns>The next datum.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ILoopingSelectorDataSource.GetPrevious(System.Object)">
+            <summary>
+            Get the previous datum, relative to an existing datum.
+            </summary>
+            <param name="relativeTo">The datum the return value will be relative to.</param>
+            <returns>The previous datum.</returns>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.ILoopingSelectorDataSource.SelectedItem">
+            <summary>
+            The selected item. Should never be null.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.Primitives.ILoopingSelectorDataSource.SelectionChanged">
+            <summary>
+            Raised when the selection changes.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.DatePicker">
+            <summary>
+            Represents a control that allows the user to choose a date (day/month/year).
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.DateTimePickerBase">
+            <summary>
+            Represents a base class for controls that allow the user to choose a date/time.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.DateTimePickerBase.ValueProperty">
+            <summary>
+            Identifies the Value DependencyProperty.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.DateTimePickerBase.OnValueChanged(Microsoft.Phone.Controls.DateTimeValueChangedEventArgs)">
+            <summary>
+            Called when the value changes.
+            </summary>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.DateTimePickerBase.ValueStringProperty">
+            <summary>
+            Identifies the ValueString DependencyProperty.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.DateTimePickerBase.ValueStringFormatProperty">
+            <summary>
+            Identifies the ValueStringFormat DependencyProperty.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.DateTimePickerBase.HeaderProperty">
+            <summary>
+            Identifies the Header DependencyProperty.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.DateTimePickerBase.HeaderTemplateProperty">
+            <summary>
+            Identifies the HeaderTemplate DependencyProperty.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.DateTimePickerBase.PickerPageUriProperty">
+            <summary>
+            Identifies the PickerPageUri DependencyProperty.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.DateTimePickerBase.#ctor">
+            <summary>
+            Initializes a new instance of the DateTimePickerBase control.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.DateTimePickerBase.OnApplyTemplate">
+            <summary>
+            Called when the control's Template is expanded.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.DateTimePickerBase.ValueChanged">
+            <summary>
+            Event that is invoked when the Value property changes.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimePickerBase.Value">
+            <summary>
+            Gets or sets the DateTime value.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimePickerBase.ValueString">
+            <summary>
+            Gets the string representation of the selected value.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimePickerBase.ValueStringFormat">
+            <summary>
+            Gets or sets the format string to use when converting the Value property to a string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimePickerBase.Header">
+            <summary>
+            Gets or sets the header of the control.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimePickerBase.HeaderTemplate">
+            <summary>
+            Gets or sets the template used to display the control's header.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimePickerBase.PickerPageUri">
+            <summary>
+            Gets or sets the Uri to use for loading the IDateTimePickerPage instance when the control is clicked.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.DatePicker.#ctor">
+            <summary>
+            Initializes a new instance of the DatePicker control.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.DatePickerPage">
+            <summary>
+            Represents a page used by the DatePicker control that allows the user to choose a date (day/month/year).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.DatePickerPage.#ctor">
+            <summary>
+            Initializes a new instance of the DatePickerPage control.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.DatePickerPage.GetSelectorsOrderedByCulturePattern">
+            <summary>
+            Gets a sequence of LoopingSelector parts ordered according to culture string for date/time formatting.
+            </summary>
+            <returns>LoopingSelectors ordered by culture-specific priority.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.DatePickerPage.OnOrientationChanged(Microsoft.Phone.Controls.OrientationChangedEventArgs)">
+            <summary>
+            Handles changes to the page's Orientation property.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.DatePickerPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.DateTimePickerResources">
+            <summary>
+            Provides access to the localized resources used by the DatePicker and TimePicker.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimePickerResources.DatePickerTitle">
+            <summary>
+            Gets the localized DatePicker title string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimePickerResources.TimePickerTitle">
+            <summary>
+            Gets the localized TimePicker title string.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Primitives.DateTimeWrapper">
+            <summary>
+            Implements a wrapper for DateTime that provides formatted strings for DatePicker.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.#ctor(System.DateTime)">
+            <summary>
+            Initializes a new instance of the DateTimeWrapper class.
+            </summary>
+            <param name="dateTime">DateTime to wrap.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.CurrentCultureUsesTwentyFourHourClock">
+            <summary>
+            Returns a value indicating whether the current culture uses a 24-hour clock.
+            </summary>
+            <returns>True if it uses a 24-hour clock; false otherwise.</returns>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.DateTime">
+            <summary>
+            Gets the DateTime being wrapped.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.YearNumber">
+            <summary>
+            Gets the 4-digit year as a string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.MonthNumber">
+            <summary>
+            Gets the 2-digit month as a string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.MonthName">
+            <summary>
+            Gets the month name as a string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.DayNumber">
+            <summary>
+            Gets the 2-digit day as a string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.DayName">
+            <summary>
+            Gets the day name as a string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.HourNumber">
+            <summary>
+            Gets the hour as a string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.MinuteNumber">
+            <summary>
+            Gets the 2-digit minute as a string.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.DateTimeWrapper.AmPmString">
+            <summary>
+            Gets the AM/PM designator as a string.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.DateTimeValueChangedEventArgs">
+            <summary>
+            Provides data for the DatePicker and TimePicker's ValueChanged event.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.DateTimeValueChangedEventArgs.#ctor(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Initializes a new instance of the DateTimeValueChangedEventArgs class.
+            </summary>
+            <param name="oldDateTime">Old DateTime value.</param>
+            <param name="newDateTime">New DateTime value.</param>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimeValueChangedEventArgs.OldDateTime">
+            <summary>
+            Gets or sets the old DateTime value.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DateTimeValueChangedEventArgs.NewDateTime">
+            <summary>
+            Gets or sets the new DateTime value.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.TimePicker">
+            <summary>
+            Represents a control that allows the user to choose a time (hour/minute/am/pm).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.TimePicker.#ctor">
+            <summary>
+            Initializes a new instance of the TimePicker control.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.GestureListener">
+            <summary>
+            The GestureListener class raises events similar to those provided by the XNA TouchPanel, but it is designed for
+            Silverlight's event-driven model, rather than XNA's loop/polling model, and it also takes care of the hit testing
+            and event routing.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureListener.Touch_FrameReported(System.Object,System.Windows.Input.TouchFrameEventArgs)">
+            <summary>
+            Handle touch events.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureListener.TouchStart">
+            <summary>
+            A touch has started.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureListener.TouchDelta">
+            <summary>
+            A touch is continuing...
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureListener.TouchComplete">
+            <summary>
+            A touch has ended.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureListener.RaiseGestureEvent``1(System.Func{Microsoft.Phone.Controls.GestureListener,System.EventHandler{``0}},System.Func{``0},System.Boolean)">
+            <summary>
+            This method does all the necessary work to raise a gesture event. It sets the orginal source, does the routing,
+            handles Handled, and only creates the event args if they are needed.
+            </summary>
+            <typeparam name="T">This is the type of event args that will be raised.</typeparam>
+            <param name="eventGetter">Gets the specific event to raise.</param>
+            <param name="argsGetter">Lazy creator function for the event args.</param>
+            <param name="releaseMouseCapture">Indicates whether the mouse capture should be released </param>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.Tap">
+            <summary>
+            The Tap event (touch, release, no movement).
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.DoubleTap">
+            <summary>
+            The DoubleTap event is raised instead of Tap if the time between two taps is short eonugh.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.Hold">
+            <summary>
+            The Hold event (touch and hold for one second)
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.DragStarted">
+            <summary>
+            The DragStarted event.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.DragDelta">
+            <summary>
+            The DragDelta event.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.DragCompleted">
+            <summary>
+            The DragCompleted event. Will be raised on touch release after a drag, or
+            when a second touch point is added.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.Flick">
+            <summary>
+            The Flick event. Raised when a drag that was fast enough ends with a release.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.PinchStarted">
+            <summary>
+            The PinchStarted event.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.PinchDelta">
+            <summary>
+            Any two-touch point (two finger) operation.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.GestureListener.PinchCompleted">
+            <summary>
+            The end of a pinch operation.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.GestureEventArgs">
+            <summary>
+            The base class for all gesture events. Also used by Tap, DoubleTap and Hold.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureEventArgs.GetPosition(System.Windows.UIElement)">
+            <summary>
+            Returns the position of the gesture's starting point relative to a given UIElement.
+            </summary>
+            <param name="relativeTo">The return value will be relative to this element.</param>
+            <returns>The gesture's starting point relative to the given UIElement.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureEventArgs.GetPosition(System.Windows.UIElement,System.Windows.Point)">
+            <summary>
+            Returns the position of a given point relative to a given UIElement.
+            </summary>
+            <param name="relativeTo">The return value will be relative to this element.</param>
+            <param name="point">The point to translate.</param>
+            <returns>The given point relative to the given UIElement.</returns>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.GestureEventArgs.Origin0">
+            <summary>
+            The point, in unrotated screen coordinates, where the gesture occurred.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.GestureEventArgs.OriginalSource">
+            <summary>
+            The first hit-testable item under the touch point. Determined by a combination of order in the tree and
+            Z-order.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.GestureEventArgs.Handled">
+            <summary>
+            If an event handler sets this to true, it stops event bubbling.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.DragStartedGestureEventArgs">
+            <summary>
+            The event args used in the DragStarted event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DragStartedGestureEventArgs.Direction">
+            <summary>
+            The direction of the drag gesture, as determined by the initial drag change.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.DragDeltaGestureEventArgs">
+            <summary>
+            The event args used by the DragDelta event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DragDeltaGestureEventArgs.HorizontalChange">
+            <summary>
+            The horizontal (X) change for this drag event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DragDeltaGestureEventArgs.VerticalChange">
+            <summary>
+            The vertical (Y) change for this drag event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DragDeltaGestureEventArgs.Direction">
+            <summary>
+            The direction of the drag gesture, as determined by the initial drag change.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.DragCompletedGestureEventArgs">
+            <summary>
+            The event args used by the DragCompleted event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DragCompletedGestureEventArgs.HorizontalChange">
+            <summary>
+            The total horizontal (X) change of the drag event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DragCompletedGestureEventArgs.VerticalChange">
+            <summary>
+            The total vertical (Y) change of the drag event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DragCompletedGestureEventArgs.Direction">
+            <summary>
+            The direction of the drag gesture, as determined by the initial drag change.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DragCompletedGestureEventArgs.HorizontalVelocity">
+            <summary>
+            The final horizontal (X) velocity of the drag, if the drag was inertial.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.DragCompletedGestureEventArgs.VerticalVelocity">
+            <summary>
+            The final vertical (Y) velocity of the drag, if the drag was inertial.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.FlickGestureEventArgs">
+            <summary>
+            The event args used by the Flick event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.FlickGestureEventArgs.HorizontalVelocity">
+            <summary>
+            The horizontal (X) velocity of the flick.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.FlickGestureEventArgs.VerticalVelocity">
+            <summary>
+            The vertical (Y) velocity of the flick.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.FlickGestureEventArgs.Angle">
+            <summary>
+            The angle of the flick.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.FlickGestureEventArgs.Direction">
+            <summary>
+            The direction of the flick gesture, as determined by the flick velocities.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.MultiTouchGestureEventArgs">
+            <summary>
+            The base class for multi-touch gesture event args. Currently used only for
+            two-finger (pinch) operations.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.MultiTouchGestureEventArgs.GetPosition(System.Windows.UIElement,System.Int32)">
+            <summary>
+            Returns the position of either of the two touch points (0 or 1) relative to
+            the UIElement provided.
+            </summary>
+            <param name="relativeTo">The return value will be relative to this element.</param>
+            <param name="index">The touchpoint to use (0 or 1).</param>
+            <returns>The gesture's starting point relative to the given UIElement.</returns>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.MultiTouchGestureEventArgs.Origin1">
+            <summary>
+            The second touch point. The first is stored in GestureEventArgs.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.PinchStartedGestureEventArgs">
+            <summary>
+            The event args used by the PinchStarted event.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.PinchStartedGestureEventArgs.Distance">
+            <summary>
+            The distance between the two touch points.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.PinchStartedGestureEventArgs.Angle">
+            <summary>
+            The angle defined by the two touch points.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.PinchGestureEventArgs">
+            <summary>
+            The event args used by the PinchDelta and PinchCompleted events.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.PinchGestureEventArgs.DistanceRatio">
+            <summary>
+            Returns the ratio of the current distance between touchpoints / the original distance
+            between the touchpoints.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.PinchGestureEventArgs.TotalAngleDelta">
+            <summary>
+            Returns the difference in angle between the current touch positions and the original
+            touch positions.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.GestureService">
+            <summary>
+            The GestureService class is the helper for getting and setting GestureListeners
+            on elements.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureService.GetGestureListener(System.Windows.DependencyObject)">
+            <summary>
+            Gets a GestureListener for the new element. Will create a new one if necessary.
+            </summary>
+            <param name="obj">The object to get the GestureListener from.</param>
+            <returns>Either the previously existing GestureListener, or a new one.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureService.GetGestureListenerInternal(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Gets the GestureListener on an element. If one is not set, can create a new one
+            so that this will never return null, depending on the state of the createIfMissing
+            flag.
+            </summary>
+            <param name="obj">The object to get the GestureListener from.</param>
+            <param name="createIfMissing">When this is true, if the attached property was not set on the element, it will create one and set it on the element.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureService.SetGestureListener(System.Windows.DependencyObject,Microsoft.Phone.Controls.GestureListener)">
+            <summary>
+            Sets the GestureListener on an element. Needed for XAML, but should not be used in code. Use
+            GetGestureListener instead, which will create a new instance if one is not already set, to 
+            add your handlers to an element.
+            </summary>
+            <param name="obj">The object to set the GestureListener on.</param>
+            <param name="value">The GestureListener.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.GestureService.SetGestureListenerInternal(System.Windows.DependencyObject,Microsoft.Phone.Controls.GestureListener)">
+            <summary>
+            This is used to set the value of the attached DependencyProperty internally.
+            </summary>
+            <param name="obj">The object to set the GestureListener on.</param>
+            <param name="value">The GestureListener.</param>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.GestureService.GestureListenerProperty">
+            <summary>
+            The definition of the GestureListener attached DependencyProperty.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Primitives.LoopingSelector">
+            <summary>
+            An infinitely scrolling, UI- and data-virtualizing selection control.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.LoopingSelector.DataSourceProperty">
+            <summary>
+            The DataSource DependencyProperty
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.LoopingSelector.ItemTemplateProperty">
+            <summary>
+            The ItemTemplate DependencyProperty
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.LoopingSelector.#ctor">
+            <summary>
+            Creates a new LoopingSelector.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.LoopingSelector.IsExpandedProperty">
+            <summary>
+            The IsExpanded DependencyProperty.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.LoopingSelector.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes (such as a rebuilding layout pass) call <see cref="M:FrameworkElement.ApplyTemplate()"/>.
+            In simplest terms, this means the method is called just before a UI element displays in an application.
+            For more information, see Remarks.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.LoopingSelector.Balance">
+            <summary>
+            Balances the items.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.LoopingSelector.DataSource">
+            <summary>
+            The data source that the this control is the view for.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.LoopingSelector.ItemTemplate">
+            <summary>
+            The ItemTemplate property
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.LoopingSelector.ItemSize">
+            <summary>
+            The size of the items, excluding the ItemMargin.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.LoopingSelector.ItemMargin">
+            <summary>
+            The margin around the items, to be a part of the touchable area.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.LoopingSelector.IsExpanded">
+            <summary>
+            The IsExpanded property controls the expanded state of this control.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.Primitives.LoopingSelector.IsExpandedChanged">
+            <summary>
+            The IsExpandedChanged event will be raised whenever the IsExpanded state changes.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem">
+            <summary>
+            The items that will be contained in the LoopingSelector.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.#ctor">
+            <summary>
+            Create a new LoopingSelectorItem.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.SetState(Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.State,System.Boolean)">
+            <summary>
+            Put this item into a new state.
+            </summary>
+            <param name="newState">The new state.</param>
+            <param name="useTransitions">Flag indicating that transitions should be used when going to the new state.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.GetState">
+            <summary>
+            Returns the current state.
+            </summary>
+            <returns>The current state.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.OnApplyTemplate">
+            <summary>
+            Override of OnApplyTemplate
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.Click">
+            <summary>
+            The Click event. This is needed because there is no gesture for touch-down, pause 
+            longer than the Hold time, and touch-up. Tap will not be raise, and Hold is not 
+            adequate.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.State">
+            <summary>
+            The states that this can be in.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.State.Normal">
+            <summary>
+            Not visible
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.State.Expanded">
+            <summary>
+            Visible
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.LoopingSelectorItem.State.Selected">
+            <summary>
+            Selected
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton">
+            <summary>
+            Represents a switch that can be toggled between two states.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.CommonStates">
+            <summary>
+            Common visual states.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.NormalState">
+            <summary>
+            Normal visual state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.DisabledState">
+            <summary>
+            Disabled visual state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.CheckStates">
+            <summary>
+            Check visual states.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.CheckedState">
+            <summary>
+            Checked visual state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.DraggingState">
+            <summary>
+            Dragging visual state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.UncheckedState">
+            <summary>
+            Unchecked visual state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.SwitchRootPart">
+            <summary>
+            Switch root template part name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.SwitchBackgroundPart">
+            <summary>
+            Switch background template part name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.SwitchTrackPart">
+            <summary>
+            Switch track template part name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.SwitchThumbPart">
+            <summary>
+            Switch thumb template part name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._uncheckedTranslation">
+            <summary>
+            The minimum translation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.SwitchForegroundProperty">
+            <summary>
+            Identifies the SwitchForeground dependency property.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._backgroundTranslation">
+            <summary>
+            The background TranslateTransform.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._thumbTranslation">
+            <summary>
+            The thumb TranslateTransform.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._root">
+            <summary>
+            The root template part.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._track">
+            <summary>
+            The track template part.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._thumb">
+            <summary>
+            The thumb template part.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._checkedTranslation">
+            <summary>
+            The maximum translation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._dragTranslation">
+            <summary>
+            The drag translation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._wasDragged">
+            <summary>
+            Whether the translation ever changed during the drag.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton._isDragging">
+            <summary>
+            Whether the dragging state is current.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.#ctor">
+            <summary>
+            Initializes a new instance of the ToggleSwitch class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.ChangeVisualState(System.Boolean)">
+            <summary>
+            Change the visual state.
+            </summary>
+            <param name="useTransitions">Indicates whether to use animation transitions.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.OnToggle">
+            <summary>
+            Called by the OnClick method to implement toggle behavior.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.OnApplyTemplate">
+            <summary>
+            Gets all the template parts and initializes the corresponding state.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.DragStartedHandler(System.Object,Microsoft.Phone.Controls.DragStartedGestureEventArgs)">
+            <summary>
+            Handles started drags on the root.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event information.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.DragDeltaHandler(System.Object,Microsoft.Phone.Controls.DragDeltaGestureEventArgs)">
+            <summary>
+            Handles drags on the root.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event information.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.DragCompletedHandler(System.Object,Microsoft.Phone.Controls.DragCompletedGestureEventArgs)">
+            <summary>
+            Handles completed drags on the root.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event information.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.SizeChangedHandler(System.Object,System.Windows.SizeChangedEventArgs)">
+            <summary>
+            Handles changed sizes for the track and the thumb.
+            Sets the clip of the track and computes the indeterminate and checked translations.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event information.</param>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.SwitchForeground">
+            <summary>
+            Gets or sets the switch foreground.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Primitives.ToggleSwitchButton.Translation">
+            <summary>
+            Gets and sets the thumb and background translation.
+            </summary>
+            <returns>The translation.</returns>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.OffOnConverter">
+            <summary>
+            Converts bool? values to "Off" and "On" strings.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.OffOnConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>A converted value. If the method returns null, the valid null value is used.</returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.OffOnConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>A converted value. If the method returns null, the valid null value is used.</returns>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.ToggleSwitch">
+            <summary>
+            Represents a switch that can be toggled between two states.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ToggleSwitch.CommonStates">
+            <summary>
+            Common visual states.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ToggleSwitch.NormalState">
+            <summary>
+            Normal visual state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ToggleSwitch.DisabledState">
+            <summary>
+            Disabled visual state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ToggleSwitch.SwitchPart">
+            <summary>
+            The ToggleButton that drives this.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ToggleSwitch.HeaderProperty">
+            <summary>
+            Identifies the Header dependency property.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ToggleSwitch.HeaderTemplateProperty">
+            <summary>
+            Identifies the HeaderTemplate dependency property.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ToggleSwitch.IsCheckedProperty">
+            <summary>
+            The IsChecked DependencyProperty definition.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ToggleSwitch._switch">
+            <summary>
+            The Switch part.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.ToggleSwitch._wasContentSet">
+            <summary>
+            Whether the content was set.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ToggleSwitch.#ctor">
+            <summary>
+            Initializes a new instance of the ToggleSwitch class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ToggleSwitch.SetDefaultContent">
+            <summary>
+            Makes the content an "Off" or "On" string to match the state.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ToggleSwitch.ChangeVisualState(System.Boolean)">
+            <summary>
+            Change the visual state.
+            </summary>
+            <param name="useTransitions">Indicates whether to use animation transitions.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ToggleSwitch.OnContentChanged(System.Object,System.Object)">
+            <summary>
+            Makes the content an "Off" or "On" string to match the state if the content is set to null in the design tool.
+            </summary>
+            <param name="oldContent">The old content.</param>
+            <param name="newContent">The new content.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ToggleSwitch.OnApplyTemplate">
+            <summary>
+            Gets all the template parts and initializes the corresponding state.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ToggleSwitch.LoadedHandler(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles the loading of this control.
+            Sets the content if it is null when the control is loaded.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event information.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ToggleSwitch.Switch_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Checks the state when the toggle switch is checked and simulates the event.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event information.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.ToggleSwitch.Switch_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Unchecks the state when the toggle switch is unchecked and simulates the event.
+            </summary>
+            <param name="sender">The event sender.</param>
+            <param name="e">The event information.</param>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.ToggleSwitch.Header">
+            <summary>
+            Gets or sets the header.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.ToggleSwitch.HeaderTemplate">
+            <summary>
+            Gets or sets the header template.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.ToggleSwitch.IsChecked">
+            <summary>
+            Gets and sets the IsChecked property.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.ToggleSwitch.Checked">
+            <summary>
+            The Checked event handler. Will be raised when the switch is checked.
+            </summary>
+        </member>
+        <member name="E:Microsoft.Phone.Controls.ToggleSwitch.Unchecked">
+            <summary>
+            The Unchecked event handler. Will be raised when the switch is unchecked.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.ToggleSwitch.Switch">
+            <summary>
+            Gets or sets the toggle switch.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.DatePickerTitle">
+            <summary>
+              Looks up a localized string similar to CHOOSE DATE.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.DateTimePickerCancelText">
+            <summary>
+              Looks up a localized string similar to cancel.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.DateTimePickerDoneText">
+            <summary>
+              Looks up a localized string similar to done.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.Off">
+            <summary>
+              Looks up a localized string similar to Off.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.On">
+            <summary>
+              Looks up a localized string similar to On.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.TimePickerTitle">
+            <summary>
+              Looks up a localized string similar to CHOOSE TIME.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.TypeConverters_Convert_CannotConvert">
+            <summary>
+              Looks up a localized string similar to &apos;{0}&apos; is unable to convert &apos;{1}&apos; to &apos;{2}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.TypeConverters_ConvertFrom_CannotConvertFromType">
+            <summary>
+              Looks up a localized string similar to &apos;{0}&apos; cannot convert from &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.UnexpectedType">
+            <summary>
+              Looks up a localized string similar to The type was unexpected..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.WrapPanel_OnItemHeightOrWidthPropertyChanged_InvalidValue">
+            <summary>
+              Looks up a localized string similar to Invalid length value &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.Properties.Resources.WrapPanel_OnOrientationPropertyChanged_InvalidValue">
+            <summary>
+              Looks up a localized string similar to Invalid Orientation value &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="T:System.Windows.Controls.OrientedSize">
+            <summary>
+            The OrientedSize structure is used to abstract the growth direction from
+            the layout algorithms of WrapPanel.  When the growth direction is
+            oriented horizontally (ex: the next element is arranged on the side of
+            the previous element), then the Width grows directly with the placement
+            of elements and Height grows indirectly with the size of the largest
+            element in the row.  When the orientation is reversed, so is the
+            directional growth with respect to Width and Height.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.OrientedSize._orientation">
+            <summary>
+            The orientation of the structure.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.OrientedSize._direct">
+            <summary>
+            The size dimension that grows directly with layout placement.
+            </summary>
+        </member>
+        <member name="F:System.Windows.Controls.OrientedSize._indirect">
+            <summary>
+            The size dimension that grows indirectly with the maximum value of
+            the layout row or column.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Controls.OrientedSize.#ctor(System.Windows.Controls.Orientation)">
+            <summary>
+            Initializes a new OrientedSize structure.
+            </summary>
+            <param name="orientation">Orientation of the structure.</param>
+        </member>
+        <member name="M:System.Windows.Controls.OrientedSize.#ctor(System.Windows.Controls.Orientation,System.Double,System.Double)">
+            <summary>
+            Initializes a new OrientedSize structure.
+            </summary>
+            <param name="orientation">Orientation of the structure.</param>
+            <param name="width">Un-oriented width of the structure.</param>
+            <param name="height">Un-oriented height of the structure.</param>
+        </member>
+        <member name="P:System.Windows.Controls.OrientedSize.Orientation">
+            <summary>
+            Gets the orientation of the structure.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.OrientedSize.Direct">
+            <summary>
+            Gets or sets the size dimension that grows directly with layout
+            placement.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.OrientedSize.Indirect">
+            <summary>
+            Gets or sets the size dimension that grows indirectly with the
+            maximum value of the layout row or column.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.OrientedSize.Width">
+            <summary>
+            Gets or sets the width of the size.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Controls.OrientedSize.Height">
+            <summary>
+            Gets or sets the height of the size.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Phone.Controls.WrapPanel">
+            <summary>
+            Positions child elements sequentially from left to right or top to
+            bottom.  When elements extend beyond the panel edge, elements are
+            positioned in the next row or column.
+            </summary>
+            <QualityBand>Stable</QualityBand>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.WrapPanel._ignorePropertyChange">
+            <summary>
+            A value indicating whether a dependency property change handler
+            should ignore the next change notification.  This is used to reset
+            the value of properties without performing any of the actions in
+            their change handlers.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.WrapPanel.ItemHeightProperty">
+            <summary>
+            Identifies the
+            <see cref="P:System.Windows.Controls.WrapPanel.ItemHeight" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:System.Windows.Controls.WrapPanel.ItemHeight" />
+            dependency property
+            </value>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.WrapPanel.ItemWidthProperty">
+            <summary>
+            Identifies the
+            <see cref="P:System.Windows.Controls.WrapPanel.ItemWidth" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:System.Windows.Controls.WrapPanel.ItemWidth" />
+            dependency property.
+            </value>
+        </member>
+        <member name="F:Microsoft.Phone.Controls.WrapPanel.OrientationProperty">
+            <summary>
+            Identifies the
+            <see cref="P:System.Windows.Controls.WrapPanel.Orientation" />
+            dependency property.
+            </summary>
+            <value>
+            The identifier for the
+            <see cref="P:System.Windows.Controls.WrapPanel.Orientation" />
+            dependency property.
+            </value>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.WrapPanel.OnOrientationPropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            OrientationProperty property changed handler.
+            </summary>
+            <param name="d">WrapPanel that changed its Orientation.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.WrapPanel.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:System.Windows.Controls.WrapPanel" /> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.WrapPanel.OnItemHeightOrWidthPropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Property changed handler for ItemHeight and ItemWidth.
+            </summary>
+            <param name="d">
+            WrapPanel that changed its ItemHeight or ItemWidth.
+            </param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.WrapPanel.MeasureOverride(System.Windows.Size)">
+            <summary>
+            Measures the child elements of a
+            <see cref="T:System.Windows.Controls.WrapPanel" /> in anticipation
+            of arranging them during the
+            <see cref="M:System.Windows.Controls.WrapPanel.ArrangeOverride(System.Windows.Size)" />
+            pass.
+            </summary>
+            <param name="constraint">
+            The size available to child elements of the wrap panel.
+            </param>
+            <returns>
+            The size required by the
+            <see cref="T:System.Windows.Controls.WrapPanel" /> and its 
+            elements.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.WrapPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            Arranges and sizes the
+            <see cref="T:System.Windows.Controls.WrapPanel" /> control and its
+            child elements.
+            </summary>
+            <param name="finalSize">
+            The area within the parent that the
+            <see cref="T:System.Windows.Controls.WrapPanel" /> should use 
+            arrange itself and its children.
+            </param>
+            <returns>
+            The actual size used by the
+            <see cref="T:System.Windows.Controls.WrapPanel" />.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Phone.Controls.WrapPanel.ArrangeLine(System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.Double)">
+            <summary>
+            Arrange a sequence of elements in a single line.
+            </summary>
+            <param name="lineStart">
+            Index of the first element in the sequence to arrange.
+            </param>
+            <param name="lineEnd">
+            Index of the last element in the sequence to arrange.
+            </param>
+            <param name="directDelta">
+            Optional fixed growth in the primary direction.
+            </param>
+            <param name="indirectOffset">
+            Offset of the line in the indirect direction.
+            </param>
+            <param name="indirectGrowth">
+            Shared indirect growth of the elements on this line.
+            </param>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.WrapPanel.ItemHeight">
+            <summary>
+            Gets or sets the height of the layout area for each item that is
+            contained in a <see cref="T:System.Windows.Controls.WrapPanel" />.
+            </summary>
+            <value>
+            The height applied to the layout area of each item that is contained
+            within a <see cref="T:System.Windows.Controls.WrapPanel" />.  The
+            default value is <see cref="F:System.Double.NaN" />.
+            </value>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.WrapPanel.ItemWidth">
+            <summary>
+            Gets or sets the width of the layout area for each item that is
+            contained in a <see cref="T:System.Windows.Controls.WrapPanel" />.
+            </summary>
+            <value>
+            The width that applies to the layout area of each item that is
+            contained in a <see cref="T:System.Windows.Controls.WrapPanel" />.
+            The default value is <see cref="F:System.Double.NaN" />.
+            </value>
+        </member>
+        <member name="P:Microsoft.Phone.Controls.WrapPanel.Orientation">
+            <summary>
+            Gets or sets the direction in which child elements are arranged.
+            </summary>
+            <value>
+            One of the <see cref="T:System.Windows.Controls.Orientation" />
+            values.  The default is
+            <see cref="F:System.Windows.Controls.Orientation.Horizontal" />.
+            </value>
+        </member>
+    </members>
+</doc>

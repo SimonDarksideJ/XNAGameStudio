@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waypoints (Windows)", "Waypoints\Waypoints\Waypoints (Windows).csproj", "{8C2F1126-B422-416F-B62B-59AB2F7AFCDC}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "WaypointsContent", "Waypoints\WaypointsContent\WaypointsContent.contentproj", "{1D5AE122-1BCB-4362-96B7-AFCB7513BE41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C2F1126-B422-416F-B62B-59AB2F7AFCDC}.Debug|x86.ActiveCfg = Debug|x86
+		{8C2F1126-B422-416F-B62B-59AB2F7AFCDC}.Debug|x86.Build.0 = Debug|x86
+		{8C2F1126-B422-416F-B62B-59AB2F7AFCDC}.Release|x86.ActiveCfg = Release|x86
+		{8C2F1126-B422-416F-B62B-59AB2F7AFCDC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,892 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history">
+
+<title>Stock Effects</title>
+<style>
+<!--
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 
+	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Primitives 3D Sample" />
+<MSHelp:RLTitle Title="Primitives 3D Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.Primitives3D" />
+<MSHelp:Keyword Index="A" Term="6336846e-5264-82f5-883d-7cf38401b788" />
+<MSHelp:Keyword Index="K" Term="Primitives 3D Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="6336846e-5264-82f5-883d-7cf38401b788" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA_31" />
+<MSHelp:Attr Name="ProjType" Value="XNA_30" />
+<MSHelp:Attr Name="Technology" Value="XNA" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  
+  <h1>Stock Effects</h1>
+
+    <p>Stock effects provides source code for the five effects (BasicEffect, SkinnedEffect, EnvironmentMapEffect, DualTextureEffect, and AlphaTestEffect), and the default shader used by SpriteBatch (SpriteEffect), built into the XNA Framework. There also is a command-line utility (CompileEffect) that uses the Content Pipeline to compile a .fx source file into a binary blob that can be passed directly to the XNA Framework <b>Effect</b> class constructor.</p>
+
+  <h1>Overview</h1>
+
+    <p>This code is provided for educational purposes. It may be a useful starting point when you create more advanced shaders.</p>
+    
+    <p>Although the built-in effect classes are simple and easy to use, the shader code behind them is complex because these effects support many rendering options within a single shader. BasicEffect, for example, allows you to toggle on or off texturing, vertex colors, and lighting, and to select per-vertex or per-pixel lighting. To support all possible permutations of these options, BasicEffect ends up needing no less than 20 different vertex shaders and 10 pixel shaders, all of which are combined within a single effect file.</p>
+    
+    <p>If you want an easy starting point to learn shader programming, use the Shader Series samples. The shader samples are simpler to use than the effects described here because they do not include so many adjustable options.</p>
+
+
+    <h1>Using Effects</h1>
+
+      <p>To use these stock effects<!--it's was unclear to me to which effects you refer--> instead of those built-in, follow these steps:  
+      <ol>
+        <li><p>Compile the appropriate solution&mdash;StockEffectsWindows.sln or StockEffectsXbox.sln (depending on which platform you are developing for).</p></li>
+        <li><p>Right-click your project, select <b>Add Reference</b>, and then select the <b>Browse</b> tab.</p></li>
+        <li><p>Select StockEffects\bin\&lang;<em>platform</em>&rang;\Debug\StockEffects.dll.</p></li>
+      </ol>
+ </p>
+
+    <p>This assembly provides six classes:</p>
+    
+    <ul>
+        <li>BasicEffect</li>
+        <li>SkinnedEffect</li>
+        <li>EnvironmentMapEffect</li>
+        <li>DualTextureEffect</li>
+        <li>AlphaTestEffect</li>
+        <li>SpriteEffect</li>
+    </ul>
+
+    <p>But these new versions are found in the StockEffects namespace, as opposed to Microsoft.Xna.Framework.Graphics. To use these versions instead of the built-in classes, simply change:</p>
+    
+    <p style="font-family: Courier New; font-size: 11px; padding-left: 10px">effect = new BasicEffect(GraphicsDevice);</p>
+
+<p>to</p>
+
+    <p style="font-family: Courier New; font-size: 11px; padding-left: 10px">effect = new StockEffects.BasicEffect(GraphicsDevice);</p>
+   
+  <h1>Changing Effecs</h1>
+     
+    <p>To tweak the shader code, edit the .fx files, and then recompile the StockEffects.dll assembly. If you want to make more extensive changes, or to reuse these shaders in your own projects, you may need to understand how the code is compiled.</p>
+    
+    <p>The CompileEffect project is a command-line utility that uses the Content Pipeline to compile a .fx file into a binary blob. It does this by calling directly into the <b>EffectImporter</b> and <b>EffectProcessor</b> classes, and then saves the resulting compiled effect code, bypassing the part of the Content Pipeline that normally would embed this data into an .xnb format file.</p>
+    
+    <p>The StockEffects project has a custom build rule that uses the CompileEffect utility to compile all six effects. To edit this rule, follow these steps:  
+        
+        <ol>
+            <li><p>In <b>Solution Explorer</b>, right-click the <b>StockEffects</b> project.</p></li>
+            <li><p>Select <b>Properties</b>, click the <b>Build Events</b> tab, and then click the <b>Edit Pre-build</b> button.</p>  
+            <p>It may be necessary to resize the dialog box to avoid word wrapping.</p></li>
+        </ol>
+
+    <p>You will see that this build rule calls CompileEffect six times, building each .fx file into a .bin file, which is stored in the obj folder.</p>
+    
+    <p>If you edit Resources.resx, you will see that it includes all six .bin files from the obj folder, so the compiled shader code is embedded directly as an assembly resource. This allows effect
+        wrapper classes such as BasicEffect.cs to access the compiled effect code via <em>Resources.BasicEffect</em>.</p>
+    
+    <p>If you want to add or remove shaders, you must:</p>
+    
+    <ul>
+        <li>Add or remove the line that compiles the shader from the custom build rule</li>
+        <li>Add or remove the shader output .bin file from Resources.resx</li>
+    </ul>
+    
+   <h1>Effect Include Files</h1>
+   
+     <p>The XNA TouchPanel API provides only a polling interface. Your game can query to find the current touch status, but cannot sign up for notification of touch begin/end events. This presents some difficulty with this sample, because the player's point of initial contact with the screen defines the center of the thumbstick. If this point is lost because a frame or two is dropped, the center will not be where the player expects it, and the controls will not feel correct.</p>
+     
+     <p>Fortunately, the XNA TouchPanel API provides a partial solution by providing a <b>TryGetPreviousLocation</b> method on <b>TouchLocation</b>, which allows one event's worth of history to be kept. As long as the game maintains a good frame rate, this is sufficient to keep the controls responsive.</p>
+     
+   
+  <h1>Extending the Sample</h1>
+    
+    <p>Many of the built-in effects have similar behaviors. All, for example, use the same fog computations, while BasicEffect, SkinnedEffect, and EnvironmentMapEffect all share the same Blinn/Phong lighting model. To reduce code duplication, this shared functionality is implemented in header files (Common.fxh, Lighting.fxh, and Structures.fxh), which are included by all effects.</p>
+    
+    <p>Macros.fxh serves a different purpose. This header file defines some helper macros that allow the same shader source code to be compiled for DirectX 9 Shader Model 2.0 (as used by the XNA Framework Content Pipeline) or alternatively for Shader Model 4.0 (which is used by DirectX 10 and DirectX 11, and has a slightly different syntax).</p>
+    
+  <h1>Preshaders</h1>
+      
+      <p>A common tension in shader programming is that when you design effect parameters to provide a nice clean API, the resulting parameter formats are not always the most efficient for high-level shader language (HLSL)  optimization.</p>
+      
+      <p>D3D tries to correct any such mismatches through a feature called "preshaders." The HLSL compiler looks for computations that are the same for all vertices or all pixels, and moves these out of the main shader into a special setup pass that runs on the CPU before drawing begins. This is a great feature, but has some fatal flaws:</p>
+    
+    <ul>
+        <li>The HLSL compiler does not always spot every optimization possibility.</li>
+        <li>The virtual machine that evaluates preshaders is not especially efficient.</li>
+        <li>Preshaders are not supported on Xbox 360 or Windows Phone.</li>
+    </ul>
+
+    <p>Instead, Game Studio implements preshader computations in C# by overloading the <b>Effect.OnApply</b> method, which is called immediately before <b>EffectPass.Apply</b> sets parameter values onto the graphics device.</p>
+    
+    <p>This allows our C# effect wrapper classes to expose whatever properties the API requires, without needing these to match the underlying HLSL shader parameters. When the programmer changes a managed property, we just set a dirty flag, and then recompute derived HLSL parameter values during OnApply. We used this ability to precompute many things:</p>
+    
+    <ul>
+        <li>Collapse the World, View, and Projection matrices into a single WorldViewProj matrix. </li>
+        <li>When lighting is enabled, compute the WorldInverseTranspose matrix. This is necessary for correct normal transforms when using non-uniform scales, but something not done correctly in previous versions. </li>
+        <li>Extract the EyePosition vector from the View matrix. </li>
+        <li>Combine FogStart, FogEnd, World, and View to generate a vector that can compute fog amount with a single dot product. </li>
+        <li>Merge DiffuseColor, EmissiveColor, AmbientLightColor, and Alpha properties into a more efficient set of combined parameters. </li>
+    </ul>
+    
+    
+    
+  <a name="ID4EK"></a>
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Stock Effects Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

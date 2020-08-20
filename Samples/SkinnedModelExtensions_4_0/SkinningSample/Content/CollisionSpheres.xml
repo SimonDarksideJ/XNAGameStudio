@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="SkinnedModel.SkinnedSphere[]">
+
+    <!-- Torso -->
+    <Item>
+      <BoneName>Spine</BoneName>
+      <Radius>16</Radius>
+    </Item>
+    <Item>
+      <BoneName>Spine3</BoneName>
+      <Radius>18</Radius>
+    </Item>
+    <Item>
+      <BoneName>Head</BoneName>
+      <Radius>10</Radius>
+      <Offset>4</Offset>
+    </Item>
+
+    <!-- Left Arm -->
+    <Item>
+      <BoneName>L_UpperArm</BoneName>
+      <Radius>8</Radius>
+    </Item>
+    <Item>
+      <BoneName>L_UpperArm</BoneName>
+      <Radius>6</Radius>
+      <Offset>7</Offset>
+    </Item>
+    <Item>
+      <BoneName>L_Forearm</BoneName>
+      <Radius>6</Radius>
+    </Item>
+    <Item>
+      <BoneName>L_Forearm</BoneName>
+      <Radius>6</Radius>
+      <Offset>6</Offset>
+    </Item>
+    <Item>
+      <BoneName>L_Hand</BoneName>
+      <Radius>5</Radius>
+    </Item>
+    <Item>
+      <BoneName>L_Hand</BoneName>
+      <Radius>4</Radius>
+      <Offset>5</Offset>
+    </Item>
+
+    <!-- Right Arm -->
+    <Item>
+      <BoneName>R_UpperArm</BoneName>
+      <Radius>8</Radius>
+    </Item>
+    <Item>
+      <BoneName>R_UpperArm</BoneName>
+      <Radius>6</Radius>
+      <Offset>7</Offset>
+    </Item>
+    <Item>
+      <BoneName>R_Forearm</BoneName>
+      <Radius>6</Radius>
+    </Item>
+    <Item>
+      <BoneName>R_Forearm</BoneName>
+      <Radius>6</Radius>
+      <Offset>6</Offset>
+    </Item>
+    <Item>
+      <BoneName>R_Hand</BoneName>
+      <Radius>5</Radius>
+    </Item>
+    <Item>
+      <BoneName>R_Hand</BoneName>
+      <Radius>4</Radius>
+      <Offset>5</Offset>
+    </Item>
+
+    <!-- Left Leg -->
+    <Item>
+      <BoneName>L_Thigh1</BoneName>
+      <Radius>11</Radius>
+      <Offset>10</Offset>
+    </Item>
+    <Item>
+      <BoneName>L_Knee2</BoneName>
+      <Radius>8</Radius>
+    </Item>
+    <Item>
+      <BoneName>L_Knee2</BoneName>
+      <Radius>8</Radius>
+      <Offset>8</Offset>
+    </Item>
+    <Item>
+      <BoneName>L_Ankle1</BoneName>
+      <Radius>7</Radius>
+    </Item>
+    <Item>
+      <BoneName>L_Ball</BoneName>
+      <Radius>6</Radius>
+    </Item>
+
+    <!-- Right Leg -->
+    <Item>
+      <BoneName>R_Thigh</BoneName>
+      <Radius>11</Radius>
+      <Offset>10</Offset>
+    </Item>
+    <Item>
+      <BoneName>R_Knee</BoneName>
+      <Radius>8</Radius>
+    </Item>
+    <Item>
+      <BoneName>R_Knee</BoneName>
+      <Radius>8</Radius>
+      <Offset>8</Offset>
+    </Item>
+    <Item>
+      <BoneName>R_Ankle</BoneName>
+      <Radius>7</Radius>
+    </Item>
+    <Item>
+      <BoneName>R_Ball</BoneName>
+      <Radius>6</Radius>
+    </Item>
+  </Asset>
+</XnaContent>

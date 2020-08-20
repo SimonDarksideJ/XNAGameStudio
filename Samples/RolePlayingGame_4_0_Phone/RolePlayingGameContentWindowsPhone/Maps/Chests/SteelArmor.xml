@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="RolePlayingGameData.Chest">
+    <Name>Steel Armor</Name>
+    <Gold>0</Gold>
+    <Entries>
+      <Item>
+        <ContentName>Armor\SteelArmor</ContentName>
+        <Count>1</Count>
+      </Item>
+    </Entries>
+    <TextureName>Chest1c</TextureName>
+  </Asset>
+</XnaContent>

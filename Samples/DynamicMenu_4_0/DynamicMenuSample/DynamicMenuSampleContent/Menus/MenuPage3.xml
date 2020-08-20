@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="DynamicMenu.Controls.Container" >
+    <Left>0</Left>
+    <Top>0</Top>
+    <Width>300</Width>
+    <Height>300</Height>
+    <Controls>
+      <Item Type="DynamicMenu.Controls.Label">
+        <Left>20</Left>
+        <Top>20</Top>
+        <Width>200</Width>
+        <Height>60</Height>
+        <BackTextureName>Textures\textbox</BackTextureName>
+        <Text>Progress Bar</Text>
+        <FontName>Fonts\ControlFont</FontName>
+      </Item>
+      <Item Type="DynamicMenu.Controls.ProgressBar">
+        <Left>20</Left>
+        <Top>100</Top>
+        <Width>360</Width>
+        <Height>60</Height>
+        <Name>ProgressBar</Name>
+        <BackTextureName>Textures\textbox</BackTextureName>
+        <LeftTextureName>Textures\progressleft</LeftTextureName>
+        <RightTextureName>Textures\progressright</RightTextureName>
+        <BorderWidth>5</BorderWidth>
+      </Item>
+      <Item Type="DynamicMenu.Controls.Button">
+        <Left>100</Left>
+        <Top>180</Top>
+        <Width>200</Width>
+        <Height>80</Height>
+        <Name>AdvanceButton</Name>
+        <BackTextureName>Textures\button</BackTextureName>
+        <Text>Advance</Text>
+        <FontName>Fonts\ControlFont</FontName>
+        <PressedTextureName>Textures\buttonpressed</PressedTextureName>
+      </Item>
+    </Controls>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingEmbeddedImages", "SavingEmbeddedImages\SavingEmbeddedImages.csproj", "{C903F56C-7B47-4828-B3E7-BFF3B5178615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingEmbeddedImagesContent", "SavingEmbeddedImagesContent\SavingEmbeddedImagesContent.contentproj", "{8CF41D00-3030-4986-B52A-C9ACDA0385E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C903F56C-7B47-4828-B3E7-BFF3B5178615}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{C903F56C-7B47-4828-B3E7-BFF3B5178615}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{C903F56C-7B47-4828-B3E7-BFF3B5178615}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{C903F56C-7B47-4828-B3E7-BFF3B5178615}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{C903F56C-7B47-4828-B3E7-BFF3B5178615}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{C903F56C-7B47-4828-B3E7-BFF3B5178615}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{8CF41D00-3030-4986-B52A-C9ACDA0385E9}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{8CF41D00-3030-4986-B52A-C9ACDA0385E9}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

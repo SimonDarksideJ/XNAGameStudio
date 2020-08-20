@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputReporterWindows", "InputReporter\InputReporterWindows.csproj", "{0B205A43-94D3-4F44-B6CD-429B87E87426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputReporterContent", "InputReporter\Content\InputReporterContent.contentproj", "{7EAAD54A-EC06-4EDE-AEA7-9B2000E935E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B205A43-94D3-4F44-B6CD-429B87E87426}.Debug|x86.ActiveCfg = Debug|x86
+		{0B205A43-94D3-4F44-B6CD-429B87E87426}.Debug|x86.Build.0 = Debug|x86
+		{0B205A43-94D3-4F44-B6CD-429B87E87426}.Release|x86.ActiveCfg = Release|x86
+		{0B205A43-94D3-4F44-B6CD-429B87E87426}.Release|x86.Build.0 = Release|x86
+		{7EAAD54A-EC06-4EDE-AEA7-9B2000E935E5}.Debug|x86.ActiveCfg = Debug|x86
+		{7EAAD54A-EC06-4EDE-AEA7-9B2000E935E5}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

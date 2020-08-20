@@ -1,0 +1,967 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>Localization Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Localization Sample" />
+<MSHelp:RLTitle Title="Localization Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.Localization" />
+<MSHelp:Keyword Index="A" Term="b92539ef-707e-33a1-711b-2553f6db9c10" />
+<MSHelp:Keyword Index="K" Term="Localization Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="b92539ef-707e-33a1-711b-2553f6db9c10" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  <h1>Localization Sample</h1>
+
+  This sample shows how to localize an XNA Framework game into multiple languages.
+
+  <a id="ID2EK" name="ID2EK"> </a><h1 class="heading">Sample Overview</h1><div id="ID2EK" class="hxnx1">
+    
+
+    <p>This sample demonstrates three aspects of game localization:</p>
+
+    <ul>
+      <li>Loading text strings from .resx resource files, and providing different versions for each language.</li>
+      <li>Building fonts that include the Unicode characters needed to display different languages, including East Asian languages such as Japanese and Korean.</li>
+      <li>Localizing other game assets such as textures, models, and sound effects.</li>
+    </ul>
+
+    <p>The sample is localized into Danish, French, Japanese, and Korean, and also includes a default English configuration (can you guess what countries people on the XNA team come from? :-). It chooses what language to display based on your current system settings.</p>
+    <div class="proc"><h3 class="subHeading">To change the language setting on Windows</h3><div class="subSection">
+      
+
+      <ol>
+        <li>
+          In Control Panel, click <b>Clock, Language, and Region</b>.
+        </li>
+        <li>
+          In the <b>Region and Language dialog box</b>, click the <b>Formats</b> tab, and then click the <b>Format</b> box and select the lanuage.
+        </li>
+        <li>
+          Click <b>OK</b>.
+        </li>
+      </ol>
+    </div></div>
+    <div class="proc"><h3 class="subHeading">To change the language setting on Xbox 360</h3><div class="subSection">
+      
+
+      <ol>
+        <li>
+          <p>
+            Press the <b>Guide</b> button. The system UI is displayed.
+          </p>
+        </li>
+        <li>
+          Scroll right through the blades and select <b>System Settings</b>, and then <b>Console Settings</b>.
+        </li>
+        <li>
+          Change the language option, and then restart the sample to ensure the new language is in effect.
+        </li>
+      </ol>
+    </div></div>
+
+    <a id="ID2EPC" name="ID2EPC"> </a><h2 class="subHeading">Sample Controls</h2><div id="ID2EPC" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard control</th>
+          <th>Gamepad control</th>
+        </tr>
+        <tr>
+          <td>Exit</td>
+          <td>ESC or ALT+F4</td>
+          <td>
+            <b>BACK</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <a id="ID2EPD" name="ID2EPD"> </a><h1 class="heading">How the Sample Works</h1><div id="ID2EPD" class="hxnx1">
+    
+
+    <a id="ID2ETD" name="ID2ETD"> </a><h2 class="subHeading">Translating Text</h2><div id="ID2ETD" class="hxnx2">
+      
+
+      <p>
+        The first step in translating your game text is to make sure all your strings are defined in a resource file (.resx). To create a resource file, right-click on your project in Solution Explorer, choose <b>Add</b>, and then choose <b>New Item</b>, and then select the Resources File template. You can call this anything you like—the one in this sample is named Strings.resx. Double-clicking the .resx file opens a designer where you can enter your game strings, giving each one a name and then entering its text value. If you need to include line breaks within a string, press SHIFT+ENTER.
+      </p>
+
+      <p>
+        You will notice that when you added the Strings.resx file, Visual Studio also created a Strings.Designer.cs file, which is normally collapsed under the main .resx entry (click the plus sign (+) next to your .resx file to show it). This file contains a generated C# wrapper class that makes it easy to access your text strings. In your game code, you can now just look up <code>Strings.NameOfString</code> (or if you chose some other name than Strings.resx, this would be <code>
+          <i>MyResxName</i>.NameOfString
+        </code>), instead of hard coding the actual string constant.
+      </p>
+
+      <p>
+        Once all your text is defined in the .resx file, and your game code is accessing it through the generated wrapper class, it is trivial to add translations for different languages. You just add a second .resx file, using a simple naming convention. If the default resource file was called Strings.resx, a French translation would be called Strings.fr.resx, and a Japanese one would be Strings.ja.resx. You can also add translations for specific countries as well as languages. A file called Strings.en-GB.resx, for example, would be used for English in Great Britain, but not the United States (see the <a href="Localization.htm#lang_country_codes">Language and Country Codes</a> section for more detail on this).
+      </p>
+
+      <p>
+        If you add these secondary resource files correctly, you will only create a .resx file. There should not be a plus sign (+) next to this because these files should not generate a C# wrapper class. You must be careful when adding these secondary resources. Type the full name in the <b>Add</b> dialog box, including the .resx extension. It will not work if you leave that off. If you add a file with the wrong name, delete it and add a new one because renaming an existing resource may not hook up everything correctly.
+      </p>
+
+      <p>Once your secondary resources are in place, you can add translated strings to them. It is not necessary to include all your strings in every resource. If you leave some out, those will be taken from the default resource file instead. You are free to translate just the things that you want to translate, while leaving other strings in your original language.</p>
+
+      <p>
+        The final step is to tell the resource manager what language to use. This is done by setting <code>Strings.Culture = CultureInfo.CurrentCulture</code> in your game constructor.
+      </p>
+
+    </div>
+
+    <a id="ID2EAF" name="ID2EAF"> </a><h2 class="subHeading">Unicode Fonts</h2><div id="ID2EAF" class="hxnx2">
+      
+
+      <p>
+        Once you have text in more than one language, you will probably notice that some languages use more characters than are included by the default .spritefont template. By default, trying to draw these characters will throw an exception. If you set the <code>&lt;DefaultCharacter&gt;</code> element in your .spritefont XML, that will be automatically substituted in place of any missing characters, but just replacing all your Japanese text with question marks or spaces probably isn't the best long-term solution!
+      </p>
+
+      <p>
+        You can control what characters are included in the font by altering the <code>&lt;CharacterRegions&gt;</code> section of the .spritefont XML. You can add as many character regions as you like to include different portions of the <a href="http://unicode.org/charts/">Unicode character set</a> lists where each character can be found. This is a good solution for languages such as French or German that require only a few accented letters in addition to the standard ASCII character range.
+      </p>
+
+      <p>For other languages, however, especially East Asian ones such as Japanese, manually specifying character regions is not such a good solution. The Japanese character set is huge, and trying to include it all would produce a ridiculously large font. Fortunately, however, most games use only a small fraction of the available characters, so we can optimize our fonts by bothering to include only those characters we really need.</p>
+
+      <p>
+        This process is implemented by the build time classes in the LocalizationPipeline project. If you look at the Font.spritefont file used in this sample, you will notice that the Asset Type in the XML header has been changed from the normal <b>SpriteFontDescription</b> class to specify a custom <code>LocalizationPipeline.LocalizedFontDescription</code> instead. This type inherits from <b>SpriteFontDescription</b>, and adds a new property to specify what resource files contain our game text. The processor setting for Font.spritefont has been changed from the standard <b>FontDescriptionProcessor</b> to instead use the custom <code>LocalizedFontProcessor</code>, which reads all these .resx files, scans over them to find what characters they contain, and automatically adds the necessary characters to the font.
+      </p>
+
+      <p>To see this in action, set your system to Japanese, then remove the Strings.ja.resx reference from the Font.spritefont file. The Japanese characters will no longer be included in the font, so when you run the sample, you will now see question marks instead of Japanese text.</p>
+
+    </div>
+
+    <a id="ID2EDG" name="ID2EDG"> </a><h2 class="subHeading">Localizing Other Assets</h2><div id="ID2EDG" class="hxnx2">
+      
+
+      <p>Text strings and fonts are by far the most important aspect of localizing a game, but you may occasionally want to localize other assets such as textures, models, or sound effects.</p>
+
+      <p>
+        The <code>LoadLocalizedAsset</code> function in this sample implements a simple naming convention that can be used to localize any kind of XNB data. The sample contains a texture called Flag.png, plus a number of specialized versions for specific cultures (Flag.fr.png for France, Flag.en-GB.png for Great Britain, and so on). Instead of just calling:
+      </p>
+
+      <pre>
+        currentFlag = Content.Load&lt;Texture2D&gt;("Flag")
+      </pre>
+
+      <p>Instead the sample does this:</p>
+
+      <pre>
+        currentFlag = LoadLocalizedAsset&lt;Texture2D&gt;("Flag")
+      </pre>
+
+      <p>This will check for a suitable localized version of the asset exists, loading the appropriate version for the current culture, or falling back to the default version of Flag.png if it cannot find a localized one.</p>
+
+    </div>
+
+    <a id="lang_country_codes" name="lang_country_codes"> </a><h2 class="subHeading">Language and Country Codes</h2><div id="lang_country_codes" class="hxnx2">
+      
+
+      <p>
+        When creating localized .resx files, or different versions of an asset for use with the <b>GetLocalizedAssetName</b> function, there are two ways you can specify the language and/or country.
+      </p>
+
+      <p>
+        Most often, you will just use a two-letter language code from <a href="http://www.loc.gov/standards/iso639-2/php/English_list.php">ISO 639-1</a>. The sample uses this convention for the Strings.fr.resx file or the Flag.ja.png file.
+      </p>
+
+      <p>
+        Other times you may wish to differentiate by country as well as language. To accomplish this, you can add a two-letter country code from <a href="http://www.iso.org/iso/english_country_names_and_code_elements">ISO 3166</a> after the language code. The sample uses this convention for the Flag.en-US.png and Flag.en-GB.png files. Both flags are for English-speaking countries, but this specialization allows us to differentiate between the United States and United Kingdom. If you set your system to some other English-speaking country—for example, New Zealand—neither of these flags will match, so the default flag will be displayed instead. Because the sample does not specify any particular French-speaking country for its French flag texture, that will be displayed even if you set your system to French (Canada) or French (Belgium).
+      </p>
+
+    </div>
+
+  </div>
+
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Localization Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

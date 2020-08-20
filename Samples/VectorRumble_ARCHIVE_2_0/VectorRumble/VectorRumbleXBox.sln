@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorRumbleXbox", "VectorRumble\VectorRumbleXbox.csproj", "{32CE83AE-1057-4CB2-992F-1EB98E7F2542}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32CE83AE-1057-4CB2-992F-1EB98E7F2542}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{32CE83AE-1057-4CB2-992F-1EB98E7F2542}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{32CE83AE-1057-4CB2-992F-1EB98E7F2542}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{32CE83AE-1057-4CB2-992F-1EB98E7F2542}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{32CE83AE-1057-4CB2-992F-1EB98E7F2542}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{32CE83AE-1057-4CB2-992F-1EB98E7F2542}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{3985A4AF-CEE4-44A6-A2A1-6DDF00C3C85A}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{3985A4AF-CEE4-44A6-A2A1-6DDF00C3C85A}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

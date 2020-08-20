@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSample (Xbox)", "ParticleSample\ParticleSample (Xbox).csproj", "{A6B01508-B89E-4831-94B6-E60D797ECC28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSampleContent", "ParticleSampleContent\ParticleSampleContent.contentproj", "{6C9B8779-C25D-4FAA-8C32-F67CAE41648D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6B01508-B89E-4831-94B6-E60D797ECC28}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{A6B01508-B89E-4831-94B6-E60D797ECC28}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{A6B01508-B89E-4831-94B6-E60D797ECC28}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{A6B01508-B89E-4831-94B6-E60D797ECC28}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{A6B01508-B89E-4831-94B6-E60D797ECC28}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{A6B01508-B89E-4831-94B6-E60D797ECC28}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

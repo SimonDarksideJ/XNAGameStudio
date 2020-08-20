@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flocking (Windows)", "Flocking\Flocking\Flocking (Windows).csproj", "{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "FlockingContent", "Flocking\FlockingContent\FlockingContent.contentproj", "{E32187E9-81EA-4BD0-BAD4-D98BED915D9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Debug|x86.ActiveCfg = Debug|x86
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Debug|x86.Build.0 = Debug|x86
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Release|Windows Phone.ActiveCfg = Release|x86
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Release|x86.ActiveCfg = Release|x86
+		{C2E46E56-D888-4D28-9A0C-69D2E21DF73D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

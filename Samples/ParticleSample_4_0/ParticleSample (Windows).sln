@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSample (Windows)", "ParticleSample\ParticleSample (Windows).csproj", "{6CFF96BB-A9B2-4E7F-9A99-6E96CB811123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticleSampleContent", "ParticleSampleContent\ParticleSampleContent.contentproj", "{6C9B8779-C25D-4FAA-8C32-F67CAE41648D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CFF96BB-A9B2-4E7F-9A99-6E96CB811123}.Debug|x86.ActiveCfg = Debug|x86
+		{6CFF96BB-A9B2-4E7F-9A99-6E96CB811123}.Debug|x86.Build.0 = Debug|x86
+		{6CFF96BB-A9B2-4E7F-9A99-6E96CB811123}.Release|x86.ActiveCfg = Release|x86
+		{6CFF96BB-A9B2-4E7F-9A99-6E96CB811123}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

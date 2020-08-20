@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>BoxColliderXbox</Name>
+    <Description>A box collision library</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BoxCollider</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="BoxColliderXbox.csproj" File="BoxColliderXbox.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="CollisionBox.cs">CollisionBox.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CollisionCamera.cs">CollisionCamera.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CollisionCameraObserver.cs">CollisionCameraObserver.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CollisionCameraPerson.cs">CollisionCameraPerson.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CollisionFace.cs">CollisionFace.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CollisionMesh.cs">CollisionMesh.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CollisionTree.cs">CollisionTree.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CollisionTreeElem.cs">CollisionTreeElem.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="CollisionTreeNode.cs">CollisionTreeNode.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

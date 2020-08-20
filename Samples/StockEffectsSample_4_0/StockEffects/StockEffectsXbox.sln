@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompileEffect", "CompileEffect\CompileEffect.csproj", "{48FD88F9-F9A2-4733-BB03-5B2C2D71D136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEffectsXbox", "StockEffects\StockEffectsXbox.csproj", "{B9732208-DCD3-415E-A15B-0779BD916342}"
+	ProjectSection(ProjectDependencies) = postProject
+		{48FD88F9-F9A2-4733-BB03-5B2C2D71D136} = {48FD88F9-F9A2-4733-BB03-5B2C2D71D136}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48FD88F9-F9A2-4733-BB03-5B2C2D71D136}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{48FD88F9-F9A2-4733-BB03-5B2C2D71D136}.Debug|Xbox 360.Build.0 = Debug|x86
+		{48FD88F9-F9A2-4733-BB03-5B2C2D71D136}.Release|Xbox 360.ActiveCfg = Release|x86
+		{48FD88F9-F9A2-4733-BB03-5B2C2D71D136}.Release|Xbox 360.Build.0 = Release|x86
+		{B9732208-DCD3-415E-A15B-0779BD916342}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{B9732208-DCD3-415E-A15B-0779BD916342}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{B9732208-DCD3-415E-A15B-0779BD916342}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{B9732208-DCD3-415E-A15B-0779BD916342}.Release|Xbox 360.Build.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

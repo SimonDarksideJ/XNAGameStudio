@@ -1,0 +1,140 @@
+﻿<!-- 
+    
+Copyright (c) 2010 Microsoft Corporation.  All rights reserved.
+
+Use of this source code is subject to the terms of the Microsoft
+license agreement under which you licensed this source code.
+If you did not accept the terms of the license agreement,
+you are not authorized to use this source code.
+For the terms of the license, please see the license agreement
+signed by you and Microsoft.
+THE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+    
+-->
+
+<local:PageCommon 
+    xmlns:local="clr-namespace:Microsoft.Phone.Applications.UnitConverter.View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d"
+    xmlns:navigation="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:pivot="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls" 
+    xmlns:contextControl="clr-namespace:Microsoft.Phone.Applications.Common.Controls"
+    x:Class="Microsoft.Phone.Applications.UnitConverter.View.CategorySelection" 
+    Title="CategorySelection Page"
+    d:DesignWidth="480" 
+    d:DesignHeight="640" 
+    RenderTransformOrigin="0.5,0.5">
+    
+    <navigation:PhoneApplicationPage.Resources>
+        
+        <!-- ListBox style -->
+        <Style x:Key="FavoritesListBoxStyle" TargetType="ListBox">
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Height" Value="48" />
+                        <Setter Property="Margin" Value="10,0,10,0" />
+                        <Setter Property="VerticalAlignment" Value="Center" />
+                        <Setter Property="Foreground" Value="{StaticResource PhoneSubtleBrush}" />
+                        <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiLight}" /> 
+                        <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeLarge}" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListBoxItem">
+                                    <Grid Tag="{Binding}">
+                                        <VisualStateManager.VisualStateGroups>
+                                            <VisualStateGroup x:Name="SelectionStates">
+                                                <VisualState x:Name="Unselected" />
+                                                <VisualState x:Name="Selected">
+                                                    <Storyboard>
+                                                        <ColorAnimation 
+                                                            Storyboard.TargetName="Item" 
+                                                            Storyboard.TargetProperty="(Foreground).(SolidColorBrush.Color)" 
+                                                            Duration="0" 
+                                                            To="{StaticResource PhoneAccentColor}" />
+                                                    </Storyboard>
+                                                </VisualState>
+                                            </VisualStateGroup>
+                                        </VisualStateManager.VisualStateGroups>
+                                        <TextBlock x:Name="Item" Text="{Binding LabelName}" />
+                                    </Grid>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </navigation:PhoneApplicationPage.Resources>
+
+    <Grid x:Name="LayoutRoot" 
+          Margin="0" 
+          Background="{StaticResource PhoneContrastForegroundBrush}" >
+        
+        <StackPanel x:Name ="mainStackPanel" 
+                    Orientation="Vertical" 
+                    Margin="0,0,0,76" 
+                    CacheMode="BitmapCache">
+          
+            <TextBlock x:Name="textBlockTitle" 
+                       Margin="23,24,0,0" 
+                       Text="{Binding Path=Strings.Header_Conversions, Source={StaticResource Resources}}"
+                       Foreground="{StaticResource PhoneForegroundBrush}"  
+                       FontSize="{StaticResource PhoneFontSizeMedium}" 
+                       FontFamily="{StaticResource PhoneFontFamilyNormal}"/>
+            
+            <pivot:Pivot x:Name="pivot" 
+                                Loaded="OnPivotLoaded"
+                                SelectedIndex="{Binding SelectedDataIndex, Mode=TwoWay}">
+                <pivot:PivotItem x:Name="pivotFavorites" 
+                               Header="{Binding Path=Strings.PivotHeader_Favorites, Source={StaticResource Resources}}">
+                    <!-- Height set since pivot item does not constrict, also defaults to centered -->
+                    <Grid Height="558" VerticalAlignment="Top"> 
+                        <TextBlock x:Name="favoritesNoItems"
+                                   Text="{Binding Path=Strings.NoFavorites, Source={StaticResource Resources}}"
+                                   Margin="22,0,0,0"
+                                   Foreground="{StaticResource PhoneForegroundBrush}" 
+                                   FontSize="{StaticResource PhoneFontSizeLarge}" 
+                                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"
+                                   Visibility="Collapsed"/>
+                        <ListBox x:Name="favoritesListView"
+                                 Margin="12,14,0,0"
+                                 Style="{StaticResource FavoritesListBoxStyle}"
+                                 Visibility="Collapsed"
+                                 SelectionChanged="OnFavoritesSelectionChanged">
+                            <contextControl:ContextMenuService.ContextMenu>
+                                <contextControl:ContextMenu x:Name="contextMenuPanel" ShouldApplyDefaultItemStyle="True">
+                                    <TextBlock Text="{Binding Path=Strings.Buttons_delete, Source={StaticResource Resources}}"
+                                               MouseLeftButtonDown="ContextMenuDelete_MouseLeftButtonDown" />
+                                </contextControl:ContextMenu>
+                            </contextControl:ContextMenuService.ContextMenu>
+                        </ListBox>
+                    </Grid>
+                </pivot:PivotItem>
+            </pivot:Pivot>         
+        </StackPanel>
+        <StackPanel x:Name="spToolsbar" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right" 
+                    VerticalAlignment="Bottom">
+            <Button x:Name="buttonDone" 
+                    Height="72" Width="228" Margin="0,0,1,12" 
+                    Foreground="{StaticResource PhoneForegroundBrush}" 
+                    BorderBrush="{StaticResource PhoneForegroundBrush}"  
+                    Click="OnDoneClick"
+                    Content="{Binding Path=Strings.Buttons_done, Source={StaticResource Resources}}"
+                    IsEnabled="{Binding IsButtonDoneEnabled}"/>
+            <Button x:Name="buttonCancel" 
+                    Height="72" Width="228" Margin="0,0,11,12" 
+                    Foreground="{StaticResource PhoneForegroundBrush}" 
+                    BorderBrush="{StaticResource PhoneForegroundBrush}" 
+                    Click="OnCancelClick"
+                    Content="{Binding Path=Strings.Buttons_cancel, Source={StaticResource Resources}}"
+                    IsEnabled="{Binding IsButtonCancelEnabled}"/>
+        </StackPanel>
+    </Grid>
+</local:PageCommon>

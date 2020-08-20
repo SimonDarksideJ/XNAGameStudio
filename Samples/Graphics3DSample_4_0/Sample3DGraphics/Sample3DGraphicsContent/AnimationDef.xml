@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+  <Definition FrameWidth="128" FrameHeight="128" 
+              SheetRows="1" SheetColumns="6" 
+              Speed="10" 
+              SheetName="Textures/explosionStrip"/>
+</Animations>

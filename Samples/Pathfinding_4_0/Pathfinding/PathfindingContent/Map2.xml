@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<XnaContent>
+  <Asset Type="PathfindingData.MapData">
+	  <NumberRows>9</NumberRows>
+	  <NumberColumns>9</NumberColumns>
+  <Start>8 0</Start>
+  <End>4 8</End>
+  <Barriers>
+	  6 1
+	  7 1
+	  8 1
+	  3 3
+	  4 3
+	  5 3
+	  6 3
+	  0 5
+	  1 5
+	  2 5
+	  3 5
+	  4 5
+	  6 5
+	  6 6
+	  6 7
+	  5 7
+	  4 7
+  </Barriers>
+  </Asset>
+</XnaContent>

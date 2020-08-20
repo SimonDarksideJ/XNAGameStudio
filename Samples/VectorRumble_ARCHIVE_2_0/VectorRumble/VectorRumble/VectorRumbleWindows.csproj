@@ -1,0 +1,222 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C0D6B863-9D2A-4A4D-B795-EC7A46F936EF}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VectorRumble</RootNamespace>
+    <AssemblyName>VectorRumbleWindows</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <StartupObject>VectorRumble.VectorRumbleGame</StartupObject>
+    <Thumbnail>VectorRumble.png</Thumbnail>
+    <XnaCrossPlatformGroupID>{c8243b9d-aa40-4ce6-86b7-ccc085ffa826}</XnaCrossPlatformGroupID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AudioManager.cs">
+      <Name>AudioManager</Name>
+    </Compile>
+    <Compile Include="BloomPostprocess\BloomComponent.cs">
+      <Name>BloomComponent</Name>
+    </Compile>
+    <Compile Include="BloomPostprocess\BloomSettings.cs">
+      <Name>BloomSettings</Name>
+    </Compile>
+    <Compile Include="Gameplay\MineProjectile.cs">
+      <Name>MineProjectile</Name>
+    </Compile>
+    <Compile Include="Gameplay\RocketProjectile.cs">
+      <Name>RocketProjectile</Name>
+    </Compile>
+    <Compile Include="Gameplay\RocketWeapon.cs">
+      <Name>RocketWeapon</Name>
+    </Compile>
+    <Compile Include="Gameplay\MineWeapon.cs">
+      <Name>MineWeapon</Name>
+    </Compile>
+    <Compile Include="Gameplay\TripleLaserWeapon.cs">
+      <Name>TripleLaserWeapon</Name>
+    </Compile>
+    <Compile Include="Gameplay\DoubleLaserWeapon.cs">
+      <Name>DoubleLaserWeapon</Name>
+    </Compile>
+    <Compile Include="Gameplay\LaserProjectile.cs">
+      <Name>LaserProjectile</Name>
+    </Compile>
+    <Compile Include="Gameplay\LaserWeapon.cs">
+      <Name>LaserWeapon</Name>
+    </Compile>
+    <Compile Include="Screens\MenuEntry.cs" />
+    <Compile Include="Simulation\Actor.cs">
+      <Name>Actor</Name>
+    </Compile>
+    <Compile Include="CollectCollection.cs">
+      <Name>CollectCollection</Name>
+    </Compile>
+    <Compile Include="Simulation\WorldActor.cs">
+      <Name>WorldActor</Name>
+    </Compile>
+    <Compile Include="Simulation\Collision.cs">
+      <Name>Collision</Name>
+    </Compile>
+    <Compile Include="Simulation\CollisionResult.cs">
+      <Name>CollisionResult</Name>
+    </Compile>
+    <Compile Include="Gameplay\Asteroid.cs">
+      <Name>Asteroid</Name>
+    </Compile>
+    <Compile Include="Gameplay\RocketPowerUp.cs">
+      <Name>RocketPowerUp</Name>
+    </Compile>
+    <Compile Include="Gameplay\TripleLaserPowerUp.cs">
+      <Name>TripleLaserPowerUp</Name>
+    </Compile>
+    <Compile Include="Gameplay\DoubleLaserPowerUp.cs">
+      <Name>DoubleLaserPowerUp</Name>
+    </Compile>
+    <Compile Include="Simulation\Weapon.cs">
+      <Name>Weapon</Name>
+    </Compile>
+    <Compile Include="Simulation\PowerUp.cs">
+      <Name>PowerUp</Name>
+    </Compile>
+    <Compile Include="Gameplay\Ship.cs">
+      <Name>Ship</Name>
+    </Compile>
+    <Compile Include="Simulation\Projectile.cs">
+      <Name>Projectile</Name>
+    </Compile>
+    <Compile Include="Simulation\World.cs">
+      <Name>World</Name>
+    </Compile>
+    <Compile Include="Simulation\WorldRules.cs">
+      <Name>WorldRules</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rendering\LineBatch.cs">
+      <Name>LineBatch</Name>
+    </Compile>
+    <Compile Include="Rendering\Particle.cs">
+      <Name>Particle</Name>
+    </Compile>
+    <Compile Include="Rendering\ParticleSystem.cs">
+      <Name>ParticleSystem</Name>
+    </Compile>
+    <Compile Include="Rendering\Starfield.cs">
+      <Name>Starfield</Name>
+    </Compile>
+    <Compile Include="Rendering\VectorPolygon.cs">
+      <Name>VectorPolygon</Name>
+    </Compile>
+    <Compile Include="ScreenManager\GameScreen.cs">
+      <Name>GameScreen</Name>
+    </Compile>
+    <Compile Include="ScreenManager\InputState.cs">
+      <Name>InputState</Name>
+    </Compile>
+    <Compile Include="ScreenManager\ScreenManager.cs">
+      <Name>ScreenManager</Name>
+    </Compile>
+    <Compile Include="Screens\BackgroundScreen.cs">
+      <Name>BackgroundScreen</Name>
+    </Compile>
+    <Compile Include="Screens\GameOverScreen.cs">
+      <Name>GameOverScreen</Name>
+    </Compile>
+    <Compile Include="Screens\GameplayScreen.cs">
+      <Name>GameplayScreen</Name>
+    </Compile>
+    <Compile Include="Screens\LoadingScreen.cs">
+      <Name>LoadingScreen</Name>
+    </Compile>
+    <Compile Include="Screens\MainMenuScreen.cs">
+      <Name>MainMenuScreen</Name>
+    </Compile>
+    <Compile Include="Screens\MenuScreen.cs">
+      <Name>MenuScreen</Name>
+    </Compile>
+    <Compile Include="Screens\MessageBoxScreen.cs">
+      <Name>MessageBoxScreen</Name>
+    </Compile>
+    <Compile Include="Screens\OptionsMenuScreen.cs">
+      <Name>OptionsMenuScreen</Name>
+    </Compile>
+    <Compile Include="Screens\PauseMenuScreen.cs">
+      <Name>PauseMenuScreen</Name>
+    </Compile>
+    <Compile Include="Game.cs">
+      <Name>Game</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico">
+      <Name>Game</Name>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VectorRumble.png">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>{3985a4af-cee4-44a6-a2a1-6ddf00c3c85a}</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.NestedContent.targets" />
+</Project>

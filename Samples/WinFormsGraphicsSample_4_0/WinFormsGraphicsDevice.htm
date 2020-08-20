@@ -1,0 +1,917 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>WinForms Graphics Device Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="WinForms Graphics Device Sample" />
+<MSHelp:RLTitle Title="WinForms Graphics Device Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.WinFormsGraphicsDevice" />
+<MSHelp:Keyword Index="A" Term="3a5ffc86-243b-662d-5f80-f820b130457d" />
+<MSHelp:Keyword Index="K" Term="WinForms Graphics Device Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="3a5ffc86-243b-662d-5f80-f820b130457d" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+
+  <h1>WinForms Graphics Device Sample</h1>
+
+  
+    This sample shows you how to use an XNA Framework <b>GraphicsDevice</b> to display 3D graphics inside a WinForms application.
+  
+
+  <a id="ID2EN" name="ID2EN"> </a><h1 class="heading">Sample Overview</h1><div id="ID2EN" class="hxnx1">
+    
+
+    <p>
+      The XNA Framework <b>Game</b> class provides a quick, easy, and portable way to host your game. It automatically creates a window for the game to run inside, initializes the graphics hardware, and offers simple <b>Update</b> and <b>Draw</b> methods for you to override. Sometimes the <b>Game</b> behavior just is not flexible enough. Perhaps you want more control over how the window is created, or maybe you are writing a level editor and want to place Windows user interface controls around the 3D drawing surface.
+    </p>
+
+    <p>
+      Fortunately, the XNA Framework was designed with these scenarios in mind. The framework is actually made up of several different assemblies: <b>Microsoft.Xna.Framework</b>, <b>Microsoft.Xna.Framework.Graphics</b>, and so on.  These assemblies provide core functionality such as the math, graphics, input, and audio classes, while <b>Microsoft.Xna.Framework.Game</b> provides optional higher-level code such as the <b>Game</b> class. If you want to host your game in some other way, you can replace the functionality from <b>Microsoft.Xna.Framework.Game</b> with your own code.
+    </p>
+
+    <p>
+      This sample implements a <b>GraphicsDeviceControl</b> class, which inherits from <b>System.Windows.Forms.Control</b> and provides the ability for a WinForms control to draw itself using an XNA Framework <b>GraphicsDevice</b>. It demonstrates how to share a single <b>GraphicsDevice</b> between multiple controls, how to handle resizing and lost devices, and how to implement the <b>IGraphicsDeviceService</b> interface in order to support loading data through the <b>ContentManager</b>.
+    </p>
+
+    <p>
+      To reuse this functionality in your own program, copy the source files GraphicsDeviceControl.cs, GraphicsDeviceService.cs, and ServiceContainer.cs. Derive your own custom control class from <b>GraphicsDeviceControl</b>, and override the <b>Initialize</b> and <b>Draw</b> methods.
+    </p>
+
+    <p>Note that this sample runs only on Windows. WinForms is unavailable on Xbox 360 or Windows Phone.</p>
+
+  </div>
+
+  <a id="ID2EEC" name="ID2EEC"> </a><h1 class="heading">How the Sample Works</h1><div id="ID2EEC" class="hxnx1">
+    
+
+    <p>
+      This sample uses the standard "Windows Forms Application" project template, as opposed to the "Windows Game" template provided by the XNA Framework. In order to use XNA Framework functionality, you must manually add the <b>Microsoft.Xna.Framework</b> and <b>Microsoft.Xna.Framework.Graphics</b> assemblies to the References section of the project.
+    </p>
+
+    <p>
+      The sample provides two custom controls: <b>SpriteFontControl</b> and <b>SpinningTriangleControl</b>. Both inherit from the <b>GraphicsDeviceControl</b> and use it to draw graphics by using the XNA Framework.
+    </p>
+
+    <a id="ID2EYC" name="ID2EYC"> </a><h2 class="subHeading">Managing the GraphicsDevice</h2><div id="ID2EYC" class="hxnx2">
+      
+
+      <p>
+        There can be many <b>GraphicsDeviceControl</b> instances in use at the same time. In the interest of efficiency, you only want to create a single underlying <b>GraphicsDevice</b> object. This is managed through the <b>GraphicsDeviceService</b> class, which creates and owns the <b>GraphicsDevice</b>. A reference counting system tracks how many <b>GraphicsDeviceControl</b> instances are using the shared <b>GraphicsDeviceService</b>. In the <b>AddRef</b> method, <b>GraphicsDeviceService</b> checks whether this is the first control to require a graphics device. If so, it creates the singleton instance. Otherwise, it just reuses the existing instance. In the <b>Release</b> method, it checks whether this is the last control to finish using the graphics device. If it is, it disposes the shared <b>GraphicsDevice.</b>
+      </p>
+
+      <p>
+        A problem arises when more than one control is sharing a single graphics device: what size back buffer should you give that device? The controls might not all be the same size, but it would be inefficient if you had to reset the device in order to resize the back buffer every time you wanted to draw onto a differently sized control. The solution is to size the back buffer to fit the largest control, but then use only part of it if you are drawing onto a smaller control. This is handled by the <b>GraphicsDeviceControl.BeginDraw</b> method, which sets the viewport to only render onto the top left portion of the back buffer (corresponding to the size of the current control), and by the <b>GraphicsDeviceControl.EndDraw</b> method, which uses an overload of <b>GraphicsDevice.Present</b> that lets you specify exactly which area of the back buffer to copy onto the display. <b>EndDraw</b> is also responsible for passing the correct window handle to <b>Present</b>, so that it knows onto which of the many possible controls to render.
+      </p>
+
+      <p>
+        The graphics device is not always guaranteed to be available. When you lock your desktop, or if some other program switches to full-screen 3D mode, the device becomes desktop. Also, if some other program switches to full-screen 3D mode, the device becomes inaccessible temporarily. After this happens, you must reset the device before you can continue using it. These situations are normally taken care of by the XNA Framework <b>Game</b> class. Since you are not using <b>Game</b>, you must handle them yourself. This is done by the <b>GraphicsDeviceControl.HandleDeviceReset</b> method, which is called by <b>BeginDraw</b>. This checks the current status of the device. If the device is lost, it returns an error message, which keeps you from using the device to draw. If the device was lost and now needs to be reset, or if the device back buffer is too small for the control onto which you are trying to render, it will reset the device. This ensures it is valid and of a suitable size.
+      </p>
+
+    </div>
+
+    <a id="ID2EME" name="ID2EME"> </a><h2 class="subHeading">Designer Support</h2><div id="ID2EME" class="hxnx2">
+      
+
+      <p>WinForms controls are not only used when you run your program. If you load the MainForm.cs file into the designer, you will see previews of the two controls that it contains. These previews are implemented by the designer loading up and creating an instance of your custom control class. In most cases, this is useful behavior, but an animating 3D graphics control is too resource intensive to be running inside the designer!</p>
+
+      <p>
+        To gracefully handle the designer scenario, the <b>GraphicsDeviceControl</b> class checks its <b>DesignMode</b> property from the <b>OnCreateControl</b> method. If it is running inside the designer, it skips initializing the graphics device. As a result, it will never call the <b>Initialize</b> or <b>Draw</b> methods. Instead, it uses the much simpler <b>PaintUsingSystemDrawing</b> method to show a placeholder representation of the control. You can see this in the designer.
+      </p>
+
+    </div>
+
+    <a id="ID2ECF" name="ID2ECF"> </a><h2 class="subHeading">Loading Content</h2><div id="ID2ECF" class="hxnx2">
+      
+
+      <p>
+        In order to load graphics content such as models, textures, or <b>SpriteFont</b> data, you need two things:
+      </p>
+
+      <p>
+        First, you must build the content alongside your project. This is done by adding an XNA Framework content project to your solution. Because content projects are not directly able to build themselves, we must also add a game library project to build the content. First, add a new "Empty Content Project" to your solution, and add your content files (such as the Arial.spritefont used in this sample) to the new content project. Second, add a new "Windows Game Library" project, which will be used to build the content. Because we do not care about actually adding any code to this library project, you can delete the .csproj file that was added to it by the project template. Third, right-click the game library project, choose <b>Add Content Reference</b>, and select your content project. Finally, right-click the main WinForms project, choose <b>Add Reference</b>, and select the game library project. Your content files will now be built using the XNA Framework Content Pipeline, and automatically copied to the build output folder alongside your executable.
+      </p>
+
+      <p>
+        Second, you must create a <b>ContentManager</b> to load your content files. The <b>ContentManager</b> needs access to your custom <b>GraphicsDevice</b> in order to load graphics data. You must hook up some plumbing to connect the two. Your <b>GraphicsDeviceService</b> class implements the standard <b>IGraphicsDeviceService</b> interface. <b>ContentManager</b> uses this interface whenever it needs to locate the graphics device. To expose this interface, <b>GraphicsDeviceControl</b> provides a <b>Services</b> property, and registers the <b>IGraphicsDeviceService</b> inside its <b>OnCreateControl</b> method. With this plumbing in place, you can pass your custom <b>Services</b> into the <b>ContentManager</b> constructor, as seen in the <b>SpriteFontControl.Initialize</b> method.
+      </p>
+
+      <p>The approach used in this sample requires all content files to be known ahead of time so they can be built as part of the project. For a more dynamic approach to building and loading content, see the WinForms Content Loading Sample.</p>
+
+    </div>
+
+    <a id="ID2ESG" name="ID2ESG"> </a><h2 class="subHeading">Animation</h2><div id="ID2ESG" class="hxnx2">
+      
+
+      <p>WinForms apps are not usually animated. They typically just sit there, doing nothing, until an event notifies them of a user action such as a key press or mouse event. At this point, they spring into action, process the event, redraw the screen if there were any changes, and then go back to sleep.</p>
+
+      <p>
+        Games do not work like that. If you use the XNA Framework <b>Game</b> class, it will call your <b>Update</b> and <b>Draw</b> methods in rapid succession, even when the user is not providing any inputs.
+      </p>
+
+      <p>
+        When you replace the <b>Game</b> class, you must decide whether you want to use WinForms-style event-based updates, or game-style constant animation. This sample demonstrates both approaches. The <b>SpriteFontControl</b> class is not animated: it just uses the <b>Draw</b> method to display some text. It will redraw itself only if the window is resized or invalidated by some other window being dragged over the top of it, in exactly the same way as any normal WinForms control. On the other hand, the <b>SpinningTriangleControl</b> uses game-style animation. This is implemented by a single line in the <b>Initialize</b> method.
+      </p>
+
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+        // Hook the idle event to constantly redraw our animation.
+        Application.Idle += delegate { Invalidate(); };
+      </pre></pre></td></tr></table></span></div>
+
+      <p>
+        This causes WinForms to redraw the control any time it runs out of other events to process. In the <b>Draw</b> method, you then use a <b>Stopwatch</b> to measure how much time has passed since the previous <b>Draw</b>. This time value is then used to control the speed of the spinning triangle.
+      </p>
+
+    </div>
+
+  </div>
+
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: WinForms Graphics Device Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

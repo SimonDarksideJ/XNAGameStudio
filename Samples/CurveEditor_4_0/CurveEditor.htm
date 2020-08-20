@@ -1,0 +1,1254 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history"><title>Curve Editor Utility</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 0;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 
+	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Curve Editor Utility" />
+<MSHelp:RLTitle Title="Curve Editor Utility" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.CurveEditor" />
+<MSHelp:Keyword Index="A" Term="e30587f2-68dc-a1b6-c865-33d7d69c999f" />
+<MSHelp:Keyword Index="K" Term="Curve Editor Utility" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA_20" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="AssetID" Value="e30587f2-68dc-a1b6-c865-33d7d69c999f" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+
+  <h1>Curve Editor Utility</h1>
+  <p>The Curve Editor Utility enables you to graphically construct and edit curves in a format that can be loaded by the XNA Framework into a <b>Curve</b> object. Curve Editor contains three projects, each in its own folder.</p>
+  <ul>
+    <li>CurveEditor – A standalone utility that enables you to edit and save curves for use with the XNA Framework <b>Curve</b> class. </li>
+    <li>CurveControl – A component you can import into a WinForms application to provide curve display and editing capabilities. </li>
+    <li>CurveControlUsageSample – An example that shows you how to use the <b>CurveControl</b> component in a WinForms application.</li>
+  </ul>
+  <p>This document covers the following topics.</p>
+    <ul><li><a href="#ID2ECB">What Are Curves?</a></li><li><a href="#ID2EZB">Using the Curve Editor</a></li><li><a href="#ID2ETJAC">Using a Curve in the XNA Framework</a></li><li><a href="#ID2EENAC">Using Curve Control in Your Own Application</a></li><li><a href="#ID2EGCAE">Tutorial: Animating a Sprite with Curves</a></li></ul>
+  <a name="ID2ECB"></a><h1 class="heading">What Are Curves?</h1><div id="ID2ECB" class="hxnx1">
+    
+    <p>The XNA Framework <b>Curve</b> class represents a two-dimensional (2D) curve—a function relating two axes of values. Curves are useful for a variety of relationships used in games. Physics, animation, and input can all benefit from using curves.</p>
+    <p><b>Curve</b> classes are defined by a set of keys. These keys have an X and a Y value, and they contain mathematical data about the curve tangent that defines how the Y value changes as it approaches the given X value.</p>
+    <p>You can create a <b>Curve</b> class in your XNA Framework game code and fill in the keys manually. However, it is much easier to design and refine a curve graphically where the curve can be displayed and manipulated in 2D Cartesian coordinates. The Curve Editor provides a way to graphically create, modify, and save curves in an XML format. To create <b>Curve</b> objects that behave the way they were drawn in the Curve Editor, use the XNA Framework Content Pipeline at run time to load the XML.</p>
+  </div>
+  <a name="ID2EZB"></a><h1 class="heading">Using the Curve Editor</h1><div id="ID2EZB" class="hxnx1">
+    
+    <p>The Curve Editor can display one or more curves in the curve control. You can create new curves or open existing curves, and the curves will display in the curve control in different colors.</p>
+    <a name="ID2E6B"></a><h2 class="subHeading">Building the Curve Editor</h2><div id="ID2E6B" class="hxnx2">
+      
+      <p>The Curve Editor is distributed as a set of source files that you must build in XNA Game Studio. You launch the Curve Editor when you run the built executable.</p>
+      <p>You need the XNA Game Editor to build the Curve Editor.</p>
+      <div class="proc"><h3 class="subHeading">To build the Curve Editor</h3><div class="subSection">
+      
+      <ol>
+        <li>Start XNA Game Studio.</li>
+        <li>Click the <b>File</b> menu, then click <b>Open Project</b>.</li>
+        <li>Browse to where you downloaded the Curve Editor.</li>
+        <p>You will see three folders: CurveControl, CurveControlUsageSample, and CurveEditor.</p>
+        <li>Open the CurveEditor.sln file, click the CurveEditor.csproj file, and then click <b>Open</b>.</li>
+        <p>This project contains the source code to build the Curve Editor.</p>
+        <li>
+          Press F5 or, on the <b>Debug</b> menu, click <b>Start Debugging</b>.</li>
+        <p>The Curve Editor will build and run.</p>
+      </ol>
+      </div></div>
+    </div>
+    <a name="ID2ETD"></a><h2 class="subHeading">Creating or Opening a Curve</h2><div id="ID2ETD" class="hxnx2">
+      
+      <p>When you start the Curve Editor, the Curve Editor does not contain any curves. You must either create a new curve or load an existing curve.</p>
+      <ul>
+        <li>To create a new curve, either click the <b>File</b> menu at the top of the curve list and click <b>New</b>, or press CTRL+N.</li>
+        <li>To open an existing curve, either click the <b>File</b> menu and click <b>Open</b>, or press CTRL+O. </li>
+      </ul>
+    </div>
+    <a name="ID2ELE"></a><h2 class="subHeading">Selecting a Curve</h2><div id="ID2ELE" class="hxnx2">
+      
+      <p>Once you have created or opened a curve, you can operate on the curve in several ways.</p>
+      <ul>
+        <li>To show or hide a curve, click the check box next to the curve name in the curve list or double-click the curve.</li>
+        <li>To select a curve for editing, click the name of the curve in the curve list. If you wish to edit multiple curves at once, hold CTRL as you click the curves you wish to edit in the curve list. </li>
+        <li>To rename a curve, click the name of the curve in the curve list once to select the curve, then again once it is selected. A renaming box will appear and you can type in a new name for the curve. </li>
+        <li>To delete a curve, click the name of the curve in the curve list and press DELETE. </li>
+      </ul>
+      <p>Selecting a curve in the curve list enables you to edit the curve’s keys in the curve control on the right side of the Curve Editor.</p>
+    </div>
+    <a name="ID2E6E"></a><h2 class="subHeading">Editing Curve Keys</h2><div id="ID2E6E" class="hxnx2">
+      
+      <p>A curve is defined by <i>keys</i>. These keys control the relationship between the curve’s X  and Y values by using the X and Y positions of the keys and <i>tangents</i>. Tangents can be used to shape the curve as it approaches the position of each key.</p>
+      <p>Start creating a curve by either clicking <b>Add Key</b> on the top bar of the curve control or by pressing the A key. Click somewhere in the graph to place a key in that location. Your first key will be connected to the origin (an X and Y position of zero) by a line. Continue to click to add more keys—each key will be connected to the keys near it by a line.</p>
+      <img src="Documentation\CurveEditor_Icon_AddKeyButton.png"><p><b>Figure 1.  Add Key button</b></p>
+      <p>To change the key selection mode, either click <b>Select Keys</b> or press the S key to change. Click on a key to select it for editing, or click and drag to create a selection box that selects multiple keys.</p>
+      <img src="Documentation\CurveEditor_Icon_SelectKeyButton.png"><p><b>Figure 2.  Select Keys button</b></p>
+      <p>Once you have one or more keys selected, you can edit them in the following ways:</p>
+      <ul>
+        <li>
+          <p>To move the key or keys, either click <b>Move Keys</b> on the top bar of the curve control or press the D key.</p>
+          <img src="Documentation\CurveEditor_Icon_MoveKeyButton.png"><p><b>Figure 3.  Move Keys button</b></p></li>
+            <li>To adjust the position and value of a single key numerically, enter the position and value for the selected key into the text boxes on the top bar of the curve control. </li>
+            <li>To delete a selected key or keys, press DELETE.</li>
+            <li>To modify the tangents of the key, use the <b>Tangents</b> menu on the top bar of the curve control. Tangents are discussed later in this document. </li>
+          
+      </ul>
+      <p>If you make a change to a key that you do not want to keep, you can undo the change either by clicking the <b>Edit</b> menu from the top of the curve control and clicking <b>Undo</b> or by pressing CTRL+Z. If you want to reinstate the change, either click <b>Edit</b> and then click <b>Redo</b> or press CTRL+Y.</p>
+    </div>
+    <a name="ID2EAH"></a><h2 class="subHeading">Changing Your View</h2><div id="ID2EAH" class="hxnx2">
+      
+      <p>During curve editing, you can change your view of the graph by zooming and panning.</p>
+      <ul>
+        <li>
+          <p>To zoom in or zoom out your view of the graph, either click <b>Zoom Camera</b> on the top bar of the curve control or press the E key, then click on the curve graph and drag to zoom in or out. You can also quickly zoom by rolling the mouse wheel.</p> 
+          <img src="Documentation\CurveEditor_Icon_ZoomCameraButton.png"><p><b>Figure 4.  Zoom Camera button</b></p></li>
+        <li>
+          <p>To pan around the graph, either click <b>Pan Camera</b> on the top bar of the curve control or press the W key, then click on the curve graph and drag to pan. You can also quickly pan from any mode by holding the SPACEBAR, clicking and dragging. When you release the SPACEBAR, you will return to your previous editing or selection mode.</p>
+      <img src="Documentation\CurveEditor_Icon_PanCameraButton.png"><p><b>Figure 5.  Pan Camera button</b></p>
+        </li>
+      </ul>
+      <p>To help keep your view of the graph manageable, you can use the <b>View</b> menu at the top of the curve control to use the following view modes:</p>
+      <ul>
+        <li>To zoom and pan the graph to fit the entire curve, either click <b>View</b> and then click <b>Frame All</b>, or press the F key. </li>
+        <li>To zoom and pan the graph to fit just the keys you have currently selected, click <b>View</b> and then click <b>Frame Selection</b>. </li>
+        <li>To toggle automatic zooming and panning as you add and modify keys, click <b>View</b> and then click <b>Auto Frame</b>. </li>
+      </ul>
+      <p>Finally, you can also use the <b>View</b> menu to fine-tune how curves, keys, and tangents are displayed for clarity or performance purposes.</p>
+      <ul>
+        <li>To change the smoothness of the curve drawing method used in the Curve Editor, click <b>View</b> and then click <b>Curve Smoothness</b> and pick from the available options. </li>
+        <li>To change how keys and/or tangents are displayed in the Curve Editor, click <b>View</b> and then click <b>Keys</b> or <b>View</b>, and then click <b>Tangents</b> and select from the available options. </li>
+        <li>To toggle whether infinite values are displayed (values calculated beyond the final key or before the first key), click <b>View</b> and then click <b>Infinity</b>. </li>
+      </ul>
+    </div>
+  <a name="ID2E5BAC"></a><h2 class="subHeading">Editing Curve Tangents</h2><div id="ID2E5BAC" class="hxnx2">
+    
+    <p>Tangents control how the values of the curve change as they approach the position of a key. Tangents enable you to control the shape of the curve. You can round it out for smooth value transitions or sharpen it for quick changes.</p>
+    <p>Each key has two tangents. One controls how the curve is shaped as it approaches the key (called an <i>in tangent</i>) and the other controls how the curve is shaped as it departs the key (called an <i>out tangent</i>).</p>
+    <p>Start editing a tangent by selecting one or more keys. Once you select a key, you will notice the tangent lines extending from the key. If you don't see any tangent lines, pull down the <b>View</b> menu and check whether <b>Tangents</b> is set to either <b>Always</b> or <b>Active Only</b>. Tangent lines also are not visible if the key is in Stepped tangent mode. This will be explained later.</p>
+    <p>Once you have selected one or more keys, you can modify the tangents by either using the <b>Tangents</b> menu at the top of the curve control or use the mouse to move the tangent lines manually.</p>
+    <a name="ID2E2CAC"></a><h4 class="subHeading">Editing Tangents with the Tangents Menu</h4><div id="ID2E2CAC" class="hxnx3">
+      
+      <p>The <b>Tangents</b> menu on the top of the curve control enables you to control the tangents of the selected key or keys.</p>
+      <ul>
+        <li>You can apply the same tangent mode to both the in and out tangents for the selected keys by clicking Smooth, Linear, Stepped, or Flat. </li>
+        <li>You can apply tangent modes separately to the in and out tangents for the selected keys by first clicking <b>In Tangent</b> or <b>Out Tangent</b>, and then selecting <b>Smooth</b>, <b>Linear</b>, or <b>Flat</b>. </li>
+      </ul>
+      <p>The tangent modes are as follows:</p>
+      <table>
+        <tr>
+          <th>Tangent Type</th>
+          <th>Definition</th>
+        </tr>
+        <tr>
+          <td>Smooth</td>
+          <td>The tangent line is computed automatically to give a smooth curved shape.</td>
+        </tr>
+        <tr>
+          <td>Linear</td>
+          <td>The tangent line points directly at the previous or following key. This creates a linear shape.</td>
+        </tr>
+        <tr>
+          <td>Stepped</td>
+          <td>The value of the curve as it departs the key remains constant until it reaches the next key, at which point it assumes the value of the new key. It creates a blocky shape with no linear or curved progression.</td>
+        </tr>
+        <tr>
+          <td>Flat</td>
+          <td>The tangent lines are perfectly horizontal. This creates a shape that curves to a maximum value at each key.</td>
+        </tr>
+        <tr>
+          <td>Fixed</td>
+          <td>Signifies that the tangent has been set manually by using the mouse to adjust the tangent lines.</td>
+        </tr>
+      </table>
+    </div>
+    <a name="ID2EGFAC"></a><h4 class="subHeading">Editing Tangents Manually</h4><div id="ID2EGFAC" class="hxnx3">
+      
+      <p>You can move the tangent lines directly for any given key by manually adjusting the shape of the curve as it approaches or leaves the key.</p>
+      <p>With a key selected, either click <b>Select Keys</b> at the top of the curve control or press the S key. Then click and drag a small box that intersects just the tangent line you want to edit. When you release the mouse button, the tangent line should be highlighted.</p>
+      <p>With a tangent line highlighted, either click <b>Move Keys</b> at the top of the curve control or press the D key. Then click on the tangent line and drag it up and down to change its angle.</p>
+      <p>If you modify a tangent line in this manner, the tangent mode as shown in the <b>Tangents</b> menu will be set to <b>Fixed</b> to notify you that this tangent has been modified manually.</p>
+    </div>
+  </div>
+  <a name="ID2E6FAC"></a><h2 class="subHeading">Repeating Curves</h2><div id="ID2E6FAC" class="hxnx2">
+    
+    <p>After the final key of your curve, you will notice there is a dimmed line that leads off to the right, beyond your view of the graph. By panning the graph, you will notice a similar dimmed line extending out from the first key (by default at the origin) to the left. These are <i>pre-infinity</i> and <i>post-infinity</i> lines.</p>
+    <p>
+      By definition, curves in the XNA Framework are infinite. For any position passed in, the <b>Curve</b> class will return a value even if no keys have been defined at that position. This is where pre-infinity and post-infinity come in—they define the values that will be returned prior to the first key and after the final key.
+    </p>
+    <p>You can define your curve’s behavior before and after your keys several different ways. From the <b>Curve</b> menu at the top of the curve control, click either <b>Pre-Infinity</b> (for values before your first key) or <b>Post-Infinity</b> (for values after your final key), and one of the following options.</p>
+    <table>
+      <tr>
+        <th>Repeat Type</th>
+        <th>Definition</th>
+      </tr>
+      <tr>
+        <td>Cycle</td>
+        <td>After the final key, the value returns to that of the first key and repeats the sequence of keys.</td>
+      </tr>
+      <tr>
+        <td>Cycle with Offset</td>
+        <td>After the final key, the value remains the same as the final key (is <i>offset</i> to that of the final key), and repeats the sequence of keys.</td>
+      </tr>
+      <tr>
+        <td>Oscillate</td>
+        <td>After the final key, the key sequence is played back in  reverse order, creating a series of “mirror images” of the curve.</td>
+      </tr>
+      <tr>
+        <td>Linear</td>
+        <td>After the final key, the value progresses linearly in  the direction of the final tangent line.</td>
+      </tr>
+      <tr>
+        <td>Constant</td>
+        <td>After the final key, the value stays constant.</td>
+      </tr>
+    </table>
+  </div>
+  <a name="ID2ELIAC"></a><h2 class="subHeading">Saving a Curve</h2><div id="ID2ELIAC" class="hxnx2">
+    
+    <p>When you create a key to use in your game, save it to an XML file that can be loaded through the XNA Framework Content Pipeline. Then instantiate a <b>Curve</b> class that contains all your new curve data.</p>
+    <div class="proc"><h3 class="subHeading">To save a curve</h3><div class="subSection">
+      
+      <ol>
+        <li>Select the curve you wish to save by clicking on the curve in the curve list.</li>
+        <li>
+          Click the <b>File</b> menu at the top of the curve list, then click <b>Save As</b>.</li>
+        <p>A dialog box appear.</p>
+        <li>Choose the location and name for your curve file, and then click <b>Save</b>.</li>
+      </ol>
+    </div></div>
+    <p>You are ready to load your curve XML file into the XNA Framework and make a <b>Curve</b> object.</p>
+  </div>
+  </div>
+  <a name="ID2ETJAC"></a><h1 class="heading">Using a Curve in the XNA Framework</h1><div id="ID2ETJAC" class="hxnx1">
+    
+    <p>If you want to use a curve XML file from the Curve Editor, you need to load it through the XNA Framework Content Pipeline.</p>
+    <div class="proc"><h3 class="subHeading">To use a curve in the XNA Framework</h3><div class="subSection">
+      
+      <ol>
+        <li>
+          Open a project in XNA Game Studio.
+        </li>
+        <li>Find your project node in the Solution Explorer window, then find the Content node within your project.</li>
+        <li>
+          Right-click it, click <b>Add</b>, and then click <b>Existing Item</b>.
+        </li>
+        <li>
+          From the dialog box that appears, click the <b>Files of type</b> list box and select <b>XML Files</b>.
+        </li>
+        <p>This enables you to see the XML files exported by the Curve Editor.</p>
+        <li>Browse to the XML curve data file you saved in the Curve Editor and add it.</li>
+        <p>A curve XML file is an asset, much like a 2D or 3D art asset, though there is a difference in how it is imported and processed.  By default, the file is configured to load correctly.  However, you can verify the properties to ensure correct loading.</p>
+      </ol>
+    </div></div>
+    <div class="proc"><h3 class="subHeading">To verify the properties were loaded correctly</h3><div class="subSection">
+      
+    
+      <ol>
+        <li>Click the newly-loaded curve XML file in the Solution Explorer window.</li>
+        <p>You should see the Properties window for the XML file appear below the Solution Explorer window.</p>
+        <li>If you do not see this appear, click the <b>View</b> menu, then click the Properties window.</li>
+        <li>In the Properties window, check these values:
+          <ul>
+            <li><b>Content Importer</b> must be set to XML Content—XNA Framework.</li>
+            <li><b>Content Processor</b> must be set to No Processing Required. </li>
+            <li>Note the <b>Asset Name</b> as this is the string you will pass when loading the XML file in code.</li>
+          </ul>
+        </li>
+      </ol>
+    </div></div>
+    </div>
+    <p>The XML file is ready to be loaded in code, to create a <b>Curve</b> object. Just like a 2D or 3D art asset, you will use the <b>ContentManager</b> class to load the object. A sample line of code that would load an XML file with the asset name <code>CurveFile</code> into a <b>Curve</b> object called <code>curveObject</code> would be:</p>
+  <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>Curve curveObject = Content.Load&lt;Curve&gt;("CurveFile");</pre></pre></td></tr></table></span></div>
+    <p>When this line of code is executed, <code>curveObject</code> will be populated with the curve values that were saved to the CurveFile XML file in the Curve Editor.</p>   
+    <p>Once you have a <b>Curve</b> object instantiated, simply call <b>Curve.Evaluate</b> with a position X floating-point value, and the return value will be the Y value at that position.</p>
+  
+  <a name="ID2EENAC"></a><h1 class="heading">Using Curve Control in Your Own Application</h1><div id="ID2EENAC" class="hxnx1">
+    
+    <p>Curve control enables you to easily see and edit curves. Curve control is a common control that you can place in a WinForms application. The CurveControl folder contains the source code to the curve control.</p>
+    <div class="proc"><h3 class="subHeading">To use the curve control in a new Windows application</h3><div class="subSection">
+      
+      <ol>
+        <li>
+          Start XNA Game Studio.
+        </li>
+        <li>From the <b>File</b> menu, click <b>New Project</b> and select <b>Windows Application</b>, give it a name, and click <b>OK</b> to create the new project.</li>
+        <li>Save the project to a folder by clicking <b>File</b>, and then clicking <b>Save</b>.</li>
+        <li>Right-click on the topmost node (solution node) in the Solution Explorer tree, and click <b>Add</b>, then click <b>Existing Project</b>.</li>
+        <li>Browse to the folder to which you unzipped the Curve Editor utility, and open the CurveControl subfolder.</li>
+        <li>Click the CurveControl.csproj file and select <b>Open</b>.</li>
+        <li>Right-click again on the topmost node in the Solution Explorer tree, and click <b>Project Dependencies</b>.</li>
+        <p>A dialog box appears.</p>
+          <li>Place a check in the box next to CurveControl and click <b>OK</b>.</li>
+        <li>Right-click on your new Windows application project node in the Solution Explorer tree, and click <b>Add Reference</b>.</li>
+        <p>A dialog box appears.</p>
+        <li>Click the <b>Projects</b> tab, click the CurveControl project in the list, and click <b>OK</b>.</li>
+        <li>Right-click on the topmost node in the Solution Explorer tree, and click <b>Rebuild Solution</b>. </li>
+      </ol>
+    </div></div>
+      <p>Once you have completed these steps, you can now use the curve control as a component in your new Windows application.</p>
+    <div class="proc"><h3 class="subHeading">To add components</h3><div class="subSection">
+      
+      <ol>
+        <li>In the Solution Explorer tree for your new Windows application, right-click the <b>Form1.cs</b> file, and then click <b>View Designer</b>.</li>
+        <li>When the Designer view opens, click the <b>Toolbox</b> flyout to the left of the designer view.</li>
+        <p>In the toolbox list, you will see the <b>CurveControl</b> and <b>GridControl</b> components.</p>
+        <li>To add the components to the form, drag and drop them onto the form surface in Designer view.</li>        
+      </ol>      
+    </div></div>
+      <p>The <b>CurveControl</b> component provides curve visualization and editing:</p>
+      <ul>
+        <li>Add curves to the <b>CurveControl</b> by constructing <b>EditCurve</b> objects and calling the <b>Curves.Add</b> method for each <b>EditCurve</b> you wish to add.</li>
+        <li>Allow or disallow editing of curves by setting the <b>Editable</b> property. </li>
+        <li>Show or hide the curve editing menu bar by setting the <b>MenuVisible</b> property. </li>
+        <li>Change the grid colors of the curve control by setting the <b>GridBoldLineColor</b>, <b>GridLineColor</b>, and <b>GridTextColor</b> properties.</li>
+        <li>Change the color of the selection box created by clicking and dragging on the curve control in Select Keys mode by setting the <b>SelectingBoxBorderColor</b> and <b>SelectingBoxColor</b> properties. </li>
+      </ul>
+      <p>For an example of using the curve control in your application, see the CurveControlUsageSample folder.</p>
+  </div>
+  <a name="ID2EGCAE"></a><h1 class="heading">Tutorial: Animating a Sprite with Curves</h1><div id="ID2EGCAE" class="hxnx1">
+    
+    <p>Curves can be useful in a variety of scenarios. To get started with the Curve Editor, consider a simple scenario: animating a two-dimensional graphic or sprite by making the sprite change position on the screen over time.</p>
+    <p>In many two-dimensional action games, a sprite is used to represent how an enemy might move toward the player using an oscillating motion that makes the enemy difficult to track. To create this motion, we will use a combination of the Curve Editor and XNA Game Studio, first creating the motion as a curve in the Curve Editor, then loading the curve data into a <b>Curve</b> class using the XNA Framework and the Content Pipeline.</p>
+    <div class="proc"><h3 class="subHeading">To create an XNA Game Studio project</h3><div class="subSection">
+      
+      <ol>
+        <li>Start XNA Game Studio</li>
+        <li>Click the <b>File</b> menu, then click <b>New Project</b> select a Windows Game project, give it a name and a location, then click <b>OK</b> to create the project.</li>
+      </ol>
+    </div></div>
+    <p>This project is your game project. This is where you will experiment with the curve you create in the Curve Editor.</p>
+      <p>To use the Curve Editor, you will need to open a second project, the Curve Editor.</p>
+    <div class="proc"><h3 class="subHeading">To build and run the Curve Editor</h3><div class="subSection">
+      
+      <ol>
+      <li>Open a second instance of XNA Game Studio, and leave your game project open.</li>
+      <li>Click the <b>File</b> menu, then click <b>Open Project</b>.</li>
+      <li>Browse to where you downloaded the Curve Editor.</li>
+      <p>You will see three folders: CurveControl, CurveControlUsageSample, and CurveEditor.</p>
+      <li>Open the CurveEditor.sln file, click the <b>CurveEditor.csproj file</b>, and then click <b>Open</b>.</li>
+      <p>This project contains the source code to build the Curve Editor.</p>
+      <li>Press F5 or, on the <b>Debug</b> menu, click <b>Start Debugging</b>, and the Curve Editor will build and run.</li>
+      </ol>
+    </div></div>
+    <p>When the Curve Editor starts, you will see a window with two main areas. On the left, you will see the <i>curve list</i>, which currently is blank. On the right, you will see a graph with several controls. This is called the <i>curve control</i>.</p>
+    <div class="proc"><h3 class="subHeading">To create the curve</h3><div class="subSection">
+      
+      <ol>
+        <li>From the <b>File</b> menu at the top of the window, click <b>New</b>.</li>
+        <p>A new curve will appear in the curve list. The curve control will change to display a single point at the origin of the graph.</p>
+      <p>Above the curve control window, you will see a row of buttons.</p>
+        <li>Either click <b>Zoom</b> or press the E key.</li>
+        <img src="Documentation\CurveEditor_Icon_ZoomCameraButton.png"><p><b>Figure 6.  Zoom Graph button</b></p>
+        <li>Click on the curve and drag up to zoom out until you reach values of about 200 horizontally and 80 vertically.</li>
+      <img src="Documentation\CurveEditor_Screenshot_1_ZoomedOutGraph.png"><p><b>Figure 7.  Curve Editor with a single curve loaded, zoomed out to 200,80</b></p>
+        <li>Either click the <b>Add Key</b> or press the A key.</li>
+        <p>When you move your cursor over the curve control, you will see the cursor change to a tool with a plus (+) sign. This tool enables you to add keys (control points) that help create the curve’s shape.</p>
+      <img src="Documentation\CurveEditor_Icon_AddKeyButton.png"><p><b>Figure 8.  Add Key button</b></p>
+        <p>Start by adding one key.</p>
+        <li>With the <b>Add Key</b> tool active, click the graph up and to the right of the origin.</li>
+        <p>You will see a key placed at the point you clicked, and a line will connect this new point back to the origin.</p>
+      <img src="Documentation\CurveEditor_Screenshot_2_SingleKey.png"><p><b>Figure 9.  Curve Editor with first user-placed key at X = 40, Y =  40</b></p>
+      <p>You will see a dimmed line lead off to the right—this is the <i>post-infinity</i> continuation of the curve. A similar dimmed line extends off to the left from the origin—this is the <i>pre-infinity</i> continuation of the curve. The next step is to change these continuations to produce an oscillating behavior.</p>
+        <li>From the <b>Curves</b> menu at the top of the curve control window, click <b>Post-Infinity</b>, and then click <b>Oscillate</b>.</li>
+        <p>Now the curve oscillates forever to the right. It bounces between the value of the key and zero.</p>
+        <li>From the <b>Curves</b> menu again, click <b>Pre-Infinity</b>, and then click <b>Oscillate</b>.</li>
+        <p>The curve now oscillates to the left as well.</p>
+      <img src="Documentation\CurveEditor_Screenshot_3_Oscillation.png"><p><b>Figure 10.  Curve Editor with pre-infinity and post-infinity oscillation</b></p>
+        <li>Name the curve, and save it to the Content folder within the game project you created in Step 1.</li>
+        <p>Leave the Curve Editor open.</p>
+        <li>Start XNA Game Studio.</li>
+       </ol>
+    </div></div>
+    <div class="proc"><h3 class="subHeading">To load the curve in XNA Game Studio</h3><div class="subSection">
+      
+      <ol>
+        <li>Return to your game project in XNA Game Studio.</li>
+        <li>With your game project open, add your curve file to the project.</li>
+        <li>Right-click on the Content node within your project in the Solution Explorer tree, click <b>Add</b>, and click <b>Existing Item...</b>.</li>
+        <li>When the <b>Add</b> dialog box appears, click the <b>Files of type</b> drop-down box and click <b>XML files</b>.</li>
+        <p>In the previous step, you saved the curve XML file to your game project folder. It should appear in the file list.</p>
+        <li>Click the curve XML file, and then click <b>Add</b>.</li>
+        <p>You will see the curve file appear in the Content node in the Solution Explorer tree.</p>
+        <li>Click once on the file in the tree, and notice the Properties window below the Solution Explorer window changes to reflect the properties of the curve file.</li>
+        <li>
+          <p>If you do not see the Properties window, from the <b>View</b> menu, click the <b>Properties</b> window.</p>
+      <p>In the Properties window for the curve file, check that the following values are set:</p>
+      <ul>
+        <li><b>Content Importer</b> must be set to XML Content – XNA Framework. </li>
+        <li><b>Content Processor</b> must be set to No Processing Required. </li>
+      </ul>
+        </li>
+      <p>Note the <b>Asset Name</b> property for the curve file. This is the name you will use when loading the curve data into the <b>Curve</b> object.</p>
+      </ol>
+    </div></div>
+    <div class="proc"><h3 class="subHeading">To add a sprite</h3><div class="subSection">
+      
+      <p>To demonstrate how this curve can be used to move an object, find a small graphic. Just about any JPG, GIF, or PNG will do. It is best if it is small, no larger than 200 pixels on each side.</p>
+      <ol>
+        <li>Right-click on the Content node within your project node in Solution Explorer tree, click <b>Add</b>, then click <b>Existing Item...</b>, and browse to this graphic file.</li>
+        <p>Be sure that the <b>Files of type</b> box is set to <b>Content Pipeline Files</b>. Otherwise, you will not see your graphic listed.</p>
+        <li>Click on the graphic and click <b>Add</b>.
+        </li>
+        <li>Click on the graphic and note its <b>Asset Name</b> property in the Property Window.</li>
+        <p>You will use this name to load the graphic into a <b>Texture2D</b>object.</p>
+      </ol>
+    </div></div>
+    <div class="proc"><h3 class="subHeading">To write the code to use the curve</h3><div class="subSection">
+      
+      <p>You will now write the XNA Framework code in your game project that will load the <b>Curve</b> and <b>Texture2D</b> object for your graphic, move the position of the graphic according to the values in the <b>Curve</b> object, and draw the graphic at the position.</p>
+      <ol>
+      <li>Start at the top of your Game1.cs file where you see this code.</li>
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>public class Game1 : Microsoft.Xna.Framework.Game
+    {
+        GraphicsDeviceManager graphics;
+        SpriteBatch spriteBatch;</pre></pre></td></tr></table></span></div>
+<li>
+  <p>Below it, add the following lines:</p>
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>Curve curve;
+        Texture2D sprite;
+        Vector2 position;</pre></pre></td></tr></table></span></div>
+      <p>Using these four objects, you can animate a sprite using curve data.</p>
+</li>
+      <li>Find the <b>LoadContent</b> method and add the following lines within the function:</li>
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+sprite = Content.Load&lt;Texture2D&gt;("MySprite");
+curve = Content.Load&lt;Curve&gt;("MyCurve");
+      </pre></pre></td></tr></table></span></div>
+      <p>Where <code>MySprite</code> and <code>MyCurve</code> are the <b>Asset Name</b> properties of the graphic and the curve file in the Solution Explore window.</p>
+      <li>
+        <p>Find the <b>Update</b> method, and add the following code within it:</p>
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>position.X += 1.0f;
+position.Y = curve.Evaluate(position.X);</pre></pre></td></tr></table></span></div>
+      <p>This is the key to using the <b>Curve</b> object. <b>Evaluate</b> takes a floating-point value that represents position (the X, or horizontal, value on the Curve Editor graph) and returns the corresponding value (the Y, or vertical, value on the Curve Editor graph).</p>
+      </li>
+      <li>
+        <p>Finally, find the <b>Draw</b> method, and add the following code within it after the call to <b>GraphicsDevice.Clear</b>:</p>
+           <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>spriteBatch.Begin();
+spriteBatch.Draw(sprite, position, Color.White);
+spriteBatch.End();</pre></pre></td></tr></table></span></div>
+      <p>This will draw the sprite at the position that is being updated by the <b>Curve</b> object on each call to the <b>Update</b> method.</p>
+      </li>
+      </ol>
+    </div></div>
+    <div class="proc"><h3 class="subHeading">To try it out</h3><div class="subSection">
+      
+      <ol>
+        <li>Build and run your project.</li>
+        <p>You will see your sprite moving slowly both from left to right and up and down, though the movement is a bit mechanical.</p>
+        <li>To smooth the movement out, modify the curve, save it from the Curve Editor, and rebuild the project—no code changes needed.</li>
+      </ol>
+  </div></div>
+    <div class="proc"><h3 class="subHeading">To modify the curve</h3><div class="subSection">
+      
+      <ol>
+        <li>Return to the Curve Editor, and open your XML curve file from your game project folder.</li>
+        <li>Click <b>Add Key</b>, and create a key at the bottom of the first trough after the first key you placed.</li>
+        <p>For a key placed at X = 40, Y = 40, this trough will be roughly at X = 80, Y = 0. You will notice the curve smooth out—the tangents of the new key round out the curve as the position approaches the position of the key. Tangents are discussed earlier in the document.</p>
+            <img src="Documentation\CurveEditor_Screenshot_4_SecondKey.png"><p><b>Figure 11.  Curve Editor with second key added at 80,0</b></p>
+        <p>You need to make one more change. You need to set the tangent type for both keys to “Flat” to get the maximum curve smoothness.</p>
+        <li>Either click <b>Select Keys</b> at the top of the curve control, or press the S key.</li>
+        <li>Then, starting above and to the left of your curve, drag a box around your keys, including a key at the origin.</li>
+        <p>When you release the mouse button, all of the keys will be highlighted.</p>
+        
+            <img src="Documentation\CurveEditor_Icon_SelectKeyButton.png"><p><b>Figure 12.  Select Keys button</b></p>
+            <img src="Documentation\CurveEditor_Screenshot_5_AllKeysSelected.png"><p><b>Figure 13.  Curve Editor with all keys selected</b></p>
+        <li>With the keys selected, click the <b>Tangents</b> menu, and click <b>Flat</b>.</li>
+        <li>Save your curve.</li>
+            <img src="Documentation\CurveEditor_Screenshot_6_FlatTangents.png"><p><b>Figure 14.  Curve Editor with flat tangents on all selected keys</b></p>
+        <li>Return to XNA Game Studio, and build and run your project.</li>
+        <p>You will see the sprite move in a more natural fashion. This is due to the curves being smoother instead of linear.</p>
+        </ol>
+    </div></div>
+    <p>This is a very simple use of curves. Many more possibilities exist for you to use curves, even in non-graphical ways. To handle physics, artificial intelligence, input, and anywhere else where you need to relate a change in one value to a change in another value. Curves can reduce coding time and allow for quick construction and “tweaking” of relationships as you develop your game.</p>
+  </div>
+</div><div class="footer" id="footer"><p>© 2008 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Curve Editor Utility">xnags@microsoft.com</a>.</p></div></div></body></html>

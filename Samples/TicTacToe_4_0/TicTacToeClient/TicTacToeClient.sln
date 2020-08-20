@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeGame", "TicTacToeGame\TicTacToeGame\TicTacToeGame.csproj", "{E3ADE3CE-F012-4DC6-85B3-8564EAC8407A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeGameContent", "TicTacToeGame\TicTacToeGameContent\TicTacToeGameContent.contentproj", "{83D8FC73-49C0-4AFF-945C-4414AE8BA67C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3ADE3CE-F012-4DC6-85B3-8564EAC8407A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{E3ADE3CE-F012-4DC6-85B3-8564EAC8407A}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{E3ADE3CE-F012-4DC6-85B3-8564EAC8407A}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{E3ADE3CE-F012-4DC6-85B3-8564EAC8407A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{E3ADE3CE-F012-4DC6-85B3-8564EAC8407A}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{E3ADE3CE-F012-4DC6-85B3-8564EAC8407A}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{83D8FC73-49C0-4AFF-945C-4414AE8BA67C}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{83D8FC73-49C0-4AFF-945C-4414AE8BA67C}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

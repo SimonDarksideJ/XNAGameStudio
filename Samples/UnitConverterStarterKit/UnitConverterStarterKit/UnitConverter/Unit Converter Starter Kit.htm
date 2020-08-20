@@ -1,0 +1,875 @@
+﻿<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>Unit Converter Starter Kit</title>
+    <style type="text/css">
+ body
+{
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+}
+dl
+{
+	margin-top:	15;
+	margin-bottom:5;
+	padding-left:	1;
+}
+
+dl.authored dt {
+	font-style:	bold;
+	margin-top: 2;
+}
+
+dd {
+	margin-left:	20px;
+}
+
+ul
+{
+	margin-top:0;
+	margin-bottom:0;
+	margin-left: 17;
+	list-style-type: disc;
+}
+
+ul ul
+{
+	margin-bottom: 4;
+	margin-left: 17;
+	margin-top: 3;
+	list-style-type: disc;
+}
+
+ol {
+	margin-top:0;
+	margin-bottom:0;
+	margin-left: 28;
+	list-style-type: decimal;
+}
+
+ol ol {
+	margin-bottom: 4;
+	margin-left: 28;
+	margin-top: 3;
+	list-style-type: lower-alpha;
+}
+
+li {
+	margin-top: 5;
+	margin-bottom: 5;
+}
+
+p {
+	margin-top: 10;
+	margin-bottom: 5;
+}
+
+a:link {
+	color:	#0000FF;
+}
+
+a:visited {
+	color: #DD7C3B;
+}
+
+a:hover {
+	color:	#3366FF;
+}
+
+code
+{
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+span.parameter {
+	font-style: italic;
+}
+
+span.italic {
+	font-style: italic;
+}
+
+span.selflink {
+	font-weight: bold;
+}
+
+span.nolink {
+	font-weight: bold;
+}
+
+div.breadCrumbs {
+	font-size: 8pt;
+	margin-bottom: 5;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	padding-bottom: 5;
+}
+
+div#mainSection
+{
+	font-size: 62.5%;
+	width: 100%;
+}
+html&gt;body #mainSection
+{
+	font-size:73%;
+	width: 100%;
+}
+
+div#mainBody
+{
+	font-size: 100%;
+	margin-left: 15;
+	margin-top: 10;
+}
+
+html&gt;body #mainBody
+{
+	font-size: 93%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#header
+{
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+div#header table
+{
+	width:	100%;
+}
+
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	margin-top:	0;
+	margin-bottom:	0;
+	padding-right: 20;
+}
+
+div#header table tr#headerTableRow2 td
+{
+	padding-left: 13px;
+}
+
+div#header table tr#headerTableRow3 td
+{
+	padding-top: 2px;
+	padding-left: 15;
+}
+
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div#mainSection table td.imageCell
+{
+	white-space: nowrap;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div#mainBody div.section div.alert, div#mainBody div.section div.code,
+div#mainBody div.section div.tableSection
+{
+	width:100%;
+}
+
+div#mainBody div.section ul div.alert, div#mainBody div.section ul div.code,
+div#mainBody div.section ul div.tableSection, div#mainBody div.section ol div.alert, 
+div#mainBody div.section ol div.code, div#mainBody div.section ol div.tableSection
+{
+	width:100%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+dd p
+{
+	margin-top:2;
+	margin-bottom:8;
+}
+div.tableSection p
+{
+	margin-top:1;
+	margin-bottom:4;
+}	
+li p
+{
+	margin-top:2;
+	margin-bottom:2;
+}
+div.seeAlsoNoToggleSection dl
+{
+	margin-top:8;
+	margin-bottom:1;
+	padding-left:1;
+}
+div.seeAlsoNoToggleSection dd p
+{
+	margin-top:2;
+	margin-bottom:8;
+}
+div.section dl
+{
+	margin-top:8;
+	margin-bottom:1;
+	padding-left:1;
+}
+div.section dd p
+{
+	margin-top:2;
+	margin-bottom:8;
+}
+
+div.code table
+{
+	border: 0;
+	font-size: 95%;
+	margin-bottom: 5;
+	margin-top:-.4em;
+	width: 100%
+}
+
+div.code table th
+{	
+	background:	#EFEFF7;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	color: #000066;
+	font-weight: bold;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.code table td
+{
+	background:	#F7F7FF;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	padding-left: 5;
+	padding-right: 5;
+	padding-top: 5;
+}
+
+span#runningHeaderText
+{
+	color: #8C8C8C;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+span#nsrTitle
+{
+	color: #000000;
+	font-size: 160%;
+	font-weight: 400;
+	font-family: arial;
+}
+
+div#footer
+{
+	font-size: 80%;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	padding-top:	8;
+	padding-bottom:	6;
+	padding-left:	1;
+	padding-right:	1;
+	width:	100%;
+}
+
+html&gt;body div#footer
+{
+	font-size: 80%;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	padding-top:	2;
+	padding-bottom:	6;
+	padding-left:	1;
+	padding-right:	1;
+	width:	98%;
+}
+
+div.seeAlsoNoToggleSection
+{
+	margin-left:0;
+	padding-top:	2;
+	padding-bottom:	2;
+	padding-left:	0;
+	padding-right:	15;
+	width:	100%;
+}
+
+div.section
+{
+	margin-left:0;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	16;
+	padding-right:	15;
+	width:	100%;
+}
+html&gt;body div.section
+{
+	margin-left:0;
+	padding-top:	2;
+	padding-bottom:	2;
+	padding-left:	16;
+	padding-right:	15;
+	width:	97%;
+}
+div.seeSection
+{
+	margin-left:0;
+	padding-top:	0;
+	padding-bottom:	2;
+	padding-left:	16;
+	padding-right:	15;
+	width:	100%;
+}
+
+.heading
+{
+	font-weight:	bold;
+	margin-top:		18;
+	margin-bottom:	8;
+}
+
+h1.heading
+{
+	color: #000000;
+	font-size:	130%;
+}
+
+.subHeading
+{
+	font-weight:	bold;
+	margin-bottom:	4;
+}
+.procedureSubHeading
+{
+	font-weight: bold;
+	margin-bottom: 4;
+}
+
+h3.subHeading
+{
+	color:  #000000;
+	font-size: 120%;
+    font-weight:800;
+}
+
+h3.procedureSubHeading
+{
+	color: #000000;
+	font-size: 120%;
+}
+
+h4.subHeading
+{
+	color: #000000;
+	font-size: 110%;
+	font-weight:800;
+}
+span.labelheading, div.labelheading
+{
+	font-size:100%;
+	color:#003399;
+}
+
+img.note
+{
+	border: 0;
+	margin-right: 3;
+}
+
+div#mainSection table
+{
+	border: 0;
+	font-size: 100%;
+	width:	98.9%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div#mainSection table tr
+{
+	vertical-align: top;
+}
+
+div#mainSection table th
+{
+	background-color: #EFEFF7;
+	border-bottom: 1px solid #C8CDDE;
+	border-left: 1px none #D5D5D3;
+	color: #000066;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+}
+
+div#mainSection table td
+{
+	background-color: #F7F7FF;
+	border-bottom: 1px solid #D5D5D3;
+	border-left: 1px none #D5D5D3;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div#mainSection table td.imageCell
+{
+	white-space: nowrap;
+}
+
+div.code table
+{
+	border: 0;
+	font-size: 95%;
+	margin-bottom: 5;
+	width: 100%
+}
+
+div.code table th
+{	
+	background:	#EFEFF7;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	color: #000066;
+	font-weight: bold;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.code table td
+{
+	background:	#F7F7FF;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	padding-left: 5;
+	padding-right: 5;
+	padding-top: 5;
+}
+
+div.alert table
+{
+	border: 0;
+	font-size: 100%;
+	width:	100%;
+}
+
+div.alert table th
+{
+	background:	#EFEFF7;
+	border-bottom-width: 0;
+	color: #000066;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.alert table td
+{
+	background:	#F7F7FF;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.code pre
+{
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+	word-wrap:	break-word;
+	background: #F7F7FF;
+}
+
+.tip
+{
+	color:	#0000FF;
+	font-style: italic;
+	cursor: pointer;
+	text-decoration:underline;
+}
+
+.math
+{
+	font-family: Times New Roman;
+	font-size: 125%
+}
+
+div.footerLine {
+	margin: 0;
+	width: 100%;
+	padding-top:	8;
+	padding-bottom:	6;
+	/*padding-left:	5;
+	padding-right:	2;*/
+
+}
+
+div.hr1 {
+	margin: 0;
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	background: #C8CDDE;
+	font-size: 1px;
+}
+
+div.hr2 {
+	margin: 0;
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	background: #D4DFFF;
+	font-size: 1px;
+}
+
+div.hr3 {
+	margin: 0;
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	background: #EEEEFF;
+	font-size: 1px;
+}
+
+span.cs {
+	display: none;
+}
+
+span.vb {
+	display: none;
+}
+
+span.cpp {
+	display: none;
+}
+
+span.nu {
+	display: inline;
+}
+
+span.fs 
+{
+	display: none;
+}
+
+span.code {
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066; 
+}
+span.ui {
+	font-weight: bold;
+}
+span.math {
+	font-style: italic;
+}
+span.input {
+	font-weight: bold;
+}
+span.term {
+	font-style: italic;
+}
+span.label 
+{
+	font-weight: bold;
+}
+span.foreignPhrase {
+	font-style: italic;
+}
+span.placeholder {
+	font-style: italic;
+}
+span.keyword 
+{
+	font-weight: bold;
+}
+span.typeparameter
+{
+	font-style:italic;
+}
+
+div.caption
+{
+	font-weight: bold;
+	font-size:100%;
+	color:#003399;
+}
+
+
+div.code span.keyword 
+{
+	color: #871F78;
+}
+
+div.code span.parameter 
+{
+	font-style: italic;
+}
+
+div.code span.literal 
+{
+	color:#8B0000;
+}
+
+div.code span.comment 
+{
+	color: #006400;
+}
+
+span.syntaxLabel
+{
+	color:#0481DA;
+	font-weight:bold;
+}
+span.introStyle
+{
+	color:DarkGray;
+}
+
+div.seeAlsoStyle
+{
+	padding-top:5px;
+
+}
+
+td.nsrBottom
+{
+	height: 0.6em;
+	width: 100%;
+}
+  </style>
+  </head>
+  <body>
+    <div id="header">
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText" />
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">Unit Converter Starter Kit</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <a href="#seeAlsoToggle">See Also</a>  </td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <font color="DarkGray"></font>
+        <p /> <p><font color="DarkGray">11/16/2010</font></p><div class="introduction"><p /></div><a name="Top" /><div id="sectionSection0" class="seeAlsoNoToggleSection"><p>This Windows Phone 7 Starter Kit is a complete Unit Converter application written in C#. The program provides the user with the ability to convert values from one type of unit to another. The units can be in the following categories: length, temperature, speed, time, volume, angle, weight, or area. </p><p>The program consists of two pages.  The main page allows the user to enter a number.  This number is displayed in one unit and then converted and displayed in another unit.  For example, the user can enter 8 inches and the program will then convert that to 20.32 centimeters. If the user has a particular conversion they use frequently, they can save it as a favorite.</p><p>The user can navigate to a Category Selection page where they can select from categories of units.  Within each category, the user can select a unit to convert <span class="label">From</span> and a unit to convert <span class="label">To</span>.  Amongst the categories will be the user’s <span class="label">Favorites</span>.  The user can tap and hold a favorite conversion to display a context menu.  This context menu enables the user to delete the favorite.</p><p><span sdata="link"><a href="#Goals">Goals</a></span></p><p><span sdata="link"><a href="#Getting_Started">Getting Started</a></span></p><p><span sdata="link"><a href="#Program_Files">Program Files</a></span></p><p><span sdata="link"><a href="#Loading_App">Loading the Application</a></span></p><p><span sdata="link"><a href="#Loading_Data">Loading the Conversion Data</a></span></p><p><span sdata="link"><a href="#Context_Menu">Implementing a Context Menu</a></span></p><p><span sdata="link"><a href="#Extending_App">Extending the Unit Converter Application</a></span></p><div class="alert"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"><b>Note:</b></th></tr><tr><td><p>This documentation assumes that you have a basic knowledge of C# programming concepts and the Windows Phone Developer Tools. You can download the Windows Phone Developer Tools <a href="http://go.microsoft.com/fwlink/?linkid=189554">here</a>. The code for this Unit Converter Starter Kit can be downloaded <a href="http://go.microsoft.com/fwlink/?LinkID=206122">here</a>.  You can also read a whitepaper related to the handling of tombstoning in this application by downloading it from <a href="http://go.microsoft.com/fwlink/?LinkID=206416">here</a>.</p></td></tr></table></div><p /><a name="Goals" /><h3 class="subHeading">Goals</h3><div class="subsection"><p>After reading through this topic, you will understand how the Unit Converter program works.  You will also understand a few ways in which you can customize it using the Windows Phone Developer Tools. This starter kit demonstrates:</p><ul><li><p>How to apply the Model-View–ViewModel design pattern in creating your Windows Phone 7 application.</p></li><li><p>How to optimize your application start up. </p></li><li><p>How to create a context sensitive menu.</p></li><li><p>How to dynamically add pages to a pivot control.</p></li></ul><p><span sdata="link"><a href="#Top">Top</a></span></p></div><a name="Getting_Started" /><h3 class="subHeading">Getting Started</h3><div class="subsection"><p>To compile and run the Unit Converter Starter Kit: </p><ol><li><p>Download and unzip the Unit Converter Starter Kit. </p></li><li><p>Open the <span class="label">UnitConverter.sln</span> solution file in Visual Studio.</p></li><li><p>Build the Unit Converter application and run it in the emulator or deploy it to your registered phone.</p></li></ol><p><span sdata="link"><a href="#Top">Top</a></span></p></div></div><a name="Program_Files" /><h1 class="heading"><span>Program Files</span></h1><div id="sectionSection1" class="section" name="collapseableSection" style=""><p>The Unit Converter application applies the Model-View-ViewModel (MVVM) design pattern.  The files in the Unit Converter solution are divided into Model, View, and ViewModel folders.  For more information about MVVM, see <a href="http://go.microsoft.com/fwlink/?LinkID=206130">WPF Apps With The Model-View-ViewModel Design Pattern</a>, <a href="http://go.microsoft.com/fwlink/?LinkID=206131">Model-View-ViewModel In Silverlight 2 Apps</a>, and <a href="http://go.microsoft.com/fwlink/?LinkID=206132">Problems and Solutions with Model-View-ViewModel</a>.</p><p>Besides the Model, View, and ViewModel folders, the solution also includes a number of folders that contain helper classes.</p><h3 class="subHeading">Main Program</h3><div class="subsection"><ul><li><p><span class="label">App.xaml.cs</span> - Contains the <span class="ui">App()</span> method – the location where the program begins execution and where event handlers are initialized.</p></li></ul></div><h3 class="subHeading">Model</h3><div class="subsection"><p>The files in the <span class="label">Model</span> folder contain the data for the application.</p><ul><li><p><span class="label">ApplicationState.cs</span> -  Holds information state that is used across multiple pages.</p></li><li><p><span class="label">CategoryInformation.cs</span> - Contains the conversion information for units of a particular category (length, weight, etc).</p></li><li><p><span class="label">CategoryPageState.cs</span> - Contains the state information specific for the Category Selection page.</p></li><li><p><span class="label">CommonPageState.cs</span> - Contains state information that is shared between the MainPage and the Category Selection page.</p></li><li><p><span class="label">CurrentConversion.cs</span> - Contains information about the currently selected conversion.</p></li><li><p><span class="label">FavoriteCollection.cs</span> - Contains the collection of the user’s favorite conversions.</p></li><li><p><span class="label">FavoriteData.cs</span> - Contains the data for one of the user’s favorite conversions. These are serialized and deserialized to and from isolated storage.</p></li><li><p><span class="label">MainPageState.cs</span> - Contains state information for the MainPage.</p></li><li><p><span class="label">UnitInformation.cs</span> - Contains specific information about each unit of conversion.</p></li></ul></div><h3 class="subHeading">View</h3><div class="subsection"><p>The files in the <span class="label">View</span> folder control the user interface layout of the application.</p><ul><li><p><span class="label">CategorySelection.xaml and CategorySelection.xaml.cs</span> - Displays information for the Category Selection page.</p></li><li><p><span class="label">MainPage.xaml and MainPage.xaml.cs</span> - Displays information for the MainPage where conversions are done.</p></li><li><p><span class="label">PageCommon.cs</span> - Contains functions that are common between the MainPage and the Category Selection page.</p></li><li><p><span class="label">TiltEffect.cs</span> - Provides attached properties for adding a 'tilt' effect to all controls within a container.  To learn more about implementing the ‘tilt’ effect, see <a href="http://go.microsoft.com/fwlink/?LinkID=206261">Control Tilt Effect for Windows Phone</a>.</p></li><li><p><span class="label">TwoListBoxes.cs</span> - A control that displays two list boxes together.  One list box contains the list of units to convert ‘From’, the other that contains the list of units to convert ‘To’.</p></li></ul></div><h3 class="subHeading">ViewModel</h3><div class="subsection"><p>The files in the <span class="label">ViewModel</span> folder manipulate the data so that it displays correctly in the user interface of the application.</p><ul><li><p><span class="label">CategorySelectionViewModel.cs</span> - Ties Category Selection data to the Category Selection page.</p></li><li><p><span class="label">MainPageViewModel.cs</span> - Ties MainPage data to the MainPage.</p></li></ul></div><h3 class="subHeading">ContextMenu</h3><div class="subsection"><ul><li><p><span class="label">ContextMenu.cs</span> - Implements a context menu.</p></li><li><p><span class="label">ContextMenu.generic.xaml</span> - Contains styles and templates for the context menu.</p></li><li><p><span class="label">ContextMenuService.cs</span> - Helps to attach a context menu onto a control.</p></li></ul></div><h3 class="subHeading">Converters</h3><div class="subsection"><ul><li><p><span class="label">DecimalSepartorMarginConverter.cs</span> - Reads the locale settings to determine decimal separation for the current values of the units.</p></li></ul></div><h3 class="subHeading">Helpers</h3><div class="subsection"><ul><li><p><span class="label">AppOpenState.cs</span> - An enumeration that determines state of the application.  Helps to optimize page loading.</p></li><li><p><span class="label">ErrorLog.cs</span> - Logs exception information.</p></li><li><p><span class="label">ErrorLogCollection.cs</span> - A collection of error logs.</p></li><li><p><span class="label">FileOps.cs</span> - Helps to load data from a content file in the xap, which contains the conversion information.</p></li><li><p><span class="label">IsolatedStorage.cs</span> - Reads and writes the <span class="label">Favorites</span> information to and from isolated storage.</p></li></ul></div><h3 class="subHeading">Themes</h3><div class="subsection"><ul><li><p><span class="label">Generic.xaml</span> - Helps to bring in the ContextMenu.generic.xaml.</p></li></ul><p><span sdata="link"><a href="#Top">Top</a></span></p></div></div><a name="Key_Concepts" /><h1 class="heading"><span>Key Concepts</span></h1><div id="sectionSection2" class="section" name="collapseableSection" style=""><p /><a name="Loading_App" /><h3 class="subHeading">Loading the Application</h3><div class="subsection"><p>This program demonstrates how to load an application more quickly by loading data on a background thread.  From the user’s perspective, the MainPage is loaded quickly.  But the <span class="label">Conversions</span> and <span class="label">Add as Favorite</span>buttons will not be enabled until the available conversions have been read in.  When the MainPage is rendered, the <span class="label">PageLayoutUpdated</span> event will be fired.  The call to the base class will unsubscribe to this event, so that this method is only called once. Next, the call to <span class="label">DeferStartup</span> will read the available conversions from <span class="label">SupportedUnits.xml</span> and load the saved favorites from isolated storage on a background thread.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>        protected override void PageLayoutUpdated(object sender, EventArgs e)
+        {
+            base.PageLayoutUpdated(sender, e);
+            if (ApplicationState.ApplicationStartup == AppOpenState.Launching)
+            {
+                this.viewModel.DeferStartup(this.SignalFavoritesAreLoaded);
+                ApplicationState.ApplicationStartup = AppOpenState.None;
+            }
+        }
+</pre></td></tr></table></span></div><p><span class="label">DeferStartup</span> runs the <span class="label">DeferStartupWork</span> method on a background thread.  The <span class="label">worker</span> thread is declared like this:</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>        private BackgroundWorker worker = new BackgroundWorker();
+
+</pre></td></tr></table></span></div><p>The method for the background worker thread to execute is assigned in the <span class="label">MainPageViewModel</span> constructor:</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>        internal MainPageViewModel()
+        {
+            this.ConversionSettings = new CurrentConversion();
+            this.ConversionImageSource = ApplicationState.IsDarkTheme ?
+                SwitchConversionImageLight : SwitchConversionImageDark;
+            this.worker.DoWork += new DoWorkEventHandler(DeferStartupWork);
+            
+        }
+</pre></td></tr></table></span></div><p><span class="label">DeferStartup</span> then starts the background operation, causing <span class="label">DeferStartupWork</span> to execute. </p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>        internal void DeferStartup(Action completed)
+        {
+            this.worker.RunWorkerAsync(completed);
+        }
+</pre></td></tr></table></span></div><p><span class="label">DeferStartupWork</span> then does the work of loading the conversions from <span class="label">SupportedUnits.xml</span>.  The saved favorites are also loaded from isolated storage.  The call to <span class="label">DeferStartup</span> in <span class="label">PageLayoutUpdated</span> passed along a method to call when the background thread was completed.  This method is <span class="label">SignalFavoritesAreLoaded</span> and it sets a flag that allows the user to select the <span class="label">Conversions</span> and <span class="label">Add as Favorite</span> buttons: </p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>        private void SignalFavoritesAreLoaded()
+        {
+            Dispatcher.BeginInvoke(() =&gt; this.viewModel.AllowNavigation = true);
+        }
+</pre></td></tr></table></span></div></div><a name="Loading_Data" /><h3 class="subHeading">Loading the Conversion Data</h3><div class="subsection"><p>The data for the supported units and conversions is included in the <span class="label">SupportedUnits.xml</span> file.  This allows additional conversions to be added to the program by just updating <span class="label">SupportedUnits.xml</span> and the string resource files for each language.  The information for a category such as length looks like this:</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>    &lt;!--UnitGroup_Length--&gt;
+    &lt;CategoryInformation&gt;
+        
+        &lt;Category&gt;UnitGroup_Length&lt;/Category&gt;
+        &lt;Units&gt;
+            &lt;UnitInformation&gt;
+                &lt;ResourceName&gt;Units_Length_Inches&lt;/ResourceName&gt;
+                &lt;Multiplier&gt;0.08333333333333333333333333333333&lt;/Multiplier&gt;
+                &lt;Offset&gt;0&lt;/Offset&gt;
+            &lt;/UnitInformation&gt;
+            &lt;UnitInformation&gt;
+                &lt;ResourceName&gt;Units_Length_Feet&lt;/ResourceName&gt;
+                &lt;Multiplier&gt;1&lt;/Multiplier&gt;
+                &lt;Offset&gt;0&lt;/Offset&gt;
+            &lt;/UnitInformation&gt;
+            &lt;UnitInformation&gt;
+                &lt;ResourceName&gt;Units_Length_Yards&lt;/ResourceName&gt;
+                &lt;Multiplier&gt;3&lt;/Multiplier&gt;
+                &lt;Offset&gt;0&lt;/Offset&gt;
+            &lt;/UnitInformation&gt;
+            &lt;UnitInformation&gt;
+                &lt;ResourceName&gt;Units_Length_Miles&lt;/ResourceName&gt;
+                &lt;Multiplier&gt;5280&lt;/Multiplier&gt;
+                &lt;Offset&gt;0&lt;/Offset&gt;
+            &lt;/UnitInformation&gt;
+            &lt;UnitInformation&gt;
+                &lt;ResourceName&gt;Units_Length_Millimeters&lt;/ResourceName&gt;
+                &lt;Multiplier&gt;.00328083989&lt;/Multiplier&gt;
+                &lt;Offset&gt;0&lt;/Offset&gt;
+            &lt;/UnitInformation&gt;
+            &lt;UnitInformation&gt;
+                &lt;ResourceName&gt;Units_Length_Centimeters&lt;/ResourceName&gt;
+                &lt;Multiplier&gt;.0328083989&lt;/Multiplier&gt;
+                &lt;Offset&gt;0&lt;/Offset&gt;
+            &lt;/UnitInformation&gt;
+            &lt;UnitInformation&gt;
+                &lt;ResourceName&gt;Units_Length_Meters&lt;/ResourceName&gt;
+                &lt;Multiplier&gt;3.28083989&lt;/Multiplier&gt;
+                &lt;Offset&gt;0&lt;/Offset&gt;
+            &lt;/UnitInformation&gt;
+            &lt;UnitInformation&gt;
+                &lt;ResourceName&gt;Units_Length_Kilometers&lt;/ResourceName&gt;
+                &lt;Multiplier&gt;3280.83989&lt;/Multiplier&gt;
+                &lt;Offset&gt;0&lt;/Offset&gt;
+            &lt;/UnitInformation&gt;
+        &lt;/Units&gt;
+    &lt;/CategoryInformation&gt;
+
+</pre></td></tr></table></span></div><p>The method <span class="label">LoadFromFileContent</span> in <span class="label">FileOps.cs</span> will read all the available conversions from <span class="label">SupportedUnits.xml</span>.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>        public static T LoadFromFileContent&lt;T&gt;(string fileName)
+        {
+            T loadedFile = default(T);
+
+            try
+            {
+                StreamResourceInfo sr =
+                    Application.GetResourceStream(new Uri(fileName, UriKind.Relative));
+                if (sr != null)
+                {
+                    XmlSerializer mySerializer = new XmlSerializer(typeof(T));
+                    loadedFile = (T)mySerializer.Deserialize(sr.Stream);
+                }
+            }
+            catch (Exception e)
+            {
+                ApplicationState.ErrorLog.Add(new ErrorLog("LoadFromFileContent", e.Message));
+            }
+            return loadedFile;
+        }
+
+</pre></td></tr></table></span></div><p>The Conversions pivot control is created in <span class="label">CategorySelection.xaml</span>. The first <span class="label">PivotItem</span> for the favorite conversions is created in xaml also. The rest of the <span class="label">PivotItems</span> for the Conversion Selection page are created programmatically, based on conversion information provided in <span class="label">SupportedUnits.xml</span>:</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>        private static void AddPivotItems(CategorySelection view)
+        {
+            foreach (CategoryInformation category in ApplicationState.SupportedConversions)
+            {
+                PivotItem p = new PivotItem();
+                TwoListBoxes l = new TwoListBoxes();
+                l.Name = "pivotItem" + category.CategoryLocalized;
+                l.FromSelectionChanged += new SelectionChangedEventHandler(view.OnFromSelectionChanged);
+                l.ToSelectionChanged += new SelectionChangedEventHandler(view.OnToSelectionChanged);
+                p.Header = category.CategoryLocalized;
+                p.Content = l;
+                view.pivot.Items.Add(p);
+                // Store the TwoListBoxes object in the category for later access
+                category.PivotUnitSelect = l;
+                category.PivotUnitSelect.toListView.ItemsSource = null;
+                category.PivotUnitSelect.fromListView.ItemsSource = null;
+            }
+        }
+
+</pre></td></tr></table></span></div></div><a name="Context_Menu" /><h3 class="subHeading">Implementing a Context Menu</h3><div class="subsection"><p>When users are viewing their <span class="label">Favorites</span> in the Conversion Selection page, they can press and hold an item in the list to display a context menu, allowing them to delete the selected favorite.  <span class="label">ContextMenu.cs</span> implements the functionality of the context menu.  When the user first presses the item in the list box, the <span class="label">OnOwnerManipulationStarted</span> event is fired.  This method calculates the menu location and starts the <span class="label">tapAndHoldTimer</span> timer.    </p><p>If the user moves their finger, the <span class="label">OnOwnerManipulationDelta</span>  event is fired and the method checks to determine if the user moved their finger or touched the screen with another finger.  If either of these events occurred, the timer is stopped.</p><p>When the user lifts their finger, then the <span class="label">OnOwnerManipulationCompleted</span> event is fired. This will stop the <span class="label">tapAndHoldTimer</span> timer. If the <span class="label">OnTapAndHoldTimerTick</span> event has not yet fired, that is the user has not held their finger on the item long enough, then the context menu will not be displayed.  If the user has held their finger on the item long enough, then the context menu will be displayed, using the following code:</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>        private void Show()
+        {
+            if (IsOpen == false)
+            {
+                // Apply tilt effect to context menu items - add Border as tiltable
+                TiltEffect.TiltableItems.Add(typeof(Border));
+
+                RaiseOpeningEvent();
+
+                // Set this as the current context menu
+                Current = this;
+
+                // Update popup position
+                if (overlay != null)
+                {
+                    TiltEffect.SetIsTiltEnabled(overlay, true);
+                    Canvas.SetTop(this, menuPosition);
+                }
+
+                // Show the popup
+                Popup.IsOpen = true;
+
+                IsAppBarVisible = false;
+
+                ExecuteAftertemplateApplied(() =&gt;
+                {
+                    // Change visual state
+                    ChangeVisualState(true);
+                });
+            }
+        }
+
+</pre></td></tr></table></span></div><p><span sdata="link"><a href="#Top">Top</a></span></p></div><a name="Extending_App" /><h3 class="subHeading">Extending the Unit Converter Application</h3><div class="subsection"><p>Here are some suggested ideas to extend the functionality of the Unit Converter application.</p><ul><li><p>Add support for landscape mode.</p></li><li><p>Add support for currency conversion.</p></li></ul><p><span sdata="link"><a href="#Top">Top</a></span></p></div></div><h1 class="heading"><span><a name="seeAlsoToggle" />See Also</span></h1><div id="seeAlsoSection" class="section" name="collapseableSection" style=""><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><a href="http://go.microsoft.com/fwlink/?LinkID=185196">Windows Phone Development</a></div><div class="seeAlsoStyle" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><a href="http://go.microsoft.com/fwlink/?LinkId=203433">The Windows Phone Developer Blog</a></div></div></div>
+      <div id="footer">
+        <div class="footerLine" />
+      </div>
+      <p />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!-- 
+    
+Copyright (c) 2010 Microsoft Corporation.  All rights reserved.
+
+Use of this source code is subject to the terms of the Microsoft
+license agreement under which you licensed this source code.
+If you did not accept the terms of the license agreement,
+you are not authorized to use this source code.
+For the terms of the license, please see the license agreement
+signed by you and Microsoft.
+THE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+    
+-->
+    
+<UserControl 
+    x:Class="Microsoft.Phone.Applications.UnitConverter.View.TwoListBoxes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="800" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="{Binding Path=Strings.From, Source={StaticResource Resources}}"
+                   Margin="24,15,0,0"
+                   FontSize="{StaticResource PhoneFontSizeLarge}"
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>
+        <TextBlock Text="{Binding Path=Strings.To, Source={StaticResource Resources}}" 
+                   Margin="24,15,0,0"
+                   Grid.Column="1"
+                   FontSize="{StaticResource PhoneFontSizeLarge}"
+                   FontFamily="{StaticResource PhoneFontFamilySemiLight}"/>   
+        
+        <ListBox Name="fromListView" 
+                 Grid.Row="1"
+                 Margin="12,0,0,0" HorizontalAlignment="Left" 
+                 Style="{StaticResource UnitsListBoxStyle}"
+                 SelectionChanged="OnFromSelectionChanged" >
+           
+        </ListBox>
+        <ListBox Name="toListView"  
+                 Grid.Row="1"
+                 Grid.Column="1" 
+                 Margin="12,0,0,0" HorizontalAlignment="Left" 
+                 Style="{StaticResource UnitsListBoxStyle}"
+                 SelectionChanged="OnToSelectionChanged" >
+           
+        </ListBox>
+    </Grid>
+</UserControl>

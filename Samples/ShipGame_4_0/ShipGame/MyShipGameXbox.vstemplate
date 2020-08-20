@@ -1,0 +1,280 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ShipGameXbox</Name>
+    <Description>Ship Game for Xbox 360</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ShipGameWindows</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ShipGameXbox.csproj" File="ShipGameXbox.csproj" ReplaceParameters="true">
+      <Folder Name="Graphics" TargetFolderName="Graphics">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AnimSprite.cs">AnimSprite.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AnimSpriteManager.cs">AnimSpriteManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlurManager.cs">BlurManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LightList.cs">LightList.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticleManager.cs">ParticleManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticleSystem.cs">ParticleSystem.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Powerup.cs">Powerup.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PowerupManager.cs">PowerupManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Projectile.cs">Projectile.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProjectileManager.cs">ProjectileManager.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Screens" TargetFolderName="Screens">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Screen.cs">Screen.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScreenEnd.cs">ScreenEnd.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScreenGame.cs">ScreenGame.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScreenHelp.cs">ScreenHelp.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScreenIntro.cs">ScreenIntro.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScreenLevel.cs">ScreenLevel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScreenManager.cs">ScreenManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScreenPlayer.cs">ScreenPlayer.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ChaseCamera.cs">ChaseCamera.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="EntityList.cs">EntityList.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FontManager.cs">FontManager.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="GameManager.cs">GameManager.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="GameOptions.cs">GameOptions.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="InputManager.cs">InputManager.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PlayerMovement.cs">PlayerMovement.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PlayerShip.cs">PlayerShip.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ShipGame.cs">ShipGame.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ShipGame.ico">ShipGame.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ShipGame.png">ShipGame.png</ProjectItem>
+      <Folder Name="Documentation" TargetFolderName="Documentation">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Ship_Game_Starter_Kit.htm" OpenInWebBrowser="true">Ship_Game_Starter_Kit.htm</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Microsoft.Xna.GameStudio, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d</Assembly>
+    <FullClassName>Microsoft.Xna.GameStudio.Wizards.NestedProjectWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <Folder Name="Content" TargetFolderName="Content">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Content.contentproj" >ContentXbox.contentproj</ProjectItem>
+    </Folder>
+    <Folder Name="Content" TargetFolderName="Content">
+      <Folder Name="explosions" TargetFolderName="explosions">
+        <ProjectItem ReplaceParameters="false" TargetFileName="BlasterGrid_16.tga">BlasterGrid_16.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="MissileGrid_16.tga">MissileGrid_16.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ShieldGrid_32.tga">ShieldGrid_32.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ShipGrid_32.tga">ShipGrid_32.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SpawnGrid_16.tga">SpawnGrid_16.tga</ProjectItem>
+      </Folder>
+      <Folder Name="fonts" TargetFolderName="fonts">
+        <ProjectItem ReplaceParameters="false" TargetFileName="ArialL.spritefont">ArialL.spritefont</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ArialM.spritefont">ArialM.spritefont</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ArialS.spritefont">ArialS.spritefont</ProjectItem>
+      </Folder>
+      <Folder Name="levels" TargetFolderName="levels">
+        <Folder Name="level1" TargetFolderName="level1">
+          <ProjectItem ReplaceParameters="false" TargetFileName="conc1_c.jpg">conc1_c.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="conc1_n.jpg">conc1_n.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="conc1_s.jpg">conc1_s.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="conc2_c.jpg">conc2_c.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="conc2_n.jpg">conc2_n.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="conc2_s.jpg">conc2_s.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="fence_c.jpg">fence_c.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="fence_n.jpg">fence_n.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="fence_s.jpg">fence_s.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="grate_c.jpg">grate_c.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="grate_n.jpg">grate_n.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="grate_s.jpg">grate_s.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="lava_c.jpg">lava_c.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="lava_i.jpg">lava_i.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="lava_n.jpg">lava_n.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="lava_s.jpg">lava_s.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="level1.fbx">level1.fbx</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="level1_collision.fbx">level1_collision.fbx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="level1_lights.xml">level1_lights.xml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="level1_powerups.xml">level1_powerups.xml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="level1_spawns.xml">level1_spawns.xml</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ybline_c.jpg">ybline_c.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ybline_s.jpg">ybline_s.jpg</ProjectItem>
+        </Folder>
+        <Folder Name="level2" TargetFolderName="level2">
+          <ProjectItem ReplaceParameters="false" TargetFileName="black.tga">black.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ceilingLights_c.tga">ceilingLights_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ceilingLights_g.tga">ceilingLights_g.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ceilingLights_n.tga">ceilingLights_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ceilingLights_s.tga">ceilingLights_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="circularLight_c.tga">circularLight_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="circularLight_g.tga">circularLight_g.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="circularLight_n.tga">circularLight_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="circularLight_s.tga">circularLight_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="floor_c.tga">floor_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="floor_n.tga">floor_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="floor_s.tga">floor_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="level2.fbx">level2.fbx</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="level2_collision.fbx">level2_collision.fbx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="level2_lights.xml">level2_lights.xml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="level2_powerups.xml">level2_powerups.xml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="level2_spawns.xml">level2_spawns.xml</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="pillar_c.tga">pillar_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="pillar_n.tga">pillar_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="pillar_s.tga">pillar_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="pipe_c.tga">pipe_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="pipe_n.tga">pipe_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="pipe_s.tga">pipe_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="piping_c.tga">piping_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="piping_g.tga">piping_g.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="piping_n.tga">piping_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="piping_s.tga">piping_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sidePanels_c.tga">sidePanels_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sidePanels_g.tga">sidePanels_g.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sidePanels_n.tga">sidePanels_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="sidePanels_s.tga">sidePanels_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="spaceTile_c.tga">spaceTile_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="spaceTile_g.tga">spaceTile_g.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="spaceTile_n.tga">spaceTile_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="spaceTile_s.tga">spaceTile_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="supportLights_c.tga">supportLights_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="supportLights_g.tga">supportLights_g.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="supportLights_n.tga">supportLights_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="supportLights_s.tga">supportLights_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="trimTile_c.tga">trimTile_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="trimTile_n.tga">trimTile_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="trimTile_s.tga">trimTile_s.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="trimTileLights_c.tga">trimTileLights_c.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="trimTileLights_g.tga">trimTileLights_g.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="trimTileLights_n.tga">trimTileLights_n.tga</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="trimTileLights_s.tga">trimTileLights_s.tga</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="particles" TargetFolderName="particles">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Point1.tga">Point1.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Point2.tga">Point2.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Spark1.tga">Spark1.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Spark2.tga">Spark2.tga</ProjectItem>
+      </Folder>
+      <Folder Name="powerups" TargetFolderName="powerups">
+        <ProjectItem ReplaceParameters="false" TargetFileName="energy.fbx">energy.fbx</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="energy_pwu_c.tga">energy_pwu_c.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="energy_pwu_i.tga">energy_pwu_i.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="energy_pwu_n.tga">energy_pwu_n.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="energy_pwu_s.tga">energy_pwu_s.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="missile.fbx">missile.fbx</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="missile_pwu_c.tga">missile_pwu_c.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="missile_pwu_i.tga">missile_pwu_i.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="missile_pwu_n.tga">missile_pwu_n.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="missile_pwu_s.tga">missile_pwu_s.tga</ProjectItem>
+      </Folder>
+      <Folder Name="projectiles" TargetFolderName="projectiles">
+        <ProjectItem ReplaceParameters="false" TargetFileName="blaster.x">blaster.x</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="blaster_c.tga">blaster_c.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="missile.fbx">missile.fbx</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Missile_c.tga">Missile_c.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Missile_i.tga">Missile_i.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Missile_n.tga">Missile_n.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Missile_s.tga">Missile_s.tga</ProjectItem>
+      </Folder>
+      <Folder Name="screens" TargetFolderName="screens">
+        <ProjectItem ReplaceParameters="false" TargetFileName="change_level.tga">change_level.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="change_ship.tga">change_ship.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="continue.tga">continue.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="controls.tga">controls.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="controls_display.tga">controls_display.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cursor_anim.tga">cursor_anim.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cursor_arrow.tga">cursor_arrow.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cursor_bullet.tga">cursor_bullet.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="damage.tga">damage.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="end_lights.xml">end_lights.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_mp_bars.tga">hud_mp_bars.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_mp_crosshair.tga">hud_mp_crosshair.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_mp_energy.tga">hud_mp_energy.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_mp_missile.tga">hud_mp_missile.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_mp_radar.tga">hud_mp_radar.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_mp_score.tga">hud_mp_score.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_sp_bars.tga">hud_sp_bars.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_sp_crosshair.tga">hud_sp_crosshair.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_sp_energy.tga">hud_sp_energy.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_sp_missile.tga">hud_sp_missile.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_sp_radar.tga">hud_sp_radar.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="hud_sp_score.tga">hud_sp_score.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="intro_bg.tga">intro_bg.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="intro_lens.tga">intro_lens.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="intro_logo.tga">intro_logo.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="inverty_check.tga">inverty_check.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="inverty_uncheck.tga">inverty_uncheck.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="level1_screen.tga">level1_screen.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="level2_screen.tga">level2_screen.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_hp.tga">menu_hp.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_hp_hover.tga">menu_hp_hover.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_mp.tga">menu_mp.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_mp_hover.tga">menu_mp_hover.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_qg.tga">menu_qg.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_qg_hover.tga">menu_qg_hover.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_sp.tga">menu_sp.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_sp_hover.tga">menu_sp_hover.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="player_lights.xml">player_lights.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="player1_wins.tga">player1_wins.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="player2_wins.tga">player2_wins.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="rotate_ship.tga">rotate_ship.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="select_back.tga">select_back.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="select_cancel.tga">select_cancel.tga</ProjectItem>
+      </Folder>
+      <Folder Name="shaders" TargetFolderName="shaders">
+        <ProjectItem ReplaceParameters="false" TargetFileName="AnimSprite.fx">AnimSprite.fx</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Blur.fx">Blur.fx</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="NormalMapping.fx">NormalMapping.fx</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Particle.fx">Particle.fx</ProjectItem>
+      </Folder>
+      <Folder Name="ships" TargetFolderName="ships">
+        <ProjectItem ReplaceParameters="false" TargetFileName="pad.fbx">pad.fbx</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="pad_c.tga">pad_c.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="pad_halo.fbx">pad_halo.fbx</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="pad_halo.tga">pad_halo.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="pad_i.tga">pad_i.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="pad_n.tga">pad_n.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="pad_s.tga">pad_s.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="pad_select.fbx">pad_select.fbx</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="pad_select.tga">pad_select.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship1.fbx">ship1.fbx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ship1.xml">ship1.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship1_c.tga">ship1_c.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship1_i.tga">ship1_i.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship1_n.tga">ship1_n.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship1_s.tga">ship1_s.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship2.fbx">ship2.fbx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ship2.xml">ship2.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship2_c.tga">ship2_c.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship2_i.tga">ship2_i.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship2_n.tga">ship2_n.tga</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship2_s.tga">ship2_s.tga</ProjectItem>
+      </Folder>
+      <Folder Name="sounds" TargetFolderName="sounds">
+        <ProjectItem ReplaceParameters="false" TargetFileName="fire_primary.wav">fire_primary.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="fire_secondary.wav">fire_secondary.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_cancel.wav">menu_cancel.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_change.wav">menu_change.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="menu_select.wav">menu_select.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="missile_explode.wav">missile_explode.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="powerup_get.wav">powerup_get.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="powerup_spawn.wav">powerup_spawn.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="shield_activate.wav">shield_activate.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="shield_collide.wav">shield_collide.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship_boost.wav">ship_boost.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship_collide.wav">ship_collide.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship_explode.wav">ship_explode.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ship_spawn.wav">ship_spawn.wav</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="sounds.xap">sounds.xap</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="null_color.tga">null_color.tga</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="null_glow.tga">null_glow.tga</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="null_normal.tga">null_normal.tga</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="null_specular.tga">null_specular.tga</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Reflect.dds">Reflect.dds</ProjectItem>
+    </Folder>  
+  </WizardData>
+</VSTemplate>

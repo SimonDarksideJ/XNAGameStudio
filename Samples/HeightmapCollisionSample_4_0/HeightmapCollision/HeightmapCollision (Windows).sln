@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeightmapCollisionWindows", "HeightmapCollision\HeightmapCollisionWindows.csproj", "{24A55E10-F1A5-4D4B-998E-5FBE08449DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeightmapCollisionPipeline", "HeightmapCollisionPipeline\HeightmapCollisionPipeline.csproj", "{59442399-F564-4302-9FA6-0B8F30AE9071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeightmapCollisionContent", "HeightmapCollision\Content\HeightmapCollisionContent.contentproj", "{316DD254-F5C9-43C4-9F81-A9AA932A7E73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24A55E10-F1A5-4D4B-998E-5FBE08449DC6}.Debug|x86.ActiveCfg = Debug|x86
+		{24A55E10-F1A5-4D4B-998E-5FBE08449DC6}.Debug|x86.Build.0 = Debug|x86
+		{24A55E10-F1A5-4D4B-998E-5FBE08449DC6}.Release|x86.ActiveCfg = Release|x86
+		{24A55E10-F1A5-4D4B-998E-5FBE08449DC6}.Release|x86.Build.0 = Release|x86
+		{59442399-F564-4302-9FA6-0B8F30AE9071}.Debug|x86.ActiveCfg = Debug|x86
+		{59442399-F564-4302-9FA6-0B8F30AE9071}.Debug|x86.Build.0 = Debug|x86
+		{59442399-F564-4302-9FA6-0B8F30AE9071}.Release|x86.ActiveCfg = Release|x86
+		{59442399-F564-4302-9FA6-0B8F30AE9071}.Release|x86.Build.0 = Release|x86
+		{316DD254-F5C9-43C4-9F81-A9AA932A7E73}.Debug|x86.ActiveCfg = Debug|x86
+		{316DD254-F5C9-43C4-9F81-A9AA932A7E73}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

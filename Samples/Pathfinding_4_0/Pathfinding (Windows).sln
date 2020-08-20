@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinding (Windows)", "Pathfinding\Pathfinding\Pathfinding (Windows).csproj", "{D7A78ED7-4059-41A8-975A-2D167B050892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfindingContent", "Pathfinding\PathfindingContent\PathfindingContent.contentproj", "{3A8EC351-725E-4178-BC01-4FC417AAE783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfindingData", "MapData\PathfindingData.csproj", "{952F3B01-B5D9-49C4-841B-653D650B6303}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Debug|x86 = Debug|x86
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Windows Phone = Release|Windows Phone
+		Release|x86 = Release|x86
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7A78ED7-4059-41A8-975A-2D167B050892}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{D7A78ED7-4059-41A8-975A-2D167B050892}.Debug|Windows Phone.Build.0 = Debug|x86
+		{D7A78ED7-4059-41A8-975A-2D167B050892}.Debug|x86.ActiveCfg = Debug|x86
+		{D7A78ED7-4059-41A8-975A-2D167B050892}.Debug|x86.Build.0 = Debug|x86
+		{D7A78ED7-4059-41A8-975A-2D167B050892}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{D7A78ED7-4059-41A8-975A-2D167B050892}.Release|Windows Phone.ActiveCfg = Release|x86
+		{D7A78ED7-4059-41A8-975A-2D167B050892}.Release|x86.ActiveCfg = Release|x86
+		{D7A78ED7-4059-41A8-975A-2D167B050892}.Release|x86.Build.0 = Release|x86
+		{D7A78ED7-4059-41A8-975A-2D167B050892}.Release|Xbox 360.ActiveCfg = Release|x86
+		{3A8EC351-725E-4178-BC01-4FC417AAE783}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{3A8EC351-725E-4178-BC01-4FC417AAE783}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3A8EC351-725E-4178-BC01-4FC417AAE783}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{3A8EC351-725E-4178-BC01-4FC417AAE783}.Release|Windows Phone.ActiveCfg = Debug|Any CPU
+		{3A8EC351-725E-4178-BC01-4FC417AAE783}.Release|x86.ActiveCfg = Debug|Any CPU
+		{3A8EC351-725E-4178-BC01-4FC417AAE783}.Release|Xbox 360.ActiveCfg = Debug|Any CPU
+		{952F3B01-B5D9-49C4-841B-653D650B6303}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{952F3B01-B5D9-49C4-841B-653D650B6303}.Debug|Windows Phone.Build.0 = Debug|x86
+		{952F3B01-B5D9-49C4-841B-653D650B6303}.Debug|x86.ActiveCfg = Debug|x86
+		{952F3B01-B5D9-49C4-841B-653D650B6303}.Debug|x86.Build.0 = Debug|x86
+		{952F3B01-B5D9-49C4-841B-653D650B6303}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{952F3B01-B5D9-49C4-841B-653D650B6303}.Release|Windows Phone.ActiveCfg = Release|x86
+		{952F3B01-B5D9-49C4-841B-653D650B6303}.Release|x86.ActiveCfg = Release|x86
+		{952F3B01-B5D9-49C4-841B-653D650B6303}.Release|x86.Build.0 = Release|x86
+		{952F3B01-B5D9-49C4-841B-653D650B6303}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

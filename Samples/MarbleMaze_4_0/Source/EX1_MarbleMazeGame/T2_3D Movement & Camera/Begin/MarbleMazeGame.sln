@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarbleMazeGame", "MarbleMazeGame\MarbleMazeGame\MarbleMazeGame.csproj", "{F32715FE-2233-428E-B46B-8618B91C91DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarbleMazeGameContent", "MarbleMazeGame\MarbleMazeGameContent\MarbleMazeGameContent.contentproj", "{E6512128-B68B-4425-8DB8-0F659452636B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F32715FE-2233-428E-B46B-8618B91C91DD}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{F32715FE-2233-428E-B46B-8618B91C91DD}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{F32715FE-2233-428E-B46B-8618B91C91DD}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{F32715FE-2233-428E-B46B-8618B91C91DD}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{F32715FE-2233-428E-B46B-8618B91C91DD}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{F32715FE-2233-428E-B46B-8618B91C91DD}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{E6512128-B68B-4425-8DB8-0F659452636B}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{E6512128-B68B-4425-8DB8-0F659452636B}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

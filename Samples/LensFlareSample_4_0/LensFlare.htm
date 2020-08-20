@@ -1,0 +1,918 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>Lens Flare Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Lens Flare Sample" />
+<MSHelp:RLTitle Title="Lens Flare Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.LensFlare" />
+<MSHelp:Keyword Index="A" Term="fe380a9e-b56f-88d5-e4d6-6bcda683d1ab" />
+<MSHelp:Keyword Index="K" Term="Lens Flare Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="fe380a9e-b56f-88d5-e4d6-6bcda683d1ab" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+
+  <h1>Lens Flare Sample</h1>
+
+  This sample shows you how to implement a lens flare effect by using occlusion queries to detect when the sun is hidden behind the landscape.
+
+  <a id="ID2EK" name="ID2EK"> </a><h1 class="heading">Sample Overview</h1><div id="ID2EK" class="hxnx1">
+    
+
+    <p>Lens flare tries to simulate how bright lights behave when they shine into a film camera. Computer games often have a hard time conveying an impression of brightness because monitors and televisions have only a limited range. After all, it is impossible to have a pixel brighter than white. How can you show the difference between a character wearing a white t-shirt, which is not very bright, and the sun, which is very bright indeed? The solution is to emulate what happens when a movie director points a camera directly at a bright light source. The excess light bounces around inside the camera. This excess light overloads the lens and creates strange glows and flares in places other than where the light is supposed to be shining directly. Most movie directors try to avoid these effects. However, some directors use them for artistic effect. Games can do the same thing. Games can emulate the flares that would be produced inside a physical camera. The flares provide a visual cue that indicates the brightness of the light.</p>
+
+    <p>The lens flare effect in this sample is formed of two components: a large, soft glow, and a row of smaller circular flare shapes.</p>
+
+    <p>The sample uses hardware occlusion queries to efficiently detect when the sun is hidden behind the landscape. This enables you to fade out the lens flare effect when the sun is not visible.</p>
+
+    <a id="ID2EU" name="ID2EU"> </a><h2 class="subHeading">Sample Controls</h2><div id="ID2EU" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard control</th>
+          <th>Gamepad control</th>
+        </tr>
+        <tr>
+          <td>Rotate the camera</td>
+          <td>UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+          <td>Right thumb stick</td>
+        </tr>
+        <tr>
+          <td>Move the camera</td>
+          <td>W, S, A, D</td>
+          <td>Left thumb stick</td>
+        </tr>
+        <tr>
+          <td>Reset the camera position</td>
+          <td>R</td>
+          <td>Right thumb stick press</td>
+        </tr>
+        <tr>
+          <td>Exit the sample</td>
+          <td>ESC or ALT+F4</td>
+          <td>
+            <b>BACK</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <a id="ID2EPC" name="ID2EPC"> </a><h1 class="heading">How the Sample Works</h1><div id="ID2EPC" class="hxnx1">
+    
+
+    <p>The lens flare is built up out of two different effects. First, the sample draws a large, soft circular glow, which is centered on the sun. The glow is white in the center. It fades to transparent at the edge of the circle. These screenshots show the glow effect in isolation. The screen shot on the left shows the glow over a black background; the one on the right shows the glow over a terrain mesh.</p>
+
+    <img src="Glow.png" />
+
+    <p>Second, a number of flare sprites are positioned at arbitrary points along a 2D line. Three slightly different circular sprite textures are used to draw the flares. Each one is given a different scale and tint. You calculate flare positions by projecting the position of the sun on the 2D screen, then laying out each sprite along a line that runs from the sun through the center of the screen. This causes the flares to move position depending on the location of the sun. When the sun is near the middle of the screen, the flares will all be bunched up near the center. On the other hand, the flares will have a wider spacing when the sun is near the edge.</p>
+
+    <p>The following screenshots show the flare effect in isolation. The image on the left shows the glow over a black background; the image on the right shows the glow over a terrain mesh.</p>
+
+    <img src="Flares.png" />
+
+    <p>Finally, these screenshots show both the glow and flare effects combined.</p>
+
+    <img src="Final.png" />
+
+    <p>If you move the camera around so the sun is hidden behind a hill, you will notice that the lens flare gradually fades out. This is an important part of making a convincing effect. It would not look very realistic if you could see the sun right through other pieces of scenery! The depth buffer on the graphics card usually handles this kind of sorting automatically. The depth buffer ensures that objects farther away will never be drawn over the top of closer objects. However, the hardware depth buffer does not work for lens flares. The flare is a 2D shape drawn over the top of the 3D scene. This means it cannot be depth sorted in the usual way. For example, you might have a flare in the lower-left corner of the screen, which is caused by the sun at the top right, and you want that flare to be visible because there is no scenery blocking the upper-right corner of the screen, even if the lower left where you have placed that flare is covered up by the terrain.</p>
+
+    <p>The solution is to use a hardware occlusion query to make your own visibility determination. An occlusion query enables us mark a section of our drawing code. Later, you can ask the graphics card how many pixels it rendered. This works as follows:</p>
+
+    <ol>
+      <li>Draw the terrain mesh.</li>
+      <li>Begin an occlusion query.</li>
+      <li>
+        Draw a small test 2D rectangle, centered on the sun, and placed at the largest possible Z depth. You can turn off color writes while you do this—the test rectangle will never show up on the screen. The graphics card will draw pixels only if they are not covered up by the terrain.
+      </li>
+      <li>End the occlusion query.</li>
+      <li>Ask the occlusion query how many test pixels were drawn. This tells you what percentage of the sun is visible.</li>
+      <li>Draw your flare effect, using the sun visibility to control the alpha.</li>
+    </ol>
+
+    <p>
+      This works well, but it is inefficient, because the graphics card does not actually carry out a command as soon as you give the command. To speed things along, the graphics card runs in parallel with your CPU. When you call a drawing method, this writes a command into a buffer. At some later time, the graphics card will examine that buffer and carry out the command. So you cannot ask it questions like, "Draw this triangle. OK, how many pixels did you just draw?" because at the point where the CPU asks "how many pixels?," the GPU will not yet have noticed your original "Draw this triangle" request. You could wait for it to catch up enough to provide the occlusion result by going into a loop and testing the <b>OcclusionQuery.IsComplete</b> property until it becomes <b>true</b>, but that would be a waste of CPU time. You have better things to do with your CPU than just sit around waiting for the GPU!
+    </p>
+
+    <p>To keep the CPU and GPU running smoothly in parallel, you must delay your occlusion queries by one frame. Each time around the game loop, your query is now inverted: "How many query pixels did you draw during the previous frame? OK, now draw this triangle and remember the result for later." This way the GPU has plenty of time to get around to processing the command buffer before you ask it for the query result. The downside is that you are now a frame late in reading your occlusion information. Thus, you are choosing your flare alpha based on how much of the sun was visible during the previous frame, rather than on the latest camera position. This sounds bad, but in practice the camera tends to move quite slowly. The flare fades smoothly in and out as the sun goes behind the scenery. This means the off-by-one-frame timing error tends to be small and is hard to notice. You can see it most clearly when the sample first starts up. No lens flare is drawn during the first frame. While the sun is supposed to be visible, the GPU has not yet had a chance to finish your first occlusion query.</p>
+
+    <p>
+      To display the occlusion query test rectangle on your screen, comment out the line where <b>LensFlareComponent.UpdateOcclusion</b> sets <b>GraphicsDevice.BlendState</b> to <b>ColorWriteDisable</b>.
+    </p>
+
+    <p>
+      The lens flare is implemented as a <b>DrawableGameComponent</b>, so it can easily be reused in your own games. Just add a <b>LensFlareComponent</b> to your <b>Game.Components</b> collection, and make sure you set its <b>View</b>, <b>Projection</b>, and <b>LightDirection</b>.
+    </p>
+
+  </div>
+
+  <a id="ID2E3E" name="ID2E3E"> </a><h1 class="heading">Extending the Sample</h1><div id="ID2E3E" class="hxnx1">
+    
+
+    <p>
+      You can easily change the size, color, and position of the flare sprites by altering the declaration of the <b>LensFlareComponent.flares</b> array.
+    </p>
+
+    <p>Try adding rays as lines (or thin triangles) that fan out from the sun toward the edge of the screen.</p>
+
+    <p>
+      Try combining this lens flare effect with the bloom post-processing technique from the <b>Bloom Sample</b>.
+    </p>
+
+    <p>This sample draws a single lens flare centered on the sun. However, a game with more than one light source (perhaps drawing a night scene with car headlamps, or a game set in space) might want to tone down the effect, and then apply it to each of its many lights.</p>
+
+  </div>
+
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Lens Flare Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

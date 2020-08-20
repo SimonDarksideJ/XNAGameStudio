@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneEchoSampleWindows", "MicrophoneEchoSample\MicrophoneEchoSampleWindows.csproj", "{8A166A67-ABAC-414F-BD34-C71601AAA502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneEchoSampleContent", "MicrophoneEchoSampleContent\MicrophoneEchoSampleContent.contentproj", "{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A166A67-ABAC-414F-BD34-C71601AAA502}.Debug|x86.ActiveCfg = Debug|x86
+		{8A166A67-ABAC-414F-BD34-C71601AAA502}.Debug|x86.Build.0 = Debug|x86
+		{8A166A67-ABAC-414F-BD34-C71601AAA502}.Release|x86.ActiveCfg = Release|x86
+		{8A166A67-ABAC-414F-BD34-C71601AAA502}.Release|x86.Build.0 = Release|x86
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Debug|x86.ActiveCfg = Debug|x86
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

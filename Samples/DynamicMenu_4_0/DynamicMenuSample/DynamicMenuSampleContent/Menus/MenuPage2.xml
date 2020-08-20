@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="DynamicMenu.Controls.Container" >
+    <Left>0</Left>
+    <Top>0</Top>
+    <Width>300</Width>
+    <Height>300</Height>
+    <Controls>
+      <Item Type="DynamicMenu.Controls.Image">
+        <Left>20</Left>
+        <Top>20</Top>
+        <Width>188</Width>
+        <Height>94</Height>
+        <BackTextureName>Textures\UFO</BackTextureName>
+      </Item>
+      <Item Type="DynamicMenu.Controls.MultilineTextControl">
+        <Left>20</Left>
+        <Top>140</Top>
+        <Width>360</Width>
+        <Height>240</Height>
+        <BackTextureName>Textures\textbox</BackTextureName>
+        <Text>This is a text box with a whole lot of text.  It uses a MultilineTextControl.</Text>
+        <FontName>Fonts\ControlFont</FontName>
+      </Item>
+    </Controls>
+  </Asset>
+</XnaContent>

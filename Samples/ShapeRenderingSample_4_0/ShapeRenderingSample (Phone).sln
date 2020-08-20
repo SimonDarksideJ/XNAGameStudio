@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeRenderingSample (Phone)", "ShapeRenderingSample\ShapeRenderingSample (Phone).csproj", "{1D84951B-EDC2-4170-A032-6936269AF365}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D84951B-EDC2-4170-A032-6936269AF365}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{1D84951B-EDC2-4170-A032-6936269AF365}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{1D84951B-EDC2-4170-A032-6936269AF365}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{1D84951B-EDC2-4170-A032-6936269AF365}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{1D84951B-EDC2-4170-A032-6936269AF365}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{1D84951B-EDC2-4170-A032-6936269AF365}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

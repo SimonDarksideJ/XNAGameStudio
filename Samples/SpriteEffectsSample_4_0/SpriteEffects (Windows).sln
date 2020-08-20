@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteEffectsWindows", "SpriteEffects\SpriteEffectsWindows.csproj", "{9C036488-8BE1-4EC2-9C1E-E04A5882944C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteEffectsPipeline", "SpriteEffectsPipeline\SpriteEffectsPipeline.csproj", "{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteEffectsContent", "SpriteEffects\Content\SpriteEffectsContent.contentproj", "{7E5AAA1A-DC1F-4ABF-BBD0-F6E4DD904D6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C036488-8BE1-4EC2-9C1E-E04A5882944C}.Debug|x86.ActiveCfg = Debug|x86
+		{9C036488-8BE1-4EC2-9C1E-E04A5882944C}.Debug|x86.Build.0 = Debug|x86
+		{9C036488-8BE1-4EC2-9C1E-E04A5882944C}.Release|x86.ActiveCfg = Release|x86
+		{9C036488-8BE1-4EC2-9C1E-E04A5882944C}.Release|x86.Build.0 = Release|x86
+		{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}.Debug|x86.ActiveCfg = Debug|x86
+		{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}.Debug|x86.Build.0 = Debug|x86
+		{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}.Release|x86.ActiveCfg = Release|x86
+		{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}.Release|x86.Build.0 = Release|x86
+		{7E5AAA1A-DC1F-4ABF-BBD0-F6E4DD904D6B}.Debug|x86.ActiveCfg = Debug|x86
+		{7E5AAA1A-DC1F-4ABF-BBD0-F6E4DD904D6B}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,992 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history"><title>Game State Management Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 0;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Game State Management Sample" />
+<MSHelp:RLTitle Title="Game State Management Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.GameStateManagement" />
+<MSHelp:Keyword Index="A" Term="398f9c2c-f42f-5ea8-9bb4-ed2e946c5012" />
+<MSHelp:Keyword Index="K" Term="Game State Management Sample" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA_30" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="AssetID" Value="398f9c2c-f42f-5ea8-9bb4-ed2e946c5012" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  <h1>Game State Management (Phone) Sample</h1>
+
+  This sample shows how to manage the transitions between different menus and gameplay states 
+	on Windows Phone.
+
+  <a name="ID2EK"></a><h1 class="heading">Sample Overview</h1><div id="ID2EK" class="hxnx1">
+    
+
+    <p>
+      The sample implements a simple game flow with a <b>Main</b> menu, an <b>Options</b> screen, some actual gameplay, and a <b>Pause</b> menu.
+      It displays a loading screen in between the menus and gameplay, and uses a popup message box to confirm whether the user
+      really wants to quit.
+    </p>
+
+    <p>
+      The <b>ScreenManager</b> class is a reusable component that maintains a stack of one or more <b>GameScreen</b> instances.
+      It coordinates the transitions from one screen to another, and takes care of routing user input to whatever screen is on top of the stack.
+    </p>
+
+    <p>
+      Each screen class (including the actual gameplay, which is just another screen) derives from <b>GameScreen</b>. This provides
+      <b>Update</b>, <b>HandleInput</b>, and <b>Draw</b> methods, plus some logic for managing the transition state.
+      <b>GameScreen</b> does not actually implement any transition rendering effects, however. It merely provides information
+      such as "You are currently 30% of the way through transitioning off," leaving it up to the derived screen classes to do
+      something sensible with that information in their drawing code. This makes it easy for screens to implement different visual
+      effects on top of the same underlying transition infrastructure.
+    </p>
+
+    <a name="ID2ELB"></a>
+
+    <a name="ID2EXB"></a><br>The Windows Phone version of this sample comes with 
+		a number of improvements to take into account special considerations for 
+		working with the device. <strong>InputState</strong> now contains fields 
+		for touch input. <strong>ScreenManager</strong> now supports <strong>
+		Gestures</strong> and handles serialiazation and deserialization of game 
+		screens to account for exiting of the game through the user or the 
+		device. <strong>GameScreen</strong> also has&nbsp; <strong>Serialize</strong> 
+		and <strong>Deserialize</strong> methods that allow the subclasses to 
+		hook into the <strong>ScreenManager</strong> serialization system. <h2 class="subHeading">Sample Controls</h2><div id="ID2EXB" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+      <table>
+        <tr>
+          <th>Action</th>
+          <th style="width: 116px">Windows Phone</th>
+          <th>Windows - Keyboard Control</th>
+          <th>Windows/Xbox - Gamepad Control</th>
+        </tr>
+        <tr>
+          <td>Select a menu entry.</td>
+          <td style="width: 116px"><strong>TAP</strong></td>
+          <td>UP ARROW, DOWN ARROW</td>
+          <td>Left thumb stick, D-Pad up and down</td>
+        </tr>
+        <tr>
+          <td>Accept the menu selection.</td>
+          <td style="width: 116px"><strong>TAP</strong></td>
+          <td>SPACEBAR, ENTER</td>
+          <td>
+            <b>A</b>, <b>START</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Cancel the menu.</td>
+          <td style="width: 116px"><strong>BACK</strong></td>
+          <td>ESC</td>
+          <td>
+            <b>B</b>, <b>BACK</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Move a game entity.</td>
+          <td style="width: 116px">N/A</td>
+          <td>UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+          <td>Left thumb stick</td>
+        </tr>
+        <tr>
+          <td>Pause the game.</td>
+          <td style="width: 116px">N/A</td>
+          <td>ESC</td>
+          <td>
+            <b>START</b>, <b>BACK</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <a name="ID2EHE"></a><h1 class="heading">How the Sample Works</h1><div id="ID2EHE" class="hxnx1">
+    
+
+    <p>
+      The source files in the <b>ScreenManager</b> folder (ScreenManager.cs, GameScreen.cs, and InputState.cs) provide a reusable
+      state management component that could be used by any game. The files in the Screens folder implement the specific screens used
+      by this sample: you would probably want to change or replace these to re-skin the menu system before using it in a game of your own.
+    </p>
+
+    <p>Several different things can happen when one screen is stacked over the top of another:</p>
+    <ul>
+      <li>
+        If the topmost screen is flagged as being a popup, it is drawn over the top of the screen below it. This is used for the
+        "Are you sure you want to quit?" message boxes, and for the pause menu that is displayed over the top of the gameplay screen.
+      </li>
+      <li>
+        If the topmost screen is not flagged as a popup, the screen below it automatically transitions off to get out of the way. This is
+        used for the options screen, which is brought up over the top of the main menu. The main menu screen automatically transitions off
+        while the options screen is active, and when the options screen exits, the main menu automatically transitions back on, without the
+        options screen having to do anything specific to make this happen. This behavior is not really necessary for such a small sample, but
+        comes in handy when building larger user interfaces with more complicated structures of nested menus.
+      </li>
+      <li>
+        Because all the transition logic is implemented inside <b>GameScreen.Update</b>, specific screens can override this to achieve
+        whatever custom stacking behaviors they want. For instance the <b>BackgroundScreen</b> class, which sits behind all the different
+        menu screens and is used to display a background image that will not be affected by menu transitions, overrides the <b>Update</b>
+        behavior to prevent itself transitioning off even though it has another screen on top of it.
+      </li>
+    </ul>
+
+    <p>
+      The <b>ScreenManager</b> component does not directly update the screen transition states. It just calls <b>Update</b> on each
+      of the screens, telling them whether they are covered by some other non-popup screen, and whether some other screen on top of them has
+      the input focus. The <b>GameScreen.Update</b> method is responsible for updating the transition state in response to this information,
+      transitioning on or off as appropriate.
+    </p>
+
+    <p>
+      The <b>ScreenManager</b> also calls <b>GameScreen.HandleInput</b> for the topmost active screen. Unlike the <b>Update</b> method,
+      this is only ever called for one screen per frame, because there should never be more than one screen responding to user input at the same
+      time. Screens are considered to be active even while they are in the process of transitioning on. This lets players who are familiar
+      with the game navigate quickly through the menus without having to bother waiting for transitions to complete. If they dismiss a menu
+      before it has finished transitioning on, the transition will simply turn around and move back off again. You can see this in action
+      if you toggle rapidly back and forth between the main menu and options screens.
+    </p>
+
+    <p>
+      Note that transitions are entirely optional. If a <b>GameScreen</b> leaves its <b>TransitionOnTime</b> and 
+      <b>TransitionOffTime</b> properties set to zero, it will instantly pop on and off, and thus will have no need to 
+      implement transition effects in its rendering code.
+    </p>
+
+    <p>
+      The <b>LoadingScreen</b> coordinates transitions between the menu system and the game itself. Normally, one screen transitions 
+      off at the same time as the next screen is transitioning on. For larger transitions that can take a longer time to load their data
+       we want the menu system to be entirely gone before we start loading the game. This is done as follows:
+    </p>
+    <ul>
+      <li>Tell all the existing screens to transition off.</li>
+      <li>Activate a loading screen, which will transition on at the same time.</li>
+      <li>The loading screen monitors the state of the previous screens.</li>
+      <li>
+        When it determines they have finished transitioning off, it activates the real next screen, which may take a long time to load its data.
+        The loading screen will be the only thing displayed while this load is taking place.
+      </li>
+    </ul>
+
+    <p>New in 3.0: the <b>GameScreen</b> class, in conjunction with the <b>InputState</b> helper, contains logic for tracking which gamepad is active. An Xbox can have up to four connected gamepads, so you should not always just assume the first controller is the active one. Players expect to be able to pick up any gamepad and use that to play the game. This behavior is implemented by the <b>GameScreen.ControllingPlayer</b> property, which is a <b>Nullable&lt;PlayerIndex&gt;</b>. If this is null, any player can control the screen, but when it is set to a specific value, only that player has control. In this sample, the <b>MainMenuScreen</b> responds to input from any controller. It works out which controller the player is using by noticing what controller was used to select each menu option. Whenever the main menu activates a different screen, it passes through this player index as the controlling player for the new screen. The controlling player selection is passed on from each screen to the next, so from this point on, only that player is able to control the game. Once gameplay is complete and the controlling player returns to the main menu, the controlling player is set back to null, so the sample will once more respond to input from any connected gamepad.
+    </p>
+
+    <p>The <b>GameplayScreen</b> also includes logic to pause the game if the controlling player accidentally unplugs their gamepad.</p>
+
+  </div>
+
+  <a name="ID2EAH"></a><h1 class="heading">Extending the Sample</h1><div id="ID2EAH" class="hxnx1">
+    
+
+    <p>
+      You can extend the sample by adding new screens, changing the menu options, and altering the drawing code used by the
+      <b>MenuScreen</b>, <b>MessageBoxScreen</b>, and <b>BackgroundScreen</b> classes. For example, you could make
+      the <b>MenuScreen</b> transition effect slide vertically rather than horizontally, or add some subtle animation to the
+      <b>BackgroundScreen</b>.
+    </p>
+
+    <p>
+      In the interest of simplicity, this sample implements <b>GameScreen</b> as a standalone class rather than deriving from
+      <b>DrawableGameComponent</b>. If you want to use components together with this menu system, you could extend
+      <b>GameScreen</b> to host other components inside itself. Each screen would maintain a list of the components it is using,
+      call <b>Initialize</b> on new components when they are added, and plumb the <b>Update</b> and <b>Draw</b> calls
+      through to every component in this list.
+    </p>
+  </div>
+
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Game State Management Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

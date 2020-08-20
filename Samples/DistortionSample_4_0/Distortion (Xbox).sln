@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistortionXbox", "Distortion\DistortionXbox.csproj", "{AEFBD57D-6D32-4241-B275-FF226B533DDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistortionPipeline", "DistortionPipeline\DistortionPipeline.csproj", "{019E5B93-272D-4F06-BB12-81919546C2AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistortionContent", "Distortion\Content\DistortionContent.contentproj", "{DAF462DE-A78E-4C29-8DF1-EAA273C1452F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{019E5B93-272D-4F06-BB12-81919546C2AB}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{019E5B93-272D-4F06-BB12-81919546C2AB}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{019E5B93-272D-4F06-BB12-81919546C2AB}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{019E5B93-272D-4F06-BB12-81919546C2AB}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{DAF462DE-A78E-4C29-8DF1-EAA273C1452F}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{DAF462DE-A78E-4C29-8DF1-EAA273C1452F}.Release|Xbox 360.ActiveCfg = Release|x86
+		{AEFBD57D-6D32-4241-B275-FF226B533DDB}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{AEFBD57D-6D32-4241-B275-FF226B533DDB}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{AEFBD57D-6D32-4241-B275-FF226B533DDB}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{AEFBD57D-6D32-4241-B275-FF226B533DDB}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{AEFBD57D-6D32-4241-B275-FF226B533DDB}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{AEFBD57D-6D32-4241-B275-FF226B533DDB}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

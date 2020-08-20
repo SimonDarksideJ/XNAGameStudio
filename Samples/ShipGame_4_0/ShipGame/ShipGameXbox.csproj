@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{255001E5-3DA3-4033-8C84-431E11F1F831}</ProjectGuid>
+    <ProjectTypeGuids>{2DF5C3F4-5A5F-47a9-8E94-23B4456F55E2};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShipGame</RootNamespace>
+    <AssemblyName>ShipGameXbox</AssemblyName>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <StartupObject>ShipGame.ShipGameGame</StartupObject>
+    <Thumbnail>ShipGame.png</Thumbnail>
+    <XnaCrossPlatformGroupID>$guid2$</XnaCrossPlatformGroupID>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaUpgrade>
+    </XnaUpgrade>
+    <XnaOutputType>Game</XnaOutputType>
+    <XnaProfile>HiDef</XnaProfile>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;XBOX;XBOX360</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>True</XnaCompressContent>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <DefineConstants>TRACE;XBOX;XBOX360</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>True</XnaCompressContent>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="system">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="system.xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChaseCamera.cs">
+      <Name>ChaseCamera</Name>
+    </Compile>
+    <Compile Include="EntityList.cs">
+      <Name>EntityList</Name>
+    </Compile>
+    <Compile Include="FontManager.cs">
+      <Name>FontManager</Name>
+    </Compile>
+    <Compile Include="GameManager.cs">
+      <Name>GameManager</Name>
+    </Compile>
+    <Compile Include="GameOptions.cs">
+      <Name>GameOptions</Name>
+    </Compile>
+    <Compile Include="Graphics\AnimSprite.cs">
+      <Name>AnimSprite</Name>
+    </Compile>
+    <Compile Include="Graphics\AnimSpriteManager.cs">
+      <Name>AnimSpriteManager</Name>
+    </Compile>
+    <Compile Include="Graphics\BlurManager.cs">
+      <Name>BlurManager</Name>
+    </Compile>
+    <Compile Include="Graphics\LightList.cs">
+      <Name>LightList</Name>
+    </Compile>
+    <Compile Include="Graphics\ParticleManager.cs">
+      <Name>ParticleManager</Name>
+    </Compile>
+    <Compile Include="Graphics\ParticleSystem.cs">
+      <Name>ParticleSystem</Name>
+    </Compile>
+    <Compile Include="Graphics\Powerup.cs">
+      <Name>Powerup</Name>
+    </Compile>
+    <Compile Include="Graphics\PowerupManager.cs">
+      <Name>PowerupManager</Name>
+    </Compile>
+    <Compile Include="Graphics\Projectile.cs">
+      <Name>Projectile</Name>
+    </Compile>
+    <Compile Include="Graphics\ProjectileManager.cs">
+      <Name>ProjectileManager</Name>
+    </Compile>
+    <Compile Include="InputManager.cs">
+      <Name>InputManager</Name>
+    </Compile>
+    <Compile Include="PlayerMovement.cs">
+      <Name>PlayerMovement</Name>
+    </Compile>
+    <Compile Include="PlayerShip.cs">
+      <Name>PlayerShip</Name>
+    </Compile>
+    <Compile Include="Screens\Screen.cs">
+      <Name>Screen</Name>
+    </Compile>
+    <Compile Include="Screens\ScreenEnd.cs">
+      <Name>ScreenEnd</Name>
+    </Compile>
+    <Compile Include="Screens\ScreenGame.cs">
+      <Name>ScreenGame</Name>
+    </Compile>
+    <Compile Include="Screens\ScreenHelp.cs">
+      <Name>ScreenHelp</Name>
+    </Compile>
+    <Compile Include="Screens\ScreenIntro.cs">
+      <Name>ScreenIntro</Name>
+    </Compile>
+    <Compile Include="Screens\ScreenLevel.cs">
+      <Name>ScreenLevel</Name>
+    </Compile>
+    <Compile Include="Screens\ScreenManager.cs">
+      <Name>ScreenManager</Name>
+    </Compile>
+    <Compile Include="Screens\ScreenPlayer.cs">
+      <Name>ScreenPlayer</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <Name>AssemblyInfo</Name>
+    </Compile>
+    <Compile Include="ShipGame.cs">
+      <Name>ShipGame</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ShipGame.ico" />
+    <Content Include="ShipGame.png" />
+    <Content Include="Documentation\Ship_Game_Starter_Kit.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>$guid3$</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BoxCollider\BoxColliderXbox.csproj">
+      <Project>{4541A190-EADD-4891-9CB6-B4B1B51FD8B5}</Project>
+      <Name>BoxColliderXbox</Name>
+    </ProjectReference>
+    <ProjectReference Include="Content\ContentXbox.contentproj">
+      <Project>{9C9A1244-76B9-4223-92D7-2623A8C7ACB4}</Project>
+      <Name>ContentXbox %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" Condition="" />
+</Project>

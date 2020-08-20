@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformedCollisionWindows", "TransformedCollision\TransformedCollision\TransformedCollisionWindows.csproj", "{BB64503F-D9DD-4C8B-977F-A78E8DF01420}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "TransformedCollisionContent", "TransformedCollision\TransformedCollisionContent\TransformedCollisionContent.contentproj", "{20D6AD07-B825-4A63-BF90-189CC87B375C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB64503F-D9DD-4C8B-977F-A78E8DF01420}.Debug|x86.ActiveCfg = Debug|x86
+		{BB64503F-D9DD-4C8B-977F-A78E8DF01420}.Debug|x86.Build.0 = Debug|x86
+		{BB64503F-D9DD-4C8B-977F-A78E8DF01420}.Release|x86.ActiveCfg = Release|x86
+		{BB64503F-D9DD-4C8B-977F-A78E8DF01420}.Release|x86.Build.0 = Release|x86
+		{20D6AD07-B825-4A63-BF90-189CC87B375C}.Debug|x86.ActiveCfg = Debug|x86
+		{20D6AD07-B825-4A63-BF90-189CC87B375C}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

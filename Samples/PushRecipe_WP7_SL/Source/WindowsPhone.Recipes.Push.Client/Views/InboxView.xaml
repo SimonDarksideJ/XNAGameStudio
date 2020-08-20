@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="WindowsPhone.Recipes.Push.Client.Views.InboxView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:tk="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"             
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+        
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="Views">
+                <VisualState x:Name="NormalView" />
+                <VisualState x:Name="ScheduleView">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="TileScheduleView" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>                        
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid.RowDefinitions>
+    		<RowDefinition Height="120"/>
+            <RowDefinition Height="120"/>
+    		<RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+    	</Grid.RowDefinitions>        
+    	<StackPanel d:LayoutOverrides="Height">
+    		<TextBlock Margin="12,12,0,0" Text="Active Push Pattern" FontSize="24" />
+    		<ListBox ItemsSource="{Binding PushPatterns}"
+    			IsHitTestVisible="False"
+    			SelectedItem="{Binding PushPattern, Mode=TwoWay}"                         
+    			ItemsPanel="{StaticResource ItemsPanelTemplate}"
+    			ItemContainerStyle="{StaticResource PatternListBoxItemStyle}"
+    			HorizontalAlignment="Center">
+    			<ListBox.ItemTemplate>
+    				<DataTemplate>
+    					<TextBlock Text="{Binding}"
+    						TextWrapping="Wrap"
+    						VerticalAlignment="Center"
+    						HorizontalAlignment="Center"
+    						TextAlignment="Center" />
+    				</DataTemplate>
+    			</ListBox.ItemTemplate>
+    		</ListBox>
+        </StackPanel>        
+    	<StackPanel Grid.Row="1" d:LayoutOverrides="Height">
+    		<TextBlock Margin="12,12,0,0" Text="Counter (if relevant)" FontSize="24" />
+    		<TextBlock Margin="12,12,0,0" Text="{Binding Counter}" Foreground="LightBlue" />
+    	</StackPanel>
+        <TextBlock Margin="12,12,0,17" Text="Raw Messages (last on top)" Grid.Row="2" d:LayoutOverrides="Height" FontSize="24" />
+        <ListBox ItemsSource="{Binding RawMessages}" Grid.Row="4" Margin="12,0,12,80"/>
+        <Border x:Name="TileScheduleView"
+                Grid.Row="1" Grid.RowSpan="3"
+                Visibility="Collapsed"
+                Background="{StaticResource PhoneChromeBrush}">
+            <StackPanel>
+                <TextBlock Margin="12,12,0,17" Text="Tile Image (located on server)" Grid.Row="2" d:LayoutOverrides="Height" FontSize="24" />
+                <ListBox ItemsSource="{Binding ServerImages}"
+                         SelectedItem="{Binding SelectedServerImage, Mode=TwoWay}"
+                         Margin="12,0,12,0" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Schedule" Click="ButtonSchedule_Click" />
+                    <Button Content="Test Now" Click="ButtonTestNow_Click" Grid.Column="1" />
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,932 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history"><title>Shader Series 5: Multipass Lighting Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 0;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 
+	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Shader Series 5: Multipass Lighting Sample" />
+<MSHelp:RLTitle Title="Shader Series 5: Multipass Lighting Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.MultipassLighting" />
+<MSHelp:Keyword Index="A" Term="b4611ad8-52ca-adcb-86dc-da85f8bb8615" />
+<MSHelp:Keyword Index="K" Term="Shader Series 5: Multipass Lighting Sample" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA_30" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="AssetID" Value="b4611ad8-52ca-adcb-86dc-da85f8bb8615" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  <h1>Shader Series 5: Multipass Lighting Sample</h1>
+  
+  <p>This sample includes the following sections.</p>
+  <ul><li><a href="#ID2EP">Overview</a></li><li><a href="#ID2E1E">Blending</a></li><li><a href="#ID2ETF">Rendering Multiple Passes</a></li><li><a href="#ID2EIG">Multiple Passes and Batching</a></li><li><a href="#ID2E5G">Extending the Sample</a></li></ul>
+  <a name="ID2EP"></a><h1 class="heading">Overview</h1><div id="ID2EP" class="hxnx1">
+    
+    <p>The number and types of lighting effects that can be applied to a given piece of geometry are limited only by the need to maintain an interactive framerate.  In this sample, shader programs are run multiple times on individual pieces of geometry to enable hundreds of lights on a single piece of geometry.</p>
+    <p>Additive, multipass lighting techniques are not unique to programmable shader hardware, but shaders add additional flexibility in batching for performance. This sample uses blend states to add the effects of individual draws to the back buffer, allowing multiple draws to light the same piece of geometry.</p>
+
+
+    <a name="ID2EX"></a><h2 class="subHeading">Minimum Shader Profile</h2><div id="ID2EX" class="hxnx2">
+      
+      <dl class="glossary">
+        <dt>Vertex Shader Model 2.0</dt>
+        <dt>Pixel Shader Model 2.0</dt>
+      </dl>
+    </div>
+
+    <a name="ID2EDB"></a><h2 class="subHeading">Sample Controls</h2><div id="ID2EDB" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard Control</th>
+          <th>Gamepad Control</th>
+        </tr>
+        <tr>
+          <td>Rotate the camera.</td>
+          <td>
+            <b>W</b>, <b>A</b>, <b>S</b>, and <b>D</b>
+          </td>
+          <td>Right analog D-Pad</td>
+        </tr>
+        <tr>
+          <td>Rotate the meshes.</td>
+          <td>UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+          <td>Left analog D-Pad</td>
+        </tr>
+        <tr>
+          <td>Rotate the lights.</td>
+          <td>PAGE UP, PAGE DOWN</td>
+          <td>Left and right triggers</td>
+        </tr>
+        <tr>
+          <td>Add lights to the scene.</td>
+          <td>NUMPAD ADD</td>
+          <td>Right shoulder button
+          </td>
+        </tr>
+        <tr>
+          <td>Add lights per pass. (Pixel Shader 3.0 only)</td>
+          <td>P</td>
+          <td>Up D-Pad</td>
+        </tr>
+        <tr>
+          <td>Remove lights from the scene.</td>
+          <td>NUMPAD SUBTRACT</td>
+          <td>Left shoulder button
+          </td>
+        </tr>
+        <tr>
+          <td>Cycle the materials.</td>
+          <td>TAB</td>
+          <td>
+            <b>X</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Generate random light properties.</td>
+          <td>SPACEBAR</td>
+          <td>
+            <b>Y</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Exit the sample.</td>
+          <td>ESC or ALT+F4</td>
+          <td>
+            <b>BACK</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <a name="ID2E1E"></a><h1 class="heading">Blending</h1><div id="ID2E1E" class="hxnx1">
+    
+    <p>Until now in the shader series, we avoided the subject of alpha blending, since we are only dealing with opaque geometry. However, blend state is still useful in opaque rendering, since it has the flexibility to achieve a variety of effects.</p>
+    <p>The goal in this sample is to sum the light contribution of multiple draws while preserving depth. By preserving the depth buffer, the geometry doesn't need to be sorted, as the additive draws will be discarded when they are occluded. The <b>RenderStates</b> necessary for this are found in Example 1.4 in MultipassLighting.cs.</p>
+    <p>In Example 1.4, the destination and source blend states are set to <b>Blend.One</b>. The blend function is a simple summation (<b>BlendFunction.Add</b>). The result of each draw can be expressed as: (<i>backbufferColor</i> * 1) + (<i>drawnPixelColor</i> * 1). Normally, these pixels would be rejected by the depth test, except that the depth test has been set to <b>CompareFunction.LessEqual</b>, so that pixels with the same Z value as the depth buffer will still be drawn.</p>
+  </div>
+  <a name="ID2ETF"></a><h1 class="heading">Rendering Multiple Passes</h1><div id="ID2ETF" class="hxnx1">
+    
+    <p>After the blend states are properly set, there are a few more considerations for rendering. It usually does not make sense to render a scene-wide ambient pass more than once per piece of geometry in the scene, so a completely separate pass is rendered first. This has the additional benefit of pre-populating the depth buffer while making completely opaque draws.</p>
+    <p>Example 2.1 in Material.cs shows how depth buffer writes are enabled for the ambient pass, and how alpha blending is disabled. Subsequent draws that account for the point light contributions do not need to write to the depth buffer, as that would be redundant. Reading and writing to the depth buffer will absorb GPU bandwidth, and should be reduced if they are not needed.</p>
+    <p>In this sample, the outer for loop within in <b>MultipassLighting.Draw</b> iterates through the objects in the scene. For each object, a material batch is started, which sets up state shared by all subsequent passes on that object.</p>
+    <p>The inner loops iterate through one or more lights, setting their parameters on the material effect, and calling the <b>Material.DrawModel</b> method.  This method commits the parameter changes to the effect and calls <b>DrawIndexedPrimitives</b>.</p>
+
+  </div>
+  <a name="ID2EIG"></a><h1 class="heading">Multiple Passes and Batching</h1><div id="ID2EIG" class="hxnx1">
+    
+    <p>Calculating the effects of hundreds of lights in a single scene puts a tremendous amount of pressure on the GPU's pixel stages.  In order to improve framerates, it often becomes important to organize draws into "batches" of calls. This generally reduces the amount of CPU overhead by sending GPU commands with less frequency than simply flushing new GPU states every time a draw is called. It has additional benefits on the GPU by improving cache performance and reducing idle time.</p>
+    <p>In this sample, batching is used primarily to reduce the number of <b>Texture</b>, <b>VertexBuffer</b>, <b>RenderState</b>, and <b>EffectParameter</b> sets.  Example 2.2 shows that some amount of per-instance data is still necessary for every call—in that case, the immediate parameters of the lights being drawn.</p>
+    <p>Performance analysis of the GPU can be highly complex.  Lacking powerful GPU profiling tools, the next best solution is usually to employ common sense in reducing state changes and measure the results of your changes.  There is no one best way to design a material lighting system, but some level of batching is present in all commercial game engines. </p>
+  </div>
+  <a name="ID2E5G"></a><h1 class="heading">Extending the Sample</h1><div id="ID2E5G" class="hxnx1">
+    
+    <p>The following are some ideas for extending the sample.</p>
+    <ul>
+      <li>The amount of pixel fill could be drastically reduced by doing some basic distance-based range checking on lights to geometry. When the scene becomes heavily fill-rate limited, trading off CPU to reduce the number of draws can improve overall framerate.</li>
+      <li>A simple optimization would be to render the ambient passes for all of the geometry before doing any point light passes.  This pre-populates the depth buffer so overdrawn pixels are discarded earlier, sometimes resulting in better performance.</li>
+      <li>The shaders are far from optimal due to the need for clarity in the examples.  They could be optimized to further increase the number of lights possible in the scene.</li>
+      <li>Try combining multipass lighting with more complex shading algorithms, such as normal mapped surfaces or ambient occlusion.</li>
+    </ul>
+
+  </div>
+
+
+</div><div class="footer" id="footer"><p>© 2008 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Shader Series 5: Multipass Lighting Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

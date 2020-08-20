@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelLightingXbox", "PerPixelLighting\PerPixelLightingXbox.csproj", "{4C8D877A-1C51-434E-8A50-7286203F970D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelLightingContent", "PerPixelLighting\Content\PerPixelLightingContent.contentproj", "{ECE4067E-68AA-4152-8E8A-6418B2BF7486}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECE4067E-68AA-4152-8E8A-6418B2BF7486}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{ECE4067E-68AA-4152-8E8A-6418B2BF7486}.Release|Xbox 360.ActiveCfg = Release|x86
+		{4C8D877A-1C51-434E-8A50-7286203F970D}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{4C8D877A-1C51-434E-8A50-7286203F970D}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{4C8D877A-1C51-434E-8A50-7286203F970D}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{4C8D877A-1C51-434E-8A50-7286203F970D}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{4C8D877A-1C51-434E-8A50-7286203F970D}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{4C8D877A-1C51-434E-8A50-7286203F970D}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

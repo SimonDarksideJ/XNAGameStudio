@@ -1,0 +1,1073 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>Network Prediction Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Network Prediction Sample" />
+<MSHelp:RLTitle Title="Network Prediction Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.NetworkPrediction" />
+<MSHelp:Keyword Index="A" Term="83b95a03-c1a4-baa3-b498-901976fc94e9" />
+<MSHelp:Keyword Index="K" Term="Network Prediction Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="83b95a03-c1a4-baa3-b498-901976fc94e9" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+
+  <h1>Network Prediction Sample</h1>
+
+  This sample shows how to use prediction and smoothing algorithms to compensate for network lag. This makes remotely controlled objects appear to move smoothly even when there is a significant delay in packets being delivered over the network.
+
+  <a id="ID2EK" name="ID2EK"> </a><h1 class="heading">Sample Overview</h1><div id="ID2EK" class="hxnx1">
+    
+
+    <p>The Peer-to-Peer and Client/Server samples demonstrate two different network topologies. Each uses an example of a tank that the player can drive around the screen. In both samples, tank data is sent over the network every frame (60 times per second). That is a lot of data! When playing on a local network, these packets are delivered quickly enough to achieve smooth and continuous movement, but things do not work so well over the Internet. Most Internet connections do not have enough bandwidth to send data so often, and are slow enough that players will see delays and jerkiness in the movement of the tank.</p>
+
+    <p>This sample shows how to make the tank example from the Peer-to-Peer sample work over the Internet. It uses the NetworkSession.SimulatedLatency and NetworkSession.SimulatedPacketLoss properties to artifically emulate a typical Internet connection so that you can see the effects of lag even when testing over a fast local network. It then applies prediction and smoothing algorithms to compensate for this lag, making the tanks move smoothly even though the underlying network data is far from smooth.</p>
+
+    <a id="ID2ES" name="ID2ES"> </a><h2 class="subHeading">Sample Controls</h2><div id="ID2ES" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard control</th>
+          <th>Gamepad control</th>
+        </tr>
+        <tr>
+          <td>Create a session</td>
+          <td>A          </td>
+          <td>
+            <b>A</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Join a session</td>
+          <td>B</td>
+          <td>
+            <b>B</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Change network latency simulation</td>
+          <td>A</td>
+          <td>
+            <b>A</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Change packets per second</td>
+          <td>B</td>
+          <td>
+            <b>B</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Toggle motion prediction</td>
+          <td>X</td>
+          <td>
+            <b>X</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Toggle motion smoothing</td>
+          <td>Y</td>
+          <td>
+            <b>Y</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Move the tank</td>
+          <td>UP ARROW, DOWN ARROW, LEFT ARROW, RIGHT ARROW</td>
+          <td>Left thumb stick</td>
+        </tr>
+        <tr>
+          <td>Aim the turret</td>
+          <td>K, O, L, ;</td>
+          <td>Right thumb stick</td>
+        </tr>
+        <tr>
+          <td>Exit the sample</td>
+          <td>ESC or ALT+F4</td>
+          <td>
+            <b>BACK</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <a id="ID2EME" name="ID2EME"> </a><h1 class="heading">How the Sample Works</h1><div id="ID2EME" class="hxnx1">
+    
+
+    <a id="ID2EQE" name="ID2EQE"> </a><h2 class="subHeading">Problem #1: Bandwidth</h2><div id="ID2EQE" class="hxnx2">
+      
+
+      <p>Bandwidth refers to the amount of data that can be sent over a network connection. The XNA Framework measures bandwidth in bytes per second, but you will sometimes also see this measured in kilobits per second (Kbps). A kilobit is 128 bytes.</p>
+
+      <p>If you try to send more network data than there is available bandwidth, some of that data will be discarded. If you keep sending way too much data, eventually your connection will be dropped entirely and the network session will end.</p>
+
+      <p>So how much is too much? That depends on how good your network connection is. As a rule, you should assume a worst case of 8 KB (64 kilobits) per second. Many people will have better connections than this, but if your game requires more than 8 KB, some people will be unable to play it.</p>
+
+      <p>It is surprisingly easy to use too much bandwidth. For example, the Peer-to-Peer sample sends the following data over the network.</p>
+
+      <table>
+        <tr>
+          <th>Data</th>
+          <th>Type</th>
+          <th>Size (bytes)</th>
+        </tr>
+        <tr>
+          <td>Position</td>
+          <td>Vector2</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Tank rotation</td>
+          <td>float</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Turret rotation</td>
+          <td>float</td>
+          <td>4</td>
+        </tr>
+      </table>
+
+      <p>That may not seem like much: it is only 16 bytes in total. But things quickly add up. Every time we send a network packet, approximately 50 more bytes are used for the packet header (28 bytes for a standard UDP packet header, plus ~22 for LIVE and the XNA Framework). Including this header data, our packets are now 66 bytes. We are sending 60 packets per second, which makes 3960 bytes per second. Finally, we must send packets to every other player in the session. If there are three players in total, each of them sends packets to both the others, making a total bandwidth usage of 7920 bytes per second. We have used almost all of our 8 KB total bandwidth, with only three people in the session! The Peer-to-Peer sample is therefore not efficient enough to support even a four-player game over a typical Internet connection.</p>
+
+      <p>The best way to reduce bandwidth usage is to send packets less often. Rather than sending every frame, most games send packets only 10 times per second or 20 times per second, and in some cases even less. It might seem as though you could achieve a similar result by compressing your packet data, but that tends to be less useful when you think about the packet header overhead. The Peer-to-Peer sample sends 66-byte packets, which contain 16 bytes of game data and 50 bytes of header. Even if we could halve the size of our game data, that would only reduce the packets from 66 bytes to 58: not much of an improvement. Decreasing the send rate has a bigger impact because this cuts down on the number of packet headers as well the amount of game data.</p>
+
+      <p>When you send packets less often, you can expect remotely-controlled objects to move less smoothly. Hence, you need smoothing algorithms to cover up the resulting jerkiness.</p>
+
+      <p>
+        To see the effect of a low packet send rate without any latency or correction algorithms, press <b>X</b> and <b>Y</b> to disable prediction and smoothing, press <b>A</b> twice to change the "Network simulation" setting to 0 ms, and then use <b>B</b> to cycle through the available "Packets per second" settings. Notice how locally-controlled tanks always remain smooth. However, if you join a second computer into the session, and then drive a tank on the first computer while watching the screen of the second, this becomes increasingly jerky the less often you send packets.
+      </p>
+
+    </div>
+
+    <a id="ID2EVG" name="ID2EVG"> </a><h2 class="subHeading">Problem #2: Latency</h2><div id="ID2EVG" class="hxnx2">
+      
+
+      <p>Latency refers to the time delay between a packet being sent and when it is received. Local networks have low latencies (small enough to completely ignore), but the lag can be much higher when playing over the Internet.</p>
+
+      <p>Latency comes from many sources. Firstly, the speed of light, which is 186,282 miles per second. From Seattle to New York is 2413 miles, so even if everything else was perfect, data sent from one side of the United States to the other cannot possibly arrive in less than 13 milliseconds. Also, network data usually travels down fiber optic or copper cables, in which light slows to only 60 percent of its speed in a vacuum. Finally, every piece of hardware along the way causes additional latency. A modem typically adds around 10 milliseconds (there will be two modems, one at each end), while a router (of which there could be several, depending on your ISP) adds between 5 and 50 milliseconds. As a rule, you should assume a worst case of 200 milliseconds latency.</p>
+
+      <p>
+        To see the effect of poor network latency without any correction algorithms, press <b>X</b> and <b>Y</b> to disable prediction and smoothing, press <b>B</b> twice to change the "Packets per second" setting to 60, and then use <b>A</b> to cycle through the available "Network simulation" settings. Notice how locally controlled tanks always remain smooth, but if you join a second computer into the session, then drive a tank on the first computer while watching the screen of the second, this becomes increasingly delayed and jerky the more latency you introduce. Unlike the evenly-spaced jerks caused by a low packet send rate, the effect of latency is more random, as every packet will be delayed by a different amount of time.
+
+
+      </p>
+
+    </div>
+
+    <a id="ID2EJH" name="ID2EJH"> </a><h2 class="subHeading">Solution #1: Smoothing</h2><div id="ID2EJH" class="hxnx2">
+      
+
+      <p>Although limited bandwidth (which causes you to send packets less often) and latency (which delays the delivery of packets) are different problems, their symptoms are similar. Both prevent network data from arriving in time to produce a smooth movement. Fortunately, the same solutions can be used to fix both problems.</p>
+
+      <p>Take this example of a game that sends packets every 0.2 seconds. If the tank drives upward, then turns to the right, following the blue line, it will send three packets at the times and positions shown in this diagram.</p>
+
+      <img src="Local.png" />
+
+      <p>If latency delays each packet by 0.1 seconds, a network client will see the tank behaving as follows.</p>
+
+      <img src="Networked.png" />
+
+      <p>The dotted red lines represent jumps, where the tank moves instantly to the position described in the most recently received packet. Note how the motion is not only jerky, but also delayed. The tank does not move at all for the first 0.3 seconds, as it must wait first for a packet to be sent at 0.2 seconds, and another 0.1 seconds for that packet to be delivered.</p>
+
+      <p>Smoothing is a simple concept. When a network packet is received, rather than teleporting immediately to the new position, we can interpolate gradually from the previous position toward this new location, giving the illusion of continuous motion. With smoothing in place, our remotely controlled tank will move as follows.</p>
+
+      <img src="Smoothing.png" />
+
+      <p>The jerkiness has been removed, but this is still not perfect. The main problem is that the movement delay is even worse than before. Not only must we wait for packets to arrive, but now we must also wait while we smooth the tank gradually toward the new position, even after the network has told us what position that is.</p>
+
+      <p>
+        Smoothing without prediction is simple to implement (see the <b>Tank.UpdateRemote</b> and <b>Tank.ApplySmoothing</b> methods in this sample), and may be adequate for some game objects. Still, objects controlled in this way are always going to be delayed slightly.
+      </p>
+
+    </div>
+
+    <a id="ID2ELAAC" name="ID2ELAAC"> </a><h2 class="subHeading">Solution #2: Prediction</h2><div id="ID2ELAAC" class="hxnx2">
+      
+
+      <p>Prediction algorithms attempt to remove the delay caused by more naive smoothing implementations. Because packets do not arrive instantaneously, it is impossible to ever know exactly where an object is located, but if we know where it was a short while ago when the packet sent, and also know which direction it was moving and whether it was turning, we can make a good guess as to how it is likely to have moved since that time.</p>
+
+      <p>To implement prediction, we must include more data in our network packets. If we only sent the tank position, it would be impossible to predict how that might move, so we must also send the velocity and user input controls. Using this extra data, we can make some guesses. For instance, if the first packet tells us "the tank is facing upward, and is not moving, but the user is pressing Up," we can predict it will accelerate upward along this blue line.</p>
+
+      <img src="Prediction1.png" />
+
+      <p>After 0.3 seconds, at the same time as our locally simulated tank reaches the end of the blue line, we receive a new network packet. The position in this new packet is somewhat behind where we predicted the tank should be, because the packet took 0.1 seconds to arrive, so our prediction has already moved on past the position where the packet was sent. Also, the new packet contains updated input values, telling us the player is now providing a steer input that will make them curve to the right. Using this new information, we can reset our simulation to the state described in the new packet, and predict the tank will curve to the right along the green line.</p>
+
+      <img src="Prediction2.png" />
+
+      <p>But here we have a problem. We have already moved our local tank prediction all the way to the end of the original blue line! That prediction turned out to be close, but slightly wrong. If we move the tank backward to the position described in this second packet, the user will see an ugly jerk, so we cannot directly use this new position. That tells us where the tank was at 0.2 seconds, but we are now at 0.3 seconds, and we don't want to jerk backward. Instead, we assume the tank has been moving along the green line since this packet was sent 0.1 seconds ago, so we take a point 0.1 seconds forward along the green line, which is only a small distance to the right of our original blue prediction. Rather than just teleporting the tank from our old and slightly wrong blue prediction to the newer and hopefully more accurate green prediction, we can use the same smoothing technique described earlier to gradually interpolate from the old position toward the new, covering up this minor misprediction in hopes that nobody will notice it.</p>
+
+      <p>This process repeats every time a new packet arrives. For instance, at 0.5 seconds, we get a packet telling us the user is now steering straight to the right.</p>
+
+      <img src="Prediction3.png" />
+
+      <p>We incorrectly predicted the tank would continue turning downward along the green line, so we update that guess with the new and more accurate orange prediction, and gradually smooth our position from the incorrect green guess toward the new orange version.</p>
+
+      <p>The great thing about prediction is that the object is no longer delayed. When the prediction works well, it will move smoothly and be in the right place at the right time. When things work less well, you may notice the adjustment after a prediction that turned out to be inaccurate. The easiest way to demonstrate this is to move in a straight line, then stop suddenly. The prediction assumed the tank would continue moving, but then a network packet says it has stopped, so the smoothing must move the tank slightly backward to correct for this mistaken guess. Network programming is all about compromises, and even the best prediction algorithms cannot be right 100 percent of the time!</p>
+
+      <p>So far we have skimmed over the details of how to actually implement a prediction algorithm. This turns out to be trivially easy for most games, because you can simply reuse your existing object movement code. You already have a method that updates the movement of your locally controlled objects. What better way to predict how a remote object is likely to move than by running the exact same code that is controlling that movement in the first place? This occurs in two places:</p>
+
+      <ul>
+        <li>
+          When a new network packet is received, <b>Tank.ReadNetworkPacket</b> calls <b>ApplyPrediction</b>. This calls the <b>UpdateState</b> helper method as many times as necessary to compensate for the packet delivery latency. In order to know how much compensation to apply, <b>ApplyPrediction</b> must estimate how long each packet took to arrive. The XNA Framework provides an estimated average network latency via the <b>NetworkGamer.RoundtripTime</b> property, but not all packets will take exactly this average amount of time to arrive. To handle varying latencies per packet, we include the send time as part of our packet data. Unfortunately, there is no guarantee that the clock will be set the same on every computer! The sender told us the clock time when the packet was sent. But this is meaningless unless our local clock is in sync with the sender's clock. To compensate for any clock skew, we maintain a rolling average of the send times from the last 100 incoming packets. If this average is, say, 50 milliseconds, but one specific packet arrives with a time difference of 70 milliseconds, we can deduce this particular packet was delivered 20 milliseconds later than usual.
+        </li>
+
+        <li>
+          <b>Tank.UpdateRemote</b> also calls the <b>UpdateState</b> helper, keeping the tank moving smoothly along its predicted path during the gaps between one packet and the next.
+        </li>
+      </ul>
+
+      <p>One of the many paradoxes of network programming is that prediction algorithms can reduce our total bandwidth usage, even though they require sending more data over the network. Remember how the Peer-to-Peer sample sent only the position and rotation (a total of 16 bytes), but had to do this 60 times a second, making a total of 3,960 bytes per player per second? To implement prediction, we must also send time, velocity, and controller input data. However, thanks to the prediction, we can now get away with sending packets less often. Look how the math works out.</p>
+
+      <table>
+        <tr>
+          <th>Data</th>
+          <th>Type</th>
+          <th>Size (bytes)</th>
+        </tr>
+        <tr>
+          <td>Packet send ime</td>
+          <td>float</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Position</td>
+          <td>Vector2</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Velocity</td>
+          <td>Vector2</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Tank rotation</td>
+          <td>float</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Turret rotation</td>
+          <td>float</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Tank input</td>
+          <td>Vector2</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Turret input</td>
+          <td>Vector2</td>
+          <td>8</td>
+        </tr>
+      </table>
+
+      <p>That is 44 bytes of game data. By adding a 50-byte packet header, and multiplying by 10 packets per second, you get a total of 940 bytes per player per second. Therefore, we can now support up to nine players within our 8 KB total bandwidth.</p>
+
+    </div>
+
+  </div>
+
+  <a id="ID2EQEAC" name="ID2EQEAC"> </a><h1 class="heading">Extending the Sample</h1><div id="ID2EQEAC" class="hxnx1">
+    
+
+    <p>
+      You can further reduce bandwidth usage by using smaller data types to transmit the tank state. For example, you could convert the position and velocity to <b>HalfVector2</b> format, the input vectors to <b>NormalizedByte2</b>, and then scale the rotations to fit into a single byte. This reduces the game data to only 18 bytes, which enables you to fit 13 players into your total 8 KB.
+    </p>
+
+  </div>
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Network Prediction Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

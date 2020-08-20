@@ -1,0 +1,113 @@
+﻿<?xml version="1.0"?>
+<ParticleReaderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ParticleReaderElements>
+		<!--
+		Environment effect
+		-->
+		<ParticleReaderElement>
+			<EntryName>EnvironmentSmoke</EntryName>
+			<RelativeFilePath>Particles/EnvSm02</RelativeFilePath>
+			<UseMaxCount>4</UseMaxCount>
+		</ParticleReaderElement>
+
+		<!--
+		Unit destroy effect
+		-->
+		<ParticleReaderElement>
+			<EntryName>DestroyHeavyMech1</EntryName>
+			<RelativeFilePath>Particles/ExpLM01</RelativeFilePath>
+			<UseMaxCount>4</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>DestroyHeavyMech2</EntryName>
+			<RelativeFilePath>Particles/ExpLM01_1</RelativeFilePath>
+			<UseMaxCount>4</UseMaxCount>
+		</ParticleReaderElement>
+
+		<!--
+		Player MachineGun effect
+		-->
+		<ParticleReaderElement>
+			<EntryName>PlayerMachineGunFire</EntryName>
+			<RelativeFilePath>Particles/FirMa05</RelativeFilePath>
+			<UseMaxCount>32</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>PlayerMachineGunUnitHit</EntryName>
+			<RelativeFilePath>Particles/HitMa03</RelativeFilePath>
+			<UseMaxCount>32</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>PlayerMachineGunWorldHit</EntryName>
+			<RelativeFilePath>Particles/HitWMa01</RelativeFilePath>
+			<UseMaxCount>32</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>PlayerMachineGunReload</EntryName>
+			<RelativeFilePath>Particles/RldMa07</RelativeFilePath>
+			<UseMaxCount>4</UseMaxCount>
+		</ParticleReaderElement>
+
+		<!--
+		Player Shotgun effect
+		-->
+		<ParticleReaderElement>
+			<EntryName>PlayerShotgunFire</EntryName>
+			<RelativeFilePath>Particles/FirSh01</RelativeFilePath>
+			<UseMaxCount>16</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>PlayerShotgunUnitHit</EntryName>
+			<RelativeFilePath>Particles/HitSh01</RelativeFilePath>
+			<UseMaxCount>8</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>PlayerShotgunWorldHit</EntryName>
+			<RelativeFilePath>Particles/HitSh01</RelativeFilePath>
+			<UseMaxCount>8</UseMaxCount>
+		</ParticleReaderElement>
+
+		<!--
+		Player Handgun effect
+		-->
+		<ParticleReaderElement>
+			<EntryName>PlayerHandgunFire</EntryName>
+			<RelativeFilePath>Particles/FirHa01</RelativeFilePath>
+			<UseMaxCount>16</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>PlayerHandgunUnitHit</EntryName>
+			<RelativeFilePath>Particles/HitMa03</RelativeFilePath>
+			<UseMaxCount>8</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>PlayerHandgunWorldHit</EntryName>
+			<RelativeFilePath>Particles/HitWMa01</RelativeFilePath>
+			<UseMaxCount>8</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>PlayerHandgunReload</EntryName>
+			<RelativeFilePath>Particles/RldHa01</RelativeFilePath>
+			<UseMaxCount>4</UseMaxCount>
+		</ParticleReaderElement>
+
+		<!--
+		Player booster effect
+		-->
+		<ParticleReaderElement>
+			<EntryName>BoosterPrepare</EntryName>
+			<RelativeFilePath>Particles/BstBp05</RelativeFilePath>
+			<UseMaxCount>2</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>BoosterOn</EntryName>
+			<RelativeFilePath>Particles/BstBp05_1</RelativeFilePath>
+			<UseMaxCount>2</UseMaxCount>
+		</ParticleReaderElement>
+		<ParticleReaderElement>
+			<EntryName>BoosterGround</EntryName>
+			<RelativeFilePath>Particles/BstGs05</RelativeFilePath>
+			<UseMaxCount>2</UseMaxCount>
+		</ParticleReaderElement>
+	</ParticleReaderElements>
+</ParticleReaderList>

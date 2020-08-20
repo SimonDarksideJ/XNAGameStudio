@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitScreenSample (Windows)", "SplitScreenSample\SplitScreenSample\SplitScreenSample (Windows).csproj", "{709E501A-4789-4717-9687-6D03E12A684C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitScreenSampleContent", "SplitScreenSample\SplitScreenSampleContent\SplitScreenSampleContent.contentproj", "{74C0CD2F-DDB9-47FF-8D20-C366CA68853E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{709E501A-4789-4717-9687-6D03E12A684C}.Debug|x86.ActiveCfg = Debug|x86
+		{709E501A-4789-4717-9687-6D03E12A684C}.Debug|x86.Build.0 = Debug|x86
+		{709E501A-4789-4717-9687-6D03E12A684C}.Release|x86.ActiveCfg = Release|x86
+		{709E501A-4789-4717-9687-6D03E12A684C}.Release|x86.Build.0 = Release|x86
+		{74C0CD2F-DDB9-47FF-8D20-C366CA68853E}.Debug|x86.ActiveCfg = Debug|x86
+		{74C0CD2F-DDB9-47FF-8D20-C366CA68853E}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

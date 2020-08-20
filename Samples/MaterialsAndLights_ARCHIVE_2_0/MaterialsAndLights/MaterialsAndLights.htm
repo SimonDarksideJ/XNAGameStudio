@@ -1,0 +1,942 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history"><title>Shader Series 4: Materials and Lights Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 0;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 
+	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Shader Series 4: Materials and Lights Sample" />
+<MSHelp:RLTitle Title="Shader Series 4: Materials and Lights Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.MaterialsAndLights" />
+<MSHelp:Keyword Index="A" Term="731c7215-4bea-9132-11ec-646d8584f410" />
+<MSHelp:Keyword Index="K" Term="Shader Series 4: Materials and Lights Sample" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA_20" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="AssetID" Value="731c7215-4bea-9132-11ec-646d8584f410" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  <h1>Shader Series 4: Materials and Lights Sample</h1>
+  
+  <p>This sample includes the following sections.</p>
+<ul><li><a href="#ID2EP">Overview</a></li><li><a href="#ID2ERE">Materials, Lights, and Geometry</a></li><li><a href="#ID2ETF">HLSL Concepts</a></li><li><a href="#ID2ECG">Complex Effect Parameters</a></li><li><a href="#ID2EUG">Effects and Performance</a></li><li><a href="#ID2EYH">Extending the Sample</a></li></ul>
+  <a name="ID2EP"></a><h1 class="heading">Overview</h1><div id="ID2EP" class="hxnx1">
+    
+    <p>The key message with all shader programming is flexibility.  The fast, parallel floating-point math executed on the GPU can be used for arbitrarily more complex and interesting rendering.  However, to really benefit from all this power, some level of organization is required to combine these elements into a detailed and varied 3D scene.</p>
+    <p>Until now, the shader series has focused on single meshes, single lights, and single materials.  However, a real game requires multiples of all these techniques, and some means of operating on them efficiently without removing their inherent flexibility or usability.  This sample is an example of how a developer might combine the techniques leading up to this sample into a usable system for composing a 3D scene.  In that sense, modern shaders are deeply tied to the architecture of any modern 3D engine, and the design of an engine informs the shader implementations used.</p>
+
+    <a name="ID2EX"></a><h2 class="subHeading">Minimum Shader Profile</h2><div id="ID2EX" class="hxnx2">
+      
+      <dl class="glossary">
+        <dt>Vertex Shader Model 2.0</dt>
+        <dt>Pixel Shader Model 2.0</dt>
+      </dl>
+    </div>
+
+    <a name="ID2EDB"></a><h2 class="subHeading">Sample Controls</h2><div id="ID2EDB" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard Control</th>
+          <th>Gamepad Control</th>
+        </tr>
+        <tr>
+          <td>Rotate the camera.</td>
+          <td>
+            <b>W</b>, <b>A</b>, <b>S</b>, and <b>D</b>
+          </td>
+          <td>Right analog D-Pad</td>
+        </tr>
+        <tr>
+          <td>Rotate the meshes.</td>
+          <td>UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+          <td>Left analog D-Pad</td>
+        </tr>
+        <tr>
+          <td>Rotate the lights.</td>
+          <td>PAGE UP, PAGE DOWN</td>
+          <td>Left and right triggers</td>
+        </tr>
+        <tr>
+          <td>Add lights to the scene.</td>
+          <td>NUMPAD ADD</td>
+          <td>Right shoulder button
+          </td>
+        </tr>
+        <tr>
+          <td>Remove lights from the scene.</td>
+          <td>NUMPAD SUBTRACT</td>
+          <td>Left shoulder button
+          </td>
+        </tr>
+        <tr>
+          <td>Cycle the materials.</td>
+          <td>TAB</td>
+          <td>
+            <b>X</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Generate random light properties.</td>
+          <td>SPACEBAR</td>
+          <td>
+            <b>Y</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Exit the sample.</td>
+          <td>ESC or ALT+F4</td>
+          <td>
+            <b>BACK</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+   </div>
+  <a name="ID2ERE"></a><h1 class="heading">Materials, Lights, and Geometry</h1><div id="ID2ERE" class="hxnx1">
+    
+    <p>This sample focuses on the following goals for representing a 3D scene.</p>
+    <ul>
+      <li>Be able to support multiple on-screen meshes with different materials.</li>
+      <li>Be able to support multiple point light sources. </li>
+      <li>Be able to support ambient, diffuse, specular, and texture properties in each material. </li>
+      <li>Be able to support color, intensity, and falloff for each light. </li>
+      <li>Support Phong Reflectance to light all geometry in the scene. </li>
+    </ul>
+    <p>Notice that the solution here is well defined.  In any material system, the goals should be clearly stated to avoid unnecessary states and code.  State setting and superfluous shader operations result in a slower draw pass, and more tradeoffs may be necessary to maintain a steady 30 Hz or 60 Hz frame rate.</p>
+    <p>In this sample, classes are used to represent point lights and materials present in the scene.  The PointLight class (PointLight.cs) is a C# class representation of a light in the sample scene.  The light data is used by the high-level shader language (HLSL) functions to illuminate the scene.  The <b>Material</b> class is a representation of a generic material that can be applied to any of the geometry in the scene.  The material parameters are defined programmatically in the C# source (Example 1.3, MaterialsAndLights.cs).</p>
+    <p>Using different combinations of colors, textures, and Phong specular parameters, the materials in the scene can be made to look dull, shiny, bumpy, or smooth.  By introducing a specular texture (alternatively called a <i>specular map</i>), you can deduct some level of surface bumpiness from the interaction of specular highlights on the geometry.</p>
+    <p>The lights themselves add a few new properties to make them more realistic.  First, instead of using a single directional light for the scene, the point lights have a real position in the scene.  They also have a range and a falloff value.  Point lights are omnidirectional and have a limited range.  The result is that they give off a sphere of light around them.  They also have a falloff value that factors in an exponential falloff curve, to give more flexibility in producing "harder" or "softer" lighting conditions.</p>
+  </div>
+
+  <a name="ID2ETF"></a><h1 class="heading">HLSL Concepts</h1><div id="ID2ETF" class="hxnx1">
+    
+    <p>On the Windows PC, several “generations” of shader hardware have been introduced.  With each new generation, shader programs have had fewer limitations and more options available to them.  However, to accommodate a broad range of PC hardware, it is sometimes important to have multiple render paths.  This sample includes shader model 2.0 and 3.0 versions of the material shader.  Example 1.1 shows how to determine the shader version and how to select an appropriate effect.</p>
+    <p>To maintain code parity and ease of use, many of the parameters and functions have been shared between the two effects using an include file.  Think of an include file as a substitution that you can insert using an include statement (Example 5.1 in MaterialShader30.fx).  Both versions of the material shader code include a file called Includes.inc.  This file contains all of the parameters and functions that are utilized by both versions of the material effect.  The result is that code is shared, reducing redundancy and, as a result, the potential for copy-paste bugs.  Note that although the file is included as part of the Game Studio project file, it is not part of the content project. It will be included and built automatically because it is referenced by the effects, so there is no need for it to be duplicated in the content project. It was only included here so you can easily locate the file for viewing or editing.</p>
+    <p>An important aspect of this sample is that lights can be turned on or off.  To facilitate this, the sample introduces the concept of an HLSL loop to the shader series. You can find the loop structure in Example 5.2 in MaterialShader30.fx.  Note how the number of iterations though the loop is determined by a shared parameter set when the number of enabled lights in the scene changes.</p>
+    <p>However, the loop in MaterialShader20.fx has a hard-coded number of iterations, since the 2.0 pixel shader model is incapable of true looping.  Instead, the GPU treats the structure as a static loop and calculates all iterations regardless of how many lights will be drawn.  To enable or disable lights, each light’s color value is multiplied by the result of a comparison.  The Boolean comparison will resolve to a 1 or a 0, effectively indicating an "on" or "off" state.</p>
+    <p>The DirectX SDK contains detailed documentation on the features and limitations of the various shader models.  Xbox 360 always supports a specialized version of shader model 3.0, which makes it a consistent platform for experimentation and implementation.</p>
+  </div>
+
+  <a name="ID2ECG"></a><h1 class="heading">Complex Effect Parameters</h1><div id="ID2ECG" class="hxnx1">
+    
+    <p>Another new concept for the shader series are complex parameter types.  In this sample, the lights are contained in an array of structures.  Accessing these parameters from the C# code is slightly different than a simple name lookup, but they otherwise behave in the same way.</p>
+    <p>Example 1.4 in MaterialsAndLights.cs shows how to isolate an <b>EffectParameter</b> representing an individual element of an array.  In Example 3.2 in PointLight.cs, individual members of the HLSL Light structure are accessed directly.  It’s important to keep in mind that <b>EffectParameters</b> refer to <i>instances</i> and not the structure <i>types</i> defined in the HLSL.  It’s also helpful to think of them as recursive structures, which allow for an arbitrary amount of structural encapsulation.</p>
+  </div>
+
+  <a name="ID2EUG"></a><h1 class="heading">Effects and Performance</h1><div id="ID2EUG" class="hxnx1">
+    
+    <p>In Material.cs, Example 2.1 introduces an interesting way of organizing effects.  The materials in this sample each have their own copy of the material shader effect.  The instance of the effect is cloned from the original loaded during initialization.  The result is an appreciable performance improvement over using SetValue functions on an effect each time a material is changed. </p>
+    <p>To understand how this works, it’s worth looking closely at how effects function at a low level.  An <b>Effect</b> is essentially a software wrapper for two core graphics constructs – shader programs and shader constants.  An <b>Effect</b> instance contains references to shaders programs and references to shader constants via Effect parameters.  An <b>Effect</b> instance stores the values of the parameters in main memory until they are required by the renderer.   When <b>Effect.Begin()</b> or <b>Effect.Commit()</b> is called in the C# source, the <b>Effect</b> sets the values into <i>shader constant registers</i> on the GPU.  It also does the work of ensuring that those constant registers map to the correct HLSL variables via a <i>constant table</i>. </p>
+    <p>In this sample, there are few calls to SetValue() in each frame.  Every function call has overhead, and by simply calling Effect.Begin(), the sample avoids the overhead of potentially hundreds of SetValue() calls each frame.  The relatively faster underlying <b>Effect</b> code handles the state setting.  This tends to give a considerable performance boost on the Xbox 360 in particular. </p>
+    <p>Using an effect instance to represent a <b>Material</b> has another highly desirable benefit: It is an elegant abstraction for a particular material as it relates to a game.  The Material.cs file shadows all of the variables for readability and ease of debugging, but the effect instance can make for a compact set of parameters, which is useful for materials imported through the content pipeline. </p>
+  </div>
+
+  <a name="ID2EYH"></a><h1 class="heading">Extending the Sample</h1><div id="ID2EYH" class="hxnx1">
+    
+    <p>The following are some ideas for extending the sample.</p>
+    <ul>
+      <li>The sample’s 2.0 pixel shader is far more limited than the 3.0 shader, supporting only two lights and lacking specular texture mapping.  However, you can support an unlimited number of lights by layering multiple additive effect passes.  A possible extension could be to remove the limitations of the 2.0 shader by calculating each light with a separate shader pass. </li>
+      <li>There are many other material parameters that could be interesting to add, even in the context of Phong Reflectance.  Emissive textures represent parts of material that give off light.  Another material option could be to add periodic effects, such as animated textures, colors, or morphs. </li>
+      <li>The Phong lighting model just scratches the surface of the possible ways to light geometry.  Many lighting models are feasible for real-time applications, and sometimes equations from published scholarly articles can be translated directly to shader code.  Additionally, more complex lighting models may have more complex material parameters such as Fresnel constants, anisotropic effects, or roughness.  Try using this sample to experiment with more complex lighting equations and additional material parameters to add realism to the lighting in the scene. </li>
+    </ul>
+  </div>
+
+
+</div><div class="footer" id="footer"><p>© 2008 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Shader Series 4: Materials and Lights Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

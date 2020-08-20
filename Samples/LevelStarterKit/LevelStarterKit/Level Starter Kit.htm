@@ -1,0 +1,1449 @@
+﻿<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>Level Starter Kit for Windows Phone</title>
+    <style type="text/css">
+ body
+{
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+}
+dl
+{
+	margin-top:	15;
+	margin-bottom:5;
+	padding-left:	1;
+}
+
+dl.authored dt {
+	font-style:	bold;
+	margin-top: 2;
+}
+
+dd {
+	margin-left:	20px;
+}
+
+ul
+{
+	margin-top:0;
+	margin-bottom:0;
+	margin-left: 17;
+	list-style-type: disc;
+}
+
+ul ul
+{
+	margin-bottom: 4;
+	margin-left: 17;
+	margin-top: 3;
+	list-style-type: disc;
+}
+
+ol {
+	margin-top:0;
+	margin-bottom:0;
+	margin-left: 28;
+	list-style-type: decimal;
+}
+
+ol ol {
+	margin-bottom: 4;
+	margin-left: 28;
+	margin-top: 3;
+	list-style-type: lower-alpha;
+}
+
+li {
+	margin-top: 5;
+	margin-bottom: 5;
+}
+
+p {
+	margin-top: 10;
+	margin-bottom: 5;
+}
+
+a:link {
+	color:	#0000FF;
+}
+
+a:visited {
+	color: #DD7C3B;
+}
+
+a:hover {
+	color:	#3366FF;
+}
+
+code
+{
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+span.parameter {
+	font-style: italic;
+}
+
+span.italic {
+	font-style: italic;
+}
+
+span.selflink {
+	font-weight: bold;
+}
+
+span.nolink {
+	font-weight: bold;
+}
+
+div.breadCrumbs {
+	font-size: 8pt;
+	margin-bottom: 5;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	padding-bottom: 5;
+}
+
+div#mainSection
+{
+	font-size: 62.5%;
+	width: 100%;
+}
+html&gt;body #mainSection
+{
+	font-size:73%;
+	width: 100%;
+}
+
+div#mainBody
+{
+	font-size: 100%;
+	margin-left: 15;
+	margin-top: 10;
+}
+
+html&gt;body #mainBody
+{
+	font-size: 93%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#header
+{
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+div#header table
+{
+	width:	100%;
+}
+
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	margin-top:	0;
+	margin-bottom:	0;
+	padding-right: 20;
+}
+
+div#header table tr#headerTableRow2 td
+{
+	padding-left: 13px;
+}
+
+div#header table tr#headerTableRow3 td
+{
+	padding-top: 2px;
+	padding-left: 15;
+}
+
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div#mainSection table td.imageCell
+{
+	white-space: nowrap;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div#mainBody div.section div.alert, div#mainBody div.section div.code,
+div#mainBody div.section div.tableSection
+{
+	width:100%;
+}
+
+div#mainBody div.section ul div.alert, div#mainBody div.section ul div.code,
+div#mainBody div.section ul div.tableSection, div#mainBody div.section ol div.alert, 
+div#mainBody div.section ol div.code, div#mainBody div.section ol div.tableSection
+{
+	width:100%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+dd p
+{
+	margin-top:2;
+	margin-bottom:8;
+}
+div.tableSection p
+{
+	margin-top:1;
+	margin-bottom:4;
+}	
+li p
+{
+	margin-top:2;
+	margin-bottom:2;
+}
+div.seeAlsoNoToggleSection dl
+{
+	margin-top:8;
+	margin-bottom:1;
+	padding-left:1;
+}
+div.seeAlsoNoToggleSection dd p
+{
+	margin-top:2;
+	margin-bottom:8;
+}
+div.section dl
+{
+	margin-top:8;
+	margin-bottom:1;
+	padding-left:1;
+}
+div.section dd p
+{
+	margin-top:2;
+	margin-bottom:8;
+}
+
+div.code table
+{
+	border: 0;
+	font-size: 95%;
+	margin-bottom: 5;
+	margin-top:-.4em;
+	width: 100%
+}
+
+div.code table th
+{	
+	background:	#EFEFF7;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	color: #000066;
+	font-weight: bold;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.code table td
+{
+	background:	#F7F7FF;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	padding-left: 5;
+	padding-right: 5;
+	padding-top: 5;
+}
+
+span#runningHeaderText
+{
+	color: #8C8C8C;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+span#nsrTitle
+{
+	color: #000000;
+	font-size: 160%;
+	font-weight: 400;
+	font-family: arial;
+}
+
+div#footer
+{
+	font-size: 80%;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	padding-top:	8;
+	padding-bottom:	6;
+	padding-left:	1;
+	padding-right:	1;
+	width:	100%;
+}
+
+html&gt;body div#footer
+{
+	font-size: 80%;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	padding-top:	2;
+	padding-bottom:	6;
+	padding-left:	1;
+	padding-right:	1;
+	width:	98%;
+}
+
+div.seeAlsoNoToggleSection
+{
+	margin-left:0;
+	padding-top:	2;
+	padding-bottom:	2;
+	padding-left:	0;
+	padding-right:	15;
+	width:	100%;
+}
+
+div.section
+{
+	margin-left:0;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	16;
+	padding-right:	15;
+	width:	100%;
+}
+html&gt;body div.section
+{
+	margin-left:0;
+	padding-top:	2;
+	padding-bottom:	2;
+	padding-left:	16;
+	padding-right:	15;
+	width:	97%;
+}
+div.seeSection
+{
+	margin-left:0;
+	padding-top:	0;
+	padding-bottom:	2;
+	padding-left:	16;
+	padding-right:	15;
+	width:	100%;
+}
+
+.heading
+{
+	font-weight:	bold;
+	margin-top:		18;
+	margin-bottom:	8;
+}
+
+h1.heading
+{
+	color: #000000;
+	font-size:	130%;
+}
+
+.subHeading
+{
+	font-weight:	bold;
+	margin-bottom:	4;
+}
+.procedureSubHeading
+{
+	font-weight: bold;
+	margin-bottom: 4;
+}
+
+h3.subHeading
+{
+	color:  #000000;
+	font-size: 120%;
+    font-weight:800;
+}
+
+h3.procedureSubHeading
+{
+	color: #000000;
+	font-size: 120%;
+}
+
+h4.subHeading
+{
+	color: #000000;
+	font-size: 110%;
+	font-weight:800;
+}
+span.labelheading, div.labelheading
+{
+	font-size:100%;
+	color:#003399;
+}
+
+img.note
+{
+	border: 0;
+	margin-right: 3;
+}
+
+div#mainSection table
+{
+	border: 0;
+	font-size: 100%;
+	width:	98.9%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div#mainSection table tr
+{
+	vertical-align: top;
+}
+
+div#mainSection table th
+{
+	background-color: #EFEFF7;
+	border-bottom: 1px solid #C8CDDE;
+	border-left: 1px none #D5D5D3;
+	color: #000066;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+}
+
+div#mainSection table td
+{
+	background-color: #F7F7FF;
+	border-bottom: 1px solid #D5D5D3;
+	border-left: 1px none #D5D5D3;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div#mainSection table td.imageCell
+{
+	white-space: nowrap;
+}
+
+div.code table
+{
+	border: 0;
+	font-size: 95%;
+	margin-bottom: 5;
+	width: 100%
+}
+
+div.code table th
+{	
+	background:	#EFEFF7;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	color: #000066;
+	font-weight: bold;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.code table td
+{
+	background:	#F7F7FF;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	padding-left: 5;
+	padding-right: 5;
+	padding-top: 5;
+}
+
+div.alert table
+{
+	border: 0;
+	font-size: 100%;
+	width:	100%;
+}
+
+div.alert table th
+{
+	background:	#EFEFF7;
+	border-bottom-width: 0;
+	color: #000066;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.alert table td
+{
+	background:	#F7F7FF;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.code pre
+{
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+	word-wrap:	break-word;
+	background: #F7F7FF;
+}
+
+.tip
+{
+	color:	#0000FF;
+	font-style: italic;
+	cursor: pointer;
+	text-decoration:underline;
+}
+
+.math
+{
+	font-family: Times New Roman;
+	font-size: 125%
+}
+
+div.footerLine {
+	margin: 0;
+	width: 100%;
+	padding-top:	8;
+	padding-bottom:	6;
+	/*padding-left:	5;
+	padding-right:	2;*/
+
+}
+
+div.hr1 {
+	margin: 0;
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	background: #C8CDDE;
+	font-size: 1px;
+}
+
+div.hr2 {
+	margin: 0;
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	background: #D4DFFF;
+	font-size: 1px;
+}
+
+div.hr3 {
+	margin: 0;
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	background: #EEEEFF;
+	font-size: 1px;
+}
+
+span.cs {
+	display: none;
+}
+
+span.vb {
+	display: none;
+}
+
+span.cpp {
+	display: none;
+}
+
+span.nu {
+	display: inline;
+}
+
+span.fs 
+{
+	display: none;
+}
+
+span.code {
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066; 
+}
+span.ui {
+	font-weight: bold;
+}
+span.math {
+	font-style: italic;
+}
+span.input {
+	font-weight: bold;
+}
+span.term {
+	font-style: italic;
+}
+span.label 
+{
+	font-weight: bold;
+}
+span.foreignPhrase {
+	font-style: italic;
+}
+span.placeholder {
+	font-style: italic;
+}
+span.keyword 
+{
+	font-weight: bold;
+}
+span.typeparameter
+{
+	font-style:italic;
+}
+
+div.caption
+{
+	font-weight: bold;
+	font-size:100%;
+	color:#003399;
+}
+
+
+div.code span.keyword 
+{
+	color: #871F78;
+}
+
+div.code span.parameter 
+{
+	font-style: italic;
+}
+
+div.code span.literal 
+{
+	color:#8B0000;
+}
+
+div.code span.comment 
+{
+	color: #006400;
+}
+
+span.syntaxLabel
+{
+	color:#0481DA;
+	font-weight:bold;
+}
+span.introStyle
+{
+	color:DarkGray;
+}
+
+div.seeAlsoStyle
+{
+	padding-top:5px;
+
+}
+
+td.nsrBottom
+{
+	height: 0.6em;
+	width: 100%;
+}
+  </style>
+  </head>
+  <body>
+    <div id="header">
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText" />
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">Level Starter Kit for Windows Phone</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <a href="#seeAlsoToggle">See Also</a>  </td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <font color="DarkGray"></font>
+        <p /> <p><font color="DarkGray">11/15/2010</font></p><div class="introduction"><p /></div><a name="Top" /><div id="sectionSection0" class="seeAlsoNoToggleSection"><p>This Windows Phone 7 Starter Kit is a complete Level application written in C#. The program provides the user with the ability to use the phone as a level. You can use the source code as the basis for your own applications. </p><p><span sdata="link"><a href="#Goals">Goals</a></span></p><p><span sdata="link"><a href="#Getting_Started">Getting Started</a></span></p><p><span sdata="link"><a href="#How_It_Works">How the Level Application Works</a></span></p><p><span sdata="link"><a href="#Key_Concepts">Key Concepts</a></span></p><p><span sdata="link"><a href="#Theme_Color">Using a Phone’s Theme Color</a></span></p><p><span sdata="link"><a href="#Program_Flow">Level Application Program Flow</a></span></p><p><span sdata="link"><a href="#Custom_Method">Creating a Custom Method to Pass and Operate On 3D Accelerometer Data</a></span></p><p><span sdata="link"><a href="#Customizing_Behavior">Customizing Phone Orientation Behavior</a></span></p><p><span sdata="link"><a href="#Accelerometer_Output">Associating Accelerometer Output to Level Animation</a></span></p><p><span sdata="link"><a href="#UI_Elegant">Making the UI Motion Elegant</a></span></p><p><span sdata="link"><a href="#Extending_Level">Extending the Level Application</a></span></p><div class="alert"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"><b>Note:</b></th></tr><tr><td><p>This documentation assumes that you have a basic knowledge of C# programming concepts and the Windows Phone Developer Tools. You can download the Windows Phone Developer Tools <a href="http://go.microsoft.com/fwlink/?linkid=189554">here</a>. The code for this Level Starter Kit can be downloaded <a href="http://go.microsoft.com/fwlink/?LinkID=205029">here</a>. </p></td></tr></table></div><div class="alert"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"><b>Note:</b></th></tr><tr><td><p>While this code will run on the Windows Phone Emulator, you must run or debug the code on a registered Windows Phone 7 device to get live accelerometer data to update the level.</p></td></tr></table></div><p /><a name="Goals" /><h3 class="subHeading">Goals</h3><div class="subsection"><p>After reading through this documentation, you will understand how the Level program works.  You will also understand a few ways in which you can customize it using the Windows Phone Developer Tools. This starter kit demonstrates:</p><ul><li><p>How to make your application's color scheme match the user's theme choice.</p></li><li><p>How to make your Silverlight application interact realistically with the accelerometer of the phone. </p></li><li><p>How to customize phone orientation sensing. </p></li></ul><p>For more information about testing sensor code in the Windows Phone Emulator, see <a href="http://go.microsoft.com/fwlink/?LinkID=205083">How to: Use Reactive Extensions to Emulate and Filter Accelerometer Data for Windows Phone</a>. </p><p>For more information about Accelerometer behavior, signal processing, custom orientation, and the calibration features of the Level application, see <a href="http://go.microsoft.com/fwlink/?LinkID=185888">Accelerometer Overview for Windows Phone</a>.</p><p><span sdata="link"><a href="#Top">Top</a></span></p></div><a name="Getting_Started" /><h3 class="subHeading">Getting Started</h3><div class="subsection"><p>To compile and run the Level Starter Kit: </p><ol><li><p>Download and unzip the Level Starter Kit. </p></li><li><p>Open the <span class="label">Level.sln</span> solution file in Visual Studio.</p></li><li><p>Build the Level application and deploy it to your registered phone.</p></li></ol><p><span sdata="link"><a href="#Top">Top</a></span></p></div></div><a name="How_It_Works" /><h1 class="heading"><span>How the Level Application Works</span></h1><div id="sectionSection1" class="section" name="collapseableSection" style=""><p>The Level application convincingly simulates the action of a bubble level, in tube form for leveling across vertical planes, and in surface form for horizontal surfaces. It takes advantage of the Windows Phone 7 accelerometer and closely couples its output to simple but compelling SilverLight animation. As the phone moves, a bubble graphic "floating" in the UI indicates the position of the phone's body relative to level. A numeric display dynamically shows the angle as the phone is moved. A calibration button sets level readings to zero at the current resting position of the phone. The color scheme of the application follows the current theme applied to the phone. </p><p>This application also implements custom code to control device orientation. Basic orientation awareness is intrinsically available for all applications and allows developers to add portrait and landscape mode switch with little effort. The intrinsic feature was not suited to Level application requirements to tie the animation naturalistically to the phone's motion. This approach also enables the application to differentiate between level adjustment motions and full orientation change. The resulting behavior is as follows.</p><ul><li><p>Small changes in phone orientation cause the bubble to float naturally within the level. </p></li><li><p>Large changes in phone orientation in the vertical plane cause the application to switch between portrait and landscape mode.</p></li><li><p>Large changes from vertical to horizontal plane cause the application to switch between tube (linear) and surface (planar) type level. </p></li></ul><p>Note that this application is an example of how to implement a level in Silverlight. If you are developing an application of this type, you may want to consider using XNA Framework APIs that provide intrinsic support for the 3D vector manipulation and UI behavioral physics implemented in the Level application code. </p><h3 class="subHeading">Main Program</h3><div class="subsection"><ul><li><p><span class="label">App.xaml.cs</span> - Contains the <span class="ui">App()</span> method – the location where the program begins execution and where event handlers are initialized.</p></li><li><p><span class="label">MainPage.xaml.cs</span> - Initializes the geometry and physics of the levels and bubble and executes the application.</p></li><li><p><span class="label">ApplicationSettingHelper.cs</span> - Stores and retrieves user settings selections.</p></li></ul></div><h3 class="subHeading">Accelerometer and Orientation Functionality</h3><div class="subsection"><ul><li><p><span class="label">AccelerometerHelper.cs</span> - Implements the accelerometer helper class that contains the functions and creates the events, objects and initialized constants used to get and filter accelerometer readings for use in animating and calibrating the level.</p></li><li><p><span class="label">Simple3DVector.cs</span> - Provides a concise way to pass and operate on three dimensional vectors within the application.</p></li><li><p><span class="label">OrientationHelper.cs</span> - Implements the orientation helper class that contains the functions and creates the events, objects and initialized constants used to detect device orientation. This helper class also pre-process orientation change events and uses the results either as an orientation change trigger or as a data stream for the level animation.</p></li><li><p><span class="label">DeviceOrientationInfo.cs</span> - Contains the public class for passing device orientation information within the application.</p></li></ul><p><span sdata="link"><a href="#Top">Top</a></span></p></div></div><a name="Key_Concepts" /><h1 class="heading"><span>Key Concepts</span></h1><div id="sectionSection2" class="section" name="collapseableSection" style=""><p /><a name="Theme_Color" /><h3 class="subHeading">Using a Phone’s Theme Color</h3><div class="subsection"><p>The colors used in the Level application follow the current theme of the phone on which it is running. This is accomplished in application page XAML by applying theme resources to the <span sdata="langKeyword" value="background"><span class="keyword">background</span></span> and <span sdata="langKeyword" value="fill"><span class="keyword">fill</span></span> properties values of the page’s controls. Each theme resource is marked up using the <span sdata="langKeyword" value="StaticResource"><span class="keyword">StaticResource</span></span> label which enables the code to understand it as a predefined resource. The following is a code example from MainPage.XAML.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>&lt;Grid Background="{StaticResource PhoneContrastForegroundBrush}"&gt;
+  &lt;Ellipse Width="358" Height="358" Fill="{StaticResource PhoneInactiveBrush}" VerticalAlignment="Center" HorizontalAlignment="Center" StrokeThickness="0"/&gt;
+  &lt;Grid x:Name="BubbleModes" Opacity="1.0"&gt;
+    &lt;Canvas x:Name="SurfaceLevel" Height="358"  Width="358" Visibility="Collapsed"&gt;
+    &lt;TextBlock x:Name="SurfaceLevelAngle"  Width="480" Text="-6.8" Canvas.Top="-180" Canvas.Left="-61" TextAlignment="Center"
+       Foreground="{StaticResource PhoneForegroundBrush}" FontSize="84" FontFamily="{StaticResource PhoneFontFamilyLight}"/&gt;
+    &lt;Ellipse x:Name="SurfaceLevelOuter" Fill="{StaticResource PhoneAccentBrush}" Width="358" Height="358" CacheMode="BitmapCache"/&gt;</pre></td></tr></table></span></div><p><span sdata="link"><a href="#Top">Top</a></span></p></div><a name="Program_Flow" /><h3 class="subHeading">Level Application Program Flow</h3><div class="subsection"><ol><li><p>When the Level application executes, the <span sdata="langKeyword" value="App.xaml.cs"><span class="keyword">App.xaml.cs</span></span> program navigates to the MainPage. The <span sdata="langKeyword" value="OnNavigatedTo"><span class="keyword">OnNavigatedTo</span></span> function of <span sdata="langKeyword" value="MainPage.xaml.cs"><span class="keyword">MainPage.xaml.cs</span></span> initializes the application UI and context, including calls that instantiate Orientation and Accelerometer helper objects and event handling. Once <span sdata="langKeyword" value="OnNavigatedTo"><span class="keyword">OnNavigatedTo</span></span> is complete, the UI is correctly oriented and the application begins listening for device position changes.</p><p>To initialize the UI, the code sets up a system timer and event handler. This allows the program to update the UI text that displays the current angle of the phone relative to zero. </p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Create timer to refresh UI text when the position changes.
+    private void SetupTimers()
+    {
+        if (_angleTextDispatchTimer == null)
+            {
+            // Create timer for text display (angles)
+                _angleTextDispatchTimer = new DispatcherTimer();
+                _angleTextDispatchTimer.Interval = new TimeSpan(0, 0, 0, 0, 1000 / FastTextUpdateFrequency);
+                _angleTextDispatchTimer.Tick += new EventHandler(UpdateAngleText);
+                _angleTextDispatchTimer.Start();
+            }
+    }</pre></td></tr></table></span></div></li><li><p>The Application Bar is formed in the normal way and is hooked up to a button click event which executes the calibration feature. Note that the <span sdata="langKeyword" value="UpdateAngleText"><span class="keyword">UpdateAngleText</span></span> function, that is described in the <span sdata="langKeyword" value="Making the UI Motion Elegant"><span class="keyword">Making the UI Motion Elegant</span></span> section, dynamically disables the Application Bar button if the phone is in motion when the UI updates. This prevents the zero point for level from being calibrated to an unintended point. </p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>private void SetupAppBar()
+{
+    if (ApplicationBar == null)
+    {
+        _appBar = new ApplicationBar();
+        ApplicationBar = _appBar;
+
+        _calibrateAppBarButton = new ApplicationBarIconButton(new Uri("/Images/appbar.calibrate.rest.png", UriKind.Relative));
+        _calibrateAppBarButton.Click += new EventHandler(Calibrate_Click);
+        _calibrateAppBarButton.Text = Strings.CalibrateAppBarText;
+
+        _appBar.Buttons.Add(_calibrateAppBarButton);
+        _appBar.IsMenuEnabled = true;
+        _appBar.IsVisible = true;
+        _appBar.Opacity = 1;
+    }
+}</pre></td></tr></table></span></div></li><li><p>Next, the tube level is displayed, using standard Silverlight animation elements. Note that a 500 ms fade in of the storyboard happens when the application is initialized to ensure that application animation does not interact poorly with system page animation.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Set up the animation for rotating the tube level.
+private void SetupAnimations()
+{
+    if (_tubeRotationStoryboard == null)
+    {
+        _tubeRotationStoryboard = new Storyboard();
+        _tubeRotationAnimation = new DoubleAnimation();
+        _tubeRotationAnimation.Duration = new Duration(new TimeSpan(0, 0, 0, 0, 500));
+        _tubeRotationStoryboard.Children.Add(_tubeRotationAnimation);
+        Storyboard.SetTarget(_tubeRotationAnimation, MoveLevel);
+        Storyboard.SetTargetProperty(_tubeRotationAnimation, new PropertyPath("Angle"));
+        _levelEasing = new ExponentialEase();
+        _levelEasing.EasingMode = EasingMode.EaseOut;
+        _tubeRotationAnimation.EasingFunction = _levelEasing;
+    }
+
+    if (_fadeInStoryboard == null)
+    {
+        _fadeInStoryboard = new Storyboard();
+        _fadeInAnimation = new DoubleAnimation();
+        _fadeInAnimation.Duration = new Duration(new TimeSpan(0, 0, 0, 0, 500));
+        _fadeInStoryboard.Children.Add(_fadeInAnimation);
+        Storyboard.SetTarget(_fadeInAnimation, BubbleModes);
+        Storyboard.SetTargetProperty(_fadeInAnimation, new PropertyPath("Opacity"));
+        _fadeInAnimation.From = 0.0;
+        _fadeInAnimation.To = 1.0;
+    }
+}    
+</pre></td></tr></table></span></div></li><li><p>When set up is complete, the <span sdata="langKeyword" value="OnNavigateTo"><span class="keyword">OnNavigateTo</span></span> method creates position and orientation change events, instantiates the related helpers, and orients the UI to match the current readings.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>AccelerometerHelper.Instance.ReadingChanged += new EventHandler(accelerometerHelper_ReadingChanged);
+DeviceOrientationHelper.Instance.OrientationChanged += new EventHandler(orientationHelper_OrientationChanged);
+
+// Initial state of orientation.
+if (!_orientationDefined)
+{
+    DeviceOrientationChangedEventArgs deviceOrientationEventArgs = new DeviceOrientationChangedEventArgs();
+    deviceOrientationEventArgs.CurrentOrientation = DeviceOrientationHelper.Instance.CurrentOrientation;
+    if (deviceOrientationEventArgs.CurrentOrientation != DeviceOrientation.Unknown)
+    {
+        deviceOrientationEventArgs.PreviousOrientation = DeviceOrientation.Unknown;
+        ChangeLevelOrientation(deviceOrientationEventArgs);
+    }
+}</pre></td></tr></table></span></div></li><li><p>When the <span sdata="langKeyword" value="Level"><span class="keyword">Level</span></span> application is closed or tombstoned, accelerometer and orientation change events are freed from their handlers.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// On navigation away from this page
+protected override void OnNavigatedFrom(NavigationEventArgs e)
+{
+    base.OnNavigatedFrom(e);
+    if (!AccelerometerHelper.Instance.NoAccelerometer)
+    {
+        AccelerometerHelper.Instance.ReadingChanged -= new EventHandler(accelerometerHelper_ReadingChanged);
+        DeviceOrientationHelper.Instance.OrientationChanged -= new EventHandler(orientationHelper_OrientationChanged);
+    }
+}</pre></td></tr></table></span></div></li></ol><p><span sdata="link"><a href="#Top">Top</a></span></p></div><a name="Custom_Method" /><h3 class="subHeading">Creating a Custom Method to Pass and Operate On 3D Accelerometer Data</h3><div class="subsection"><p>The raw data produced by the accelerometer is a stream of 3D vector data. To pass the data as parameters and to perform mathematical and logical operations on it, the Level application defines the <span sdata="langKeyword" value="Simple3DVector"><span class="keyword">Simple3DVector</span></span> class. This class defines an object that contains 3 double byte values x, y, and z. It then provides overloaded methods that greatly simplify a key set of common operations on <span sdata="langKeyword" value="Simple3DVector"><span class="keyword">Simple3DVector</span></span>.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Default constructor - creates a null vector
+public Simple3DVector(){}
+
+// Vector constructor from 3 double values
+public Simple3DVector(double x, double y, double z)
+{
+    X = x;
+    Y = y;
+    Z = z;
+}</pre></td></tr></table></span></div><p>Two examples of commonly used operators and methods, the <span sdata="langKeyword" value="equality"><span class="keyword">equality</span></span> operator and the <span sdata="langKeyword" value="ToString"><span class="keyword">ToString</span></span> method, are overloaded/overridden for use with vectors.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Override the ToString method to display vector in a suitable format.
+public override string ToString()
+{
+    return (String.Format("({0},{1},{2})", X, Y, Z));
+}
+
+// Overload (==) operator for 2 vectors
+public static bool operator ==(Simple3DVector v1, Simple3DVector v2)
+{
+    if (Object.ReferenceEquals(v1, v2))
+    { // if both are null, or both are same instance, return true
+        return true;
+    }
+            
+    if (((object) v1 == null) || ((object) v2 == null))
+    { // if one is null, but not both, return false
+        return false;
+    }
+
+    return (v1.X == v2.X) &amp;&amp; (v1.Y == v2.Y) &amp;&amp; (v1.Z == v2.Z);
+}</pre></td></tr></table></span></div><p><span sdata="link"><a href="#Top">Top</a></span></p></div><a name="Customizing_Behavior" /><h3 class="subHeading">Customizing Phone Orientation Behavior</h3><div class="subsection"><ol><li><p>To extend phone orientation usage for custom purposes, the Level application first defines a set of possible orientations for the device.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Possible orientations for the device
+public enum DeviceOrientation 
+{
+    Unknown, 
+    ScreenSideUp, 
+    ScreenSideDown, 
+    PortraitRightSideUp, 
+    LandscapeRight, 
+    LandscapeLeft, 
+    PortraitUpSideDown
+}</pre></td></tr></table></span></div></li><li><p>Next, a device orientation change class with arguments to get and set current and previous orientations is constructed.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Arguments provided on device orientation change events
+public class DeviceOrientationChangedEventArgs : EventArgs
+{
+// Current (new) orientation of the device
+    public DeviceOrientation CurrentOrientation { get; set; }
+
+    // Previous (before this current update) orientation of the device
+    public DeviceOrientation PreviousOrientation { get; set; }
+}</pre></td></tr></table></span></div></li><li><p>To ensure that orientation change event handling is executed on the main thread, the method called by those events is cast using <span sdata="langKeyword" value="Dispatcher.BeginInvoke"><span class="keyword">Dispatcher.BeginInvoke</span></span>.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Call on orientation change from orientation helper.
+private void orientationHelper_OrientationChanged(object sender, DeviceOrientationChangedEventArgs e)
+{
+    Dispatcher.BeginInvoke(() =&gt; ChangeLevelOrientation(e));
+}</pre></td></tr></table></span></div></li><li><p>Finally, an Orientation helper class is defined which encapsulates the multiple steps involved with determining when an orientation change threshold has been reached and what the new orientation is.</p><ol><li><p>The properties, constants, and events of the device orientation helper are declared and initialized, including the orientation change handler.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Device Orientation changed event
+public event EventHandler&lt;DeviceOrientationChangedEventArgs&gt; OrientationChanged;</pre></td></tr></table></span></div></li><li><p>Add methods to retrieve the orientation from a dictionary based on the 3D position of the device (deviceOrientationInfoList).</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>private static Dictionary&lt;DeviceOrientation, DeviceOrientationInfo&gt; _deviceOrientationInfoList;</pre></td></tr></table></span></div></li><li><p>The orientation helper class is constructed and instantiated, as a singleton using the Instance property, which achieves a 10x performance over than a static constructor.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Device Orientation Helper Class. This provides 3D orientation (both landscape, both portrait, and both flat modes)
+// using the accelerometer sensor.
+public sealed class DeviceOrientationHelper
+{
+    // Singleton instance for helper class.  This solution is the preferred solution over the static class to avoid the use of a static constructor (10x slower).
+    private static volatile DeviceOrientationHelper _singletonInstance;
+    
+...
+// Singleton instance of the Accelerometer Helper class
+    public static DeviceOrientationHelper Instance
+    {
+        get
+        {
+            if (_singletonInstance == null)
+            {
+                lock (_syncRoot)
+                {
+                    if (_singletonInstance == null)
+                    {
+                        _singletonInstance = new DeviceOrientationHelper();
+                    }
+                }
+            }
+            return _singletonInstance;
+        }
+    }  </pre></td></tr></table></span></div></li><li><p>The <span sdata="langKeyword" value="OrientationHelper"><span class="keyword">OrientationHelper</span></span> constructor populates this dictionary with named orientations and their defining parameters. This is shown in the code example below.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Private constructor
+// Use the Instance property to get the singleton instance.
+private DeviceOrientationHelper()
+{
+    if (_deviceOrientationInfoList == null)
+    {
+        _deviceOrientationInfoList = new Dictionary();
+        _deviceOrientationInfoList.Add(DeviceOrientation.Unknown, new DeviceOrientationInfo(0, 0, new Simple3DVector(0, 0, 0)));
+        _deviceOrientationInfoList.Add(DeviceOrientation.ScreenSideUp, new DeviceOrientationInfo(0, 1, new Simple3DVector(0, 0, -1)));
+        _deviceOrientationInfoList.Add(DeviceOrientation.ScreenSideDown, new DeviceOrientationInfo(0, 1, new Simple3DVector(0, 0, 1)));
+        _deviceOrientationInfoList.Add(DeviceOrientation.LandscapeRight, new DeviceOrientationInfo(-90, -1, new Simple3DVector(-1, 0, 0)));
+        _deviceOrientationInfoList.Add(DeviceOrientation.LandscapeLeft, new DeviceOrientationInfo(90, 1, new Simple3DVector(1, 0, 0)));
+        _deviceOrientationInfoList.Add(DeviceOrientation.PortraitRightSideUp, new DeviceOrientationInfo(0, -1, new Simple3DVector(0, -1, 0)));
+        _deviceOrientationInfoList.Add(DeviceOrientation.PortraitUpSideDown, new DeviceOrientationInfo(-180, 1, new Simple3DVector(0, 1, 0)));
+    }
+    AccelerometerHelper.Instance.ReadingChanged += new EventHandler(accelerometerHelper_ReadingChanged);
+}    </pre></td></tr></table></span></div></li><li><p>The heart of the orientation helper class is the orientation detection logic which is called whenever a filtered accelerometer reading is available. This function acquires acceleration data, sets the current orientation, and executes an orientation change event if appropriate. Note that the performance and independence of the Level application can be optimized by making the interval within which the device orientation sensing is locked for acquiring data to be as short as possible.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Call on accelerometer sensor sample available.
+ private void accelerometerHelper_ReadingChanged(object sender, AccelerometerHelperReadingEventArgs e)
+ {
+     CheckOrientation(e.FilteredAcceleration);
+ }
+ 
+ // Main orientation change detection logic
+ private void CheckOrientation(Simple3DVector filteredAcceleration)
+ {
+     DeviceOrientation currentOrientation = DeviceOrientation.Unknown;
+
+     double xAcceleration = filteredAcceleration.X;
+     double yAcceleration = filteredAcceleration.Y;
+     double zAcceleration = filteredAcceleration.Z;
+
+     // Normalize acceleration to 1g.
+     double magnitudeXYZ = Math.Sqrt(xAcceleration * xAcceleration + yAcceleration * yAcceleration + zAcceleration * zAcceleration);
+     xAcceleration = xAcceleration / magnitudeXYZ;
+     yAcceleration = yAcceleration / magnitudeXYZ;
+     zAcceleration = zAcceleration / magnitudeXYZ;
+
+     if (_currentOrientation == DeviceOrientation.Unknown)
+     { // No pre-existing orientation: default is flat 
+         if (zAcceleration &lt; 0)
+         {
+             currentOrientation = DeviceOrientation.ScreenSideUp;
+         }
+         else
+         {
+             currentOrientation = DeviceOrientation.ScreenSideDown;
+         }
+     }
+
+     if (yAcceleration &lt; -tiltAccelerationThreshold)
+     {
+         currentOrientation = DeviceOrientation.PortraitRightSideUp;
+     }
+     else if (yAcceleration &gt; tiltAccelerationThreshold)
+     {
+         currentOrientation = DeviceOrientation.PortraitUpSideDown;
+     }
+     else if (xAcceleration &lt; -tiltAccelerationThreshold)
+     {
+         currentOrientation = DeviceOrientation.LandscapeLeft;
+     }
+     else if (xAcceleration &gt; tiltAccelerationThreshold)
+     {
+         currentOrientation = DeviceOrientation.LandscapeRight;
+     }
+     else if (zAcceleration &lt; -tiltAccelerationThreshold)
+     {
+         currentOrientation = DeviceOrientation.ScreenSideUp;
+     }
+     else if (zAcceleration &gt; tiltAccelerationThreshold)
+     {
+         currentOrientation = DeviceOrientation.ScreenSideDown;
+     }
+
+     DeviceOrientation previousOrientation = DeviceOrientation.Unknown;
+     bool fireEvent = false;
+
+     if (currentOrientation != DeviceOrientation.Unknown)
+     {
+         lock (this) // Keep the lock as brief as posible
+         {
+             _currentOrientation = currentOrientation;
+             if (_previousOrientation != _currentOrientation)
+             {
+                 previousOrientation = _previousOrientation;
+                 _previousOrientation = _currentOrientation;
+                 fireEvent = true;
+             }
+         }
+     }
+     if (fireEvent)
+     {
+         DeviceOrientationChangedEventArgs orientationEventArgs = new DeviceOrientationChangedEventArgs();
+         orientationEventArgs.CurrentOrientation = currentOrientation;
+         orientationEventArgs.PreviousOrientation = previousOrientation;
+         if (OrientationChanged != null)
+         {
+             OrientationChanged(this, orientationEventArgs);
+         }
+     }
+ }</pre></td></tr></table></span></div></li></ol></li></ol><p><span sdata="link"><a href="#Top">Top</a></span></p></div><a name="Accelerometer_Output" /><h3 class="subHeading">Associating Accelerometer Output to Level Animation</h3><div class="subsection"><ul><li><p>The Level application accelerometer helper provides a data stream that dynamically represents phone position in a way that is well suited to the motion of the level animation. The arguments defined for the accelerometer reading event handler include a raw, filtered, averaged, and optimized version of these readings. The first three value types are used in a dynamically determined combination to form the optimized type which reflects the sensor input agility but without jitter. The event handler argument definitions are shown below.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Arguments provided by the Accelerometer Helper data event
+public class AccelerometerHelperReadingEventArgs : EventArgs
+{
+
+    // Raw, unfiltered accelerometer data (acceleration vector in all 3 dimensions) coming directly from the sensor.
+    // This is required for updating a rapidly reacting UI.
+    public Simple3DVector RawAcceleration { get; set; }
+
+    // Filtered accelerometer data using a combination of a low-pass and threshold triggered high-pass on each axis to 
+    // eliminate the majority of the sensor low amplitude noise while trending very quickly to large offsets (not perfectly
+    // smooth signal in that case), providing a very low latency. This is ideal for quickly reacting UI updates.
+    public Simple3DVector OptimallyFilteredAcceleration { get; set; }
+
+    // Filtered accelerometer data using a 1 Hz first-order low-pass on each axis to eliminate the main sensor noise
+    // while providing a medium latency. This can be used for moderately reacting UI updates requiring a very smooth signal.
+    public Simple3DVector LowPassFilteredAcceleration { get; set; }
+
+    // Filtered and temporally averaged accelerometer data using an arithmetic mean of the last 25 "optimally filtered" 
+    // samples (see above), so over 500ms at 50Hz on each axis, to virtually eliminate most sensor noise. 
+    // This provides a very stable reading, but it has also a very high latency and cannot be used for rapidly reacting UI.
+    public Simple3DVector AverageAcceleration { get; set; }
+}</pre></td></tr></table></span></div></li><li><p>Here are the algorithms that perform the dynamic generation of optimized position data.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Discrete low-magnitude fast low-pass filter used to remove noise from raw accelerometer 
+// while allowing fast trending on high amplitude changes.
+private static double FastLowAmplitudeNoiseFilter(double newInputValue, double priorOutputValue)
+{
+    double newOutputValue = newInputValue;
+    if (Math.Abs(newInputValue - priorOutputValue) &lt;= NoiseMaxAmplitude)
+    { // Simple low-pass filter
+        newOutputValue = priorOutputValue + LowPassFilterCoef * (newInputValue - priorOutputValue);
+    }
+    return newOutputValue;
+}
+
+// Call on accelerometer sensor sample available.
+// Main accelerometer data filtering routine
+private void sensor_ReadingChanged(object sender, AccelerometerReadingEventArgs e)
+{
+    Simple3DVector lowPassFilteredAcceleration;
+    Simple3DVector optimalFilteredAcceleration;
+    Simple3DVector averagedAcceleration;
+    Simple3DVector rawAcceleration = new Simple3DVector(e.X, e.Y, e.Z);
+
+    lock (_sampleBuffer)
+    {
+        if (!_initialized)
+        { // Initialize file with 1st value.
+            _sampleSum = rawAcceleration * SamplesCount;
+            _averageAcceleration = rawAcceleration;
+
+            // Initialize file with 1st value.
+            for (int i = 0; i &lt; SamplesCount; i++)
+               {
+                    _sampleBuffer[i] = _averageAcceleration;
+               }
+
+            _previousLowPassOutput = _averageAcceleration;
+            _previousOptimalFilterOutput = _averageAcceleration;
+
+            _initialized = true;
+        }
+
+        // Low-pass filter
+        lowPassFilteredAcceleration = new Simple3DVector(
+            LowPassFilter(rawAcceleration.X, _previousLowPassOutput.X),
+            LowPassFilter(rawAcceleration.Y, _previousLowPassOutput.Y),
+            LowPassFilter(rawAcceleration.Z, _previousLowPassOutput.Z));
+        _previousLowPassOutput = lowPassFilteredAcceleration;
+
+        // Optimal filter
+        optimalFilteredAcceleration = new Simple3DVector(
+            FastLowAmplitudeNoiseFilter(rawAcceleration.X, _previousOptimalFilterOutput.X),
+            FastLowAmplitudeNoiseFilter(rawAcceleration.Y, _previousOptimalFilterOutput.Y),
+            FastLowAmplitudeNoiseFilter(rawAcceleration.Z, _previousOptimalFilterOutput.Z));
+        _previousOptimalFilterOutput = optimalFilteredAcceleration;
+
+        // Increment circular buffer insertion index.
+        _sampleIndex++;
+        if (_sampleIndex &gt;= SamplesCount) _sampleIndex = 0; // if at max SampleCount then wrap samples back to the beginning position in the list
+
+        // Add new and remove old at _sampleIndex.
+        Simple3DVector newVect = optimalFilteredAcceleration;
+        _sampleSum += newVect;
+        _sampleSum -= _sampleBuffer[_sampleIndex];
+        _sampleBuffer[_sampleIndex] = newVect;
+
+        averagedAcceleration = _sampleSum / SamplesCount;
+        _averageAcceleration = averagedAcceleration;
+
+        // Stablity check
+        // If the current low-pass filtered sample is deviating for more than 1/100 g from average (max of 0.5 deg inclination noise if device steady)
+        // then reset the stability counter.
+        // The calibration will be prevented until the counter is reaching the sample count size (calibration enabled only if entire 
+        // sampling buffer is "stable".
+        Simple3DVector deltaAcceleration = averagedAcceleration - optimalFilteredAcceleration;
+        if ((Math.Abs(deltaAcceleration.X) &gt; _maximumStabilityDeltaOffset) ||
+            (Math.Abs(deltaAcceleration.Y) &gt; _maximumStabilityDeltaOffset) ||
+            (Math.Abs(deltaAcceleration.Z) &gt; _maximumStabilityDeltaOffset))
+        { // Unstable
+            _deviceStableCount = 0;
+        }
+        else
+        {
+            if (_deviceStableCount &lt; SamplesCount) ++_deviceStableCount;
+        }
+
+        // Add calibrations.
+        rawAcceleration += ZeroAccelerationCalibrationOffset;
+        lowPassFilteredAcceleration += ZeroAccelerationCalibrationOffset;
+        optimalFilteredAcceleration += ZeroAccelerationCalibrationOffset;
+        averagedAcceleration += ZeroAccelerationCalibrationOffset;
+    }
+
+    if (ReadingChanged != null)
+    {
+        AccelerometerHelperReadingEventArgs readingEventArgs = new AccelerometerHelperReadingEventArgs();
+
+        readingEventArgs.RawAcceleration = rawAcceleration;
+        readingEventArgs.LowPassFilteredAcceleration = lowPassFilteredAcceleration;
+        readingEventArgs.OptimallyFilteredAcceleration = optimalFilteredAcceleration;
+        readingEventArgs.AverageAcceleration = averagedAcceleration;
+
+        ReadingChanged(this, readingEventArgs);
+    }
+}</pre></td></tr></table></span></div></li><li><p>The accelerometer helper class defines an accelerometer reading change event handling method. Like the event handling method for orientation change, the accelerometer method is forced to execute on the main thread using <span sdata="langKeyword" value="Dispatcher.BeginInvoke"><span class="keyword">Dispatcher.BeginInvoke</span></span>.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// On reading change or receiving a new sample from accelerometer
+private void accelerometerHelper_ReadingChanged(object sender, AccelerometerHelperReadingEventArgs e)
+{
+    Dispatcher.BeginInvoke(() =&gt; UpdateUI(e));
+}</pre></td></tr></table></span></div></li><li><p>Several constants and variables are instantiated to define the physics and limits of the behavior of the animation of the level. Some examples are in the following code.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// This is the maximum inclination angle variation on any axis between the average acceleration and the filtered 
+// acceleration beyond which the device cannot be calibrated on that particular axis.
+// The calibration cannot be done until this condition is met on the last contiguous samples from the accelerometer.
+ private const double MaximumStabilityTiltDeltaAngle = 0.5 * Math.PI / 180.0; // 0.5 deg inclination delta at max
+. . .
+// This is the smoothing factor that is used for the 1st order discrete Low-Pass filter.
+// The cut-off frequency fc = fs * K/(2*PI*(1-K)).
+private const double LowPassFilterCoef = 0.1; // With a 50Hz sampling rate, this is gives a 1Hz cut-off
+. . .       
+// Average acceleration
+// This is a simple arithmetic average over the entire _sampleFile (SamplesCount elements) which contains filtered readings.
+// This is used for the calibration, to get a more steady reading of the acceleration.
+private Simple3DVector _averageAcceleration;</pre></td></tr></table></span></div></li><li><p>The following code implements a buffering algorithm that filters noise from raw accelerometer readings.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// Circular buffer of filtered samples
+private Simple3DVector[] _sampleBuffer = new Simple3DVector[SamplesCount];
+
+// n-1 of low pass filter output
+private Simple3DVector _previousLowPassOutput;
+
+// n-1 of optimal filter output
+private Simple3DVector _previousOptimalFilterOutput;
+
+// Sum of all the filtered samples in the circular buffer file
+// 
+private Simple3DVector _sampleSum = new Simple3DVector(0.0 * SamplesCount, 0.0 * SamplesCount, -1.0 * SamplesCount); // assume start flat: -1g in z axis
+
+// Index in circular buffer of samples
+private int _sampleIndex;</pre></td></tr></table></span></div></li><li><p>An accelerometer reading changed event executes every 20 ms once the helper is started.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>// New raw and processed accelerometer data available event that executes every 20 mspublic event EventHandler ReadingChanged;
+</pre></td></tr></table></span></div></li><li><p>Like the Orientation helper, the Accelerometer helper is constructed as a singleton to improve performance and isolate it from other system activities.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>  // Private constructor
+        // Use Instance property to get singleton instance.
+        private AccelerometerHelper()
+        {
+            // Determine if an accelerometer is present.
+
+            _sensor = new Accelerometer();
+            if (_sensor == null)
+            {
+                NoAccelerometer = true;
+            }
+            else
+            {
+                NoAccelerometer = (_sensor.State == SensorState.NotSupported);
+            }
+            _sensor = null;
+
+            // Set up buckets for calculating rolling average of the accelerations.
+            _sampleIndex = 0;
+            ZeroAccelerationCalibrationOffset = AccelerometerCalibrationPersisted;
+        }
+
+       // Singleton instance of the Accelerometer Helper class
+         
+        public static AccelerometerHelper Instance
+        {
+            get
+            {
+                if (_singletonInstance == null)
+                {
+                    lock (_syncRoot)
+                    {
+                        if (_singletonInstance == null)
+                        {
+                            _singletonInstance = new AccelerometerHelper();
+                        }
+                    }
+                }
+                return _singletonInstance;
+            }
+        }
+</pre></td></tr></table></span></div></li><li><p>The Accelerometer helper provides a means for the application to know when a device position is steady enough to calibrate the level, and to store and retrieve the zero calibration position.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>     // True when the device is "stable" (no movement for about 0.5 sec)
+        public bool IsDeviceStable
+        {
+            get
+            {
+                return (_deviceStableCount &gt;= SamplesCount);
+            }
+        }
+
+        // Property to get and set Calibration Setting Key
+        private static Simple3DVector AccelerometerCalibrationPersisted
+        {
+            get
+            {
+                double x = ApplicationSettingHelper.TryGetValueWithDefault(AccelerometerCalibrationKeyName + "X", 0);
+                double y = ApplicationSettingHelper.TryGetValueWithDefault(AccelerometerCalibrationKeyName + "Y", 0);
+                return new Simple3DVector(x, y, 0);
+            }
+
+            set
+            {
+                bool updated = ApplicationSettingHelper.AddOrUpdateValue(AccelerometerCalibrationKeyName + "X", value.X);
+                updated |= ApplicationSettingHelper.AddOrUpdateValue(AccelerometerCalibrationKeyName + "Y", value.Y);
+                if (updated)
+                {
+                    ApplicationSettingHelper.Save();
+                }
+            }
+        }
+. . .   
+
+        // Indicate that the calibration of the sensor would work along a particular set of axes
+        // because the device is "stable enough" or not inclined beyond reasonable.
+        public bool CanCalibrate(bool xAxis, bool yAxis)
+        {
+            bool retval = false;
+            lock (_sampleBuffer)
+            {
+                if (IsDeviceStable)
+                {
+                    double accelerationMagnitude = 0;
+                    if (xAxis)
+                    {
+                        accelerationMagnitude += _averageAcceleration.X * _averageAcceleration.X;
+                    }
+                    if (yAxis)
+                    {
+                        accelerationMagnitude += _averageAcceleration.Y * _averageAcceleration.Y;
+                    }
+                    accelerationMagnitude = Math.Sqrt(accelerationMagnitude);
+                    if (accelerationMagnitude &lt;= _maximumCalibrationOffset)
+                    { // inclination is not out of bounds to consider it a calibration offset
+                        retval = true;
+                    }
+                }
+            }
+            return retval;
+        }
+
+        // 
+        // Calibrate the accelerometer on X and/or Y axis and save data to isolated storage.
+        // 
+        // Calibrate X axis if true.
+        // Calibrate Y axis if true.
+        // true if succeeds
+        public bool Calibrate(bool xAxis, bool yAxis)
+        {
+            bool retval = false;
+            lock (_sampleBuffer)
+            {
+                if (CanCalibrate(xAxis, yAxis))
+                {
+                    ZeroAccelerationCalibrationOffset = 
+                        new Simple3DVector(
+                            xAxis ? -_averageAcceleration.X : ZeroAccelerationCalibrationOffset.X,
+                            yAxis ? -_averageAcceleration.Y : ZeroAccelerationCalibrationOffset.Y,
+                            0);
+                    // Persist data
+                    AccelerometerCalibrationPersisted = ZeroAccelerationCalibrationOffset;
+                    retval = true;
+                }
+            }
+            return retval;
+        }</pre></td></tr></table></span></div></li><li><p>Next, are private methods to initialize, start, stop, and handle errors from the accelerometer.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>   // 
+        // Initialize Accelerometer sensor and start sampling.
+        // 
+        private void StartAccelerometer()
+        {
+            try
+            {
+                _sensor = new Accelerometer();
+                if (_sensor != null)
+                {
+                    _sensor.ReadingChanged += new EventHandler(sensor_ReadingChanged);
+                    _sensor.Start();
+                    _active = true;
+                    NoAccelerometer = false;
+                }
+                else
+                {
+                    _active = false;
+                    NoAccelerometer = true;
+                }
+            }
+            catch (Exception e)
+            {
+                _active = false;
+                NoAccelerometer = true;
+                Debug.WriteLine("Exception creating Accelerometer: " + e.Message);
+            }
+        }
+
+        // 
+        // Stop sampling and release accelerometer sensor.
+        // 
+        private void StopAccelerometer()
+        {
+            try
+            {
+                if (_sensor != null)
+                {
+                    _sensor.ReadingChanged -= new EventHandler(sensor_ReadingChanged);
+                    _sensor.Stop();
+                    _sensor = null;
+                    _active = false;
+                }
+            }
+            catch (Exception e)
+            {
+                _active = false;
+                NoAccelerometer = true;
+                Debug.WriteLine("Exception deleting Accelerometer: " + e.Message);
+            }
+        }
+</pre></td></tr></table></span></div></li></ul><p><span sdata="link"><a href="#Top">Top</a></span></p></div><a name="UI_Elegant" /><h3 class="subHeading">Making the UI Motion Elegant</h3><div class="subsection"><p>The Level application developers took care to craft the behavior of the UI elements so that they change in a natural and flowing manner. Note the mini-physics engine contained in the code that defines the bubble's motion and deformation within the surface level. Not shown here is the separate function that similarly defines the behavior of the tube level.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>       // Update the surface level visuals.
+        private void UpdateSurfaceBubble(AccelerometerHelperReadingEventArgs e)
+        {
+            // ANGLE TEXT
+            // ----------
+
+            // Use filtered accelerometer data (steady).
+            double x = -e.FilteredAcceleration.X; // Orientation compensation
+            double y = e.FilteredAcceleration.Y;
+
+            // Convert acceleration vector coordinates to Angles and Magnitude.
+            // Update reading on screen of instant inclination assuming steady device (gravity = measured acceleration).
+            double magnitudeXYZ = e.FilteredAcceleration.Magnitude;
+            double xAngle = 0.0;
+            double yAngle = 0.0;
+            if (magnitudeXYZ != 0.0)
+            {
+                xAngle = Math.Asin(x / magnitudeXYZ) * 180.0 / Math.PI;
+                yAngle = Math.Asin(y / magnitudeXYZ) * 180.0 / Math.PI;
+            }
+
+            _angle = Math.Abs (xAngle) + Math.Abs (yAngle);
+            // Display angles as if they were buoyancy force instead of gravity (opposite) since it is
+            // more natural to match targeted bubble location.
+            // Also, orientation of Y-axis is opposite of screen for natural upward orientation.
+            _angleText = String.Format("{0:0.0}°  {1:0.0}°", xAngle, -yAngle);
+
+            // BUBBLE POSITION
+            // ---------------
+
+            // Use filtered accelerometer data (steady) if raw is within noise level threshold; else, use raw for fast reaction.
+            Simple3DVector deltaRawFiltered = e.RawAcceleration - e.FilteredAcceleration;
+            if (deltaRawFiltered.Magnitude &gt; RawNoiseLevelThreshold)
+            {
+                x = -e.RawAcceleration.X; // Orientation compensation
+                y = e.RawAcceleration.Y;
+            }
+
+            // ----------------------------------------------------------
+            // For simplicity, we are approximating that the bubble experiences a lateral attraction force
+            // proportional to the distance to its target location (top of the glass based on inclination).
+            // We will neglect the vertical speed of the bubble since the radius of the glass curve is much greater 
+            // than the radius of radius of usable glass surface.
+
+            // Assume that sphere has a 1m radius.
+            // Destination position is x and y.
+            // Current position is _bubblePosition.
+
+            // Update Buoyancy.
+            Simple3DVector lateralAcceleration = (new Simple3DVector(x, y, 0) - _bubblePosition) * BuoyancyCoef * StandardGravityInMetric;
+
+            // Update drag.
+            Simple3DVector drag = _bubbleSpeed * (-ViscosityCoef);
+
+            // Update speed.
+            lateralAcceleration += drag;
+            lateralAcceleration /= AccelerometerRefreshRate; // impulse
+            _bubbleSpeed += lateralAcceleration;
+            
+            // Update position.
+            _bubblePosition += _bubbleSpeed / AccelerometerRefreshRate;
+
+            double edgeRadius = Math.Sin(EdgeGlassAngle);
+
+            x = _bubblePosition.X;
+            y = _bubblePosition.Y;
+
+            // Get the resulting angle and magnitude of bubble position given X and Y.
+            double angleFlat = Math.Atan2(y, x);
+            double magnitudeFlat = Math.Sqrt(x * x + y * y);
+
+            bool atEdge = false;
+            if (magnitudeFlat &gt; edgeRadius)
+            { // Bubble reaches the edge
+                magnitudeFlat = edgeRadius;
+                // Lossy bouncing when reaching edges
+                _bubbleSpeed *= EdgeBouncingLossCoef;
+                // Mirror movement along center to edge line
+                _bubbleSpeed = new Simple3DVector(_bubbleSpeed.X * Math.Cos(2 * angleFlat) + _bubbleSpeed.Y * Math.Sin(2 * angleFlat),
+                                                  _bubbleSpeed.X * Math.Sin(2 * angleFlat) - _bubbleSpeed.Y * Math.Cos(2 * angleFlat),
+                                                  0);
+                // Change direction on x and y.
+                _bubbleSpeed *= new Simple3DVector(-1, -1, 1);
+                // Limit bubble position to edge.
+                _bubblePosition = new Simple3DVector(magnitudeFlat * Math.Cos(angleFlat), magnitudeFlat * Math.Sin(angleFlat), 0);
+                atEdge = true;
+            }
+
+            // Set x and y location of the surface level bubble based on angle and magnitude.
+            double xPixelLocation = Math.Cos(angleFlat) * (magnitudeFlat / edgeRadius) * (UsableLateralAmplitude - SurfaceBubble.Width) / 2;
+            double yPixelLocation = Math.Sin(angleFlat) * (magnitudeFlat / edgeRadius) * (UsableLateralAmplitude - SurfaceBubble.Width) / 2;
+            SurfaceBubble.SetValue(Canvas.LeftProperty, xPixelLocation + (SurfaceLevelOuter.Width - SurfaceBubble.Width) / 2);
+            SurfaceBubble.SetValue(Canvas.TopProperty, yPixelLocation + (SurfaceLevelOuter.Height - SurfaceBubble.Width) / 2);
+
+            // Change the bubble shape.
+            double stretchRatio;
+            double horizontalDirection;
+            if (atEdge)
+            {
+                stretchRatio = MaximumBubbleXYStretchRatio;
+                horizontalDirection = angleFlat - Math.PI / 2;
+            }
+            else
+            {
+                x = _bubbleSpeed.X;
+                y = _bubbleSpeed.Y;
+                double horizontalSpeed = Math.Sqrt(x * x + y * y);
+                horizontalDirection = Math.Atan2(y, x);
+                stretchRatio = Math.Min(horizontalSpeed * SpeedBubbleStrechingCoef, MaximumBubbleXYStretchRatio - 1.0) + 1.0;
+            }
+            SurfaceBubbleDirection.Angle = horizontalDirection * 180.0 / Math.PI;
+            SurfaceBubbleScale.ScaleX = stretchRatio;
+            SurfaceBubbleScale.ScaleY = 1.0 / stretchRatio;
+        }
+</pre></td></tr></table></span></div><p>The text that displays the numerical value of the phone's angle also changes in an eye pleasing manner because of the algorithmic treatment that smooths its response to the actual level readings.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th> </th><th /></tr><tr><td colspan="2"><pre>        // Timer based update of the angle text
+        private void UpdateAngleText(object sender, EventArgs ea)
+        {
+            double delta = (Math.Abs(_angleOld - _angle));
+            // Update every time if difference is large enough.
+            if ((delta &gt;= AngleFastChangeThreshold) || 
+                ((delta &gt;= AngleMediumChangeThreshold) &amp;&amp; (_fastTextUpdateCounter % (FastTextUpdateFrequency / MediumTextUpdateFrequency) == 0)) ||
+                (_fastTextUpdateCounter % (SlowTextUpdatePeriod * FastTextUpdateFrequency) == 0))
+            {
+                _angleOld = _angle;
+                SurfaceLevelAngle.Text = _angleText;
+                BubbleAngle.Text = _angleText;
+            }
+            // This is a 500ms counter.
+            _fastTextUpdateCounter++; 
+            bool canCalibrate = AccelerometerHelper.Instance.CanCalibrate(calibrateXAxis, calibrateYAxis);
+            _calibrateAppBarButton.IsEnabled = canCalibrate;
+        }
+</pre></td></tr></table></span></div><p><span sdata="link"><a href="#Top">Top</a></span></p></div><a name="Extending_Level" /><h3 class="subHeading">Extending the Level Application</h3><div class="subsection"><p>Here are some suggested ideas to extend the functionality of the Level application.</p><ul><li><p>Allow the user to choose custom level colors. </p></li><li><p>Allow the user to measure and save an ad hoc angle to reproduce it elsewhere. </p></li></ul><p><span sdata="link"><a href="#Top">Top</a></span></p></div></div><h1 class="heading"><span><a name="seeAlsoToggle" />See Also</span></h1><div id="seeAlsoSection" class="section" name="collapseableSection" style=""><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><a href="http://go.microsoft.com/fwlink/?LinkID=185196">Windows Phone Development</a></div><div class="seeAlsoStyle" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><a href="http://go.microsoft.com/fwlink/?LinkId=203433">The Windows Phone Developer Blog</a></div></div></div>
+      <div id="footer">
+        <div class="footerLine" />
+      </div>
+      <p />
+    </div>
+  </body>
+</html>

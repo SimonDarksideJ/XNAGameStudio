@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeerToPeerWindows", "PeerToPeer\PeerToPeerWindows.csproj", "{2DCB2777-2325-440D-A58C-E558DEACA7F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeerToPeerContent", "PeerToPeer\Content\PeerToPeerContent.contentproj", "{17160423-220F-4133-B09B-E9157636C969}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DCB2777-2325-440D-A58C-E558DEACA7F6}.Debug|x86.ActiveCfg = Debug|x86
+		{2DCB2777-2325-440D-A58C-E558DEACA7F6}.Debug|x86.Build.0 = Debug|x86
+		{2DCB2777-2325-440D-A58C-E558DEACA7F6}.Release|x86.ActiveCfg = Release|x86
+		{2DCB2777-2325-440D-A58C-E558DEACA7F6}.Release|x86.Build.0 = Release|x86
+		{17160423-220F-4133-B09B-E9157636C969}.Debug|x86.ActiveCfg = Debug|x86
+		{17160423-220F-4133-B09B-E9157636C969}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

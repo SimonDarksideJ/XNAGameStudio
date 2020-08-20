@@ -1,0 +1,1041 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>Network State Management Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Network State Management Sample" />
+<MSHelp:RLTitle Title="Network State Management Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.NetworkStateManagement" />
+<MSHelp:Keyword Index="A" Term="f877b1db-9698-5106-49da-767bfdaa2de8" />
+<MSHelp:Keyword Index="K" Term="Network State Management Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="f877b1db-9698-5106-49da-767bfdaa2de8" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+
+  <h1>Network State Management Sample</h1>
+
+  This sample shows you how to implement the user interface for a multiplayer networked game. It provides menus for creating, finding, and joining sessions, a lobby screen, and robust network error handling.
+
+  <a id="ID2EK" name="ID2EK"> </a><h1 class="heading">Sample Overview</h1><div id="ID2EK" class="hxnx1">
+    
+
+    <p>
+      This sample builds on top of the Game State Management sample. It adds the user interface screens needed by a multiplayer networked game. If you are not familiar with the underlying concepts of the <b>ScreenManager</b> and <b>GameScreen</b> classes, you should read the documentation for the Game State Management sample.
+    </p>
+
+    <p>At the main menu, players can choose between Single Player, LIVE, or System Link game modes. If they choose a networked mode, they will be prompted to sign in a suitable player profile (if one is not already signed in), and then asked to create a new session or to search for existing sessions. The sample displays an animated busy indicator whenever a network operation is in progress, and robustly handles errors by catching network exceptions and turning them into message box popups. Once in the lobby, a list of gamers is displayed along with icons indicating who is currently talking and who has marked themselves as ready. When all the gamers are ready, the sample loads the gameplay screen, at which point the rest is up to you: there is no actual game code included here!</p>
+
+    <a id="ID2EX" name="ID2EX"> </a><h2 class="subHeading">Sample Controls</h2><div id="ID2EX" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard control</th>
+          <th>Gamepad control</th>
+        </tr>
+        <tr>
+          <td>Select a menu entry</td>
+          <td>UP ARROW, DOWN ARROW</td>
+          <td>Left thumb stick, D-pad up and down</td>
+        </tr>
+        <tr>
+          <td>Accept the menu selection</td>
+          <td>SPACEBAR, ENTER</td>
+          <td>
+            <b>A</b>, <b>START</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Mark players ready in the lobby</td>
+          <td>SPACEBAR, ENTER</td>
+          <td>
+            <b>A</b>, <b>START</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Cancel the menu</td>
+          <td>ESC</td>
+          <td>
+            <b>B</b>, <b>BACK</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Exit from the lobby</td>
+          <td>ESC</td>
+          <td>
+            <b>B</b>, <b>BACK</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Move a game entity.</td>
+          <td>UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+          <td>Left thumb stick</td>
+        </tr>
+        <tr>
+          <td>Pause the game.</td>
+          <td>ESC</td>
+          <td>
+            <b>START</b>, <b>BACK</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <a id="ID2EDE" name="ID2EDE"> </a><h1 class="heading">How the Sample Works</h1><div id="ID2EDE" class="hxnx1">
+    
+
+    <p>The sample code is organized into three folders:</p>
+    <ul>
+      <li>
+        The ScreenManager folder contains the underlying <b>ScreenManager</b> component and <b>GameScreen</b> base class, which will be needed by all games that want to use this screen infrastructure, and usually will not need to be altered from one game to another.
+      </li>
+
+      <li>
+        The Screens folder contains screen implementations such as the <b>MenuScreen</b>, <b>GameplayScreen</b>, and <b>BackgroundScreen</b>, which you will probably want to customize for your specific game.
+      </li>
+
+      <li>
+        The Networking folder contains multiplayer networking functionality such as the <b>LobbyScreen</b> and <b>NetworkSessionComponent</b>.
+      </li>
+    </ul>
+
+    <p>All the text strings used by this sample are stored in a resource file, Resources.resx. This provides a convenient way to gather all the text in one place without cluttering up the program code.</p>
+
+    <a id="ID2EFF" name="ID2EFF"> </a><h2 class="subHeading">Managing the NetworkSession</h2><div id="ID2EFF" class="hxnx2">
+      
+
+      <p>
+        One of the challenges in hooking up networking to a generalized user interface is deciding who should own the <b>NetworkSession</b> object. Many different pieces of code need to access the session, but only one should be responsible for updating it, handling errors, and resetting the user interface if it ends unexpectedly. To manage the session instance, this sample creates the <b>NetworkSessionComponent</b> class. This is a game component wrapped around a <b>NetworkSession</b>. The component updates the network session from its update method, gracefully handling any exceptions that may result. It also hooks the <b>NetworkSession.SessionEnded</b> event, which will trigger the <b>LeaveSession</b> method to reset the user interface and display a message box telling the user why the session has ended.
+      </p>
+
+      <p>
+        <b>NetworkSessionComponent</b> also registers the <b>NetworkSession</b> as a game service. This provides two different ways for other pieces of code to access the session:
+      </p>
+
+      <ul>
+        <li>
+          Some, for instance the <b>LobbyScreen</b>, take the <b>NetworkSession</b> as a parameter to their constructor, and store it for future use.
+        </li>
+        <li>
+          Others, for instance the <b>LoadingScreen</b>, look up the <b>NetworkSession</b> from <b>Game.Services</b>. This provides a highly decoupled way for other classes to access the session object:
+        </li>
+      </ul>
+
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+        NetworkSession session = (NetworkSession)Game.Services.GetService(typeof(NetworkSession));
+      </pre></pre></td></tr></table></span></div>
+
+    </div>
+
+    <a id="ID2EUG" name="ID2EUG"> </a><h2 class="subHeading">From Lobby to Gameplay</h2><div id="ID2EUG" class="hxnx2">
+      
+
+      <p>
+        The <b>LobbyScreen</b> displays a list of all the gamers in the session, along with some icons to indicate their status. The gamers can mark themselves as ready by setting the <b>LocalNetworkGamer.IsReady</b> property to <b>true</b>. The <b>IsReady</b> status is  synchronized automatically over the network. The host examines this inside the <b>LobbyScreen.Update</b> method to decide when to start the game:
+      </p>
+
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+        if (networkSession.IsHost &amp;&amp; networkSession.IsEveryoneReady)
+        {
+        networkSession.StartGame();
+        }
+      </pre></pre></td></tr></table></span></div>
+
+      <p>
+        When the host starts the game, this status change is sent automatically over the network. Using the <b>LobbyScreen.Update</b> method, each client can examine the session state to decide when to load the gameplay screen:
+      </p>
+
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+        if (networkSession.SessionState == NetworkSessionState.Playing)
+        {
+        LoadingScreen.Load(ScreenManager, true, new GameplayScreen(networkSession));
+        }
+      </pre></pre></td></tr></table></span></div>
+
+      <p>
+        The process for returning from gameplay to the lobby works in a similar way. The host decides when to return to the lobby, using the "Return to Lobby" option in the <b>PauseMenuScreen</b>, and calls <b>NetworkSession.EndGame</b> whenever this is selected (a real game might want to end the game after a fixed amount of time, or when all the cars reach the end of their third lap, or some other game-specific critera). This status change is sent automatically over the network. Each client can examine the session state inside its <b>GameplayScreen.Update</b> method to decide when to reload the lobby screen:
+      </p>
+
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+        if (networkSession.SessionState == NetworkSessionState.Lobby)
+        {
+        LoadingScreen.Load(ScreenManager, true, new BackgroundScreen(), new LobbyScreen(networkSession));
+        }
+      </pre></pre></td></tr></table></span></div>
+
+      <p>Although only the host is responsible for deciding when to start or end the game, all the clients will move between the lobby and gameplay screens at the same time.</p>
+
+      <p>
+        Note that the code that checks when to return from gameplay to the lobby is in the <b>GameplayScreen.Update</b> method. This seems like it might be a problem because the gameplay screen might have transitioned off to make room for some other screen such as the pause menu. However, we still want to return to the lobby regardless of what screen currently is active. This is acceptable because the screen update method is still called even when a screen has transitioned off as the result of being covered by something else. The update method usually does nothing in this case because it checks the <b>IsActive</b> property before taking any actions. This will be <b>false</b> if the screen is covered up. Our return to lobby logic only checks <b>!IsExiting</b>, rather than <b>IsActive</b>, so it will still run even when some other screen has temporarily covered up the gameplay.
+      </p>
+
+    </div>
+
+    <a id="ID2ERAAC" name="ID2ERAAC"> </a><h2 class="subHeading">Displaying Notification Messages</h2><div id="ID2ERAAC" class="hxnx2">
+      
+
+      <p>
+        In a networked game, it is nice if players can be notified whenever other gamers join or leave the session. This sample provides a generalized <b>IMessageDisplay</b> service, which can be used by any code that wants to display this kind of notification message:
+      </p>
+
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+        IMessageDisplay messageDisplay = (IMessageDisplay)Game.Services.GetService(typeof(IMessageDisplay));
+
+        if (messageDisplay != null)
+        {
+        messageDisplay.ShowMessage("Hello, World!");
+        }
+      </pre></pre></td></tr></table></span></div>
+
+      <p>
+        The <b>NetworkSessionComponent</b> uses <b>IMessageDisplay</b> to display messages in response to the <b>NetworkSession.GamerJoined</b> and <b>NetworkSession.GamerLeft</b> events.
+      </p>
+
+      <p>
+        In this sample, the <b>IMessageDisplay</b> interface is implemented by the <b>MessageDisplayComponent</b> class. If you want to change the appearance of the messages, you can either alter the draw code in this component, or replace it with an entirely different implementation of <b>IMessageDisplay</b>.
+      </p>
+
+    </div>
+
+    <a id="ID2ESBAC" name="ID2ESBAC"> </a><h2 class="subHeading">Multithreaded Loading</h2><div id="ID2ESBAC" class="hxnx2">
+      
+
+      <p>
+        The original Game State Management Sample had a very simple <b>LoadingScreen</b> implementation:
+      </p>
+
+      <ul>
+        <li>
+          Activate the <b>LoadingScreen</b>.
+        </li>
+        <li>Tell all other screens to transition off.</li>
+        <li>Wait until the previous screens are gone.</li>
+        <li>Perform the load.</li>
+      </ul>
+
+      <p>
+        This presents a problem for networked games. What if the loading takes a long time? Nothing else is happening while the load occurs, and, in particular, when the <b>NetworkSession.Update</b> method is not being called. If loading takes too long, you might be accidentally disconnected from the session. To keep the connection alive, we must take care to call <b>NetworkSession.Update</b> regularly, even during our load operation.
+      </p>
+
+      <p>
+        This is accomplished through the use of multithreading. Immediately before it performs the (potentially slow) load operation, the loading screen starts up a background worker thread, executing the <b>BackgroundWorkerThread</b> method. At regular intervals (30 times per second) this background thread updates the network session, and also redraws the loading screen so we can keep the display animating smoothly while we load. Once the load operation has completed, the main thread signals the <b>backgroundThreadExit</b> event, which causes the background thread to exit.
+      </p>
+
+    </div>
+
+  </div>
+
+  <a id="ID2EZCAC" name="ID2EZCAC"> </a><h1 class="heading">Extending the Sample</h1><div id="ID2EZCAC" class="hxnx1">
+    
+
+    <p>
+      This sample does not actually contain any gameplay! It would be good to replace the <b>GameplayScreen</b> with something more interesting.
+    </p>
+
+    <p>
+      Once it reaches the <b>GameplayScreen</b>, this sample does not do any real game networking, either. After you add some fun gameplay, you will also want to synchronize this over the network. See the Peer-to-Peer and Client/Server samples for examples.
+    </p>
+
+    <p>
+      You will probably want to re-skin the user interface to give your game a unique look. The <b>MenuScreen</b> and <b>MenuItem</b> drawing code, and the image used by the <b>BackgroundScreen</b>, would be good places to start.
+    </p>
+
+    <p>
+      You could use the <b>IMessageDisplay</b> service for more than just displaying gamer joined and left notifications. Perhaps you could show a message whenever someone is killed, or when a new record score is set.
+    </p>
+
+  </div>
+
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Network State Management Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<LightList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ambient>
+    <X>0.2</X>
+    <Y>0.2</Y>
+    <Z>0.2</Z>
+  </ambient>
+  <lights>
+    <Light>
+      <position>
+        <X>-100</X>
+        <Y>100</Y>
+        <Z>30</Z>
+      </position>
+      <radius>1000</radius>
+      <color>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </color>
+    </Light>
+    <Light>
+      <position>
+        <X>100</X>
+        <Y>-100</Y>
+        <Z>-30</Z>
+      </position>
+      <radius>1000</radius>
+      <color>
+        <X>0.3</X>
+        <Y>0.3</Y>
+        <Z>0.3</Z>
+      </color>
+    </Light>
+  </lights>
+</LightList>

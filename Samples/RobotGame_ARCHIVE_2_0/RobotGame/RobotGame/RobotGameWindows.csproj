@@ -1,0 +1,292 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{75DDAE14-0AE0-43A2-8148-3107CBDE18C0}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RobotGame</RootNamespace>
+    <AssemblyName>RobotGame</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <ApplicationIcon>RobotGame.ico</ApplicationIcon>
+    <StartupObject>RobotGame.RobotGameGame</StartupObject>
+    <Thumbnail>RobotGameThumbnail.png</Thumbnail>
+    <XnaCrossPlatformGroupID>{baef57f4-0c2c-4482-8f66-dd41ead8a5b5}</XnaCrossPlatformGroupID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameLevel\GameLevel.cs">
+      <Name>GameLevel</Name>
+    </Compile>
+    <Compile Include="Items\GameItemDefine.cs">
+      <Name>GameItemDefine</Name>
+    </Compile>
+    <Compile Include="Items\GameItemBox.cs">
+      <Name>GameItemBox</Name>
+    </Compile>
+    <Compile Include="Particle\GameParticle.cs">
+      <Name>GameParticle</Name>
+    </Compile>
+    <Compile Include="Screen\FirstStageScreen.cs">
+      <Name>FirstStageScreen</Name>
+    </Compile>
+    <Compile Include="Screen\LoadingScreen.cs">
+      <Name>LoadingScreen</Name>
+    </Compile>
+    <Compile Include="Screen\MainMenuScreen.cs">
+      <Name>MainMenuScreen</Name>
+    </Compile>
+    <Compile Include="Screen\MessageBoxScreen.cs">
+      <Name>MessageBoxScreen</Name>
+    </Compile>
+    <Compile Include="Screen\BaseStageScreen.cs">
+      <Name>BaseStageScreen</Name>
+    </Compile>
+    <Compile Include="Screen\SecondStageScreen.cs">
+      <Name>SecondStageScreen</Name>
+    </Compile>
+    <Compile Include="Screen\SingleStageScreen.cs">
+      <Name>SingleStageScreen</Name>
+    </Compile>
+    <Compile Include="Screen\VersusReadyScreen.cs">
+      <Name>VersusReadyScreen</Name>
+    </Compile>
+    <Compile Include="Screen\VersusStageScreen.cs">
+      <Name>VersusStageScreen</Name>
+    </Compile>
+    <Compile Include="Sound\GameSound.cs">
+      <Name>GameSound</Name>
+    </Compile>
+    <Compile Include="Unit\EnemyBoss.cs">
+      <Name>EnemyBoss</Name>
+    </Compile>
+    <Compile Include="Unit\GameData.cs">
+      <Name>GameData</Name>
+    </Compile>
+    <Compile Include="Unit\GameEnemy.cs">
+      <Name>GameEnemy</Name>
+    </Compile>
+    <Compile Include="Unit\GameInput.cs">
+      <Name>GameInput</Name>
+    </Compile>
+    <Compile Include="Unit\GamePlayer.cs">
+      <Name>GamePlayer</Name>
+    </Compile>
+    <Compile Include="Unit\GameUnit.cs">
+      <Name>GameUnit</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <Name>AssemblyInfo</Name>
+    </Compile>
+    <Compile Include="RobotGame.cs">
+      <Name>RobotGame</Name>
+    </Compile>
+    <Compile Include="Unit\EnemyMech.cs">
+      <Name>EnemyMech</Name>
+    </Compile>
+    <Compile Include="Unit\EnemyTank.cs">
+      <Name>EnemyTank</Name>
+    </Compile>
+    <Compile Include="Weapon\GameWeapon.cs">
+      <Name>GameWeapon</Name>
+    </Compile>
+    <Compile Include="Weapon\GameWeaponDefine.cs">
+      <Name>GameWeaponDefine</Name>
+    </Compile>
+    <Compile Include="Weapon\TracerBullet.cs">
+      <Name>TracerBullet</Name>
+    </Compile>
+    <Compile Include="Weapon\TracerBulletManager.cs">
+      <Name>TracerBulletManager</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Data\Enemies\Cameleer.spec">
+      <Name>Cameleer</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\Cameleer_Weapon.spec">
+      <Name>Cameleer_Weapon</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\Duskmas.spec">
+      <Name>Duskmas</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\Duskmas_Weapon.spec">
+      <Name>Duskmas_Weapon</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\Hammer.spec">
+      <Name>Hammer</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\Hammer_Weapon.spec">
+      <Name>Hammer_Weapon</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\Maoming.spec">
+      <Name>Maoming</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\Maoming_Weapon.spec">
+      <Name>Maoming_Weapon</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\PhantomBoss.spec">
+      <Name>PhantomBoss</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\PhantomBoss_Weapon.spec">
+      <Name>PhantomBoss_Weapon</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\Tiger.spec">
+      <Name>Tiger</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Enemies\Tiger_Weapon.spec">
+      <Name>Tiger_Weapon</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Items\MagazineBox.spec">
+      <Name>MagazineBox</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Items\RemedyBox.spec">
+      <Name>RemedyBox</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\SingleGrund.spec">
+      <Name>SingleGrund</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\SingleKiev.spec">
+      <Name>SingleKiev</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\PlayerHandGun.spec">
+      <Name>PlayerHandGun</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\PlayerMachineGun.spec">
+      <Name>PlayerMachineGun</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\SingleMark.spec">
+      <Name>SingleMark</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\PlayerShotGun.spec">
+      <Name>PlayerShotGun</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\VersusGrund.spec">
+      <Name>VersusGrund</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\VersusKiev.spec">
+      <Name>VersusKiev</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\VersusMark.spec">
+      <Name>VersusMark</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\VersusYager.spec">
+      <Name>VersusYager</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Players\SingleYager.spec">
+      <Name>SingleYager</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Stage\FirstStage.level">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Stage\SecondStage.level">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\Stage\VersusStage.level">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Particles\FirstStage.ParticleList">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Particles\SecondStage.ParticleList">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Particles\VersusStage.ParticleList">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="RobotGameThumbnail.png">
+    </Content>
+    <Content Include="RobotGame.ico">
+      <Name>RobotGame</Name>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>{a3124fd4-5d14-42d5-81d9-db51f89a5b39}</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RobotGameData\RobotGameDataWindows.csproj">
+      <Project>{D9D9E67E-4310-49A7-80A5-B617308A00BA}</Project>
+      <Name>RobotGameDataWindows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.NestedContent.targets" />
+</Project>

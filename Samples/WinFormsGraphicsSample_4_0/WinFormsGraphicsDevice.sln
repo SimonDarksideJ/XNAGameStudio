@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsGraphicsDevice", "WinFormsGraphicsDevice\WinFormsGraphicsDevice.csproj", "{A8A938D0-3179-454F-B390-AA29F2606732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentLibrary", "WinFormsGraphicsDevice\ContentLibrary\ContentLibrary.csproj", "{396ADBE6-FB16-4DBA-8C70-C16A46B448EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content", "WinFormsGraphicsDevice\Content\Content.contentproj", "{618DED89-9BA8-44D7-83A0-163041666FAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8A938D0-3179-454F-B390-AA29F2606732}.Debug|x86.ActiveCfg = Debug|x86
+		{A8A938D0-3179-454F-B390-AA29F2606732}.Debug|x86.Build.0 = Debug|x86
+		{A8A938D0-3179-454F-B390-AA29F2606732}.Release|x86.ActiveCfg = Release|x86
+		{A8A938D0-3179-454F-B390-AA29F2606732}.Release|x86.Build.0 = Release|x86
+		{396ADBE6-FB16-4DBA-8C70-C16A46B448EA}.Debug|x86.ActiveCfg = Debug|x86
+		{396ADBE6-FB16-4DBA-8C70-C16A46B448EA}.Debug|x86.Build.0 = Debug|x86
+		{396ADBE6-FB16-4DBA-8C70-C16A46B448EA}.Release|x86.ActiveCfg = Release|x86
+		{396ADBE6-FB16-4DBA-8C70-C16A46B448EA}.Release|x86.Build.0 = Release|x86
+		{618DED89-9BA8-44D7-83A0-163041666FAC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{618DED89-9BA8-44D7-83A0-163041666FAC}.Release|x86.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

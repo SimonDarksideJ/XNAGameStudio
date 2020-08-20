@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitScreenSample (Xbox)", "SplitScreenSample\SplitScreenSample\SplitScreenSample (Xbox).csproj", "{C9A51E8F-A177-45D6-9CE8-B0A5BA519181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitScreenSampleContent", "SplitScreenSample\SplitScreenSampleContent\SplitScreenSampleContent.contentproj", "{74C0CD2F-DDB9-47FF-8D20-C366CA68853E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9A51E8F-A177-45D6-9CE8-B0A5BA519181}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{C9A51E8F-A177-45D6-9CE8-B0A5BA519181}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{C9A51E8F-A177-45D6-9CE8-B0A5BA519181}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{C9A51E8F-A177-45D6-9CE8-B0A5BA519181}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{C9A51E8F-A177-45D6-9CE8-B0A5BA519181}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{C9A51E8F-A177-45D6-9CE8-B0A5BA519181}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{74C0CD2F-DDB9-47FF-8D20-C366CA68853E}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{74C0CD2F-DDB9-47FF-8D20-C366CA68853E}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

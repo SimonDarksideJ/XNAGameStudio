@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyLogic (Phone)", "FuzzyLogic\FuzzyLogic\FuzzyLogic (Phone).csproj", "{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyLogicContent", "FuzzyLogic\FuzzyLogicContent\FuzzyLogicContent.contentproj", "{34145D01-2ADA-4425-875B-2C4015FA01CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Windows Phone = Debug|Windows Phone
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Windows Phone = Release|Windows Phone
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Debug|Mixed Platforms.Build.0 = Debug|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Debug|Mixed Platforms.Deploy.0 = Debug|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Debug|x86.ActiveCfg = Debug|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Debug|x86.Build.0 = Debug|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Release|Mixed Platforms.Build.0 = Release|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Release|Mixed Platforms.Deploy.0 = Release|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Release|x86.ActiveCfg = Release|Windows Phone
+		{FE8340C6-7D73-4E6D-8EA7-BCA430A39E3F}.Release|x86.Build.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

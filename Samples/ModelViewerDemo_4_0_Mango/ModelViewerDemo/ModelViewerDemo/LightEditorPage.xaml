@@ -1,0 +1,70 @@
+﻿<!--
+ LightEditorPage.xaml
+
+ Microsoft XNA Community Game Platform
+ Copyright (C) Microsoft Corporation. All rights reserved.
+-->
+
+<my:BasePage
+    x:Class="ModelViewerDemo.LightEditorPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:my="clr-namespace:ModelViewerDemo"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="False">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12">
+
+            <CheckBox Content="Is light enabled?" IsChecked="{Binding Enabled, Mode=TwoWay}" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="diffuseBtn" Content="Diffuse" Click="diffuseBtn_Click" />
+                <Button x:Name="specularBtn" Content="Specular" Click="specularBtn_Click" />
+            </StackPanel>
+
+            <StackPanel x:Name="diffuseEditor" Visibility="Collapsed">
+                <TextBlock Text="Diffuse color" FontSize="24" />
+                <Slider Minimum="0" Maximum="1.0" Value="{Binding DiffuseR, Mode=TwoWay}"
+                    SmallChange=".05" LargeChange=".2"
+                    Background="Red" Foreground="Red" />
+                <Slider Minimum="0" Maximum="1.0" Value="{Binding DiffuseG, Mode=TwoWay}"
+                    SmallChange=".05" LargeChange=".2"
+                    Background="Green" Foreground="Green" />
+                <Slider Minimum="0" Maximum="1.0" Value="{Binding DiffuseB, Mode=TwoWay}"
+                    SmallChange=".05" LargeChange=".2"
+                    Background="Blue" Foreground="Blue" />
+            </StackPanel>
+
+            <StackPanel x:Name="specularEditor" Visibility="Collapsed">
+                <TextBlock Text="Specular color" FontSize="24" />
+                <Slider Minimum="0" Maximum="1.0" Value="{Binding SpecularR, Mode=TwoWay}"
+                    SmallChange=".05" LargeChange=".2"
+                    Background="Red" Foreground="Red" />
+                <Slider Minimum="0" Maximum="1.0" Value="{Binding SpecularG, Mode=TwoWay}"
+                    SmallChange=".05" LargeChange=".2"
+                    Background="Green" Foreground="Green" />
+                <Slider Minimum="0" Maximum="1.0" Value="{Binding SpecularB, Mode=TwoWay}"
+                    SmallChange=".05" LargeChange=".2"
+                    Background="Blue" Foreground="Blue" />
+            </StackPanel>
+        </StackPanel>
+
+        <Button Grid.Row="2" x:Name="resetBtn" Content="Reset" Click="resetBtn_Click" />
+    </Grid>
+
+</my:BasePage>
