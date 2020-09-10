@@ -4,3 +4,6 @@
 [submodule "MonoGameSamples/XMLContentLoading"]
 	path = MonoGameSamples/XMLContentLoading
 	url = https://github.com/DDReaper/XMLContentLoading
+[submodule "MonoGameSamples"]
+	path = MonoGameSamples
+	url = https://github.com/SimonDarksideJ/MonoGameSamples.git
