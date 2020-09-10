@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedGeometryPhone", "GeneratedGeometry\GeneratedGeometryPhone.csproj", "{E18CACA7-4C19-4966-AF07-94D21A432EB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedGeometryContent", "GeneratedGeometry\Content\GeneratedGeometryContent.contentproj", "{BFF47E18-72F7-40D0-8EA7-F848810B0BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedGeometryPipeline", "GeneratedGeometryPipeline\GeneratedGeometryPipeline.csproj", "{EF37345A-3BB3-498E-A2A3-F831DE78269B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFF47E18-72F7-40D0-8EA7-F848810B0BC6}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{BFF47E18-72F7-40D0-8EA7-F848810B0BC6}.Release|Windows Phone.ActiveCfg = Release|x86
+		{EF37345A-3BB3-498E-A2A3-F831DE78269B}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{EF37345A-3BB3-498E-A2A3-F831DE78269B}.Debug|Windows Phone.Build.0 = Debug|x86
+		{EF37345A-3BB3-498E-A2A3-F831DE78269B}.Release|Windows Phone.ActiveCfg = Debug|x86
+		{EF37345A-3BB3-498E-A2A3-F831DE78269B}.Release|Windows Phone.Build.0 = Debug|x86
+		{E18CACA7-4C19-4966-AF07-94D21A432EB1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{E18CACA7-4C19-4966-AF07-94D21A432EB1}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{E18CACA7-4C19-4966-AF07-94D21A432EB1}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{E18CACA7-4C19-4966-AF07-94D21A432EB1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{E18CACA7-4C19-4966-AF07-94D21A432EB1}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{E18CACA7-4C19-4966-AF07-94D21A432EB1}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

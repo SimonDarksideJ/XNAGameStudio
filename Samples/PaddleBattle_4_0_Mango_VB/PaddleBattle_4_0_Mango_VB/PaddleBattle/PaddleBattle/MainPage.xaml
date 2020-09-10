@@ -1,0 +1,55 @@
+﻿<!--
+ MainPage.xaml
+
+ Microsoft XNA Community Game Platform
+ Copyright (C) Microsoft Corporation. All rights reserved.
+-->
+
+<phone:PhoneApplicationPage 
+ x:Class="PaddleBattle.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="480"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    shell:SystemTray.IsVisible="False">
+
+    <Grid Background="CornflowerBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Add a TextBlock for our game title -->
+        <TextBlock Text="Paddle Battle" 
+                   Style="{StaticResource PhoneTextTitle1Style}" 
+                   HorizontalAlignment="Center" />
+
+        <!-- A StackPanel lets us build a simple stack of items -->
+        <StackPanel Grid.Row="1" 
+                    Margin="12,0,12,0" 
+                    VerticalAlignment="Center">
+
+            <!-- A button to let us start the game -->
+            <Button Height="100" 
+                    Content="Play" 
+                    FontSize="48"
+                    Click="PlayButton_Click"
+                    Width="400" />
+
+            <!-- A checkbox to enable/disable sounds using databinding -->
+            <CheckBox x:Name="sounds" 
+                      Content="Play sounds?" 
+                      Margin="20"
+                      HorizontalAlignment="Center" 
+                      IsChecked="{Binding PlaySounds, Mode=TwoWay}" />
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

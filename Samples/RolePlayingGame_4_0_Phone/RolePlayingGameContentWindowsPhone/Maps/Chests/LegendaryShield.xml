@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="RolePlayingGameData.Chest">
+    <Name>Legendary Shield</Name>
+    <Gold>0</Gold>
+    <Entries>
+      <Item>
+        <ContentName>Armor\LegendaryShield</ContentName>
+        <Count>1</Count>
+      </Item>
+    </Entries>
+    <TextureName>Chest1e</TextureName>
+  </Asset>
+</XnaContent>

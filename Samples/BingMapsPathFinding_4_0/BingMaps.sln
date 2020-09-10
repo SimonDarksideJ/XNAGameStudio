@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingMaps", "BingMaps\BingMaps\BingMaps.csproj", "{B5642CC1-8856-4DB8-974D-289D63F423D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingMapsContent", "BingMaps\BingMapsContent\BingMapsContent.contentproj", "{C23F7AE5-C1A0-4F92-8899-265F18D0AC16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Windows Phone = Debug|Windows Phone
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Windows Phone = Release|Windows Phone
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Debug|Mixed Platforms.Build.0 = Debug|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Debug|Mixed Platforms.Deploy.0 = Debug|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Debug|x86.ActiveCfg = Debug|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Debug|x86.Build.0 = Debug|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Release|Mixed Platforms.Build.0 = Release|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Release|Mixed Platforms.Deploy.0 = Release|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Release|x86.ActiveCfg = Release|Windows Phone
+		{B5642CC1-8856-4DB8-974D-289D63F423D1}.Release|x86.Build.0 = Release|Windows Phone
+		{C23F7AE5-C1A0-4F92-8899-265F18D0AC16}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{C23F7AE5-C1A0-4F92-8899-265F18D0AC16}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{C23F7AE5-C1A0-4F92-8899-265F18D0AC16}.Debug|x86.ActiveCfg = Debug|Windows Phone
+		{C23F7AE5-C1A0-4F92-8899-265F18D0AC16}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{C23F7AE5-C1A0-4F92-8899-265F18D0AC16}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{C23F7AE5-C1A0-4F92-8899-265F18D0AC16}.Release|x86.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

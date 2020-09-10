@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ParseXnb.cpp" />
+    <ClCompile Include="ContentReader.cpp" />
+    <ClCompile Include="BinaryReader.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="TypeReaderManager.cpp" />
+    <ClCompile Include="PrimitiveTypeReaders.cpp" />
+    <ClCompile Include="MathTypeReaders.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="SystemTypeReaders.cpp" />
+    <ClCompile Include="GenericTypeReader.cpp" />
+    <ClCompile Include="MediaTypeReaders.cpp" />
+    <ClCompile Include="GraphicsTypeReaders.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ContentReader.h" />
+    <ClInclude Include="BinaryReader.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="TypeReader.h" />
+    <ClInclude Include="TypeReaderManager.h" />
+    <ClInclude Include="PrimitiveTypeReaders.h" />
+    <ClInclude Include="MathTypeReaders.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemTypeReaders.h" />
+    <ClInclude Include="GenericTypeReader.h" />
+    <ClInclude Include="MediaTypeReaders.h" />
+    <ClInclude Include="GraphicsTypeReaders.h" />
+  </ItemGroup>
+</Project>

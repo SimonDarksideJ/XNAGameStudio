@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+    <!--Player animation definitions-->
+    <Definition FrameWidth="24" FrameHeight="24"
+                SheetRows="1" SheetColumns="3"
+                SheetName="Textures/beeWingFlap"
+                Alias="WorkerBee"/>
+
+    <Definition FrameWidth="24" FrameHeight="24"
+              SheetRows="1" SheetColumns="3"
+              SheetName="Textures/SoldierBeeWingFlap"
+              Alias="SoldierBee"/>
+
+    <Definition FrameWidth="85" FrameHeight="132"
+            SheetRows="4" SheetColumns="16"
+            SheetName="Textures/walkLegs" Speed="75"
+            Alias="LegAnimation"/>
+
+    <Definition FrameWidth="85" FrameHeight="132"
+          SheetRows="4" SheetColumns="16"
+          SheetName="Textures/shooting"
+          Alias="ShootingAnimation"/>
+
+    <Definition FrameWidth="85" FrameHeight="132"
+        SheetRows="4" SheetColumns="16"
+        SheetName="Textures/walkTorso"
+        Alias="BodyAnimation"/>
+
+    <Definition FrameWidth="85" FrameHeight="132"
+          SheetRows="1" SheetColumns="4"
+          Speed="150"
+          SheetName="Textures/collect"
+          Alias="BeekeeperCollectingHoney">
+        <SubDefinition StartFrame="2" EndFrame="3" />
+    </Definition>
+
+    <Definition FrameWidth="85" FrameHeight="132"
+        SheetRows="1" SheetColumns="4"
+        SheetName="Textures/deposit"
+        Speed="100"
+        Alias="BeekeeperDepositingHoney"/>
+
+    <Definition FrameWidth="85" FrameHeight="60"
+        SheetRows="1" SheetColumns="4"
+        SheetName="Textures/SmokeAnimationStrip"
+        Alias="SmokeAnimation"/>
+
+
+</Animations>

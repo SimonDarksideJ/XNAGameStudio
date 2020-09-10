@@ -1,0 +1,5 @@
+#TimeInMilisesonds,LeftEye,LeftEyebrow,Mouth,RightEye,RightEyebrow
+0,0,0,0,0,0
+300,9,4,0,9,4
+800,5,4,3,5,4
+1400,0,0,0,0,0

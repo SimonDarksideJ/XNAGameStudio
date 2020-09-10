@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:WindowsPhone.Recipes.Push.Server.ViewModels"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+                    xmlns:behaviors="clr-namespace:WindowsPhone.Recipes.Push.Server.Behaviors"
+                    mc:Ignorable="d">
+
+    <DataTemplate DataType="{x:Type vm:TileSchedulePushPatternViewModel}">
+        <Border Style="{DynamicResource ViewBorderStyle}">
+            <Grid d:LayoutOverrides="Width">
+                
+                <HeaderedContentControl Width="Auto" VerticalAlignment="Top">
+                    <HeaderedContentControl.Header>
+                        <TextBlock Text="User Parameters" FontWeight="Bold" />
+                    </HeaderedContentControl.Header>
+                    <Grid Height="Auto">
+                        <StackPanel Margin="0,0,185,84">
+                            <TextBlock Text="Image File Name" Margin="4" />
+                            <TextBox IsReadOnly="True" TextWrapping="Wrap" Margin="4" Text="{Binding ImageFileName, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+
+                        <Border BorderThickness="5" BorderBrush="#FFDEDEDE" Background="#FF333333" HorizontalAlignment="Right" VerticalAlignment="Center">
+                            <Grid Width="173" Height="173">
+                                <Image Source="{Binding ImageFileName, Converter={StaticResource UserFileImageConverter}}" Stretch="UniformToFill" />
+                                <TextBlock Height="22" TextWrapping="NoWrap" Text="{Binding Title}" VerticalAlignment="Bottom" Margin="6,0,6,6" FontSize="18.667" FontWeight="Bold" Width="158" HorizontalAlignment="Center"/>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+                </HeaderedContentControl>                
+
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+</ResourceDictionary>

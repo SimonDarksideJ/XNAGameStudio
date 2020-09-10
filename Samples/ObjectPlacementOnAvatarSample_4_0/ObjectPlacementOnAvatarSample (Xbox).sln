@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectPlacementOnAvatarXbox", "ObjectPlacementOnAvatar\ObjectPlacementOnAvatarXbox.csproj", "{F38BA9EB-1D5D-44C9-A007-644B45D187EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectPlacementOnAvatarContent", "ObjectPlacementOnAvatar\Content\ObjectPlacementOnAvatarContent.contentproj", "{53897950-7F8B-4171-93AD-2F5F2658E186}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F38BA9EB-1D5D-44C9-A007-644B45D187EC}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{F38BA9EB-1D5D-44C9-A007-644B45D187EC}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{F38BA9EB-1D5D-44C9-A007-644B45D187EC}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{F38BA9EB-1D5D-44C9-A007-644B45D187EC}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{F38BA9EB-1D5D-44C9-A007-644B45D187EC}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{F38BA9EB-1D5D-44C9-A007-644B45D187EC}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{53897950-7F8B-4171-93AD-2F5F2658E186}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{53897950-7F8B-4171-93AD-2F5F2658E186}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

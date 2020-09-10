@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Blackjack(Windows)", "CardsGame\CardsGame\Blackjack(Windows).vbproj", "{42DB00B3-30CF-4E6A-A587-F76350E7FD77}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CardsFramework(Windows)", "CardsFramework\CardsFramework(Windows).vbproj", "{B20DE990-FB8E-49A1-B435-2F4141811721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackjackContentHiDef", "BlackjackHiDefContent\BlackjackContentHiDef.contentproj", "{454E45FA-F92D-4FA7-AA12-94359BA600BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42DB00B3-30CF-4E6A-A587-F76350E7FD77}.Debug|x86.ActiveCfg = Debug|x86
+		{42DB00B3-30CF-4E6A-A587-F76350E7FD77}.Debug|x86.Build.0 = Debug|x86
+		{42DB00B3-30CF-4E6A-A587-F76350E7FD77}.Release|x86.ActiveCfg = Release|x86
+		{42DB00B3-30CF-4E6A-A587-F76350E7FD77}.Release|x86.Build.0 = Release|x86
+		{B20DE990-FB8E-49A1-B435-2F4141811721}.Debug|x86.ActiveCfg = Debug|x86
+		{B20DE990-FB8E-49A1-B435-2F4141811721}.Debug|x86.Build.0 = Debug|x86
+		{B20DE990-FB8E-49A1-B435-2F4141811721}.Release|x86.ActiveCfg = Release|x86
+		{B20DE990-FB8E-49A1-B435-2F4141811721}.Release|x86.Build.0 = Release|x86
+		{454E45FA-F92D-4FA7-AA12-94359BA600BB}.Debug|x86.ActiveCfg = Debug|x86
+		{454E45FA-F92D-4FA7-AA12-94359BA600BB}.Debug|x86.Build.0 = Debug|x86
+		{454E45FA-F92D-4FA7-AA12-94359BA600BB}.Release|x86.ActiveCfg = Release|x86
+		{454E45FA-F92D-4FA7-AA12-94359BA600BB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

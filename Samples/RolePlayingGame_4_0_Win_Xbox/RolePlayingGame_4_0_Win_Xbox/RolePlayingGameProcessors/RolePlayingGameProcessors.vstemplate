@@ -1,0 +1,73 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>RolePlayingGameProcessors</Name>
+    <Description>Content processing types needed by the Role-Playing Game starter kit.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>RolePlayingGameProcessors</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="RolePlayingGameProcessors.csproj" File="RolePlayingGameProcessors.csproj" ReplaceParameters="true">
+      <Folder Name="Animation" TargetFolderName="Animation">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AnimatingSpriteWriter.cs">AnimatingSpriteWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AnimationWriter.cs">AnimationWriter.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Characters" TargetFolderName="Characters">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CharacterClassWriter.cs">CharacterClassWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CharacterLevelDescriptionWriter.cs">CharacterLevelDescriptionWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CharacterLevelingStatisticsWriter.cs">CharacterLevelingStatisticsWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CharacterWriter.cs">CharacterWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FightingCharacterWriter.cs">FightingCharacterWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MonsterWriter.cs">MonsterWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlayerWriter.cs">PlayerWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="QuestNpcWriter.cs">QuestNpcWriter.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ContentEntryWriter.cs">ContentEntryWriter.cs</ProjectItem>
+      <Folder Name="Data" TargetFolderName="Data">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Int32RangeWriter.cs">Int32RangeWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StatisticsRangeWriter.cs">StatisticsRangeWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StatisticsValueWriter.cs">StatisticsValueWriter.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="GameStartDescriptionWriter.cs">GameStartDescriptionWriter.cs</ProjectItem>
+      <Folder Name="Gear" TargetFolderName="Gear">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ArmorWriter.cs">ArmorWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EquipmentWriter.cs">EquipmentWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GearDropWriter.cs">GearDropWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GearWriter.cs">GearWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ItemWriter.cs">ItemWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeaponWriter.cs">WeaponWriter.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Map" TargetFolderName="Map">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ChestWriter.cs">ChestWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FixedCombatWriter.cs">FixedCombatWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InnWriter.cs">InnWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MapWriter.cs">MapWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PortalWriter.cs">PortalWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RandomCombatWriter.cs">RandomCombatWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StoreCategoryWriter.cs">StoreCategoryWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StoreWriter.cs">StoreWriter.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MapEntryWriter.cs">MapEntryWriter.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Quests" TargetFolderName="Quests">
+        <ProjectItem ReplaceParameters="true" TargetFileName="QuestLineWriter.cs">QuestLineWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="QuestRequirementWriter.cs">QuestRequirementWriter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="QuestWriter.cs">QuestWriter.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="RolePlayingGameWriter.cs">RolePlayingGameWriter.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SpellWriter.cs">SpellWriter.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WeightedContentEntryWriter.cs">WeightedContentEntryWriter.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WorldEntryWriter.cs">WorldEntryWriter.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WorldObjectWriter.cs">WorldObjectWriter.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

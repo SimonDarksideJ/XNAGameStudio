@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorReplacementWindows", "ColorReplacement\ColorReplacementWindows.csproj", "{4CB8EDF7-4045-414D-87CF-65A5CA747DEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorReplacementContent", "ColorReplacement\Content\ColorReplacementContent.contentproj", "{11C28FA8-B7B8-4CD3-9D3D-C08C22D0366A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CB8EDF7-4045-414D-87CF-65A5CA747DEB}.Debug|x86.ActiveCfg = Debug|x86
+		{4CB8EDF7-4045-414D-87CF-65A5CA747DEB}.Debug|x86.Build.0 = Debug|x86
+		{4CB8EDF7-4045-414D-87CF-65A5CA747DEB}.Release|x86.ActiveCfg = Release|x86
+		{4CB8EDF7-4045-414D-87CF-65A5CA747DEB}.Release|x86.Build.0 = Release|x86
+		{11C28FA8-B7B8-4CD3-9D3D-C08C22D0366A}.Debug|x86.ActiveCfg = Debug|x86
+		{11C28FA8-B7B8-4CD3-9D3D-C08C22D0366A}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

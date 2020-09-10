@@ -1,0 +1,30 @@
+﻿<!--
+ App.xaml
+
+ Microsoft XNA Community Game Platform
+ Copyright (C) Microsoft Corporation. All rights reserved.
+-->
+
+<Application 
+    x:Class="PaddleBattle.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:xna="clr-namespace:Microsoft.Xna.Framework;assembly=Microsoft.Xna.Framework.Interop">
+
+    <!--Application Resources-->
+    <Application.Resources>
+    </Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Required object that handles lifetime events for the application-->
+        <shell:PhoneApplicationService 
+            Launching="Application_Launching" Closing="Application_Closing" 
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+
+        <!--The SharedGraphicsDeviceManager is used to render with the XNA Graphics APIs-->
+        <xna:SharedGraphicsDeviceManager />
+    </Application.ApplicationLifetimeObjects>
+
+</Application>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteEffectsXbox", "SpriteEffects\SpriteEffectsXbox.csproj", "{7DFFA8BD-0CEE-4A34-BA83-88B512CEBEC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteEffectsPipeline", "SpriteEffectsPipeline\SpriteEffectsPipeline.csproj", "{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpriteEffectsContent", "SpriteEffects\Content\SpriteEffectsContent.contentproj", "{7E5AAA1A-DC1F-4ABF-BBD0-F6E4DD904D6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{466C925C-4BFE-49E8-ADFA-ADAE1B9E2B12}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{7E5AAA1A-DC1F-4ABF-BBD0-F6E4DD904D6B}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{7E5AAA1A-DC1F-4ABF-BBD0-F6E4DD904D6B}.Release|Xbox 360.ActiveCfg = Release|x86
+		{7DFFA8BD-0CEE-4A34-BA83-88B512CEBEC0}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{7DFFA8BD-0CEE-4A34-BA83-88B512CEBEC0}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{7DFFA8BD-0CEE-4A34-BA83-88B512CEBEC0}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{7DFFA8BD-0CEE-4A34-BA83-88B512CEBEC0}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{7DFFA8BD-0CEE-4A34-BA83-88B512CEBEC0}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{7DFFA8BD-0CEE-4A34-BA83-88B512CEBEC0}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

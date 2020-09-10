@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeightmapCollisionXbox", "HeightmapCollision\HeightmapCollisionXbox.csproj", "{D6362918-9158-4EF3-B02B-8A5E965E8107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeightmapCollisionPipeline", "HeightmapCollisionPipeline\HeightmapCollisionPipeline.csproj", "{59442399-F564-4302-9FA6-0B8F30AE9071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeightmapCollisionContent", "HeightmapCollision\Content\HeightmapCollisionContent.contentproj", "{316DD254-F5C9-43C4-9F81-A9AA932A7E73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59442399-F564-4302-9FA6-0B8F30AE9071}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{59442399-F564-4302-9FA6-0B8F30AE9071}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{59442399-F564-4302-9FA6-0B8F30AE9071}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{59442399-F564-4302-9FA6-0B8F30AE9071}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{316DD254-F5C9-43C4-9F81-A9AA932A7E73}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{316DD254-F5C9-43C4-9F81-A9AA932A7E73}.Release|Xbox 360.ActiveCfg = Release|x86
+		{D6362918-9158-4EF3-B02B-8A5E965E8107}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{D6362918-9158-4EF3-B02B-8A5E965E8107}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{D6362918-9158-4EF3-B02B-8A5E965E8107}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{D6362918-9158-4EF3-B02B-8A5E965E8107}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{D6362918-9158-4EF3-B02B-8A5E965E8107}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{D6362918-9158-4EF3-B02B-8A5E965E8107}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvatarAnimationBlendingSampleXbox", "AvatarAnimationBlendingSample\AvatarAnimationBlendingSampleXbox.csproj", "{8A797805-8B3D-4485-8130-D9D3B954BDE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvatarAnimationBlendingSampleContent", "AvatarAnimationBlendingSample\Content\AvatarAnimationBlendingSampleContent.contentproj", "{EA23D2CA-989E-434E-87EA-656229F697F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A797805-8B3D-4485-8130-D9D3B954BDE0}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{8A797805-8B3D-4485-8130-D9D3B954BDE0}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{8A797805-8B3D-4485-8130-D9D3B954BDE0}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{8A797805-8B3D-4485-8130-D9D3B954BDE0}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{8A797805-8B3D-4485-8130-D9D3B954BDE0}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{8A797805-8B3D-4485-8130-D9D3B954BDE0}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{EA23D2CA-989E-434E-87EA-656229F697F1}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{EA23D2CA-989E-434E-87EA-656229F697F1}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

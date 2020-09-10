@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformedCollisionXbox", "TransformedCollision\TransformedCollision\TransformedCollisionXbox.csproj", "{F273A3EA-FCF9-41B9-8DF3-DDAFC8F9B72C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformedCollisionContent", "TransformedCollision\TransformedCollisionContent\TransformedCollisionContent.contentproj", "{20D6AD07-B825-4A63-BF90-189CC87B375C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20D6AD07-B825-4A63-BF90-189CC87B375C}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{20D6AD07-B825-4A63-BF90-189CC87B375C}.Release|Xbox 360.ActiveCfg = Release|x86
+		{F273A3EA-FCF9-41B9-8DF3-DDAFC8F9B72C}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{F273A3EA-FCF9-41B9-8DF3-DDAFC8F9B72C}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{F273A3EA-FCF9-41B9-8DF3-DDAFC8F9B72C}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{F273A3EA-FCF9-41B9-8DF3-DDAFC8F9B72C}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{F273A3EA-FCF9-41B9-8DF3-DDAFC8F9B72C}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{F273A3EA-FCF9-41B9-8DF3-DDAFC8F9B72C}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

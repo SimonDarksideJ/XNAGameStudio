@@ -1,0 +1,68 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="TombstoningSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="TOMBSTONING SAMPLE" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="app/page state" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer Height="607" HorizontalAlignment="Left" Name="scrollViewer1" VerticalAlignment="Top" Width="456">
+                <StackPanel Name="stackPanel1">
+
+
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="0,20,0,0" Name="applicationStateLabel" Text="application state:" VerticalAlignment="Top" Width="444" Foreground="{StaticResource PhoneAccentBrush}" FontSize="30"/>
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="20,20,0,0" Name="statusTextBlock" Text="status" VerticalAlignment="Top" Width="424" />
+                    <TextBlock HorizontalAlignment="Left" Margin="20,0,0,0" Name="dataTextBlock" Text="data" VerticalAlignment="Top" Width="424" Foreground="{StaticResource PhoneAccentBrush}" MaxWidth="424" />
+
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="0,20,0,0" Name="pageStateLabel" Text="page state:" VerticalAlignment="Top" Width="444" Foreground="{StaticResource PhoneAccentBrush}" FontSize="30"/>
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="20,0,0,0" Name="textBox1" Text="TextBox" VerticalAlignment="Top" Width="440" />
+                    <CheckBox Content="CheckBox" Height="71" Name="checkBox1" Margin="20,0,0,0"/>
+                    <Slider Height="84" Name="slider1" Width="440" Margin="20,0,0,0"/>
+                    <RadioButton Content="RadioButton 1" Height="71" Name="radioButton1" GroupName="Numbers"  Margin="20,0,0,0"/>
+                    <RadioButton Content="RadioButton 2" Height="71" Name="radioButton2" GroupName="Numbers"  Margin="20,0,0,0"/>
+                    <RadioButton Content="RadioButton 3" Height="71" Name="radioButton3" GroupName="Numbers"  Margin="20,0,0,0"/>
+                    <RadioButton Content="RadioButton A" Height="71" Name="radioButtonA" GroupName="Letters"  Margin="20,0,0,0"/>
+                    <RadioButton Content="RadioButton B" Height="71" Name="radioButtonB" GroupName="Letters"  Margin="20,0,0,0"/>
+                    <RadioButton Content="RadioButton C" Height="71" Name="radioButtonC" GroupName="Letters"  Margin="20,0,0,0"/>
+
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

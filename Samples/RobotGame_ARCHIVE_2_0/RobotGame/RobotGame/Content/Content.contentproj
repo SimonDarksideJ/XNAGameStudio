@@ -1,0 +1,1878 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A3124FD4-5D14-42D5-81D9-DB51F89A5B39}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RobotGame</RootNamespace>
+    <AssemblyName>RobotGame</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <ApplicationIcon>RobotGame.ico</ApplicationIcon>
+    <StartupObject>RobotGame.RobotGame</StartupObject>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Models\World\Stage1\France.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>France</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\World\Stage1\France_Col_Move.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>CollideProcessor</Processor>
+      <Name>France_Col_Move</Name>
+    </Compile>
+    <Compile Include="Models\World\Stage1\France_Col_Hit.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>CollideProcessor</Processor>
+      <Name>France_Col_Hit</Name>
+    </Compile>
+    <Compile Include="Models\Mech\Enemies\cameleerT1.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>cameleerT1</Name>
+    </Compile>
+    <Compile Include="Models\Mech\Players\Grund.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ShaderModelProcessor</Processor>
+      <Name>Grund</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\Enemies\Cameleer\Damage.Animation">
+      <Name>Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\Idle.Animation">
+      <Name>Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\TurnLeft.Animation">
+      <Name>TurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\TurnRight.Animation">
+      <Name>TurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\WalkBack.Animation">
+      <Name>WalkBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\WalkFront.Animation">
+      <Name>WalkFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\WalkLeft.Animation">
+      <Name>WalkLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\WalkRight.Animation">
+      <Name>WalkRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_Damage.Animation">
+      <Name>Low_Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_Idle.Animation">
+      <Name>Low_Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_Run.Animation">
+      <Name>Low_Run</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_TurnLeft.Animation">
+      <Name>Low_TurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_TurnRight.Animation">
+      <Name>Low_TurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_Walk.Animation">
+      <Name>Low_Walk</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_WalkBack.Animation">
+      <Name>Low_WalkBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_AttackFrontBase.Animation">
+      <Name>Up_AttackFrontBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_AttackLeftBase.Animation">
+      <Name>Up_AttackLeftBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_AttackRightBase.Animation">
+      <Name>Up_AttackRightBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_Damage.Animation">
+      <Name>Up_Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_Idle.Animation">
+      <Name>Up_Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_NonAttackFront.Animation">
+      <Name>Up_NonAttackFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_NonAttackLeft.Animation">
+      <Name>Up_NonAttackLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_NonAttackRight.Animation">
+      <Name>Up_NonAttackRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_Run.Animation">
+      <Name>Up_Run</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Mech\Players\Mark.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ShaderModelProcessor</Processor>
+      <Name>Mark</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\Players\Grund\Low_DeathBack.Animation">
+      <Name>Low_DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_DeathFront.Animation">
+      <Name>Low_DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_DeathLeft.Animation">
+      <Name>Low_DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_DeathRight.Animation">
+      <Name>Low_DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_DeathBack.Animation">
+      <Name>Up_DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_DeathFront.Animation">
+      <Name>Up_DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_DeathLeft.Animation">
+      <Name>Up_DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_DeathRight.Animation">
+      <Name>Up_DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_ReloadBase.Animation">
+      <Name>Up_ReloadBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\Players\Mark\Low_Damage.Animation">
+      <Name>Low_Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_DeathBack.Animation">
+      <Name>Low_DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_DeathFront.Animation">
+      <Name>Low_DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_DeathLeft.Animation">
+      <Name>Low_DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_DeathRight.Animation">
+      <Name>Low_DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_Idle.Animation">
+      <Name>Low_Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_Run.Animation">
+      <Name>Low_Run</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_TurnLeft.Animation">
+      <Name>Low_TurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_TurnRight.Animation">
+      <Name>Low_TurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_Walk.Animation">
+      <Name>Low_Walk</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_WalkBack.Animation">
+      <Name>Low_WalkBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_AttackFrontBase.Animation">
+      <Name>Up_AttackFrontBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_AttackLeftBase.Animation">
+      <Name>Up_AttackLeftBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_AttackRightBase.Animation">
+      <Name>Up_AttackRightBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_Damage.Animation">
+      <Name>Up_Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_DeathBack.Animation">
+      <Name>Up_DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_DeathFront.Animation">
+      <Name>Up_DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_DeathLeft.Animation">
+      <Name>Up_DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_DeathRight.Animation">
+      <Name>Up_DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_Idle.Animation">
+      <Name>Up_Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_NonAttackFront.Animation">
+      <Name>Up_NonAttackFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_NonAttackLeft.Animation">
+      <Name>Up_NonAttackLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_NonAttackRight.Animation">
+      <Name>Up_NonAttackRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_ReloadBase.Animation">
+      <Name>Up_ReloadBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_Run.Animation">
+      <Name>Up_Run</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Mech\Enemies\Duskmas.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>Duskmas</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\Enemies\Duskmas\AttackFar.Animation">
+      <Name>AttackFar</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\AttackNear.Animation">
+      <Name>AttackNear</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\Damage.Animation">
+      <Name>Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\DeathBack.Animation">
+      <Name>DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\DeathFront.Animation">
+      <Name>DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\DeathLeft.Animation">
+      <Name>DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\DeathRight.Animation">
+      <Name>DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\Idle.Animation">
+      <Name>Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\TurnLeft.Animation">
+      <Name>TurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\TurnRight.Animation">
+      <Name>TurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\WalkBack.Animation">
+      <Name>WalkBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\WalkFront.Animation">
+      <Name>WalkFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\WalkLeft.Animation">
+      <Name>WalkLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Duskmas\WalkRight.Animation">
+      <Name>WalkRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\Enemies\Cameleer\DeathBack.Animation">
+      <Name>DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\DeathFront.Animation">
+      <Name>DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\DeathLeft.Animation">
+      <Name>DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Cameleer\DeathRight.Animation">
+      <Name>DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\AttackFar.Animation">
+      <Name>AttackFar</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\AttackNear.Animation">
+      <Name>AttackNear</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\Damage.Animation">
+      <Name>Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\DeathBack.Animation">
+      <Name>DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\DeathFront.Animation">
+      <Name>DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\DeathLeft.Animation">
+      <Name>DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\DeathRight.Animation">
+      <Name>DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\Idle.Animation">
+      <Name>Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\TurnLeft.Animation">
+      <Name>TurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\TurnRight.Animation">
+      <Name>TurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\Walk.Animation">
+      <Name>Walk</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\WalkBack.Animation">
+      <Name>WalkBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\WalkFront.Animation">
+      <Name>WalkFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\WalkLeft.Animation">
+      <Name>WalkLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Hammer\WalkRight.Animation">
+      <Name>WalkRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\Damage.Animation">
+      <Name>Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\DeathBack.Animation">
+      <Name>DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\DeathFront.Animation">
+      <Name>DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\DeathLeft.Animation">
+      <Name>DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\DeathRight.Animation">
+      <Name>DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\Idle.Animation">
+      <Name>Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\TurnLeft.Animation">
+      <Name>TurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\TurnRight.Animation">
+      <Name>TurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\WalkBack.Animation">
+      <Name>WalkBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\WalkFront.Animation">
+      <Name>WalkFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\WalkLeft.Animation">
+      <Name>WalkLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\Maoming\WalkRight.Animation">
+      <Name>WalkRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\AttackNear.Animation">
+      <Name>AttackNear</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\AttackNear2.Animation">
+      <Name>AttackNear2</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\Damage.Animation">
+      <Name>Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\DeathBack.Animation">
+      <Name>DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\DeathFront.Animation">
+      <Name>DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\DeathLeft.Animation">
+      <Name>DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\DeathRight.Animation">
+      <Name>DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\Idle.Animation">
+      <Name>Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\TurnLeft.Animation">
+      <Name>TurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\TurnRight.Animation">
+      <Name>TurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\WalkBack.Animation">
+      <Name>WalkBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\WalkFront.Animation">
+      <Name>WalkFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\WalkLeft.Animation">
+      <Name>WalkLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Enemies\PhantomBoss\WalkRight.Animation">
+      <Name>WalkRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_BoosterEnd.Animation">
+      <Name>Low_BoosterEnd</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_BoosterMiss.Animation">
+      <Name>Low_BoosterMiss</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_BoosterMove.Animation">
+      <Name>Low_BoosterMove</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_BoosterStart.Animation">
+      <Name>Low_BoosterStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_BoosterTurnLeft.Animation">
+      <Name>Low_BoosterTurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Low_BoosterTurnRight.Animation">
+      <Name>Low_BoosterTurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_AttackFrontHandgun.Animation">
+      <Name>Up_AttackFrontHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_AttackFrontShotgun.Animation">
+      <Name>Up_AttackFrontShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_AttackLeftHandgun.Animation">
+      <Name>Up_AttackLeftHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_AttackLeftShotgun.Animation">
+      <Name>Up_AttackLeftShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_AttackRightHandgun.Animation">
+      <Name>Up_AttackRightHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_AttackRightShotgun.Animation">
+      <Name>Up_AttackRightShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_BoosterEnd.Animation">
+      <Name>Up_BoosterEnd</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_BoosterMiss.Animation">
+      <Name>Up_BoosterMiss</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_BoosterMove.Animation">
+      <Name>Up_BoosterMove</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_BoosterStart.Animation">
+      <Name>Up_BoosterStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_BoosterTurnLeft.Animation">
+      <Name>Up_BoosterTurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_BoosterTurnRight.Animation">
+      <Name>Up_BoosterTurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_Change.Animation">
+      <Name>Up_Change</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_ReloadHandgun.Animation">
+      <Name>Up_ReloadHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Grund\Up_ReloadShotgun.Animation">
+      <Name>Up_ReloadShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_BoosterEnd.Animation">
+      <Name>Low_BoosterEnd</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_BoosterMiss.Animation">
+      <Name>Low_BoosterMiss</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_BoosterMove.Animation">
+      <Name>Low_BoosterMove</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_BoosterStart.Animation">
+      <Name>Low_BoosterStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_BoosterTurnLeft.Animation">
+      <Name>Low_BoosterTurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_BoosterTurnRight.Animation">
+      <Name>Low_BoosterTurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_Damage.Animation">
+      <Name>Low_Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_DeathBack.Animation">
+      <Name>Low_DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_DeathFront.Animation">
+      <Name>Low_DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_DeathLeft.Animation">
+      <Name>Low_DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_DeathRight.Animation">
+      <Name>Low_DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_Idle.Animation">
+      <Name>Low_Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_Run.Animation">
+      <Name>Low_Run</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_TurnLeft.Animation">
+      <Name>Low_TurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_TurnRight.Animation">
+      <Name>Low_TurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_Walk.Animation">
+      <Name>Low_Walk</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Low_WalkBack.Animation">
+      <Name>Low_WalkBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_AttackFrontBase.Animation">
+      <Name>Up_AttackFrontBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_AttackFrontHandgun.Animation">
+      <Name>Up_AttackFrontHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_AttackFrontShotgun.Animation">
+      <Name>Up_AttackFrontShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_AttackLeftBase.Animation">
+      <Name>Up_AttackLeftBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_AttackLeftHandgun.Animation">
+      <Name>Up_AttackLeftHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_AttackLeftShotgun.Animation">
+      <Name>Up_AttackLeftShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_AttackRightBase.Animation">
+      <Name>Up_AttackRightBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_AttackRightHandgun.Animation">
+      <Name>Up_AttackRightHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_AttackRightShotgun.Animation">
+      <Name>Up_AttackRightShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_BoosterEnd.Animation">
+      <Name>Up_BoosterEnd</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_BoosterMiss.Animation">
+      <Name>Up_BoosterMiss</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_BoosterMove.Animation">
+      <Name>Up_BoosterMove</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_BoosterStart.Animation">
+      <Name>Up_BoosterStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_BoosterTurnLeft.Animation">
+      <Name>Up_BoosterTurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_BoosterTurnRight.Animation">
+      <Name>Up_BoosterTurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_Change.Animation">
+      <Name>Up_Change</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_Damage.Animation">
+      <Name>Up_Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_DeathBack.Animation">
+      <Name>Up_DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_DeathFront.Animation">
+      <Name>Up_DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_DeathLeft.Animation">
+      <Name>Up_DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_DeathRight.Animation">
+      <Name>Up_DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_Idle.Animation">
+      <Name>Up_Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_NonAttackFront.Animation">
+      <Name>Up_NonAttackFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_NonAttackLeft.Animation">
+      <Name>Up_NonAttackLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_NonAttackRight.Animation">
+      <Name>Up_NonAttackRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_ReloadBase.Animation">
+      <Name>Up_ReloadBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_ReloadHandgun.Animation">
+      <Name>Up_ReloadHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_ReloadShotgun.Animation">
+      <Name>Up_ReloadShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Kiev\Up_Run.Animation">
+      <Name>Up_Run</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_BoosterEnd.Animation">
+      <Name>Low_BoosterEnd</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_BoosterMiss.Animation">
+      <Name>Low_BoosterMiss</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_BoosterMove.Animation">
+      <Name>Low_BoosterMove</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_BoosterReStart.Animation">
+      <Name>Low_BoosterReStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_BoosterStart.Animation">
+      <Name>Low_BoosterStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_BoosterTurnLeft.Animation">
+      <Name>Low_BoosterTurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Low_BoosterTurnRight.Animation">
+      <Name>Low_BoosterTurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_AttackFrontHandgun.Animation">
+      <Name>Up_AttackFrontHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_AttackFrontShotgun.Animation">
+      <Name>Up_AttackFrontShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_AttackLeftHandgun.Animation">
+      <Name>Up_AttackLeftHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_AttackLeftShotgun.Animation">
+      <Name>Up_AttackLeftShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_AttackRightHandgun.Animation">
+      <Name>Up_AttackRightHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_AttackRightShotgun.Animation">
+      <Name>Up_AttackRightShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_BoosterEnd.Animation">
+      <Name>Up_BoosterEnd</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_BoosterMiss.Animation">
+      <Name>Up_BoosterMiss</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_BoosterMove.Animation">
+      <Name>Up_BoosterMove</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_BoosterReStart.Animation">
+      <Name>Up_BoosterReStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_BoosterStart.Animation">
+      <Name>Up_BoosterStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_BoosterTurnLeft.Animation">
+      <Name>Up_BoosterTurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_BoosterTurnRight.Animation">
+      <Name>Up_BoosterTurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_Change.Animation">
+      <Name>Up_Change</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_ReloadHandgun.Animation">
+      <Name>Up_ReloadHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Mark\Up_ReloadShotgun.Animation">
+      <Name>Up_ReloadShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_BoosterEnd.Animation">
+      <Name>Low_BoosterEnd</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_BoosterMiss.Animation">
+      <Name>Low_BoosterMiss</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_BoosterMove.Animation">
+      <Name>Low_BoosterMove</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_BoosterStart.Animation">
+      <Name>Low_BoosterStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_BoosterTurnLeft.Animation">
+      <Name>Low_BoosterTurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_BoosterTurnRight.Animation">
+      <Name>Low_BoosterTurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_Damage.Animation">
+      <Name>Low_Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_DeathBack.Animation">
+      <Name>Low_DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_DeathFront.Animation">
+      <Name>Low_DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_DeathLeft.Animation">
+      <Name>Low_DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_DeathRight.Animation">
+      <Name>Low_DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_Idle.Animation">
+      <Name>Low_Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_Run.Animation">
+      <Name>Low_Run</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_TurnLeft.Animation">
+      <Name>Low_TurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_TurnRight.Animation">
+      <Name>Low_TurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_Walk.Animation">
+      <Name>Low_Walk</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Low_WalkBack.Animation">
+      <Name>Low_WalkBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_AttackFrontBase.Animation">
+      <Name>Up_AttackFrontBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_AttackFrontHandgun.Animation">
+      <Name>Up_AttackFrontHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_AttackFrontShotgun.Animation">
+      <Name>Up_AttackFrontShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_AttackLeftBase.Animation">
+      <Name>Up_AttackLeftBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_AttackLeftHandgun.Animation">
+      <Name>Up_AttackLeftHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_AttackLeftShotgun.Animation">
+      <Name>Up_AttackLeftShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_AttackRightBase.Animation">
+      <Name>Up_AttackRightBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_AttackRightHandgun.Animation">
+      <Name>Up_AttackRightHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_AttackRightShotgun.Animation">
+      <Name>Up_AttackRightShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_BoosterEnd.Animation">
+      <Name>Up_BoosterEnd</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_BoosterMiss.Animation">
+      <Name>Up_BoosterMiss</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_BoosterMove.Animation">
+      <Name>Up_BoosterMove</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_BoosterStart.Animation">
+      <Name>Up_BoosterStart</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_BoosterTurnLeft.Animation">
+      <Name>Up_BoosterTurnLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_BoosterTurnRight.Animation">
+      <Name>Up_BoosterTurnRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_Change.Animation">
+      <Name>Up_Change</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_Damage.Animation">
+      <Name>Up_Damage</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_DeathBack.Animation">
+      <Name>Up_DeathBack</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_DeathFront.Animation">
+      <Name>Up_DeathFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_DeathLeft.Animation">
+      <Name>Up_DeathLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_DeathRight.Animation">
+      <Name>Up_DeathRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_Idle.Animation">
+      <Name>Up_Idle</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_NonAttackFront.Animation">
+      <Name>Up_NonAttackFront</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_NonAttackLeft.Animation">
+      <Name>Up_NonAttackLeft</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_NonAttackRight.Animation">
+      <Name>Up_NonAttackRight</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_ReloadBase.Animation">
+      <Name>Up_ReloadBase</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_ReloadHandgun.Animation">
+      <Name>Up_ReloadHandgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_ReloadShotgun.Animation">
+      <Name>Up_ReloadShotgun</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Animation\Players\Yager\Up_Run.Animation">
+      <Name>Up_Run</Name>
+      <Importer>AnimationImporter</Importer>
+      <Processor>AnimationProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\RobotGame.xap">
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
+      <Name>RobotGame</Name>
+    </Compile>
+    <Compile Include="Models\Items\HP.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>HP</Name>
+    </Compile>
+    <Compile Include="Models\Items\magazine.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>magazine</Name>
+    </Compile>
+    <Compile Include="Models\Mech\Enemies\Tiger.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>Tiger</Name>
+    </Compile>
+    <Compile Include="Models\Mech\Enemies\Hammer.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>Hammer</Name>
+    </Compile>
+    <Compile Include="Models\Mech\Enemies\PhantomBoss.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>PhantomBoss</Name>
+    </Compile>
+    <Compile Include="Models\Mech\Players\Yager.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>Yager</Name>
+    </Compile>
+    <Compile Include="Models\World\Stage2\AircraftCarrier.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>AircraftCarrier</Name>
+    </Compile>
+    <Compile Include="Models\World\Stage2\AircraftCarrier_Col_Hit.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>CollideProcessor</Processor>
+      <Name>AircraftCarrier_Col_Hit</Name>
+    </Compile>
+    <Compile Include="Models\World\Stage2\AircraftCarrier_Col_Move.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>CollideProcessor</Processor>
+      <Name>AircraftCarrier_Col_Move</Name>
+    </Compile>
+    <Compile Include="Models\World\Stage2\AircraftCarrier_Sky.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>AircraftCarrier_Sky</Name>
+    </Compile>
+    <Compile Include="Models\Weapons\Handgun.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>Handgun</Name>
+    </Compile>
+    <Compile Include="Models\Weapons\Shotgun.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>Shotgun</Name>
+    </Compile>
+    <Compile Include="Models\Weapons\SMG_Lv4.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ShaderModelProcessor</Processor>
+      <Name>SMG_Lv4</Name>
+    </Compile>
+    <Compile Include="Models\Mech\Enemies\MaomingT1.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>MaomingT1</Name>
+    </Compile>
+    <Compile Include="Models\World\Stage1\FranceCubeMap.dds">
+      <Importer>TextureImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Name>FranceCubeMap</Name>
+    </Compile>
+    <Compile Include="Models\World\Stage2\AircraftCarrierCubeMap.dds">
+      <Importer>TextureImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Name>AircraftCarrierCubeMap</Name>
+    </Compile>
+    <Compile Include="Effects\BoosterEffect.fx">
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Name>BoosterEffect</Name>
+    </Compile>
+    <Compile Include="Effects\ShaderModelEffect.fx">
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Name>ShaderModelEffect</Name>
+    </Compile>
+    <Compile Include="Effects\PostScreen.fx">
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Name>PostScreen</Name>
+    </Compile>
+    <Compile Include="Effects\GaussianBlur.fx">
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Name>GaussianBlur</Name>
+    </Compile>
+    <Compile Include="Particles\BstBp05.Particle">
+      <Name>BstBp05</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\BstBp05_1.Particle">
+      <Name>BstBp05_1</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\BstGs05.Particle">
+      <Name>BstGs05</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Mech\Players\Kiev.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>Kiev</Name>
+    </Compile>
+    <Compile Include="Particles\EnvFi01.Particle">
+      <Name>EnvFi01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\EnvFi02.Particle">
+      <Name>EnvFi02</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\EnvSm01.Particle">
+      <Name>EnvSm01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\EnvSm02.Particle">
+      <Name>EnvSm02</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\ExpLM01.Particle">
+      <Name>ExpLM01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\ExpLM01_1.Particle">
+      <Name>ExpLM01_1</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\ExpMM01.Particle">
+      <Name>ExpMM01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\ExpMM01_1.Particle">
+      <Name>ExpMM01_1</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\ExpSM01.Particle">
+      <Name>ExpSM01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\ExpSM01_1.Particle">
+      <Name>ExpSM01_1</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\ExpTa01.Particle">
+      <Name>ExpTa01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\ExpTa01_1.Particle">
+      <Name>ExpTa01_1</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\FirCa01.Particle">
+      <Name>FirCa01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\FirHa01.Particle">
+      <Name>FirHa01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\FirMa01.Particle">
+      <Name>FirMa01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\FirMa04.Particle">
+      <Name>FirMa04</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\FirMa05.Particle">
+      <Name>FirMa05</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\FirSh01.Particle">
+      <Name>FirSh01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\World\Stage1\France_Sky.FBX">
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Name>France_Sky</Name>
+    </Compile>
+    <Compile Include="Particles\HitCa01.Particle">
+      <Name>HitCa01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\HitMa01.Particle">
+      <Name>HitMa01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\HitMa03.Particle">
+      <Name>HitMa03</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\HitMi02.Particle">
+      <Name>HitMi02</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\HitMi04.Particle">
+      <Name>HitMi04</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\HitSh01.Particle">
+      <Name>HitSh01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\HitWCa01.Particle">
+      <Name>HitWCa01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\HitWMa01.Particle">
+      <Name>HitWMa01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\HitWMa02.Particle">
+      <Name>HitWMa02</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\HitWMa03.Particle">
+      <Name>HitWMa03</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\RldAr01.Particle">
+      <Name>RldAr01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\RldHa01.Particle">
+      <Name>RldHa01</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\RldMa05.Particle">
+      <Name>RldMa05</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\RldMa07.Particle">
+      <Name>RldMa07</Name>
+      <Importer>ParticleImporter</Importer>
+      <Processor>ParticleProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\HUD_Aiming.dds">
+      <Importer>TextureImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Name>HUD_Aiming</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RobotGameProcessors\RobotGameProcessors.csproj">
+      <Project>{6708EA72-B1B2-49C9-B287-2661CD3DBB43}</Project>
+      <Name>RobotGameProcessors</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Particles\BoosterFlash01.png">
+      <Name>BoosterFlash01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\BulletCase_SMG3.jpg">
+      <Name>BulletCase_SMG3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\bulletTest_16.jpg">
+      <Name>bulletTest_16</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Particles\Flame02.png">
+      <Name>Flame02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\FlameSourceSequence.png">
+      <Name>FlameSourceSequence</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Fracture01.png">
+      <Name>Fracture01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\GlowSpark01.png">
+      <Name>GlowSpark01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\GlowSpark02.png">
+      <Name>GlowSpark02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Glow_yellow.png">
+      <Name>Glow_yellow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\GunGlow02.png">
+      <Name>GunGlow02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\GunGlow03.png">
+      <Name>GunGlow03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\GunGlow04.png">
+      <Name>GunGlow04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\GunGlow05.png">
+      <Name>GunGlow05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\GunStick01.png">
+      <Name>GunStick01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\GunStick02.png">
+      <Name>GunStick02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Particles\LensFlare01.png">
+      <Name>LensFlare01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Particles\Smoke01.png">
+      <Name>Smoke01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Smoke02.png">
+      <Name>Smoke02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Smoke02_1.png">
+      <Name>Smoke02_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Smoke04.png">
+      <Name>Smoke04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Smoke_Horizontal02.png">
+      <Name>Smoke_Horizontal02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Smoke_Horizontal03.png">
+      <Name>Smoke_Horizontal03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Spark01.png">
+      <Name>Spark01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Spark_Horizontal01.png">
+      <Name>Spark_Horizontal01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Spark_Horizontal03.png">
+      <Name>Spark_Horizontal03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Spark_Horizontal05.png">
+      <Name>Spark_Horizontal05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Spark_Horizontal06.png">
+      <Name>Spark_Horizontal06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\shadow.png">
+      <Name>shadow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Hud1.png">
+      <Name>Hud1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Loading.jpg">
+      <Name>Loading</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Loading_Text.png">
+      <Name>Loading_Text</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\MainMenuButton.png">
+      <Name>MainMenuButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\MainTitle.jpg">
+      <Name>MainTitle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Mission.png">
+      <Name>Mission</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\VS_Back.jpg">
+      <Name>VS_Back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\VS_Select.png">
+      <Name>VS_Select</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\VS_Text.png">
+      <Name>VS_Text</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Text_Window.png">
+      <Name>Text_Window</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Font\RobotGame_font.png">
+      <Name>RobotGame_font</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+</Project>

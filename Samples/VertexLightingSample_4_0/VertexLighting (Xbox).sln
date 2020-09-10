@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexLightingXbox", "VertexLighting\VertexLightingXbox.csproj", "{938DD13C-684A-40C9-B4D0-7013A37B4CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexLightingContent", "VertexLighting\Content\VertexLightingContent.contentproj", "{C7C4B32A-1EF5-4B06-9204-50EDE277CB7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7C4B32A-1EF5-4B06-9204-50EDE277CB7E}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{C7C4B32A-1EF5-4B06-9204-50EDE277CB7E}.Release|Xbox 360.ActiveCfg = Release|x86
+		{938DD13C-684A-40C9-B4D0-7013A37B4CE5}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{938DD13C-684A-40C9-B4D0-7013A37B4CE5}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{938DD13C-684A-40C9-B4D0-7013A37B4CE5}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{938DD13C-684A-40C9-B4D0-7013A37B4CE5}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{938DD13C-684A-40C9-B4D0-7013A37B4CE5}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{938DD13C-684A-40C9-B4D0-7013A37B4CE5}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

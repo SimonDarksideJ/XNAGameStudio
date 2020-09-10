@@ -1,0 +1,990 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>Instanced Model Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Instanced Model Sample" />
+<MSHelp:RLTitle Title="Instanced Model Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.InstancedModel" />
+<MSHelp:Keyword Index="A" Term="e7e1af4d-032b-57e0-1c01-4a0d54f02408" />
+<MSHelp:Keyword Index="K" Term="Instanced Model Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="e7e1af4d-032b-57e0-1c01-4a0d54f02408" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  <h1>Instanced Model Sample</h1>
+
+  This sample shows how to efficiently render many copies of the same model by using GPU instancing techniques to reduce the cost of repeated draw calls.
+
+  <a id="ID2EK" name="ID2EK"> </a><h1 class="heading">Sample Overview</h1><div id="ID2EK" class="hxnx1">
+    
+
+    <p>Games often need to render many copies of the same model, for instance covering a landscape with trees or filling a room with crates. The calls needed to render a model are relatively expensive, and can quickly add up if you are drawing hundreds or thousands of models in a row. This sample demonstrates how to reduce the overhead of drawing many copies of the same model.</p>
+
+    <p>
+      This instancing technique can dramatically reduce the` amount of CPU work required to draw models, but it makes little difference or in some cases may even slightly increase the GPU cost. The CPU cost of drawing a model is constant regardless of how complex the model may be. However, the GPU cost increases in proportion with the number of triangles and shader complexity. For this reason, drawing low polygon models with simple shaders is likely to be limited mainly by CPU performance. More detailed meshes are likely to be bottlenecked on the GPU side. If the GPU is your bottleneck, there is nothing to be gained from using instancing. Instancing yields the most dramatic performance gains when used with relatively small and simple models—somewhere in the ballpark of 1000 triangles or less.
+    </p>
+
+    <a id="ID2EV" name="ID2EV"> </a><h2 class="subHeading">Sample Controls</h2><div id="ID2EV" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard control</th>
+          <th>Gamepad control</th>
+        </tr>
+        <tr>
+          <td>Change techniques</td>
+          <td>
+            <b>A</b>
+          </td>
+          <td>
+            <b>A</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Add instances</td>
+          <td>
+            <b>X</b>
+          </td>
+          <td>
+            <b>X</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Remove instances</td>
+          <td>
+            <b>Y</b>
+          </td>
+          <td>
+            <b>Y</b>
+          </td>
+        </tr>
+        <tr>
+          <td>Exit the sample</td>
+          <td>ESC or ALT+F4</td>
+          <td>
+            <b>BACK</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <a id="ID2ECD" name="ID2ECD"> </a><h1 class="heading">How the Sample Works</h1><div id="ID2ECD" class="hxnx1">
+    
+
+    <p>This sample implements three different rendering techniques.</p>
+    <ol>
+      <li>
+        No instancing or state batching: just calling <b>ModelMesh.Draw</b> many times in a loop.
+      </li>
+      <li>No instancing: not using any special GPU tricks, but being smarter about repeatedly setting device states.</li>
+      <li>Hardware instancing: the more efficient technique.</li>
+    </ol>
+
+    <a id="ID2EUD" name="ID2EUD"> </a><h2 class="subHeading">No Instancing or State Batching</h2><div id="ID2EUD" class="hxnx2">
+      
+
+      <p>This rendering technique does not use instancing at all, and it is not a smart approach or something that you should copy in your own code! This is included only for comparison purposes, so you can see the performance gain achieved by the following techniques.</p>
+
+      <p>
+        This technique just loops over all the active instances, calling <b>ModelMesh.Draw</b> (which sets all the rendering state and then calls <b>DrawIndexedPrimitives</b>) once for each copy of the model.
+      </p>
+
+      <p>In psuedocode, this technique is implemented as follows:</p>
+
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+        foreach (Matrix instance in instances)
+        {
+        SetVertexBuffer();
+        SetIndexBuffer();
+        SetVertexDeclaration();
+
+        SetWorldTransform(instance);
+
+        foreach (EffectPass pass in effect.CurrentTechnique.Passes)
+        {
+        pass.Apply();
+
+        DrawIndexedPrimitives();
+        }
+        }
+      </pre></pre></td></tr></table></span></div>
+
+      <p>Note the repetitiveness of setting the same state and calling the same effect methods every time around the loop.</p>
+
+    </div>
+
+    <a id="ID2EJE" name="ID2EJE"> </a><h2 class="subHeading">No Instancing</h2><div id="ID2EJE" class="hxnx2">
+      
+
+      <p>
+        This is still not a proper instancing technique. It just rearranges the C# drawing code to hoist repeated operations out of the inner loop. Instead of looping over all the instances and repeating the exact same draw code for each one, the <b>DrawModelNoInstancing</b> method takes an array of instance transform matrices, so it can draw many copies of the same model all in one go, doing the absolute minimum of repeated work per copy.
+      </p>
+
+      <p>In psuedocode, the algorithm is:</p>
+
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+        SetVertexBuffer();
+        SetIndexBuffer();
+        SetVertexDeclaration();
+
+        foreach (EffectPass pass in effect.CurrentTechnique.Passes)
+        {
+        foreach (Matrix instance in instances)
+        {
+        SetWorldTransform(instance);
+        pass.Apply();
+
+        DrawIndexedPrimitives();
+        }
+        }
+      </pre></pre></td></tr></table></span></div>
+
+    </div>
+
+    <p>
+      The interesting thing about this technique is that it does not require any shader changes at all, so it works alongside whatever other shaders you may already be using. It achieves a significant performance improvement over naively issuing many calls to <b>ModelMesh.Draw</b>, simply by being smarter about the order in which it does things. Moral: do not be afraid to replace the built-in model drawing code if you can take advantage of more specialized knowledge to optimize your particular scenario!
+    </p>
+
+    <a id="ID2E4E" name="ID2E4E"> </a><h2 class="subHeading">Hardware Instancing</h2><div id="ID2E4E" class="hxnx2">
+      
+
+      <p>This technique performs the instancing work entirely on the GPU. It has extremely low CPU load regardless of how many instances you are drawing. For optimal performance, this requires a HiDef game using shader model 3.0 vertex and pixel shaders.</p>
+
+      <p>In conventional non-indexed rendering, every set of three indices forms a triangle. The indices are used to look up into a vertex buffer, which provides data such as position, normal, and texture coordinates. The following diagram shows the data layout for a simple model that consists of just one rectangle (two triangles, specified by six indices, and four vertices).</p>
+
+      <img src="NoInstancing.png" />
+
+      <p>
+        Hardware instancing does not require any changes to that data layout, but it adds a new source of information. This is a second vertex buffer that holds transform matrices, one per instance. This second vertex buffer should be as large as the maximum number of instances you are planning to draw in a single call. It does not need to be the same size as your main vertex buffer. In each frame you call <b>SetData</b> to update this second vertex buffer with the latest transform matrices for each instance.
+      </p>
+
+      <p>
+        To pass both vertex buffers into your shader, you must specify a <b>VertexDeclaration</b> that includes this additional transform matrix data. Unfortunately, there is no <b>VertexElementFormat</b> for matrix data, so instead we must split the matrix up into four channels of type <b>Vector4</b>.
+      </p>
+
+      <p>
+        We must now set both vertex buffers onto the <b>GraphicsDevice</b> (the first holding our actual geometry data, and the second holding the instance transform matrices), and then draw by using the <b>DrawInstancedPrimitives</b> API method, as opposed to the usual <b>DrawIndexedPrimitives</b>. This is handled by the <b>DrawModelHardwareInstancing</b> method in this sample.
+      </p>
+
+      <p>
+        Finally, we must add the per instance transform matrix as an input parameter to our vertex shader. See the <b>HardwareInstancingVertexShader</b> function in <b>InstancedModel.fx</b> for an example of how to do this.
+      </p>
+
+      <p>
+        Once we have completed these setup operations, the GPU handles everything else for us. We can just call <b>DrawInstancedPrimitives</b>, and the GPU draws the specified number of copies of our model data. It reuses the same index buffer for each copy. It uses these indices to look up into the same geometry vertex buffer. It also keeps track of which instance it is currently drawing, automatically looking up the transform matrix from the appropriate part of our second vertex buffer and passing this into our vertex shader along with the position, normal, and so on.
+      </p>
+
+      <p>Using the same two triangles example shown in the previous diagram, this shows the data flow when drawing two copies of the model using hardware instancing:</p>
+
+      <img src="HardwareInstancing.png" />
+
+      <p>Data used for the first instance is shown in blue, and the second instance is green. Grey represents data that is shared between both instances. Note how triangles 0/2 and 1/3 share the same indices, which reference the same information from vertex buffer stream 0, but how each instance pulls a different transform matrix from vertex buffer stream 1.</p>
+
+    </div>
+  </div>
+
+  <a id="ID2EWG" name="ID2EWG"> </a><h1 class="heading">Extending the Sample</h1><div id="ID2EWG" class="hxnx1">
+    
+
+    <p>Apart from the instancing behavior, the shader used in this sample is not very interesting. It just implements a simple Lambert diffuse lighting model. You could extend this to add more interesting features such as specular lighting, multiple light sources, per-pixel lighting, normal mapping, and so on.</p>
+
+    <p>
+      This sample specifies only a 4×4 matrix per instance, so although each instance can be positioned differently, all the copies look 100-percent identical. You could extend this by adding additional per-instance parameters, as extra data channels of the secondary vertex stream used for hardware instancing. You could then use these extra parameters to give each instance a different tint, or to perform selective color replacement or decal selection to vary their appearance.
+    </p>
+
+  </div>
+
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Instanced Model Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

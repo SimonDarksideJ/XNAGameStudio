@@ -1,0 +1,1 @@
+The Translator Starter Kit can be downloaded from http://go.microsoft.com/fwlink/?LinkID=207165.

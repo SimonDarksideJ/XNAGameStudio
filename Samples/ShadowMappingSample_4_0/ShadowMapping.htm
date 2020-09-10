@@ -1,0 +1,879 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>Shadow Mapping Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Shadow Mapping Sample" />
+<MSHelp:RLTitle Title="Shadow Mapping Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.ShadowMapping" />
+<MSHelp:Keyword Index="A" Term="e70c90b8-3a2f-b837-0cc9-8c207117293f" />
+<MSHelp:Keyword Index="K" Term="Shadow Mapping Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="e70c90b8-3a2f-b837-0cc9-8c207117293f" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+
+  <h1>Shadow Mapping Sample</h1>
+
+  This sample shows you how to implement basic shadow mapping from a directional light where the view and projection of the shadow map adapt to the viewing frustum of the viewer's camera. You can use the sample to shadow a large scene with multiple dynamic objects that cast dynamic shadows.
+  <a id="ID2EK" name="ID2EK"> </a><h1 class="heading">What is Shadow Mapping?</h1><div id="ID2EK" class="hxnx1">
+    
+    <p>Shadow mapping refers to a shadowing technique where you can use a texture to store an object's distance from a light. When you render the scene, you can then use the distance from the light to determine if the pixel being rendered is behind the value stored in the shadow map.</p>
+    <p>Shadow mapping requires you to render the scene twice. The first step is to render all objects that may cast shadows from the point of view of the light. These objects are called occluders. This means you create a view and projection matrix that positions the scene at the light and in the direction of the light. The depth of the objects is stored in a render target. A common format to use for the render target is a 32-bit floating-point <b>SurfaceFormat.Single</b>, which allows for 32-bit precision for the depth value of objects. Some graphics cards do not support this format, however, so if you are using this type of card, you must use a 16-bit floating-point <b>SurfaceFormat.HalfSingle</b>. Older graphics cards do not support floating-point render targets at all and require a different surface format such as <b>SurfaceFormat.Rgba32</b>. In these situations, pack the distance into the four 8-bit channels.</p>
+    <p>The second step is to render the scene normally from the perspective of the camera. Determine the distance of each pixel from the light, and then sample the value stored in the shadow map. If the distance in the shadow map is closer than the distance from the light to the pixel being drawn, you know the pixel is occluded by another object. Shade the pixel to show that it is in shadow. </p>
+    <img src="shadow1.png" />
+    <p>The preceding figure shows how to render a scene from both the light's perspective and the camera's perspective. The red rectangle represents the final back buffer render. The blue rectangle represents what is stored in the shadow map from the perspective of the light. Note how only certain parts of the gray rectangle behind the orange sphere are in shadow.</p>
+    <p>There are some common artifacts when you render a scene with shadow maps. One is related to the surface format used to store the depth values. The value you use limits how precisely your scene can determine distances from the light source. This leads to incorrect shadows around areas that have similar distances from the light source. This problem is most evident on faces that cast shadows on themselves—an artifact called <i>shadow acne</i>. The following figure is an example of shadow acne. Note that a bias normally is used to offset the values to correct some of these issues.</p>
+    <img src="shadow2.png" />
+    <p>Another common artifact stems from the limit of pixels in the render target used and the area that the render target covers. If you are rendering a large area to a single render target, as we are in this sample, the amount of space covered by a single texel can be quite large. As you zoom closer into a shadow, you will notice large blocks around the edges that should be smoothed. This condition, called <i>aliasing</i>, is caused by the lack of precision the shadow map has over the area. The following figure shows an example of aliasing.</p>
+    <img src="shadow3.png" />
+    <p>Another artifact occurs only when you draw a part of an object onto the shadow map, which results in holes in the shadow. Often this happens when an object is on the edge of the shadow map. In this sample, it happens when the camera moves behind the model; the camera's frustum does not contain parts of the model. Thus, the shadow map does not contain parts of the model either as the following example shows.</p>
+    <img src="shadow4.png" />
+    </div>
+  <a id="ID2EYB" name="ID2EYB"> </a><h1 class="heading">Sample Overview</h1><div id="ID2EYB" class="hxnx1">
+    
+    <p>Remember that the first step of the shadow mapping algorithm is to render the scene from the point of view of the light. To do this, you need a view and projection matrix. To make the most efficient use of the resolution in our render target, the view and projection matrices should correspond to a frustum that is as small as possible. In this sample, calculate the view and projection matrices that correspond to the smallest possible bounding box around the camera's view frustum. This enables the shadow map to adapt in such a way that it contains only what is visible to the user. At the same time, it is still able to cover the entire viewable area.</p>
+    <img src="shadow5.png" />
+    <p>
+      The preceding figure shows the camera's frustum. The corners of the camera frustum are used to find the smallest bounding box that will fit the frustum in the direction of the light. Although this technique is a basic shadow mapping technique for a directional light, it suffers from a number of limitations, which are discussed later in  <a href="ShadowMapping.htm#limitations">Limitations of the Sample</a>.</p>
+    <a id="ID2EIC" name="ID2EIC"> </a><h2 class="subHeading">Sample Controls</h2><div id="ID2EIC" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard control</th>
+          <th>Gamepad control</th>
+        </tr>
+        <tr>
+          <td>Rotate the camera</td>
+          <td>UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+          <td>Right thumb stick</td>
+        </tr>
+        <tr>
+          <td>Move the camera</td>
+          <td>W, S, A, and D</td>
+          <td>Left thumb stick</td>
+        </tr>
+        <tr>
+          <td>Exit the sample</td>
+          <td>ESC or ALT+F4</td>
+          <td>
+            <b>BACK</b>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+    <a id="ID2E1D" name="ID2E1D"> </a><h1 class="heading">How the Sample Works</h1><div id="ID2E1D" class="hxnx1">
+      
+      <p>The sample has four main parts:</p>
+      <ul>
+        <li>Creating the render target and depth buffer for the shadow map</li>
+        <li>Calculating the light's view projection matrix <b>CreateLightViewProjectionMatrix</b></li>
+        <li>Creating the shadow map <b>CreateShadowMap</b></li>
+        <li>Drawing the scene by using the shadow map <b>DrawModelsWithShadow</b></li>
+      </ul>
+      <p>In order to create a texture that stores the depth of the objects in the scene, you need to use <b>RenderTarget2D</b> to create a render target for that purpose. The sample uses a large floating point texture <b>SurfaceFormat.Single</b> with width and height of 2048. This gives you more precise results when you render it to the shadow map. Also, you need to use <b>DepthStencilBuffer</b> when you write to the shadow map. This stores the z values of the rendered scene, which enables you to store only the closest point to the light in your shadow map.</p>
+    <p>To calculate the view projection matrix of the light source, <b>CreateLightViewProjectionMatrix</b> finds the least fitting BoundingBox around the camera's frustum in the direction of the light. It does this by rotating the camera’s frustum corners by the direction of the light. This puts the corners in light space. The light's position is then calculated by finding the middle of the back panel of the bounding box where the back of the box is the Min Z of the box.</p> 
+<p>To create the view matrix, transform the light’s position from light space into world space by using the inverse of the light's rotation. The view matrix is then constructed using the light's position and the direction of the light from its position. The projection is calculated from the size of the bounding box created earlier with the X direction being the width, the Y direction being the height, and the Z direction being the near and far plane distances. Since you are using a directional light, you should use an orthographic matrix. Because the light rays are parallel, the shadows need to be parallel, too. The light’s view and projection matrices are multiplied together to get the light’s view projection matrix.</p>
+<p>To create the shadow map, <b>CreateShadowMap</b> first calls <b>SetRenderTarget</b> to set the render target on the graphics device. Then save the current depth stencil buffer, and set the shadow depth stencil buffer on the graphics device. The render target is then cleared to white, since 1 would be the farthest away an object could be in the shadow map. Anything closer than the far plane will set a lower value in the shadow map. The <b>CreateShadowMap</b> technique in the shader draws all of the geometry that will cast shadows in the scene. The <b>CreateShadowMap_VertexShader</b> moves the vertices into light space. The <b>CreateShadowMap_PixelShader</b> then writes the depth value out to the shadow map.</p>
+<p>Finally, you need to render the scene from the camera’s perspective. Use <b>DrawWithShadowMap</b> for this purpose. Use the <b>DrawWithShadowMap</b> technique in the shader to draw each of the models in the scene. <b>DrawWithShadowMap_VertexShader</b> transforms the vertices by the world matrix and stores the result in <b>Output.WorldPos</b>. This value is then used in <b>DrawWithShadowMap_PixelShader</b> to determine the location of the pixel in light space. The position of the pixel being drawn is then compared to the value stored in the shadow map, which is also in light space. If the depth of the pixel is greater than that of the value stored in the shadow map, you know the pixel being drawn is behind something else—an occluder—that is rendered to the shadow map. Therefore, you know the pixel should be in the shadows. </p>
+      
+    </div>
+  <a id="limitations" name="limitations"> </a><h1 class="heading">Limitations of the Sample</h1><div id="limitations" class="hxnx1">
+   
+  <p>The technique demonstrated is very basic and has visible artifacts. As a consequence of using the camera's frustum as the basis of what should be in the shadow map, the entire scene rendered to the shadow map has the same precision. This leads to objects that are far away from the camera having the sample amount of pixels in the shadow map. Objects that are close to the camera need to have a higher precision to prevent aliasing. There are a number of techniques that address the precision and aliasing issues found in this sample. If you want to make changes, you have two options. You can increase the size of the shadow map, or you can shrink the size of the viewing frustum.</p>
+  <p>Objects outside the view frustum are not always drawn to the shadow map, which leads to off-screen objects that do not cast shadows into the viewable area. An easy but not perfect solution is to expand the bounding box created for the light's projection matrix so it includes a larger area. There are more advanced solutions that find all of the possible occluders and create a bounding box that will fit them and the viewing frustum correctly.</p>
+  </div>
+
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Shadow Mapping Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

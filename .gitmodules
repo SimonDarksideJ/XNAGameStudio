@@ -1,0 +1,6 @@
+[submodule "MonoGameSamples/GameStateManagementSample"]
+	path = MonoGameSamples/GameStateManagementSample
+	url = https://github.com/DDReaper/GameStateManagementSample.git
+[submodule "MonoGameSamples/XMLContentLoading"]
+	path = MonoGameSamples/XMLContentLoading
+	url = https://github.com/DDReaper/XMLContentLoading

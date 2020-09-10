@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomModelEffectXbox", "CustomModelEffect\CustomModelEffectXbox.csproj", "{301221A2-366D-4EAD-9A06-FFDB82951A08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomModelEffectContent", "CustomModelEffect\Content\CustomModelEffectContent.contentproj", "{7C820904-C914-451F-8C02-5431D4193360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomModelEffectPipeline", "CustomModelEffectPipeline\CustomModelEffectPipeline.csproj", "{30126A68-BB98-431F-A1D7-0ADB5F55D091}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C820904-C914-451F-8C02-5431D4193360}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{7C820904-C914-451F-8C02-5431D4193360}.Release|Xbox 360.ActiveCfg = Release|x86
+		{30126A68-BB98-431F-A1D7-0ADB5F55D091}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{30126A68-BB98-431F-A1D7-0ADB5F55D091}.Debug|Xbox 360.Build.0 = Debug|x86
+		{30126A68-BB98-431F-A1D7-0ADB5F55D091}.Release|Xbox 360.ActiveCfg = Debug|x86
+		{30126A68-BB98-431F-A1D7-0ADB5F55D091}.Release|Xbox 360.Build.0 = Debug|x86
+		{301221A2-366D-4EAD-9A06-FFDB82951A08}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{301221A2-366D-4EAD-9A06-FFDB82951A08}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{301221A2-366D-4EAD-9A06-FFDB82951A08}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{301221A2-366D-4EAD-9A06-FFDB82951A08}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{301221A2-366D-4EAD-9A06-FFDB82951A08}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{301221A2-366D-4EAD-9A06-FFDB82951A08}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedGeometryWindows", "GeneratedGeometry\GeneratedGeometryWindows.csproj", "{1CC27BB9-AFF1-4344-BA30-BBC0977A8147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedGeometryContent", "GeneratedGeometry\Content\GeneratedGeometryContent.contentproj", "{BFF47E18-72F7-40D0-8EA7-F848810B0BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedGeometryPipeline", "GeneratedGeometryPipeline\GeneratedGeometryPipeline.csproj", "{EF37345A-3BB3-498E-A2A3-F831DE78269B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CC27BB9-AFF1-4344-BA30-BBC0977A8147}.Debug|x86.ActiveCfg = Debug|x86
+		{1CC27BB9-AFF1-4344-BA30-BBC0977A8147}.Debug|x86.Build.0 = Debug|x86
+		{1CC27BB9-AFF1-4344-BA30-BBC0977A8147}.Release|x86.ActiveCfg = Release|x86
+		{1CC27BB9-AFF1-4344-BA30-BBC0977A8147}.Release|x86.Build.0 = Release|x86
+		{BFF47E18-72F7-40D0-8EA7-F848810B0BC6}.Debug|x86.ActiveCfg = Debug|x86
+		{BFF47E18-72F7-40D0-8EA7-F848810B0BC6}.Release|x86.ActiveCfg = Release|x86
+		{EF37345A-3BB3-498E-A2A3-F831DE78269B}.Debug|x86.ActiveCfg = Debug|x86
+		{EF37345A-3BB3-498E-A2A3-F831DE78269B}.Debug|x86.Build.0 = Debug|x86
+		{EF37345A-3BB3-498E-A2A3-F831DE78269B}.Release|x86.ActiveCfg = Debug|x86
+		{EF37345A-3BB3-498E-A2A3-F831DE78269B}.Release|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

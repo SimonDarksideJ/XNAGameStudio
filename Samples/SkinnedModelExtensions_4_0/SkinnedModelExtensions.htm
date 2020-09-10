@@ -1,0 +1,1246 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>Extending the Skinned Model Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Extending the Skinned Model Sample" />
+<MSHelp:RLTitle Title="Extending the Skinned Model Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.SkinnedModelExtensions" />
+<MSHelp:Keyword Index="A" Term="f0fd07b4-f543-7f38-f9b8-b7b199780ef3" />
+<MSHelp:Keyword Index="K" Term="Extending the Skinned Model Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="f0fd07b4-f543-7f38-f9b8-b7b199780ef3" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  
+<h1>Extending the Skinned Model Sample</h1>
+
+<p>
+  This tutorial will teach you how to extend the Skinned Model sample by directly accessing and manipulating the positions of specific bones.
+  It contains these sections:
+</p>
+<ul><li><a href="#ID2EQ">Introduction</a></li><li><a href="#ID2EIB">Task 1: Name Those Bones</a></li><li><a href="#ID2EGD">Task 2: Turn the Head, Wave the Arm</a></li><li><a href="#ID2ESAAC">Task 3: Hold It, Hold It</a></li><li><a href="#ID2EADAC">Task 4: Collision Spheres</a></li></ul>
+
+<a id="ID2EQ" name="ID2EQ"> </a><h1 class="heading">Introduction</h1><div id="ID2EQ" class="hxnx1">
+
+<p>In this tutorial, you will learn how to add three new features by directly accessing and manipulating the positions of specific bones:</p>
+<ul>
+<li>Overriding the position of selected bones from your C# code so the head or arm can be rotated independently of the rest of the animation.</li>
+<li>Positioning an object relative to an animated bone so the character can hold a baseball bat.</li>
+<li>Attaching a set of bounding spheres to the animated character, which can be used for collision detection.</li>
+</ul>
+<p>The first step is to download the Skinned Model Sample (Game Studio 4.0) from <a href="http://creators.xna.com/en-us/sample/skinnedmodel">creators.xna.com</a>. It is important to ensure you use version 4.0 of the sample because this tutorial will not match up properly if you are following along using an earlier version!</p>
+<p>If you want to jump straight to the end result, the final code produced by following this tutorial is in the SkinnedModelExtensions subfolder.</p>
+</div>
+
+<a id="ID2EIB" name="ID2EIB"> </a><h1 class="heading">Task 1: Name Those Bones</h1><div id="ID2EIB" class="hxnx1">
+
+<p>Character animations are created by attaching vertices to a skeleton structure that specifies the current position of each bone. Individual vertices of the character model are moved according to whichever bone they are attached to, or if a vertex is on the joint between several bones, its position may be interpolated between more than one bone.</p>
+<p>In the Content Pipeline, the skeleton structure is represented as a tree of <b>BoneContent</b> objects, each of which has a unique name string. The <code>SkinnedModelProcessor</code> provided by the Skinning Sample converts this tree of bones into a <code>SkinningData</code> object, which identifies bones by integer index rather than by name (because index format is more efficient for playing back the animation at runtime).</p>
+<p>The three features we are adding require the ability to identify specific bones by name, so our first task is to extend the <code>SkinningData</code> class to include bone name information.</p>
+<p>Open the SkinningData.cs file, and add this new property to the end of the class (at line 75):</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    /// &lt;summary&gt;
+    /// Dictionary mapping bone names to their indices in the preceding lists.
+    /// &lt;/summary&gt;
+     [ContentSerializer]
+    public Dictionary&lt;string, int&gt; BoneIndices { get; private set; }</pre></pre></td></tr></table></span></div>
+
+<p>We must also change the <code>SkinningData</code> constructor to initialize the new property. At line 24, replace the existing constructor with this version:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    /// &lt;summary&gt;
+    /// Constructs a new skinning data object.
+    /// &lt;/summary&gt;
+    public SkinningData(Dictionary&lt;string, AnimationClip&gt; animationClips,
+                        List&lt;Matrix&gt; bindPose, List&lt;Matrix&gt; inverseBindPose,
+                        List&lt;int&gt; skeletonHierarchy,
+                        Dictionary&lt;string, int&gt; boneIndices)
+    {
+        AnimationClips = animationClips;
+        BindPose = bindPose;
+        InverseBindPose = inverseBindPose;
+        SkeletonHierarchy = skeletonHierarchy;
+        BoneIndices = boneIndices;
+    }</pre></pre></td></tr></table></span></div>
+
+<p>Now we're going to change the custom processor so that it will gather the bone name data and pass it through to our modified constructor. Open SkinnedModelProcessor.cs, and insert this code at line 64 (after the declaration of the <code>skeletonHierarchy</code> field):</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    Dictionary&lt;string, int&gt; boneIndices = new Dictionary&lt;string, int&gt;();</pre></pre></td></tr></table></span></div>
+
+<p>At line 71, immediately before the closing brace of the <b>foreach</b> loop, add this line:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    boneIndices.Add(bone.Name, boneIndices.Count);</pre></pre></td></tr></table></span></div>
+
+<p>Finally, at line 82, change the code that constructs the <code>SkinningData</code> object to pass an extra <code>boneIndices</code> argument, replacing the existing two lines with:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    model.Tag = new SkinningData(animationClips, bindPose,
+                                 inverseBindPose, skeletonHierarchy,
+                                 boneIndices);</pre></pre></td></tr></table></span></div>
+
+<p>Mission accomplished! If you compile and run the modified sample, it will appear exactly the same as before. The bone names are now available at runtime, but we have not yet written any code to use this new data.</p>
+</div>
+
+<a id="ID2EGD" name="ID2EGD"> </a><h1 class="heading">Task 2: Turn the Head, Wave the Arm</h1><div id="ID2EGD" class="hxnx1">
+
+<p>There are three different coordinate systems involved in skeletal animation:</p>
+<ul>
+<li>Animation data is stored in bone space where the position of each bone is specified relative to its parent bone. This representation is compact and convenient to work with. For instance, if we apply a rotation to the arm bone, the hand and finger bones will automatically move along with it—even though their local transforms are not animated—because they will inherit the rotation from their parent bone.</li>
+<li>Bone transforms are converted into world space by multiplying each one by the world transform of its parent bone. World transforms are useful because they give the absolute position of each bone in 3D space.</li>
+<li>Skin space is calculated by multiplying each world space matrix by the inverse bind pose matrix for that bone. This leaves us with the difference between the current position of the bone and the position this bone had when the character model was first constructed, which is exactly what we need to render the skinned model geometry.</li>
+</ul>
+<p>Open AnimationPlayer.cs, and look at the <b>Update</b> method (line 82). You will see that it just calls three helper methods, one after another:</p>
+<ul>
+<li>
+  <code>UpdateBoneTransforms</code> extracts the latest bone space matrices from the animation data.</li>
+<li>
+  <code>UpdateWorldTransforms</code> converts the bone space matrices into world space.</li>
+<li>
+  <code>UpdateSkinTransforms</code> converts the world space matrices into skin space.</li>
+</ul>
+<p>In order to override the position of specific bones, we want to change the bone transform matrices before they are passed to <code>UpdateWorldTransforms</code>. To make this possible, we must change the <code>UpdateWorldTransforms</code> method so it takes the bone transform matrices as a parameter, rather then looking them up from a field of the <code>AnimationPlayer</code> class.</p>
+<p>At line 144 of AnimationPlayer.cs, change this method signature:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    public void UpdateWorldTransforms(Matrix rootTransform)</pre></pre></td></tr></table></span></div>
+
+<p>to:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    public void UpdateWorldTransforms(Matrix rootTransform, Matrix[] boneTransforms)</pre></pre></td></tr></table></span></div>
+
+<p>And at line 86, add this new parameter to the call site:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    UpdateWorldTransforms(rootTransform, boneTransforms);</pre></pre></td></tr></table></span></div>
+
+<p>Now we are going to open up SkinningSample.cs. At line 35 (after the <code>animationPlayer</code> field), add two new fields:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    SkinningData skinningData;
+    Matrix[] boneTransforms;</pre></pre></td></tr></table></span></div>
+
+<p>At line 70, in the <b>LoadContent</b> method, change:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    SkinningData skinningData = currentModel.Tag as SkinningData;</pre></pre></td></tr></table></span></div>
+
+<p>to:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    skinningData = currentModel.Tag as SkinningData;</pre></pre></td></tr></table></span></div>
+
+<p>The <code>SkinningData</code> object will now be stored in a field rather than just locally to this method, so we can access it later on in our animation code.</p>
+<p>At line 75 (the next line after the "This model does not contain a SkinningData tag." error handling code), add this line to initialize an array that will be used to hold temporary bone matrices:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    boneTransforms = new Matrix[skinningData.BindPose.Count];</pre></pre></td></tr></table></span></div>
+
+<p>Now for the fun stuff!</p>
+<p>In the <code>SkinningSample.Update</code> method, at line 100 (after the <code>UpdateCamera</code> call), add this code for reading gamepad input:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    // Read gamepad inputs.
+    float headRotation = currentGamePadState.ThumbSticks.Left.X;
+    float armRotation = Math.Max(currentGamePadState.ThumbSticks.Left.Y, 0);</pre></pre></td></tr></table></span></div>
+
+<p>And this code for reading keyboard input:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    // Read keyboard inputs.
+    if (currentKeyboardState.IsKeyDown(Keys.PageUp))
+        headRotation = -1;
+    else if (currentKeyboardState.IsKeyDown(Keys.PageDown))
+        headRotation = 1;
+
+    if (currentKeyboardState.IsKeyDown(Keys.Space))
+        armRotation = 0.5f;</pre></pre></td></tr></table></span></div>
+
+<p>And this code that will create rotation matrices based on the inputs that we just read:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    // Create rotation matrices for the head and arm bones.
+    Matrix headTransform = Matrix.CreateRotationX(headRotation);
+    Matrix armTransform = Matrix.CreateRotationY(-armRotation);</pre></pre></td></tr></table></span></div>
+
+<p>Replace this line, which calls the <code>AnimationPlayer.Update</code> method:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    animationPlayer.Update(gameTime.ElapsedGameTime, true, Matrix.Identity);</pre></pre></td></tr></table></span></div>
+
+<p>With this version:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    // Tell the animation player to compute the latest bone transform matrices.
+    animationPlayer.UpdateBoneTransforms(gameTime.ElapsedGameTime, true);
+
+    // Copy the transforms into our own array, so we can safely modify the values.
+    animationPlayer.GetBoneTransforms().CopyTo(boneTransforms, 0);
+
+    // Tell the animation player to recompute the world and skin matrices.
+    animationPlayer.UpdateWorldTransforms(Matrix.Identity, boneTransforms);
+    animationPlayer.UpdateSkinTransforms();</pre></pre></td></tr></table></span></div>
+
+<p>This is basically just inlining the same three calls (<code>UpdateBoneTransforms</code>, <code>UpdateWorldTransforms</code>, and <code>UpdateSkinTransforms</code>) that <code>AnimationPlayer.Update</code> was previously doing for us. The only difference is that because it copies the bone transforms into our own array before passing them to <code>UpdateWorldTransforms</code>, we now have the ability to change these matrices en route.</p>
+<p>How do we know which matrix in the array to change? This is where the <code>SkinningData.BoneIndices</code> dictionary (which we added in the first section of this tutorial) comes into play. Of course, this dictionary is only useful if we know the name of the bone we are looking for. To see what bone names are used in our skeleton, look in the SkinningSample\Content\obj\x86\Debug folder where you will find a file named dude_0.xml (if you are unable to find the file, you may need to build the project to create it). This contains a cached copy of the model data, and is created as a side effect of building the content. Load this file into Visual Studio, and search for "BoneContent."  You will find a tree of nested elements that looks something like this:</p>
+
+<pre>
+    &lt;Child Type="Graphics:BoneContent"&gt;
+      &lt;Name&gt;Root&lt;/Name&gt;
+      &lt;OpaqueData&gt;
+        &lt;Data Key="liw" Type="bool"&gt;false&lt;/Data&gt;
+      &lt;/OpaqueData&gt;
+      &lt;Transform&gt;...&lt;/Transform&gt;
+      &lt;Children&gt;
+        &lt;Child Type="Graphics:BoneContent"&gt;
+          &lt;Name&gt;Pelvis&lt;/Name&gt;
+          ...</pre>
+
+<p>Now we can see that this skeleton contains bones named "Root," "Pelvis," "Spine," "Neck," and so on.</p>
+<p>Armed with this information, we can add this code to modify two selected bone matrices after the <code>GetBoneTransforms</code> call, but before <code>UpdateWorldTransforms</code>:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    // Modify the transform matrices for the head and upper-left arm bones.
+    int headIndex = skinningData.BoneIndices["Head"];
+    int armIndex = skinningData.BoneIndices["L_UpperArm"];
+
+    boneTransforms[headIndex] = headTransform * boneTransforms[headIndex];
+    boneTransforms[armIndex] = armTransform * boneTransforms[armIndex];</pre></pre></td></tr></table></span></div>
+
+<p>Now run the sample. To rotate the head, move the left thumbstick left and right, or press the PAGE UP and PAGE DOWN keys.  To wave the left arm, move the left thumbstick up, or press the SPACEBAR key.</p>
+<p>In this example, we multiplied our custom rotations with the existing bone transform matrices. It is also possible to entirely replace selected matrices, thus disabling animation for those bones, or to mix and match matrices from more than one AnimationPlayer in order to play back different animations on different parts of the body, or even to blend between two sets of matrices to cross fade between animations.</p>
+</div>
+  
+<a id="ID2ESAAC" name="ID2ESAAC"> </a><h1 class="heading">Task 3: Hold It, Hold It</h1><div id="ID2ESAAC" class="hxnx1">
+
+
+<p>To make the character hold an object, we first need an object for the character to hold. Download the Object Placement On Avatar sample from <a href="http:creators.xna.com">Creators Club Online</a>, open the Content folder, and then drag the baseballbat.fbx file into the SkinningSampleContent project, next to the existing dude.fbx file.</p>
+<p>This baseball bat model was built at a different scale to our character model, but fortunately there is an easy way to fix that. Right-click the <b>baseballbat.fbx</b> node in Solution Explorer, and choose <b>Properties</b>. On the <b>Properties</b> tab, click the <b>plus sign</b> next to Content Processor; a list of custom processor parameters is shown. Change the Scale setting from 1 to 30, and the X Axis Rotation from 0 to 120.</p>
+<p>In SkinningSample.cs, add this field to store the bat model at line 37 (after the <code>boneTransforms</code> field):</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    Model baseballBat;</pre></pre></td></tr></table></span></div>
+
+<p>At line 78 (immediately before the "Create an animation player" comment) add this call to load the model:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    // Load the baseball bat model.
+    baseballBat = Content.Load&lt;Model&gt;("baseballbat");</pre></pre></td></tr></table></span></div>
+
+<p>At the end of the <code>Draw</code> method, right before the <code>base.Draw</code> call, add this call:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    DrawBaseballBat(view, projection);</pre></pre></td></tr></table></span></div>
+
+<p>Finally, insert this new method to draw the bat immediately after the end of the existing <code>Draw</code> code:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    /// &lt;summary&gt;
+    /// Draws the baseball bat.
+    /// &lt;/summary&gt;
+    void DrawBaseballBat(Matrix view, Matrix projection)
+    {
+        int handIndex = skinningData.BoneIndices["L_Index1"];
+
+        Matrix[] worldTransforms = animationPlayer.GetWorldTransforms();
+
+        foreach (ModelMesh mesh in baseballBat.Meshes)
+        {
+            foreach (BasicEffect effect in mesh.Effects)
+            {
+                effect.World = worldTransforms[handIndex];
+                effect.View = view;
+                effect.Projection = projection;
+
+                effect.EnableDefaultLighting();
+            }
+
+            mesh.Draw();
+        }
+    }</pre></pre></td></tr></table></span></div>
+
+<p>This looks up the current world space transform matrix for the left index finger bone, and uses this as the World transform when drawing the baseball bat model.</p>
+<p>When you run the sample, you will see the character is now holding a bat, and the bat moves in sync with the animation. If you look closely at the bat, however, you'll notice that it appears to protrude through the character's finger. To correct this, we can insert a small translation in the <code>DrawBaseballBat</code> method we just added. Add the following code just before the two nested <b>foreach</b> statements. (The values were obtained through simple experimentation.)</p>
+  <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    // Nudge the bat over so it appears between the left thumb and index finger.
+    Matrix batWorldTransform = Matrix.CreateTranslation(-1.3f, 2.1f, 0.1f) *
+                               worldTransforms[handIndex];
+  </pre></pre></td></tr></table></span></div>
+  <p>Then change the mesh effect world transform in the same <code>DrawBaseballBat</code> method from this:</p>
+  <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>effect.World = worldTransforms[handIndex];</pre></pre></td></tr></table></span></div>
+  <p>to this:</p>
+  <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>effect.World = batWorldTransform;</pre></pre></td></tr></table></span></div>
+</div>
+  
+<a id="ID2EADAC" name="ID2EADAC"> </a><h1 class="heading">Task 4: Collision Spheres</h1><div id="ID2EADAC" class="hxnx1">
+
+
+<p>Detecting collisions against animated character models can be tricky, because the collision shape needs to move in sync with the animation!  One of the most common solutions is to approximate the shape of the model using a number of spheres: a couple for the torso, one for the head, two or three along each arm, and so on. This is obviously only an approximation of the true shape of the model, but it is easy to implement and efficient to test against, so many games find it to be a good approach. If you need more accuracy, you can always just use a larger number of smaller spheres to reduce the errors.</p>
+  <div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>Spheres are an especially efficient primitive for animated characters, far more so than bounding boxes because they are especially efficient to transform. When you rotate a sphere, the result is still a sphere and still the same size, so only the translation part of each bone matrix needs to be taken into account.</td></tr></table></div>
+
+<p>We are going to define our collision spheres by using an XML file to specify the size and parent bone of each sphere. First we need a new class to represent this data. Right-click the <b>SkinnedModelWindows</b> project, select <b> Add</b> | <b>New Item</b> | <b>Class</b>, and then enter <b>SkinnedSphere.cs</b> as the name. If you are working on the Xbox version of the sample, you will then have to <b>Add</b> | <b>Existing Item</b> on the SkinnedModelXbox project, and add <b>SkinnedSphere.cs</b> here as well.</p>
+<p>Replace the contents of SkinnedSphere.cs with this code:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Content;
+
+    namespace SkinnedModel
+    {
+        public class SkinnedSphere
+        {
+            public string BoneName;
+            public float Radius;
+
+            [ContentSerializer(Optional = true)]
+            public float Offset;
+        }
+    }</pre></pre></td></tr></table></span></div>
+
+<p>The <b>Offset</b> property positions the collision sphere along the length of the bone. This is used if we want several small spheres at different positions along a lengthy bone, for instance an upper arm bone might have one near the shoulder, one near the elbow, and a third in between. Not all spheres need an offset, so we use a ContentSerializer attribute to declare this field as optional.</p>
+<p>Right-click the <b>SkinningSampleContent project</b>, choose <b>Add</b> | <b>New Item</b> | <b>XML File</b>, and then enter <b>CollisionSpheres.xml</b> as the name. Replace the contents of the new file with this XML:</p>
+
+<pre>
+    &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+    &lt;XnaContent&gt;
+      &lt;Asset Type="SkinnedModel.SkinnedSphere[]"&gt;
+        &lt;Item&gt;
+          &lt;BoneName&gt;Spine&lt;/BoneName&gt;
+          &lt;Radius&gt;16&lt;/Radius&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;BoneName&gt;Spine3&lt;/BoneName&gt;
+          &lt;Radius&gt;18&lt;/Radius&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;BoneName&gt;Head&lt;/BoneName&gt;
+          &lt;Radius&gt;10&lt;/Radius&gt;
+          &lt;Offset&gt;4&lt;/Offset&gt;
+        &lt;/Item&gt;
+      &lt;/Asset&gt;
+    &lt;/XnaContent&gt;</pre>
+
+<p>So how do we know if these spheres are in the correct place? We need some kind of debug rendering in order to see where each sphere is positioned.</p>
+
+  <p>Download version 4.0 of the Primitives 3D Sample from <a href="http:creators.xna.com">creators.xna.com</a>. Right-click the <b>SkinningSample game project</b>, click <b>Add</b>, click <b>New Folder</b>, and then enter <b>Primitives3D</b> as the name. Drag the files GeometricPrimitive.cs, SpherePrimitive.cs, and VertexPositionNormal.cs from the Primitives 3D sample, and drop them into this new folder in <b>Solution Explorer</b>.</p>
+<p>At the top of the SkinningSample.cs file, we must add a new using statement at line 17:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    using Primitives3D;</pre></pre></td></tr></table></span></div>
+
+<p>We are going to add an option to toggle on and off debug sphere rendering. To do this, we must track the input state—both previous and current—in order to detect when a toggle button has been pressed. Add these fields at line 34 (after the existing <code>currentKeyboardState</code> and <code>currentGamePadState</code> fields):</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    KeyboardState previousKeyboardState = new KeyboardState();
+    GamePadState previousGamePadState = new GamePadState();</pre></pre></td></tr></table></span></div>
+
+<p>Also add these fields for animating and displaying the collision spheres:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    SkinnedSphere[] skinnedSpheres;
+    BoundingSphere[] boundingSpheres;
+
+    bool showSpheres;
+    SpherePrimitive spherePrimitive;</pre></pre></td></tr></table></span></div>
+
+<p>Add this code at the end of the <b>LoadContent</b> method to load the <code>SkinnedSphere</code> data from the XML file we previously created, and to initialize the <code>SpherePrimitive</code> helper object that will be used to display the spheres:</p>
+ 
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    // Load the bounding spheres.
+    skinnedSpheres = Content.Load&lt;SkinnedSphere[]&gt;("CollisionSpheres");
+    boundingSpheres = new BoundingSphere[skinnedSpheres.Length];
+
+    spherePrimitive = new SpherePrimitive(GraphicsDevice, 1, 12);</pre></pre></td></tr></table></span></div>
+
+<p>At the end of the <code>Update</code> method, between the calls to <code>UpdateSkinTransforms</code> and <code>base.Update</code>, add a new method call:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    UpdateBoundingSpheres();</pre></pre></td></tr></table></span></div>
+
+<p>This new method is implemented as follows:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    /// &lt;summary&gt;
+    /// Updates the boundingSpheres array to match the current animation state.
+    /// &lt;/summary&gt;
+    void UpdateBoundingSpheres()
+    {
+        // Look up the current world space bone positions.
+        Matrix[] worldTransforms = animationPlayer.GetWorldTransforms();
+
+        for (int i = 0; i &lt; skinnedSpheres.Length; i++)
+        {
+            // Convert the SkinnedSphere description to a BoundingSphere.
+            SkinnedSphere source = skinnedSpheres[i];
+            Vector3 center = new Vector3(source.Offset, 0, 0);
+            BoundingSphere sphere = new BoundingSphere(center, source.Radius);
+
+            // Transform the BoundingSphere by its parent bone matrix,
+            // and store the result into the boundingSpheres array.
+            int boneIndex = skinningData.BoneIndices[source.BoneName];
+
+            boundingSpheres[i] = sphere.Transform(worldTransforms[boneIndex]);
+        }
+    }</pre></pre></td></tr></table></span></div>
+
+<p>At the end of the <code>Draw</code> method, between the calls to <code>DrawBaseballBat</code> and <code>base.Draw</code>, add a new method call to display the resulting animated spheres:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    if (showSpheres)
+    {
+        DrawBoundingSpheres(view, projection);
+    }</pre></pre></td></tr></table></span></div>
+
+<p>This new method is implemented as follows:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    /// &lt;summary&gt;
+    /// Draws the animated bounding spheres.
+    /// &lt;/summary&gt;
+    void DrawBoundingSpheres(Matrix view, Matrix projection)
+    {
+        GraphicsDevice.RasterizerState = Wireframe;
+
+        foreach (BoundingSphere sphere in boundingSpheres)
+        {
+            Matrix world = Matrix.CreateScale(sphere.Radius) *
+                           Matrix.CreateTranslation(sphere.Center);
+
+            spherePrimitive.Draw(world, view, projection, Color.White);
+        }
+
+        GraphicsDevice.RasterizerState = RasterizerState.CullCounterClockwise;
+    }
+  
+
+    static RasterizerState Wireframe = new RasterizerState
+    {
+        FillMode = FillMode.WireFrame
+    };</pre></pre></td></tr></table></span></div>
+
+<p>Finally, we need a way to toggle on and off sphere display. Replace the <code>HandleInput</code> method with this new code:</p>
+
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+    private void HandleInput()
+    {
+        previousKeyboardState = currentKeyboardState;
+        previousGamePadState = currentGamePadState;
+                
+        currentKeyboardState = Keyboard.GetState();
+        currentGamePadState = GamePad.GetState(PlayerIndex.One);
+
+        // Check for exit.
+        if (currentKeyboardState.IsKeyDown(Keys.Escape) ||
+            currentGamePadState.Buttons.Back == ButtonState.Pressed)
+        {
+            Exit();
+        }
+
+        // Toggle the collision sphere display.
+        if ((currentKeyboardState.IsKeyDown(Keys.Enter) &amp;&amp;
+             previousKeyboardState.IsKeyUp(Keys.Enter)) ||
+            (currentGamePadState.IsButtonDown(Buttons.A) &amp;&amp;
+             previousGamePadState.IsButtonUp(Buttons.A)))
+        {
+            showSpheres = !showSpheres;
+        }
+    }</pre></pre></td></tr></table></span></div>
+
+<p>When you run the sample, you can now press the <b>A</b> button on the gamepad or the ENTER key, and three spheres will appear attached to the torso and head of the character model.  More spheres can be added by extending the XML file. See the version of CollisionSpheres.xml in the SkinnedModelExtensions subfolder for a complete version that covers both arms, legs, and feet with a set of 25 spheres.</p>
+<p>To check for collisions with the character, you can now simply loop over each <code>BoundingSphere</code> in the <code>boundingSpheres</code> array, and call <code>BoundingSphere.Intersects</code> for each.</p>
+<p>Many games actually end up using more than one set of bounding spheres per character, so they can adjust the sphere sizes to improve the gameplay experience. For example, collision between the character and the environment might use quite large spheres to ensure the entire character model was inside the collision spheres, and, thus, the character could never put his arm through a wall. Whereas collision between the character and enemy bullet fire might use smaller spheres to ensure the collision detection will never register a false positive where a bullet that did not actually intersect the character model is still detected as a hit. Both forms of collision are only approximate, but depending on the gameplay situation, one may want to err on the side of being too generous, while the other errs on the side of being too cautious.</p>
+
+</div>
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Extending the Skinned Model Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

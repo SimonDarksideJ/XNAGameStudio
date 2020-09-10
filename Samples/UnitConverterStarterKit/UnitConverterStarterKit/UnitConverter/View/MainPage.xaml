@@ -1,0 +1,450 @@
+﻿<!-- 
+    
+Copyright (c) 2010 Microsoft Corporation.  All rights reserved.
+
+Use of this source code is subject to the terms of the Microsoft
+license agreement under which you licensed this source code.
+If you did not accept the terms of the license agreement,
+you are not authorized to use this source code.
+For the terms of the license, please see the license agreement
+signed by you and Microsoft.
+THE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+    
+-->
+    <local:PageCommon 
+    xmlns:local="clr-namespace:Microsoft.Phone.Applications.UnitConverter.View"
+    x:Class="Microsoft.Phone.Applications.UnitConverter.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:navigation="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converters="clr-namespace:Microsoft.Phone.Applications.UnitConverter.Converters" 
+    xmlns:viewmodel="clr-namespace:Microsoft.Phone.Applications.UnitConverter.ViewModel"
+    xmlns:contextControl="clr-namespace:Microsoft.Phone.Applications.Common.Controls"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    shell:SystemTray.IsVisible="False">
+
+    <navigation:PhoneApplicationPage.Resources>
+
+        <!--<viewmodel:MainPageViewModel x:Key="ViewModel"/>-->
+        
+        <Style x:Key="btnKeypadPlusMinusStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PhoneBackgroundBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver" />
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="background" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                                                <SplineColorKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastBackgroundColor}"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pathPlusMinus" Storyboard.TargetProperty="Fill">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard/>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused" />
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="background" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" >
+                                <Path x:Name="pathPlusMinus" Fill="{TemplateBinding Foreground}" Stretch="Fill" Height="39.931" Width="30.196" Canvas.Left="477.303" Canvas.Top="371.833" Data="F1M549.501,426.6846L537.565,426.6846L537.565,438.6826L531.302,438.6826L531.302,426.6846L519.429,426.6846L519.429,420.3916L531.302,420.3916L531.302,408.2696L537.565,408.2696L537.565,420.3916L549.501,420.3916z M549.438,448.2006L519.305,448.2006L519.305,441.9066L549.438,441.9066z"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <converters:DecimalSeparatorMarginConverter x:Key="decimalSeparatorMarginConverter" />
+
+        <Style x:Key="btnKeypadPointStyle" TargetType="Button">
+
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver" />
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="background" Storyboard.TargetProperty="(Control.Background)">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastBackgroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="pathPoint" Storyboard.TargetProperty="Fill">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>-->
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="decimal" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused" />
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="background" 
+                                    Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" >
+                                <!--<Path x:Name="pathPoint" Fill="{TemplateBinding Foreground}" Stretch="Fill" Height="8.201" Width="8.167" Canvas.Left="254.808" Canvas.Top="400.135" Data="F1M300.856,444.7725C299.739,444.7725,298.784,444.3715,297.995,443.5705C297.205,442.7675,296.81,441.8075,296.81,440.6895C296.81,439.5725,297.205,438.6065,297.995,437.7925C298.784,436.9775,299.739,436.5715,300.856,436.5715C301.999,436.5715,302.971,436.9775,303.774,437.7925C304.575,438.6065,304.977,439.5725,304.977,440.6895C304.977,441.8075,304.575,442.7675,303.774,443.5705C302.971,444.3715,301.999,444.7725,300.856,444.7725"/>-->
+                                <TextBlock x:Name="decimal"
+                                           FontSize="80"
+                                           Text="{TemplateBinding Content}"
+                                           Margin="{Binding Path=CurrentCulture.NumberFormat.NumberDecimalSeparator, Source={StaticResource Resources}, Converter={StaticResource decimalSeparatorMarginConverter}}" />
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnKeypadKeyBackStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PhoneBackgroundBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver" />
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="background" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                                                <SplineColorKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastBackgroundColor}"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="pathBack1" Storyboard.TargetProperty="Stroke">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>-->
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pathBack2" Storyboard.TargetProperty="Stroke">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pathBack2" Storyboard.TargetProperty="Fill">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard/>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused" />
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="background" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" >
+                                <Path x:Name="pathBack2" 
+                                         Fill="{TemplateBinding Foreground}" 
+                                         Stretch="Uniform" 
+                                         Height="35" 
+                                         Width="35"   
+                                         Data="F1 M 389.244,283.559L 399.073,274.285L 391.078,274.285L 377.923,286.694L 391.018,299.048L 399.013,299.048L 389.244,289.831L 411.41,289.831L 411.41,283.559L 389.244,283.559 Z "/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnKeypadKeyCancelStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PhoneBackgroundBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver" />
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="background" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                                                <SplineColorKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastBackgroundColor}"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pathCancel" Storyboard.TargetProperty="Fill">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneContrastForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard/>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused" />
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="background" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" >
+                                <Path x:Name="pathCancel" Fill="{TemplateBinding Foreground}" Stretch="Fill" Height="23.157" Width="17.047" Canvas.Left="137.206" Canvas.Top="20.781" Data="F1M196.2549,79.0625C194.5669,79.9375,192.4679,80.3755,189.9579,80.3755C186.7079,80.3755,184.1039,79.3495,182.1459,77.2965C180.1869,75.2455,179.2079,72.5525,179.2079,69.2185C179.2079,65.6355,180.3099,62.7395,182.5129,60.5315C184.7159,58.3235,187.4999,57.2185,190.8639,57.2185C193.0299,57.2185,194.8269,57.5265,196.2549,58.1405L196.2549,61.8285C194.7439,60.9325,193.0769,60.4845,191.2549,60.4845C188.8269,60.4845,186.8609,61.2605,185.3569,62.8125C183.8509,64.3645,183.0989,66.4375,183.0989,69.0315C183.0989,71.4995,183.8019,73.4665,185.2079,74.9295C186.6139,76.3935,188.4629,77.1245,190.7549,77.1245C192.8689,77.1245,194.7019,76.6245,196.2549,75.6245z"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </navigation:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <!--DataContext="{Binding  Source={StaticResource ViewModel}}"-->
+    <Grid x:Name="LayoutRoot" 
+          Background="{StaticResource PhoneContrastForegroundBrush}" 
+          CacheMode="BitmapCache">
+        <StackPanel Orientation="Vertical">
+            <TextBlock x:Name="textBlockCategory" 
+                       Text="{Binding Path=UppercasedCategory}"
+                       Margin="23,24,0,0"
+                       FontSize="{StaticResource PhoneFontSizeMedium}"  
+                       FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                       Foreground="{StaticResource PhoneForegroundBrush}" />
+            <StackPanel x:Name="spInput" 
+                        Orientation="Vertical" 
+                        Margin="0,0,24,0" >
+                <TextBlock x:Name="textBlockInputValue" 
+                           Text="{Binding Path=UpperUnitValue}"
+                           Height="80" Margin="0,2,0,0" 
+                           TextAlignment="Right" 
+                           FontSize="{StaticResource PhoneFontSizeExtraExtraLarge}" 
+                           FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                           Foreground="{StaticResource PhoneForegroundBrush}" />
+                <TextBlock x:Name="textBlockInputUnit" 
+                           Text="{Binding Path=UpperUnitName}"
+                           Height="34" TextAlignment="Right" Margin="0,2,0,0" 
+                           FontSize="{StaticResource PhoneFontSizeMediumLarge}" 
+                           Foreground="{StaticResource PhoneAccentBrush}" 
+                           FontFamily="{StaticResource PhoneFontFamilySemiBold}" />
+            </StackPanel>
+            <StackPanel x:Name="spResult" 
+                        Orientation="Vertical" 
+                        Margin="0,-4,24,0" >
+                <TextBlock x:Name="textBlockResultValue" 
+                            Text="{Binding Path=LowerUnitValue}"
+                           Height="80" TextAlignment="Right" Margin="0,-4,0,0" 
+                           FontSize="{StaticResource PhoneFontSizeExtraExtraLarge}" 
+                           FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                           Foreground="{StaticResource PhoneSubtleBrush}"/>
+                <TextBlock x:Name="textBlockResultUnit" 
+                           Text="{Binding Path=LowerUnitName}"
+                           Height="34" TextAlignment="Right" Margin="0,2,0,0" 
+                           FontSize="{StaticResource PhoneFontSizeMediumLarge}" 
+                           Foreground="{StaticResource PhoneAccentBrush}" 
+                           FontFamily="{StaticResource PhoneFontFamilySemiBold}" />
+            </StackPanel>
+            <StackPanel x:Name="spSummary" >
+                <TextBlock x:Name="textBlockSummary"
+                           Text="{Binding Path=Summary}"
+                           Height="30" TextAlignment="Center" Margin="0,18,0,0" 
+                           FontSize="{StaticResource PhoneFontSizeNormal}"
+                           Foreground="{StaticResource PhoneSubtleBrush}" 
+                           FontFamily="{StaticResource PhoneFontFamilyNormal}" />
+            </StackPanel>
+            <StackPanel x:Name="spKeypad" Orientation="Vertical" HorizontalAlignment="Right">
+                <StackPanel x:Name="spKeypadRow1" Orientation="Horizontal">
+                    <Button x:Name="btnKeypadKey7" 	
+                            Content="7" 
+                            Background="{StaticResource PhoneInactiveBrush}" 
+                            Foreground="{StaticResource PhoneForegroundBrush}"	
+                            Height="84" Margin="6" Width="108"
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKey8" 	
+                            Content="8" 
+                            Background="{StaticResource PhoneInactiveBrush}" 
+                            Foreground="{StaticResource PhoneForegroundBrush}"	
+                            Height="84" Margin="6" Width="108"
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKey9" 	
+                            Content="9" 
+                            Background="{StaticResource PhoneInactiveBrush}" 
+                            Foreground="{StaticResource PhoneForegroundBrush}"	
+                            Height="84" Margin="6" Width="108"
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKeyCancel" 
+                            Height="84" Margin="6" Width="108" 
+                            Style="{StaticResource btnKeypadKeyCancelStyle}" 
+                            Background="{StaticResource PhoneDisabledBrush}" 
+                            FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"  
+                            Click="OnClickClear" />
+                </StackPanel>
+                <StackPanel x:Name="spKeypadRow2" Orientation="Horizontal">
+                    <Button x:Name="btnKeypadKey4" 	
+                            Content="4" 
+                            Background="{StaticResource PhoneInactiveBrush}"	 
+                            Foreground="{StaticResource PhoneForegroundBrush}"			
+                            Height="84" Margin="6" Width="108" 
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKey5" 	
+                            Content="5" 
+                            Background="{StaticResource PhoneInactiveBrush}"	 
+                            Foreground="{StaticResource PhoneForegroundBrush}"			
+                            Height="84" Margin="6" Width="108" 
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKey6" 	
+                            Content="6" 
+                            Background="{StaticResource PhoneInactiveBrush}"	 
+                            Foreground="{StaticResource PhoneForegroundBrush}"			
+                            Height="84" Margin="6" Width="108" 
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKeyBack" 	
+                            Height="84" Margin="6" Width="108"  
+                            Style="{StaticResource btnKeypadKeyBackStyle}" 
+                            Background="{StaticResource PhoneDisabledBrush}" 
+                            FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"  
+                            Click="OnClickBack" />
+                </StackPanel>
+                <StackPanel x:Name="spKeypadRow3" Orientation="Horizontal">
+                    <Button x:Name="btnKeypadKey1" 		
+                            Background="{StaticResource PhoneInactiveBrush}"	
+                            Foreground="{StaticResource PhoneForegroundBrush}"		
+                            Height="84" Margin="6" Width="108" 
+                            Content="1" 
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKey2" 		
+                            Content="2" 
+                            Background="{StaticResource PhoneInactiveBrush}"	
+                            Foreground="{StaticResource PhoneForegroundBrush}"		
+                            Height="84" Margin="6" Width="108" 
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKey3" 		
+                            Content="3" 
+                            Background="{StaticResource PhoneInactiveBrush}"	
+                            Foreground="{StaticResource PhoneForegroundBrush}"		
+                            Height="84" Margin="6" Width="108" 
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKeyPlusMinus"  
+                            Height="84" Margin="6" Width="108"  
+                            Style="{StaticResource btnKeypadPlusMinusStyle}" 
+                            Background="{StaticResource PhoneDisabledBrush}" 
+                            FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            Click="OnClickSign" />
+                </StackPanel>
+                <StackPanel x:Name="spKeypadRow4" Orientation="Horizontal">
+                    <Button x:Name="btnKeypadKey0" 	
+                            Content="0" 
+                            Background="{StaticResource PhoneInactiveBrush}"	 
+                            Foreground="{StaticResource PhoneForegroundBrush}"	
+                            Height="84" Margin="6" Width="228" 
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}" 
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadKeyPoint" 	
+                            Content="{Binding Path=CurrentCulture.NumberFormat.NumberDecimalSeparator, Source={StaticResource Resources}}" 
+                            Background="{StaticResource PhoneInactiveBrush}" 
+                            Foreground="{StaticResource PhoneForegroundBrush}"	
+                            Height="84" Margin="6" Width="108"  
+                            Style="{StaticResource btnKeypadPointStyle}" 
+                            FontSize="{StaticResource KeypadButtonFontSize}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"  
+                            Click="OnClickNumber" />
+                    <Button x:Name="btnKeypadSwitchSourceTargetUnit" 
+                            Height="84" Margin="6" Width="108"
+                            Style="{StaticResource KeypadButtonStyle}" 
+                            Background="{StaticResource PhoneDisabledBrush}" 
+                            FontSize="{StaticResource PhoneFontSizeExtraLarge}" 
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            Click="OnClickSourceTargetUnit">
+                        <Image Source= "{Binding ConversionImageSource}"/>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel x:Name="spToolsbar" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right" 
+                    VerticalAlignment="Bottom">
+            <Button x:Name="btnConversions" 
+                    Content="{Binding Path=Strings.Buttons_conversions, Source={StaticResource Resources}}"                 
+                    Height="72" Width="228" Margin="0,0,1,12" 
+                    Foreground="{StaticResource PhoneForegroundBrush}" 
+                    BorderBrush="{StaticResource PhoneForegroundBrush}" 
+                    Click="OnConversionsClicked"
+                    IsEnabled="{Binding IsButtonConversionEnabled}"/>
+            <Button x:Name="btnAddAsFavorite" 
+                    Content="{Binding Path=Strings.Buttons_addFavorite, Source={StaticResource Resources}}" 
+                    Height="72" Width="228" Margin="0,0,11,12" 
+                    Foreground="{StaticResource PhoneForegroundBrush}" 
+                    BorderBrush="{StaticResource PhoneForegroundBrush}" 
+                    Click="OnFavoritesClicked"
+                    IsEnabled="{Binding IsButtonAddToFavoritesEnabled}"/>
+        </StackPanel>
+    </Grid>
+    
+    <!-- Sample code showing usage of ApplicationBar
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="appbar_button1" IconUri="/Images/appbar_button1.png" Text="Button 1"></shell:ApplicationBarIconButton>
+            <shell:ApplicationBarIconButton x:Name="appbar_button2" IconUri="/Images/appbar_button2.png" Text="Button 2"></shell:ApplicationBarIconButton>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="menuItem1" Text="MenuItem 1"></shell:ApplicationBarMenuItem>
+                <shell:ApplicationBarMenuItem x:Name="menuItem2" Text="MenuItem 2"></shell:ApplicationBarMenuItem>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    -->
+
+
+</local:PageCommon>

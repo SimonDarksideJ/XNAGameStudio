@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotificationClient", "PushNotificationClient\PushNotificationClient\PushNotificationClient.csproj", "{09A03C89-07B9-495F-A7EF-A2B623C562B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotificationClientContent", "PushNotificationClient\PushNotificationClientContent\PushNotificationClientContent.contentproj", "{3C04EA53-C0BE-4D0C-BDC6-65A4EEA904CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09A03C89-07B9-495F-A7EF-A2B623C562B1}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{09A03C89-07B9-495F-A7EF-A2B623C562B1}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{09A03C89-07B9-495F-A7EF-A2B623C562B1}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{09A03C89-07B9-495F-A7EF-A2B623C562B1}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{09A03C89-07B9-495F-A7EF-A2B623C562B1}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{09A03C89-07B9-495F-A7EF-A2B623C562B1}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{3C04EA53-C0BE-4D0C-BDC6-65A4EEA904CF}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{3C04EA53-C0BE-4D0C-BDC6-65A4EEA904CF}.Release|Windows Phone.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

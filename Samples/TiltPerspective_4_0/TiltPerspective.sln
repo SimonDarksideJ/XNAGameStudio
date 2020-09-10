@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Phone Developer Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiltPerspective", "TiltPerspective\TiltPerspective.csproj", "{CFB288FC-D019-46A6-ADC0-5A35C96ED44F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiltPerspectiveContent", "TiltPerspectiveContent\TiltPerspectiveContent.contentproj", "{3B96894A-097A-4B8F-9D96-76B8F3BD1B0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFB288FC-D019-46A6-ADC0-5A35C96ED44F}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{CFB288FC-D019-46A6-ADC0-5A35C96ED44F}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{CFB288FC-D019-46A6-ADC0-5A35C96ED44F}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{CFB288FC-D019-46A6-ADC0-5A35C96ED44F}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{CFB288FC-D019-46A6-ADC0-5A35C96ED44F}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{CFB288FC-D019-46A6-ADC0-5A35C96ED44F}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{3B96894A-097A-4B8F-9D96-76B8F3BD1B0B}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{3B96894A-097A-4B8F-9D96-76B8F3BD1B0B}.Release|Windows Phone.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

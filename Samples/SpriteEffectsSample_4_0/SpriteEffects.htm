@@ -1,0 +1,946 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>Sprite Effects Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Sprite Effects Sample" />
+<MSHelp:RLTitle Title="Sprite Effects Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.SpriteEffects" />
+<MSHelp:Keyword Index="A" Term="bd43f803-8297-4ffa-0a60-b8a364d24e69" />
+<MSHelp:Keyword Index="K" Term="Sprite Effects Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="bd43f803-8297-4ffa-0a60-b8a364d24e69" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  <h1>Sprite Effects Sample</h1>
+
+  <p>
+    
+      This sample shows how shaders can be used to implement special effects when drawing 2D graphics with <a href="http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.graphics.spritebatch.aspx">SpriteBatch</a>.
+     The sample also uses two custom content pipeline processors to prepare the sprite textures for the effects.
+  </p>
+
+  <a id="ID2ES" name="ID2ES"> </a><h1 class="heading">Sample Overview</h1><div id="ID2ES" class="hxnx1">
+    
+    
+
+    <p>
+      The sample exhibits five different rendering techniques, displayed in sequence. To switch to the next technique, press the <b>A</b> button on your gamepad, or the spacebar on your keyboard.
+    </p>
+    <p>The sequence of rendering techniques shown is:</p>
+    <ol>
+      <li>
+        <p>
+          Color desaturation – Displays the "glacier" background in four panels, three with increasingly greater levels of color saturation, and the fourth cycling through from none to full saturation to exhibit a "pulsating" effect.
+        </p>
+      </li>
+      <li>
+        <p>
+          Disappearing sprite – Exhibits a sprite that combines alpha-level fade with an overlay texture and pixel shader to display an interesting dissolve effect.
+        </p>
+      </li>
+      <li>
+        <p>
+          Refracting sprite – Exhibits a sprite combined with a shader effect to display a randomly distorted sprite with a rippling "plasma" pattern.
+        </p>
+      </li>
+      <li>
+        <p>
+          Refracting background – Exhibits the background image combined with the same shader effect used in the refracting sprite display.
+        </p>
+      </li>
+      <li>
+        <p>
+          Lighting change – Exhibits a sprite combined with a texture and shader effect to apply real-time lighting to the sprite. This simulates a 3D effect with a two-dimensional sprite.
+        </p>
+      </li>
+    </ol>
+  </div>
+
+  <a id="ID2ELC" name="ID2ELC"> </a><h1 class="heading">How the Sample Works</h1><div id="ID2ELC" class="hxnx1">
+    
+
+    <p>
+      The sample uses the <a href="http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.graphics.spritebatch.aspx">SpriteBatch</a> to draw the sprite graphic in the scene, and it applies a custom effect to change how the sprite is rendered. The custom effect often works in combination with a texture bitmap to create the visual effect.
+    </p>
+    <p>The sample also uses custom content pipeline processors to prepare some of the sprite data for rendering with the effects.</p>
+
+    <ul><li><a href="#ID2E1C">Game Program</a></li><li><a href="#ID2ENF">Custom Content Pipeline Processors</a></li></ul>
+
+    <a id="ID2E1C" name="ID2E1C"> </a><h2 class="subHeading">Game Program</h2><div id="ID2E1C" class="hxnx2">
+      
+
+      <p>
+        The central functions of this sample are called from the <b>Draw</b> method, which invokes the currently active example effect.
+      </p>
+
+      <a id="ID2EDD" name="ID2EDD"> </a><h4 class="subHeading">DrawDesaturate</h4><div id="ID2EDD" class="hxnx3">
+        
+        <p>This function uses a custom pixel shader to modify the color saturation of the "glacier" texture.</p>
+        <p>
+          The pixel shader contained in desaturate.fx uses the alpha channel information in the <i>Color</i> argument to <a href="http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.graphics.spritebatch.draw.aspx">SpriteBatch.Draw</a> to limit the color saturation of all rendered pixels.
+          If the alpha channel is set to zero, the texture renders completely in grayscale. If the alpha channel is set to 255, the texture renders with all color in the original texture.
+        </p>
+        <p>The function divides the display area into quarters, and draws the same "glacier" texture into each with varying levels of color saturation. By drawing the fourth with a successive sequence of saturation levels, it creates an interesting "pulsing" effect.</p>
+      </div>
+
+      <a id="ID2EVD" name="ID2EVD"> </a><h4 class="subHeading">DrawDisappear</h4><div id="ID2EVD" class="hxnx3">
+        
+        <p>This function uses a custom pixel shader and an overlay texture which, when combined with the sprite texture, exhibits an interesting dissolve effect. The overlay texture is scrolled over the sprite, and is used by the shader to control the speed of the fade-out so that some parts of the sprite disappear before others.</p>
+        <p>
+          The alpha channel information passed in the <i>Color</i> argument to <a href="http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.graphics.spritebatch.draw.aspx">SpriteBatch.Draw</a> controls the base level of fade.
+          If the pixel shader and overlay texture are not applied, the sprite fades uniformly as the alpha channel information changes.
+        </p>
+        <p>The custom pixel shader contained in disappear.fx uses the pixel information in the scrolled overlay texture to determine the fade speed for each pixel in the sprite. When applied, this creates a more interesting, non-uniform dissolve effect for the sprite.</p>
+      </div>
+
+      <a id="ID2EHE" name="ID2EHE"> </a><h4 class="subHeading">DrawRefractCat</h4><div id="ID2EHE" class="hxnx3">
+        
+        <p>This function uses a custom pixel shader and an overlay texture which, when combined with the sprite texture, exhibits an rippling, swirling effect. The overlay texture is scrolled over the sprite, and the shader uses the colors from its red and blue channels to offset the position of the sprite texture.</p>
+        <p>The pixel shader contained in refraction.fx uses the pixel color information in the scrolled overlay texture to determine the offset position for each pixel in the sprite. When applied, this creates a rippling effect as the sprite moves across the scrolled texture overlay.</p>
+      </div>
+
+      <a id="ID2EQE" name="ID2EQE"> </a><h4 class="subHeading">DrawRefractGlacier</h4><div id="ID2EQE" class="hxnx3">
+        
+        <p>
+          This function uses the same custom pixel shader and overlay texture used in <b>DrawRefractCat</b>, but applies it to the background image instead of a sprite.
+        </p>
+      </div>
+
+      <a id="ID2E1E" name="ID2E1E"> </a><h4 class="subHeading">DrawNormalmap</h4><div id="ID2E1E" class="hxnx3">
+        
+        <p>This function uses a custom pixel shader and a companion texture to apply a real-time lighting effect to the two-dimensional sprite, giving it a 3D appearance.</p>
+        <p>
+          The companion texture matches the sprite with each pixel in the sprite having a corresponding pixel in the companion texture.
+          A custom content pipeline processor (NormalMapProcessor) imports the grayscale bitmap (cat_depth.jpg), and converts it into a texture that contains a vector for each pixel.
+        </p>
+        <p>Once imported by the content pipeline processor, the color information for each pixel in the companion texture represents a normal vector that indicates which direction each corresponding pixel of the sprite is pointing.</p>
+        <p>
+          The custom pixel shader contained in normalmap.fx uses the normal vector information in the companion texture to color the sprite's pixel according to the currently established light direction (the custom effect's <i>LightDirection</i> parameter).
+        </p>
+        <p>This function sequences through different values for the light direction to demonstrate how the sprite's appearance changes as the light source moves.</p>
+      </div>
+
+
+    </div>
+
+    <a id="ID2ENF" name="ID2ENF"> </a><h2 class="subHeading">Custom Content Pipeline Processors</h2><div id="ID2ENF" class="hxnx2">
+      
+
+      <a id="ID2ERF" name="ID2ERF"> </a><h4 class="subHeading">TexturePlusAlphaProcessor</h4><div id="ID2ERF" class="hxnx3">
+        
+        <p>
+          The <b>TexturePlusAlphaProcessor</b> custom content pipeline processor merges color and alpha information from two separate source files into a single texture. This can be useful for a source file that does not contain alpha information (such as a digital photograph or the product of a paint program that does not embed alpha channels).
+          The alpha data can be drawn as a simple grayscale image.
+        </p>
+        <p>
+          <b>TexturePlusAlphaProcessor</b> assumes that the grayscale image to use as alpha data is contained in a file whose name begins the same as the sprite image, with the suffix "_alpha." For example, the sprite file cat.jpg is accompanied by the grayscale image file cat_alpha.jpg. If a file whose name follows this convention does not reside in the same directory, <b>TexturePlusAlphaProcessor</b> will fail with an error.
+        </p>
+        <p>
+          As used in this sample program, the <b>TexturePlusAlphaProcessor</b> custom content pipeline processor is used to mask off the undesired background portion of the sprite bitmap cat.jpg. The accompanying cat_alpha.jpg contains the mask. These two source images are combined by <b>TexturePlusAlphaProcessor</b> into a single run-time texture.
+        </p>
+      </div>
+
+      <a id="ID2EJG" name="ID2EJG"> </a><h4 class="subHeading">NormalMapProcessor</h4><div id="ID2EJG" class="hxnx3">
+        
+        <p>
+          The <b>NormalMapProcessor</b> custom content pipeline processor converts an image that contains "height" values represented as grayscale pixels into a texture that contains normal vectors. This normal-map texture can be used by the custom pixel shader in normalmap.fx to shade the sprite according to the direction of a light source.
+        </p>
+        <p>In the sample program, the file cat_depth.jpg contains grayscale information that corresponds to the sprite in cat.jpg. This grayscale value of each pixel in cat_depth.jpg indicates the relative height of the corresponding pixel in cat.jpg for the purpose of rendering a 3D effect.</p>
+        <p>
+          The <b>NormalMapProcessor</b> content pipeline processor converts each grayscale pixel in cat_depth.jpg into a normal vector that can be applied to lighting.
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Sprite Effects Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

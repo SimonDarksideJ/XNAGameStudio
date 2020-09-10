@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinjieXbox", "Minjie\MinjieXbox.csproj", "{8340F6D1-2846-4A9B-B46C-E775D2489A6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8340F6D1-2846-4A9B-B46C-E775D2489A6E}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{8340F6D1-2846-4A9B-B46C-E775D2489A6E}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{8340F6D1-2846-4A9B-B46C-E775D2489A6E}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{8340F6D1-2846-4A9B-B46C-E775D2489A6E}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{8340F6D1-2846-4A9B-B46C-E775D2489A6E}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{8340F6D1-2846-4A9B-B46C-E775D2489A6E}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{803FD6E9-21FC-4310-862A-382FEF74ADFB}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{803FD6E9-21FC-4310-862A-382FEF74ADFB}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

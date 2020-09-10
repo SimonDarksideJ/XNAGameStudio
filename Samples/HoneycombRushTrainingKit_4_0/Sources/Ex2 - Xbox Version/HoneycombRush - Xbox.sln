@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneycombRush_Xbox360", "HoneycombRush\HoneycombRush\HoneycombRush_Xbox360.csproj", "{ABD88EA3-5F89-405E-9E99-B08A703C02AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneycombRushContentHD", "HoneycombRush\HoneycombRushContentHD\HoneycombRushContentHD.contentproj", "{378EE298-BAAF-4B61-80DA-8E4B46A3396F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABD88EA3-5F89-405E-9E99-B08A703C02AD}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{ABD88EA3-5F89-405E-9E99-B08A703C02AD}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{ABD88EA3-5F89-405E-9E99-B08A703C02AD}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{ABD88EA3-5F89-405E-9E99-B08A703C02AD}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{ABD88EA3-5F89-405E-9E99-B08A703C02AD}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{ABD88EA3-5F89-405E-9E99-B08A703C02AD}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{378EE298-BAAF-4B61-80DA-8E4B46A3396F}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{378EE298-BAAF-4B61-80DA-8E4B46A3396F}.Release|Xbox 360.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

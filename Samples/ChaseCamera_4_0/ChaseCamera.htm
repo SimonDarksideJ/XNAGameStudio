@@ -1,0 +1,932 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history"><title>Chase Camera Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 0;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 
+	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Chase Camera Sample" />
+<MSHelp:RLTitle Title="Chase Camera Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.ChaseCamera" />
+<MSHelp:Keyword Index="A" Term="8f93ab92-c538-da6e-b7ff-9bdc61fbb120" />
+<MSHelp:Keyword Index="K" Term="Chase Camera Sample" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="AssetID" Value="8f93ab92-c538-da6e-b7ff-9bdc61fbb120" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+
+  <h1>Chase Camera Sample</h1>
+
+  This sample demonstrates how to create a simple chase camera with spring physics.
+  <a name="ID2EK"></a><h1 class="heading">Sample Overview</h1><div id="ID2EK" class="hxnx1">
+    
+    <p>
+		  In this sample, you can pilot a Spacewar ship from a third-person chase camera view. The motion of both the ship and the camera are governed by simple physics. When the ship speeds away, the camera pulls back. When the ship turns, the camera lags behind in the turn to show a partial profile view of the ship. When the ship stops moving, the camera gradually slides back into place.
+	  </p>
+    <p>By pressing a button, you can compare and contrast the spring-based camera with a rigid, fixed-offset camera. You will notice that the spring-based camera provides a greater sense of speed and the ship will feel more natural to control.
+	</p>
+    <a name="ID2ES"></a><h2 class="subHeading">Minimum Shader Profile</h2><div id="ID2ES" class="hxnx2">
+      
+      <dl class="glossary">
+        <dt>Vertex Shader Model 1.1</dt>
+        <dt>Pixel Shader Model 1.1</dt>
+      </dl>
+    </div>
+
+    <a name="ID2E5"></a><h2 class="subHeading">Sample Controls</h2><div id="ID2E5" class="hxnx2">
+      
+      <p>This sample uses the following keyboard and gamepad controls.</p>
+
+      <table>
+        <tr>
+          <th>Action</th>
+          <th style="width: 465px">Keyboard Control (Windows)</th>
+          <th>Gamepad Control</th>
+          <th>Windows Phone</th>
+        </tr>
+        <tr>
+          <td>Steer.</td>
+          <td style="width: 465px">UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+          <td>Left thumbstick</td>
+          <td>Touch (Screen Edge)</td>
+        </tr>
+        <tr>
+          <td>Accelerate.</td>
+          <td style="width: 465px">SPACEBAR</td>
+          <td>Right trigger</td>
+          <td>Touch (Center)</td>
+        </tr>
+        <tr>
+          <td>Toggle camera spring enabled</td>
+          <td style="width: 465px"><b>A</b></td>
+          <td><b>A</b></td>
+          <td>Touch (Top-Left Corner)</td>
+        </tr>
+        <tr>
+          <td>Exit the sample.</td>
+          <td style="width: 465px">ESC or ALT+F4</td>
+          <td><b>BACK</b></td>
+          <td><b>BACK</b></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <a name="ID2EZC"></a><h1 class="heading">How the Sample Works</h1><div id="ID2EZC" class="hxnx1">
+    
+
+    <p>
+			The three classes in this sample are <code>ChaseCameraGame</code>, <code>ChaseCamera</code> and <code>Ship</code>. The game class demonstrates the usage pattern for the <code>ChaseCamera</code> class. The <code>ChaseCamera</code> class implements the physics behavior and can easily be reused as is in your own games. The <code>Ship</code> class exists solely for the sake of having something to chase.
+		
+  </p>
+
+    <a name="ID2EMD"></a><h2 class="subHeading">Using the ChaseCamera Class</h2><div id="ID2EMD" class="hxnx2">
+      
+
+      <p>
+				During initialization, the game creates a <code>Ship</code> and <code>ChaseCamera</code>. The camera is initialized with values that will not change throughout the course of the sample such as the near and far plane distance. At this point, the camera's positioning is also defined. <b>DesiredPositionOffset</b> and <b>LookAtOffset</b> determine the resting location of the camera as well as the point the camera will look at. Both values are relative to the position of the camera and are specified in object space. That means that an offset of (0,1,1) will be one unit behind and one unit above the chased object regardless of which direction the object and camera are facing.
+			</p>
+      <p>
+				Each time the ship moves (once at initialization and during every frame) the camera must be informed of the new goals to chase. This is done by the game's <b>UpdateCameraChaseTarget</b> method, which simply copies the ship's position, direction, and up vectors to the appropriate properties of the <code>ChaseCamera</code> object.
+			</p>
+      <p>
+				Once the new chase targets are set, the camera's <b>Update</b> method is called to apply the physics logic. The <b>Update</b> method also updates the camera's view and projection matrices, which must be used when drawing the scene.
+			</p>
+
+    </div>
+    <a name="ID2EKE"></a><h2 class="subHeading">Understanding the ChaseCamera Class Implementation</h2><div id="ID2EKE" class="hxnx2">
+      
+      <p>
+				At first glance, the <code>ChaseCamera</code> class has a lot of properties, which can be quite intimidating. The following figure, which maps the key properties, may be equally intimidating, but after studying it carefully, you will find the camera's behavior to be less mysterious.
+			</p>
+      <img src="Documentation/chaseCamera.png">
+      <p>These properties are described in full detail in their associated comments. Take special care to understand which coordinate system or units each of the properties use.</p>
+      <p>Notice that the camera is attached to a spring anchored at the desired position (which is some offset from the chase position). This spring pulls the camera toward the desired position. When the ship comes to rest, the spring subsequently brings the camera to rest as well. The exact behavior of the spring is dependant on both the spring’s stiffness and damping as well as the camera's mass, position, and velocity.</p>
+    </div>
+
+    <a name="ID2E2E"></a><h2 class="subHeading">Spring Physics</h2><div id="ID2E2E" class="hxnx2">
+      
+      <p>When you stretch or compress a spring, it exerts a force on the attached bodies that is directly proportional to the elongation or compression of the spring. This force acts in the direction opposite of the elongation or compression. You can represent the displacement from the resting position as a vector originating at the camera's current position and extending to the desired camera position.</p>
+      <pre>Vector3 stretch = position - desiredPosition;</pre>
+      <p>You calculate the force of the spring by using Hook's Law, which formalizes the direct proportion between the elongation of a spring and the force it exerts. Do this by using a coefficient representing the stiffness of the spring. Because the spring force acts in the direction opposite the elongation, this stiffness coefficient is negated.</p>
+      <pre>Vector3 force = -stiffness * stretch;</pre>
+      <p>Given only this force in the absence of air resistance, internal friction, and other forces that act against an object with velocity, an elongated spring would oscillate infinitely. In order to combat this behavior, a simple linear damping force is employed in the force calculation. The force calculation is extended to the following:</p>
+      <pre>Vector3 force = -stiffness * stretch - damping * velocity;</pre>
+      <p>Once you've calculated the force, you apply it to the body by calculating acceleration using Newton's second law of motion. You then integrate acceleration to get the velocity, and integrate velocity to identify the new camera position. This sample uses Euler integration by simply multiplying by elapsed time.</p>
+      <pre>// Apply acceleration
+Vector3 acceleration = force / mass;
+velocity += acceleration * elapsed;
+
+// Apply velocity
+position += velocity * elapsed;</pre>
+
+    </div>
+
+  </div>
+
+  <a name="ID2ERF"></a><h1 class="heading">Ideas to Expand</h1><div id="ID2ERF" class="hxnx1">
+		
+		<p>Want to create an even cooler camera? Try these ideas.</p>
+		<ul>
+			<li>Add a method to shake the camera to look like an earthquake in a movie.</li>
+			<li>In many scenes, a larger field of view creates a greater illusion of speed. Animate the field of view so that it is larger when the camera is moving faster.</li>
+			<li>Add collision with your game world. If the camera or some bounding sphere collides with the game world, add another spring to prevent the camera from sticking out of the world.</li>
+		</ul>
+	</div>
+
+</div><div class="footer" id="footer"><p>© 2007 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xna@microsoft.com?subject=Documentation Feedback: Chase Camera Sample">xna@microsoft.com</a>.</p></div></div></body></html>

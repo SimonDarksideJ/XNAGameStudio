@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsPhone.Recipes.Push.Messasges", "WindowsPhone.Recipes.Push.Messasges\WindowsPhone.Recipes.Push.Messasges.csproj", "{E4691236-9F54-4250-BDBE-916BBB07A378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsPhone.Recipes.Push.Server", "WindowsPhone.Recipes.Push.Server\WindowsPhone.Recipes.Push.Server.csproj", "{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsPhone.Recipes.Push.Client", "WindowsPhone.Recipes.Push.Client\WindowsPhone.Recipes.Push.Client.csproj", "{DD28493E-0C20-4175-AEB0-E76D94EC92D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libraries", "Libraries\Libraries.csproj", "{33915750-A749-4D9D-A5E9-E1B01773D724}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://212.179.51.73:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WindowsPhone.Recipes.Push.Client\\WindowsPhone.Recipes.Push.Client.csproj
+		SccProjectName1 = WindowsPhone.Recipes.Push.Client
+		SccLocalPath1 = WindowsPhone.Recipes.Push.Client
+		SccProjectUniqueName2 = WindowsPhone.Recipes.Push.Messasges\\WindowsPhone.Recipes.Push.Messasges.csproj
+		SccProjectName2 = WindowsPhone.Recipes.Push.Messasges
+		SccLocalPath2 = WindowsPhone.Recipes.Push.Messasges
+		SccProjectUniqueName3 = WindowsPhone.Recipes.Push.Server\\WindowsPhone.Recipes.Push.Server.csproj
+		SccProjectName3 = WindowsPhone.Recipes.Push.Server
+		SccLocalPath3 = WindowsPhone.Recipes.Push.Server
+		SccProjectUniqueName4 = Libraries\\Libraries.csproj
+		SccProjectName4 = Libraries
+		SccLocalPath4 = Libraries
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E4691236-9F54-4250-BDBE-916BBB07A378}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Debug|x86.ActiveCfg = Debug|x86
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Debug|x86.Build.0 = Debug|x86
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Release|Any CPU.ActiveCfg = Release|x86
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Release|x86.ActiveCfg = Release|x86
+		{AC4A77E5-583A-4BB3-AB6B-8FE759906D5D}.Release|x86.Build.0 = Release|x86
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{DD28493E-0C20-4175-AEB0-E76D94EC92D3}.Release|x86.ActiveCfg = Release|Any CPU
+		{33915750-A749-4D9D-A5E9-E1B01773D724}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{33915750-A749-4D9D-A5E9-E1B01773D724}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{33915750-A749-4D9D-A5E9-E1B01773D724}.Debug|x86.ActiveCfg = Debug|x86
+		{33915750-A749-4D9D-A5E9-E1B01773D724}.Debug|x86.Build.0 = Debug|x86
+		{33915750-A749-4D9D-A5E9-E1B01773D724}.Release|Any CPU.ActiveCfg = Release|x86
+		{33915750-A749-4D9D-A5E9-E1B01773D724}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{33915750-A749-4D9D-A5E9-E1B01773D724}.Release|Mixed Platforms.Build.0 = Release|x86
+		{33915750-A749-4D9D-A5E9-E1B01773D724}.Release|x86.ActiveCfg = Release|x86
+		{33915750-A749-4D9D-A5E9-E1B01773D724}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

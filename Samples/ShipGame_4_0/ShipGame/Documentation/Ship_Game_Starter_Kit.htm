@@ -1,0 +1,1169 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history"><title>Ship Game Starter Kit</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 0;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 
+	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Ship Game Starter Kit" />
+<MSHelp:RLTitle Title="Ship Game Starter Kit" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.Ship_Game_Starter_Kit" />
+<MSHelp:Keyword Index="A" Term="3afe680b-f333-34db-db2b-d1028b64f81e" />
+<MSHelp:Keyword Index="K" Term="Ship Game Starter Kit" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA_20" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="AssetID" Value="3afe680b-f333-34db-db2b-d1028b64f81e" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  <h1>Ship Game Starter Kit</h1>
+  
+  <p>This topic contains the following sections.</p>
+  <ul><li><a href="#ID2EP">Introduction to Ship Game</a></li><li><a href="#ID2ECB">Features</a></li><li><a href="#ID2EGD">Getting Started</a></li><li><a href="#ID2EEIAC">Extending Ship Game</a></li></ul>
+
+  <a name="ID2EP"></a><h1 class="heading">Introduction to Ship Game</h1><div id="ID2EP" class="hxnx1">
+    
+    <p>The Ship Game Starter Kit is a complete XNA Game Studio game. The project comes ready to compile and run, and it's easy to customize with a little bit of C# programming. You are free to use the source code as the basis for your own XNA Game Studio game projects, and to share your work with others.</p>
+
+    <p>
+      Ship Game is a 3D spaceship combat game set inside a complex tunnel system. Ship Game features advanced lighting and textures, a full GPU particle system, and advanced physics. Explore the tunnels on your own, or take on a friend head-to-head using split-screen mode.
+    </p>
+
+    <div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>This documentation assumes that you have a basic knowledge of programming concepts and the Visual C# environment. You can learn more about these topics in the product documentation by clicking one of the <b>Help</b> menu items, or by positioning the mouse cursor on language keywords or user interface elements such as windows or dialog boxes, and then pressing F1.</td></tr></table></div>    
+  </div>
+
+  <a name="ID2ECB"></a><h1 class="heading">Features</h1><div id="ID2ECB" class="hxnx1">
+    
+    <p>This starter kit provides a complete XNA Game Studio game, including source code and game content such as models, textures, and sounds.  This starter kit documentation describes the general layout and controls for Ship Game.  The Ship Game Starter Kit demonstrates the following features.</p>
+    <a name="ID2ELB"></a><h2 class="subHeading">Rendering</h2><div id="ID2ELB" class="hxnx2">
+      
+      <ul>
+        <li>Per-pixel lighting (including specular highlights)</li>
+        <li>Normal and environment maps</li>
+      </ul>
+    </div>
+    <a name="ID2EXB"></a><h2 class="subHeading">Special Effects</h2><div id="ID2EXB" class="hxnx2">
+      
+      <ul>
+        <li>Glow effect using glow and environment maps</li>
+        <li>Animated sprites with frame blending, used for explosion and spawn effects</li>
+        <li>Full GPU particle system with point sprites and rotation to velocity direction, used for explosions and trail effects</li>
+      </ul>
+    </div>
+    <a name="ID2EFC"></a><h2 class="subHeading">Gameplay</h2><div id="ID2EFC" class="hxnx2">
+      
+      <ul>
+        <li>Rotation and movement physics using forces and damping</li>
+        <li>Ship-to-environment and ship-to-ship collision detection</li>
+        <li>Ship offsets, ship spawn points, and pickup positions serialized from XML</li>
+        <li>
+          <p>Several types of gameplay modifier pickups:</p>        
+          <ul>
+            <li>Boost effect that triples player speed</li>
+            <li>Shield effect that defends against damage</li>
+            <li>Blaster weapon with low damage but unlimited projectiles</li>
+            <li>Missile weapon with high damage but limited projectiles</li>
+          </ul>
+        </li>
+        <li>Heads-up display (HUD) with score, missile count, and dynamic bars showing energy, shield, and boost charges</li>
+      </ul>
+    </div>
+  </div>  
+  <a name="ID2EGD"></a><h1 class="heading">Getting Started</h1><div id="ID2EGD" class="hxnx1">
+    
+      <a name="ID2EKD"></a><h2 class="subHeading">Requirements</h2><div id="ID2EKD" class="hxnx2">
+        
+        <a name="ID2EOD"></a><h4 class="subHeading">Minimum Shader Profile</h4><div id="ID2EOD" class="hxnx3">
+          
+          <dl class="glossary">
+            <dt>Vertex Shader Model 2.0</dt>
+            <dt>Pixel Shader Model 2.0</dt>
+          </dl>
+        </div>
+      </div>
+    <a name="ID2E2D"></a><h2 class="subHeading">Installing the Ship Game Starter Kit</h2><div id="ID2E2D" class="hxnx2">
+      
+      <div class="proc"><h3 class="subHeading">To install the Ship Game Starter Kit</h3><div class="subSection">
+        
+      <ol>
+        <li>Download the Ship Game .vsi file.</li>
+        <li>Run Visual Studio Installer, following the on-screen instructions.</li>
+      </ol>
+      </div></div>
+    </div>
+    <a name="ID2EME"></a><h2 class="subHeading">Creating, Building, and Running a Ship Game Project</h2><div id="ID2EME" class="hxnx2">
+      
+      <p>You can create multiple Ship Game projects.  Each is a complete, stand-alone game that you can build, run, and modify as desired.</p>
+      <div class="proc"><h3 class="subHeading">To create a new Ship Game project</h3><div class="subSection">
+        
+        <ol>
+          <li>
+            <p>On the Visual C# Express <b>File</b> menu, click <b>New Project</b>.</p>
+            <div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>This may take a minute while Visual C# Express loads the templates for the first time.</td></tr></table></div>
+            <p>The <b>New Project</b> dialog box appears, displaying the project types you can create. Under <b>My Templates</b>, you will see <b>Ship Game Windows Starter Kit</b> and <b>Ship Game Xbox 360 Starter Kit</b>.</p>
+          </li>
+          <li>
+            <p>Choose <b>Ship Game Windows Starter Kit</b> or <b>Ship Game Xbox 360 Starter Kit</b>, and then click <b>OK</b>.</p>
+          </li>
+        </ol>
+        <div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>The starter kit may take a minute to load.</td></tr></table></div>
+      </div></div>
+
+      <div class="proc"><h3 class="subHeading">To build and run the Ship Game project</h3><div class="subSection">
+        
+        <ul>
+          <li>
+            <p>Press F5, or, on the <b>Debug</b> menu, click <b>Start Debugging</b>.</p>
+            <p>The project will build and then run within the debugger.</p>
+          </li>
+        </ul>
+        <div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>The project may take several minutes to build before it can be launched.  To see build progress during the build, display the Output window (from the <b>View</b> menu, click <b>Output</b>) before starting the build.</td></tr></table></div>
+      </div></div>
+
+      <div class="proc"><h3 class="subHeading">To build the project without running it</h3><div class="subSection">
+        
+        <ul>
+          <li>
+            <p>Press F6, or, on the <b>Build</b> menu, click <b>Build Solution</b>.</p>
+            <p>The project will build without running.</p>
+          </li>
+        </ul>
+      </div></div>
+    </div>
+
+    <a name="ID2EPH"></a><h2 class="subHeading">Playing Ship Game</h2><div id="ID2EPH" class="hxnx2">
+      
+      <a name="ID2ETH"></a><h4 class="subHeading">Ship Game Screens</h4><div id="ID2ETH" class="hxnx3">
+        
+
+        <p>Ship Game begins at the Main Menu.</p>
+        <a name="ID2EZH"></a><h5 class="subHeading">Main Menu</h5><div id="ID2EZH" class="hxnx4">
+          
+          <p>From the Main Menu, you may choose to start a <b>Single Player</b> game, start a <b>Multiplayer</b> game, access <b>Help</b>, or <b>Quit</b>.</p>
+          <table>
+            <tr>
+              <th>Action</th>
+              <th>Controller</th>
+              <th>Keyboard</th>
+            </tr>
+            <tr>
+              <td>Highlight a menu option.</td>
+              <td>D-Pad UP or D-Pad DOWN</td>
+              <td>UP ARROW or DOWN ARROW</td>
+            </tr>
+            <tr>
+              <td>Select a highlighted option.</td>
+              <td><b>A</b></td>
+              <td>SPACEBAR</td>
+            </tr>
+            <tr>
+              <td>Quit the game.</td>
+              <td><b>BACK</b></td>
+              <td>ESC</td>
+            </tr>
+          </table>
+        </div>
+        <a name="ID2ETBAC"></a><h5 class="subHeading">Single Player Menu</h5><div id="ID2ETBAC" class="hxnx4">
+          
+          <p>The Single Player game is your chance to explore the levels in Ship Game before taking on another player. Before the game starts, you have a chance to choose the ship you'd like to fly, and optionally, invert the y-axis of your controller (this can assist you if "normal" controller settings feel upside-down).</p>
+          <table>
+            <tr>
+              <th>Action</th>
+              <th>Controller</th>
+              <th>Keyboard</th>
+            </tr>
+            <tr>
+              <td>Change your ship type.</td>
+              <td>D-Pad UP or D-Pad DOWN</td>
+              <td>UP ARROW or DOWN ARROW</td>
+            </tr>
+            <tr>
+              <td>Toggle invert the y-axis option.</td>
+              <td><b>Y</b></td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Rotate the ship.</td>
+              <td>Left stick</td>
+              <td>LEFT ARROW or RIGHT ARROW</td>
+            </tr>
+            <tr>
+              <td>Start the game with the selected ship and settings.</td>
+              <td><b>A</b></td>
+              <td>SPACEBAR</td>
+            </tr>
+            <tr>
+              <td>Return to main menu</td>
+              <td><b>BACK</b></td>
+              <td>ESC</td>
+            </tr>
+          </table>
+        </div>
+        <a name="ID2EXDAC"></a><h5 class="subHeading">Multiplayer Menu</h5><div id="ID2EXDAC" class="hxnx4">
+          
+          <p>In Multiplayer mode, you can go head-to-head with a friend in split-screen mode. Explore the tunnels, collect pickups, and destroy the other player's ship before they destroy you!</p>
+          <div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>To play Multiplayer mode, you must have either two Xbox 360 controllers plugged in, or an Xbox 360 controller and a keyboard. Two players cannot share a single keyboard to play Ship Game multiplayer.</td></tr></table></div>
+          <p>Before the game starts, each player has a chance to choose the ship they would like to fly, and optionally, invert the Y axis of their controller.</p>
+          <p>Controls are the same as in the Single Player Menu. Both players must confirm their choices by pressing A or SPACE before the game begins.</p>
+        </div>
+      </div>
+      <a name="ID2EFEAC"></a><h4 class="subHeading">Ship Game In-Flight Controls</h4><div id="ID2EFEAC" class="hxnx3">
+        
+        <p>Once you start a single player or multiplayer game, use your keyboard or Xbox 360 Controller to move your ship and interact with the game world.  The controls are mapped as follows:</p>
+        <table>
+          <tr>
+            <th>Action</th>
+            <th>Controller</th>
+            <th>Keyboard</th>
+          </tr>
+          <tr>
+            <td>Exit the game.</td>
+            <td><b>BACK</b></td>
+            <td>ESC</td>
+          </tr>
+          <tr>
+            <td>Move forward and backward.</td>
+            <td>Left stick UP and DOWN</td>
+            <td>
+              <b>W</b> and <b>S</b>
+            </td>
+          </tr>
+          <tr>
+            <td>Move left and right (slide).</td>
+            <td>Left stick LEFT and RIGHT</td>
+            <td><b>Q</b> and <b>E</b></td>
+          </tr>
+          <tr>
+            <td>Aim up or down, left or right.</td>
+            <td>Right stick</td>
+            <td>UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+          </tr>
+          <tr>
+            <td>Bank left or right.</td>
+            <td>Left bumper and right bumper</td>
+            <td><b>A</b> and <b>D</b></td>
+          </tr>
+          <tr>
+            <td>Fire the blaster weapon.</td>
+            <td>Right trigger</td>
+            <td>SPACEBAR</td>
+          </tr>
+          <tr>
+            <td>Fire the missile weapon.</td>
+            <td>Left trigger</td>
+            <td>ENTER</td>
+          </tr>
+          <tr>
+            <td>Use the boost.</td>
+            <td><b>Y</b></td>
+            <td>SHIFT</td>
+          </tr>
+          <tr>
+            <td>Use the shield.</td>
+            <td><b>A</b></td>
+            <td><b>R</b></td>
+          </tr>
+          <tr>
+            <td>Toggle between first-person and third-person camera mode.</td>
+            <td><b>B</b></td>
+            <td>BACKSPACE</td>
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+
+    </div>
+    <a name="ID2EEIAC"></a><h1 class="heading">Extending Ship Game</h1><div id="ID2EEIAC" class="hxnx1">
+      
+      <p>There are many ways to add your own functionality to Ship Game. The following areas of the code are good areas to start.</p>
+      <a name="ID2EKIAC"></a><h2 class="subHeading">Game Options</h2><div id="ID2EKIAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class GameOptions;</pre></pre></td></tr></table></span></div>
+          <p>Many game constants are stored into a public object with several static members called <b>GameOptions</b>. You can change many game settings like ship movement, weapon speed, and shield duration by changing the constants found there.</p>
+      </div>
+      <a name="ID2EXIAC"></a><h2 class="subHeading">Screen Manager</h2><div id="ID2EXIAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class ScreenManager;</pre></pre></td></tr></table></span></div>
+        <p>
+          The screen manager handles the available game screens (intro, player, level, game, end, and help). The screen manager supports a transition mechanism when switching screens by fading out the current screen into a solid color and then fading into the next screen. The screen manager passes input and rendering requests to its currently active screen though the abstract base class. Each screen derives from the abstract base screen class and loads and unloads its resources when activated and deactivated respectively.
+        </p>
+      </div>
+      <a name="ID2EBJAC"></a><h2 class="subHeading">Blur Manager</h2><div id="ID2EBJAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class BlurManager;</pre></pre></td></tr></table></span></div>
+        <p>
+          The screen manager also owns a blur manager object to support the glow effect available to all screens. After the current screen is drawn, the resulting screen alpha values are used as glow intensity to the blur manager horizontal and vertical passes. The normal map shader saves the specular highlights and glow intensities at the alpha of the shader output color.
+        </p>
+      </div>
+      <a name="ID2ELJAC"></a><h2 class="subHeading">Screens</h2><div id="ID2ELJAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>abstract class Screen;
+
+class ScreenIntro : Screen;
+class ScreenPlayer : Screen;
+class ScreenLevel : Screen;
+class ScreenGame : Screen;
+class ScreenEnd : Screen;
+class ScreenHelp : Screen;</pre></pre></td></tr></table></span></div>
+        <p>
+          The intro screen implements a simple menu with four options (single player, multiplayer, help, quit). When one of the menu options is selected, it requests a transition to the next screen, the player configuration screen where you select your ship. It also sets the game mode (single player/multiplayer) in the game manager.
+        </p>
+
+        <p>The player screen loads the available player ships and displays the current selected ship for each player. The player can rotate the ship and change the selected model. All geometry renders just like in the game with normal maps and glow. There is also an option to invert the Y rotations since many players use inverted Y. In multiplayer mode, it waits for both payers to confirm the selected ship until moving to the next screen, the level selection screen. This screen sets the ships selected by each player into the game manager as well as the Y rotation options.</p>
+
+        <p>The level screen shows the available maps to play. When a level is selected, it requests a transition to the next screen, the game screen. It also sets the selected level into the game manager.</p>
+
+        <p>The game screen is where most things happen. When the game screen is activated, it loads all game data and sets up the player ships as defined by the player selection screen. The game screen passes all input and draw requests into the game manager, and it acts as the game window.</p>
+
+        <p>The end screen shows the winning player and waits for any input to go back to the screen.</p>
+      </div>
+      <a name="ID2E4JAC"></a><h2 class="subHeading">Input Manager</h2><div id="ID2E4JAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class InputState;
+class InputManager;</pre></pre></td></tr></table></span></div>
+        <p>The input manager is used to control each player input state. It always holds a player state for the current and last frames for each player. This allows it to test for key presses and not just key down/up flags. A key press happens when the key was up in the last frame and turns down in this frame. This is useful for events that happen only once and should not repeat every frame while the key is pressed.</p>
+      </div>
+      <a name="ID2EHKAC"></a><h2 class="subHeading">Game Manager</h2><div id="ID2EHKAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class GameManager;</pre></pre></td></tr></table></span></div>
+        <p>The game manager holds all game objects and is the largest code file in the project. It loads the game level model, the collision model, and all game effect resources, such as textures and models used by the animated sprites, particles, and projectiles.</p>
+        <p>The game manager also owns other effect-related managers such as the animated sprite manager, particle system manager, projectile manager, and powerup manager. Only through the game manager can you add new game effects to its respective manager. </p>
+      </div>
+      <a name="ID2ETKAC"></a><h2 class="subHeading">Player Ship</h2><div id="ID2ETKAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class PlayerShip;
+class PlayerMovement;</pre></pre></td></tr></table></span></div>
+        <p>The <b>PlayerShip</b> object holds per player information during the game. It holds the player score and missile count and handles the abilities use and charging (boost and shield). It also controls the player movement using some basic physics for translation and rotation forces and damping factors.
+        </p>
+        </div>
+      <a name="ID2EALAC"></a><h2 class="subHeading">Animated Sprite Manager</h2><div id="ID2EALAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class AnimSprite;
+class AnimSpriteManager;</pre></pre></td></tr></table></span></div>
+        <p>
+          The animated sprite manager groups all currently active animated sprites. An animated sprite is a 2D billboard aligned to the camera with an animated texture on it. The texture map plays like a small video, using multiple frames at 256×256 resolution packed into a texture grid. For example, a 1024×1024 image would contain 16 frames. When rendering, two frames are always sampled and interpolated to the current time for a smooth playback even at low speeds.
+        </p>
+      </div>
+      <a name="ID2EPLAC"></a><h2 class="subHeading">Particle System Manager</h2><div id="ID2EPLAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class Particle;
+class ParticleSystem;
+class ParticleManager;</pre></pre></td></tr></table></span></div>
+        <p>
+          The particle system manager groups all currently active particle systems. A particle system is a collection of point sprites that can be used as a burst (all particles emitted at same time) or loop (particles seem to continuously emit at a given rate). The point sprites rotate in 2D screen space to align to the current velocity vector so you can have more directional particles and not just round particles.
+        </p>
+      </div>
+      <a name="ID2EZLAC"></a><h2 class="subHeading">Powerup Manager</h2><div id="ID2EZLAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class Powerup;
+class PowerupManager;</pre></pre></td></tr></table></span></div>
+        <p>
+          The powerup manager groups all currently active powerups. The powerups are loaded from an XML file with their locations and types. When a ship goes close to a powerup (their bounding boxes intersect), the powerup is picked up and an animated sprite replaces the powerup model. After some time, the powerup respawns and is available for picking up again.
+        </p>
+      </div>
+      <a name="ID2EDMAC"></a><h2 class="subHeading">Projectile Manager</h2><div id="ID2EDMAC" class="hxnx2">
+        
+        <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>class Projectile;
+class ProjectileManager;</pre></pre></td></tr></table></span></div>
+        <p>
+          The projectile manager holds all currently active projectiles. A projectile is created when a ship fires one of its weapons. On creation, the projectile computes its intersection with the level model and starts to move to its target collision point. At every frame, it tests the projectiles against the player ships since they are the only dynamic objects in the scene. If the projectile reaches the target position without hitting any ships, it explodes on the level collision point.
+        </p>
+      </div>
+    </div>
+
+  
+</div><div class="footer" id="footer"><p>© 2008 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Ship Game Starter Kit">xnags@microsoft.com</a>.</p></div></div></body></html>

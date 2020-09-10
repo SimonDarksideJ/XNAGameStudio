@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeRenderingSample (Windows)", "ShapeRenderingSample\ShapeRenderingSample (Windows).csproj", "{FBB55862-CE5D-4AE0-9C4C-09742AB44E59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBB55862-CE5D-4AE0-9C4C-09742AB44E59}.Debug|x86.ActiveCfg = Debug|x86
+		{FBB55862-CE5D-4AE0-9C4C-09742AB44E59}.Debug|x86.Build.0 = Debug|x86
+		{FBB55862-CE5D-4AE0-9C4C-09742AB44E59}.Release|x86.ActiveCfg = Release|x86
+		{FBB55862-CE5D-4AE0-9C4C-09742AB44E59}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomPostprocessXbox", "BloomPostprocess\BloomPostprocessXbox.csproj", "{F633AD06-6888-4976-A07D-547359AC3199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomPostprocessContent", "BloomPostprocess\Content\BloomPostprocessContent.contentproj", "{D82A1C97-4FF3-440C-A58F-A1CB9135D0AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D82A1C97-4FF3-440C-A58F-A1CB9135D0AC}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{D82A1C97-4FF3-440C-A58F-A1CB9135D0AC}.Release|Xbox 360.ActiveCfg = Debug|Any CPU
+		{F633AD06-6888-4976-A07D-547359AC3199}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{F633AD06-6888-4976-A07D-547359AC3199}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{F633AD06-6888-4976-A07D-547359AC3199}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{F633AD06-6888-4976-A07D-547359AC3199}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{F633AD06-6888-4976-A07D-547359AC3199}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{F633AD06-6888-4976-A07D-547359AC3199}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

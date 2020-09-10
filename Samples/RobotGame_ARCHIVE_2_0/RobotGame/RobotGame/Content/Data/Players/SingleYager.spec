@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<GamePlayerSpec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<UnitType>Yager</UnitType>
+	<UnitClass>LightMech</UnitClass>
+	<Life>2500</Life>
+	<MechRadius>1.7</MechRadius>
+	<RunSpeed>7.5</RunSpeed>
+	<WalkSpeed>5.5</WalkSpeed>
+	<WalkBackwardSpeed>4</WalkBackwardSpeed>
+	<TurnAngle>70</TurnAngle>
+	<BoosterSpeed>45</BoosterSpeed>
+	<BoosterActiveTime>1.8</BoosterActiveTime>
+	<BoosterPrepareTime>0.3</BoosterPrepareTime>
+	<BoosterCoolTime>5.5</BoosterCoolTime>
+	<BoosterTurnAngle>90</BoosterTurnAngle>
+	<ModelFilePath>Models/Mech/Players/Yager</ModelFilePath>
+	<AnimationFolderPath>Animation/Players/Yager/</AnimationFolderPath>
+	<DefaultWeaponFilePath>Data/Players/PlayerMachineGun.spec</DefaultWeaponFilePath>
+	<CriticalDamagedTime>1.25</CriticalDamagedTime>
+	<CameraTargetOffset>
+		<X>0</X>
+		<Y>3.0</Y>
+		<Z>0</Z>
+	</CameraTargetOffset>
+	<CameraPositionOffset>
+		<X>0</X>
+		<Y>0.7</Y>
+		<Z>-5.5</Z>
+	</CameraPositionOffset>
+</GamePlayerSpec>

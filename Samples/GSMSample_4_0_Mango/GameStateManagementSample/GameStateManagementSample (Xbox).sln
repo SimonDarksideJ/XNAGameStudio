@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagement (Xbox 360)", "GameStateManagement\GameStateManagement (Xbox 360).csproj", "{39BB7275-75FD-42AD-B31F-5D8F71597974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content", "Content\Content.contentproj", "{44459A75-F2CF-4B58-89EA-79154AF5C1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample (Xbox)", "GameStateManagementSample\GameStateManagementSample (Xbox).csproj", "{8E7AAF7C-11D5-47A0-A9C3-3D63285F9145}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44459A75-F2CF-4B58-89EA-79154AF5C1AF}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{44459A75-F2CF-4B58-89EA-79154AF5C1AF}.Release|Xbox 360.ActiveCfg = Debug|Any CPU
+		{8E7AAF7C-11D5-47A0-A9C3-3D63285F9145}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{8E7AAF7C-11D5-47A0-A9C3-3D63285F9145}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{8E7AAF7C-11D5-47A0-A9C3-3D63285F9145}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{8E7AAF7C-11D5-47A0-A9C3-3D63285F9145}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{8E7AAF7C-11D5-47A0-A9C3-3D63285F9145}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{8E7AAF7C-11D5-47A0-A9C3-3D63285F9145}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{39BB7275-75FD-42AD-B31F-5D8F71597974}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{39BB7275-75FD-42AD-B31F-5D8F71597974}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{39BB7275-75FD-42AD-B31F-5D8F71597974}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{39BB7275-75FD-42AD-B31F-5D8F71597974}.Release|Xbox 360.Build.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

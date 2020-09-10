@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneEchoSampleXbox", "MicrophoneEchoSample\MicrophoneEchoSampleXbox.csproj", "{3571A61D-2A6E-47A0-ABFA-03F3CBCCD3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrophoneEchoSampleContent", "MicrophoneEchoSampleContent\MicrophoneEchoSampleContent.contentproj", "{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|x86 = Release|x86
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3571A61D-2A6E-47A0-ABFA-03F3CBCCD3CE}.Debug|x86.ActiveCfg = Debug|Xbox 360
+		{3571A61D-2A6E-47A0-ABFA-03F3CBCCD3CE}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{3571A61D-2A6E-47A0-ABFA-03F3CBCCD3CE}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{3571A61D-2A6E-47A0-ABFA-03F3CBCCD3CE}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{3571A61D-2A6E-47A0-ABFA-03F3CBCCD3CE}.Release|x86.ActiveCfg = Release|Xbox 360
+		{3571A61D-2A6E-47A0-ABFA-03F3CBCCD3CE}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{3571A61D-2A6E-47A0-ABFA-03F3CBCCD3CE}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{3571A61D-2A6E-47A0-ABFA-03F3CBCCD3CE}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Debug|x86.ActiveCfg = Debug|x86
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Release|x86.ActiveCfg = Release|x86
+		{DC88258A-3DE4-4D07-9E1B-2A7E691FCA99}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

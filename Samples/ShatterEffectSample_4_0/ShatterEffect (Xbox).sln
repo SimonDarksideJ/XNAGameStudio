@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShatterEffectXbox", "ShatterEffect\ShatterEffectXbox.csproj", "{63A4F04A-0AB5-4200-B209-50847A55948E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShatterProcessor", "ShatterProcessor\ShatterProcessor.csproj", "{7DEA239F-EE67-400D-8B91-98224895F25F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShatterEffectContent", "ShatterEffect\Content\ShatterEffectContent.contentproj", "{A37BA5DA-4554-4D86-B077-F916C7B69B49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DEA239F-EE67-400D-8B91-98224895F25F}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{7DEA239F-EE67-400D-8B91-98224895F25F}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{7DEA239F-EE67-400D-8B91-98224895F25F}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{7DEA239F-EE67-400D-8B91-98224895F25F}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{A37BA5DA-4554-4D86-B077-F916C7B69B49}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{A37BA5DA-4554-4D86-B077-F916C7B69B49}.Release|Xbox 360.ActiveCfg = Release|x86
+		{63A4F04A-0AB5-4200-B209-50847A55948E}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{63A4F04A-0AB5-4200-B209-50847A55948E}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{63A4F04A-0AB5-4200-B209-50847A55948E}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{63A4F04A-0AB5-4200-B209-50847A55948E}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{63A4F04A-0AB5-4200-B209-50847A55948E}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{63A4F04A-0AB5-4200-B209-50847A55948E}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

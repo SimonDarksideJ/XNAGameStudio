@@ -1,0 +1,892 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>WinForms Content Loading Sample</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="WinForms Content Loading Sample" />
+<MSHelp:RLTitle Title="WinForms Content Loading Sample" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.WinFormsContentLoading" />
+<MSHelp:Keyword Index="A" Term="7a6386f1-3199-be24-a48f-92ccfb1e0501" />
+<MSHelp:Keyword Index="K" Term="WinForms Content Loading Sample" />
+
+<MSHelp:Attr Name="AssetID" Value="7a6386f1-3199-be24-a48f-92ccfb1e0501" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+
+  <h1>WinForms Content Loading Sample</h1>
+
+  This sample shows you how to import arbitrary 3D models at run time by running the Content Pipeline importers and processors dynamically on the fly as opposed to building all the content ahead of time in the usual way.
+
+  <a id="ID2EK" name="ID2EK"> </a><h1 class="heading">Sample Overview</h1><div id="ID2EK" class="hxnx1">
+    
+
+    <p>
+      The XNA Framework Content Pipeline is responsible for converting content files such as 3D models, textures, and sounds into a format that your game can easily load and use. Normally, these content files are added to your Visual Studio project. The Content Pipeline build process runs inside Visual Studio as you build your code. The compiled .xnb files produced by the content build are then distributed alongside the game executable. This has the advantage of doing the content processing—which can be slow—ahead of time. Finishing the processing enables the game to load the compiled content files as quickly as possible. Also, it means that Visual Studio exposes any errors with the content when you build the project. This is better than discovering errors at run time when you use the content.
+    </p>
+
+    <p>There is only one problem with this approach: what happens if you do not know ahead of time what content you are going to need? Perhaps you want to let your users add new models to your game, or maybe you are building a level editor that needs to load arbitrary files chosen through a run-time file selector.</p>
+
+    <p>
+      The solution is to invoke the Content Pipeline build process on the fly from your own code. The Content Pipeline is implemented as an MSBuild task. You can use the MSBuild API to construct a temporary content project, to add whatever files you like to it, to build it into a temporary directory, and then to load the resulting .xnb files through the <b>ContentManager</b>. You can repeat this as many times as you like to import and load arbitrary content files.
+    </p>
+
+    <p>This sample builds on the classes described previously in the WinForms Graphics Device Sample. It implements a 3D model viewer control that uses a file selector to let the user choose any .fbx or .x format model. Then it imports that file, loads it, and displays it on the screen.</p>
+
+    <p>
+      Although the Content Pipeline build process is incremental—meaning it can avoid doing conversion work if a piece of content was already processed during a previous build—this sample deletes its temporary directory when it exits. This forces subsequent runs to rebuild the content from scratch. Depending on your scenario, you might want to replace this directory management system with a simpler fixed path. You could sacrifice some disk space to improve incremental rebuild performance.
+    </p>
+
+    <p>Note that this sample runs only on Windows. WinForms, MSBuild, and the Content Pipeline are not available on Xbox 360. If you want your game to run on Xbox 360, you must build all your content ahead of time as part of the Visual Studio project. Note also that the XNA Framework redistributable installer does not include the Content Pipeline. This sample will run only on computers that have the full XNA Game Studio installed.</p>
+
+  </div>
+
+  <a id="ID2EIB" name="ID2EIB"> </a><h1 class="heading">How the Sample Works</h1><div id="ID2EIB" class="hxnx1">
+    
+
+    <p>This sample reuses the GraphicsDeviceControl.cs, GraphicsDeviceService.cs, and ServiceContainer.cs files that were previously presented in the WinForms Graphics Device Sample. If you are unfamiliar with this code, see that sample for more information.</p>
+
+    <p>
+      The main form of the application contains a single <b>ModelViewerControl</b>, which derives from <b>GraphicsDeviceControl</b>. This control can be assigned any <b>Model</b> object. It will display it to the user, gradually spinning. When the model is changed, the <b>MeasureModel</b> method is used to identify the size and center of the new object. This ensures the model will always be visible, centered on the screen, and drawn at a sensible size. This applies no matter what scale to which it was built or the location of the origin of the model data.
+    </p>
+
+    <p>
+      The <b>MainForm</b> constructor creates two important worker classes: a <b>ContentBuilder</b> that will be used to dynamically import and process our content files, and a <b>ContentManager</b> that will be used to load the content after it has been built. After displaying a file selector to let the user select a 3D model file, the <b>Form1.LoadModel</b> method performs these steps:
+    </p>
+
+    <ol>
+      <li>
+        Calls <b>ContentManager.Unload</b> to unload any previous model data.
+      </li>
+      <li>
+        Calls <b>ContentBuilder.Add</b> to specify what new file to build and which processor to use. This sample always just specifies the built-in <b>ModelProcessor</b>, but a more advanced application might want to use some other custom processor.
+      </li>
+      <li>
+        Calls <b>ContentBuilder.Build</b> to build the selected content.
+      </li>
+      <li>Checks if any build errors occurred, and displays a message box if the build failed.</li>
+      <li>
+        Calls <b>ContentManager.Load</b> to read in the model just built, and sets the <b>ModelViewerControl</b> to display this new object.
+      </li>
+    </ol>
+
+    <p>
+      The <b>ContentBuilder</b> class is more straightforward. It declares a list of what pipeline assemblies should be used to build the content (this sample just specifies the four standard importers built into XNA Game Studio). It declares some helper classes used to perform the build, including an MSBuild <b>Project</b> object and a custom <b>ErrorLogger</b> class that implements the MSBuild <b>ILogger</b> interface. The <b>CreateBuildProject</b> method uses the MSBuild object model to create a simple project for building XNA Framework content. This adds a reference to the standard <b>ContentPipeline.targets</b> file, which declares the MSBuild targets necessary to carry out the content build. The <b>Add</b> and <b>Clear</b> methods change what content files are included in the project. Finally, the <b>Build</b> method performs the build operation, and returns a list of error messages if anything went wrong.
+    </p>
+
+    <a id="ID2EWD" name="ID2EWD"> </a><h2 class="subHeading">Temporary Directory Management</h2><div id="ID2EWD" class="hxnx2">
+      
+
+      <p>
+        The <b>ContentBuilder</b> class builds content into a temporary directory, from which the <b>ContentLoader</b> can load it. This poses a question: what directory should you use? You want a location that is not in use already. The best practice is to delete these temporary files when the program exits.
+      </p>
+
+      <p>
+        <b>ContentBuilder.CreateTempDirectory</b> chooses a temporary directory location by calling <b>Path.GetTempPath</b> to look up a suitable location. Then it makes a nested directory named <b>GetType().FullName</b>, which will return "WinFormsContentLoading.ContentBuilder." It is unlikely that any other program would be using a directory with that name!
+      </p>
+
+      <p>
+        What if the user runs more than one copy of your program at the same time? Both instances would try to use the same temporary directory, which would lead to a conflict. The solution is to include <b>Process.GetCurrentProcess().Id</b> as part of the directory name. This means each process will choose a different directory name.
+      </p>
+
+      <p>
+        But what if a single program creates more than one instance of the <b>ContentBuilder</b> class? This sample never does that. Other programs might, however, and it seems like something a robust implementation ought to support. There would be conflicts if both instances of <b>ContentBuilder</b> tried to use the same temporary directory. The solution is to include a unique integer value, called a "salt," as part of the directory name. Each time we create a new <b>ContentBuilder</b>, we increment the salt. The first instance gets 1, the next 2, then 3, and so forth. Each instance will chooses a different directory name.
+      </p>
+
+      <p>
+        What about cleaning up the temporary directory when you are finished? This is handled by <b>ContentBuilder.DeleteTempDirectory</b>, which is called by <b>Dispose</b>. <b>DeleteTempDirectory</b> does the job in almost all situations. Still, it has one flaw: what if the program crashes or is killed off in the debugger before it has a chance to run this shutdown code? Naturally, you hope your finished program will never crash. Unfortunately, this is likely to happen a lot while you are developing and testing. It would be a nuisance if each crash left an extra temporary directory cluttering up your hard disk. The solution is the <b>PurgeStaleTempDirectories</b> method, which is called on startup. As a rule, it is not possible to perform clean up after you crash, but the next time you run the program, you can check to see if there are any stale directories left behind by previous runs of the same program. You can delete them, as necessary.
+      </p>
+
+      <p>Depending on your application, you might prefer to always use the same temporary directory name, and never delete it. This will leave files lying around on your hard disk. The content build process is incremental. If your program tries to load the same content files that were already built during a previous run, you will not need to carry out any actual processing work. This can speed up loading times for programs such as level editors that are likely to want to load the same files each time they start up.</p>
+    </div>
+
+  </div>
+
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: WinForms Content Loading Sample">xnags@microsoft.com</a>.</p></div></div></body></html>

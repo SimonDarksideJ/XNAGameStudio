@@ -1,0 +1,288 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{d9d9e67e-4310-49a7-80a5-b617308a00ba}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RobotGameData</RootNamespace>
+    <AssemblyName>RobotGameData</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <Thumbnail>
+    </Thumbnail>
+    <XnaCrossPlatformGroupID>{6a62a68f-7491-4240-9723-ab54f5f7e756}</XnaCrossPlatformGroupID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL" />
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AI\AIBase.cs">
+      <Name>AIBase</Name>
+    </Compile>
+    <Compile Include="AI\AIContext.cs">
+      <Name>AIContext</Name>
+    </Compile>
+    <Compile Include="Collision\CollideBox.cs">
+      <Name>CollideBox</Name>
+    </Compile>
+    <Compile Include="Collision\CollideElement.cs">
+      <Name>CollideElement</Name>
+    </Compile>
+    <Compile Include="Collision\CollideRay.cs">
+      <Name>CollideRay</Name>
+    </Compile>
+    <Compile Include="Collision\CollideSphere.cs">
+      <Name>CollideSphere</Name>
+    </Compile>
+    <Compile Include="Collision\CollideModel.cs">
+      <Name>CollideModel</Name>
+    </Compile>
+    <Compile Include="Collision\CollisionContext.cs">
+      <Name>CollisionContext</Name>
+    </Compile>
+    <Compile Include="Collision\QuadNode.cs">
+      <Name>QuadNode</Name>
+    </Compile>
+    <Compile Include="Collision\QuadTree.cs">
+      <Name>QuadTree</Name>
+    </Compile>
+    <Compile Include="Font\FontManager.cs">
+      <Name>FontManager</Name>
+    </Compile>
+    <Compile Include="GameEvent\GameAreaEvent.cs">
+      <Name>GameAreaEvent</Name>
+    </Compile>
+    <Compile Include="GameEvent\GameEvent.cs">
+      <Name>GameEvent</Name>
+    </Compile>
+    <Compile Include="GameEvent\GameEventManager.cs">
+      <Name>GameEventManager</Name>
+    </Compile>
+    <Compile Include="GameEvent\GameTimeEvent.cs">
+      <Name>GameTimeEvent</Name>
+    </Compile>
+    <Compile Include="Helper\FpsCounter.cs">
+      <Name>FpsCounter</Name>
+    </Compile>
+    <Compile Include="Helper\HelperFile.cs">
+      <Name>HelperFile</Name>
+    </Compile>
+    <Compile Include="Helper\HelperMath.cs">
+      <Name>HelperMath</Name>
+    </Compile>
+    <Compile Include="Interface\IIdentity.cs">
+      <Name>IIdentity</Name>
+    </Compile>
+    <Compile Include="Helper\Helper3D.cs">
+      <Name>Helper3D</Name>
+    </Compile>
+    <Compile Include="Core\NodeBase.cs">
+      <Name>NodeBase</Name>
+    </Compile>
+    <Compile Include="Object\Animation\AnimationBinder.cs">
+      <Name>AnimationBinder</Name>
+    </Compile>
+    <Compile Include="Object\Animation\AnimationBlender.cs">
+      <Name>AnimationBlender</Name>
+    </Compile>
+    <Compile Include="Object\Animation\AnimationReader.cs">
+      <Name>AnimationReader</Name>
+    </Compile>
+    <Compile Include="Object\Animation\AnimationSequence.cs">
+      <Name>AnimationSequence</Name>
+    </Compile>
+    <Compile Include="Object\Animation\KeyFrameSequence.cs">
+      <Name>KeyFrameSequence</Name>
+    </Compile>
+    <Compile Include="Object\GameBillboard.cs">
+      <Name>GameBillboard</Name>
+    </Compile>
+    <Compile Include="Object\GameMesh.cs">
+      <Name>GameMesh</Name>
+    </Compile>
+    <Compile Include="Object\GamePointSprite.cs">
+      <Name>GamePointSprite</Name>
+    </Compile>
+    <Compile Include="Object\GameQuad.cs">
+      <Name>GameQuad</Name>
+    </Compile>
+    <Compile Include="Object\GameSkybox.cs">
+      <Name>GameSkybox</Name>
+    </Compile>
+    <Compile Include="Object\GameSprite3D.cs">
+      <Name>GameSprite3D</Name>
+    </Compile>
+    <Compile Include="Object\GameSprite2D.cs">
+      <Name>GameSprite2D</Name>
+    </Compile>
+    <Compile Include="Object\GameText.cs">
+      <Name>GameText</Name>
+    </Compile>
+    <Compile Include="Object\GameWorld.cs">
+      <Name>GameWorld</Name>
+    </Compile>
+    <Compile Include="ParticleSystem\KeyFrameTable.cs">
+      <Name>KeyFrameTable</Name>
+    </Compile>
+    <Compile Include="ParticleSystem\Particle.cs">
+      <Name>Particle</Name>
+    </Compile>
+    <Compile Include="ParticleSystem\ParticleInfo.cs">
+      <Name>ParticleInfo</Name>
+    </Compile>
+    <Compile Include="ParticleSystem\ParticleManager.cs">
+      <Name>ParticleManager</Name>
+    </Compile>
+    <Compile Include="ParticleSystem\ParticleReader.cs">
+      <Name>ParticleReader</Name>
+    </Compile>
+    <Compile Include="ParticleSystem\ParticleSequence.cs">
+      <Name>ParticleSequence</Name>
+    </Compile>
+    <Compile Include="ParticleSystem\TextureSequence.cs">
+      <Name>TextureSequence</Name>
+    </Compile>
+    <Compile Include="ParticleSystem\TimeSequence.cs">
+      <Name>TimeSequence</Name>
+    </Compile>
+    <Compile Include="Resource\GameResourceBase.cs">
+      <Name>GameResourceBase</Name>
+    </Compile>
+    <Compile Include="Resource\GameResourceAnimation.cs">
+      <Name>GameResourceAnimation</Name>
+    </Compile>
+    <Compile Include="Resource\GameResourceEffect.cs">
+      <Name>GameResourceEffect</Name>
+    </Compile>
+    <Compile Include="Resource\GameResourceFont.cs">
+      <Name>GameResourceFont</Name>
+    </Compile>
+    <Compile Include="Resource\ResourceManager.cs">
+      <Name>ResourceManager</Name>
+    </Compile>
+    <Compile Include="Resource\GameResourceModel.cs">
+      <Name>GameResourceModel</Name>
+    </Compile>
+    <Compile Include="Resource\GameResourceTexture2D.cs">
+      <Name>GameResourceTexture2D</Name>
+    </Compile>
+    <Compile Include="Screen\GameMenuScreen.cs">
+      <Name>GameMenuScreen</Name>
+    </Compile>
+    <Compile Include="Screen\GameScreen.cs">
+      <Name>GameScreen</Name>
+    </Compile>
+    <Compile Include="Screen\GameScreenInput.cs">
+      <Name>GameScreenInput</Name>
+    </Compile>
+    <Compile Include="Screen\GameScreenManager.cs">
+      <Name>GameScreenManager</Name>
+    </Compile>
+    <Compile Include="Sound\SoundManager.cs">
+      <Name>SoundManager</Name>
+    </Compile>
+    <Compile Include="Text\TextItem.cs">
+      <Name>TextItem</Name>
+    </Compile>
+    <Compile Include="Text\TextManager.cs">
+      <Name>TextManager</Name>
+    </Compile>
+    <Compile Include="Interface\INamed.cs">
+      <Name>INamed</Name>
+    </Compile>
+    <Compile Include="Camera\FollowCamera.cs">
+      <Name>FollowCamera</Name>
+    </Compile>
+    <Compile Include="Object\GameAnimateModel.cs">
+      <Name>GameAnimateModel</Name>
+    </Compile>
+    <Compile Include="Camera\CameraBase.cs">
+      <Name>CameraBase</Name>
+    </Compile>
+    <Compile Include="Core\FrameworkCore.cs">
+      <Name>FrameworkCore</Name>
+    </Compile>
+    <Compile Include="Camera\FreeCamera.cs">
+      <Name>FreeCamera</Name>
+    </Compile>
+    <Compile Include="Camera\GameCamera.cs">
+      <Name>GameCamera</Name>
+    </Compile>
+    <Compile Include="Input\InputComponent.cs">
+      <Name>InputComponent</Name>
+    </Compile>
+    <Compile Include="Input\InputComponentManager.cs">
+      <Name>InputComponentManager</Name>
+    </Compile>
+    <Compile Include="Object\GameModel.cs">
+      <Name>GameModel</Name>
+    </Compile>
+    <Compile Include="Core\GameNode.cs">
+      <Name>GameNode</Name>
+    </Compile>
+    <Compile Include="Core\GameSceneNode.cs">
+      <Name>GameSceneNode</Name>
+    </Compile>
+    <Compile Include="Render\RenderContext.cs">
+      <Name>RenderContext</Name>
+    </Compile>
+    <Compile Include="Render\Viewer.cs">
+      <Name>Viewer</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <Name>AssemblyInfo</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>{560b80c8-1a48-4074-a16b-08843e3028a9}</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.NestedContent.targets" />
+</Project>

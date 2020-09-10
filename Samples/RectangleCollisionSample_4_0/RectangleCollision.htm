@@ -1,0 +1,1140 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>2D Collision Tutorial 1: Rectangle</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="2D Collision Tutorial 1: Rectangle" />
+<MSHelp:RLTitle Title="2D Collision Tutorial 1: Rectangle" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.RectangleCollision" />
+<MSHelp:Keyword Index="A" Term="bbeb996e-2cb9-0e00-fc65-de4085e95cc0" />
+<MSHelp:Keyword Index="K" Term="2D Collision Tutorial 1: Rectangle" />
+
+<MSHelp:Attr Name="AssetID" Value="bbeb996e-2cb9-0e00-fc65-de4085e95cc0" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  
+  <h1>2D Collision Tutorial 1: Rectangle</h1>
+  
+  
+  This article explains several simple techniques for constraining motion and collision detection in 2D.
+	<a id="ID2EJ" name="ID2EJ"> </a><h1 class="heading">Introduction</h1><div id="ID2EJ" class="hxnx1">
+		
+		<p>Games do not need to be complex to be fun and interesting. Obstacle-avoidance games consist of a character and some objects that are on a crash course toward each other. The player must avoid the oncoming objects.</p>
+		<p>
+			Here is the player character successfully dodging falling blocks:</p>
+			<img src="FallingBlocks.png" />
+		
+		<p>
+			And here the player is not-so-successfully dodging falling blocks:</p>
+			<img src="Blocked.png" />
+		
+		<p>When you complete this tutorial, you will have everything you need to create a complete obstacle avoidance game.</p>
+	</div>
+
+	<a id="ID2E3" name="ID2E3"> </a><h1 class="heading">Step 1: Create a New Project and Include Artwork</h1><div id="ID2E3" class="hxnx1">
+		
+		<p>Before you start coding you need textures for the player character and falling blocks. These textures can be of any size and should use magenta (100 percent red, 0 percent green, and 100 percent blue) for anything that should be transparent. Save your textures as .bmp or .png files and not as .gif or .jpg in order to avoid artifacts caused by poor image compression.</p>
+		<p>Here are the textures used in the sample:</p>
+    <img src="texture1.png" />    <img src="texture2.png" />
+		<div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>Magenta is used because the default texture processor will perform color keying logic, which converts magenta to be completely transparent.</td></tr></table></div>
+		<p>Next, you need to create a new Windows Game project and add the textures.</p>
+    <div class="proc"><h3 class="subHeading">To create a new project</h3><div class="subSection">
+      
+		<ol>
+			<li>Open <b>XNA Game Studio 4.0</b>.</li>
+			<li>On the <b>File</b> menu, click <b>New Project</b> to create a new project.</li>
+			<li>From the list of templates that appears, select either <b>Windows Game (4.0)</b> or <b>Xbox 360 Game (4.0)</b>.</li>
+			<li>Type a <i>name</i> for your game into the <b>Name</b> field, and indicate a <i>path</i> where files are to be stored in the <b>Location</b> field. </li>
+			<li>Click <b>OK</b>.</li>
+		</ol>
+    </div></div>
+    
+		<p>The code for your new game will be displayed. The project already contains many of the methods that are needed to start and run a game. Right now, however, you need to make sure your art assets are being loaded. Follow these steps to get some art into your project.</p>
+    <div class="proc"><h3 class="subHeading">To add art to your project</h3><div class="subSection">
+		<ol>
+			<li>Ensure you can see the Solution Explorer for your project. If you cannot see it, on the <b>View</b> menu, click <b>Solution Explorer</b>. When it appears, you will see files associated with your project in a tree structure.</li>
+      <li>
+        In <b>Solution Explorer</b>, right-click the <b>Content project</b> icon, click <b>Add</b>, and then click <b>Existing Item</b>.</li>
+      <li>
+        In the <b>Existing Item</b> dialog box, select the path where your artwork is stored, and then select your two textures. If you do not find the textures, ensure you changed the <b>Files of type</b> selection box to <b>Content Pipeline Files</b>.
+      </li>
+      <li>Click <b>OK</b>.</li>
+		</ol></div></div>
+		<p>Your project structure should look similar to this:</p>
+		<img src="rectanglecollisions.png" />
+		<p>At this point, you're ready to code!</p>
+	</div>
+
+	<a id="ID2EJE" name="ID2EJE"> </a><h1 class="heading">Step 2: Initialization and Drawing</h1><div id="ID2EJE" class="hxnx1">
+		
+    <p>Take a look at the code for Game1.cs; it should still be on your screen from opening up your project. The first thing you want to do is set up your drawing code. For this, you need to load and store the textures, as well as establish data structures for your player character and falling blocks. You will also declare a <b>SpriteBatch</b>, which you will use to draw these objects.</p>
+		<ol>
+			<li>In <b>Solution Explorer</b>, double-click <b>Game1.cs</b> to view the code for your game.</li>
+			<li><p>Add the following declarations inside the game class.</p>		
+		<div class="code"><span codeLanguage=""><table><tr><th> </th></tr><tr><td><pre><pre>// The images to draw
+Texture2D personTexture;
+Texture2D blockTexture;
+
+// The images will be drawn with this SpriteBatch
+SpriteBatch spriteBatch;
+
+// Person
+Vector2 personPosition;
+
+// Blocks
+List&lt;Vector2&gt; blockPositions = new List&lt;Vector2&gt;();		</pre></pre></td></tr></table></span></div>
+      </li>
+		<li>
+        <p>You must properly initialize these variables. The textures should be loaded in the <b>LoadContent</b> method and the rest of the initialization logic should be performed in the <b>Initialize</b> method. Make the following additions to those methods:</p>
+		<div class="code"><span codeLanguage=""><table><tr><th> </th></tr><tr><td><pre><pre>protected override void Initialize()
+{
+	base.Initialize();
+
+	// Start the player in the center along the bottom of the screen
+	personPosition.X = (Window.ClientBounds.Width - personTexture.Width) / 2;
+	personPosition.Y = Window.ClientBounds.Height - personTexture.Height;
+}
+
+protected override void LoadContent()
+{
+	// Load textures
+	blockTexture = Content.Load&lt;Texture2D&gt;("Block");
+	personTexture = Content.Load&lt;Texture2D&gt;("Person");
+
+	// Create a sprite batch to draw those textures
+	spriteBatch = new SpriteBatch(graphics.GraphicsDevice);
+}				</pre></pre></td></tr></table></span></div>
+		<div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>In this sample, all positions represent the upper-left corner of where the objects will appear on screen. Due to this, the width of the texture must be accounted for when positioning objects.</td></tr></table></div>
+    </li>
+      <li>
+		<p>Now that you have your textures and other sprite data, you need to draw them. Modify the <b>Draw</b> method to look like this:</p>
+		<div class="code"><span codeLanguage=""><table><tr><th> </th></tr><tr><td><pre><pre>protected override void Draw(GameTime gameTime)
+{
+	graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
+
+
+	spriteBatch.Begin();
+
+	// Draw person
+	spriteBatch.Draw(personTexture, personPosition, Color.White);
+
+	// Draw blocks
+	foreach (Vector2 blockPosition in blockPositions)
+	spriteBatch.Draw(blockTexture, blockPosition, Color.White);
+
+	spriteBatch.End();
+
+
+	base.Draw(gameTime);
+}</pre></pre></td></tr></table></span></div>
+    </li>
+    <li>
+		<p>At this point, you should be able to compile and run your project by pressing F5 or clicking the <b>Debug</b> menu, and then clicking <b>Start Debugging</b>. Your player character will be there, but where are the blocks?
+		</p>
+    </li>
+    </ol>
+		<div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>If you have created an Xbox 360 Game and you can't see the player character, it is possible the player character is being drawn outside your TV's safe region. For simplicity, you can manually decrease the value of <i>personPosition.Y</i> until the character is visible. See the usage of the <b>safeBounds</b> field in the accompanying source code for a more robust solution.</td></tr></table></div>
+	</div>
+	<a id="ID2E5G" name="ID2E5G"> </a><h1 class="heading">Step 3: Making it all Move</h1><div id="ID2E5G" class="hxnx1">
+		
+		<p>There are no blocks being drawn because the blocks list is empty. You'll need to add logic to create and animate the falling blocks. While you're at it, why not add the ability to move the player character?</p>
+		<ol>
+        <li>
+          <p>For simplicity, the blocks and player character will move at fixed rates. The number and position of falling blocks will be determined randomly. To represent these behaviors, you need to append the declarations at the top of the <b>Game</b> class:</p>
+		<div class="code"><span codeLanguage=""><table><tr><th> </th></tr><tr><td><pre><pre>// Person
+Vector2 personPosition;
+const int PersonMoveSpeed = 5;
+
+// Blocks
+List&lt;Vector2&gt; blockPositions = new List&lt;Vector2&gt;();
+float BlockSpawnProbability = 0.01f;
+const int BlockFallSpeed = 2;
+
+Random random = new Random();				</pre></pre></td></tr></table></span></div>
+        
+		<p>These values are arbitrary; feel free to adjust them as you like.</p>
+        </li>
+      <li>
+		<p>Now, modify the <b>Update</b> method to match the following code:</p>
+		<div class="code"><span codeLanguage=""><table><tr><th> </th></tr><tr><td><pre><pre>protected override void Update(GameTime gameTime)
+{
+	// Get input
+	KeyboardState keyboard = Keyboard.GetState();
+	GamePadState gamePad = GamePad.GetState(PlayerIndex.One);
+
+	// Allows the game to exit
+	if (gamePad.Buttons.Back == ButtonState.Pressed)
+		this.Exit();
+
+	// Move the player left and right with arrow keys or d-pad
+	if (keyboard.IsKeyDown(Keys.Left) ||
+		gamePad.DPad.Left == ButtonState.Pressed)
+	{
+		personPosition.X -= PersonMoveSpeed;
+	}
+	if (keyboard.IsKeyDown(Keys.Right) ||
+		gamePad.DPad.Right == ButtonState.Pressed)
+	{
+		personPosition.X += PersonMoveSpeed;
+	}
+
+	// Spawn new falling blocks
+	if (random.NextDouble() &lt; BlockSpawnProbability)
+	{
+		float x = (float)random.NextDouble() *
+			(Window.ClientBounds.Width - blockTexture.Width);
+		blockPositions.Add(new Vector2(x, -blockTexture.Height));
+	}
+
+	// Update each block
+	for (int i = 0; i &lt; blockPositions.Count; i++)
+	{
+		// Animate this block falling
+		blockPositions[i] =
+			new Vector2(blockPositions[i].X,
+				blockPositions[i].Y + BlockFallSpeed);
+	}
+
+	base.Update(gameTime);
+}		</pre></pre></td></tr></table></span></div>
+      </li>
+      <li>
+		<p>Before continuing, carefully read the preceding code, which performs the following actions:</p>
+		<ol>
+			<li>Collects user input.</li>
+			<li>Adjusts the position of the player character accordingly.</li>
+			<li>Creates new blocks some percentage of the time.</li>
+			<li>Creates new blocks at random positions along the top of the screen.</li>
+			<li>Animates each block falling down.</li>
+		</ol>
+		<p>Compile and run your project by pressing F5 or clicking the <b>Debug</b> menu, and then clicking <b>Start Debugging</b>. You should see your falling blocks and be able to move the player character!</p>
+      </li>
+      </ol>
+	   </div>
+	<a id="ID2EGBAC" name="ID2EGBAC"> </a><h1 class="heading">Step 4: Boundary Collision</h1><div id="ID2EGBAC" class="hxnx1">
+		
+		<p>You may have noticed that you can move your character off screen and simply hide from all the following blocks (not that you would need to because the blocks can't hurt you yet). What might not be immediately visible is the fact that your falling blocks are not being deleted from the game. If you leave your game running for a long time, it will consume all of the memory available on your system!</p>
+		<p>To remedy these two problems, you need to constrain the player character to the window's boundaries and delete blocks that fall off the bottom.</p> 
+    <ol>
+      <li>
+        <p>Modify the <b>Update</b> method by adding the lines in bold from the following code:</p>
+		<div class="code"><span codeLanguage=""><table><tr><th> </th></tr><tr><td><pre><pre>protected override void Update(GameTime gameTime)
+{
+	// Get input
+	KeyboardState keyboard = Keyboard.GetState();
+	GamePadState gamePad = GamePad.GetState(PlayerIndex.One);
+
+	// Allows the game to exit
+	if (gamePad.Buttons.Back == ButtonState.Pressed)
+		this.Exit();
+
+	// Move the player left and right with arrow keys or d-pad
+	if (keyboard.IsKeyDown(Keys.Left) ||
+		gamePad.DPad.Left == ButtonState.Pressed)
+	{
+		personPosition.X -= PersonMoveSpeed;
+	}
+	if (keyboard.IsKeyDown(Keys.Right) ||
+		gamePad.DPad.Right == ButtonState.Pressed)
+	{
+		personPosition.X += PersonMoveSpeed;
+	}
+
+	<b>// Prevent the person from moving off of the screen
+	personPosition.X = MathHelper.Clamp(personPosition.X,
+	0, Window.ClientBounds.Width - personTexture.Width);</b>
+	
+	// Spawn new falling blocks
+	if (random.NextDouble() &lt; BlockSpawnProbability)
+	{
+		float x = (float)random.NextDouble() *
+			(Window.ClientBounds.Width - blockTexture.Width);
+		blockPositions.Add(new Vector2(x, -blockTexture.Height));
+	}
+
+	// Update each block
+	for (int i = 0; i &lt; blockPositions.Count; i++)
+	{
+		// Animate this block falling
+		blockPositions[i] =
+			new Vector2(blockPositions[i].X,
+				blockPositions[i].Y + BlockFallSpeed);
+
+		<b>// Remove this block if it have fallen off the screen
+		if (blockPositions[i].Y &gt; Window.ClientBounds.Height)
+		{
+			blockPositions.RemoveAt(i);
+
+			// When removing a block, the next block will have the same index
+			// as the current block. Decrement i to prevent skipping a block.
+			i--;
+		}</b>
+	}
+
+	base.Update(gameTime);
+}		</pre></pre></td></tr></table></span></div>
+		<p>The first set of code in bold simply prevents <i>personPosition.X</i> from ever becoming a value that places the player character outside the window's boundaries. The second set of code in bold identifies falling blocks that have left the bottom of the screen. When a block has left the bottom of the screen, it is removed from the blocks collection. </p>
+		<p>Both sets of code in bold are extremely simple collision detection and response mechanisms. They rely on knowledge of the specific rules of the obstacle avoidance game.</p>
+        </li>
+      <li>
+    <p>Compile and run your project by pressing F5 or clicking the <b>Debug</b> menu, and then clicking <b>Start Debugging</b>. You should be unable to move your player character outside the screen, and the game won't slowly fill up your computer's memory.</p>
+      </li>
+    </ol>
+	</div>
+	<a id="ID2EZCAC" name="ID2EZCAC"> </a><h1 class="heading">Step 5: Rectangle Collision</h1><div id="ID2EZCAC" class="hxnx1">
+	   
+		<p>If you have made it this far, you are just one piece of the puzzle away from something that resembles a game: your character needs to be able to get hit.</p>
+		<p>For the scope of this tutorial, the game will simply change the background color to red when the player character is hit with a falling block.</p> 
+    <ol>
+      <li>
+      <p>Add the following declaration to the top of the <b>Game</b> class.</p>
+		<div class="code"><span codeLanguage=""><table><tr><th> </th></tr><tr><td><pre><pre>// For when a collision is detected
+bool personHit = false;		</pre></pre></td></tr></table></span></div></li>
+      <li>
+		<p>Modify the <b>Draw</b> method to begin like this:</p>
+		<div class="code"><span codeLanguage=""><table><tr><th> </th></tr><tr><td><pre><pre>protected override void Draw(GameTime gameTime)
+{
+	GraphicsDevice device = graphics.GraphicsDevice;
+
+	// Change the background to red when the person was hit by a block
+	if (personHit)
+		device.Clear(Color.Red);
+	else
+		device.Clear(Color.CornflowerBlue);	  		</pre></pre></td></tr></table></span></div>
+      </li>
+		<li>
+        <p>Now, you need to determine whether any of the falling blocks collide with the player. One simple way to do this is to determine whether the bounding rectangles of their sprites intersect. The XNA Framework provides a simple <b>Rectangle.Intersects</b> method for just this purpose.</p>
+		<p>Modify the block update loop in the <b>Update</b> method to look like this (new lines are in bold):</p>
+		<div class="code"><span codeLanguage=""><table><tr><th> </th></tr><tr><td><pre><pre><b>// Get the bounding rectangle of the person
+Rectangle personRectangle =
+	new Rectangle((int)personPosition.X, (int)personPosition.Y,
+	personTexture.Width, personTexture.Height);</b>
+
+// Update each block
+<b>personHit = false;</b>
+for (int i = 0; i &lt; blockPositions.Count; i++)
+{
+	// Animate this block falling
+	blockPositions[i] =
+		new Vector2(blockPositions[i].X,
+					blockPositions[i].Y + BlockFallSpeed);
+
+	<b>// Get the bounding rectangle of this block
+	Rectangle blockRectangle =
+		new Rectangle((int)blockPositions[i].X, (int)blockPositions[i].Y,
+		blockTexture.Width, blockTexture.Height);
+
+	// Check collision with person
+	if (personRectangle.Intersects(blockRectangle))
+		personHit = true;</b>
+
+	// Remove this block if it have fallen off the screen
+	if (blockPositions[i].Y &gt; Window.ClientBounds.Height)
+		blockPositions.RemoveAt(i);
+}			  </pre></pre></td></tr></table></span></div>
+		<p>This code determines the bounding rectangles for the player character and for each sprite. Each block's bounding rectangle is tested for intersection with the player character's bounding rectangle.</p></li>
+      <li>
+		<p>And that's it. Compile and run your project by pressing F5 or clicking the <b>Debug</b> menu, and then clicking <b>Start Debugging</b>.</p></li>
+      </ol>
+   </div>
+	<a id="ID2E2EAC" name="ID2E2EAC"> </a><h1 class="heading">Congratulations!</h1><div id="ID2E2EAC" class="hxnx1">
+	   <p>You did it. There's a lot to making games, but you've accomplished a lot for just one short tutorial. An interactive experience with an objective thanks to simple collision detection. From here, there's no limit to where you can go!</p>
+		<p>Go to 2D Collision Tutorial 2: Per Pixel to continue.  </p>
+		<a id="ID2ECFAC" name="ID2ECFAC"> </a><h2 class="subHeading">Ideas to Expand</h2><div id="ID2ECFAC" class="hxnx2">
+			  <p>Got the urge to tinker with the project a bit? Try these ideas.</p>
+			<ul>
+<li>Add a counter for number of blocks successfully dodged.</li>
+<li>As the game progresses, make more blocks fall, and at a faster rate.</li>
+<li>Add a five-second invincibility power up. The character should have to collide with the power up to activate.</li>
+</ul>
+		</div>
+	   </div>
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: 2D Collision Tutorial 1: Rectangle">xnags@microsoft.com</a>.</p></div></div></body></html>

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkPredictionWindows", "NetworkPrediction\NetworkPredictionWindows.csproj", "{C4E59DDA-5522-4E36-9799-6DE4DC9CC205}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkPredictionContent", "NetworkPrediction\Content\NetworkPredictionContent.contentproj", "{44D6E134-0D38-4B3C-89A1-1C70C093FAE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4E59DDA-5522-4E36-9799-6DE4DC9CC205}.Debug|x86.ActiveCfg = Debug|x86
+		{C4E59DDA-5522-4E36-9799-6DE4DC9CC205}.Debug|x86.Build.0 = Debug|x86
+		{C4E59DDA-5522-4E36-9799-6DE4DC9CC205}.Release|x86.ActiveCfg = Release|x86
+		{C4E59DDA-5522-4E36-9799-6DE4DC9CC205}.Release|x86.Build.0 = Release|x86
+		{44D6E134-0D38-4B3C-89A1-1C70C093FAE0}.Debug|x86.ActiveCfg = Debug|x86
+		{44D6E134-0D38-4B3C-89A1-1C70C093FAE0}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,727 @@
+﻿<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>Tombstoning Sample</title>
+    <style type="text/css">
+ body
+{
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+}
+dl
+{
+	margin-top:	15;
+	margin-bottom:5;
+	padding-left:	1;
+}
+
+dl.authored dt {
+	font-style:	bold;
+	margin-top: 2;
+}
+
+dd {
+	margin-left:	20px;
+}
+
+ul
+{
+	margin-top:0;
+	margin-bottom:0;
+	margin-left: 17;
+	list-style-type: disc;
+}
+
+ul ul
+{
+	margin-bottom: 4;
+	margin-left: 17;
+	margin-top: 3;
+	list-style-type: disc;
+}
+
+ol {
+	margin-top:0;
+	margin-bottom:0;
+	margin-left: 28;
+	list-style-type: decimal;
+}
+
+ol ol {
+	margin-bottom: 4;
+	margin-left: 28;
+	margin-top: 3;
+	list-style-type: lower-alpha;
+}
+
+li {
+	margin-top: 5;
+	margin-bottom: 5;
+}
+
+p {
+	margin-top: 10;
+	margin-bottom: 5;
+}
+
+a:link {
+	color:	#0000FF;
+}
+
+a:visited {
+	color: #DD7C3B;
+}
+
+a:hover {
+	color:	#3366FF;
+}
+
+code
+{
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+span.parameter {
+	font-style: italic;
+}
+
+span.italic {
+	font-style: italic;
+}
+
+span.selflink {
+	font-weight: bold;
+}
+
+span.nolink {
+	font-weight: bold;
+}
+
+div.breadCrumbs {
+	font-size: 8pt;
+	margin-bottom: 5;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	padding-bottom: 5;
+}
+
+div#mainSection
+{
+	font-size: 62.5%;
+	width: 100%;
+}
+html&gt;body #mainSection
+{
+	font-size:73%;
+	width: 100%;
+}
+
+div#mainBody
+{
+	font-size: 100%;
+	margin-left: 15;
+	margin-top: 10;
+}
+
+html&gt;body #mainBody
+{
+	font-size: 93%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#header
+{
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+div#header table
+{
+	width:	100%;
+}
+
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	margin-top:	0;
+	margin-bottom:	0;
+	padding-right: 20;
+}
+
+div#header table tr#headerTableRow2 td
+{
+	padding-left: 13px;
+}
+
+div#header table tr#headerTableRow3 td
+{
+	padding-top: 2px;
+	padding-left: 15;
+}
+
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div#mainSection table td.imageCell
+{
+	white-space: nowrap;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div#mainBody div.section div.alert, div#mainBody div.section div.code,
+div#mainBody div.section div.tableSection
+{
+	width:100%;
+}
+
+div#mainBody div.section ul div.alert, div#mainBody div.section ul div.code,
+div#mainBody div.section ul div.tableSection, div#mainBody div.section ol div.alert, 
+div#mainBody div.section ol div.code, div#mainBody div.section ol div.tableSection
+{
+	width:100%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+dd p
+{
+	margin-top:2;
+	margin-bottom:8;
+}
+div.tableSection p
+{
+	margin-top:1;
+	margin-bottom:4;
+}	
+li p
+{
+	margin-top:2;
+	margin-bottom:2;
+}
+div.seeAlsoNoToggleSection dl
+{
+	margin-top:8;
+	margin-bottom:1;
+	padding-left:1;
+}
+div.seeAlsoNoToggleSection dd p
+{
+	margin-top:2;
+	margin-bottom:8;
+}
+div.section dl
+{
+	margin-top:8;
+	margin-bottom:1;
+	padding-left:1;
+}
+div.section dd p
+{
+	margin-top:2;
+	margin-bottom:8;
+}
+
+div.code table
+{
+	border: 0;
+	font-size: 95%;
+	margin-bottom: 5;
+	margin-top:-.4em;
+	width: 100%
+}
+
+div.code table th
+{	
+	background:	#EFEFF7;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	color: #000066;
+	font-weight: bold;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.code table td
+{
+	background:	#F7F7FF;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	padding-left: 5;
+	padding-right: 5;
+	padding-top: 5;
+}
+
+span#runningHeaderText
+{
+	color: #8C8C8C;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+span#nsrTitle
+{
+	color: #000000;
+	font-size: 160%;
+	font-weight: 400;
+	font-family: arial;
+}
+
+div#footer
+{
+	font-size: 80%;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	padding-top:	8;
+	padding-bottom:	6;
+	padding-left:	1;
+	padding-right:	1;
+	width:	100%;
+}
+
+html&gt;body div#footer
+{
+	font-size: 80%;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	padding-top:	2;
+	padding-bottom:	6;
+	padding-left:	1;
+	padding-right:	1;
+	width:	98%;
+}
+
+div.seeAlsoNoToggleSection
+{
+	margin-left:0;
+	padding-top:	2;
+	padding-bottom:	2;
+	padding-left:	0;
+	padding-right:	15;
+	width:	100%;
+}
+
+div.section
+{
+	margin-left:0;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	16;
+	padding-right:	15;
+	width:	100%;
+}
+html&gt;body div.section
+{
+	margin-left:0;
+	padding-top:	2;
+	padding-bottom:	2;
+	padding-left:	16;
+	padding-right:	15;
+	width:	97%;
+}
+div.seeSection
+{
+	margin-left:0;
+	padding-top:	0;
+	padding-bottom:	2;
+	padding-left:	16;
+	padding-right:	15;
+	width:	100%;
+}
+
+.heading
+{
+	font-weight:	bold;
+	margin-top:		18;
+	margin-bottom:	8;
+}
+
+h1.heading
+{
+	color: #000000;
+	font-size:	130%;
+}
+
+.subHeading
+{
+	font-weight:	bold;
+	margin-bottom:	4;
+}
+.procedureSubHeading
+{
+	font-weight: bold;
+	margin-bottom: 4;
+}
+
+h3.subHeading
+{
+	color:  #000000;
+	font-size: 120%;
+    font-weight:800;
+}
+
+h3.procedureSubHeading
+{
+	color: #000000;
+	font-size: 120%;
+}
+
+h4.subHeading
+{
+	color: #000000;
+	font-size: 110%;
+	font-weight:800;
+}
+span.labelheading, div.labelheading
+{
+	font-size:100%;
+	color:#003399;
+}
+
+img.note
+{
+	border: 0;
+	margin-right: 3;
+}
+
+div#mainSection table
+{
+	border: 0;
+	font-size: 100%;
+	width:	98.9%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div#mainSection table tr
+{
+	vertical-align: top;
+}
+
+div#mainSection table th
+{
+	background-color: #EFEFF7;
+	border-bottom: 1px solid #C8CDDE;
+	border-left: 1px none #D5D5D3;
+	color: #000066;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+}
+
+div#mainSection table td
+{
+	background-color: #F7F7FF;
+	border-bottom: 1px solid #D5D5D3;
+	border-left: 1px none #D5D5D3;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div#mainSection table td.imageCell
+{
+	white-space: nowrap;
+}
+
+div.code table
+{
+	border: 0;
+	font-size: 95%;
+	margin-bottom: 5;
+	width: 100%
+}
+
+div.code table th
+{	
+	background:	#EFEFF7;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	color: #000066;
+	font-weight: bold;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.code table td
+{
+	background:	#F7F7FF;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	padding-left: 5;
+	padding-right: 5;
+	padding-top: 5;
+}
+
+div.alert table
+{
+	border: 0;
+	font-size: 100%;
+	width:	100%;
+}
+
+div.alert table th
+{
+	background:	#EFEFF7;
+	border-bottom-width: 0;
+	color: #000066;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.alert table td
+{
+	background:	#F7F7FF;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div.code pre
+{
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+	word-wrap:	break-word;
+	background: #F7F7FF;
+}
+
+.tip
+{
+	color:	#0000FF;
+	font-style: italic;
+	cursor: pointer;
+	text-decoration:underline;
+}
+
+.math
+{
+	font-family: Times New Roman;
+	font-size: 125%
+}
+
+div.footerLine {
+	margin: 0;
+	width: 100%;
+	padding-top:	8;
+	padding-bottom:	6;
+	/*padding-left:	5;
+	padding-right:	2;*/
+
+}
+
+div.hr1 {
+	margin: 0;
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	background: #C8CDDE;
+	font-size: 1px;
+}
+
+div.hr2 {
+	margin: 0;
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	background: #D4DFFF;
+	font-size: 1px;
+}
+
+div.hr3 {
+	margin: 0;
+	width: 100%;
+	height: 1px;
+	padding: 0;
+	background: #EEEEFF;
+	font-size: 1px;
+}
+
+span.cs {
+	display: none;
+}
+
+span.vb {
+	display: none;
+}
+
+span.cpp {
+	display: none;
+}
+
+span.nu {
+	display: inline;
+}
+
+span.fs 
+{
+	display: none;
+}
+
+span.code {
+	font-family:	Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066; 
+}
+span.ui {
+	font-weight: bold;
+}
+span.math {
+	font-style: italic;
+}
+span.input {
+	font-weight: bold;
+}
+span.term {
+	font-style: italic;
+}
+span.label 
+{
+	font-weight: bold;
+}
+span.foreignPhrase {
+	font-style: italic;
+}
+span.placeholder {
+	font-style: italic;
+}
+span.keyword 
+{
+	font-weight: bold;
+}
+span.typeparameter
+{
+	font-style:italic;
+}
+
+div.caption
+{
+	font-weight: bold;
+	font-size:100%;
+	color:#003399;
+}
+
+
+div.code span.keyword 
+{
+	color: #871F78;
+}
+
+div.code span.parameter 
+{
+	font-style: italic;
+}
+
+div.code span.literal 
+{
+	color:#8B0000;
+}
+
+div.code span.comment 
+{
+	color: #006400;
+}
+
+span.syntaxLabel
+{
+	color:#0481DA;
+	font-weight:bold;
+}
+span.introStyle
+{
+	color:DarkGray;
+}
+
+div.seeAlsoStyle
+{
+	padding-top:5px;
+
+}
+
+td.nsrBottom
+{
+	height: 0.6em;
+	width: 100%;
+}
+  </style>
+  </head>
+  <body>
+    <div id="header">
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText" />
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">Tombstoning Sample</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left" />
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <font color="DarkGray"></font>
+        <p /> <p><font color="DarkGray">11/17/2010</font></p><div class="introduction"><p>To help ensure that the end user experience is fast and responsive, Windows Phone prioritizes the application running in the foreground and will typically terminate and tombstone an application when the user navigates away. If your application is reactivated after being tombstoned, it is important to restore the visual state of your application so that the user experience is that of returning to a running application. It is also important that application state be restored in a way that does not delay the load time of the application. This sample shows how to restore the visual state of a page and application data when an application is reactivated after tombstoning. For more information on how this sample works, see <a href="http://go.microsoft.com/fwlink/?LinkID=206638">How to: Preserve and Restore Page State for Windows Phone</a> and <a href="http://go.microsoft.com/fwlink/?LinkID=206639">How to: Preserve and Restore Application State for Windows Phone</a>.</p><div class="alert"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"><b>Important Note:</b></th></tr><tr><td><p>You must install Windows Phone Developer Tools to run this sample. To get started, go to the <a href="http://go.microsoft.com/fwlink/?LinkID=185192">App Hub</a>.</p></td></tr></table></div></div></div>
+      <div id="footer">
+        <div class="footerLine" />
+      </div>
+      <p />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeAreaWindows", "SafeArea\SafeAreaWindows.csproj", "{4BA6D994-484F-4813-A605-C798C22B776A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeAreaContent", "SafeArea\Content\SafeAreaContent.contentproj", "{1CF392A5-9775-466C-B0C4-771D069E2726}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BA6D994-484F-4813-A605-C798C22B776A}.Debug|x86.ActiveCfg = Debug|x86
+		{4BA6D994-484F-4813-A605-C798C22B776A}.Debug|x86.Build.0 = Debug|x86
+		{4BA6D994-484F-4813-A605-C798C22B776A}.Release|x86.ActiveCfg = Release|x86
+		{4BA6D994-484F-4813-A605-C798C22B776A}.Release|x86.Build.0 = Release|x86
+		{1CF392A5-9775-466C-B0C4-771D069E2726}.Debug|x86.ActiveCfg = Debug|x86
+		{1CF392A5-9775-466C-B0C4-771D069E2726}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

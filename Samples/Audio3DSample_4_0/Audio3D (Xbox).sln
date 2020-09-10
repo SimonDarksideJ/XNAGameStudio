@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audio3DXbox", "Audio3D\Audio3DXbox.csproj", "{1E4D4286-BC0B-4EC2-91EC-2A4CC6C72721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audio3DContent", "Audio3D\Content\Audio3DContent.contentproj", "{8BB2024B-1A42-4F12-AB81-D5B84528AA7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BB2024B-1A42-4F12-AB81-D5B84528AA7C}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{8BB2024B-1A42-4F12-AB81-D5B84528AA7C}.Release|Xbox 360.ActiveCfg = Debug|Any CPU
+		{1E4D4286-BC0B-4EC2-91EC-2A4CC6C72721}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{1E4D4286-BC0B-4EC2-91EC-2A4CC6C72721}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{1E4D4286-BC0B-4EC2-91EC-2A4CC6C72721}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{1E4D4286-BC0B-4EC2-91EC-2A4CC6C72721}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{1E4D4286-BC0B-4EC2-91EC-2A4CC6C72721}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{1E4D4286-BC0B-4EC2-91EC-2A4CC6C72721}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

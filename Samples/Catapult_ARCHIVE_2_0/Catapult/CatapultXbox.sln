@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatapultXbox", "Catapult\CatapultXbox.csproj", "{2E36E8F4-0694-455F-9A54-D1AC51623629}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E36E8F4-0694-455F-9A54-D1AC51623629}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{2E36E8F4-0694-455F-9A54-D1AC51623629}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{2E36E8F4-0694-455F-9A54-D1AC51623629}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{2E36E8F4-0694-455F-9A54-D1AC51623629}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{2E36E8F4-0694-455F-9A54-D1AC51623629}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{2E36E8F4-0694-455F-9A54-D1AC51623629}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{63DCA8FD-6C96-4969-BF9B-EA62D9C381FC}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{63DCA8FD-6C96-4969-BF9B-EA62D9C381FC}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

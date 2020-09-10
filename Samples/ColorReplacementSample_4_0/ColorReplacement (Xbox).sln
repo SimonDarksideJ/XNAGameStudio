@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorReplacementXbox", "ColorReplacement\ColorReplacementXbox.csproj", "{3C1F2997-F86E-41D1-BA26-F307DFC8B644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorReplacementContent", "ColorReplacement\Content\ColorReplacementContent.contentproj", "{11C28FA8-B7B8-4CD3-9D3D-C08C22D0366A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C28FA8-B7B8-4CD3-9D3D-C08C22D0366A}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{11C28FA8-B7B8-4CD3-9D3D-C08C22D0366A}.Release|Xbox 360.ActiveCfg = Release|x86
+		{3C1F2997-F86E-41D1-BA26-F307DFC8B644}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{3C1F2997-F86E-41D1-BA26-F307DFC8B644}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{3C1F2997-F86E-41D1-BA26-F307DFC8B644}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{3C1F2997-F86E-41D1-BA26-F307DFC8B644}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{3C1F2997-F86E-41D1-BA26-F307DFC8B644}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{3C1F2997-F86E-41D1-BA26-F307DFC8B644}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

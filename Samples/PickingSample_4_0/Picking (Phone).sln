@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Picking (Phone)", "Picking\Picking (Phone).csproj", "{9DE759A1-A323-416D-9E1D-FB9C694DFD07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickingContent", "PickingContent\PickingContent.contentproj", "{02B8AE9F-0D1C-4C02-B0EE-6CC0FA5660FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DE759A1-A323-416D-9E1D-FB9C694DFD07}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{9DE759A1-A323-416D-9E1D-FB9C694DFD07}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{9DE759A1-A323-416D-9E1D-FB9C694DFD07}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{9DE759A1-A323-416D-9E1D-FB9C694DFD07}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{9DE759A1-A323-416D-9E1D-FB9C694DFD07}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{9DE759A1-A323-416D-9E1D-FB9C694DFD07}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

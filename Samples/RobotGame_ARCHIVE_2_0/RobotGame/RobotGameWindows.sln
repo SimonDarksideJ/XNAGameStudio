@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGameWindows", "RobotGame\RobotGameWindows.csproj", "{75DDAE14-0AE0-43A2-8148-3107CBDE18C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGameDataWindows", "RobotGameData\RobotGameDataWindows.csproj", "{D9D9E67E-4310-49A7-80A5-B617308A00BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotGameProcessors", "RobotGameProcessors\RobotGameProcessors.csproj", "{6708EA72-B1B2-49C9-B287-2661CD3DBB43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75DDAE14-0AE0-43A2-8148-3107CBDE18C0}.Debug|x86.ActiveCfg = Debug|x86
+		{75DDAE14-0AE0-43A2-8148-3107CBDE18C0}.Debug|x86.Build.0 = Debug|x86
+		{75DDAE14-0AE0-43A2-8148-3107CBDE18C0}.Release|x86.ActiveCfg = Release|x86
+		{75DDAE14-0AE0-43A2-8148-3107CBDE18C0}.Release|x86.Build.0 = Release|x86
+		{D9D9E67E-4310-49A7-80A5-B617308A00BA}.Debug|x86.ActiveCfg = Debug|x86
+		{D9D9E67E-4310-49A7-80A5-B617308A00BA}.Debug|x86.Build.0 = Debug|x86
+		{D9D9E67E-4310-49A7-80A5-B617308A00BA}.Release|x86.ActiveCfg = Release|x86
+		{D9D9E67E-4310-49A7-80A5-B617308A00BA}.Release|x86.Build.0 = Release|x86
+		{6708EA72-B1B2-49C9-B287-2661CD3DBB43}.Debug|x86.ActiveCfg = Debug|x86
+		{6708EA72-B1B2-49C9-B287-2661CD3DBB43}.Debug|x86.Build.0 = Debug|x86
+		{6708EA72-B1B2-49C9-B287-2661CD3DBB43}.Release|x86.ActiveCfg = Release|x86
+		{6708EA72-B1B2-49C9-B287-2661CD3DBB43}.Release|x86.Build.0 = Release|x86
+		{A3124FD4-5D14-42D5-81D9-DB51F89A5B39}.Debug|x86.ActiveCfg = Debug|x86
+		{A3124FD4-5D14-42D5-81D9-DB51F89A5B39}.Release|x86.ActiveCfg = Release|x86
+		{560B80C8-1A48-4074-A16B-08843E3028A9}.Debug|x86.ActiveCfg = Debug|x86
+		{560B80C8-1A48-4074-A16B-08843E3028A9}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

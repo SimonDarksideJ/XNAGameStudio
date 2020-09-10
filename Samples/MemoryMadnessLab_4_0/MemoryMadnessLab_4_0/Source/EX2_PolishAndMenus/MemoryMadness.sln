@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryMadness", "MemoryMadness\MemoryMadness\MemoryMadness.csproj", "{E31D60EC-8CF2-4EE6-84F2-E751EBF0531E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryMadnessContent", "MemoryMadness\MemoryMadnessContent\MemoryMadnessContent.contentproj", "{AC7631CA-3DF2-4D34-B8D2-E130DF51AAB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E31D60EC-8CF2-4EE6-84F2-E751EBF0531E}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{E31D60EC-8CF2-4EE6-84F2-E751EBF0531E}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{E31D60EC-8CF2-4EE6-84F2-E751EBF0531E}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{E31D60EC-8CF2-4EE6-84F2-E751EBF0531E}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{E31D60EC-8CF2-4EE6-84F2-E751EBF0531E}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{E31D60EC-8CF2-4EE6-84F2-E751EBF0531E}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{AC7631CA-3DF2-4D34-B8D2-E130DF51AAB7}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{AC7631CA-3DF2-4D34-B8D2-E130DF51AAB7}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

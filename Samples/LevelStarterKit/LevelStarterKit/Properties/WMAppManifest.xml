@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.0">
+  <App xmlns=""
+       ProductID="{fdeb8130-1116-4c74-8ef0-0ef14220f100}"
+       Title="@AppResLib.dll,-100"
+       RuntimeType="Silverlight"
+       Version="1.0.0.0"
+       Genre="apps.normal"
+       Author="Microsoft"
+       Description="Bubble level application"
+       Publisher="Microsoft">
+    <IconPath IsRelative ="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+		<Capability Name="ID_CAP_SENSORS"/>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask  
+        Name ="_default" 
+        NavigationPage="MainPage.xaml"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="LevelToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI  IsRelative="true"  IsResource="false">AppToken.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>@AppResLib.dll,-200</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>

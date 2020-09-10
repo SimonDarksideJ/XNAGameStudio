@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraShake (Phone)", "CameraShake\CameraShake\CameraShake (Phone).csproj", "{DA0CF7A1-FC86-4F22-AB8F-F53FE4F23663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraShakeContent", "CameraShake\CameraShakeContent\CameraShakeContent.contentproj", "{B710D1F1-E305-40FD-9D61-8AC9760AD4B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B710D1F1-E305-40FD-9D61-8AC9760AD4B6}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{B710D1F1-E305-40FD-9D61-8AC9760AD4B6}.Release|Windows Phone.ActiveCfg = Release|x86
+		{DA0CF7A1-FC86-4F22-AB8F-F53FE4F23663}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{DA0CF7A1-FC86-4F22-AB8F-F53FE4F23663}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{DA0CF7A1-FC86-4F22-AB8F-F53FE4F23663}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{DA0CF7A1-FC86-4F22-AB8F-F53FE4F23663}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{DA0CF7A1-FC86-4F22-AB8F-F53FE4F23663}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{DA0CF7A1-FC86-4F22-AB8F-F53FE4F23663}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

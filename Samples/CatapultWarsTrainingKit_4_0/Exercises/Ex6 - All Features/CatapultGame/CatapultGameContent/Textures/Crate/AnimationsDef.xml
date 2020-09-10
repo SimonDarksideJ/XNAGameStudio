@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>  
+  <Definition FrameWidth="35" FrameHeight="40"
+              SheetRows="1" SheetColumns="15"
+              Speed="30" OffsetX="0" OffsetY="-10"
+              SheetName="Textures/Crate/box_explode"
+              Alias="explode"/>
+  </Animations>
+

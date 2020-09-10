@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelSampleXbox", "InstancedModelSample\InstancedModelSampleXbox.csproj", "{4832F901-59D2-47DE-A4CF-73679EB14972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelSampleContent", "InstancedModelSample\Content\InstancedModelSampleContent.contentproj", "{1E99EEA4-D228-49C4-861F-55EB8996F277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelPipeline", "InstancedModelPipeline\InstancedModelPipeline.csproj", "{FF69FD90-8834-4F60-ADA5-36387F112437}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4832F901-59D2-47DE-A4CF-73679EB14972}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{4832F901-59D2-47DE-A4CF-73679EB14972}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{4832F901-59D2-47DE-A4CF-73679EB14972}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{4832F901-59D2-47DE-A4CF-73679EB14972}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{4832F901-59D2-47DE-A4CF-73679EB14972}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{4832F901-59D2-47DE-A4CF-73679EB14972}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{1E99EEA4-D228-49C4-861F-55EB8996F277}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{1E99EEA4-D228-49C4-861F-55EB8996F277}.Release|Xbox 360.ActiveCfg = Release|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Debug|Xbox 360.Build.0 = Debug|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Release|Xbox 360.ActiveCfg = Debug|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Release|Xbox 360.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

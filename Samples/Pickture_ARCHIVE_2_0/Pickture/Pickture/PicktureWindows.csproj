@@ -1,0 +1,147 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8CD845D2-F864-48F9-9B7D-7F3BA34C56ED}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pickture</RootNamespace>
+    <AssemblyName>Pickture</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <Thumbnail>Pickture.png</Thumbnail>
+    <XnaCrossPlatformGroupID>{66862e33-cb32-4dd5-8581-5ab3e07fd7e7}</XnaCrossPlatformGroupID>
+    <StartupObject>Pickture.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Board.cs">
+      <Name>Board</Name>
+    </Compile>
+    <Compile Include="Chip.cs">
+      <Name>Chip</Name>
+    </Compile>
+    <Compile Include="Audio.cs">
+      <Name>Audio</Name>
+    </Compile>
+    <Compile Include="Camera.cs">
+      <Name>Camera</Name>
+    </Compile>
+    <Compile Include="Screens\BoardScreen.cs" />
+    <Compile Include="Screens\CompletedScreen.cs" />
+    <Compile Include="ScreenManager\ImageMenuEntry.cs" />
+    <Compile Include="Screens\PlayingScreen.cs" />
+    <Compile Include="Screens\ShufflingScreen.cs" />
+    <Compile Include="DrawHelper.cs">
+      <Name>DrawHelper</Name>
+    </Compile>
+    <Compile Include="Lighting.cs">
+      <Name>Lighting</Name>
+    </Compile>
+    <Compile Include="LightingEffect.cs">
+      <Name>LightingEffect</Name>
+    </Compile>
+    <Compile Include="Pickture.cs">
+      <Name>Pickture</Name>
+    </Compile>
+    <Compile Include="PictureDatabase.cs">
+      <Name>PictureDatabase</Name>
+    </Compile>
+    <Compile Include="PictureSet.cs">
+      <Name>PictureSet</Name>
+    </Compile>
+    <Compile Include="Photograph.cs">
+      <Name>Photograph</Name>
+    </Compile>
+    <Compile Include="Program.cs">
+      <Name>Program</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <Name>AssemblyInfo</Name>
+    </Compile>
+    <Compile Include="RandomHelper.cs">
+      <Name>RandomHelper</Name>
+    </Compile>
+    <Compile Include="ScreenManager\GameScreen.cs">
+      <Name>GameScreen</Name>
+    </Compile>
+    <Compile Include="ScreenManager\InputState.cs" />
+    <Compile Include="ScreenManager\ScreenManager.cs">
+      <Name>ScreenManager</Name>
+    </Compile>
+    <Compile Include="Screens\MainMenuScreen.cs" />
+    <Compile Include="ScreenManager\MenuEntry.cs" />
+    <Compile Include="ScreenManager\MenuScreen.cs" />
+    <Compile Include="Screens\MessageBoxScreen.cs">
+      <Name>MessageBoxScreen</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico">
+      <Name>Game</Name>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pickture.png">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>{c072c939-6d0a-42dd-90df-15fcce636c9a}</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.NestedContent.targets" />
+</Project>

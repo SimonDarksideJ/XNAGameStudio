@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelLightingWindows", "PerPixelLighting\PerPixelLightingWindows.csproj", "{F6BA3849-0E14-404F-8491-59087D8457D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelLightingContent", "PerPixelLighting\Content\PerPixelLightingContent.contentproj", "{ECE4067E-68AA-4152-8E8A-6418B2BF7486}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6BA3849-0E14-404F-8491-59087D8457D4}.Debug|x86.ActiveCfg = Debug|x86
+		{F6BA3849-0E14-404F-8491-59087D8457D4}.Debug|x86.Build.0 = Debug|x86
+		{F6BA3849-0E14-404F-8491-59087D8457D4}.Release|x86.ActiveCfg = Release|x86
+		{F6BA3849-0E14-404F-8491-59087D8457D4}.Release|x86.Build.0 = Release|x86
+		{ECE4067E-68AA-4152-8E8A-6418B2BF7486}.Debug|x86.ActiveCfg = Debug|x86
+		{ECE4067E-68AA-4152-8E8A-6418B2BF7486}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

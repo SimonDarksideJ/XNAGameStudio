@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrianglePickingXbox", "TrianglePickingSample\TrianglePickingXbox.csproj", "{FB2DA554-7BA7-4BC4-9133-9D77FDF4A7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrianglePickingPipeline", "TrianglePickingPipeline\TrianglePickingPipeline.csproj", "{35D4955B-8D3A-492A-B76B-2306A50C44F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrianglePickingSampleContent", "TrianglePickingSample\Content\TrianglePickingSampleContent.contentproj", "{89EC754C-0920-4042-B7E5-352C3C0AF503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35D4955B-8D3A-492A-B76B-2306A50C44F8}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{35D4955B-8D3A-492A-B76B-2306A50C44F8}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{35D4955B-8D3A-492A-B76B-2306A50C44F8}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{35D4955B-8D3A-492A-B76B-2306A50C44F8}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{89EC754C-0920-4042-B7E5-352C3C0AF503}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{89EC754C-0920-4042-B7E5-352C3C0AF503}.Release|Xbox 360.ActiveCfg = Release|x86
+		{FB2DA554-7BA7-4BC4-9133-9D77FDF4A7AF}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{FB2DA554-7BA7-4BC4-9133-9D77FDF4A7AF}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{FB2DA554-7BA7-4BC4-9133-9D77FDF4A7AF}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{FB2DA554-7BA7-4BC4-9133-9D77FDF4A7AF}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{FB2DA554-7BA7-4BC4-9133-9D77FDF4A7AF}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{FB2DA554-7BA7-4BC4-9133-9D77FDF4A7AF}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

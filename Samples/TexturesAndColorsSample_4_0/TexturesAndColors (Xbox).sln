@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TexturesAndColorsXbox", "TexturesAndColors\TexturesAndColorsXbox.csproj", "{EFF58FA9-F158-4210-B208-A7461059BCEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TexturesAndColorsContent", "TexturesAndColors\Content\TexturesAndColorsContent.contentproj", "{F372C390-FBD8-47A9-B174-894503B39C24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F372C390-FBD8-47A9-B174-894503B39C24}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{F372C390-FBD8-47A9-B174-894503B39C24}.Release|Xbox 360.ActiveCfg = Release|x86
+		{EFF58FA9-F158-4210-B208-A7461059BCEA}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{EFF58FA9-F158-4210-B208-A7461059BCEA}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{EFF58FA9-F158-4210-B208-A7461059BCEA}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{EFF58FA9-F158-4210-B208-A7461059BCEA}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{EFF58FA9-F158-4210-B208-A7461059BCEA}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{EFF58FA9-F158-4210-B208-A7461059BCEA}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

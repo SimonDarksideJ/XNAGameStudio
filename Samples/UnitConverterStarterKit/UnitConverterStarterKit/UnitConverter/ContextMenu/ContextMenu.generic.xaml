@@ -1,0 +1,133 @@
+﻿<!-- 
+// Copyright (c) 2010 Microsoft Corporation.  All rights reserved.
+//
+//
+// Use of this source code is subject to the terms of the Microsoft
+// license agreement under which you licensed this source code.
+// If you did not accept the terms of the license agreement,
+// you are not authorized to use this source code.
+// For the terms of the license, please see the license agreement
+// signed by you and Microsoft.
+// THE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+//
+// add MergedDictionaries entry below to your generic.xaml
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=Microsoft.Phone"     
+    xmlns:c="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:appctrls="clr-namespace:Microsoft.Phone.Applications.Common.Controls"
+    >
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary x:Name="ContentMenuResources" Source="/ShoppingListApp;component/Common/Controls/ContextMenu.generic.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>
+-->
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Microsoft.Phone.Applications.Common.Controls">
+    <Style TargetType="local:ContextMenu">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:ContextMenu">
+                    <Grid x:Name="MenuContainer"
+                          Background="{StaticResource PhoneContrastBackgroundBrush}"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top"
+                          Width="480"
+                          RenderTransformOrigin="0.5,1.0">
+                        <Grid.Resources>
+                            <SineEase x:Key="easeIn"
+                                      EasingMode="EaseIn" />
+                        </Grid.Resources>
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform />
+                                <TranslateTransform />
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualStateGroup.Transitions>
+                                    <VisualTransition From="Invisible"
+                                                      To="Visible">
+                                        <Storyboard x:Name="storyBoard">
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MenuContainer"
+                                                                           Storyboard.TargetProperty="(UIElement.Height)">
+                                                <DiscreteObjectKeyFrame KeyTime="0"
+                                                                        Value="1" />
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:0.5"
+                                                                        Value="1"
+                                                                        x:Name="heightAnim" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="MenuContainer"
+                                                                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:0.0"
+                                                                        Value="0"
+                                                                        x:Name="PositionAnimY1" />
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:0.5"
+                                                                        Value="0"
+                                                                        x:Name="PositionAnimY2" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+                                                                           Storyboard.TargetName="MenuContainer">
+                                                <EasingDoubleKeyFrame KeyTime="0"
+                                                                      Value="0" />
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.5"
+                                                                      Value="1" />
+                                            </DoubleAnimationUsingKeyFrames>
+
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+                                                                           Storyboard.TargetName="MenuContainer"
+                                                                           BeginTime="0:0:0.5">
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.0"
+                                                                      x:Name="YScaleStart"
+                                                                      Value="0" />
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.25"
+                                                                      Value="1"
+                                                                      EasingFunction="{StaticResource easeIn}" />
+                                            </DoubleAnimationUsingKeyFrames>
+
+                                        </Storyboard>
+                                    </VisualTransition>
+                                </VisualStateGroup.Transitions>
+                                <VisualState x:Name="Visible">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)"
+                                                                       Storyboard.TargetName="MenuContainer">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Invisible">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)"
+                                                                       Storyboard.TargetName="MenuContainer">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+
+                        <ItemsPresenter />
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

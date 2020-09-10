@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraShake (Windows)", "CameraShake\CameraShake\CameraShake (Windows).csproj", "{51B3DAF5-AC9C-4227-B3F1-56181EACD035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraShakeContent", "CameraShake\CameraShakeContent\CameraShakeContent.contentproj", "{B710D1F1-E305-40FD-9D61-8AC9760AD4B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51B3DAF5-AC9C-4227-B3F1-56181EACD035}.Debug|x86.ActiveCfg = Debug|x86
+		{51B3DAF5-AC9C-4227-B3F1-56181EACD035}.Debug|x86.Build.0 = Debug|x86
+		{51B3DAF5-AC9C-4227-B3F1-56181EACD035}.Release|x86.ActiveCfg = Release|x86
+		{51B3DAF5-AC9C-4227-B3F1-56181EACD035}.Release|x86.Build.0 = Release|x86
+		{B710D1F1-E305-40FD-9D61-8AC9760AD4B6}.Debug|x86.ActiveCfg = Debug|x86
+		{B710D1F1-E305-40FD-9D61-8AC9760AD4B6}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

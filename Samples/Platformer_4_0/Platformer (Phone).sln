@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platformer (Phone)", "Platformer\Platformer\Platformer (Phone).csproj", "{F654B2F8-E237-4DDE-B053-3E9754EA9481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content", "Platformer\Content\Content.contentproj", "{2FDB7EF3-D3C4-47A3-8E75-C901A05B8574}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F654B2F8-E237-4DDE-B053-3E9754EA9481}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{F654B2F8-E237-4DDE-B053-3E9754EA9481}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{F654B2F8-E237-4DDE-B053-3E9754EA9481}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{F654B2F8-E237-4DDE-B053-3E9754EA9481}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{F654B2F8-E237-4DDE-B053-3E9754EA9481}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{F654B2F8-E237-4DDE-B053-3E9754EA9481}.Release|Windows Phone.Deploy.0 = Release|Windows Phone		
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

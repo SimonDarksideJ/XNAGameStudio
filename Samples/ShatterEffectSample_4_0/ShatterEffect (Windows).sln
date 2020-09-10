@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShatterEffectWindows", "ShatterEffect\ShatterEffectWindows.csproj", "{9CA8CB1E-C848-46F1-A6E9-2590D44D27EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShatterProcessor", "ShatterProcessor\ShatterProcessor.csproj", "{7DEA239F-EE67-400D-8B91-98224895F25F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShatterEffectContent", "ShatterEffect\Content\ShatterEffectContent.contentproj", "{A37BA5DA-4554-4D86-B077-F916C7B69B49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CA8CB1E-C848-46F1-A6E9-2590D44D27EE}.Debug|x86.ActiveCfg = Debug|x86
+		{9CA8CB1E-C848-46F1-A6E9-2590D44D27EE}.Debug|x86.Build.0 = Debug|x86
+		{9CA8CB1E-C848-46F1-A6E9-2590D44D27EE}.Release|x86.ActiveCfg = Release|x86
+		{9CA8CB1E-C848-46F1-A6E9-2590D44D27EE}.Release|x86.Build.0 = Release|x86
+		{7DEA239F-EE67-400D-8B91-98224895F25F}.Debug|x86.ActiveCfg = Debug|x86
+		{7DEA239F-EE67-400D-8B91-98224895F25F}.Debug|x86.Build.0 = Debug|x86
+		{7DEA239F-EE67-400D-8B91-98224895F25F}.Release|x86.ActiveCfg = Release|x86
+		{7DEA239F-EE67-400D-8B91-98224895F25F}.Release|x86.Build.0 = Release|x86
+		{A37BA5DA-4554-4D86-B077-F916C7B69B49}.Debug|x86.ActiveCfg = Debug|x86
+		{A37BA5DA-4554-4D86-B077-F916C7B69B49}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

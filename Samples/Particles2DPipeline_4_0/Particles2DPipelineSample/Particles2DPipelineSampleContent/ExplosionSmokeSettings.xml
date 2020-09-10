@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="ParticlesSettings.ParticleSystemSettings">
+    <MinNumParticles>5</MinNumParticles>
+    <MaxNumParticles>10</MaxNumParticles>
+    <TextureFilename>smoke</TextureFilename>
+    <MinInitialSpeed>20</MinInitialSpeed>
+    <MaxInitialSpeed>200</MaxInitialSpeed>
+    <AccelerationMode>Scalar</AccelerationMode>
+    <MinAccelerationScale>-10</MinAccelerationScale>
+    <MaxAccelerationScale>-50</MaxAccelerationScale>
+    <MinRotationSpeed>-45</MinRotationSpeed>
+    <MaxRotationSpeed>45</MaxRotationSpeed>
+    <MinLifetime>1</MinLifetime>
+    <MaxLifetime>2.5</MaxLifetime>
+    <MinSize>1</MinSize>
+    <MaxSize>2</MaxSize>
+  </Asset>
+</XnaContent>

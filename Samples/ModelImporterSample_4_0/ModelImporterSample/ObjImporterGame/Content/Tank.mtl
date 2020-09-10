@@ -1,0 +1,21 @@
+# Max2Mtl Version 4.0 Mar 10th, 2001
+#
+newmtl turret_phong
+Ka  0.0 0.0 0.0
+Kd  0.8 0.8 0.8
+Ks  0.3 0.4 0.3
+d  1.0
+Ns  10.0
+illum 2
+map_Kd turret_alt_diff_tex_small.tga
+#
+newmtl engine_phong
+Ka  0.0 0.0 0.0
+Kd  0.8 0.8 0.8
+Ks  0.3 0.4 0.3
+d  1.0
+Ns  10.0
+illum 2
+map_Kd engine_diff_tex_small.tga
+#
+# EOF

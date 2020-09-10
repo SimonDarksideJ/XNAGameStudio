@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankOnAHeightmapXbox", "TankOnAHeightmap\TankOnAHeightmapXbox.csproj", "{ED4ECCC6-975E-4535-AC64-98E7D373E7C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankOnAHeightmapPipeline", "TankOnAHeightmapPipeline\TankOnAHeightmapPipeline.csproj", "{287934F7-D1DF-4E3E-A05E-505C500113DC}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankOnAHeightmapContent", "TankOnAHeightmap\Content\TankOnAHeightmapContent.contentproj", "{46E1D6C9-612C-48C8-BF18-E14568BE9C73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{287934F7-D1DF-4E3E-A05E-505C500113DC}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{287934F7-D1DF-4E3E-A05E-505C500113DC}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{287934F7-D1DF-4E3E-A05E-505C500113DC}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{287934F7-D1DF-4E3E-A05E-505C500113DC}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{46E1D6C9-612C-48C8-BF18-E14568BE9C73}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{46E1D6C9-612C-48C8-BF18-E14568BE9C73}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{ED4ECCC6-975E-4535-AC64-98E7D373E7C4}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{ED4ECCC6-975E-4535-AC64-98E7D373E7C4}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{ED4ECCC6-975E-4535-AC64-98E7D373E7C4}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{ED4ECCC6-975E-4535-AC64-98E7D373E7C4}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{ED4ECCC6-975E-4535-AC64-98E7D373E7C4}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{ED4ECCC6-975E-4535-AC64-98E7D373E7C4}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

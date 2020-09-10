@@ -1,0 +1,93 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C10DB8C-6B66-4326-8268-0AEC095D7822}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RolePlayingGameData</RootNamespace>
+    <AssemblyName>RolePlayingGameData</AssemblyName>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Animation\AnimatingSprite.cs" />
+    <Compile Include="Animation\Animation.cs" />
+    <Compile Include="Characters\Character.cs" />
+    <Compile Include="Characters\CharacterClass.cs" />
+    <Compile Include="Characters\CharacterLevelDescription.cs" />
+    <Compile Include="Characters\CharacterLevelingStatistics.cs" />
+    <Compile Include="Characters\FightingCharacter.cs" />
+    <Compile Include="Characters\Monster.cs" />
+    <Compile Include="Characters\Player.cs" />
+    <Compile Include="Characters\QuestNpc.cs" />
+    <Compile Include="ContentObject.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="Data\StatisticsValueStack.cs" />
+    <Compile Include="GameStartDescription.cs" />
+    <Compile Include="Gear\Equipment.cs" />
+    <Compile Include="Quests\QuestRequirement.cs" />
+    <Compile Include="WorldEntry.cs" />
+    <Compile Include="Map\Chest.cs" />
+    <Compile Include="MapEntry.cs" />
+    <Compile Include="Map\FixedCombat.cs" />
+    <Compile Include="ContentEntry.cs" />
+    <Compile Include="Map\Map.cs" />
+    <Compile Include="Map\Portal.cs" />
+    <Compile Include="Map\RandomCombat.cs" />
+    <Compile Include="Quests\QuestLine.cs" />
+    <Compile Include="WeightedContentEntry.cs" />
+    <Compile Include="Quests\Quest.cs" />
+    <Compile Include="Map\Store.cs" />
+    <Compile Include="Gear\Armor.cs" />
+    <Compile Include="Gear\Gear.cs" />
+    <Compile Include="Data\Int32Range.cs" />
+    <Compile Include="Gear\GearDrop.cs" />
+    <Compile Include="Gear\Item.cs" />
+    <Compile Include="Map\Inn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\StatisticsRange.cs" />
+    <Compile Include="Data\StatisticsValue.cs" />
+    <Compile Include="Gear\Weapon.cs" />
+    <Compile Include="Spell.cs" />
+    <Compile Include="Map\StoreCategory.cs" />
+    <Compile Include="WorldObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkStateManagementXbox", "NetworkStateManagement\NetworkStateManagementXbox.csproj", "{F5874775-2AF8-4B57-9D01-ED48F13F18A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkStateManagementContent", "NetworkStateManagement\Content\NetworkStateManagementContent.contentproj", "{5E2F601C-A919-414A-AECD-CD1F837F9465}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E2F601C-A919-414A-AECD-CD1F837F9465}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{5E2F601C-A919-414A-AECD-CD1F837F9465}.Release|Xbox 360.ActiveCfg = Release|x86
+		{F5874775-2AF8-4B57-9D01-ED48F13F18A8}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{F5874775-2AF8-4B57-9D01-ED48F13F18A8}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{F5874775-2AF8-4B57-9D01-ED48F13F18A8}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{F5874775-2AF8-4B57-9D01-ED48F13F18A8}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{F5874775-2AF8-4B57-9D01-ED48F13F18A8}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{F5874775-2AF8-4B57-9D01-ED48F13F18A8}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnowShovelWindowsPhone", "SnowShovel\SnowShovel\SnowShovelWindowsPhone.csproj", "{D9FC7EA5-84B8-46BB-BFEB-E4AD5CFA5330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnowShovelContent", "SnowShovel\SnowShovelContent\SnowShovelContent.contentproj", "{40DFAA7F-79D1-49DA-A853-E6A4CAA935A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9FC7EA5-84B8-46BB-BFEB-E4AD5CFA5330}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{D9FC7EA5-84B8-46BB-BFEB-E4AD5CFA5330}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{D9FC7EA5-84B8-46BB-BFEB-E4AD5CFA5330}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{D9FC7EA5-84B8-46BB-BFEB-E4AD5CFA5330}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{D9FC7EA5-84B8-46BB-BFEB-E4AD5CFA5330}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{D9FC7EA5-84B8-46BB-BFEB-E4AD5CFA5330}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputSequenceSampleXbox", "InputSequenceSample\InputSequenceSampleXbox.csproj", "{8127E129-0773-44F4-B28C-6824B3DA03A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputSequenceSampleContent", "InputSequenceSample\Content\InputSequenceSampleContent.contentproj", "{BCB334AF-A897-473F-9F6F-F19A8AFC712A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCB334AF-A897-473F-9F6F-F19A8AFC712A}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{BCB334AF-A897-473F-9F6F-F19A8AFC712A}.Release|Xbox 360.ActiveCfg = Release|x86
+		{8127E129-0773-44F4-B28C-6824B3DA03A8}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{8127E129-0773-44F4-B28C-6824B3DA03A8}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{8127E129-0773-44F4-B28C-6824B3DA03A8}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{8127E129-0773-44F4-B28C-6824B3DA03A8}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{8127E129-0773-44F4-B28C-6824B3DA03A8}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{8127E129-0773-44F4-B28C-6824B3DA03A8}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

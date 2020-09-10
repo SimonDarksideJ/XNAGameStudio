@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <General PlayerLife="5" PointsPerTarget="1" PointsPerGoldTarget="10" PointsPerBamboo="3"/>
+  <GamePhases>
+    <!-- All game phase related durations are in seconds -->
+    <Phase Duration="45">
+      <Targets GoldProbability="0.1">
+        <Target Interval="5" Probability="0.75"/>
+        <Target Interval="5" Probability="0.75"/>
+        <Target Interval="5" Probability="0.75"/>
+      </Targets>
+      <Bamboo Interval="2" Probability="0.5"/>
+      <Dynamite Interval="10" Probability="0.25">
+        <AmountProbability Amount="1" Probability="1"/>
+      </Dynamite>
+    </Phase>
+    <Phase Duration="75">
+      <Targets GoldProbability="0.1">
+        <Target Interval="2" Probability="0.35"/>
+        <Target Interval="3" Probability="0.65"/>
+        <Target Interval="4" Probability="0.35"/>
+      </Targets>
+      <Bamboo Interval="1" Probability="0.65"/>
+      <Dynamite Interval="5" Probability="0.5">
+        <AmountProbability Probability="0.2"/>
+        <AmountProbability Probability="0.45"/>
+        <AmountProbability Probability="0.35"/>
+      </Dynamite>
+    </Phase>
+    <Phase Duration="-1">
+      <Targets GoldProbability="0.1">
+        <Target Interval="2" Probability="0.5"/>
+        <Target Interval="3" Probability="0.5"/>
+        <Target Interval="4" Probability="0.5"/>
+      </Targets>
+      <Bamboo Interval="1" Probability="0.75"/>
+      <Dynamite Interval="5" Probability="0.5">
+        <!-- The element's position denotes the corresponding amount of dynamite sticks (1st element is 1 
+                stick, second is 2 sticks and so on -->
+        <AmountProbability Probability="0.25"/>
+        <AmountProbability Probability="0.5"/>
+        <AmountProbability Probability="0.25"/>
+      </Dynamite>
+    </Phase>
+  </GamePhases>
+</Configuration>

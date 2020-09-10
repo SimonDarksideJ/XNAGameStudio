@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundAndMusicSample (Phone)", "SoundAndMusicSample\SoundAndMusicSample\SoundAndMusicSample (Phone).csproj", "{A44235C7-B7D3-42A5-A315-0C6519F75E63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundAndMusicSampleContent", "SoundAndMusicSample\SoundAndMusicSampleContent\SoundAndMusicSampleContent.contentproj", "{A696A6B5-3CBE-4C3F-86BA-A83EE86A8F74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A44235C7-B7D3-42A5-A315-0C6519F75E63}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{A44235C7-B7D3-42A5-A315-0C6519F75E63}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{A44235C7-B7D3-42A5-A315-0C6519F75E63}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{A44235C7-B7D3-42A5-A315-0C6519F75E63}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{A44235C7-B7D3-42A5-A315-0C6519F75E63}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{A44235C7-B7D3-42A5-A315-0C6519F75E63}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{A696A6B5-3CBE-4C3F-86BA-A83EE86A8F74}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{A696A6B5-3CBE-4C3F-86BA-A83EE86A8F74}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

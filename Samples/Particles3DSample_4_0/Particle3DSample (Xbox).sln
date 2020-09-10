@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particle3DSampleXbox", "Particle3DSample\Particle3DSampleXbox.csproj", "{6C966D0A-E0AE-4F6C-84A5-3323568AABB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particle3DSampleContent", "Particle3DSample\Content\Particle3DSampleContent.contentproj", "{12A1407B-BACE-4F2A-9413-A4C8DD9E4922}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12A1407B-BACE-4F2A-9413-A4C8DD9E4922}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{12A1407B-BACE-4F2A-9413-A4C8DD9E4922}.Release|Xbox 360.ActiveCfg = Release|x86
+		{6C966D0A-E0AE-4F6C-84A5-3323568AABB0}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{6C966D0A-E0AE-4F6C-84A5-3323568AABB0}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{6C966D0A-E0AE-4F6C-84A5-3323568AABB0}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{6C966D0A-E0AE-4F6C-84A5-3323568AABB0}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{6C966D0A-E0AE-4F6C-84A5-3323568AABB0}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{6C966D0A-E0AE-4F6C-84A5-3323568AABB0}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatapultGame", "CatapultGame\CatapultGame\CatapultGame.csproj", "{81700E98-9DDE-465C-B892-B2FBAD503CBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatapultGameContent", "CatapultGame\CatapultGameContent\CatapultGameContent.contentproj", "{B143198A-0BB3-4969-9154-12ABB92DEA33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81700E98-9DDE-465C-B892-B2FBAD503CBA}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{81700E98-9DDE-465C-B892-B2FBAD503CBA}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{81700E98-9DDE-465C-B892-B2FBAD503CBA}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{81700E98-9DDE-465C-B892-B2FBAD503CBA}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{81700E98-9DDE-465C-B892-B2FBAD503CBA}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{81700E98-9DDE-465C-B892-B2FBAD503CBA}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{B143198A-0BB3-4969-9154-12ABB92DEA33}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{B143198A-0BB3-4969-9154-12ABB92DEA33}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

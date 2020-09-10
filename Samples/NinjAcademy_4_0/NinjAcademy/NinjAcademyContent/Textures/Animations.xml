@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Animations>
+    <Definition FrameWidth="27" FrameHeight="117" VisualCenterX="9" VisualCenterY="69" SheetRows="1" SheetColumns="2"
+                SheetName="Textures/Game Elements/dynamite" Alias="Dynamite" FrameMillisecondInterval="250"
+                Cyclic="true"/>
+    <Definition FrameWidth="203" FrameHeight="91" VisualCenterX="100" VisualCenterY="32" SheetRows="1" SheetColumns="4"
+                SheetName="Textures/Game Elements/throwingStar" Alias="ThrowingStar" FrameMillisecondInterval="150"
+                Cyclic="true"/>
+    <Definition FrameWidth="57" FrameHeight="58" VisualCenterX="29" VisualCenterY="29" SheetRows="1" SheetColumns="12"
+                SheetName="Textures/Game Elements/gold_target" Alias="GoldTarget" FrameMillisecondInterval="500"
+                Cyclic="true"/>
+    <Definition FrameWidth="57" FrameHeight="58" VisualCenterX="29" VisualCenterY="29" SheetRows="1" SheetColumns="8"
+                SheetName="Textures/Game Elements/targetFalling" Alias="FallingTarget" FrameMillisecondInterval="750"
+                Cyclic="false"/>
+    <Definition FrameWidth="57" FrameHeight="58" VisualCenterX="29" VisualCenterY="29" SheetRows="1" SheetColumns="8"
+                SheetName="Textures/Game Elements/GoldTargetFalling" Alias="FallingGoldTarget" 
+                FrameMillisecondInterval="750" Cyclic="false"/>
+    <Definition FrameWidth="40" FrameHeight="40" VisualCenterX="20" VisualCenterY="21" SheetRows="1" SheetColumns="6"
+                SheetName="Textures/Game Elements/Explosion" Alias="Explosion" FrameMillisecondInterval="400"
+                Cyclic="false"/>
+</Animations>

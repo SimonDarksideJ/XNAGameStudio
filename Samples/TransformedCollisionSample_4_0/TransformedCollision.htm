@@ -1,0 +1,1246 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="save" content="history" /><title>Collision Series 3: 2D Collision with Transformed Objects</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 122%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 1.5em;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 95%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Collision Series 3: 2D Collision with Transformed Objects" />
+<MSHelp:RLTitle Title="Collision Series 3: 2D Collision with Transformed Objects" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.TransformedCollision" />
+<MSHelp:Keyword Index="A" Term="0958027c-f5ee-9acb-ac54-3bbe5fccc85e" />
+<MSHelp:Keyword Index="K" Term="Collision Series 3: 2D Collision with Transformed Objects" />
+
+<MSHelp:Attr Name="AssetID" Value="0958027c-f5ee-9acb-ac54-3bbe5fccc85e" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+
+  <h1>Collision Series 3: 2D Collision with Transformed Objects</h1>
+
+    This article explains how to perform per-pixel collision detection on sprites by using linear transformations such as rotation or scale.
+  <div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>This tutorial builds on the code that you wrote during the previous tutorial, "2D Collision Tutorial 2: Per-Pixel." Follow the steps in the two previous tutorials before starting this one.</td></tr></table></div>
+  <a id="ID2EN" name="ID2EN"> </a><h1 class="heading">Introduction</h1><div id="ID2EN" class="hxnx1">
+    
+    <p>In the previous tutorial, you enhanced your simple obstacle-avoidance game by adding per-pixel collisions, which are more accurate than the previously existing bounding rectangle test. The per-pixel technique presented in tutorial 2 accommodates only positioned sprites, without any other transformations. For many games, this is completely sufficient. If your game requires objects that are rotated, scaled, or otherwise linearly transformed, however, you are going to need a more sophisticated per-pixel collision test.</p>
+  </div>
+
+  <a id="ID2EU" name="ID2EU"> </a><h1 class="heading">Step 1: Create Rotating Obstacles</h1><div id="ID2EU" class="hxnx1">
+    
+    <p>For starters, the game needs objects that rotate! The SpinnerBlock.bmp texture in the Content directory of the companion code is a more interesting object for exploring rotation than our current triangular falling block.</p>
+    <div class="proc"><h3 class="subHeading">Add the Spinner Block Art to Your Project</h3><div class="subSection">
+      
+      <ol>
+        <li>Ensure that you can see the Solution Explorer for your project. If you cannot, on the <b>View</b> menu, click <b>Solution Explorer</b>. When the Solution Explorer appears, you see files associated with your project in a tree structure.</li>
+        <li>Right-click the <b>Content project</b>, click <b>Add</b>, and then click <b>Existing Item</b>.</li>
+        <li>In the dialog box that appears, browse to the path where the artwork is located, and select the SpinnerBlock.bmp texture. If you cannot see the textures, change the <b>Files of type</b> selection box to read <b>Content Pipeline Files</b>.</li>
+        <li>Click <b>OK</b>.</li>
+      </ol>
+    </div></div>
+
+    <div class="proc"><h3 class="subHeading">Modify the LoadContent Method to Use the New Art</h3><div class="subSection">
+      
+      <p>Locate the <code>LoadContent</code> method in the game class. Change the <code>blockTexture</code> assignment to reference the <code>SpinnerBlock</code> texture.</p>
+      <pre>blockTexture = Content.Load&lt;Texture2D&gt;("SpinnerBlock");</pre>
+
+      <p>If you compile and run the project just like this, the game should still work perfectly with the big plus-sign shaped blocks. Because the blocks are larger, they are harder to dodge, so you may wish to change the <code>BlockFallSpeed</code> constant from 2 to 1.</p>
+    </div></div>
+
+    <div class="proc"><h3 class="subHeading">Store Rotation with Each Block</h3><div class="subSection">
+      
+      <p>Previously, blocks were represented by a <b>Vector2</b> for their position, but now they also have a rotation. You need to create a structure to hold both pieces of data together for each block.</p>
+      <ol>
+        <li>
+					In <b>Solution Explorer</b>, right-click the <b>project icon</b>, click <b>Add</b>, and then click <b>New Item</b>.
+				</li>
+        <li>
+					In the dialog box that appears, select <b>Class</b>, and then enter the name <i>Block.cs</i>.
+				</li>
+        <li>
+					Click <b>OK</b>.
+				</li>
+      </ol>
+      <p>This creates a <b>Block</b> class to which two fields must be added, one for position and one for rotation. As before, the position field is a Vector2. The rotation field is a single float that represents a clockwise rotation around the block's origin, measured in radians. The complete Block.cs should resemble the following:</p>
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+using System;
+using Microsoft.Xna.Framework;
+
+namespace TransformedCollision
+{
+    /// &lt;summary&gt;
+    /// A falling and spinning object to be avoided.
+    /// &lt;/summary&gt;
+    class Block
+    {
+        public Vector2 Position;
+        public float Rotation;
+    }
+}			</pre></pre></td></tr></table></span></div>
+      <p>The existing code now needs to be adjusted to use the new <b>Block</b> class. Locate the <b>Block</b> field at the top of the game class and replace the <b>blockPositions</b> field with a <b>Blocks</b> field. Also, add a constant for the block rotation speed.</p>
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+List&lt;Block&gt; blocks = new List&lt;Block&gt;();
+const float BlockRotateSpeed = 0.005f;							  </pre></pre></td></tr></table></span></div>
+      <p>At this point, the code will not compile because the <b>blockPositions</b> field no longer exists. Any mention of <b>blockPositions</b> needs to be updated to refer to <b>Blocks</b>. For example, <code>blockPositions[i]</code> becomes <code>blocks[i].Position</code>, and <code>foreach (Vector2 blockPosition in blockPositions)</code> becomes <code>foreach (Block block in blocks)</code>. Construction of a block also changes slightly. Instead of simply calling <code>Vector2 blockPosition = new Vector2(x, y)</code>, a block must be constructed by calling <code>Block newBlock = new Block()</code>, and then constructing the position by using <code>newBlock.Position = new Vector2(x, y)</code>. Before proceeding to the next section, make all the necessary adjustments by searching for references to <code>blockPositions</code>. The compiler will complain if you miss any, and you can cheat by looking at the finished code sample. When the game works as expected (still without rotation), continue to the next section.</p>
+    </div></div>
+    <div class="proc"><h3 class="subHeading">Update and Draw with Rotation</h3><div class="subSection">
+      
+      <p>Although there is now a place to store rotation with each block, the value is always zero! For diversity, each block should start with a random rotation, but for simplicity, each block will rotate with a constant speed. Modify the block spawn code in the <b>Update</b> method to match the following code.</p>
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+// Spawn new falling blocks
+if (random.NextDouble() &lt; BlockSpawnProbability)
+{
+	Block newBlock = new Block();
+
+	// at a random position just above the screen
+	float x = (float)random.NextDouble() *
+		(Window.ClientBounds.Width - blockTexture.Width);
+	newBlock.Position = new Vector2(x, -blockTexture.Height);
+
+	// with a random rotation
+	newBlock.Rotation = (float)random.NextDouble() * MathHelper.TwoPi;
+
+	blocks.Add(newBlock);
+}								 </pre></pre></td></tr></table></span></div>
+      <p>Farther down in the <b>Update</b> method, inside the block update loop, the rotation value needs to be animated. The new line appears in bold.</p>
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+// Animate this block falling
+blocks[i].Position += new Vector2(0.0f, BlockFallSpeed);
+<b>blocks[i].Rotation += BlockRotateSpeed;</b>
+      </pre></pre></td></tr></table></span></div>
+
+      <p>Now the blocks are rotating, but the draw code does not have any knowledge of this. In the <b>Draw</b> method, modify the draw blocks loop to match the following code.</p>
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+// Draw blocks
+foreach (Block block in blocks)
+{
+	spriteBatch.Draw(blockTexture, block.Position, null, Color.White,
+		block.Rotation, Vector2.Zero, 1.0f, SpriteEffects.None, 0.0f);
+}</pre></pre></td></tr></table></span></div>
+      <p>If you compile and run, you will notice two problems. First, as you would expect, the collision does not work correctly. Second, the blocks are rotating around their top left corners! We will get to the first problem shortly, but we can solve the second problem quite easily, by moving the block origin from <i>Vector2.Zero</i> to the center of the block texture. Add the following field to the top of the game class.</p>
+      <pre>Vector2 blockOrigin;</pre>
+      <p>Immediately after loading the block texture in the <b>LoadContent</b> method, initialize <b>blockOrigin</b> to be centered.</p>
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+// Calculate the block origin
+blockOrigin =
+	new Vector2(blockTexture.Width / 2, blockTexture.Height / 2);</pre></pre></td></tr></table></span></div>
+      <p>And modify the <b>Draw</b> method to use this new field.</p>
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+// Draw blocks
+foreach (Block block in blocks)
+{
+	spriteBatch.Draw(blockTexture, block.Position, null, Color.White,
+		block.Rotation, <b>blockOrigin</b>, 1.0f, SpriteEffects.None, 0.0f);
+}</pre></pre></td></tr></table></span></div>
+      <p>Compile and run again. The falling objects rotate correctly as they fall, but you may notice that there is yet another problem! The blocks disappear with a pop when their origin passes across the bottom edge of the window. This is also a simple fix. We need to account for the block origin when we detect removal of blocks from the screen. Modify the block update loop in the <b>Update</b> method. New code is in bold.</p>
+      <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+// Remove this block if it has fallen off the screen
+if (block.Position.Y &gt; Window.ClientBounds.Height <b>+ blockOrigin.Length()</b>)
+						 </pre></pre></td></tr></table></span></div>
+      <p>Finally, if you compile and run, everything looks perfect. Except, of course, the collision detection does not work correctly.</p>
+    </div></div>
+  </div>
+  <a id="ID2EKAAC" name="ID2EKAAC"> </a><h1 class="heading">Step 2: Per-Pixel Collision with Transforms</h1><div id="ID2EKAAC" class="hxnx1">
+    
+    <p>Recall from the previous tutorial that a per-pixel collision test must compare every potentially colliding pixel from both sprites. Consider the following transformed sprites.</p>
+    <img src="World.png" />
+    <p>Both the red plus sign, called sprite A, and the blue slash, called sprite B, are transformed by more than just a simple translation. Both sprites are rotated, and sprite B is also scaled—notice how the pixel squares in sprite B are larger than in sprite A. To determine if the two sprites are colliding, we can test every pixel of A to see if it collides with a pixel of B. To do this, we need a way to take a pixel from sprite A and find the overlapping pixel in sprite B.</p>
+    <div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>
+      It helps to understand matrices, though such knowledge is not required. For the purposes of this tutorial, you need to know only that you can use a matrix to represent a transformation such as scaling, rotation, or translation. You can multiply transformation matrices together to perform multiple transformations in sequence. You can use a matrix to transform a vector from one linear coordinate system to another. The inverse of the matrix transforms back to the original coordinate system. We will use the XNA Framework’s <b>Vector2.Transform</b> method to apply a matrix transformation to a vector.</td></tr></table></div>
+    <p>You can simplify the problem by working from a perspective where sprite A is completely untransformed. This view uses a coordinate system that is local to sprite A. In other words, in this view, positive X is always one pixel directly to the right, and positive Y is always one pixel directly above. In the following illustration, both sprites have the same position and orientation relative to each other, but the local coordinate system results in a much simpler algorithm.</p>
+    <img src="LocalToA.png" />
+    <p>To accomplish this, consider the following illustration.</p>
+    <img src="CoordinateSystems.png" />
+    <p>The local coordinate systems of both sprites are relative to the world coordinate system. Points that are local to sprite A can be made local to sprite B by first passing through world space and then into the local space of sprite B. The first operation is performed by the transformation matrix of sprite A. The second operation is performed by the inverse of the tranformation matrix of sprite B.</p>
+    <pre>Matrix transformAToB = transformA * Matrix.Invert(transformB);</pre>
+    <p>Iterating over every pixel in A and transforming into B yields a point with fractional values that can be rounded to the nearest integer. If this integer lies within the bounds of B, the pixel is compared for collision against the original pixel in A.</p>
+    <p>The full method code follows. Add it to your game class.</p>
+    <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+/// &lt;summary&gt;
+/// Determines if there is overlap of the non-transparent pixels between two
+/// sprites.
+/// &lt;/summary&gt;
+/// &lt;param name="transformA"&gt;World transform of the first sprite.&lt;/param&gt;
+/// &lt;param name="widthA"&gt;Width of the first sprite's texture.&lt;/param&gt;
+/// &lt;param name="heightA"&gt;Height of the first sprite's texture.&lt;/param&gt;
+/// &lt;param name="dataA"&gt;Pixel color data of the first sprite.&lt;/param&gt;
+/// &lt;param name="transformB"&gt;World transform of the second sprite.&lt;/param&gt;
+/// &lt;param name="widthB"&gt;Width of the second sprite's texture.&lt;/param&gt;
+/// &lt;param name="heightB"&gt;Height of the second sprite's texture.&lt;/param&gt;
+/// &lt;param name="dataB"&gt;Pixel color data of the second sprite.&lt;/param&gt;
+/// &lt;returns&gt;True if non-transparent pixels overlap; false otherwise&lt;/returns&gt;
+static bool IntersectPixels(
+    Matrix transformA, int widthA, int heightA, Color[] dataA,
+    Matrix transformB, int widthB, int heightB, Color[] dataB)
+{
+    // Calculate a matrix which transforms from A's local space into
+    // world space and then into B's local space
+    Matrix transformAToB = transformA * Matrix.Invert(transformB);
+
+    // For each row of pixels in A
+    for (int yA = 0; yA &lt; heightA; yA++)
+    {
+        // For each pixel in this row
+        for (int xA = 0; xA &lt; widthA; xA++)
+        {
+            // Calculate this pixel's location in B
+            Vector2 positionInB =
+                Vector2.Transform(new Vector2(xA, yA), transformAToB);
+
+            // Round to the nearest pixel
+            int xB = (int)Math.Round(positionInB.X);
+            int yB = (int)Math.Round(positionInB.Y);
+
+            // If the pixel lies within the bounds of B
+            if (0 &lt;= xB &amp;&amp; xB &lt; widthB &amp;&amp;
+                0 &lt;= yB &amp;&amp; yB &lt; heightB)
+            {
+                // Get the colors of the overlapping pixels
+                Color colorA = dataA[xA + yA * widthA];
+                Color colorB = dataB[xB + yB * widthB];
+
+                // If both pixels are not completely transparent,
+                if (colorA.A != 0 &amp;&amp; colorB.A != 0)
+                {
+                    // then an intersection has been found
+                    return true;
+                }
+            }
+        }
+    }
+
+    // No intersection found
+    return false;
+}</pre></pre></td></tr></table></span></div>
+    <a id="ID2E1EAC" name="ID2E1EAC"> </a><h2 class="subHeading">Test Application</h2><div id="ID2E1EAC" class="hxnx2">
+      
+      <p>This algorithm is likely to be dauntingly complex the first time you see it. To wrap your head around the concept of local space, take some time to try the test application in the TransformedCollisionTest subdirectory. The test application presents two sprites, the black letters F and R (chosen because they have distinguishable orientation) in world space. The same two sprites are gray and represented in the local space of the F sprite. The dots represent the origins of the sprites. You will see that transforming the black R yields an analogous transform in the gray R, but transforming F yields an inverse transform in the gray R. The gray F never moves!</p>
+      <a id="ID2EAFAC" name="ID2EAFAC"> </a><h4 class="subHeading">Test Application Controls</h4><div id="ID2EAFAC" class="hxnx3">
+        
+        <table>
+          <tr>
+            <th>Action</th>
+            <th>Keyboard control</th>
+            <th>Gamepad control</th>
+          </tr>
+          <tr>
+            <td>Select F</td>
+            <td>Hold left mouse button</td>
+            <td>Hold left trigger</td>
+          </tr>
+          <tr>
+            <td>Select R</td>
+            <td>Hold right mouse button</td>
+            <td>Hold right trigger</td>
+          </tr>
+          <tr>
+            <td>Move selected object</td>
+            <td>Move mouse</td>
+            <td>Left thumb stick</td>
+          </tr>
+          <tr>
+            <td>Rotate selected object</td>
+            <td>LEFT and RIGHT ARROW keys or scroll mouse wheel</td>
+            <td>Right and left on the right thumb stick</td>
+          </tr>
+          <tr>
+            <td>Scale selected object</td>
+            <td>UP and DOWN ARROW keys or hold CTRL and scroll mouse wheel</td>
+            <td>Up and down on the right thumb stick</td>
+          </tr>
+          <tr>
+            <td>Select origin of F</td>
+            <td>Hold ALT and left mouse button</td>
+            <td>Hold left shoulder button</td>
+          </tr>
+          <tr>
+            <td>Select origin of R</td>
+            <td>Hold ALT and right mouse button</td>
+            <td>Hold right shoulder button</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <a id="ID2ESHAC" name="ID2ESHAC"> </a><h1 class="heading">Step 3: Invoke the new Collision Test</h1><div id="ID2ESHAC" class="hxnx1">
+		   
+		<p>To use the new intersection method, transformation matrices must be constructed for the person and for the falling blocks. The <b>Matrix</b> structure of the XNA Framework provides several static helper methods to create matrices for transformations that can be concatenated with multiplications. Add the bold lines to the <b>Update</b> method to calculate the person matrix solely from the person position.</p>
+		<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+// Move the player left and right with arrow keys or D-pad
+if (keyboard.IsKeyDown(Keys.Left) ||
+	gamePad.DPad.Left == ButtonState.Pressed)
+{
+	personPosition.X -= PersonMoveSpeed;
+}
+if (keyboard.IsKeyDown(Keys.Right) ||
+	gamePad.DPad.Right == ButtonState.Pressed)
+{
+	personPosition.X += PersonMoveSpeed;
+}
+
+// Prevent the person from moving off of the screen
+personPosition.X = MathHelper.Clamp(personPosition.X,
+	safeBounds.Left, safeBounds.Right - personTexture.Width);
+<b>
+// Update the person's transform
+Matrix personTransform =
+	Matrix.CreateTranslation(new Vector3(personPosition, 0.0f));
+	</b>	  
+			  </pre></pre></td></tr></table></span></div>
+		<p>Inside the block update loop, calculate the block transformation matrix. Be sure to account for its position, origin, and rotation. New code appears in bold.</p>
+			  <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+// Build the block's transform
+<b>Matrix blockTransform =
+    Matrix.CreateTranslation(new Vector3(-blockOrigin, 0.0f)) *
+    Matrix.CreateRotationZ(blocks[i].Rotation) *
+    Matrix.CreateTranslation(new Vector3(blocks[i].Position, 0.0f));</b>
+          
+// Check collision with person
+if (IntersectPixels(<b>personTransform, personTexture.Width,
+		personTexture.Height, personTextureData,
+		blockTransform, blockTexture.Width,
+		blockTexture.Height, blockTextureData</b>))
+{
+	personHit = true;
+}		</pre></pre></td></tr></table></span></div>
+    <p>Compile and run the game. Everything should work exactly as expected now!</p>
+	   </div>
+  <a id="ID2EQIAC" name="ID2EQIAC"> </a><h1 class="heading">Going Beyond: Optimize</h1><div id="ID2EQIAC" class="hxnx1">
+		   
+    <p>Two key optimizations should be performed. The first optimization is to perform a bounding rectangle collision test before invoking the per-pixel test. If the bounding rectangles do not intersect, then it is impossible for any pixels to intersect, so do not even bother to check. The second optimization is more complex, and is discussed in a later section.</p>
+			  <a id="ID2EWIAC" name="ID2EWIAC"> </a><h2 class="subHeading">Bounding Rectangles for Transformed Sprites</h2><div id="ID2EWIAC" class="hxnx2">
+						   
+				  <p>Sprites that are only positioned have trivially calculated bounding rectangles, but transformed sprites are slightly more complex. When a sprite is transformed, so is its bounding rectangle. Unfortunately, the new rectangle is not necessarily axis-aligned. An axis-aligned rectangle can be formed by creating a rectangle that bounds the four corners of the transformed rectangle.</p>
+							  <img src="BoundingRectangles.png" />
+				  <p>Add the following method to your game class.</p>
+				  <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+/// &lt;summary&gt;
+/// Calculates an axis aligned rectangle which fully contains an arbitrarily
+/// transformed axis aligned rectangle.
+/// &lt;/summary&gt;
+/// &lt;param name="rectangle"&gt;Original bounding rectangle.&lt;/param&gt;
+/// &lt;param name="transform"&gt;World transform of the rectangle.&lt;/param&gt;
+/// &lt;returns&gt;A new rectangle which contains the trasnformed rectangle.&lt;/returns&gt;
+public static Rectangle CalculateBoundingRectangle(Rectangle rectangle, Matrix transform)
+{
+	// Get all four corners in local space
+	Vector2 leftTop = new Vector2(rectangle.Left, rectangle.Top);
+	Vector2 rightTop = new Vector2(rectangle.Right, rectangle.Top);
+	Vector2 leftBottom = new Vector2(rectangle.Left, rectangle.Bottom);
+	Vector2 rightBottom = new Vector2(rectangle.Right, rectangle.Bottom);
+
+	// Transform all four corners into work space
+	Vector2.Transform(ref leftTop, ref transform, out leftTop);
+	Vector2.Transform(ref rightTop, ref transform, out rightTop);
+	Vector2.Transform(ref leftBottom, ref transform, out leftBottom);
+	Vector2.Transform(ref rightBottom, ref transform, out rightBottom);
+
+	// Find the minimum and maximum extents of the rectangle in world space
+	Vector2 min = Vector2.Min(Vector2.Min(leftTop, rightTop),
+							  Vector2.Min(leftBottom, rightBottom));
+	Vector2 max = Vector2.Max(Vector2.Max(leftTop, rightTop),
+							  Vector2.Max(leftBottom, rightBottom));
+
+	// Return as a rectangle
+	return new Rectangle((int)min.X, (int)min.Y,
+						 (int)(max.X - min.X), (int)(max.Y - min.Y));
+}						   </pre></pre></td></tr></table></span></div>
+				  <p>In the <b>Update</b> method, check for intersection of the axis-aligned block rectangle with the player rectangle by adding the bold lines.</p>
+				  <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+<b>// Calculate the bounding rectangle of this block in world space
+Rectangle blockRectangle = CalculateBoundingRectangle(
+		 new Rectangle(0, 0, blockTexture.Width, blockTexture.Height),
+		 blockTransform);
+
+// The per-pixel check is expensive, so check the bounding rectangles
+// first to prevent testing pixels when collisions are impossible.
+if (personRectangle.Intersects(blockRectangle))</b>
+{
+	// Check collision with person
+	if (IntersectPixels(personTransform, personTexture.Width,
+						personTexture.Height, personTextureData,
+						blockTransform, blockTexture.Width,
+						blockTexture.Height, blockTextureData))
+	{
+		personHit = true;
+	}
+}</pre></pre></td></tr></table></span></div>
+					   </div>
+		<a id="ID2EXKAC" name="ID2EXKAC"> </a><h2 class="subHeading">Eliminate the Per-Pixel Transformation</h2><div id="ID2EXKAC" class="hxnx2">
+				  
+			<p>Currently, the <b>IntersectPixels</b> method transforms every pixel of sprite A into the local space of sprite B. You can get a substantial speed boost by recognizing that each pixel in both sprites is a uniform displacement from the previous pixel. Only the first pixel of sprite A needs to be transformed into the coordinate space of sprite B. You can infer subsequent pixels by using only a simple translation.</p>
+			<p>Examine the following illustrations. Notice that advancing one pixel along the local x axis of sprite A results in an analogous movement along an arbitrary axis in the local coordinates of sprite B. This analogous movement vector can be determined by transforming the unit X vector from the local space of sprite A local space into the local space of sprite B without translation. Although these illustrations depict the unit X vector, the same can be done for the unit Y vector. Transformations without translation are performed by the <b>Vector2.TransformNormal</b> method.</p>
+			<img src="LocalToAWithStep.png" />
+			<img src="LocalToBWithStep.png" />
+			<p>For each iteration through the pixels of sprite A, the analogous position in sprite B is remembered. Each step in sprite A can be replicated in sprite B by simply adding the step vectors to the current position in sprite B.</p>
+<p>The optimized <b>IntersectPixels</b> method follows.</p>
+<div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>
+/// &lt;summary&gt;
+/// Determines if there is overlap of the non-transparent pixels between two
+/// sprites.
+/// &lt;/summary&gt;
+/// &lt;param name="transformA"&gt;World transform of the first sprite.&lt;/param&gt;
+/// &lt;param name="widthA"&gt;Width of the first sprite's texture.&lt;/param&gt;
+/// &lt;param name="heightA"&gt;Height of the first sprite's texture.&lt;/param&gt;
+/// &lt;param name="dataA"&gt;Pixel color data of the first sprite.&lt;/param&gt;
+/// &lt;param name="transformB"&gt;World transform of the second sprite.&lt;/param&gt;
+/// &lt;param name="widthB"&gt;Width of the second sprite's texture.&lt;/param&gt;
+/// &lt;param name="heightB"&gt;Height of the second sprite's texture.&lt;/param&gt;
+/// &lt;param name="dataB"&gt;Pixel color data of the second sprite.&lt;/param&gt;
+/// &lt;returns&gt;True if non-transparent pixels overlap; false otherwise&lt;/returns&gt;
+public static bool IntersectPixels(
+				Matrix transformA, int widthA, int heightA, Color[] dataA,
+				Matrix transformB, int widthB, int heightB, Color[] dataB)
+{
+	// Calculate a matrix which transforms from A's local space into
+	// world space and then into B's local space
+	Matrix transformAToB = transformA * Matrix.Invert(transformB);
+
+	// When a point moves in A's local space, it moves in B's local space with a
+	// fixed direction and distance proportional to the movement in A.
+	// This algorithm steps through A one pixel at a time along A's X and Y axes
+	// Calculate the analogous steps in B:
+	Vector2 stepX = Vector2.TransformNormal(Vector2.UnitX, transformAToB);
+	Vector2 stepY = Vector2.TransformNormal(Vector2.UnitY, transformAToB);
+
+	// Calculate the top left corner of A in B's local space
+	// This variable will be reused to keep track of the start of each row
+	Vector2 yPosInB = Vector2.Transform(Vector2.Zero, transformAToB);
+
+	// For each row of pixels in A
+	for (int yA = 0; yA &lt; heightA; yA++)
+	{
+		// Start at the beginning of the row
+		Vector2 posInB = yPosInB;
+
+		// For each pixel in this row
+		for (int xA = 0; xA &lt; widthA; xA++)
+		{
+			// Round to the nearest pixel
+			int xB = (int)Math.Round(posInB.X);
+			int yB = (int)Math.Round(posInB.Y);
+
+			// If the pixel lies within the bounds of B
+			if (0 &lt;= xB &amp;&amp; xB &lt; widthB &amp;&amp;
+				0 &lt;= yB &amp;&amp; yB &lt; heightB)
+			{
+				// Get the colors of the overlapping pixels
+				Color colorA = dataA[xA + yA * widthA];
+				Color colorB = dataB[xB + yB * widthB];
+
+				// If both pixels are not completely transparent,
+				if (colorA.A != 0 &amp;&amp; colorB.A != 0)
+				{
+					// then an intersection has been found
+					return true;
+				}
+			}
+
+			// Move to the next pixel in the row
+			posInB += stepX;
+		}
+
+		// Move to the next row
+		yPosInB += stepY;
+	}
+
+	// No intersection found
+	return false;
+}</pre></pre></td></tr></table></span></div>
+			  </div>
+	   </div>
+  <a id="ID2EAPAC" name="ID2EAPAC"> </a><h1 class="heading">Ideas to Expand</h1><div id="ID2EAPAC" class="hxnx1">
+    
+    <p>Now that you have a flexible per-pixel collision detection method, try out these ideas.</p>
+    <ul>
+      <li>Make the falling blocks have varying scales.</li>
+      <li>Create collectable power-ups that make the person shrink or grow.</li>
+    </ul>
+  </div>
+</div><div class="footer" id="footer"><p>© 2010 Microsoft Corporation. All rights reserved.<br />Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Collision Series 3: 2D Collision with Transformed Objects">xnags@microsoft.com</a>.</p></div></div></body></html>

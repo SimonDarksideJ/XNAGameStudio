@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomModelAnimationSample", "CustomModelAnimationSample\CustomModelAnimationSample\CustomModelAnimationSample.csproj", "{BF1D3947-EF06-44B0-BF82-0BD3FC2B7E90}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "CustomModelAnimationSampleContent", "CustomModelAnimationSample\CustomModelAnimationSampleContent\CustomModelAnimationSampleContent.contentproj", "{3AAD77AB-6952-4B39-9635-3C65F4CB3FD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomModelAnimationPipeline", "CustomModelAnimationPipeline\CustomModelAnimationPipeline.csproj", "{A9FA5A39-DB2E-4B36-84B9-267E61DE3ABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomModelAnimationWindows", "CustomModelAnimation\CustomModelAnimationWindows.csproj", "{A061104E-6B77-4FC9-8538-ECCDBF58402D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF1D3947-EF06-44B0-BF82-0BD3FC2B7E90}.Debug|x86.ActiveCfg = Debug|x86
+		{BF1D3947-EF06-44B0-BF82-0BD3FC2B7E90}.Debug|x86.Build.0 = Debug|x86
+		{BF1D3947-EF06-44B0-BF82-0BD3FC2B7E90}.Release|x86.ActiveCfg = Release|x86
+		{BF1D3947-EF06-44B0-BF82-0BD3FC2B7E90}.Release|x86.Build.0 = Release|x86
+		{3AAD77AB-6952-4B39-9635-3C65F4CB3FD4}.Debug|x86.ActiveCfg = Debug|x86
+		{3AAD77AB-6952-4B39-9635-3C65F4CB3FD4}.Release|x86.ActiveCfg = Release|x86
+		{A9FA5A39-DB2E-4B36-84B9-267E61DE3ABA}.Debug|x86.ActiveCfg = Debug|x86
+		{A9FA5A39-DB2E-4B36-84B9-267E61DE3ABA}.Debug|x86.Build.0 = Debug|x86
+		{A9FA5A39-DB2E-4B36-84B9-267E61DE3ABA}.Release|x86.ActiveCfg = Debug|x86
+		{A9FA5A39-DB2E-4B36-84B9-267E61DE3ABA}.Release|x86.Build.0 = Debug|x86
+		{A061104E-6B77-4FC9-8538-ECCDBF58402D}.Debug|x86.ActiveCfg = Debug|x86
+		{A061104E-6B77-4FC9-8538-ECCDBF58402D}.Debug|x86.Build.0 = Debug|x86
+		{A061104E-6B77-4FC9-8538-ECCDBF58402D}.Release|x86.ActiveCfg = Release|x86
+		{A061104E-6B77-4FC9-8538-ECCDBF58402D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonPhotoRealisticXbox", "NonPhotoRealistic\NonPhotoRealisticXbox.csproj", "{71454E4A-6700-4907-BB71-4D5C8F6206F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonPhotoRealisticContent", "NonPhotoRealistic\Content\NonPhotoRealisticContent.contentproj", "{87A0CFDA-8D9D-4455-BECD-9D5CE2658159}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87A0CFDA-8D9D-4455-BECD-9D5CE2658159}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{87A0CFDA-8D9D-4455-BECD-9D5CE2658159}.Release|Xbox 360.ActiveCfg = Release|x86
+		{71454E4A-6700-4907-BB71-4D5C8F6206F8}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{71454E4A-6700-4907-BB71-4D5C8F6206F8}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{71454E4A-6700-4907-BB71-4D5C8F6206F8}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{71454E4A-6700-4907-BB71-4D5C8F6206F8}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{71454E4A-6700-4907-BB71-4D5C8F6206F8}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{71454E4A-6700-4907-BB71-4D5C8F6206F8}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

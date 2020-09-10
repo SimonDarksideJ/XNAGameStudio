@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkStateManagementWindows", "NetworkStateManagement\NetworkStateManagementWindows.csproj", "{B20B4312-B9F6-427A-AA65-07CAF5415D27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkStateManagementContent", "NetworkStateManagement\Content\NetworkStateManagementContent.contentproj", "{5E2F601C-A919-414A-AECD-CD1F837F9465}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B20B4312-B9F6-427A-AA65-07CAF5415D27}.Debug|x86.ActiveCfg = Debug|x86
+		{B20B4312-B9F6-427A-AA65-07CAF5415D27}.Debug|x86.Build.0 = Debug|x86
+		{B20B4312-B9F6-427A-AA65-07CAF5415D27}.Release|x86.ActiveCfg = Release|x86
+		{B20B4312-B9F6-427A-AA65-07CAF5415D27}.Release|x86.Build.0 = Release|x86
+		{5E2F601C-A919-414A-AECD-CD1F837F9465}.Debug|x86.ActiveCfg = Debug|x86
+		{5E2F601C-A919-414A-AECD-CD1F837F9465}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalizationXbox", "Localization\LocalizationXbox.csproj", "{43ACEFF4-96F8-4D90-9A33-6527D241E391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalizationPipeline", "LocalizationPipeline\LocalizationPipeline.csproj", "{67970F83-993D-4921-B3E1-465F2B0569BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalizationContent", "Localization\Content\LocalizationContent.contentproj", "{EFB4D604-6A08-4009-881A-3B0DB5493C22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67970F83-993D-4921-B3E1-465F2B0569BA}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{67970F83-993D-4921-B3E1-465F2B0569BA}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{67970F83-993D-4921-B3E1-465F2B0569BA}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{67970F83-993D-4921-B3E1-465F2B0569BA}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{EFB4D604-6A08-4009-881A-3B0DB5493C22}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{EFB4D604-6A08-4009-881A-3B0DB5493C22}.Release|Xbox 360.ActiveCfg = Release|x86
+		{43ACEFF4-96F8-4D90-9A33-6527D241E391}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{43ACEFF4-96F8-4D90-9A33-6527D241E391}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{43ACEFF4-96F8-4D90-9A33-6527D241E391}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{43ACEFF4-96F8-4D90-9A33-6527D241E391}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{43ACEFF4-96F8-4D90-9A33-6527D241E391}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{43ACEFF4-96F8-4D90-9A33-6527D241E391}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

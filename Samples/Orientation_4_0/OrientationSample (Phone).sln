@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrientationSample (Phone)", "OrientationSample\OrientationSample\OrientationSample (Phone).csproj", "{A5689641-8413-4CE0-89AA-269E3F2176C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrientationSampleContent", "OrientationSample\OrientationSampleContent\OrientationSampleContent.contentproj", "{2BD6B3C8-2947-4C2B-8102-5F3EFB20EBEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5689641-8413-4CE0-89AA-269E3F2176C0}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{A5689641-8413-4CE0-89AA-269E3F2176C0}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{A5689641-8413-4CE0-89AA-269E3F2176C0}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{A5689641-8413-4CE0-89AA-269E3F2176C0}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{A5689641-8413-4CE0-89AA-269E3F2176C0}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{A5689641-8413-4CE0-89AA-269E3F2176C0}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

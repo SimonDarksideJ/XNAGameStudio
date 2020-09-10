@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistortionWindows", "Distortion\DistortionWindows.csproj", "{B2586FD9-BCD2-4D8D-AC3C-200BDFBC1809}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistortionPipeline", "DistortionPipeline\DistortionPipeline.csproj", "{019E5B93-272D-4F06-BB12-81919546C2AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistortionContent", "Distortion\Content\DistortionContent.contentproj", "{DAF462DE-A78E-4C29-8DF1-EAA273C1452F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2586FD9-BCD2-4D8D-AC3C-200BDFBC1809}.Debug|x86.ActiveCfg = Debug|x86
+		{B2586FD9-BCD2-4D8D-AC3C-200BDFBC1809}.Debug|x86.Build.0 = Debug|x86
+		{B2586FD9-BCD2-4D8D-AC3C-200BDFBC1809}.Release|x86.ActiveCfg = Release|x86
+		{B2586FD9-BCD2-4D8D-AC3C-200BDFBC1809}.Release|x86.Build.0 = Release|x86
+		{019E5B93-272D-4F06-BB12-81919546C2AB}.Debug|x86.ActiveCfg = Debug|x86
+		{019E5B93-272D-4F06-BB12-81919546C2AB}.Debug|x86.Build.0 = Debug|x86
+		{019E5B93-272D-4F06-BB12-81919546C2AB}.Release|x86.ActiveCfg = Release|x86
+		{019E5B93-272D-4F06-BB12-81919546C2AB}.Release|x86.Build.0 = Release|x86
+		{DAF462DE-A78E-4C29-8DF1-EAA273C1452F}.Debug|x86.ActiveCfg = Debug|x86
+		{DAF462DE-A78E-4C29-8DF1-EAA273C1452F}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RimLighting", "RimLighting\RimLighting\RimLighting.csproj", "{A4801294-DB8B-41E3-A7E3-0E6ABB8C3102}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "RimLightingContent", "RimLighting\RimLightingContent\RimLightingContent.contentproj", "{E1BCD398-EA4F-4928-93A7-CFB6637E59DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4801294-DB8B-41E3-A7E3-0E6ABB8C3102}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{A4801294-DB8B-41E3-A7E3-0E6ABB8C3102}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{A4801294-DB8B-41E3-A7E3-0E6ABB8C3102}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{A4801294-DB8B-41E3-A7E3-0E6ABB8C3102}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{A4801294-DB8B-41E3-A7E3-0E6ABB8C3102}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{A4801294-DB8B-41E3-A7E3-0E6ABB8C3102}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{E1BCD398-EA4F-4928-93A7-CFB6637E59DC}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{E1BCD398-EA4F-4928-93A7-CFB6637E59DC}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelCollisionXbox", "PerPixelCollision\PerPixelCollision\PerPixelCollisionXbox.csproj", "{8846D595-FFA5-4797-96E0-A69A17A23FE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerPixelCollisionContent", "PerPixelCollision\PerPixelCollisionContent\PerPixelCollisionContent.contentproj", "{1F1CC7DD-DC98-435C-AC22-81D5FDAA41EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F1CC7DD-DC98-435C-AC22-81D5FDAA41EA}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{1F1CC7DD-DC98-435C-AC22-81D5FDAA41EA}.Release|Xbox 360.ActiveCfg = Release|x86
+		{8846D595-FFA5-4797-96E0-A69A17A23FE6}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{8846D595-FFA5-4797-96E0-A69A17A23FE6}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{8846D595-FFA5-4797-96E0-A69A17A23FE6}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{8846D595-FFA5-4797-96E0-A69A17A23FE6}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{8846D595-FFA5-4797-96E0-A69A17A23FE6}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{8846D595-FFA5-4797-96E0-A69A17A23FE6}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeerToPeerXbox", "PeerToPeer\PeerToPeerXbox.csproj", "{CB6BDF49-729A-4FEA-9F54-8FC213FC7527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeerToPeerContent", "PeerToPeer\Content\PeerToPeerContent.contentproj", "{17160423-220F-4133-B09B-E9157636C969}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17160423-220F-4133-B09B-E9157636C969}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{17160423-220F-4133-B09B-E9157636C969}.Release|Xbox 360.ActiveCfg = Release|x86
+		{CB6BDF49-729A-4FEA-9F54-8FC213FC7527}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{CB6BDF49-729A-4FEA-9F54-8FC213FC7527}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{CB6BDF49-729A-4FEA-9F54-8FC213FC7527}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{CB6BDF49-729A-4FEA-9F54-8FC213FC7527}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{CB6BDF49-729A-4FEA-9F54-8FC213FC7527}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{CB6BDF49-729A-4FEA-9F54-8FC213FC7527}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="RolePlayingGameData.Monster">
+    <Name>Orc Brute</Name>
+    <MapSprite>
+      <TextureName>Characters\Orc1IdleLeft</TextureName>
+      <FrameDimensions>98 112</FrameDimensions>
+      <FramesPerRow>6</FramesPerRow>
+      <SourceOffset>49 86</SourceOffset>
+      <Animations />
+    </MapSprite>
+    <CharacterClassContentName>Barbarian</CharacterClassContentName>
+    <CharacterLevel>5</CharacterLevel>
+    <InitialEquipmentContentNames>
+      <Item>Weapons\GiantClub</Item>
+      <Item>Armor\HideArmor</Item>
+    </InitialEquipmentContentNames>
+    <Inventory />
+    <CombatSprite>
+      <TextureName>Characters\Orc1AttackLeft</TextureName>
+      <FrameDimensions>150 100</FrameDimensions>
+      <FramesPerRow>6</FramesPerRow>
+      <SourceOffset>79 75</SourceOffset>
+      <Animations>
+        <Item>
+          <Name>Idle</Name>
+          <StartingFrame>37</StartingFrame>
+          <EndingFrame>42</EndingFrame>
+          <Interval>80</Interval>
+          <IsLoop>true</IsLoop>
+        </Item>
+      </Animations>
+    </CombatSprite>
+    <DefendPercentage>10</DefendPercentage>
+    <GearDrops>
+      <Item>
+        <GearName>Weapons\GiantClub</GearName>
+        <DropPercentage>10</DropPercentage>
+      </Item>
+    </GearDrops>
+  </Asset>
+</XnaContent>

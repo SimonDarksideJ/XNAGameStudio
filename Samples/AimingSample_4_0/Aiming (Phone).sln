@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aiming", "Aiming\AimingWindowsPhone.csproj", "{E4C7960D-E564-4CD5-85D6-2B7B0B3DA5BA}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "AimingContent", "AimingContent\AimingContent.contentproj", "{78389516-6C68-4B69-A375-2196DE9C024B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4C7960D-E564-4CD5-85D6-2B7B0B3DA5BA}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{E4C7960D-E564-4CD5-85D6-2B7B0B3DA5BA}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{E4C7960D-E564-4CD5-85D6-2B7B0B3DA5BA}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{E4C7960D-E564-4CD5-85D6-2B7B0B3DA5BA}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{E4C7960D-E564-4CD5-85D6-2B7B0B3DA5BA}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{E4C7960D-E564-4CD5-85D6-2B7B0B3DA5BA}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

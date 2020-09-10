@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NormalMappingEffectXbox", "NormalMappingEffect\NormalMappingEffectXbox.csproj", "{AA8029CD-8B58-45C3-84F1-55AE88A47F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NormalMappingEffectPipeline", "NormalMappingEffectPipeline\NormalMappingEffectPipeline.csproj", "{8BE2A4F5-2E5F-4125-95F4-9877B208063C}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NormalMappingEffectContent", "NormalMappingEffect\Content\NormalMappingEffectContent.contentproj", "{739A0CD0-EED9-401C-94B8-8AD5659B9BE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA8029CD-8B58-45C3-84F1-55AE88A47F8E}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{AA8029CD-8B58-45C3-84F1-55AE88A47F8E}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{AA8029CD-8B58-45C3-84F1-55AE88A47F8E}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{AA8029CD-8B58-45C3-84F1-55AE88A47F8E}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{AA8029CD-8B58-45C3-84F1-55AE88A47F8E}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{AA8029CD-8B58-45C3-84F1-55AE88A47F8E}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{8BE2A4F5-2E5F-4125-95F4-9877B208063C}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{8BE2A4F5-2E5F-4125-95F4-9877B208063C}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{8BE2A4F5-2E5F-4125-95F4-9877B208063C}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{8BE2A4F5-2E5F-4125-95F4-9877B208063C}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{739A0CD0-EED9-401C-94B8-8AD5659B9BE0}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{739A0CD0-EED9-401C-94B8-8AD5659B9BE0}.Release|Xbox 360.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

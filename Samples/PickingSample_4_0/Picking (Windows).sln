@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Picking (Windows)", "Picking\Picking (Windows).csproj", "{FAF96228-C020-4E9D-9AEB-EE0A1CFCF0ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickingContent", "PickingContent\PickingContent.contentproj", "{02B8AE9F-0D1C-4C02-B0EE-6CC0FA5660FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAF96228-C020-4E9D-9AEB-EE0A1CFCF0ED}.Debug|x86.ActiveCfg = Debug|x86
+		{FAF96228-C020-4E9D-9AEB-EE0A1CFCF0ED}.Debug|x86.Build.0 = Debug|x86
+		{FAF96228-C020-4E9D-9AEB-EE0A1CFCF0ED}.Release|x86.ActiveCfg = Release|x86
+		{FAF96228-C020-4E9D-9AEB-EE0A1CFCF0ED}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
