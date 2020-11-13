@@ -1,0 +1,2923 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>bg_00</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>88 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>176 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>264 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>352 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>440 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>528 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>616 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>704 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>792 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>880 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>936 0 88 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>968 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>88 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>176 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>264 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>352 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>440 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>528 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>616 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>704 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>792 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>880 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>840 304 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>968 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_01</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_bg</TextureName>
+							<Rect>0 0 1024 576</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_02</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>912 448 112 576</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>41 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>880 984 32 40</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>10 536</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>880 992 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-22 544</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 992 880 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>153 544</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1024 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>904 247</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>664 247</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>544 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>424 247</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>304 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>184 247</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-56 247</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01_20a11</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-176 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1026 56</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>876 76</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>726 56</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>576 76</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>426 56</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>316 76</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>166 56</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>26 75</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-124 56</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_02_12a10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 464 256 520</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-274 75</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_03_22a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>640 0 168 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-168 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_03_22a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>640 0 168 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-8 247</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_03_22a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>640 0 168 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>152 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_03_22a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>640 0 168 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>312 247</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_03_22a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>640 0 168 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>472 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_03_22a6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>640 0 168 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 246</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_03_22a7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>640 0 168 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>792 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_03_22a8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>640 0 168 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>952 246</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_03_22a9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>640 0 168 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1048 232</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-248 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-108 100</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>32 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>172 99</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>312 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 100</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>592 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>732 99</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>872 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_04_24a10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>264 464 248 496</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1025 99</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1023 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>892 140</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>762 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 140</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>502 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>372 140</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>241 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>112 140</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-18 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-148 140</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_05_14a11</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>216 0 232 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-278 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1022 144</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>922 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>822 144</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>722 163</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>622 144</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>522 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>422 144</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>322 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>222 144</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>122 154</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a11</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>14 144</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a12</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-96 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_06_10a13</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>0 0 208 432</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-212 144</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-200 88</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-70 103</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 88</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>190 102</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>320 88</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>450 103</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>580 88</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>710 101</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>840 88</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>970 103</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_07_30a11</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>520 464 200 488</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1100 88</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1024 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>924 130</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>824 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>724 129</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>624 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>524 130</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>424 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>324 130</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>224 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>124 130</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a11</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>24 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a12</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-76 130</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_08_32a13</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>728 464 176 456</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-178 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a1m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1004 232</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a2m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>884 247</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a3m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>763 232</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a4m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>643 247</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a5m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>524 232</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a6m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>404 247</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a7m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>284 232</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a8m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>164 247</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a9m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>44 232</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a10m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-76 247</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>chara_01m_20a11m</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/street/bmp/street_obj</TextureName>
+							<Rect>456 0 176 344</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-196 232</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>Anime</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_00</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>50</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a1m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a2m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a3m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a4m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a5m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a6m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a7m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a8m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a9m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01m_20a10m</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>chara_01m_20a11m</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_01</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>50</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_01_20a10</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>chara_01_20a11</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>70</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a10</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a11</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>chara_08_32a12</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>chara_08_32a13</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_02_12a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_02_12a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_02_12a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_02_12a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_02_12a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_02_12a6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_02_12a7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_02_12a8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>chara_02_12a9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>chara_02_12a10</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>100</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_03_22a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_03_22a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_03_22a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_03_22a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_03_22a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_03_22a6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_03_22a7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_03_22a8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>chara_03_22a9</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>10</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>chara_04_24a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>chara_04_24a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>chara_04_24a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>chara_04_24a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>chara_04_24a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>chara_04_24a6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>chara_04_24a7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>chara_04_24a8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>chara_04_24a9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>chara_04_24a10</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>10</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a10</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a11</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_06_10a12</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>chara_06_10a13</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>100</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>chara_05_14a10</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>chara_05_14a11</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>30</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>34</Frame>
+									<PatternGroupName>chara_07_30a10</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>chara_07_30a11</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_02</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

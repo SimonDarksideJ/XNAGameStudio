@@ -1,0 +1,1490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6CD3E13F-2668-439F-8299-0C7A98E1D87B}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>RacingGameContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\RacingGame.xap">
+      <Name>RacingGame</Name>
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Beep.wav">
+      <Name>Beep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Bleep.wav">
+      <Name>Bleep</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\BrakeCurveMajor.wav">
+      <Name>BrakeCurveMajor</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\BrakeCurveMinor.wav">
+      <Name>BrakeCurveMinor</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\BrakeMajor.wav">
+      <Name>BrakeMajor</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\BrakeMinor.wav">
+      <Name>BrakeMinor</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\CarCrashMinor.wav">
+      <Name>CarCrashMinor</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\CarCrashTotal.wav">
+      <Name>CarCrashTotal</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\CarLose.wav">
+      <Name>CarLose</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\CheckpointBetter.wav">
+      <Name>CheckpointBetter</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\CheckpointWorse.wav">
+      <Name>CheckpointWorse</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Gear1.wav">
+      <Name>Gear1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Gear1ToGear2.wav">
+      <Name>Gear1ToGear2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Gear2.wav">
+      <Name>Gear2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Gear2ToGear3.wav">
+      <Name>Gear2ToGear3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Gear3.wav">
+      <Name>Gear3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Gear3ToGear4.wav">
+      <Name>Gear3ToGear4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Gear4.wav">
+      <Name>Gear4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Gear4ToGear5.wav">
+      <Name>Gear4ToGear5</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Gear5.wav">
+      <Name>Gear5</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\menu_buttonclick.wav">
+      <Name>menu_buttonclick</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\menu_highlight.wav">
+      <Name>menu_highlight</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\menu_screenback.wav">
+      <Name>menu_screenback</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\menu_screenclick.wav">
+      <Name>menu_screenclick</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\RacingGame Game Music 1.wav">
+      <Name>RacingGame Game Music 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\RacingGame Game Music 2.wav">
+      <Name>RacingGame Game Music 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\RacingGame Menu Music 2.wav">
+      <Name>RacingGame Menu Music 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Waves\Victory.wav">
+      <Name>Victory</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\background.png">
+      <Name>background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\buttons.png">
+      <Name>buttons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ColorSelection.png">
+      <Name>ColorSelection</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\GameFont.png">
+      <Name>GameFont</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\headers.png">
+      <Name>headers</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\HelpScreenWindows.png">
+      <Name>HelpScreenWindows</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\HelpScreenXbox360.png">
+      <Name>HelpScreenXbox360</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ingame.png">
+      <Name>ingame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\MouseCursor.png">
+      <Name>MouseCursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\OptionsScreenWindows.png">
+      <Name>OptionsScreenWindows</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\OptionsScreenXbox360.png">
+      <Name>OptionsScreenXbox360</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LandscapeHeights.data">
+      <Name>LandscapeHeights</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Models\AlphaDeadTree.X">
+      <Name>AlphaDeadTree</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+      <ProcessorParameters_DefaultEffect>AlphaTestEffect</ProcessorParameters_DefaultEffect>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+    </Compile>
+    <Compile Include="Models\AlphaPalm.X">
+      <Name>AlphaPalm</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+      <ProcessorParameters_DefaultEffect>AlphaTestEffect</ProcessorParameters_DefaultEffect>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+    </Compile>
+    <Compile Include="Models\AlphaPalm2.X">
+      <Name>AlphaPalm2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+      <ProcessorParameters_DefaultEffect>AlphaTestEffect</ProcessorParameters_DefaultEffect>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+    </Compile>
+    <Compile Include="Models\AlphaPalm3.X">
+      <Name>AlphaPalm3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+      <ProcessorParameters_DefaultEffect>AlphaTestEffect</ProcessorParameters_DefaultEffect>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+    </Compile>
+    <Compile Include="Models\AlphaPalmSmall.X">
+      <Name>AlphaPalmSmall</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+      <ProcessorParameters_DefaultEffect>AlphaTestEffect</ProcessorParameters_DefaultEffect>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+    </Compile>
+    <Compile Include="Models\AlphaTrain.X">
+      <Name>AlphaTrain</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Banner.X">
+      <Name>Banner</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Banner2.X">
+      <Name>Banner2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Banner3.X">
+      <Name>Banner3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Banner4.X">
+      <Name>Banner4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Banner5.X">
+      <Name>Banner5</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Banner6.X">
+      <Name>Banner6</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Blockade.X">
+      <Name>Blockade</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Blockade2.X">
+      <Name>Blockade2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Building.X">
+      <Name>Building</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Building2.X">
+      <Name>Building2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Building3.X">
+      <Name>Building3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Building4.X">
+      <Name>Building4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Building5.X">
+      <Name>Building5</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Car.x">
+      <Name>Car</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\CarSelectionPlate.X">
+      <Name>CarSelectionPlate</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Casino01.X">
+      <Name>Casino01</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Cube.X">
+      <Name>Cube</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="Models\Goal.X">
+      <Name>Goal</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\GuardRailHolder.X">
+      <Name>GuardRailHolder</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Hotel01.X">
+      <Name>Hotel01</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Hotel02.X">
+      <Name>Hotel02</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Hydrant.X">
+      <Name>Hydrant</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Kaktus.X">
+      <Name>Kaktus</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Kaktus2.X">
+      <Name>Kaktus2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\KaktusBenny.X">
+      <Name>KaktusBenny</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\KaktusSeg.X">
+      <Name>KaktusSeg</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Laterne.X">
+      <Name>Laterne</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Laterne2Sides.X">
+      <Name>Laterne2Sides</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\OilPump.X">
+      <Name>OilPump</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\OilTanks.X">
+      <Name>OilTanks</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\RoadColumnSegment.X">
+      <Name>RoadColumnSegment</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Roadsign.X">
+      <Name>Roadsign</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Roadsign2.X">
+      <Name>Roadsign2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Ruin.X">
+      <Name>Ruin</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\RuinHouse.X">
+      <Name>RuinHouse</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\SandCastle.X">
+      <Name>SandCastle</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\SharpRock.X">
+      <Name>SharpRock</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\SharpRock2.X">
+      <Name>SharpRock2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Sign.X">
+      <Name>Sign</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Sign2.X">
+      <Name>Sign2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\SignCurveLeft.X">
+      <Name>SignCurveLeft</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\SignCurveRight.X">
+      <Name>SignCurveRight</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\SignWarning.X">
+      <Name>SignWarning</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\StartLight.X">
+      <Name>StartLight</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\StartLight2.X">
+      <Name>StartLight2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\StartLight3.X">
+      <Name>StartLight3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Stone4.X">
+      <Name>Stone4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Stone5.X">
+      <Name>Stone5</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Train.X">
+      <Name>Train</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Trashcan.X">
+      <Name>Trashcan</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Models\Windmill.X">
+      <Name>Windmill</Name>
+      <Importer>XImporter</Importer>
+      <Processor>RacingGameModelProcessor</Processor>
+      <ProcessorParameters_GenerateTangentFrames>True</ProcessorParameters_GenerateTangentFrames>
+      <ProcessorParameters_PremultiplyTextureAlpha>False</ProcessorParameters_PremultiplyTextureAlpha>
+      <ProcessorParameters_PremultiplyVertexColors>False</ProcessorParameters_PremultiplyVertexColors>
+    </Compile>
+    <Compile Include="Shaders\LandscapeNormalMapping.fx">
+      <Name>LandscapeNormalMapping</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\LightingShader.fx">
+      <Name>LightingShader</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\LineRendering.fx">
+      <Name>LineRendering</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\NormalMapping.fx">
+      <Name>NormalMapping</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\PostScreenGlow.fx">
+      <Name>PostScreenGlow</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\PostScreenMenu.fx">
+      <Name>PostScreenMenu</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\PostScreenShadowBlur.fx">
+      <Name>PostScreenShadowBlur</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\PreScreenSkyCubeMapping.fx">
+      <Name>PreScreenSkyCubeMapping</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ReflectionSimpleGlass.fx">
+      <Name>ReflectionSimpleGlass</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Shaders\ShadowMap.fx">
+      <Name>ShadowMap</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Ast.tga">
+      <Name>Ast</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Ast_Normal.tga">
+      <Name>Ast_Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\banner.tga">
+      <Name>banner</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\banner2.tga">
+      <Name>banner2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\banner3.tga">
+      <Name>banner3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\bannerNormal.tga">
+      <Name>bannerNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Blockade.tga">
+      <Name>Blockade</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\BlockadeNormal.tga">
+      <Name>BlockadeNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Building.tga">
+      <Name>Building</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\building2.tga">
+      <Name>building2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\building2Normal.tga">
+      <Name>building2Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\building3.tga">
+      <Name>building3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\building3Normal.tga">
+      <Name>building3Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\building4.tga">
+      <Name>building4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\building4Normal.tga">
+      <Name>building4Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\building5.tga">
+      <Name>building5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\building5Normal.tga">
+      <Name>building5Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\buildingNormal.tga">
+      <Name>buildingNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\CarSelectionPlate.tga">
+      <Name>CarSelectionPlate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\CarSelectionPlateNormal.tga">
+      <Name>CarSelectionPlateNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Circle.tga">
+      <Name>Circle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\CityGround.tga">
+      <Name>CityGround</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\CityGroundNormal.tga">
+      <Name>CityGroundNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Fort.tga">
+      <Name>Fort</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\FortNormal.tga">
+      <Name>FortNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\garbagecan.tga">
+      <Name>garbagecan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\garbagecanNormal.tga">
+      <Name>garbagecanNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\gelaender.tga">
+      <Name>gelaender</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\gelaenderNormal.tga">
+      <Name>gelaenderNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Glow.tga">
+      <Name>Glow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Goal.tga">
+      <Name>Goal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\GoalNormal.tga">
+      <Name>GoalNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Halo.tga">
+      <Name>Halo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Hotel01.tga">
+      <Name>Hotel01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Hotel01Normal.tga">
+      <Name>Hotel01Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Hydrant.tga">
+      <Name>Hydrant</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\HydrantNormal.tga">
+      <Name>HydrantNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Kaktus.tga">
+      <Name>Kaktus</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\KaktusBenny.tga">
+      <Name>KaktusBenny</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\KaktusBennyNormal.tga">
+      <Name>KaktusBennyNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\KaktusNormal.tga">
+      <Name>KaktusNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\KaktusSeg.tga">
+      <Name>KaktusSeg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\KaktusSegNormal.tga">
+      <Name>KaktusSegNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ladyluck.tga">
+      <Name>ladyluck</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ladyluckNormal.tga">
+      <Name>ladyluckNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Landscape.tga">
+      <Name>Landscape</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\LandscapeDetail.tga">
+      <Name>LandscapeDetail</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\LandscapeNormal.tga">
+      <Name>LandscapeNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Leitplanke.tga">
+      <Name>Leitplanke</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\LeitplankeNormal.tga">
+      <Name>LeitplankeNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Lens.tga">
+      <Name>Lens</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Light.tga">
+      <Name>Light</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\LightNormal.tga">
+      <Name>LightNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Noise128x128.tga">
+      <Name>Noise128x128</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\NormalizeCubeMap.dds">
+      <Name>NormalizeCubeMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_PremultiplyAlpha>False</ProcessorParameters_PremultiplyAlpha>
+    </Compile>
+    <Compile Include="Textures\Oiltank.tga">
+      <Name>Oiltank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\OiltankNormal.tga">
+      <Name>OiltankNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\OilWell.tga">
+      <Name>OilWell</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\OilWellNormal.tga">
+      <Name>OilWellNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Palm.tga">
+      <Name>Palm</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Palm2_stamm.tga">
+      <Name>Palm2_stamm</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Palm2_stammNormal.tga">
+      <Name>Palm2_stammNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\PalmLeave.tga">
+      <Name>PalmLeave</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\PalmLeave2.tga">
+      <Name>PalmLeave2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\PalmLeave2Normal.tga">
+      <Name>PalmLeave2Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\PalmLeaveNormal.tga">
+      <Name>PalmLeaveNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\PalmNormal.tga">
+      <Name>PalmNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\plants.tga">
+      <Name>plants</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\plants_normal.tga">
+      <Name>plants_normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\plazacasino.tga">
+      <Name>plazacasino</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\plazacasinoNormal.tga">
+      <Name>plazacasinoNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\plazaschild.tga">
+      <Name>plazaschild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\plazaschildNormal.tga">
+      <Name>plazaschildNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\pokal1.tga">
+      <Name>pokal1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\pokal2.tga">
+      <Name>pokal2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\pokal3.tga">
+      <Name>pokal3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RacerCar.tga">
+      <Name>RacerCar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_PremultiplyAlpha>False</ProcessorParameters_PremultiplyAlpha>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Textures\RacerCar2.tga">
+      <Name>RacerCar2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_PremultiplyAlpha>False</ProcessorParameters_PremultiplyAlpha>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Textures\RacerCar3.tga">
+      <Name>RacerCar3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_PremultiplyAlpha>False</ProcessorParameters_PremultiplyAlpha>
+      <ProcessorParameters_TextureFormat>NoChange</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Textures\RacerCarNormal.tga">
+      <Name>RacerCarNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Ring.tga">
+      <Name>Ring</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Road.tga">
+      <Name>Road</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RoadBack.tga">
+      <Name>RoadBack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RoadBackNormal.tga">
+      <Name>RoadBackNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RoadCement.tga">
+      <Name>RoadCement</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RoadCementNormal.tga">
+      <Name>RoadCementNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RoadColumnSegment.tga">
+      <Name>RoadColumnSegment</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RoadColumnSegmentNormal.tga">
+      <Name>RoadColumnSegmentNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RoadNormal.tga">
+      <Name>RoadNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\roadsign1.tga">
+      <Name>roadsign1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\roadsign1Normal.tga">
+      <Name>roadsign1Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\roadsign2.tga">
+      <Name>roadsign2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\roadsign2Normal.tga">
+      <Name>roadsign2Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RoadTunnel.tga">
+      <Name>RoadTunnel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\RoadTunnelNormal.tga">
+      <Name>RoadTunnelNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ruin.tga">
+      <Name>ruin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Ruin01.tga">
+      <Name>Ruin01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Ruin01_Normal.tga">
+      <Name>Ruin01_Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ruinNormal.tga">
+      <Name>ruinNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Schild.tga">
+      <Name>Schild</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Schild2.tga">
+      <Name>Schild2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SchildNormal.tga">
+      <Name>SchildNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Schild_Kurve_links.tga">
+      <Name>Schild_Kurve_links</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Schild_Kurve_linksNormal.tga">
+      <Name>Schild_Kurve_linksNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ScreenBorderFadeout.tga">
+      <Name>ScreenBorderFadeout</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\ShadowDistanceFadeoutMap.tga">
+      <Name>ShadowDistanceFadeoutMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SharpRock.tga">
+      <Name>SharpRock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SharpRock3Normal.tga">
+      <Name>SharpRock3Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SharpRockNormal.tga">
+      <Name>SharpRockNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SignWarning.tga">
+      <Name>SignWarning</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SignWarningNormal.tga">
+      <Name>SignWarningNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SkyCubeMap.dds">
+      <Name>SkyCubeMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Stone04.tga">
+      <Name>Stone04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Stone04Normal.tga">
+      <Name>Stone04Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Stone5.tga">
+      <Name>Stone5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Stone5Normal.tga">
+      <Name>Stone5Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Streaks.tga">
+      <Name>Streaks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\streetlamp.tga">
+      <Name>streetlamp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\streetlamp2.tga">
+      <Name>streetlamp2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\streetlamp2Normal.tga">
+      <Name>streetlamp2Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\streetlampNormal.tga">
+      <Name>streetlampNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Sun.tga">
+      <Name>Sun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\TLight.tga">
+      <Name>TLight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\TLightNormal.tga">
+      <Name>TLightNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\track.tga">
+      <Name>track</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\train.tga">
+      <Name>train</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\trainNormal.tga">
+      <Name>trainNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Trunk.tga">
+      <Name>Trunk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Trunk_Normal.tga">
+      <Name>Trunk_Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Windmill.tga">
+      <Name>Windmill</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\WindmillNormal.tga">
+      <Name>WindmillNormal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <None Include="TrackAdvanced.Track">
+      <Name>TrackAdvanced</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TrackBeginner.Track">
+      <Name>TrackBeginner</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TrackExpert.Track">
+      <Name>TrackExpert</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RacingGameContentPipelineExtension\RacingGameContentPipelineExtension.csproj">
+      <Project>{F7783DA3-EE53-4218-8E06-4ED4F357480E}</Project>
+      <Name>RacingGameContentPipelineExtension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CombiBuildings.CombiModel">
+      <Name>CombiBuildings</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiHotels.CombiModel">
+      <Name>CombiHotels</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiOilTanks.CombiModel">
+      <Name>CombiOilTanks</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiPalms.CombiModel">
+      <Name>CombiPalms</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiPalms2.CombiModel">
+      <Name>CombiPalms2</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiRuins.CombiModel">
+      <Name>CombiRuins</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiRuins2.CombiModel">
+      <Name>CombiRuins2</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiSandCastle.CombiModel">
+      <Name>CombiSandCastle</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiStones.CombiModel">
+      <Name>CombiStones</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CombiStones2.CombiModel">
+      <Name>CombiStones2</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

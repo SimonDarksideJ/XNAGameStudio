@@ -1,0 +1,1847 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>bg_00</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_bg</TextureName>
+							<Rect>0 0 1024 576</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_01a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 576 968 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 240</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 576 968 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>968 240</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_01a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 576 968 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-886 240</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 576 968 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>82 240</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_02a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 664 1000 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 169</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 664 1000 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1000 169</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_02a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 664 1000 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-908 169</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 664 1000 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>92 169</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_03a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 776 920 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 776 920 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>921 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_03a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 776 920 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-800 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 776 920 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>120 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_04a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 904 1024 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 904 1024 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1024 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_04a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 904 1024 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-1024 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 904 1024 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_05</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 0 512 568</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 8</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>744 368 280 200</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>744 376</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 264 232 304</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>512 272</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>0 0 112 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>1</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>usisan_20</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>317 487</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>166 455</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>853 469</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>usisan_21</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>632 0 112 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>329 486</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>632 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>139 461</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>632 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>792 468</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>usisan_23</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>632 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>329 486</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>632 0 112 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>139 461</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>632 0 112 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>792 468</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>usisan_22</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>318 486</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>166 454</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>854 468</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_40</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1028 355</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_41</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>824 346</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_42</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>959 297</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_43</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>713 261</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_44</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>730 291</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_45</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>701 303</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_46</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>725 334</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_47</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>603 290</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_48</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>853 166</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_49</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>313 -28</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_50</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>314 -3</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_51</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>101 92</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_52</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>239 75</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_53</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>184 127</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_54</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>572 25</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_55</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>523 95</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_56</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 168 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>931 -44</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_60</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1028 116</Position>
+								<Color>80808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ufo_61</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>36 -58</Position>
+								<Color>80808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 -63</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>645 570</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 -63</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>632 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>592 534</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 -63</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>606 512</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 -63</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>632 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>562 494</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 -63</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>511 471</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 -63</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>632 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>505 445</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 -63</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>454 435</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>454 435</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>454 435</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>752 0 104 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>461 217</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 0.120000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>454 435</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>752 0 104 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>461 217</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x10a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>454 435</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>752 0 104 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>461 217</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>864 0 160 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>429 217</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x11</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>454 435</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>752 0 104 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>461 217</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>864 0 160 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>429 217</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.040000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x12</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>490 216</Position>
+								<Color>00808080</Color>
+								<Scale>0.380000 0.380000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>752 0 104 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>461 217</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>864 0 160 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>429 217</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.040000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x13</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>452 164</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>490 216</Position>
+								<Color>00808080</Color>
+								<Scale>0.380000 0.380000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>752 0 104 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>461 217</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 0.180000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>864 0 160 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>429 217</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>abduct_100x14</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>624 104 120 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>261 -69</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>512 0 112 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>299 -17</Position>
+								<Color>00808080</Color>
+								<Scale>0.380000 0.380000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>752 0 104 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>270 -16</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 0.180000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ufo/bmp/ufo_obj</TextureName>
+							<Rect>864 0 160 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>238 -16</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>Anime</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>90</Frame>
+									<PatternGroupName>bg_00</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1200</Frame>
+									<PatternGroupName>bg_01a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_01a1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>900</Frame>
+									<PatternGroupName>bg_02a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_02a1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>600</Frame>
+									<PatternGroupName>bg_03a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_03a1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>bg_04a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_04a1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_05</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>120</Frame>
+									<PatternGroupName>usisan_20</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>usisan_21</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>120</Frame>
+									<PatternGroupName>usisan_23</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>usisan_22</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>300</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_40</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_41</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_42</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_43</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_44</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_45</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_46</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_47</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_48</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>280</Frame>
+									<PatternGroupName>ufo_49</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_50</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_51</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_52</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_53</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_54</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>ufo_55</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>280</Frame>
+									<PatternGroupName>ufo_56</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>ufo_60</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>ufo_61</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>abduct_100x7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x10</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x10a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x11</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x12</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>abduct_100x13</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>280</Frame>
+									<PatternGroupName>abduct_100x14</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

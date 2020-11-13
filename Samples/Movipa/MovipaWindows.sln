@@ -1,0 +1,64 @@
+
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovipaWindows", "Movipa\MovipaWindows.csproj", "{B8CA1FC4-80D4-492E-A7EF-F4D1CB410383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovipaLibraryWindows", "MovipaLibrary\MovipaLibraryWindows.csproj", "{8ABC0B1E-74EB-4892-AFAB-12D4DEBB76EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovipaPipeline", "MovipaPipeline\MovipaPipeline.csproj", "{AB316159-CFB5-41D2-860E-77653EB2B9CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SceneDataWindows", "SceneData\SceneDataWindows.csproj", "{9CB28F20-9399-452F-B540-18D2FEFCCB89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SceneDataPipeline", "SceneDataPipeline\SceneDataPipeline.csproj", "{6CD6CE4A-411C-4D58-94B9-35682930F293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinnedModelWindows", "SkinnedModel\SkinnedModelWindows.csproj", "{275A6008-A0D8-45CF-99E3-3DC3B0F100FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinnedModelPipeline", "SkinnedModelPipeline\SkinnedModelPipeline.csproj", "{76A496D0-9384-4219-85E9-0102CC608B4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ABC0B1E-74EB-4892-AFAB-12D4DEBB76EC}.Debug|x86.ActiveCfg = Debug|x86
+		{8ABC0B1E-74EB-4892-AFAB-12D4DEBB76EC}.Debug|x86.Build.0 = Debug|x86
+		{8ABC0B1E-74EB-4892-AFAB-12D4DEBB76EC}.Release|x86.ActiveCfg = Release|x86
+		{8ABC0B1E-74EB-4892-AFAB-12D4DEBB76EC}.Release|x86.Build.0 = Release|x86
+		{AB316159-CFB5-41D2-860E-77653EB2B9CF}.Debug|x86.ActiveCfg = Debug|x86
+		{AB316159-CFB5-41D2-860E-77653EB2B9CF}.Debug|x86.Build.0 = Debug|x86
+		{AB316159-CFB5-41D2-860E-77653EB2B9CF}.Release|x86.ActiveCfg = Release|x86
+		{AB316159-CFB5-41D2-860E-77653EB2B9CF}.Release|x86.Build.0 = Release|x86
+		{9CB28F20-9399-452F-B540-18D2FEFCCB89}.Debug|x86.ActiveCfg = Debug|x86
+		{9CB28F20-9399-452F-B540-18D2FEFCCB89}.Debug|x86.Build.0 = Debug|x86
+		{9CB28F20-9399-452F-B540-18D2FEFCCB89}.Release|x86.ActiveCfg = Release|x86
+		{9CB28F20-9399-452F-B540-18D2FEFCCB89}.Release|x86.Build.0 = Release|x86
+		{6CD6CE4A-411C-4D58-94B9-35682930F293}.Debug|x86.ActiveCfg = Debug|x86
+		{6CD6CE4A-411C-4D58-94B9-35682930F293}.Debug|x86.Build.0 = Debug|x86
+		{6CD6CE4A-411C-4D58-94B9-35682930F293}.Release|x86.ActiveCfg = Release|x86
+		{6CD6CE4A-411C-4D58-94B9-35682930F293}.Release|x86.Build.0 = Release|x86
+		{275A6008-A0D8-45CF-99E3-3DC3B0F100FD}.Debug|x86.ActiveCfg = Debug|x86
+		{275A6008-A0D8-45CF-99E3-3DC3B0F100FD}.Debug|x86.Build.0 = Debug|x86
+		{275A6008-A0D8-45CF-99E3-3DC3B0F100FD}.Release|x86.ActiveCfg = Release|x86
+		{275A6008-A0D8-45CF-99E3-3DC3B0F100FD}.Release|x86.Build.0 = Release|x86
+		{76A496D0-9384-4219-85E9-0102CC608B4D}.Debug|x86.ActiveCfg = Debug|x86
+		{76A496D0-9384-4219-85E9-0102CC608B4D}.Debug|x86.Build.0 = Debug|x86
+		{76A496D0-9384-4219-85E9-0102CC608B4D}.Release|x86.ActiveCfg = Release|x86
+		{76A496D0-9384-4219-85E9-0102CC608B4D}.Release|x86.Build.0 = Release|x86
+		{B8CA1FC4-80D4-492E-A7EF-F4D1CB410383}.Debug|x86.ActiveCfg = Debug|x86
+		{B8CA1FC4-80D4-492E-A7EF-F4D1CB410383}.Debug|x86.Build.0 = Debug|x86
+		{B8CA1FC4-80D4-492E-A7EF-F4D1CB410383}.Release|x86.ActiveCfg = Release|x86
+		{B8CA1FC4-80D4-492E-A7EF-F4D1CB410383}.Release|x86.Build.0 = Release|x86
+		{9C67757E-C235-4D04-BE15-4ECB06182868}.Debug|x86.ActiveCfg = Debug|x86
+		{9C67757E-C235-4D04-BE15-4ECB06182868}.Release|x86.ActiveCfg = Release|x86
+		{0770477E-0034-4BF8-B3B4-62FF7AFBC95E}.Debug|x86.ActiveCfg = Debug|x86
+		{0770477E-0034-4BF8-B3B4-62FF7AFBC95E}.Release|x86.ActiveCfg = Release|x86
+		{FBCD40BC-1AE1-4688-8A3F-6A253FC184BD}.Debug|x86.ActiveCfg = Debug|x86
+		{FBCD40BC-1AE1-4688-8A3F-6A253FC184BD}.Release|x86.ActiveCfg = Release|x86
+		{2B47D242-9D65-47D8-BE43-E0ADF275D025}.Debug|x86.ActiveCfg = Debug|x86
+		{2B47D242-9D65-47D8-BE43-E0ADF275D025}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3848 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>StaffTitle_Planner</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 0 448 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>416 160</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffTitle_Programmer</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 80 696 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>295 64</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffTitle_MusicComposer</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 176 960 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>166 208</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffTitle_GraphicDesigner</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 272 1024 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>127 64</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffTitle_DevelopedBy</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 368 784 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>249 208</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Planner_PlannerFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 0 448 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>336 160</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Planner_Planner</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 0 448 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>416 160</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Planner_PlannerFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 0 448 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>496 160</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Planner_Planner1FadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 321</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>-180.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 321</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>-180.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Planner_Planner1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 321</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 321</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Planner_Planner1FadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 321</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>270.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 321</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>270.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Planner_Planner2FadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 160 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 433</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>-180.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 433</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>-180.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Planner_Planner2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 160 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 433</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 433</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Planner_Planner2FadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 160 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 433</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>270.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 433</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>270.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_ProgrammerFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 80 696 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>215 64</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 80 696 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>295 64</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_ProgrammerFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 80 696 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>375 64</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer1FadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 240 552 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 -87</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>616 -87</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer1_1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 240 552 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>616 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer1_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 240 552 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>616 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer1_3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 240 552 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>616 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer1FadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 240 552 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 729</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>616 729</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer2FadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 320 784 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 -87</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>848 -87</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer2_1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 320 784 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>848 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer2_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 320 784 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>848 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer2_3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 320 784 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>848 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer2FadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 320 784 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 729</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>848 729</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer3FadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 400 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 -87</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 -87</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer3_1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 400 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer3_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 400 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer3_3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 400 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer3FadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 400 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 729</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 729</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer4FadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 480 632 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 -88</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>696 -88</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer4_1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 480 632 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>696 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer4_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 480 632 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>696 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer4_3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 480 632 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>696 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer_Programmer4FadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 480 632 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 728</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>696 728</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposerFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 176 960 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>86 208</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 176 960 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>166 208</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposerFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 176 960 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>246 208</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer1FadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 369</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 369</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>61 364</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>781 364</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>65 371</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>785 371</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>66 366</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>786 366</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>59 372</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>779 372</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>65 368</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>785 368</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 372</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 372</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer_MusicComposer8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 366</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>780 366</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesignerFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 272 1024 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>47 64</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 272 1024 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>127 64</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesignerFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 272 1024 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>207 64</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner1_1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 560 576 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 225</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 0.100000</Scale>
+								<Center>288 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 225</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 0.100000</Scale>
+								<Center>212 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner1_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 560 576 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.250000 0.100000</Scale>
+								<Center>288 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.250000 0.100000</Scale>
+								<Center>212 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner1_3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 560 576 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>288 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>212 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner2_1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 640 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 337</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 0.100000</Scale>
+								<Center>200 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 337</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 0.100000</Scale>
+								<Center>212 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner2_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 640 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.250000 0.100000</Scale>
+								<Center>200 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.250000 0.100000</Scale>
+								<Center>212 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner2_3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 640 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>200 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>212 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner3_1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 720 672 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 449</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 0.100000</Scale>
+								<Center>336 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>728 449</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 0.100000</Scale>
+								<Center>284 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner3_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 720 672 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.250000 0.100000</Scale>
+								<Center>336 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>728 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.250000 0.100000</Scale>
+								<Center>284 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner3_3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 720 672 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>336 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>728 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>284 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner4_1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 800 408 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 560</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 0.100000</Scale>
+								<Center>204 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>472 560</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 0.100000</Scale>
+								<Center>284 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner4_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 800 408 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.250000 0.100000</Scale>
+								<Center>204 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>472 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.250000 0.100000</Scale>
+								<Center>284 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner_GraphicDesigner4_3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 800 408 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>204 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>472 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>284 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_DevelopedByFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 368 784 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>177 208</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_DevelopedBy</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 368 784 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>249 208</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_DevelopedByFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff1</TextureName>
+							<Rect>0 368 784 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>329 208</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_AGENDAFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 880 360 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-370 369</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_AGENDAFadeIn1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 880 360 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>230 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_AGENDAFadeIn2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 880 360 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>166 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_AGENDA</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 880 360 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>182 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_AGENDAFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 880 360 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>182 369</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_SlashFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>360 880 56 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>542 369</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>28 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_SlashFadeOut1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>360 880 56 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>542 369</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>28 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_Slash</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>360 880 56 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>542 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>28 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_ZenryokuteiFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>416 880 504 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1286 369</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_ZenryokuteiFadeIn1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>416 880 504 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>542 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_ZenryokuteiFadeIn2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>416 880 504 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>614 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_Zenryokutei</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>416 880 504 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>598 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_ZenryokuteiFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>416 880 504 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>598 369</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_AGENDAZenryokutei</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 880 920 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>182 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>460 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy_AGENDAZenryokuteiFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 880 920 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>182 369</Position>
+								<Color>00808080</Color>
+								<Scale>5.000000 5.000000</Scale>
+								<Center>460 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_Planner1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 321</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 321</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_Planner2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 160 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 433</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 433</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_Programmer1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 240 552 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>616 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_Programmer2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 320 784 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>848 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_Programmer3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 400 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_Programmer4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 480 632 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>696 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_MusicComposer1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_GraphicDesigner1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 560 576 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 225</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_GraphicDesigner2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 640 400 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 337</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_GraphicDesigner3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 720 672 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>728 449</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_GraphicDesigner4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 800 408 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>424 0 568 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>472 560</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_AGENDAZenryokutei</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 880 920 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>182 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_AGENDA</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 880 360 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>182 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_Slash</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>360 880 56 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>542 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StaffName_Zenryokutei</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>416 880 504 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>598 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>BG_Black</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>864 336 128 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>10.000000 5.625000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>BG_MusicComposer1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 80 720 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>572 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>0 0 424 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>-148 40</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>BG_GradationStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>744 488 256 256</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 440</Position>
+								<Color>80808080</Color>
+								<Scale>5.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>864 336 128 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 696</Position>
+								<Color>80808080</Color>
+								<Scale>10.000000 2.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>BG_GradationEnd</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>744 488 256 256</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 128</Position>
+								<Color>80808080</Color>
+								<Scale>5.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Staffroll/bmp/staff2</TextureName>
+							<Rect>864 336 128 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 384</Position>
+								<Color>80808080</Color>
+								<Scale>10.000000 2.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>Planner01</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>60</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Planner_Planner1FadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>210</Frame>
+									<PatternGroupName>Planner_Planner1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Planner_Planner1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Planner_Planner1FadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>90</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Planner_Planner2FadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>180</Frame>
+									<PatternGroupName>Planner_Planner2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Planner_Planner2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Planner_Planner2FadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>30</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Planner_PlannerFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>320</Frame>
+									<PatternGroupName>Planner_Planner</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Planner_Planner</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Planner_PlannerFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Programmer02</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>30</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Programmer_ProgrammerFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>360</Frame>
+									<PatternGroupName>Programmer_Programmer</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Programmer_Programmer</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Programmer_ProgrammerFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>60</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Programmer_Programmer1FadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Programmer_Programmer1_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>3</Frame>
+									<PatternGroupName>Programmer_Programmer1_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>2</Frame>
+									<PatternGroupName>Programmer_Programmer1_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>180</Frame>
+									<PatternGroupName>Programmer_Programmer1_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Programmer_Programmer1_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Programmer_Programmer1FadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>90</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Programmer_Programmer2FadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Programmer_Programmer2_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>3</Frame>
+									<PatternGroupName>Programmer_Programmer2_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>2</Frame>
+									<PatternGroupName>Programmer_Programmer2_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>180</Frame>
+									<PatternGroupName>Programmer_Programmer2_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Programmer_Programmer2_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Programmer_Programmer2FadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>120</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Programmer_Programmer3FadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Programmer_Programmer3_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>3</Frame>
+									<PatternGroupName>Programmer_Programmer3_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>2</Frame>
+									<PatternGroupName>Programmer_Programmer3_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>180</Frame>
+									<PatternGroupName>Programmer_Programmer3_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Programmer_Programmer3_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Programmer_Programmer3FadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>150</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Programmer_Programmer4FadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Programmer_Programmer4_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>3</Frame>
+									<PatternGroupName>Programmer_Programmer4_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>2</Frame>
+									<PatternGroupName>Programmer_Programmer4_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>180</Frame>
+									<PatternGroupName>Programmer_Programmer4_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Programmer_Programmer4_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Programmer_Programmer4FadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>MusicComposer03</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>60</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1FadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer3</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>240</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>BG_GradationStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>BG_GradationEnd</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>30</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>MusicComposer_MusicComposerFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>290</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>MusicComposer_MusicComposerFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>210</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1FadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1FadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>MusicComposer_MusicComposer1FadeIn</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GraphicDesigner04</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>30</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesignerFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>330</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesignerFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>20</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner1_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner1_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>180</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner1_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner1_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner1_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner1_1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>60</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner2_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner2_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner2_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner2_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner2_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner2_1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>40</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner3_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner3_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner3_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner3_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner3_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner3_1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>80</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner4_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner4_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>140</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner4_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner4_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner4_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>GraphicDesigner_GraphicDesigner4_1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>DevelopedBy05</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>30</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>DevelopedBy_DevelopedByFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>130</Frame>
+									<PatternGroupName>DevelopedBy_DevelopedBy</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>DevelopedBy_DevelopedBy</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>DevelopedBy_DevelopedByFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>90</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>90</Frame>
+									<PatternGroupName>DevelopedBy_Slash</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>DevelopedBy_Slash</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>DevelopedBy_SlashFadeOut1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>60</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>DevelopedBy_AGENDAFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>DevelopedBy_AGENDAFadeIn1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>DevelopedBy_AGENDAFadeIn2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>75</Frame>
+									<PatternGroupName>DevelopedBy_AGENDA</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>DevelopedBy_AGENDA</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>DevelopedBy_AGENDAFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>60</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>DevelopedBy_ZenryokuteiFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>DevelopedBy_ZenryokuteiFadeIn1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>DevelopedBy_ZenryokuteiFadeIn2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>75</Frame>
+									<PatternGroupName>DevelopedBy_Zenryokutei</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>DevelopedBy_Zenryokutei</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>DevelopedBy_ZenryokuteiFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>90</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>DevelopedBy_Slash</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>DevelopedBy_SlashFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>180</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>DevelopedBy_AGENDAZenryokutei</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>DevelopedBy_AGENDAZenryokutei</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>DevelopedBy_AGENDAZenryokuteiFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

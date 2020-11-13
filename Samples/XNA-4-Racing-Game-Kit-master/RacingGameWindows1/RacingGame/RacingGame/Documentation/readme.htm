@@ -1,0 +1,970 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history"><title>Racing Game Starter Kit</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 0;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 
+	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Racing Game Starter Kit" />
+<MSHelp:RLTitle Title="Racing Game Starter Kit" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.Racing_Game_Starter_Kit" />
+<MSHelp:Keyword Index="A" Term="4398205e-3ad8-c1ea-ba47-0a6a229cfa90" />
+<MSHelp:Keyword Index="K" Term="Racing Game Starter Kit" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA_20" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="AssetID" Value="4398205e-3ad8-c1ea-ba47-0a6a229cfa90" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+  <h1>Racing Game Starter Kit</h1>
+  
+  <p>This topic contains the following sections.</p>
+  <ul><li><a href="#ID0EP">Introduction to Racing Game</a></li><li><a href="#ID0ECB">Goals</a></li><li><a href="#ID0EVB">Minimum Shader Profile</a></li><li><a href="#ID0EBC">Getting Started</a></li><li><a href="#ID0ERD">Playing Racing Game</a></li><li><a href="#ID0EMAAC">Racing Game Known Issues</a></li></ul>
+
+  <a name="ID0EP"></a><h1 class="heading">Introduction to Racing Game</h1><div id="ID0EP" class="hxnx1">
+    
+    <p>The Racing Game Starter Kit is a complete XNA Game Studio game. The project comes ready to compile and run. It's easy to customize with a little bit of C# programming. You are free to use the source code as the basis for your own XNA Game Studio game projects, and to share your work with others.</p>
+
+    <p>Racing Game is a 3D auto racing game that features advanced graphics, audio, and input processing. Race around the track and try to beat the ghost car to achieve the best time.</p>
+
+    <div class="alert"><table cellspacing="0" cellpadding="0"><tr><th>Note </th></tr><tr><td>This documentation assumes that you have a basic knowledge of programming concepts and the Visual C# environment. You can learn more about these topics in the product documentation by clicking one of the <b>Help</b> menu items, or by positioning the mouse cursor on language keywords or user interface elements such as windows or dialog boxes, and then pressing F1.</td></tr></table></div>    
+  </div>
+
+  <a name="ID0ECB"></a><h1 class="heading">Goals</h1><div id="ID0ECB" class="hxnx1">
+    
+    <p>This starter kit provides a complete XNA Game Studio game, including source code and game content such as models, textures, and sounds.  This starter kit documentation describes the general layout and controls for Racing Game.  The Racing Game Starter Kit demonstrates the following:</p>
+    <ul>
+      <li>Advanced graphics using shaders and post-processing effects</li>
+      <li>Game state management through UI and gameplay screens</li>
+      <li>Simple automobile physics, including collision detection</li>
+    </ul>
+  </div>
+  <a name="ID0EVB"></a><h1 class="heading">Minimum Shader Profile</h1><div id="ID0EVB" class="hxnx1">
+    
+    <dl class="glossary">
+      <dt>Vertex Shader Model 2.0</dt>
+      <dt>Pixel Shader Model 2.0</dt>
+    </dl>
+  </div>
+
+  <a name="ID0EBC"></a><h1 class="heading">Getting Started</h1><div id="ID0EBC" class="hxnx1">
+    
+    <p>Follow these procedures to get started.</p>
+    <div class="proc"><h3 class="subHeading">To build and run the Net Rumble project</h3><div class="subSection">
+      
+      <ul>
+        <li>
+          Press F5 or, on the <b>Debug</b> menu, click <b>Start Debugging</b>.
+        </li>
+      </ul>
+      <p>The project will build and then run within the debugger.</p>
+    </div></div>
+
+    <div class="proc"><h3 class="subHeading">To build the project without running it</h3><div class="subSection">
+      
+      <ul>
+        <li>
+          Press F6 or, on the <b>Build</b> menu, click <b>Build Solution</b>.
+        </li>
+      </ul>
+      <p>The project will build without running.</p>
+    </div></div>
+    <p>
+      When Racing Game starts, it will begin in Demo mode. To start the game, press the <b>START</b> button on your Xbox 360 Controller. This will bring you to the <b>Main Menu</b>.
+    </p>
+  </div>
+
+  <a name="ID0ERD"></a><h1 class="heading">Playing Racing Game</h1><div id="ID0ERD" class="hxnx1">
+    
+
+    <a name="ID0EVD"></a><h2 class="subHeading">Racing Game Controls</h2><div id="ID0EVD" class="hxnx2">
+      
+      <p>You can use a keyboard, Xbox 360 Controller, or a mouse (Windows-only) to play Racing Game.  The controls are mapped as follows:</p>
+      <table>
+        <tr>
+          <th>Action</th>
+          <th>Controller</th>
+          <th>Keyboard</th>
+          <th>Mouse</th>
+        </tr>
+        <tr>
+          <td>Start the game.</td>
+          <td>
+            <b>START</b>
+          </td>
+          <td>SPACEBAR</td>
+          <td>Left mouse button</td>
+        </tr>
+        <tr>
+          <td>Exit the game.</td>
+          <td>
+            <b>BACK</b>
+          </td>
+          <td>ESC</td>
+          <td>
+             
+          </td>
+        </tr>
+        <tr>
+          <td>Turn the car.</td>
+          <td>Left stick</td>
+          <td>
+            LEFT ARROW, RIGHT ARROW, or <b>A</b>, <b>D</b>
+          </td>
+          <td>Move mouse left or right</td>
+          </tr>
+          <tr>
+            <td>Accelerate the car.</td>
+            <td>Right trigger, or <b>A</b></td>
+            <td>UP ARROW, or <b>W</b></td>
+            <td>Left mouse button</td>
+          </tr>
+          <tr>
+            <td>Brake the car.</td>
+            <td>Left trigger, or <b>B</b></td>
+            <td>DOWN ARROW, or <b>S</b></td>
+            <td>Right mouse button</td>
+          </tr>
+          <tr>
+            <td>Zoom the camera in.</td>
+            <td><b>X</b></td>
+            <td>PAGE UP</td>
+            <td>Mouse wheel</td>
+          </tr>
+          <tr>
+            <td>Zoom the camera out.</td>
+            <td><b>Y</b></td>
+            <td>PAGE DOWN</td>
+            <td>Mouse wheel</td>
+          </tr>
+          <tr>
+            <td>Show or hide the frames-per-second (FPS) counter.</td>
+            <td>Left bumper + <b>Y</b></td>
+            <td>F1</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>Toggle full-screen mode (Windows-only).</td>
+            <td> </td>
+            <td>ALT+ENTER</td>
+            <td> </td>
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+    <a name="ID0EMAAC"></a><h1 class="heading">Racing Game Known Issues</h1><div id="ID0EMAAC" class="hxnx1">
+      
+      <p>This section identifies some of the known issues you may encounter when playing Racing Game.</p>
+      <ul>
+        <li>Some Intel graphics adapters may report to Racing Game incorrectly that they support Shader Model 2.0. As a result, the game may render poorly.</li>
+        <li>Shadows will incorrectly change orientation depending on the orientation of the camera.</li>
+        <li>The player's vehicle interacts incorrectly with the loop obstacles on the track. The vehicle may sink below the level of the track, and will not fall off a loop when upside down.</li>
+        <li>The player's vehicle may interact incorrectly when colliding with guard rails. The vehicle may bounce or change position abruptly.</li>
+        <li>Players cannot change their name in the <b>Options</b> screen by using an Xbox 360 Controller. Players need to use a keyboard.</li>
+        <li>The player cannot pause the game. Pressing <b>BACK</b> ends the current game and returns to the <b>Main Menu</b>.</li>
+        <li>
+          <p>The screen may flicker on some Windows-based computers when running a debug build of the game.  To address this, find the following line of code in the <b>BaseGame</b> constructor (Graphics\BaseGame.cs, approximately line 1026):</p>
+          <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>            graphicsManager.SynchronizeWithVerticalRetrace = false;          </pre></pre></td></tr></table></span></div>
+          <p>Change the value of the property to <b>true</b>, like this:</p>
+          <div class="code"><span codeLanguage="CSharp"><table><tr><th>C# </th></tr><tr><td><pre><pre>            graphicsManager.SynchronizeWithVerticalRetrace = <b>true</b>;          </pre></pre></td></tr></table></span></div>
+        </li>
+      </ul>
+    </div>
+
+
+  
+</div><div class="footer" id="footer"><p>© 2008 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Racing Game Starter Kit">xnags@microsoft.com</a>.</p></div></div></body></html>

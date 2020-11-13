@@ -1,0 +1,3798 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>Main_WindowNormal</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 0 256 256</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 464</Position>
+								<Color>80808080</Color>
+								<Scale>5.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 256 512 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 528</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 448 512 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>368 528</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 640 512 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>744 528</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 832 320 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>960 528</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>536 288 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1088 612</Position>
+								<Color>80808080</Color>
+								<Scale>4.000000 2.250000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>536 288 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 36</Position>
+								<Color>80808080</Color>
+								<Scale>32.000000 18.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>512 264 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>48 20</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>512 296 32 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>48 52</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 34.049999</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>512 312 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>48 596</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>544 264 16 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>80 20</Position>
+								<Color>80808080</Color>
+								<Scale>62.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>560 264 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 20</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>560 296 32 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 52</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 34.049999</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>560 312 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 596</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>544 312 16 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>80 596</Position>
+								<Color>80808080</Color>
+								<Scale>62.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>600 264 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 596</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>600 296 32 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 628</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 2.550000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>600 312 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 668</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>632 264 16 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1104 596</Position>
+								<Color>80808080</Color>
+								<Scale>6.062500 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>648 264 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1200 596</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>648 296 32 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1200 628</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 2.550000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>632 312 16 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1104 668</Position>
+								<Color>80808080</Color>
+								<Scale>6.062500 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>648 312 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1200 668</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Main_WindowFree</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 0 256 256</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 464</Position>
+								<Color>80808080</Color>
+								<Scale>5.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 448 512 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>368 528</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 640 512 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>744 528</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 832 320 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>960 528</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>536 288 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1088 612</Position>
+								<Color>80808080</Color>
+								<Scale>4.000000 2.250000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>536 288 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 36</Position>
+								<Color>80808080</Color>
+								<Scale>32.000000 18.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>512 264 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>48 20</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>512 296 32 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>48 52</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 34.062500</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>512 312 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>48 596</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>544 264 16 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>80 20</Position>
+								<Color>80808080</Color>
+								<Scale>62.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>560 264 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 20</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>560 296 32 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 52</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 34.062500</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>560 312 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 596</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>544 312 16 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>80 596</Position>
+								<Color>80808080</Color>
+								<Scale>62.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>600 264 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 596</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>600 296 32 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 628</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 2.562500</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>600 312 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1072 668</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>632 264 16 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1104 596</Position>
+								<Color>80808080</Color>
+								<Scale>6.062500 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>648 264 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1200 596</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>648 296 32 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1200 628</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 2.562500</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>632 312 16 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1104 668</Position>
+								<Color>80808080</Color>
+								<Scale>6.062500 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>648 312 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1200 668</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Main_Pos</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1088 612</Position>
+								<Color>80808080</Color>
+								<Scale>8.000000 4.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>64 36</Position>
+								<Color>80808080</Color>
+								<Scale>64.000000 36.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>190 620</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>532 620</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>914 620</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1144 585</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Main_WindowBlack</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>800 16 64 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>40808080</Color>
+								<Scale>20.000000 11.250000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Effect_Flash4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/flash</TextureName>
+							<Rect>0 0 1024 1024</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>128 -151</Position>
+								<Color>00808080</Color>
+								<Scale>1.250000 1.250000</Scale>
+								<Center>512 512</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Effect_Flash2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/flash</TextureName>
+							<Rect>0 0 1024 1024</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>128 -152</Position>
+								<Color>80808080</Color>
+								<Scale>1.687500 1.687500</Scale>
+								<Center>512 512</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Effect_Flash1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/flash</TextureName>
+							<Rect>0 0 1024 1024</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>128 -152</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>512 512</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Count302</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>520 352 120 176</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>610 316</Position>
+								<Color>00808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Count300</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>520 352 120 176</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>580 276</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Count301</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>520 352 120 176</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>459 97</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Count202</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>648 352 120 176</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>610 316</Position>
+								<Color>00808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Count200</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>648 352 120 176</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>580 276</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Count201</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>648 352 120 176</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>459 97</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Count102</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>776 352 120 176</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>610 316</Position>
+								<Color>00808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Count100</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>776 352 120 176</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>580 276</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Count101</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>776 352 120 176</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>459 97</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Start</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>272 104 528 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>376 304</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_Start1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>272 104 528 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-151 192</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_TimeUp</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>272 16 512 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-127 240</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_TimeUp2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>272 16 512 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>448 330</Position>
+								<Color>80808080</Color>
+								<Scale>0.750000 0.750000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Text_TimeUp1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>272 16 512 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>384 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>688 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>712 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>736 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>760 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>784 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>808 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>832 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>856 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>880 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon_HelpIcon10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>904 264 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_BG</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>952 16 48 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>40808080</Color>
+								<Scale>26.666666 15.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/reference2</TextureName>
+							<Rect>0 0 960 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>160 104</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>0 992 960 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>160 616</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_BGStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>952 16 48 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>00808080</Color>
+								<Scale>26.666666 15.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/reference2</TextureName>
+							<Rect>0 0 960 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>160 104</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>0 992 960 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>160 616</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_Navi</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>0 520 1024 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-1 181</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>576 688 400 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1023 276</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_NaviStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>0 520 1024 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-1 -59</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>576 688 400 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1023 36</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_NaviStart1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>0 520 1024 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-1 221</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>576 688 400 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1023 316</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_ReturnToGameStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>592 816 424 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 169</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_ReturnToGameOn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>592 816 424 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 139</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_ReturnToGameOff</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>592 816 424 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 139</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_GoToTitleOnStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>592 872 296 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 225</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_GoToTitleOn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>592 872 296 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 195</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_GoToTitleOff</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>592 872 296 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 195</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyReference</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>0 80 336 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>256 248</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyReferenceStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>0 80 336 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>256 288</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_Change</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>400 80 128 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>344 336</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_ChangeStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>400 80 128 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>344 416</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_ChangeRotate</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>536 80 208 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>304 336</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_ChangeRotateStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>536 80 208 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>304 416</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_Revolve</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>752 80 128 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>344 336</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_RevolveStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>752 80 128 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>344 416</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_Slide</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>888 80 96 40</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>360 336</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_SlideStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>888 80 96 40</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>360 416</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_SlashStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>344 80 48 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>800 376</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_Controller</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>72 704 392 280</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>444 358</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_ControllerStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>72 704 392 280</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>444 598</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyCursor</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>40 184 256 200</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>297 359</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyCursorStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>40 184 256 200</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>512 359</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyExit</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>336 136 464 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>577 311</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyExitStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>336 136 464 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>417 311</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyChange</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>624 376 400 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>721 412</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyChangeStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>624 376 400 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>561 412</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyChangeRotate</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>640 264 384 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>697 366</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>624 376 400 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>721 412</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyChangeRotateStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>640 264 384 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>521 366</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>624 376 400 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>561 412</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyRevolve</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>240 376 384 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>725 384</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeyRevolveStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>240 376 384 128</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>448 384</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeySlide</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>552 760 424 184</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>692 372</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Reference_KeySlideStart</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/reference1</TextureName>
+							<Rect>552 760 424 184</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>428 372</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_StageBG</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>800 16 64 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 160</Position>
+								<Color>64808080</Color>
+								<Scale>20.000000 6.250000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>928 352 80 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 560</Position>
+								<Color>64808080</Color>
+								<Scale>16.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>928 352 80 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1280 160</Position>
+								<Color>64808080</Color>
+								<Scale>16.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>180.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_StageBGFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>800 16 64 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 160</Position>
+								<Color>00808080</Color>
+								<Scale>20.000000 6.250000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>928 352 80 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 560</Position>
+								<Color>00808080</Color>
+								<Scale>16.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>928 352 80 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1280 160</Position>
+								<Color>00808080</Color>
+								<Scale>16.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>180.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_StageFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>640 728 368 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-109 184</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_Stage</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>640 728 368 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>131 184</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_StageFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>640 728 368 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>371 184</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_PosNumberFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>819 235</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_PosNumber</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>579 235</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_PosNumberFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>347 235</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_PosNameFadeIn</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>545 631</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_PosName</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>545 391</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage_PosNameFadeOut</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>545 151</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Complete_Complete01</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>400 928 616 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>332 316</Position>
+								<Color>00808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>308 44</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Complete_Complete02</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>400 928 616 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>332 316</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>308 44</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Complete_Complete03</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/game/bmp/game</TextureName>
+							<Rect>400 928 616 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>332 316</Position>
+								<Color>00808080</Color>
+								<Scale>3.000000 3.000000</Scale>
+								<Center>308 44</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>GameNormal</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Main_Pos</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Main_WindowNormal</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>GameFree</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Main_Pos</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Main_WindowFree</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StartCount</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Text_Count302</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>25</Frame>
+									<PatternGroupName>Text_Count300</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>Text_Count300</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Text_Count301</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Text_Count301</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Text_Count202</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>25</Frame>
+									<PatternGroupName>Text_Count200</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>Text_Count200</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Text_Count201</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Text_Count201</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Text_Count102</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>25</Frame>
+									<PatternGroupName>Text_Count100</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>Text_Count100</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Text_Count101</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Text_Count101</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>190</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Effect_Flash4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Effect_Flash2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Effect_Flash1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>180</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Text_Start</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Text_Start</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Text_Start1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>TimeUp</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Main_WindowBlack</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>15</Frame>
+									<PatternGroupName>Text_TimeUp</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>120</Frame>
+									<PatternGroupName>Text_TimeUp2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>15</Frame>
+									<PatternGroupName>Text_TimeUp1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>15</Frame>
+									<PatternGroupName>Text_TimeUp</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>HelpIcon</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>HelpIcon_HelpIcon10</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefStart</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_BGStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>Reference_BG</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>20</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_NaviStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Reference_NaviStart1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_Navi</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_ControllerStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>11</Frame>
+									<PatternGroupName>Reference_Controller</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>10</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyReferenceStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>16</Frame>
+									<PatternGroupName>Reference_KeyReference</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_GoToTitleOnStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>Reference_GoToTitleOff</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_ReturnToGameStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>Reference_ReturnToGameOn</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefReturnToGameOn</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_ReturnToGameOn</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_GoToTitleOff</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefGoToTitleOn</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_ReturnToGameOff</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_GoToTitleOn</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefLoop</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_BG</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_Controller</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_Navi</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyReference</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefChangeStart</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_ChangeStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>16</Frame>
+									<PatternGroupName>Reference_Change</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyCursorStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyCursor</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyExitStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyExit</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyChangeStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyChange</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefChangeLoop</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_Change</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyExit</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyChange</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyCursor</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefChangeRotateStart</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_ChangeRotateStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>16</Frame>
+									<PatternGroupName>Reference_ChangeRotate</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyChangeRotateStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyChangeRotate</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyCursorStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyCursor</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyExitStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyExit</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefChangeRotateLoop</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyExit</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyCursor</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_ChangeRotate</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyChangeRotate</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefRevolveStart</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_RevolveStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>16</Frame>
+									<PatternGroupName>Reference_Revolve</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyRevolveStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyRevolve</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyCursorStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyCursor</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyExitStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyExit</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefRevolveLoop</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyExit</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyCursor</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_Revolve</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyRevolve</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefSlideStart</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_SlideStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>16</Frame>
+									<PatternGroupName>Reference_Slide</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeySlideStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeySlide</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyExitStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyExit</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>15</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Reference_KeyCursorStart</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyCursor</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>RefSlideLoop</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyExit</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeyCursor</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_Slide</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Reference_KeySlide</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Stage</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>110</Frame>
+									<PatternGroupName>Stage_StageBG</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_StageBG</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Stage_StageBGFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_StageFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>Stage_Stage</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_Stage</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Stage_StageFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>10</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_PosNumberFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>90</Frame>
+									<PatternGroupName>Stage_PosNumber</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_PosNumber</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Stage_PosNumberFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>20</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_PosNameFadeIn</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>Stage_PosName</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_PosName</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Stage_PosNameFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>StageFadeOut</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_StageBG</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Stage_StageBGFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_Stage</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Stage_StageFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_PosNumber</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Stage_PosNumberFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Stage_PosName</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Stage_PosNameFadeOut</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Complete</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Effect_Flash4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Effect_Flash2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>61</Frame>
+									<PatternGroupName>Effect_Flash1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>0</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Complete_Complete01</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Complete_Complete02</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>Complete_Complete02</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Complete_Complete03</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

@@ -1,0 +1,1030 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xanx="http://schemas.microsoft.com/developer/xanx/2005"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><META NAME="save" CONTENT="history"><title>Movipa</title>
+<style><!--
+/***********************************************************
+ *             SCRIPT-SUPPORTING STYLES
+ ***********************************************************/
+
+/* Defines the userData cache persistence mechanism. */
+.userDataStyle
+{
+	behavior: url(#default#userData);
+}
+
+/* Used to save the scroll bar position when navigating away from a page. */
+div.saveHistory
+{
+	behavior: url(#default#saveHistory);
+}
+
+/* Formats the expand/collapse images for all collapsible regions. */
+img.toggle
+{
+	border: 0;
+	margin-right: 5;
+}
+
+/* Formats the Language filter drop-down image. */
+img#languageFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Members Options filter drop-down image. */
+img#membersOptionsFilterImage
+{
+	border: 0;
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Formats the Collapse All/Expand All images. */
+img#toggleAllImage
+{
+	margin-left: 0;
+	vertical-align: middle;
+}
+
+/* Supports XLinks */
+MSHelp\:link
+{
+ 	text-decoration: underline;
+	color: #0000ff; 
+	hoverColor: #3366ff;
+	filterString: ;
+}
+
+
+body
+	{
+	background:	#FFFFFF;
+	color: #000000;
+	font-family:	Verdana;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	margin-top:	0;
+	margin-bottom:	0;
+	margin-left:	0;
+	margin-right:	0;
+	width:	100%;
+	/*font-size: 110%;*/
+	}
+
+div.section
+	{
+	margin-left: 15px;
+	}
+
+div.hxnx5
+	{
+	margin-left: 1.5em;
+	}
+
+/* Font for all headings */	
+h1, h2, h3, h4, h5, h6
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 18;
+	margin-bottom: 8; 
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 130%;
+	color: #003399;
+	}
+div#scrollyes h1 /* Changes font size for full-scrolling topic */
+	{
+	font-size: 150%;
+	}
+h2
+	{
+	font-size: 125%;
+	}
+h3
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h4
+	{
+	font-size: 115%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h5
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+h6
+	{
+	font-size: 100%;
+	margin-top: 9;
+	margin-bottom: 4; 
+	}
+
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+
+p
+	{
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+	
+td p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+dd p
+	{
+	margin-top: 0.0em;
+	margin-bottom: 0.6em;
+	}
+
+.image
+	{
+	text-align: center;
+	}
+
+dl
+	{
+	margin-top: 0em; 
+	margin-bottom: 1.3em;
+	}
+
+dd
+	{
+	margin-bottom: 0em;
+	margin-left: 0;
+	}
+
+dl.glossary dd 
+{
+	margin-bottom: 0em;  
+	margin-left: 1.5em; 
+}
+
+dt
+	{
+	margin-top: .6em;
+	margin-bottom: 1;
+	}
+
+ul, ol
+	{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em; 	
+	}
+	
+ol
+	{
+	margin-left: 2.5em; 
+	
+	}	
+	
+ul
+	{
+	list-style-type: disc; 
+	margin-left: 1.9em; 
+	}
+
+li
+	{
+	margin-bottom: 0.4em;
+	}
+
+ul ol, ol ol
+	{
+	list-style-type: lower-alpha;
+	}
+
+pre
+	{
+	margin-top: .6em;
+	margin-bottom: .6em; 
+	}
+
+pre
+	{
+	font: 105% Lucida, mono; 
+	color: #000066;
+	}
+
+code
+{
+	font-family: Monospace, Courier New, Courier;
+	font-size: 105%;
+	color:	#000066;
+}
+
+table.userdata td 
+	{
+	background: #ffffff;
+	background-color: #F5F5F5;
+	border-color: #ffffff;
+	border: none;
+	}	
+table.clsWarning
+	{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	}
+table.clsWarning td
+	{
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+	vertical-align: middle;
+	font-size: 70%;
+	}
+
+div#mainSection table
+	{
+	width: 98%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div#mainSection table th
+	{ 
+	padding: 5px 6px;
+	background: #EFEFF7;
+	text-align: left;
+	font-size: 70%;
+	vertical-align: bottom;
+	border-bottom: 1px solid #C8CDDE;
+	}
+div#mainSection table td
+	{ 
+	padding: 5px 5px;
+	background: #F7F7FF;
+	vertical-align: top;
+	font-size: 70%;
+	border-bottom: 1px solid #D5D5D3;
+	}
+
+div#syntaxCodeBlocks table th
+	{
+	padding: 1px 6px;
+	color: #000066;
+	}
+
+div#syntaxCodeBlocks table td
+	{
+	padding: 1px 5px;
+	}
+
+/* Applies to the running header text in the first row of the upper table in the
+   non-scrolling header region. */
+span#runningHeaderText
+{
+	color: #003399;
+	font-size: 90%;
+	padding-left: 13;
+}
+
+/* Applies to the topic title in the second row of the upper table in the
+   non-scrolling header region. */
+span#nsrTitle
+{
+	color: #003399;
+	font-size: 120%;
+	font-weight: 600;
+	padding-left: 13;
+}
+
+/* Applies to everything below the non-scrolling header region. */
+div#mainSection
+{
+	font-size: 70%;
+	width: 100%;
+}
+
+/* Applies to everything below the non-scrolling header region, minus the footer. */
+div#mainBody
+{
+	font-size: 90%;
+	margin-left: 15;
+	margin-top: 10;
+	padding-bottom: 20;
+}
+
+/* Adds right padding for all blocks in mainBody */
+div#mainBody p, div#mainBody ol, div#mainBody ul, div#mainBody dl
+{
+	padding-right: 5;
+}
+
+div#mainBody div.alert, div#mainBody div.code, div#mainBody div.tableSection
+{
+	width:98.9%;
+}
+
+div.alert p, div.code p
+{
+	margin-top:5;
+	margin-bottom:8;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+div#mainSection div.alert table
+{
+	border: 0;
+}
+
+div#mainSection div.alert table th
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5;
+	padding-right: 5;
+}
+
+div#mainSection div.alert table td
+{
+	padding-left: 5;
+	padding-right: 5;
+}
+
+img.note
+{
+	border: 0;
+	margin-left: 0;
+	margin-right: 3;
+}
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - End Note Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Begin Non-scrolling Header Region Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Applies to the entire non-scrolling header region. */
+div#header
+{
+	background-color: #D4DFFF;
+	padding-top:	0;
+	padding-bottom:	0;
+	padding-left:	0;
+	padding-right:	0;
+	width:	100%;
+}
+
+/* Applies to both tables in the non-scrolling header region. */
+div#header table
+{
+	margin-top:	0;
+	margin-bottom: 0;
+	border-bottom-color: #C8CDDE;
+	border-bottom-style: solid;
+	border-bottom-width: 1;
+	background: #D4DFFF;
+	width:	100%;
+}
+
+/* Applies to cells in both tables in the non-scrolling header region. */
+div#header table td
+{
+	color: #0000FF;
+	font-size: 70%;
+	padding-right: 20;
+	padding-top: 1;
+	padding-bottom: 1;
+	border: none;
+	background: #D4DFFF;
+}
+
+/* Applies to the last row in the upper table of the non-scrolling header region. Text 
+   in this row includes See Also, Constructors, Methods, and Properties. */
+div#header table tr#headerTableRow3 td
+{
+	padding-bottom: 2;
+	padding-top: 5;
+	padding-left: 15;
+}
+
+/* Applies to the lower table in the non-scrolling header region. Text in this table
+   includes Collapse All/Expand All, Language Filter, and Members Options. */
+div#header table#bottomTable
+{
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1;
+	text-align: left;
+	padding-left: 15;
+}
+
+
+blockquote
+	{
+	margin-left: 3.8em;
+	margin-right: 3.8em;
+	margin-top: .6em;
+	margin-bottom: .6em;
+	}
+
+sup
+	{
+	text-decoration: none;
+	font-size: smaller; 
+	}
+
+a:link
+	{
+	color: #0000FF;
+/*    font-weight: bold */
+	}
+	
+a:visited
+	{
+	color: #0000AA;
+/*    font-weight: bold	*/
+	}
+	
+a:hover
+	{
+	color: #3366FF;
+/*    font-weight: bold */
+	}
+	
+.label
+	{
+	font-weight: bold; 
+	margin-top: 1em;
+	margin-left: -26px;
+	}
+	
+.tl
+	{
+	margin-bottom: .75em; 
+	}
+	
+.atl
+	{
+	padding-left: 1.5em;
+	padding-bottom: .75em; 
+	}
+	
+.cfe
+	{
+	font-weight: bold; 
+	}
+	
+.mini
+	{
+	font-size: smaller;
+	}
+	
+.dt
+	{
+	margin-bottom: -.6em; 
+	}
+	
+.indent
+	{
+	margin-left: 1.9em; 
+	margin-right: 1.9em;
+	}
+
+.product
+	{
+	text-align: right;
+	color: #333333;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.buttonbarshade
+	{
+	position: relative;
+	margin: 0;
+	left: 0px;
+	top: 2;
+	width: 50%;
+	height: 40px;
+	}
+
+.buttonbartable
+	{
+	position: absolute;
+	margin: 0;
+	padding:0;
+	border:0;
+	left:0px;
+	top: 2;
+	width: 100%;
+	height: 40px;
+	}
+
+/* background color, font for header */ 
+table.buttonbartable td, table.buttonbarshade td
+	{
+	background: #ffffff; /*#5177B8; #80C615;*/
+	border-left: 0px solid #80C615;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	font-family: Impact, sans-serif;
+	font-size: 14pt;
+	}
+
+table.buttonbartable td.button1
+	{
+	background: #5177B8; /*#80C615;*/;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+	}
+
+table.buttonbartable td.button2
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.button3
+	{
+	background: #5177B8; /*#80C615;*/;
+	font-weight: bold;
+	text-align: center;
+	}
+
+table.buttonbartable td.runninghead
+	{
+	padding-left: 0px;
+	font-style: italic;
+	text-align: left;
+	}
+
+.version
+	{
+	text-align: left;
+	color: #000000;
+	margin-top: 3em;
+	margin-left: -26px;
+	font-size: smaller;
+	font-style: italic;
+	}
+
+.lang, .ilang
+	{
+	color: #0000ff;
+	font: normal 7pt Arial, Helvetica, sans-serif;
+	}
+
+div.langMenu
+	{
+	position: absolute;
+	z-index: 1;
+	width: 96pt;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.langMenu ul
+	{
+	padding-left: 2em;
+	margin-left: 0;
+	}
+
+div.filtered
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: 2px solid #aaaacc;
+	background: #ffffff;
+	}
+
+div.filtered2
+	{
+	margin: 4pt 0 8pt -26px;
+	padding: 4px 4px 8px 26px;
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	}
+
+div.filtered h1, div.filtered h2, div.filtered h3, div.filtered h4
+	{
+	margin-left: -22px;
+	}
+
+div.filtered span.lang
+	{
+	position: relative;
+	left: -22px;
+	}
+
+div.reftip
+	{
+	position: absolute;
+	z-index: 1;
+	padding: 8pt;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+a.synParam
+	{
+	color: #0000FF;
+	/*color: #3F7800;*/ 	
+	/*color: #8DC54F;*/
+	text-decoration: none;
+    font-weight: normal;
+	}
+
+a.synParam:hover
+	{
+	text-decoration: underline;
+    font-weight: normal;
+	}
+
+div.sapop
+	{
+	position: absolute;
+	z-index: 1;
+	left: 26px;
+	width: 100%;
+	padding: 10px 10px 10px 36px;
+	visibility: hidden;
+	border: 1px solid #000000;
+	background: #ffffd0;
+	}
+
+div.footer
+	{
+	width: 100%;
+	border: none;
+	background: #ffffff;
+	margin-top: 18pt;
+	padding-bottom: 12pt;
+	color: #0000FF;
+	/*color: #228B22; */
+	text-align: center;
+	font-size: 76%;
+	}
+
+div.preliminary
+	{
+	margin-top: 8pt;
+	padding-bottom: 12pt;
+	color: #A0A0A0;
+	}
+
+/* A procedure section. eg. 'To create a file', 'To add a value' */
+div.proc
+    {
+	margin-left: 0.5em; 
+    }
+     
+/* The title of a 'procedure' section. */
+div.proc h3
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 115%;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	margin-left: -0.5em; 
+	color: #003399;
+    }
+
+div.proc ul
+    {
+    margin-left: 1.5em;
+    }
+
+div.proc ol
+    {
+    margin-left: 2.0em;
+    }
+      
+.note
+	{
+	margin-left: 14pt;
+	margin-right: 12pt;
+	}
+
+.indent1
+	{
+	margin-left: 12pt;
+	}
+
+.indent2
+	{
+	margin-left: 24pt;
+	}
+
+.indent3
+	{
+	margin-left: 36pt;
+	}
+
+p.proch
+	{
+	padding-left: 16px;
+	}
+
+p.proch img
+	{
+	position: relative; 
+	vertical-align: top;
+	left: -18px; 
+	margin-right: -14px; 
+	margin-bottom: -18px;
+	}
+	
+div.clsPlatSpec
+{
+	background-color:#FFF8DC;
+	border-style:solid;
+	border-width:1pt 0pt 0pt 1pt;
+	border-color:#ffE4C4;
+	margin-top:0.6em;
+	width:100%;
+}
+
+
+/* Applies to the language labels in the Language Filter drop-down list. */
+.languageFilter
+{
+	color:	#0000FF;
+	cursor:hand;
+	text-decoration:underline;
+	padding-bottom:4;
+}
+
+/* Dropdown areas */
+
+#languageSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+
+#membersOptionsSpan {
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C8CDDE;
+	background: #d4dfff;
+	padding: 4px;
+	font-size: 70%;
+}
+--></style>
+
+<xml>
+<MSHelp:TOCTitle Title="Movipa" />
+<MSHelp:RLTitle Title="Movipa" />
+<MSHelp:Keyword Index="A" Term="O:Microsoft.Xna.Movipa" />
+<MSHelp:Keyword Index="A" Term="7f7e0ee8-284b-29c3-7bc6-35876da8a6a9" />
+<MSHelp:Keyword Index="K" Term="Movipa" />
+<MSHelp:Attr Name="ProjType" Value="LocalProj" />
+<MSHelp:Attr Name="ProjType" Value="XNA_30" />
+<MSHelp:Attr Name="DocSet" Value="XNA" />
+<MSHelp:Attr Name="DocSet" Value="ExpressLibVS" />
+<MSHelp:Attr Name="DocSet" Value="C#" />
+<MSHelp:Attr Name="Locale" Value="en-us" />
+<MSHelp:Attr Name="CommunityContent" Value="1" />
+<MSHelp:Attr Name="AssetID" Value="7f7e0ee8-284b-29c3-7bc6-35876da8a6a9" />
+<MSHelp:Attr Name="TopicType" Value="kbOrient" />
+</xml>
+</head><body><div id="mainSection"><div id="mainBody">
+	<h1>Movipa</h1>
+	
+
+	<p>This topic contains the following sections.</p>
+	<ul><li><a href="#ID2EP">Introduction to Movipa</a></li><li><a href="#ID2EQB">System Requirements</a></li><li><a href="#ID2EBC">Getting Started</a></li><li><a href="#ID2ETD">Game Controls</a></li><li><a href="#ID2EYCAC">Extending Movipa</a></li></ul>
+
+  <a name="ID2EP"></a><h1 class="heading">Introduction to Movipa</h1><div id="ID2EP" class="hxnx1">
+    
+    <p>
+      Movipa is a complete mini game for XNA Game Studio. The project comes ready to compile and run, and it's easy to customize with a little bit of C# programming. You are also free to use the source code as the basis for your own XNA Game Studio game projects, and to share your work with others.
+    </p>
+    <p>
+      Movipa is a puzzle game involving moving images that demonstrates the following components:
+    </p>
+    <ul>
+      <li>Non-continuous rendering of puzzle tiles via texture coordinates</li>
+      <li>Asynchronous asset loading</li>
+      <li>Game state saving and loading</li>
+      <li>Multiple gameplay modes</li>
+      <li>Complex scene-description system for layered 2D scenes.</li>
+      <li>
+        Skinned animation system, from the Skinning Animation sample on the <a href="http://creators.xna.com">XNA Creators Club website</a>.
+      </li>
+    </ul>
+  </div>
+
+
+  <a name="ID2EQB"></a><h1 class="heading">System Requirements</h1><div id="ID2EQB" class="hxnx1">
+    
+  <a name="ID2EUB"></a><h2 class="subHeading">Minimum Shader Profile</h2><div id="ID2EUB" class="hxnx2">
+    
+    <dl class="glossary">
+      <dt>Vertex Shader Model 2.0</dt>
+      <dt>Pixel Shader Model 2.0</dt>
+    </dl>
+  </div>
+  </div>
+
+  <a name="ID2EBC"></a><h1 class="heading">Getting Started</h1><div id="ID2EBC" class="hxnx1">
+		
+
+		<a name="ID2EFC"></a><h2 class="subHeading">Building and Running a Movipa Project</h2><div id="ID2EFC" class="hxnx2">
+			
+			<div class="proc"><h3 class="subHeading">To build and run the Movipa project</h3><div class="subSection">
+				
+				<ul>
+					<li>
+						<p>
+							Either press F5 or, on the <b>Debug</b> menu, click <b>Start Debugging</b>.
+						</p>
+						<p>The project will build and then run within the debugger.</p>
+					</li>
+				</ul>
+			</div></div>
+
+			<div class="proc"><h3 class="subHeading">To build the project without running it</h3><div class="subSection">
+				
+				<ul>
+					<li>
+						<p>
+							Either press F6 or, on the <b>Build</b> menu, click <b>Build Solution</b>.
+						</p>
+						<p>The project will build without running.</p>
+					</li>
+				</ul>
+			</div></div>
+		</div>
+
+	</div>
+
+	<a name="ID2ETD"></a><h1 class="heading">Game Controls</h1><div id="ID2ETD" class="hxnx1">
+		
+    <p>
+      Menu Controls:
+    </p>
+    <table>
+      <tr>
+        <th>Action</th>
+        <th>Gamepad Control</th>
+        <th>Keyboard Control</th>
+      </tr>
+      <tr>
+        <td>Select a menu entry.</td>
+        <td>Left thumb stick, Directional pad</td>
+        <td>UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+      </tr>
+      <tr>
+        <td>Accept the menu selection.</td>
+        <td>
+          <b>A</b>
+        </td>
+        <td>ENTER</td>
+      </tr>
+      <tr>
+        <td>Cancel the menu.</td>
+        <td>
+          <b>B</b>
+        </td>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <td>Delete a save game (Select File screen only).</td>
+        <td>
+          <b>X</b>
+        </td>
+        <td>X</td>
+      </tr>
+    </table>
+    <p>
+      Game Controls:
+    </p>
+    <table>
+      <tr>
+        <td>Change the current selection.</td>
+        <td>Left thumb stick, Directional pad.</td>
+        <td>UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW</td>
+      </tr>
+      <tr>
+        <td>Select a puzzle piece.</td>
+        <td>
+          <b>A</b>
+        </td>
+        <td>ENTER</td>
+      </tr>
+      <tr>
+        <td>Cancel the current selection.</td>
+        <td>
+          <b>B</b>
+        </td>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <td>Rotate the selected piece clockwise.</td>
+        <td>
+          <b>Y</b>
+        </td>
+        <td>Y</td>
+      </tr>
+      <tr>
+        <td>Rotate the selected piece counter-clockwise.</td>
+        <td>
+          <b>X</b>
+        </td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>Use a hint (stops animation, limited in Normal mode only).</td>
+        <td>Left bumper</td>
+        <td>Q</td>
+      </tr>
+      <tr>
+        <td>Zoom in on the original image thumbnail.</td>
+        <td>Right bumper</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>Enter the pause/exit menu.</td>
+        <td>
+          <b>START</b>
+        </td>
+        <td>TAB</td>
+      </tr>
+      <tr>
+        <td>Rotate the current group clockwise (Rotate Mode only).</td>
+        <td>
+          <b>A</b>
+        </td>
+        <td>ENTER</td>
+      </tr>
+      <tr>
+        <td>Rotate the current group counter-clockwise (Rotate Mode only).</td>
+        <td>
+          <b>Y</b>
+        </td>
+        <td>Y</td>
+      </tr>
+      <tr>
+        <td>Slide the current column down (Slide Mode only).</td>
+        <td>
+          <b>A</b>
+        </td>
+        <td>ENTER</td>
+      </tr>
+      <tr>
+        <td>Slide the current column up (Slide Mode only).</td>
+        <td>
+          <b>Y</b>
+        </td>
+        <td>Y</td>
+      </tr>
+      <tr>
+        <td>Slide the current row left (Slide Mode only).</td>
+        <td>
+          <b>X</b>
+        </td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>Slide the current row right (Slide Mode only).</td>
+        <td>
+          <b>B</b>
+        </td>
+        <td>ESC</td>
+      </tr>
+    </table>
+  </div>
+
+  <a name="ID2EYCAC"></a><h1 class="heading">Extending Movipa</h1><div id="ID2EYCAC" class="hxnx1">
+    
+
+    <p>There are many possible ways to modify or improve Movipa:</p>
+    <ul>
+      <li><b>Modify Scenes:</b> It is possible to edit the XML definition files for each scene, including puzzles and menus, or edit the images associated with each of them.</li>
+      <li><b>Reusable Classes:</b>  The StorageComponent, SoundComponent, and InputComponent classes (and related classes) are useful managers for common game tasks.  They may be useful in a variety of games.</li>
+    </ul>
+  </div>
+
+</div><div class="footer" id="footer"><p>© 2008 Microsoft Corporation. All rights reserved.<br>Send feedback to <a href="mailto:xnags@microsoft.com?subject=Documentation Feedback: Movipa">xnags@microsoft.com</a>.</p></div></div></body></html>

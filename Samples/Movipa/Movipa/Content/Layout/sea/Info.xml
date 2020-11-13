@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+	<Asset Type="MovipaLibrary.LayoutInfo">
+		<!--AnimationInfo-->
+		<Category>Layout</Category>
+		<Name>Sea</Name>
+		<Size>1024 576</Size>
+		
+		<!--LayoutInfo-->
+		<SceneDataAsset>Layout/sea/sea_Scene</SceneDataAsset>
+		<Sequence>Anime</Sequence>
+	</Asset>
+</XnaContent>

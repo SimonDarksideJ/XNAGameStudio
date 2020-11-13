@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+	<Asset Type="MovipaLibrary.LayoutInfo">
+		<!--AnimationInfo-->
+		<Category>Layout</Category>
+		<Name>Slide</Name>
+		<Size>480 270</Size>
+		
+		<!--LayoutInfo-->
+		<SceneDataAsset>Layout/Style/slide_Scene</SceneDataAsset>
+		<Sequence>Anime</Sequence>
+	</Asset>
+</XnaContent>

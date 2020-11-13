@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>PatBank_bg</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-30 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-30 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-30 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>420 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>420 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>420 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>PatBank_roll_0</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>PatBank_roll_1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>PatBank_roll_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>-90.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>PatBank_roll_3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>-90.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>PatBank_roll_4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>60 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 90</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>-90.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>330 180</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>90.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Style/bmp/panel_1</TextureName>
+							<Rect>0 0 90 90</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>45 45</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>Anime</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>PatBank_bg</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>PatBank_roll_0</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>PatBank_roll_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>PatBank_roll_1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>PatBank_roll_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>PatBank_roll_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>PatBank_roll_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>PatBank_roll_3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>PatBank_roll_4</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

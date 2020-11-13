@@ -1,0 +1,2214 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>bg_00</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_bg</TextureName>
+							<Rect>0 0 1024 576</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_01a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 176 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>25 6</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 176 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>66 50</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 176 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>138 7</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 176 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>229 32</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 176 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>319 35</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>15 42</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>59 24</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>110 36</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>165 49</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>241 57</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>286 9</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>369 43</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>39 68</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>94 57</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>137 45</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>182 66</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>191 16</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>202 32</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>232 65</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>286 55</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>356 27</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>417 50</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>462 34</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_01b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>28 10</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>15 42</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>39 68</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>69 54</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>94 57</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>137 45</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>141 11</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>182 66</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>191 16</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>202 32</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>232 36</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>232 65</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>286 55</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>322 39</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>356 27</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>417 50</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>336 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>462 34</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>59 24</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>110 36</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>165 49</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>241 57</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>286 9</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 176 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>369 43</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_02</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>0 440 1024 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 544</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_03a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>560 0 464 272</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>562 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_03b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>560 0 464 272</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>590 0</Position>
+								<Color>80808080</Color>
+								<Scale>0.940000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>dancing_07a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 72 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-2 101</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>2 289</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 72 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>61 295</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>142 294</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>dancing_07b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 72 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-5 289</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>5 101</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>68 295</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 72 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>135 294</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>dancing_07c</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>264 72 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-2 101</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>256 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>2 290</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>264 72 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>61 295</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>256 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>142 295</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>dancing_07d</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>256 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>5 102</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>264 72 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-5 289</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>256 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>68 296</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>264 72 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>135 294</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>dancing_07e</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>5 101</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>2 289</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>68 295</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>176 0 72 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>142 294</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>dancing_07f</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 0 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-1 101</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 0 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-4 289</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 0 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>62 295</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 0 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>136 294</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>dancing_07g</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>440 0 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-1 101</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>440 0 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-4 289</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>440 0 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>62 295</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>440 0 80 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>136 294</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>dancing_07h</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-2 100</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-5 288</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>61 294</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>352 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>135 293</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>dancing_07i</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>440 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-2 100</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>440 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-5 288</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>440 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>61 294</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>440 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>135 293</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>0 0 72 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>817 275</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>80 0 72 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>784 278</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>88 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>746 274</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>80 0 72 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>710 276</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>88 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>668 271</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10a6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>80 0 72 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>628 270</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10a7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>88 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>591 262</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>0 0 72 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>570 260</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10b1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>0 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>469 201</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10b3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>0 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>408 583</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>80 672 192 352</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>350 553</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10b4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>0 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>408 583</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>80 672 192 352</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>350 219</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10b5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>0 72 80 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>408 583</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>80 672 192 352</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>350 580</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10c</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 144 192 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>459 628</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>90.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>56 144 80 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>409 580</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10c1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 144 192 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>459 269</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>90.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>56 144 80 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>409 221</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10c2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 144 192 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>459 -210</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>90.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>56 144 80 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>409 -258</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10c3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 144 192 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1083 53</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>232 144 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1032 23</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10c4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 144 192 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-206 19</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>232 144 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-257 -11</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10c5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 144 192 24</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-212 28</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>232 144 80 80</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-85 -2</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>wave_10c6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>320 144 192 24</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1046 38</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>232 144 80 80</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1173 8</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>penguin_girl_05a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>528 480 496 544</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>623 126</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>penguin_girl_05a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>528 480 496 544</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>623 136</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>penguin_girl_05a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>528 480 496 544</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>623 126</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>424 752 96 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>807 230</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>penguin_girl_05b1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>280 880 240 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-71 432</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>280 880 240 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>136 432</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>penguin_girl_05b2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>280 880 240 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-71 442</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>280 880 240 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>136 432</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>penguin_girl_05b3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>280 880 240 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-71 432</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/penguin/bmp/penguin_obj</TextureName>
+							<Rect>280 880 240 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>136 442</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>Anime</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_00</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>bg_01a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>bg_01b</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>bg_03a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>bg_03b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_03a</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07c</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07d</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07c</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07d</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07f</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07e</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07g</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07e</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07h</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07i</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07h</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>dancing_07i</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>100</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>wave_10a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>wave_10a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>wave_10a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>wave_10a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>wave_10a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>wave_10a6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>24</Frame>
+									<PatternGroupName>wave_10a7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>wave_10b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>16</Frame>
+									<PatternGroupName>wave_10b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>wave_10b1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>12</Frame>
+									<PatternGroupName>wave_10b3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>12</Frame>
+									<PatternGroupName>wave_10b4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>wave_10b5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>wave_10b5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>wave_10c</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>32</Frame>
+									<PatternGroupName>wave_10c1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>wave_10c2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>wave_10c3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>wave_10c4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>wave_10c5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>wave_10c6</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_02</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>penguin_girl_05b1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>penguin_girl_05b2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>penguin_girl_05b1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>penguin_girl_05b3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>penguin_girl_05b1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>penguin_girl_05a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>70</Frame>
+									<PatternGroupName>penguin_girl_05a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>penguin_girl_05a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>penguin_girl_05a3</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

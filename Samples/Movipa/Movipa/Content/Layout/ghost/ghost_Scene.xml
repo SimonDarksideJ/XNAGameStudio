@@ -1,0 +1,1575 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>bg_00</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_bg</TextureName>
+							<Rect>0 0 1024 576</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_01a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 600 424 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>453 280</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_01b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 600 424 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-405 280</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_01c</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 600 424 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1001 280</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_02a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 376 632 216</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>191 -24</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_02b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 376 632 216</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-624 -24</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_02c</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 376 632 216</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1009 -24</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_03a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 0 824 368</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>31 57</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_03b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 0 824 368</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-804 57</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_03c</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 0 824 368</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1030 57</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_04</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>720 448 304 576</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>720 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>632 888 88 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>632 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>192 760 328 264</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 312</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>520 888 104 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>328 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>592 888 32 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>432 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>592 888 32 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>464 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>592 888 32 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>496 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>592 888 32 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>528 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>592 888 32 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>560 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>592 888 32 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>592 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>616 888 8 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>624 440</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>0 760 192 264</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1 48</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>528 656 184 224</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>192 88</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>432 656 88 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>192 56</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>432 600 280 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj2</TextureName>
+							<Rect>184 0 192 264</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 48</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>cat_08a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>936 376 40 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>971 231</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>984 376 32 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>987 279</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 240 152 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>851 263</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>912 160 96 40</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>851 302</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>cat_08b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>872 376 56 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1002 251</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 376 32 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>986 299</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 240 152 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>851 263</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>912 160 96 40</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>851 302</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>cat_08c</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>704 376 32 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1032 355</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>744 376 80 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>984 307</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 240 152 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>851 263</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>912 160 96 40</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>851 302</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>cat_08d</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>936 376 40 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>971 231</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>984 376 32 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>987 279</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 240 152 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>851 263</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>912 200 88 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>852 316</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>952 192 16 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>891 334</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>cat_08e</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>936 376 40 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>971 231</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>984 376 32 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>987 279</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 240 152 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>851 263</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>952 192 16 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>891 334</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>912 216 96 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>852 318</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost_20a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1031 122</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost_20a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>677 50</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost_20a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj2</TextureName>
+							<Rect>0 160 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>583 120</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost_20a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>583 119</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost_20a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>273 157</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost2_22b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>4 111</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost2_22b1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj2</TextureName>
+							<Rect>0 320 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>215 285</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost2_22b2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>233 140</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost2_22b3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>295 183</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost2_22b4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>372 127</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost2_22b5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>698 296</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>505 125</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>482 129</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>289 201</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>78 144</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj2</TextureName>
+							<Rect>0 160 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>159 259</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>217 319</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj2</TextureName>
+							<Rect>0 320 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>574 248</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>526 345</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj2</TextureName>
+							<Rect>0 320 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>731 128</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost3_24c8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>605 212</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost4_22b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>190 319</Position>
+								<Color>00808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost4_22b1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj2</TextureName>
+							<Rect>0 320 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>329 372</Position>
+								<Color>80808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost4_22b2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>531 414</Position>
+								<Color>40808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost4_22b3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>727 328</Position>
+								<Color>00808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost4_22b4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>530 417</Position>
+								<Color>40808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>ghost4_22b5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/ghost/bmp/ghost_obj</TextureName>
+							<Rect>832 0 176 152</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>126 354</Position>
+								<Color>00808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>Anime</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_00</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1000</Frame>
+									<PatternGroupName>bg_01a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_01b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1000</Frame>
+									<PatternGroupName>bg_01c</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_01a</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1400</Frame>
+									<PatternGroupName>bg_02a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_02b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1400</Frame>
+									<PatternGroupName>bg_02c</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_02a</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>6000</Frame>
+									<PatternGroupName>bg_03a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_03b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>6000</Frame>
+									<PatternGroupName>bg_03c</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_03a</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_04</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>cat_08a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>cat_08b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>cat_08c</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>cat_08a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>cat_08d</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>cat_08e</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>400</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost_20a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>ghost_20a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>ghost_20a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>ghost_20a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>500</Frame>
+									<PatternGroupName>ghost_20a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost2_22b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>ghost2_22b1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost2_22b2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost2_22b3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost2_22b4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>600</Frame>
+									<PatternGroupName>ghost2_22b5</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>100</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost3_24c</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost3_24c9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost3_24c1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost3_24c2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost3_24c3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>ghost3_24c4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost3_24c5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost3_24c6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>ghost3_24c7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>ghost3_24c8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>ghost3_24c</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>120</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>ghost4_22b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>ghost4_22b1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>ghost4_22b2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>ghost4_22b3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>ghost4_22b4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>ghost4_22b5</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+	<Asset Type="MovipaLibrary.LayoutInfo">
+		<!--AnimationInfo-->
+		<Category>Layout</Category>
+		<Name>Revolve</Name>
+		<Size>480 270</Size>
+		
+		<!--LayoutInfo-->
+		<SceneDataAsset>Layout/Style/revolve_Scene</SceneDataAsset>
+		<Sequence>Anime</Sequence>
+	</Asset>
+</XnaContent>

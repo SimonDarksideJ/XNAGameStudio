@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RacingGame", "RacingGameWindows1\RacingGame\RacingGame\RacingGame.csproj", "{D6A9F963-0B07-4DE4-BC82-8A3FF74651C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RacingGameContent", "RacingGameWindows1\RacingGame\RacingGameContent\RacingGameContent.contentproj", "{6CD3E13F-2668-439F-8299-0C7A98E1D87B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RacingGameContentPipelineExtension", "RacingGameWindows1\RacingGameContentPipelineExtension\RacingGameContentPipelineExtension.csproj", "{F7783DA3-EE53-4218-8E06-4ED4F357480E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E4949045-7B09-4438-8CE6-E0AEBA230706}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6A9F963-0B07-4DE4-BC82-8A3FF74651C9}.Debug|x86.ActiveCfg = Debug|x86
+		{D6A9F963-0B07-4DE4-BC82-8A3FF74651C9}.Debug|x86.Build.0 = Debug|x86
+		{D6A9F963-0B07-4DE4-BC82-8A3FF74651C9}.Release|x86.ActiveCfg = Release|x86
+		{D6A9F963-0B07-4DE4-BC82-8A3FF74651C9}.Release|x86.Build.0 = Release|x86
+		{6CD3E13F-2668-439F-8299-0C7A98E1D87B}.Debug|x86.ActiveCfg = Debug|x86
+		{6CD3E13F-2668-439F-8299-0C7A98E1D87B}.Release|x86.ActiveCfg = Release|x86
+		{F7783DA3-EE53-4218-8E06-4ED4F357480E}.Debug|x86.ActiveCfg = Debug|x86
+		{F7783DA3-EE53-4218-8E06-4ED4F357480E}.Debug|x86.Build.0 = Debug|x86
+		{F7783DA3-EE53-4218-8E06-4ED4F357480E}.Release|x86.ActiveCfg = Debug|x86
+		{F7783DA3-EE53-4218-8E06-4ED4F357480E}.Release|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

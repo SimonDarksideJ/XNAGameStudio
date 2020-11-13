@@ -1,0 +1,161 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8A3530A0-E44D-418B-872E-801DA6ABD3B1}</ProjectGuid>
+    <ProjectTypeGuids>{2DF5C3F4-5A5F-47a9-8E94-23B4456F55E2};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Movipa</RootNamespace>
+    <AssemblyName>Movipa</AssemblyName>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <XnaCrossPlatformGroupID>5db0f8b1-78bf-48d1-b7b9-794bf9f6062e</XnaCrossPlatformGroupID>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <StartupObject>Movipa.MovipaGame</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;XBOX;XBOX360</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <DefineConstants>TRACE;XBOX;XBOX360</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="system.xml, Version=3.5.0.0, Culture=neutral, PublicKeyToken=1c9e259686f921e0, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Animation\ModelAnimationComponent.cs" />
+    <Compile Include="Components\Animation\MovieComponent.cs" />
+    <Compile Include="Components\Animation\Particle.cs" />
+    <Compile Include="Components\Animation\ParticleComponent.cs" />
+    <Compile Include="Components\Animation\PuzzleAnimation.cs" />
+    <Compile Include="Components\Animation\SequencePlayAnimationComponent.cs" />
+    <Compile Include="Components\FadeSeqComponent.cs" />
+    <Compile Include="Components\Input\InputComponent.cs" />
+    <Compile Include="Components\Input\InputState.cs" />
+    <Compile Include="Components\Input\VirtualKeyState.cs" />
+    <Compile Include="Components\Input\VirtualPadButtons.cs" />
+    <Compile Include="Components\Input\VirtualPadDPad.cs" />
+    <Compile Include="Components\Input\VirtualPadState.cs" />
+    <Compile Include="Components\Input\VirtualPadThumbSticks.cs" />
+    <Compile Include="Components\Input\VirtualPadTriggers.cs" />
+    <Compile Include="Components\SafeAreaComponent.cs" />
+    <Compile Include="Components\SceneComponent.cs" />
+    <Compile Include="Components\Scene\GameOver.cs" />
+    <Compile Include="Components\Scene\Logo.cs" />
+    <Compile Include="Components\Scene\Menu\InitializeThread.cs" />
+    <Compile Include="Components\Scene\Menu\MenuBase.cs" />
+    <Compile Include="Components\Scene\Menu\MenuComponent.cs" />
+    <Compile Include="Components\Scene\Menu\MenuData.cs" />
+    <Compile Include="Components\Scene\Menu\MenuType.cs" />
+    <Compile Include="Components\Scene\Menu\MovieLoader.cs" />
+    <Compile Include="Components\Scene\Menu\Ready.cs" />
+    <Compile Include="Components\Scene\Menu\SaveFileLoader.cs" />
+    <Compile Include="Components\Scene\Menu\SelectDivide.cs" />
+    <Compile Include="Components\Scene\Menu\SelectFile.cs" />
+    <Compile Include="Components\Scene\Menu\SelectMode.cs" />
+    <Compile Include="Components\Scene\Menu\SelectMovie.cs" />
+    <Compile Include="Components\Scene\Menu\SelectStyle.cs" />
+    <Compile Include="Components\Scene\Menu\ThumbnailLoader.cs" />
+    <Compile Include="Components\Scene\Menu\ThumbnailSprite.cs" />
+    <Compile Include="Components\Scene\Puzzle\PanelData.cs" />
+    <Compile Include="Components\Scene\Puzzle\PanelManager.cs" />
+    <Compile Include="Components\Scene\Puzzle\PuzzleComponent.cs" />
+    <Compile Include="Components\Scene\Puzzle\SpriteScorePopup.cs" />
+    <Compile Include="Components\Scene\Puzzle\Style\ChangeComponent.cs" />
+    <Compile Include="Components\Scene\Puzzle\Style\PanelAfterimage.cs" />
+    <Compile Include="Components\Scene\Puzzle\Style\RevolveComponent.cs" />
+    <Compile Include="Components\Scene\Puzzle\Style\SlideComponent.cs" />
+    <Compile Include="Components\Scene\Puzzle\Style\StyleBase.cs" />
+    <Compile Include="Components\Scene\Result\FreeResult.cs" />
+    <Compile Include="Components\Scene\Result\NormalResult.cs" />
+    <Compile Include="Components\Scene\Result\ResultBase.cs" />
+    <Compile Include="Components\Scene\StaffRoll.cs" />
+    <Compile Include="Components\Scene\Title.cs" />
+    <Compile Include="Components\SoundComponent.cs" />
+    <Compile Include="Components\StorageComponent.cs" />
+    <Compile Include="GameData.cs" />
+    <Compile Include="MovipaGame.cs" />
+    <Compile Include="SaveData.cs" />
+    <Compile Include="NavigateData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StageResult.cs" />
+    <Compile Include="Util\BasicModelData.cs" />
+    <Compile Include="Util\GameComponentObject.cs" />
+    <Compile Include="Util\GameObject.cs" />
+    <Compile Include="Util\ModelData.cs" />
+    <Compile Include="Util\PrimitiveDraw2D.cs" />
+    <Compile Include="Util\PrimitiveFloor.cs" />
+    <Compile Include="Util\PrimitiveRenderState.cs" />
+    <Compile Include="Util\SettingsSerializer.cs" />
+    <Compile Include="Util\SkinnedModelData.cs" />
+    <Compile Include="Util\Sounds.cs" />
+    <Compile Include="Util\Sprite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>de97ecb5-ad11-4e85-9f91-0634e553d0b1</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovipaLibrary\MovipaLibraryXbox360.csproj">
+      <Project>{109AEFE5-F9EC-432A-B44D-044551D921D2}</Project>
+      <Name>MovipaLibraryXbox360</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SceneData\SceneDataXbox360.csproj">
+      <Project>{322430CC-6882-41BE-9672-0C1A938D5C7D}</Project>
+      <Name>SceneDataXbox360</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkinnedModel\SkinnedModelXbox360.csproj">
+      <Project>{1A2892BA-E78F-4F75-8F07-BDBA3C5D644E}</Project>
+      <Name>SkinnedModelXbox360</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.NestedContent.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

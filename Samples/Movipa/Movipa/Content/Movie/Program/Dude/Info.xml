@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+	<Asset Type="MovipaLibrary.SkinnedModelAnimationInfo">
+		<!--AnimationInfo-->
+		<Category>SkinnedModelAnimation</Category>
+		<Name>Dude</Name>
+		<Size>1024 576</Size>
+
+		<!--SkinnedModelAnimationInfo-->
+		<SkinnedModelInfoCollection>
+			<Item>
+				<ModelAsset>Models/Dude/dude</ModelAsset>
+				<AnimationClip>Take 001</AnimationClip>
+				<Position>0.0 0.0 0.0</Position>
+			</Item>
+		</SkinnedModelInfoCollection>
+
+		<CameraUpVector>0.0 1.0 0.0</CameraUpVector>
+		<CameraPosition>0.8 60.0 -32.0</CameraPosition>
+		<CameraLookAt>0.0 60.0 0.0</CameraLookAt>
+	
+	</Asset>
+</XnaContent>

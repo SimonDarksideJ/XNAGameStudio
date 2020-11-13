@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+	<Asset Type="MovipaLibrary.RenderingInfo">
+		<!--AnimationInfo-->
+		<Category>Rendering</Category>
+		<Name>Moere</Name>
+		<Size>1024 576</Size>
+
+		<!--RenderingInfo-->
+		<Format>Movie/Rendering/moere/moere_{0:00000}</Format>
+		<TotalTexture>19</TotalTexture>
+		<TotalFrame>300</TotalFrame>
+		<ImageSize>512 512</ImageSize>
+		<FrameRate>30</FrameRate>
+	</Asset>
+</XnaContent>

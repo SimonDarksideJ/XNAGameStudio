@@ -1,0 +1,2584 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>bg_00</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_bg</TextureName>
+							<Rect>0 0 1024 576</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_03</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>536 664 488 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>536 216</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>0 664 464 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 216</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_05a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>352 0 56 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>36 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 0 80 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>136 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>504 0 32 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>240 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>544 0 72 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>296 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>624 0 40 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>376 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>672 0 64 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>458 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>744 0 80 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>584 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 0 64 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>758 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>904 0 56 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>848 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>968 0 48 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>928 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_05a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>352 0 56 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>45 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 0 80 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>145 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>504 0 32 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>249 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>544 0 72 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>305 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>624 0 40 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>385 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>672 0 64 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>467 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>744 0 80 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>593 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 0 64 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>767 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>904 0 56 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>857 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>968 0 48 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>937 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_05b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>352 0 56 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>26 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 0 80 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>124 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>504 0 32 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>230 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>544 0 72 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>286 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>624 0 40 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>366 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>672 0 64 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>448 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>744 0 80 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>574 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 0 64 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>748 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>904 0 56 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>838 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>968 0 48 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>918 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_05b1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>352 0 56 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>15 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 0 80 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>115 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>504 0 32 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>219 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>544 0 72 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>275 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>624 0 40 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>355 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>672 0 64 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>437 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>744 0 80 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>563 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 0 64 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>737 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>904 0 56 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>827 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>968 0 48 360</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>907 0</Position>
+								<Color>40808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_06</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>0 216 344 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-4 136</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>0 216 344 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>684 136</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>0 216 344 440</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>340 136</Position>
+								<Color>26808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_08a</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>472 528 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 435</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>472 528 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>224 419</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>472 528 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>745 431</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_08b</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>472 512 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>153 424</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>472 512 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>222 406</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>472 512 8 8</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>751 420</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_08c</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>448 512 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>155 394</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>448 512 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>233 372</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>448 512 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>754 384</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_08d</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 512 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>158 371</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 512 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>227 355</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 512 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>759 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>bg_08e</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 512 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>135 321</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 512 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>245 313</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 512 24 24</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>777 329</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a_a0</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 368 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>907 220</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 440 104 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>11 28</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a_a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 440 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>823 219</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 368 104 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>167 18</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a_a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 368 104 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>705 215</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 440 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>345 10</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a_a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 440 104 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>821 170</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 368 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>202 88</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a_a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 368 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>955 131</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 440 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>88 143</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a_a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 440 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>938 179</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 368 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>32 85</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b_b0</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 368 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>671 70</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b_b1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 464 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>554 72</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b_b2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 368 104 88</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>421 51</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b_b3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 464 104 88</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>549 7</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b_b4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 368 104 88</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>671 -14</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b_b5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 464 104 88</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>760 -17</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b_b6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 368 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>856 24</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c_c0</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 368 184 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>423 290</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c_c1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 472 184 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>611 289</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c_c2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 368 184 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>724 307</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c_c3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 472 184 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>642 390</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c_c4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 368 184 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>450 369</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c_c5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 472 184 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>263 377</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c_c6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 368 184 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>135 302</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c_c7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 472 184 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>307 298</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d_d0</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 368 184 120</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>285 240</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d_d1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 496 184 120</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>231 201</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d_d2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 368 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>161 131</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d_d3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 496 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>305 125</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d_d4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 368 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>479 127</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d_d5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 496 184 120</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>644 169</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d_d6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 368 184 120</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>508 175</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d_d7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 496 184 120</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>406 228</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a1_a0</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 440 104 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>151 324</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a1_a1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 368 104 64</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>308 315</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a1_a2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 440 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>438 277</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a1_a3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 368 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>385 327</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a1_a4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 440 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>334 400</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_a1_a5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>416 368 104 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>227 372</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b1_b0</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 368 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1025 177</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b1_b1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 464 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>818 271</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b1_b2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 368 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>620 199</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b1_b3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 464 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>446 270</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b1_b4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 368 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>281 188</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b1_b5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 464 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>123 216</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_b1_b6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>528 368 104 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-114 243</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c1_c0</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 368 184 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>583 105</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c1_c1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 472 184 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>389 56</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c1_c2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 368 184 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>260 19</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c1_c3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 472 184 96</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>141 75</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c1_c4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 368 184 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-57 140</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c1_c5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 472 184 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>172 184</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c1_c6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 368 184 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>275 185</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_c1_c7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>640 472 184 96</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>408 166</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d1_d0</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 368 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-188 94</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d1_d1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 496 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>17 95</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d1_d2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 368 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>181 88</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d1_d3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 496 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>346 85</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d1_d4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 368 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>519 80</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d1_d5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 496 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>731 63</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d1_d6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 368 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>810 49</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>fish_d1_d7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/sea/bmp/sea_obj</TextureName>
+							<Rect>832 496 184 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1024 5</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>Anime</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>600</Frame>
+									<PatternGroupName>bg_00</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>bg_05a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>bg_05a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_05a</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>bg_05b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>bg_05b1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>bg_05b</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_a_a0</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_a_a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_a_a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_a_a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_a_a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_a_a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>fish_a_a0</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_b_b0</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>fish_b_b1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_b_b2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>fish_b_b3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_b_b4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>fish_b_b5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_b_b6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>fish_b_b0</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>800</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_d1_d0</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>160</Frame>
+									<PatternGroupName>fish_d1_d1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_d1_d2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>160</Frame>
+									<PatternGroupName>fish_d1_d3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_d1_d4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>160</Frame>
+									<PatternGroupName>fish_d1_d5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_d1_d6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>fish_d1_d7</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_03</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>200</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>bg_08a</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>bg_08b</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>bg_08c</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>40</Frame>
+									<PatternGroupName>bg_08d</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>80</Frame>
+									<PatternGroupName>bg_08e</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_c_c0</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_c_c1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_c_c2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_c_c3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_c_c4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_c_c5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_c_c6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_c_c7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>fish_c_c0</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_d_d0</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_d_d1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_d_d2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_d_d3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_d_d4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_d_d5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_d_d6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_d_d7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>fish_d_d0</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_a1_a0</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_a1_a1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_a1_a2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_a1_a3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_a1_a4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_a1_a5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>200</Frame>
+									<PatternGroupName>fish_a1_a0</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>400</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>160</Frame>
+									<PatternGroupName>fish_b1_b0</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>160</Frame>
+									<PatternGroupName>fish_b1_b1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>160</Frame>
+									<PatternGroupName>fish_b1_b2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>160</Frame>
+									<PatternGroupName>fish_b1_b3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>160</Frame>
+									<PatternGroupName>fish_b1_b4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>160</Frame>
+									<PatternGroupName>fish_b1_b5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>fish_b1_b6</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>400</Frame>
+									<PatternGroupName>fish_c1_c0</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_c1_c1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>400</Frame>
+									<PatternGroupName>fish_c1_c2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_c1_c3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>400</Frame>
+									<PatternGroupName>fish_c1_c4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_c1_c5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>400</Frame>
+									<PatternGroupName>fish_c1_c6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>300</Frame>
+									<PatternGroupName>fish_c1_c7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>fish_c1_c0</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>bg_06</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

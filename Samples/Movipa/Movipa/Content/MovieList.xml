@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="System.Collections.Generic.List[System.String]">
+	  <Item>Layout/Anime1/Info</Item>
+	  <Item>Layout/Anime2/Info</Item>
+	  <Item>Layout/ghost/Info</Item>
+	  <Item>Layout/penguin/Info</Item>
+	  <Item>Layout/sea/Info</Item>
+	  <Item>Layout/street/Info</Item>
+	  <Item>Layout/ufo/Info</Item>
+	  <Item>Movie/Program/Dude/Info</Item>
+	  <Item>Movie/Program/Particle/Info</Item>
+	  <Item>Movie/Rendering/moere/Info</Item>
+  </Asset>
+</XnaContent>

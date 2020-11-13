@@ -1,0 +1,3106 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>AnimeBG_Night</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_bg</TextureName>
+							<Rect>0 0 1024 576</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>AnimeBG_Rever1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>256 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-256 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>512 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>768 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>AnimeBG_Rever2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>256 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>512 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>768 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>712 0 256 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1024 320</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>AnimeBG_Guardrail</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 312 376 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-13 342</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 312 376 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>351 342</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 312 376 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>715 342</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>680 144 296 168</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1 387</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>AnimeBG_Star1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>21 22</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>412 4</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 62</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>831 -2</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>54 -3</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>152 42</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>485 52</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>564 -3</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>662 27</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>723 46</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>816 41</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>926 29</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>947 79</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>AnimeBG_Star2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>21 22</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>412 4</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 62</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>831 -2</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>54 -3</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>152 42</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>485 52</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>564 -3</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>662 27</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>723 46</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>816 41</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>926 29</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>947 79</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>AnimeBG_Star3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>21 22</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>412 4</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 62</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>831 -2</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>54 -3</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>152 42</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>485 52</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>564 -3</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>662 27</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>723 46</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>816 41</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>926 29</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>947 79</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>AnimeBG_Star4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>21 22</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>412 4</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>690 62</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>640 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>831 -2</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>54 -3</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>152 42</Position>
+								<Color>80808080</Color>
+								<Scale>0.500000 0.500000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>485 52</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>564 -3</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>662 27</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>723 46</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>816 41</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>926 29</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>672 432 32 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>947 79</Position>
+								<Color>80808080</Color>
+								<Scale>0.740000 0.740000</Scale>
+								<Center>17 17</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Boy1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>208 200 80 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>301 470</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>24 20</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 304 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>363 460</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 10</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 0 56 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>347 315</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>32 20</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>216 0 72 168</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>298 328</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>50 16</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>72 369 66 68</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>341 222</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 12</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 200 112 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>285 190</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 130</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 0 216 200</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>174 3</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>138 192</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>136 427 61 45</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>405 280</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>12 14</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>344 0 288 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>291 214</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 96</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 280 64 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>426 224</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>28 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 200 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>301 276</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 9</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 360 72 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>252 230</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>40 12</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Boy2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>208 200 80 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>301 470</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>24 20</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 304 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>363 454</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 10</Center>
+								<RotateZ>3.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 0 56 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>352 313</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>32 20</Center>
+								<RotateZ>2.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>216 0 72 168</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>303 329</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>50 16</Center>
+								<RotateZ>2.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>72 369 66 68</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>350 226</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 12</Center>
+								<RotateZ>-5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 200 112 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>288 193</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 130</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 0 216 200</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>187 2</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>138 192</Center>
+								<RotateZ>15.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>136 427 61 45</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>423 282</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>12 14</Center>
+								<RotateZ>-10.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>344 0 288 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>296 213</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 96</Center>
+								<RotateZ>4.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 280 64 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>446 222</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>28 80</Center>
+								<RotateZ>3.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 200 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>307 280</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 9</Center>
+								<RotateZ>30.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 360 72 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>267 229</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>40 12</Center>
+								<RotateZ>15.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Boy3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>208 200 80 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>301 470</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>24 20</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 304 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>363 460</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 10</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 0 56 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>347 315</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>32 20</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>216 0 72 168</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>298 328</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>50 16</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>72 369 66 68</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>341 222</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 12</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 200 112 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>285 190</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 130</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 0 216 200</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>174 3</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>138 192</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>136 427 61 45</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>405 280</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>12 14</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>344 0 288 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>291 214</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 96</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 280 64 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>426 224</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>28 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 200 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>306 271</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 9</Center>
+								<RotateZ>-15.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 360 72 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>252 230</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>40 12</Center>
+								<RotateZ>-10.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Boy4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>208 200 80 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>301 465</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>24 20</Center>
+								<RotateZ>3.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 304 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>363 460</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 10</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 0 56 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>343 315</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>32 20</Center>
+								<RotateZ>-2.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>216 0 72 168</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>294 325</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>50 16</Center>
+								<RotateZ>-2.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>72 369 66 68</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>335 224</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 12</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 200 112 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>285 190</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 130</Center>
+								<RotateZ>-5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 0 216 200</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>164 6</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>138 192</Center>
+								<RotateZ>-10.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>136 427 61 45</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>379 271</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>12 14</Center>
+								<RotateZ>-10.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>344 0 288 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>283 214</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 96</Center>
+								<RotateZ>-15.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 280 64 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>398 209</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>28 80</Center>
+								<RotateZ>-5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 200 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>289 285</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 9</Center>
+								<RotateZ>30.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 360 72 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>249 235</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>40 12</Center>
+								<RotateZ>15.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Boy2_2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>208 200 80 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>301 470</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>24 20</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 304 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>363 454</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 10</Center>
+								<RotateZ>3.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 0 56 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>352 313</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>32 20</Center>
+								<RotateZ>2.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>216 0 72 168</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>303 329</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>50 16</Center>
+								<RotateZ>2.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>72 369 66 68</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>350 226</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 12</Center>
+								<RotateZ>-5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 200 112 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>288 193</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 130</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 0 216 200</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>187 2</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>138 192</Center>
+								<RotateZ>20.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>136 427 61 45</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>425 288</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>12 14</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>344 0 288 160</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>296 215</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>80 96</Center>
+								<RotateZ>10.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 280 64 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>446 235</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>28 80</Center>
+								<RotateZ>7.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>112 200 80 80</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>307 280</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 9</Center>
+								<RotateZ>30.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 360 72 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>267 229</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>40 12</Center>
+								<RotateZ>15.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Cat1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>424 312 72 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>590 434</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 92</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>440 160 96 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>515 415</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>280 312 144 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>477 326</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>74 104</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Cat2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>424 312 72 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>590 434</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 92</Center>
+								<RotateZ>-4.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>440 160 96 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>515 415</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>280 312 144 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>476 326</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>74 104</Center>
+								<RotateZ>6.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Cat3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>424 312 72 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>590 434</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 92</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>440 160 96 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>515 415</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>280 312 144 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>477 326</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>74 104</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Cat4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>424 312 72 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>590 434</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>14 92</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>440 160 96 144</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>515 415</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>280 312 144 120</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>477 326</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>74 104</Center>
+								<RotateZ>-4.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Bird1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 456 72 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>607 546</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 384 72 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>607 489</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>40 64</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Bird2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 456 72 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>607 546</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 384 72 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>607 489</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>40 64</Center>
+								<RotateZ>-3.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Bird3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 456 72 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>607 546</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 384 72 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>607 489</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>40 64</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Bird4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 456 72 32</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>607 546</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>200 384 72 72</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>607 489</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>40 64</Center>
+								<RotateZ>3.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Dog1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>632 0 80 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>909 410</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>24 86</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>496 304 144 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>795 339</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>536 160 144 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>767 270</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>72 110</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Dog2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>632 0 80 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>909 410</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>24 86</Center>
+								<RotateZ>8.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>496 304 144 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>795 339</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>536 160 144 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>767 270</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>72 110</Center>
+								<RotateZ>-5.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Dog3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>632 0 80 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>909 410</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>24 86</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>496 304 144 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>795 339</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>536 160 144 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>767 270</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>72 110</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Dog4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>632 0 80 104</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>909 410</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>24 86</Center>
+								<RotateZ>10.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>496 304 144 192</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>795 339</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>536 160 144 136</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>767 270</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>72 110</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Turtle1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 248 64 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>676 499</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>46 24</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>360 248 72 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>748 499</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>50 24</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 160 152 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>703 445</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>60 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 432 64 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>657 464</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>58 30</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Turtle2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 248 64 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>676 481</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>46 24</Center>
+								<RotateZ>10.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>360 248 72 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>748 487</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>50 24</Center>
+								<RotateZ>-10.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 160 152 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>703 431</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>60 80</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 432 64 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>658 446</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>58 30</Center>
+								<RotateZ>10.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Turtle3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 248 64 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>676 499</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>46 24</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>360 248 72 64</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>748 499</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>50 24</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>288 160 152 88</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>703 452</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>60 80</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj01</TextureName>
+							<Rect>0 432 64 56</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>657 471</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>58 30</Center>
+								<RotateZ>-3.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj02</TextureName>
+							<Rect>0 0 76 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>574 133</Position>
+								<Color>00808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>38 56</Center>
+								<RotateZ>10.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj02</TextureName>
+							<Rect>0 0 76 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>789 77</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>38 56</Center>
+								<RotateZ>-13.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj02</TextureName>
+							<Rect>0 0 76 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1028 -20</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>38 56</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj02</TextureName>
+							<Rect>0 0 76 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>574 133</Position>
+								<Color>00808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>38 56</Center>
+								<RotateZ>10.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj02</TextureName>
+							<Rect>0 0 76 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>789 77</Position>
+								<Color>80808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>38 56</Center>
+								<RotateZ>-13.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj02</TextureName>
+							<Rect>0 0 76 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1028 -20</Position>
+								<Color>80808080</Color>
+								<Scale>0.800000 0.800000</Scale>
+								<Center>38 56</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj02</TextureName>
+							<Rect>0 0 76 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>574 133</Position>
+								<Color>00808080</Color>
+								<Scale>0.900000 0.900000</Scale>
+								<Center>38 56</Center>
+								<RotateZ>10.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj02</TextureName>
+							<Rect>0 0 76 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>789 77</Position>
+								<Color>80808080</Color>
+								<Scale>0.900000 0.900000</Scale>
+								<Center>38 56</Center>
+								<RotateZ>-13.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Object_Onpu10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Anime1/bmp/mov01_obj02</TextureName>
+							<Rect>0 0 76 112</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1028 -20</Position>
+								<Color>80808080</Color>
+								<Scale>0.900000 0.900000</Scale>
+								<Center>38 56</Center>
+								<RotateZ>5.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>Anime</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>AnimeBG_Night</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>600</Frame>
+									<PatternGroupName>AnimeBG_Rever1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>AnimeBG_Rever2</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>25</Frame>
+									<PatternGroupName>AnimeBG_Star1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>25</Frame>
+									<PatternGroupName>AnimeBG_Star2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>25</Frame>
+									<PatternGroupName>AnimeBG_Star3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>25</Frame>
+									<PatternGroupName>AnimeBG_Star4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>AnimeBG_Star1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>AnimeBG_Guardrail</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Boy1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Boy2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Boy3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Boy4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Boy1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Boy2_2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Boy1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Boy4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Object_Boy1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Cat1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>28</Frame>
+									<PatternGroupName>Object_Cat2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>32</Frame>
+									<PatternGroupName>Object_Cat3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Cat4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Cat1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Cat2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Cat3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Cat4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Object_Cat1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Bird1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Bird2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Bird3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Bird4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Bird1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Bird2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Bird3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Bird4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Object_Bird1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>32</Frame>
+									<PatternGroupName>Object_Dog1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Dog2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>Object_Dog3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>32</Frame>
+									<PatternGroupName>Object_Dog4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>32</Frame>
+									<PatternGroupName>Object_Dog1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Object_Dog2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>26</Frame>
+									<PatternGroupName>Object_Dog3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>32</Frame>
+									<PatternGroupName>Object_Dog4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Object_Dog1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Turtle1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Turtle2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>Object_Turtle3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Turtle1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Turtle2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>Object_Turtle3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Object_Turtle1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>Object_Onpu4</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>25</Frame>
+									<PatternGroupName>Object_Onpu5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>125</Frame>
+									<PatternGroupName>Object_Onpu7</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu10</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>100</Frame>
+									<PatternGroupName>Object_Onpu10</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>75</Frame>
+									<PatternGroupName>Object_Onpu5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>75</Frame>
+									<PatternGroupName>Object_Onpu7</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>125</Frame>
+									<PatternGroupName>Object_Onpu2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>25</Frame>
+									<PatternGroupName>Object_Onpu4</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>150</Frame>
+									<PatternGroupName>Object_Onpu5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>50</Frame>
+									<PatternGroupName>Object_Onpu7</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

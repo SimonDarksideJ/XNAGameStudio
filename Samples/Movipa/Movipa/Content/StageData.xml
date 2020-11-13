@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+	<Asset Type="System.Collections.Generic.List[MovipaLibrary.StageSetting]">
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>Off</Rotate>
+			<Movie>Movie/Program/Dude/Info</Movie>
+			<Divide>3 2</Divide>
+			<TimeLimitString>00:03:00</TimeLimitString>
+		</Item>
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>Off</Rotate>
+			<Movie>Layout/Anime1/Info</Movie>
+			<Divide>3 3</Divide>
+			<TimeLimitString>00:03:00</TimeLimitString>
+		</Item>
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>Off</Rotate>
+			<Movie>Layout/Anime2/Info</Movie>
+			<Divide>4 3</Divide>
+			<TimeLimitString>00:04:00</TimeLimitString>
+		</Item>
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>Off</Rotate>
+			<Movie>Layout/ghost/Info</Movie>
+			<Divide>4 4</Divide>
+			<TimeLimitString>00:05:00</TimeLimitString>
+		</Item>
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>Off</Rotate>
+			<Movie>Layout/penguin/Info</Movie>
+			<Divide>5 4</Divide>
+			<TimeLimitString>00:06:00</TimeLimitString>
+		</Item>
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>Off</Rotate>
+			<Movie>Layout/sea/Info</Movie>
+			<Divide>5 5</Divide>
+			<TimeLimitString>00:07:00</TimeLimitString>
+		</Item>
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>On</Rotate>
+			<Movie>Layout/street/Info</Movie>
+			<Divide>5 3</Divide>
+			<TimeLimitString>00:08:00</TimeLimitString>
+		</Item>
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>On</Rotate>
+			<Movie>Layout/ufo/Info</Movie>
+			<Divide>5 3</Divide>
+			<TimeLimitString>00:09:00</TimeLimitString>
+		</Item>
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>On</Rotate>
+			<Movie>Movie/Program/Particle/Info</Movie>
+			<Divide>7 4</Divide>
+			<TimeLimitString>00:10:00</TimeLimitString>
+		</Item>
+		<Item>
+			<Mode>Normal</Mode>
+			<Style>Change</Style>
+			<Rotate>On</Rotate>
+			<Movie>Movie/Rendering/moere/Info</Movie>
+			<Divide>8 5</Divide>
+			<TimeLimitString>00:10:00</TimeLimitString>
+		</Item>
+	</Asset>
+</XnaContent>

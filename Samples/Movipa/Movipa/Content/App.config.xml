@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Generic="System.Collections.Generic">
+	<Asset Type="Generic:Dictionary[string,string]">
+		<!-- 開発元 -->
+		<Item>
+			<Key>DeveloperName</Key>
+			<Value>Developed by AGENDA/Zenryokutei</Value>
+		</Item>
+		<Item>
+			<Key>TitleStart</Key>
+			<Value>START</Value>
+		</Item>
+		<Item>
+			<Key>TitleQuit</Key>
+			<Value>QUIT</Value>
+		</Item>
+
+		
+		
+		
+		<Item>
+			<Key>A_Ok</Key>
+			<Value>{Ok</Value>
+		</Item>
+		<Item>
+			<Key>A_Ok_Win</Key>
+			<Value>{[Enter]Ok</Value>
+		</Item>
+		<Item>
+			<Key>B_Cancel</Key>
+			<Value>|Cancel</Value>
+		</Item>
+		<Item>
+			<Key>B_Cancel_Win</Key>
+			<Value>|[Esc]Cancel</Value>
+		</Item>
+		<Item>
+			<Key>B_Title</Key>
+			<Value>|Title</Value>
+		</Item>
+		<Item>
+			<Key>B_Title_Win</Key>
+			<Value>|[Esc]Title</Value>
+		</Item>
+		<Item>
+			<Key>X_Delete</Key>
+			<Value>}Delete</Value>
+		</Item>
+		<Item>
+			<Key>X_Delete_Win</Key>
+			<Value>}[X]Delete</Value>
+		</Item>
+		<Item>
+			<Key>A_Next</Key>
+			<Value>{Next</Value>
+		</Item>
+		<Item>
+			<Key>A_Next_Win</Key>
+			<Value>{[Enter]Next</Value>
+		</Item>
+		<Item>
+			<Key>A_Menu</Key>
+			<Value>{Select</Value>
+		</Item>
+		<Item>
+			<Key>A_Menu_Win</Key>
+			<Value>{[Enter]Select</Value>
+		</Item>
+		<Item>
+			<Key>A_Title</Key>
+			<Value>{Title</Value>
+		</Item>
+		<Item>
+			<Key>A_Title_Win</Key>
+			<Value>{[Enter]Title</Value>
+		</Item>
+
+		
+	</Asset>
+</XnaContent>

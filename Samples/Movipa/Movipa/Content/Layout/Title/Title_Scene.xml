@@ -1,0 +1,1819 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<XnaContent xmlns:Lib="SceneDataLibrary">
+	<Asset Type="Lib:SceneData">
+		<PatternGroupDictionary>
+			<Item>
+				<Key>Title_Start_Normal</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>900 450</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title_Start_Select</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>900 450</Position>
+								<Color>80800000</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title_Quit_Normal</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>900 516</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title_Quit_Select</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>900 516</Position>
+								<Color>80800000</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title_Developer</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName></TextureName>
+							<Rect>0 0 16 16</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>640 664</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title_Title</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title_SubTitle</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>288 352 864 48</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>288 352</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title1_Title1Up1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 248</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-1280 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title1_Title1Up2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 248</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title1_Title1Up3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 248</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1280 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title1_Title1Down1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 248 1280 264</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1280 248</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title1_Title1Down2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 248 1280 264</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 248</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title1_Title1Down3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 248 1280 264</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-1280 248</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title2_Title2Rotate1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>640 248</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title2_Title2Rotate2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>0.000000 1.000000</Scale>
+								<Center>640 248</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title2_Title2Rotate3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>0.000000 1.000000</Scale>
+								<Center>640 248</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title2_Title2Rotate4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>1</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>640 248</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.250000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 -512</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.100000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.500000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.250000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.250000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.500000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump11</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.100000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump12</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.750000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump13</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump14</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 0.900000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3_Title3Jump15</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 399</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake1</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake2</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-1 -1</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake3</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 3</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake4</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1 -1</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake5</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-5 0</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake6</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>6 -5</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake7</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-15 4</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake8</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-4 -15</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake9</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>14 9</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake10</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>1 -33</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake11</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>12 30</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake12</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>68 -46</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake13</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-33 -85</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake14</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>3 57</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake15</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>101 -65</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake16</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-25 87</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake17</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>114 -7</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake18</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-25 -69</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake19</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>107 121</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake20</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-71 59</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake21</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>150 -151</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake22</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>26 110</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake23</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-48 -109</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake24</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>21 107</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake25</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-16 40</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake26</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>101 -58</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake27</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-6 16</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake28</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>15 13</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake29</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>10 -12</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake30</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>8 -4</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake31</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>0 9</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4_Title4Shake32</Key>
+				<Value>
+					<PatternObjectList>
+						<Item>
+							<TextureName>Layout/Title/bmp/title_logo</TextureName>
+							<Rect>0 0 1280 512</Rect>
+							<FlipH>0</FlipH>
+							<FlipV>0</FlipV>
+							<Data>
+								<Position>-4 -4</Position>
+								<Color>80808080</Color>
+								<Scale>1.000000 1.000000</Scale>
+								<Center>0 0</Center>
+								<RotateZ>0.000000</RotateZ>
+							</Data>
+						</Item>
+					</PatternObjectList>
+				</Value>
+			</Item>
+		</PatternGroupDictionary>
+		<SequenceBankDictionary>
+			<Item>
+				<Key>Start</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>2</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title_Start_Normal</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title_Start_Select</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title_Start_Normal</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Quit</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title_Quit_Normal</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title_Quit_Select</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title_Quit_Normal</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title0</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title1_Title1Up1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>180</Frame>
+									<PatternGroupName>Title1_Title1Up2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title1_Title1Up2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title1_Title1Up3</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title1_Title1Down1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>180</Frame>
+									<PatternGroupName>Title1_Title1Down2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title1_Title1Down2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title1_Title1Down3</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title1</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Title2_Title2Rotate2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title2_Title2Rotate4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Title2_Title2Rotate3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title2_Title2Rotate1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title2</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Title2_Title2Rotate2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Title2_Title2Rotate3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Title2_Title2Rotate2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Title2_Title2Rotate3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Title2_Title2Rotate2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>0</Frame>
+									<PatternGroupName>Title2_Title2Rotate3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title2_Title2Rotate2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title2_Title2Rotate1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title3</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title3_Title3Jump1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>20</Frame>
+									<PatternGroupName>Title3_Title3Jump2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Title3_Title3Jump3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title3_Title3Jump4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>10</Frame>
+									<PatternGroupName>Title3_Title3Jump4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Title3_Title3Jump5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Title3_Title3Jump6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Title3_Title3Jump7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Title3_Title3Jump8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>5</Frame>
+									<PatternGroupName>Title3_Title3Jump9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>3</Frame>
+									<PatternGroupName>Title3_Title3Jump10</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>3</Frame>
+									<PatternGroupName>Title3_Title3Jump11</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>3</Frame>
+									<PatternGroupName>Title3_Title3Jump12</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>3</Frame>
+									<PatternGroupName>Title3_Title3Jump13</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>3</Frame>
+									<PatternGroupName>Title3_Title3Jump14</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title3_Title3Jump15</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>Title4</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>1</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>30</Frame>
+									<PatternGroupName>Title4_Title4Shake1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake1</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake2</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake3</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake4</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake5</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake6</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake7</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake8</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake9</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake10</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake11</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake12</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake13</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake14</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake15</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake16</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake17</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake18</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake19</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake20</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake21</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake22</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake23</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake24</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake25</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake26</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake27</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake28</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake29</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake30</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake31</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title4_Title4Shake32</PatternGroupName>
+								</Item>
+								<Item>
+									<Frame>60</Frame>
+									<PatternGroupName>Title4_Title4Shake1</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+			<Item>
+				<Key>SubTitle</Key>
+				<Value>
+					<ZPos>0</ZPos>
+					<SequenceGroupList>
+						<Item>
+							<StartFrame>0</StartFrame>
+							<LoopNumber>-1</LoopNumber>
+							<InterpolationType>0</InterpolationType>
+							<SplineParamT>0</SplineParamT>
+							<SplineParamC>0</SplineParamC>
+							<SplineParamB>0</SplineParamB>
+							<SequenceObjectList>
+								<Item>
+									<Frame>1</Frame>
+									<PatternGroupName>Title_SubTitle</PatternGroupName>
+								</Item>
+							</SequenceObjectList>
+						</Item>
+					</SequenceGroupList>
+				</Value>
+			</Item>
+		</SequenceBankDictionary>
+	</Asset>
+</XnaContent>

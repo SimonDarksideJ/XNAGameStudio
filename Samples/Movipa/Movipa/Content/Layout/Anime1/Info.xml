@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+	<Asset Type="MovipaLibrary.LayoutInfo">
+		<!--AnimationInfo-->
+		<Category>Layout</Category>
+		<Name>Guitar</Name>
+		<Size>1024 576</Size>
+		
+		<!--LayoutInfo-->
+		<SceneDataAsset>Layout/Anime1/Anime1_Scene</SceneDataAsset>
+		<Sequence>Anime</Sequence>
+	</Asset>
+</XnaContent>

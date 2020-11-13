@@ -1,0 +1,47 @@
+//LT4_PROJECT 1000 
+//T0:
+//T1:
+//T2:
+//T3:
+//T4:
+//T5:
+//T6:
+//T7:
+//T8:
+//T9:
+//T10:
+//T11:
+//T12:
+//T13:
+//T14:
+//T15:
+//T16:
+//T17:
+//T18:
+//T19:
+//T20:
+//T21:
+//T22:
+//T23:
+//T24:
+//T25:
+Style:4,0,0,16384,6720,256,480,270,32,32,32,32,32,16,32,16,0,0,
+
+//ST "change_rotate_on",0,0,1,0,707182215,
+.\change_rotate_on.stg
+
+//ST "change_rotate_off",0,0,1,0,707181044,
+.\change_rotate_off.stg
+
+//ST "revolve",0,0,1,0,707181044,
+.\revolve.stg
+
+//ST "slide",0,0,1,0,707181044,
+.\slide.stg
+
+//PLUGIN_NAME
+XNASceneDataFormat
+PatImgExportDataFormat
+//VSS_DATA
+
+$/
