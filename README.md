@@ -66,6 +66,15 @@ Here you will find the following tutorial series
 * [3D Series 2 - Flightsim](https://github.com/simondarksidej/XNAGameStudio/wiki/Riemers3DXNA2flightsimoverview)
 * More coming soon. (see the Wiki for more info)
 
+
+## [MechCommander 2 - source](https://github.com/SimonDarksideJ/MechCommander2-Source)
+
+![MechCommander 2](https://upload.wikimedia.org/wikipedia/en/a/a0/Mechcommander_2_box_art.jpg)
+
+For you strategy fans out there, I was reminded that Microsoft did release the entire source code for the game [MechCommander 2](https://www.moddb.com/games/mech-commander-2) which is awesome,  now its source is published on GitHub for you to use (within the confines of the EULA which basecially states, do not sell this game as-is)
+
+[https://github.com/SimonDarksideJ/MechCommander2-Source](https://github.com/SimonDarksideJ/MechCommander2-Source)
+
 ## Contribute more
 
 If you find an XNA / MonoGame article that is worth preserving, be sure to drop us an Issue and let us know where to get it as we'll grab it as soon as we can.
