@@ -64,8 +64,11 @@ Here you will find the following tutorial series
 * [2D Series - Shooters](https://github.com/simondarksidej/XNAGameStudio/wiki/Riemers2DXNAoverview)
 * [3D Series 1 - Terrain](https://github.com/simondarksidej/XNAGameStudio/wiki/Riemers3DXNA1Terrainoverview)
 * [3D Series 2 - Flightsim](https://github.com/simondarksidej/XNAGameStudio/wiki/Riemers3DXNA2flightsimoverview)
-* More coming soon. (see the Wiki for more info)
 
+Additional series yet to be converted to MonoGame
+
+* [3D Series 3: HLSL Intro](https://github.com/simondarksidej/XNAGameStudio/wiki/Riemers3DXNA3hlsloverview)
+* [3D Series 4: Advanced Terrain](https://github.com/simondarksidej/XNAGameStudio/wiki/Riemers3DXNA4advterrainoverview)
 
 ## [MechCommander 2 - source](https://github.com/SimonDarksideJ/MechCommander2-Source)
 
